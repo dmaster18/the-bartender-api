@@ -1,0 +1,2 @@
+class Ingedient < ApplicationRecord
+end

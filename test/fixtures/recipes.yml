@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  flavor: MyString
+  instructions: MyString
+  ingredient_string: MyString
+  servings: 1.5
+  time: 1
+  type: 
+  style: MyString
+  origin: MyString
+  complexity: MyString
+  shared?: false
+  general_ranking: 1
+  user_ranking: 1
+  source: MyString
+
+two:
+  name: MyString
+  description: MyString
+  flavor: MyString
+  instructions: MyString
+  ingredient_string: MyString
+  servings: 1.5
+  time: 1
+  type: 
+  style: MyString
+  origin: MyString
+  complexity: MyString
+  shared?: false
+  general_ranking: 1
+  user_ranking: 1
+  source: MyString

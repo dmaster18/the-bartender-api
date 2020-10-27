@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :liquors
   resources :bars
   resources :liquor_stores
   resources :stores

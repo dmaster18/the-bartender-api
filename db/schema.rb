@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_012311) do
 
   create_table "garnishes", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "garnish_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_012311) do
 
   create_table "liqueurs", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "liqueur_type"
     t.string "description"
     t.string "origin"
     t.string "flavor"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_012311) do
 
   create_table "liquors", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "liquor_type"
     t.string "description"
     t.string "origin"
     t.string "flavor"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_012311) do
 
   create_table "mixers", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "mixer_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

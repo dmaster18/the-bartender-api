@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  username_confirmation: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  password: MyString
+  password_confirmation: MyString
+  uid: 1
+  zip_code: MyString
+  password_required: false
+
+two:
+  username: MyString
+  username_confirmation: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  password: MyString
+  password_confirmation: MyString
+  uid: 1
+  zip_code: MyString
+  password_required: false

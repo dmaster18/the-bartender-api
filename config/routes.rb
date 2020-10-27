@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :user_recipes
+  resources :garnishes
+  resources :mixers
   resources :liqueurs
   resources :liquors
   resources :bars

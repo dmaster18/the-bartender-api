@@ -1,4 +1,4 @@
-30%32%# This file should contain all the record creation needed to seed the database with its default values.
+# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup").
 #
 # Examples:
@@ -476,10 +476,6 @@ fernet = Liqueur.create(name: "Fernet-Branca", liqueur_type: "Amaro", descriptio
 foro = Liqueur.create(name: "Foro Amaro", liqueur_type: "Amaro", description: "Amaro is an Italian herbal liqueur that is commonly consumed as an after-dinner digestif. It usually has a bitter-sweet flavour, sometimes syrupy, and has an alcohol content between 16% and 40%. Amaro is typically produced by macerating herbs, roots, flowers, bark, and/or citrus peels in alcohol, either neutral spirits or wine, mixing the filtrate with sugar syrup, and allowing the mixture to age in casks or bottles." , origin: "Italy" , flavor: "Bitter-sweet", abv: "16-40%", color: "Varies")
 gentian = Liqueur.create(name: "Lo-Fi Gentian Amaro", liqueur_type: "Amaro", description: "Amaro is an Italian herbal liqueur that is commonly consumed as an after-dinner digestif. It usually has a bitter-sweet flavour, sometimes syrupy, and has an alcohol content between 16% and 40%. Amaro is typically produced by macerating herbs, roots, flowers, bark, and/or citrus peels in alcohol, either neutral spirits or wine, mixing the filtrate with sugar syrup, and allowing the mixture to age in casks or bottles." , origin: "Italy" , flavor: "Bitter-sweet", abv: "16-40%", color: "Varies")
 herbsaint = Liqueur.create(name: "Herbsaint Liqueur", liqueur_type: "Anise Liqueur", description: "Similar to absinthe, this anise-flavored liqueur has been made in New Orleans since 1934 and is known for its unique slightly bitter, woody flavor and hot peppery finish." , origin: "USA" , flavor: "Anise, Bitter", abv: "45-50%", color: "Green")
- =
- =
- =
- =
 pernod = Liqueur.create(name: "Pernod", liqueur_type: "Anise Liqueur", description: "Pernod is actually a successor of absinthe, the potent liquor popular in the 19th century. The exotic bouquet, when tasted neat, is potent and bittersweet; with the addition of water, it turns milky-opaque and has a long, licorice-like finish" , origin: "France" , flavor: "Licorice, Bittersweet", abv: "45%", color: "Clear")
 sambuca = Liqueur.create(name: "Sambuca", liqueur_type: "Anise Liqueur", description: "Sambuca is an Italian anise-flavoured, usually colourless, liqueur. Its most common variety is often referred to as white sambuca to differentiate it from other varieties that are deep blue in colour (black sambuca) or bright red (red sambuca)" , origin: "Italy" , flavor: "Anise", abv: "38%", color: "Clear")
 aperol = Liqueur.create(name: "Aperol", liqueur_type: "Aperol", description: "Aperol is an Italian bitter apéritif made of gentian, rhubarb, and cinchona, among other ingredients. It has a vibrant orange hue. Its name comes from the French slang word for aperitif, which is apero." , origin: "Italy" , flavor: "Bitter", abv: "11%", color: "Orange")

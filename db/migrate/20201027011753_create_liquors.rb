@@ -3,6 +3,7 @@ class CreateLiquors < ActiveRecord::Migration[6.0]
     create_table :liquors do |t|
       t.string :name
       t.string :type
+      t.string :description
       t.string :origin
       t.string :flavor
       t.string :abv

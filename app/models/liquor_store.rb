@@ -1,0 +1,2 @@
+class LiquorStore < ApplicationRecord
+end

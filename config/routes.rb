@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :bars
+  resources :liquor_stores
   resources :stores
   resources :questions
   resources :quizzes

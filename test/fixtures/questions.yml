@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quiz_id: 1
+  name: MyString
+  content: MyString
+  answer: MyString
+  correct?: false
+  difficulty: MyString
+
+two:
+  quiz_id: 1
+  name: MyString
+  content: MyString
+  answer: MyString
+  correct?: false
+  difficulty: MyString

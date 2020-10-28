@@ -3,8 +3,10 @@ class CreateRecipes < ActiveRecord::Migration[6.0]
     create_table :recipes do |t|
       t.string :name
       t.text :description
+      t.string :timing
+      t.text :preparation
+      t.string :iba_category
       t.string :flavor
-      t.text :instructions
       t.string :ingredient_string
       t.float :servings
       t.integer :time

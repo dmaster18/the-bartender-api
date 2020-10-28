@@ -14,4 +14,9 @@ class Recipe < ApplicationRecord
 
   validates :name, presence: true
   validates :name, uniqueness: true
+
+  serialize :liquors_string
+  serialize :liqueurs_string
+  serialize :mixers_string
+  serialize :garnishes_string
 end

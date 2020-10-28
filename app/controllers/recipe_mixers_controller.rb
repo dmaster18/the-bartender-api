@@ -1,0 +1,2 @@
+class RecipeMixersController < ApplicationController
+end

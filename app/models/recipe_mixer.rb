@@ -1,0 +1,2 @@
+class RecipeMixer < ApplicationRecord
+end

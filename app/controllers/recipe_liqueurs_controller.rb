@@ -1,0 +1,2 @@
+class RecipeLiqueursController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class RecipeLiqueur < ApplicationRecord
+end

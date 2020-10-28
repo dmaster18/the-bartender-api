@@ -1,0 +1,2 @@
+class RecipeGarnish < ApplicationRecord
+end

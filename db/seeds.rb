@@ -4336,7 +4336,7 @@ strawberry_daiquiri.liquors_string << '1.5 fl oz of Puerto Rican or Jamaican Rum
 strawberry_pisco_sour.liquors_string << '10 fl oz of Pisco'
 suffering.liquors_string << '1.01 fl oz of Gin'
 summer.liquors_string << '1.75 fl oz of Portobello Road Gin'
-summer_served.liquors_string_string << '2 fl oz of 1888 Brugal Rum'
+summer_served.liquors_string << '2 fl oz of 1888 Brugal Rum'
 summerthyme.liquors_string << '11 fl oz of Vodka'
 sunflower.liquors_string << '0.75 fl oz of Gin'
 sussex.liquors_string << '1.75 fl oz of Hendrick’s Gin'

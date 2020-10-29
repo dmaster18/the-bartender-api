@@ -547,7 +547,7 @@ jägermeister = Liqueur.create(name: "Jägermeister", liqueur_type: "Jägermeist
 jailbreak = Liqueur.create(name: "Jailbreak Feed the Monkey Hefeweizen", liqueur_type: "Beer", description: "Beer is brewed from cereal grains—most commonly from malted barley, though wheat, maize (corn), and rice are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. Most modern beer is brewed with hops, which add bitterness and other flavours and act as a natural preservative and stabilizing agent. Other flavouring agents such as gruit, herbs, or fruits may be included or used instead of hops. In commercial brewing, the natural carbonation effect is often removed during processing and replaced with forced carbonation." , origin: nil , flavor: "Varies", abv: "3-13%", color: "Varies")
 kahlúa = Liqueur.create(name: "Kahlúa", liqueur_type: "Coffee Liqueur", description: "A coffee liqueur from Veracruz, Mexico. The drink contains Rum, sugar, and 100% arabica coffee." , origin: "Mexico" , flavor: "Coffee", abv: "20%", color: "Deep Brown")
 kina = Liqueur.create(name: "Kina Lillet", liqueur_type: "Wine", description: "Wine is an alcoholic drink typically made from fermented grape juice. Yeast consumes the sugar in the grapes and converts it to ethanol, carbon dioxide, and heat. Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the grape's growing environment (terroir), and the production process. " , origin: nil , flavor: "Varies", abv: "5.5–25%", color: "Red or White")
-kings = Liqueur.create(name: "King's Ginger Liqueur", liqueur_type: "Ginger Liqueur" , description: "High-strength liqueur created by the careful maceration of ginger root, enlivened by the addition of citrus in the form of lemon oil. Specifically formulated in 1903 for King Edward VII. Contains an initial sweetness on the palate followed by a bite of ginger and lemon." , origin: "England", flavor: "Herbal, Fruity", abv: "41%", color: "Gold")
+kings = Liqueur.create(name: "King's Ginger Liqueur", liqueur_type: "Ginger Liqueur" , description: "High-strength liqueur created by the careful maceration of ginger root, enlivened by the addition of citrus in the form of lemon oil. Specifically formulated in 1903 for King Edward VII. Contains an initial sweetness on the palate followed by a bite of ginger and lemon_drop_martini." , origin: "England", flavor: "Herbal, Fruity", abv: "41%", color: "Gold")
 kook = Liqueur.create(name: "Kook Soon Dang Makgeolli", liqueur_type: "Rice Wine", description: "It has a unique fermentation method for the brewing of rice wine. Unlike the regular methods of producing rice wine, Kooksoondang grinds raw rice with nuruk (Korean traditional fermentation starter) and brews them without steamin" , origin: "South Kora" , flavor: "Cheese", abv: "3-4%", color: "White")
 kurosawa = Liqueur.create(name: "Kurosawa Nigori Sake", liqueur_type: "Sake", description: "An alcoholic beverage made by fermenting rice that has been polished to remove the bran." , origin: "Japan" , flavor: "Varies", abv: "15-22%", color: "Light Amber")
 lager = Liqueur.create(name: "Lager", liqueur_type: "Beer", description: "Beer is brewed from cereal grains—most commonly from malted barley, though wheat, maize (corn), and rice are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. Most modern beer is brewed with hops, which add bitterness and other flavours and act as a natural preservative and stabilizing agent. Other flavouring agents such as gruit, herbs, or fruits may be included or used instead of hops. In commercial brewing, the natural carbonation effect is often removed during processing and replaced with forced carbonation." , origin: nil , flavor: "Varies", abv: "3-13%", color: "Varies")
@@ -958,7 +958,7 @@ champagne_cocktail = Recipe.create(name: 'Champagne cocktail')
 champagne_holiday = Recipe.create(name: 'Champagne Holiday Punch')
 channel = Recipe.create(name: 'Channel Orange')
 charleston = Recipe.create(name: 'Charleston Breakfast Coffee')
-cherry = Recipe.create(name: 'Cherry Revolution')
+cherry_revolution = Recipe.create(name: 'Cherry Revolution')
 chi = Recipe.create(name: 'Chi Chi Organico')
 chimayó = Recipe.create(name: 'Chimayó Cocktail')
 chocomole = Recipe.create(name: 'Chocomole')
@@ -968,7 +968,7 @@ cobra = Recipe.create(name: 'Cobra Verde')
 cobras = Recipe.create(name: "Cobra's Fang")
 coco = Recipe.create(name: 'Coco Batida')
 cocoa = Recipe.create(name: 'Cocoa Passion')
-coffee = Recipe.create(name: 'Coffee & Cigarettes')
+coffee_cigarettes = Recipe.create(name: 'Coffee & Cigarettes')
 cojito = Recipe.create(name: 'Cojito')
 conflict = Recipe.create(name: 'Conflict & Compromise')
 coquito = Recipe.create(name: 'Coquito')
@@ -1120,7 +1120,7 @@ last_minute = Recipe.create(name: 'Last-Minute Mulled Wine')
 latitude = Recipe.create(name: 'Latitude 29 Mai Tai')
 le = Recipe.create(name: 'Le Grand Louis')
 leeward = Recipe.create(name: 'Leeward Negroni')
-lemon = Recipe.create(name: 'Lemon Drop Martini')
+lemon_drop_martini = Recipe.create(name: 'Lemon Drop Martini')
 lemon_drop = Recipe.create(name: 'Lemon Drop')
 lights = Recipe.create(name: 'Lights Out Punch')
 lime = Recipe.create(name: 'Lime Rickey')
@@ -1450,7 +1450,7 @@ cbd_spritz.liquors << vodka
 champagne_cocktail.liquors << cognac
 champagne_holiday.liquors << genever
 charleston.liquors << high_wire
-cherry.liquors << vodka
+cherry_revolution.liquors << vodka
 chi.liquors << pineapple_square_one
 chimayó.liquors << tequila
 chocomole.liquors << reposado_tequila
@@ -1584,7 +1584,7 @@ last.liquors << gin
 last_minute.liquors << bourbon_or_brandy
 latitude.liquors << coruba_dark_rum
 leeward.liquors << slipsmith_gin
-lemon.liquors << vodka_citron
+lemon_drop_martini.liquors << vodka_citron
 lemon_drop.liquors << vodka
 lime.liquors << bourbon_rye_gin
 limoncello.liquors << whiskey
@@ -1888,7 +1888,7 @@ cbd_spritz.liquors_string << '1 fl oz of Vodka'
 champagne_cocktail.liquors_string << '0.34 fl oz of Cognac'
 champagne_holiday.liquors_string << '12 fl oz of Genever'
 charleston.liquors_string << '2 fl oz of High Wire New Southern Revival Sorghum Whiskey'
-cherry.liquors_string << '1.25 fl oz of Vodka'
+cherry_revolution.liquors_string << '1.25 fl oz of Vodka'
 chi.liquors_string << '2.5 fl oz of Pineapple-Infused Square One Organic Vodka'
 chimayó.liquors_string << '1.5 fl oz of Tequila'
 chocomole.liquors_string << '1.5 fl oz of Reposado Tequila'
@@ -2022,7 +2022,7 @@ last.liquors_string << '0.76 fl oz of Gin'
 last_minute.liquors_string << '2 fl oz of Bourbon or Brandy'
 latitude.liquors_string << '1 fl oz of Coruba Dark Jamaican Rum'
 leeward.liquors_string << '0.5 fl oz of Sipsmith VJOP Gin '
-lemon.liquors_string << '1.01 fl oz of Vodka Citron'
+lemon_drop_martini.liquors_string << '1.01 fl oz of Vodka Citron'
 lemon_drop.liquors_string << '2 fl oz of Vodka'
 lime.liquors_string << '2 fl oz of Bourbon, Rye, or Gin'
 limoncello.liquors_string << '2.5 fl oz of Whiskey'
@@ -2422,7 +2422,7 @@ cbd_dirty_martini.liqueurs << dry_vermouth
 cbd_spritz.liqueurs << aperol
 champagne_cocktail.liqueurs << champagne
 champagne_holiday.liqueurs << cointreau
-cherry.liqueurs << galliano
+cherry_revolution.liqueurs << galliano
 chimayó.liqueurs << crème_de_cassis
 cobras.liqueurs << falernum
 coffee.liqueurs << block_coffee
@@ -2499,7 +2499,7 @@ last.liqueurs << green_chartreuse
 last_minute.liqueurs << red_wine
 latitude.liqueurs << orange_curaçao
 leeward.liqueurs << coconut
-lemon.liqueurs << triple_sec
+lemon_drop_martini.liqueurs << triple_sec
 lemon_drop.liqueurs << triple_sec
 limoncello.liqueurs << limoncello
 lions.liqueurs << allspice
@@ -2737,7 +2737,7 @@ cbd_dirty_martini.liqueurs_string << '0.5 fl oz of Dry Vermouth'
 cbd_spritz.liqueurs_string << '1 fl oz of Aperol'
 champagne_cocktail.liqueurs_string << '3.04 fl oz of Champagne'
 champagne_holiday.liqueurs_string << '4 fl oz of Cointreau'
-cherry.liqueurs_string << '0.5 fl oz of Galliano'
+cherry_revolution.liqueurs_string << '0.5 fl oz of Galliano'
 chimayó.liqueurs_string << '0.25 fl oz of Crème de Cassis'
 cobras.liqueurs_string << '0.5 fl oz of Falernum'
 coffee.liqueurs_string << '1 fl oz of The Block Coffee Liqueur'
@@ -2814,7 +2814,7 @@ last.liqueurs_string << '0.76 fl oz of Green Chartreuse'
 last_minute.liqueurs_string << '0.5 fl oz of Red Wine'
 latitude.liqueurs_string << '0.5 fl oz of Orange Curaçao'
 leeward.liqueurs_string << '1 fl oz of Coconut Oil-Washed Campari'
-lemon.liqueurs_string << '0.68 fl oz of Triple Sec'
+lemon_drop_martini.liqueurs_string << '0.68 fl oz of Triple Sec'
 lemon_drop.liqueurs_string << '0.5 fl oz of Triple Sec'
 limoncello.liqueurs_string << '4 fl oz of Limoncello'
 lions.liqueurs_string << '0.5 fl oz of Allspice Dram'
@@ -3027,7 +3027,7 @@ cape.liqueurs << caperitif
 cbd_spritz.liqueurs << sparkling_wine
 champagne_holiday.liqueurs << champagne
 channel.liqueurs << campari
-cherry.liqueurs << don_cerasum
+cherry_revolution.liqueurs << don_cerasum
 chrysanthemum.liqueurs << bénédictine
 cobra.liqueurs << ancho_reyes
 cobras.liqueurs << herbsaint
@@ -3158,7 +3158,7 @@ cape.liqueurs_string << '1 fl oz of Caperitif Vermouth'
 cbd_spritz.liqueurs_string << '2 fl oz of Sparkling Wine'
 champagne_holiday.liqueurs_string << '8 fl oz of Champagne'
 channel.liqueurs_string << '0.5 fl oz of Campari'
-cherry.liqueurs_string << '0.25 fl oz of Don Ciccio & Figli Cerasum Aperitivo'
+cherry_revolution.liqueurs_string << '0.25 fl oz of Don Ciccio & Figli Cerasum Aperitivo'
 chrysanthemum.liqueurs_string << '1 fl oz of Bénédictine'
 cobra.liqueurs_string << '0.5 fl oz of Ancho Reyes Ancho Chile Liqueur'
 cobras.liqueurs_string << '1 dash of Herbsaint Liqueur'
@@ -3413,7 +3413,7 @@ champagne_cocktail.mixers << angostura_bitters
 champagne_holiday.mixers << lemon_juice
 channel.mixers << grapefruit_soda
 charleston.mixers << demerara_syrup
-cherry.mixers << orange_juice
+cherry_revolution.mixers << orange_juice
 chi.mixers << pineapple_purée
 chimayó.mixers << apple_cider
 clover.mixers << lemon_juice
@@ -3547,7 +3547,7 @@ last_minute.mixers << star_anise
 latitude.mixers << lime_juice
 le.mixers << orange_bitters
 leeward.mixers << pandan_cordial
-lemon.mixers << lemon_juice
+lemon_drop_martini.mixers << lemon_juice
 lemon_drop.mixers << simple_syrup
 lime.mixers << squeezed_lime
 limoncello.mixers << lemon_sorbet
@@ -3837,7 +3837,7 @@ champagne_cocktail.mixers_string << '2 dashes of Angostura Bitters'
 champagne_holiday.mixers_string << '6 fl oz of Lemon Juice'
 channel.mixers_string << '1 fl oz of Grapefruit Soda'
 charleston.mixers_string << '0.5 fl oz of Demerara Syrup'
-cherry.mixers_string << '2.75 fl oz of Orange Juice'
+cherry_revolution.mixers_string << '2.75 fl oz of Orange Juice'
 chi.mixers_string << '0.5 fl oz of Pineapple Purée'
 chimayó.mixers_string << '1 fl oz of Apple Cider'
 clover.mixers_string << '0.51 fl oz of Lemon Juice'
@@ -3971,7 +3971,7 @@ last_minute.mixers_string << '2 pods of Star Anise'
 latitude.mixers_string << '1 fl oz of Lime Juice'
 le.mixers_string << '1 dash of Orange Bitters'
 leeward.mixers_string << '0.75 fl oz of Pandan Cordial'
-lemon.mixers_string << '0.51 fl oz of Lemon Juice'
+lemon_drop_martini.mixers_string << '0.51 fl oz of Lemon Juice'
 lemon_drop.mixers_string << '1 fl oz of Simple Syrup'
 lime.mixers_string << '1 Squeezed Lime Half'
 limoncello.mixers_string << '1 pint of Lemon Sorbet'
@@ -5645,7 +5645,7 @@ champagne_cocktail.garnishes << orange
 champagne_holiday.garnishes << star_anise
 channel.garnishes << grapefruit
 charleston.garnishes << whipped_cream
-cherry.garnishes << orange
+cherry_revolution.garnishes << orange
 chimayó.garnishes << unpeeled_apple
 chocomole.garnishes << chile_powder
 chrysanthemum.garnishes << orange
@@ -5752,7 +5752,7 @@ landmaster.garnishes << celery
 last_minute.garnishes << lemon_or_orange
 latitude.garnishes << lime
 leeward.garnishes << pandan_leaf
-lemon.garnishes << lemon
+lemon_drop_martini.garnishes << lemon
 lemon_drop.garnishes << sugar_rim
 lions.garnishes << orange
 little.garnishes << strawberry
@@ -5991,7 +5991,7 @@ champagne_cocktail.garnishes_string << '1 slice of Orange'
 champagne_holiday.garnishes_string << '1 pod of Star Anise'
 channel.garnishes_string << '1 twist of Grapefruit'
 charleston.garnishes_string << 'Whipped Cream'
-cherry.garnishes_string << '1 wheel of Orange'
+cherry_revolution.garnishes_string << '1 wheel of Orange'
 chimayó.garnishes_string << '1 slice of Unpeeled Apple'
 chocomole.garnishes_string << '1 dash of Chile Powder'
 chrysanthemum.garnishes_string << '1 twist of Orange'
@@ -6098,7 +6098,7 @@ landmaster.garnishes_string << '3 leaves of Celery'
 last_minute.garnishes_string << '1 peel of Lemon or Orange'
 latitude.garnishes_string << '1 shell of Lime'
 leeward.garnishes_string << 'Pandan Leaf'
-lemon.garnishes_string << '1 slice of Lemon'
+lemon_drop_martini.garnishes_string << '1 slice of Lemon'
 lemon_drop.garnishes_string << 'Sugar Rim'
 lions.garnishes_string << '1 peel of Orange'
 little.garnishes_string << '1 Strawberry'
@@ -6299,7 +6299,7 @@ cbd_gin_tonic.garnishes << rosemary
 cbd_moscow_mule.garnishes << lime
 champagne_cocktail.garnishes << maraschino_cherry
 champagne_holiday.garnishes << pineapple
-cherry.garnishes << maraschino_cherry
+cherry_revolution.garnishes << maraschino_cherry
 chocomole.garnishes << corn_chip
 cobra.garnishes << thyme
 cobras.garnishes << mint
@@ -6454,7 +6454,7 @@ cbd_gin_tonic.garnishes_string << '1 sprig of Rosemary'
 cbd_moscow_mule.garnishes_string << '1 wedge of Lime'
 champagne_cocktail.garnishes_string << '1 Maraschino Cherry'
 champagne_holiday.garnishes_string << '1 slice of Pineapple'
-cherry.garnishes_string << '1 Maraschino Cherry'
+cherry_revolution.garnishes_string << '1 Maraschino Cherry'
 chocomole.garnishes_string << '1 Corn Chip'
 cobra.garnishes_string << '1 sprig of Thyme'
 cobras.garnishes_string << 'Mint'

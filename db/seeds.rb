@@ -1,4 +1,4 @@
-mixers << mint_mixer# This file should contain all the record creation needed to seed the database with its default values.
+# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup").
 #
 # Examples:
@@ -208,8 +208,8 @@ chinese_five_spice = Mixer.create(name: "Chinese Five-Spice Powder")
 chocolate_bitters = Mixer.create(name: "Chocolate Bitters")
 chocolate_ice = Mixer.create(name: "Chocolate Ice Cream")
 chocolate_mole = Mixer.create(name: "Chocolate Mole Bitters")
-chocolate_syrup = Mixer.create(name: "Chocolate Syrup")
-chocolate_syrup_mixer = Mixer.create(name: "Chocomole Mixture")
+chocolate_syrup_mixer = Mixer.create(name: "Chocolate Syrup")
+chocomole_mixture = Mixer.create(name: "Chocomole Mixture")
 chopped_pear = Mixer.create(name: "Chopped pear")
 chopped_pineapple = Mixer.create(name: "Chopped Pineapple")
 chopped_semisweet = Mixer.create(name: "Chopped Semisweet Chocolate")
@@ -219,7 +219,7 @@ cider = Mixer.create(name: "Cider")
 cinnamon_simple = Mixer.create(name: "Cinnamon Simple Syrup")
 cinnamon_vanilla = Mixer.create(name: "Cinnamon Vanilla Syrup")
 cinnamon_syrup = Mixer.create(name: "Cinnamon Syrup")
-cinnamon = Mixer.create(name: "Cinnamon")
+cinnamon_mixer = Mixer.create(name: "Cinnamon")
 citrus_oleo_saccharum = Mixer.create(name: "Citrus Oleo-Saccharum")
 citrus_syrup = Mixer.create(name: "Citrus Syrup")
 clamato_juice = Mixer.create(name: "Clamato Juice")
@@ -431,7 +431,7 @@ tartaric_acid = Mixer.create(name: "Tartaric Acid Solution")
 tea_syrup = Mixer.create(name: "Tea Syrup")
 thai_coconut = Mixer.create(name: "Thai Coconut Milk")
 thistle = Mixer.create(name: "Thistle")
-tom_and_jerry_mixer Mixer.create(name: "Tom & Jerry Batter")
+tom_and_jerry_mixer = Mixer.create(name: "Tom & Jerry Batter")
 tomato_juice = Mixer.create(name: "Tomato Juice")
 tonic_water = Mixer.create(name: "Tonic Water")
 unsalted_butter = Mixer.create(name: "Unsalted Butter")
@@ -3077,7 +3077,7 @@ longshoreman.liqueurs << punt
 m_g_and_t.liqueurs << carpano
 mad.liqueurs << domaine
 man_o_war.liqueurs << sweet_vermouth
-mantra.liqueurs << ginger_liqueur_infused_campari
+mantra.liqueurs << ginger_infused_campari
 martinez.liqueurs << maraschino
 mezcal_negroni.liqueurs << sweet_vermouth
 millionaire.liqueurs << absinthe
@@ -3279,7 +3279,7 @@ crimson.liqueurs << heering
 death_by_morning.liqueurs << coffee_liqueur
 flaming.liqueurs << beer
 high_seas.liqueurs << dolin_blanc
-hit.liqueurs << cream
+hit.liqueurs << cream_sherry
 moment.liqueurs << absinthe
 negroni_sbagliato.liqueurs << prosecco
 orgasm.liqueurs << baileys

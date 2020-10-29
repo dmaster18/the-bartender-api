@@ -1810,7 +1810,7 @@ apple_cranberry_moscow_mule.liquors_string << '2 fl oz of Vodka'
 apple_toddy.liquors_string << "2 fl oz of Bonded Applejack (Laird’s), Cognac or Bourbon"
 applejack.liquors_string << '2 fl oz of Laird’s Bonded Apple Brandy'
 apricot.liquors_string << '2 fl oz of Bourbon, Rye, or Scotch'
-aquavit.liquors_string << '2 fl oz of Aquavit'
+aquavit_buck.liquors_string << '2 fl oz of Aquavit'
 autumn.liquors_string << '1.5 fl oz of Louis Royer Force 53° VSOP Cognac'
 aviation.liquors_string << '1.52 fl oz of Gin'
 b.liquors_string << '1 fl oz of Cognac'

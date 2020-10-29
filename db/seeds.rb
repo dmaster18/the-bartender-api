@@ -4828,3 +4828,405 @@ wisconsin.mixers_string << 'Sugar'
 witches_brew.mixers_string << 'Simple Syrup'
 yerba.mixers_string << 'Agave Nectar'
 zombie.mixers_string << 'Donn’s Mix (2 parts Fresh Yellow Grapefruit, 1 part Cinnamon Syrup)'
+
+apple_toddy.mixers << sugar_
+applejack.mixers << maple_syrup
+aquavit.mixers << carrot_cordial
+barbados.mixers << angostura_bitters
+bear.mixers << honey_syrup
+bebbo.mixers << honey_syrup
+bees.mixers << honey_syrup
+bermuda.mixers << angostura_bitters
+big_red_sun.mixers << angostura_bitters
+black_betty.mixers << egg_white
+black_mole_margarita.mixers << black_cocoa_and_range_syrup
+bloody_caesar.mixers << tabasco_sauce
+bloody_casear.mixers << worcestershire_sauce
+bloody_maria.mixers << worcestershire_sauce
+bloody_mary.mixers << worcestershire_sauce
+blueberry.mixers << blueberries
+bootstitch.mixers << grapefruit_juice
+bordeaux.mixers << orange_bitters
+bourbon.mixers << chocolate_syrup
+bourbon_cider.mixers << apple_cider
+bourbon_old_fashioned.mixers << water
+bourbon_rosemary_punch.mixers << grapefruit_juice
+bourbon_strawberry.mixers << simple_syrup
+brandy_crusta.mixers << aromatic_bitters
+brandy_old_fashioned.mixers << angostura_bitters
+brandy_sour.mixers << carbonated_water
+brazilian.mixers << aromatic_bitters
+bulleit.mixers << strawberry
+café_ponche.mixers << cold_brew_coffee
+calvados.mixers << lemon_juice
+canchã¡nchara.mixers << soda_water
+canchanchara.mixers << honey
+cave.mixers << club_soda
+cbd_moscow_mule.mixers << ginger_beer
+champagne_holiday.mixers << old_fashioned
+charleston.mixers << heavy_cream
+chi.mixers << organic_heavy
+chocomole.mixers << agave_nectar
+clover.mixers << egg_white
+cobras.mixers << fassionola_syrup
+coco.mixers << simple_syrup
+cojito.mixers << mint
+conflict.mixers << jalapeño_pepper
+coquito.mixers << cream_of_coconut
+corpse_reviver_two_one_two.mixers << palm_sugar
+cotter.mixers << angostura_bitters
+cowboy.mixers << angostura_bitters
+crush.mixers << lime_juice
+cuban.mixers << guava_nectar
+cucumber_cleanse.mixers << ginger_syrup
+cucumber_lime.mixers << lemonade
+curiosity.mixers << chamomile_tea
+dark_side.mixers << angostura_bitters
+death_by_morning.mixers << angostura_bitters
+dons_gardenia_mix.mixers << cinnamon_syrup
+earl.mixers << egg_white
+eggnog.mixers << whole_milk
+emerald.mixers << brewed_dark_roast
+fernet.mixers << lime_juice
+figgy.mixers << orange_juice
+forest.mixers << seltzer
+francophile.mixers << water
+french_harvest.mixers << sparkling_cider
+frisky.mixers << angostura_bitters
+frohito.mixers << mint
+gin_fizz.mixers << soda_water
+ginger_fever_punch.mixers << grapefruit_juice
+golden_dew.mixers << honey_syrup
+golden_purl.mixers << orange_bitters
+green_beast.mixers << chilled_water
+green_isaac_special.mixers << angostura_bitters
+guinness.mixers << chocolate_syrup
+hey_gourdgeous.mixers << water
+high_tide.mixers << tonic_water
+holiday.mixers << sugar_
+horn.mixers << egg_white
+hot_blooded.mixers << simple_syrup
+hot_toddy.mixers << boiling_water
+hurricane.mixers << simple_syrup
+i_left_my_heart.mixers << chopped_unsweetened
+illegal.mixers << egg_white
+infused.mixers << club_soda
+irish_affrogato.mixers << coffee_ice
+irish_buck.mixers << ginger_ale
+irish_coffee.mixers << brown_sugar
+irish_raktajino.mixers << whole_milk
+island.mixers << pineapple_shrub
+jack_o_lantern.mixers << club_soda
+japanese.mixers << lemon_juice
+john.mixers << carbonated_water
+jungle.mixers << lime_juice
+kanar.mixers << orange_bitters
+kombucha.mixers << simple_syrup
+landmaster.mixers << black_walnut
+latitude.mixers << simple_syrup
+limoncello.mixers << lemonade
+lions.mixers << simple_syrup
+london_toddy.mixers << hot_water
+long.mixers << cola
+lounge.mixers << simple_syrup
+macuá.mixers << sugar_
+mad.mixers << lime_juice
+mai.mixers << simple_syrup
+mango.mixers << simple_syrup
+master.mixers << ground_cayenne
+mexican.mixers << quartered_orange
+mezcal_mule.mixers << agave_nectar
+miami.mixers << simple_syrup
+midori.mixers << soda_water
+millionaire.mixers << egg_white
+mint.mixers << mint
+mojito.mixers << mint
+moment.mixers << yerba_mate
+mule.mixers << ginger_beer
+mutual.mixers << demerara_syrup
+my.mixers << thai_coconut
+negroni_sorbet.mixers << water
+northern.mixers << angostura_bitters
+nui.mixers << cinnamon_syrup
+ny_sour.mixers << egg_white
+oaks.mixers << cranberry_juice
+oaxacan.mixers << chocolate_mole
+old_cuban.mixers << angostura_bitters
+old_fashioned.mixers << water
+one_two.mixers << citrus_oleo_saccharum
+orange_sherbet.mixers << orange_sherbet
+painkiller.mixers << cream_of_coconut
+paloma.mixers << pink_grapefruit_soda
+pearl.mixers << dons_gardenia
+pegu.mixers << orange_bitters
+penicillin.mixers << ginger
+pho_king.mixers << lime_juice
+pina_colada.mixers << lime_juice
+pisco.mixers << egg_white
+pomelomosa.mixers << grapefruit_juice
+ponche.mixers << whole_cloves
+porchlight.mixers << pebble_ice
+porn.mixers << vanilla_syrup
+port.mixers << sprite
+pot.mixers << egg_white
+pumpkin_toddy.mixers << pumpkin_puree
+que.mixers << tonic_water
+rainbow.mixers << simple_syrup
+ramos.mixers << simple_syrup
+reggae.mixers << lime_juice
+ring.mixers << agave_nectar
+roman.mixers << lime_juice
+rose_colored_glass.mixers << simple_syrup
+royal.mixers << lemonade
+ruby.mixers << grenadine
+rum_old_fashioned.mixers << angostura_bitters
+rum_punch.mixers << lime_juice
+saint.mixers << frankincense_essential
+samarian.mixers << grapefruit_juice
+sangria.mixers << cored_apple
+sangrita.mixers << grapefruit_juice
+saturn.mixers << orgeat
+scofflaw.mixers << orange_bitters
+sea_breeze_cooler.mixers << soda_water
+singapore.mixers << lime_juice
+singapura.mixers << orange_juice
+smoked.mixers << hot_water
+southside.mixers << mint
+spiced_eggnog.mixers << whole_milk
+spicy_mint.mixers << salt
+strawberry_daiquiri.mixers << large_strawberries
+strawberry_pisco_sour.mixers << egg_white
+suffering.mixers << ginger_beer
+switchel.mixers << sparkling_water
+tart.mixers << orange_bitters
+tasman.mixers << demerara_syrup
+tea_for_two.mixers << lemon_juice
+tequila_mockingbird.mixers << watermelon
+thai.mixers << orange_bitters
+the_dead_rabbit.mixers << heavy_cream
+the_modern.mixers << lemon_juice
+timberpoint.mixers << club_soda
+tom_and_jerry.mixers << whole_milk
+tom_collins.mixers << carbonated_water
+tom_yum.mixers << lime_juice
+trinidad.mixers << lemon_juice
+uncle.mixers << whole_milk
+upper.mixers << angostura_bitters
+uss.mixers << strong_brewed_black
+vampiro.mixers << lime_juice
+ve_n_to.mixers << chamomile_cordial
+vida.mixers << simple_syrup
+ward.mixers << grenadine
+waterfront.mixers << strawberries
+watermelon.mixers << club_soda
+watermelon_blackberry.mixers << limeade
+whiskey_smashed.mixers << lemon_juice
+white_summer.mixers << celery_bitters
+wisconsin.mixers << angostura_bitters
+witches_brew.mixers << beet_juice
+yerba.mixers << ginger_beer
+zombie.mixers << grenadine
+
+absinthe_suisse.mixers_string << '0.75 fl oz of Heavy Cream'
+alligator.mixers_string << '1 Whole Egg'
+amaretto_sour.mixers_string << '0.5 fl oz of Egg White'
+another.mixers_string << '0.5 tsp of Maple Syrup'
+aperitivo.mixers_string << '1 pinch of Maldon Salt'
+apple_cranberry_moscow_mule.mixers_string << 'Top up with Ginger Beer'
+apple_toddy.mixers_string << '1 tsp of Sugar'
+applejack.mixers_string << '0.5 fl oz of Maple Syrup'
+aquavit.mixers_string << '0.38 fl oz of Carrot Cordial'
+barbados.mixers_string << '1 dash of Angostura Bitters'
+bear.mixers_string << '0.5 fl oz of Honey Syrup'
+bebbo.mixers_string << '1 fl oz of Honey Syrup'
+bees.mixers_string << '2 tsp of Honey Syrup'
+bermuda.mixers_string << '6 dashes of Angostura Bitters'
+big_red_sun.mixers_string << '2 dashes of Angostura Bitters'
+black_betty.mixers_string << '1 Egg White'
+black_mole_margarita.mixers_string << '0.5 fl oz of Black-Cocoa-And-Range Syrup'
+bloody_caesar.mixers_string << '2 dashes of Tabasco Sauce'
+bloody_casear.mixers_string << '4 dashes of Worcestershire Sauce'
+bloody_maria.mixers_string << '4 dashes of Worcestershire Sauce'
+bloody_mary.mixers_string << '3 dashes of Worcestershire Sauce'
+blueberry.mixers_string << '4 Blueberries'
+bootstitch.mixers_string << '1.5 fl oz of Grapefruit Juice'
+bordeaux.mixers_string << '5 dashes of Orange Bitters'
+bourbon.mixers_string << '6 tbsp of Chocolate Syrup'
+bourbon_cider.mixers_string << '1 fl oz of Apple Cider'
+bourbon_old_fashioned.mixers_string << '1 tsp of Water'
+bourbon_rosemary_punch.mixers_string << '6 fl oz of Grapefruit Juice'
+bourbon_strawberry.mixers_string << '0.75 fl oz of Simple Syrup'
+brandy_crusta.mixers_string << '2 dashes of Aromatic Bitters'
+brandy_old_fashioned.mixers_string << '3 dashes of Angostura Bitters'
+brandy_sour.mixers_string << 'Top up with Carbonated Water'
+brazilian.mixers_string << '2 dashes of Aromatic Bitters'
+bulleit.mixers_string << '1 Strawberry'
+café_ponche.mixers_string << '8 fl oz of Cold-Brew Coffee'
+calvados.mixers_string << '1 fl oz of Lemon Juice'
+canchã¡nchara.mixers_string << '1 splash of Soda Water'
+canchanchara.mixers_string << '0.51 fl oz of Honey'
+cave.mixers_string << '1 fl oz of Club Soda'
+cbd_moscow_mule.mixers_string << 'Top up with Ginger Beer'
+champagne_holiday.mixers_string << '8 dashes of Old Fashioned Bitters'
+charleston.mixers_string << '8 fl oz of Heavy Cream'
+chi.mixers_string << '1 fl oz of Organic Heavy Cream'
+chocomole.mixers_string << '0.5 fl oz of Agave Nectar'
+clover.mixers_string << '1 Egg White'
+cobras.mixers_string << '0.25 fl oz of Fassionola Syrup'
+coco.mixers_string << '0.5 fl oz of Simple Syrup'
+cojito.mixers_string << '1 sprig of Mint'
+conflict.mixers_string << '2 slices of Jalapeño Pepper'
+coquito.mixers_string << '24 fl oz of Cream of Coconut'
+corpse_reviver_two_one_two.mixers_string << '0.5 fl oz of Palm Sugar Syrup'
+cotter.mixers_string << '4 dashes of Angostura Bitters'
+cowboy.mixers_string << '2 dashes of Angostura Bitters'
+crush.mixers_string << '0.75 fl oz of Lime Juice'
+cuban.mixers_string << '1.35 fl oz of Guava Nectar'
+cucumber_cleanse.mixers_string << '0.25 fl oz of Ginger Syrup'
+cucumber_lime.mixers_string << '1 fl oz of Lemonade'
+curiosity.mixers_string << '3 fl oz of Chamomile Tea'
+dark_side.mixers_string << '13 dashes of Angostura Bitters'
+death_by_morning.mixers_string << '1 dash of Angostura Bitters'
+dons_gardenia_mix.mixers_string << '1 tsp of Cinnamon Syrup'
+earl.mixers_string << '1 Egg White'
+eggnog.mixers_string << '10 fl oz of Whole Milk'
+emerald.mixers_string << '8 fl oz of Brewed Dark-Roast Coffee'
+fernet.mixers_string << '3 fl oz of Lime Juice'
+figgy.mixers_string << '0.5 fl oz of Orange Juice'
+forest.mixers_string << 'Top up with Seltzer'
+francophile.mixers_string << '3 fl oz of Water'
+french_harvest.mixers_string << 'Top up with Sparkling Cider'
+frisky.mixers_string << '2 dashes of Angostura Bitters'
+frohito.mixers_string << '1 fl oz of Mint'
+gin_fizz.mixers_string << '1 splash of Soda Water'
+ginger_fever_punch.mixers_string << '0.5 fl oz of Grapefruit Juice'
+golden_dew.mixers_string << '0.5 barspoon of Honey Syrup'
+golden_purl.mixers_string << '2 dashes of Orange Bitters'
+green_beast.mixers_string << '4 fl oz of Chilled Water'
+green_isaac_special.mixers_string << '3 dashes of Angostura Bitters'
+guinness.mixers_string << 'Chocolate Syrup'
+hey_gourdgeous.mixers_string << '8 fl oz of Water'
+high_tide.mixers_string << 'Top up with Tonic Water'
+holiday.mixers_string << '1 cube of Sugar'
+horn.mixers_string << '1 Egg White'
+hot_blooded.mixers_string << '0.5 fl oz of Simple Syrup'
+hot_toddy.mixers_string << 'Top up with Boiling Water'
+hurricane.mixers_string << '0.5 fl oz of Simple Syrup'
+i_left_my_heart.mixers_string << '2 fl oz of Chopped Unsweetened Chocolate'
+illegal.mixers_string << '3 drops of Egg White'
+infused.mixers_string << 'Top up with Club Soda'
+irish_affrogato.mixers_string << '1 scoop of Coffee Ice Cream'
+irish_buck.mixers_string << '2 fl oz of Ginger Ale'
+irish_coffee.mixers_string << '1 tsp of Brown Sugar'
+irish_raktajino.mixers_string << '2 fl oz of Whole Milk'
+island.mixers_string << '1 fl oz of Pineapple Shrub'
+jack_o_lantern.mixers_string << '3 fl oz of Club Soda'
+japanese.mixers_string << '0.25 fl oz of Lemon Juice'
+john.mixers_string << '2.03 fl oz of Carbonated Water'
+jungle.mixers_string << '0.5 fl oz of Lime Juice'
+kanar.mixers_string << '4 dashes of Orange Bitters'
+kombucha.mixers_string << '0.5 fl oz of Simple Syrup'
+landmaster.mixers_string << '1 dash of Black Walnut Bitters'
+latitude.mixers_string << '0.25 fl oz of Simple Syrup'
+limoncello.mixers_string << '4 fl oz of Lemonade'
+lions.mixers_string << '0.5 fl oz of Simple Syrup'
+london_toddy.mixers_string << '20 fl oz of Hot Water'
+long.mixers_string << 'Top up with Cola'
+lounge.mixers_string << '0.5 fl oz of Simple Syrup'
+macuá.mixers_string << 'Sugar'
+mad.mixers_string << '0.75 fl oz of Lime Juice'
+mai.mixers_string << '0.25 fl oz of Simple Syrup'
+mango.mixers_string << '0.5 fl oz of Simple Syrup'
+master.mixers_string << '1 dash of Ground Cayenne Pepper'
+mexican.mixers_string << '1 Quartered Orange'
+mezcal_mule.mixers_string << '0.5 fl oz of Agave Nectar'
+miami.mixers_string << '0.5 fl oz of Simple Syrup'
+midori.mixers_string << 'Top up with Soda Water'
+millionaire.mixers_string << '0.5 fl oz of Egg White'
+mint.mixers_string << '4 leaves of Mint'
+mojito.mixers_string << '6 sprigs of Mint'
+moment.mixers_string << '2 grams of Yerba Mate Tea'
+mule.mixers_string << 'Top up with Ginger Beer'
+mutual.mixers_string << '0.25 fl oz of Demerara Syrup'
+my.mixers_string << '0.5 fl oz of Thai Coconut Milk'
+negroni_sorbet.mixers_string << '8 fl oz of Water'
+northern.mixers_string << '2 dashes of Angostura Bitters'
+nui.mixers_string << '0.25 fl oz of Cinnamon Syrup'
+ny_sour.mixers_string << '3 drops of Egg White'
+oaks.mixers_string << '3 fl oz of Cranberry Juice'
+oaxacan.mixers_string << '15 drops of Chocolate Mole Bitters'
+old_cuban.mixers_string << '2 dashes of Angostura Bitters'
+old_fashioned.mixers_string << '3 dashes of Water'
+one_two.mixers_string << '0.5 fl oz of Citrus Oleo-Saccharum'
+orange_sherbet.mixers_string << '1.5 quarts of Orange Sherbet'
+painkiller.mixers_string << '1 fl oz of Cream of Coconut'
+paloma.mixers_string << '3.38 fl oz of Pink Grapefruit Soda'
+pearl.mixers_string << "0.5 fl oz of Don's Gardenia mix"
+pegu.mixers_string << '1 dash of Orange Bitters'
+penicillin.mixers_string << '3 slices of Ginger'
+pho_king.mixers_string << '0.25 fl oz of Lime Juice'
+pina_colada.mixers_string << '0.5 fl oz of Lime Juice'
+pisco.mixers_string << '1 Egg White'
+pomelomosa.mixers_string << '2 fl oz of Grapefruit Juice'
+ponche.mixers_string << '5 fl oz of Whole Cloves'
+porchlight.mixers_string << '2.5 fl oz of Pebble Ice'
+porn.mixers_string << '0.5 fl oz of Vanilla Syrup'
+port.mixers_string << '12 fl oz of Sprite'
+pot.mixers_string << '1 Egg White'
+pumpkin_toddy.mixers_string << '1 tsp of Pumpkin Puree'
+que.mixers_string << 'Top up with Tonic Water'
+rainbow.mixers_string << '3 fl oz of Simple Syrup'
+ramos.mixers_string << '1.01 fl oz of Simple Syrup'
+reggae.mixers_string << '0.5 fl oz of Lime Juice'
+ring.mixers_string << '0.25 fl oz of Agave Nectar'
+roman.mixers_string << '0.75 fl oz of Lime Juice'
+rose_colored_glass.mixers_string << '1 fl oz of Simple Syrup'
+royal.mixers_string << 'Top up with Lemonade'
+ruby.mixers_string << '1 splash of Grenadine'
+rum_old_fashioned.mixers_string << '2 dashes of Angostura Bitters'
+rum_punch.mixers_string << '0.25 fl oz of Lime Juice'
+saint.mixers_string << '1 drop of Frankincense Essential Oil '
+samarian.mixers_string << '0.75 fl oz of Grapefruit Juice'
+sangria.mixers_string << '1 Cored and Diced Apple'
+sangrita.mixers_string << '6 fl oz of Grapefruit Juice'
+saturn.mixers_string << '0.25 fl oz of Orgeat'
+scofflaw.mixers_string << '1 dash of Orange Bitters'
+sea_breeze_cooler.mixers_string << 'Top up with Soda Water'
+singapore.mixers_string << '0.51 fl oz of Lime Juice'
+singapura.mixers_string << '0.5 fl oz of Orange Juice'
+smoked.mixers_string << '3 fl oz of Hot Water'
+southside.mixers_string << '6 leaves of Mint'
+spiced_eggnog.mixers_string << '6 fl oz of Whole Milk'
+spicy_mint.mixers_string << '1 pinch of Salt'
+strawberry_daiquiri.mixers_string << '5  of Large Strawberries'
+strawberry_pisco_sour.mixers_string << '1 Egg White'
+suffering.mixers_string << 'Top up with Ginger Beer'
+switchel.mixers_string << '2 fl oz of Sparkling Water'
+tart.mixers_string << '2 dashes of Orange Bitters'
+tasman.mixers_string << '1 fl oz of Demerara Syrup'
+tea_for_two.mixers_string << '4 fl oz of Lemon Juice'
+tequila_mockingbird.mixers_string << '3 cubes of Watermelon'
+thai.mixers_string << '1 dash of Orange Bitters'
+the_dead_rabbit.mixers_string << 'Heavy Cream'
+the_modern.mixers_string << '1.5 tsp of Lemon Juice'
+timberpoint.mixers_string << 'Top up with Club Soda'
+tom_and_jerry.mixers_string << 'Top up with Whole Milk'
+tom_collins.mixers_string << '2.03 fl oz of Carbonated Water'
+tom_yum.mixers_string << '1 fl oz of Lime Juice'
+trinidad.mixers_string << '0.76 fl oz of Lemon Juice'
+uncle.mixers_string << '32 fl oz of Whole Milk'
+upper.mixers_string << '1 dash of Angostura Bitters'
+uss.mixers_string << '16 fl oz of Strong-Brewed Black Tea'
+vampiro.mixers_string << '0.34 fl oz of Lime Juice'
+ve_n_to.mixers_string << '0.51 fl oz of Chamomile Cordial'
+vida.mixers_string << '0.5 fl oz of Simple Syrup'
+ward.mixers_string << '2 tsp of Grenadine'
+waterfront.mixers_string << '2 Strawberries'
+watermelon.mixers_string << '16 fl oz of Club Soda'
+watermelon_blackberry.mixers_string << '4 fl oz of Limeade'
+whiskey_smashed.mixers_string << '6 fl oz of Lemon Juice'
+white_summer.mixers_string << '3 dashes of Celery Bitters'
+wisconsin.mixers_string << '3 dashes of Angostura Bitters'
+witches_brew.mixers_string << '0.5 fl oz of Beet Juice'
+yerba.mixers_string << 'Top up with Ginger Beer'
+zombie.mixers_string << '1 tsp of Grenadine'

@@ -6568,3 +6568,117 @@ whiskey_sour.garnishes_string << 'Half Orange Slice'
 winter.garnishes_string << '1 Clove-Studded Lemon'
 wisconsin.garnishes_string << '2 Maraschino Cherries'
 yerba.garnishes_string << '1 wheel of Lime'
+
+beet.garnishes << mint
+bloody_caesar.garnishes << celery
+bloody_maria.garnishes << lemon
+blue_lagoon.garnishes << maraschino_cherry
+bourbon_strawberry.garnishes << strawberries
+candy.garnishes << whole_candy_cane
+cbd_dirty_martini.garnishes << cracked_pepper
+champagne_holiday.garnishes << grated_nutmeg
+cobras.garnishes << lime
+coffee.garnishes << cocoa
+ginger_fever_punch.garnishes << rosemary
+heated.garnishes << cinnamon
+hit.garnishes << star_anise
+i_left_my_heart.garnishes << cocoa_powder
+jack_o_lantern.garnishes << cinnamon
+m_g_and_t.garnishes << star_anise
+malibu.garnishes << cinnamon
+mezcal_mule.garnishes << chile_powder
+my.garnishes << pineapple
+night.garnishes << orange
+northern.garnishes << mint
+pearl.garnishes << pineapple
+pimms.garnishes << strawberry
+rainbow.garnishes << lime
+smoked.garnishes << grated_nutmeg
+spanish.garnishes << thyme
+sparkling_rose.garnishes << rose_salt
+sparkling_watermelon.garnishes << watermelon
+spcity_margarita.garnishes << lime
+summerthyme.garnishes << orange
+thai.garnishes << lemon
+tom_and_jerry.garnishes << allspice
+tom_yum.garnishes << chopped_lemongrass
+vida.garnishes << cilantro
+
+beet.garnishes_string << '1 sprig of Mint'
+bloody_caesar.garnishes_string << '1 stalk of Celery'
+bloody_maria.garnishes_string << '1 wedge of Lemon'
+blue_lagoon.garnishes_string << '1 Maraschino Cherry'
+bourbon_strawberry.garnishes_string << 'Strawberries'
+candy.garnishes_string << '1 Whole Candy Cane'
+cbd_dirty_martini.garnishes_string << '1 pinch of Cracked Pepper'
+champagne_holiday.garnishes_string << 'Grated Nutmeg'
+cobras.garnishes_string << '1 wheel of Lime'
+coffee.garnishes_string << 'Cocoa Nibs'
+ginger_fever_punch.garnishes_string << '1 sprig of Rosemary'
+heated.garnishes_string << '1 stick of Cinnamon'
+hit.garnishes_string << 'Star Anise'
+i_left_my_heart.garnishes_string << '1 pinch of Cocoa Powder'
+jack_o_lantern.garnishes_string << '1 stick of Cinnamon'
+m_g_and_t.garnishes_string << '4 pods of Star Anise'
+malibu.garnishes_string << 'Cinnamon'
+mezcal_mule.garnishes_string << '1 pinch of Chile Powder'
+my.garnishes_string << '1 leaf of Pineapple'
+night.garnishes_string << '1 twist of Orange'
+northern.garnishes_string << '1 sprig of Mint'
+pearl.garnishes_string << '1 leaf of Pineapple'
+pimms.garnishes_string << '1 Strawberry'
+rainbow.garnishes_string << '3 slices of Lime'
+smoked.garnishes_string << 'Grated Nutmeg'
+spanish.garnishes_string << 'Thyme'
+sparkling_rose.garnishes_string << 'Rose Salt'
+sparkling_watermelon.garnishes_string << '1 wedge of Watermelon'
+spcity_margarita.garnishes_string << '1 wedge of Lime'
+summerthyme.garnishes_string << '1 wheel of Orange'
+thai.garnishes_string << '1 peel of Lemon'
+tom_and_jerry.garnishes_string << 'Allspice'
+tom_yum.garnishes_string << '1 stalk of Chopped Lemongrass'
+vida.garnishes_string << '1 sprig of Cilantro'
+
+beet.garnishes << lemon
+bloody_maria.garnishes << cucumber
+jack_o_lantern.garnishes << pumpkin
+pimms.garnishes << lemon
+sparkling_watermelon.garnishes << lime
+summerthyme.garnishes << thyme
+thai.garnishes << orange
+tom_yum.garnishes << red_pepper_flakes
+vida.garnishes << jalapeño
+
+beet.garnishes_string << '1 twist of Lemon'
+bloody_maria.garnishes_string << '1 spear of Cucumber'
+jack_o_lantern.garnishes_string << '5 seeds of Pumpkin'
+pimms.garnishes_string << '1 wheel of Lemon'
+sparkling_watermelon.garnishes_string << '1 wheel of Lime'
+summerthyme.garnishes_string << '1 sprig of Thyme'
+thai.garnishes_string << '1 peel of Orange'
+tom_yum.garnishes_string << 'Red Pepper Flakes'
+vida.garnishes_string << '1 round of Jalapeño'
+
+bloody_maria.garnishes << sweet_pepper
+pimms.garnishes << orange
+tom_yum.garnishes << makrut_lime_leaf
+
+bloody_maria.garnishes_string << 'Sweet Pepper'
+pimms.garnishes_string << 'Orange'
+tom_yum.garnishes_string << 'Makrut Lime Leaf'
+
+bloody_maria.garnishes << jalapeño_pepper
+tom_yum.garnishes << sea_salt
+
+bloody_maria.garnishes_string << '3 Slices of Jalapeño Pepper'
+tom_yum.garnishes_string << '1 Pinch of Sea Salt'
+
+bloody_maria.garnishes << queso_fresco
+tom_yum.garnishes << lime
+
+bloody_maria.garnishes_string << 'Queso Fresco'
+tom_yum.garnishes_string << '1 Wheel of Lime'
+
+tom_yum.garnishes << red_hot_chile
+
+tom_yum.liquors << '1 Slice of Red Hot Chile Pepper'

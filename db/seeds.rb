@@ -1458,7 +1458,7 @@ clover.liquors << gin
 cobras.liquors << dark_jamaican_rum
 coco.liquors << leblon_cachaça
 cocoa.liquors << don_julio
-coffee.liquors << block_autumn_gin
+coffee_cigarettes.liquors << block_autumn_gin
 cojito.liquors << white
 conflict.liquors << tequila_ocho
 coquito.liquors << white
@@ -1896,7 +1896,7 @@ clover.liquors_string << '1.52 fl oz of Gin'
 cobras.liquors_string << '0.5 fl oz of Dark Jamaican Rum'
 coco.liquors_string << '2 fl oz of Leblon Cachaça '
 cocoa.liquors_string << '1 fl oz of Don Julio Añejo Tequila'
-coffee.liquors_string << '1.5 fl oz of The Block Autumn Gin'
+coffee_cigarettes.liquors_string << '1.5 fl oz of The Block Autumn Gin'
 cojito.liquors_string << '0.51 fl oz of White Rum'
 conflict.liquors_string << '1.5 fl oz of Tequila Ocho plata'
 coquito.liquors_string << '25.26 fl oz of White Rum'
@@ -2425,7 +2425,7 @@ champagne_holiday.liqueurs << cointreau
 cherry_revolution.liqueurs << galliano
 chimayó.liqueurs << crème_de_cassis
 cobras.liqueurs << falernum
-coffee.liqueurs << block_coffee
+coffee_cigarettes.liqueurs << block_coffee
 conflict.liqueurs << midori
 corpose_reviver_one.liqueurs << sweet_vermouth
 corpose_reviver_two.liqueurs << cointreau
@@ -2740,7 +2740,7 @@ champagne_holiday.liqueurs_string << '4 fl oz of Cointreau'
 cherry_revolution.liqueurs_string << '0.5 fl oz of Galliano'
 chimayó.liqueurs_string << '0.25 fl oz of Crème de Cassis'
 cobras.liqueurs_string << '0.5 fl oz of Falernum'
-coffee.liqueurs_string << '1 fl oz of The Block Coffee Liqueur'
+coffee_cigarettes.liqueurs_string << '1 fl oz of The Block Coffee Liqueur'
 conflict.liqueurs_string << '0.75 fl oz of Midori'
 corpose_reviver_one.liqueurs_string << '0.5 fl oz of Sweet Vermouth'
 corpose_reviver_two.liqueurs_string << '1.01 fl oz of Cointreau'
@@ -3421,7 +3421,7 @@ cobra.mixers << lemon_juice
 cobras.mixers << lime_juice
 coco.mixers << coconut_cream
 cocoa.mixers << unsweetened_passion
-coffee.mixers << q_tonic
+coffee_cigarettes.mixers << q_tonic
 cojito.mixers << lime_juice
 conflict.mixers << lime_juice
 coquito.mixers << sweetened_condensed
@@ -3845,7 +3845,7 @@ cobra.mixers_string << '0.5 fl oz of Lemon Juice'
 cobras.mixers_string << '0.5 fl oz of Lime Juice'
 coco.mixers_string << '2 fl oz of Coconut Cream'
 cocoa.mixers_string << '0.25 fl oz of Unsweetened Passion Fruit Purée'
-coffee.mixers_string << '5 fl oz of Q Tonic Water'
+coffee_cigarettes.mixers_string << '5 fl oz of Q Tonic Water'
 cojito.mixers_string << '0.17 fl oz of Lime Juice'
 conflict.mixers_string << '0.75 fl oz of Lime Juice'
 coquito.mixers_string << '56 fl oz of Sweetened Condensed Milk'
@@ -6303,7 +6303,7 @@ cherry_revolution.garnishes << maraschino_cherry
 chocomole.garnishes << corn_chip
 cobra.garnishes << thyme
 cobras.garnishes << mint
-coffee.garnishes << coffee
+coffee_cigarettes.garnishes << coffee
 cowboy.garnishes << lemon
 crush.garnishes << orange
 day_at_the_crawfish.garnishes << blackberries
@@ -6458,7 +6458,7 @@ cherry_revolution.garnishes_string << '1 Maraschino Cherry'
 chocomole.garnishes_string << '1 Corn Chip'
 cobra.garnishes_string << '1 sprig of Thyme'
 cobras.garnishes_string << 'Mint'
-coffee.garnishes_string << 'Coffee'
+coffee_cigarettes.garnishes_string << 'Coffee'
 cowboy.garnishes_string << '1 peel of Lemon'
 crush.garnishes_string << '1 Orange Wedge'
 day_at_the_crawfish.garnishes_string << '2 Blackberries'
@@ -6579,7 +6579,7 @@ candy.garnishes << whole_candy_cane
 cbd_dirty_martini.garnishes << cracked_pepper
 champagne_holiday.garnishes << grated_nutmeg
 cobras.garnishes << lime
-coffee.garnishes << cocoa
+coffee_cigarettes.garnishes << cocoa
 ginger_fever_punch.garnishes << rosemary
 heated.garnishes << cinnamon
 hit.garnishes << star_anise
@@ -6614,7 +6614,7 @@ candy.garnishes_string << '1 Whole Candy Cane'
 cbd_dirty_martini.garnishes_string << '1 pinch of Cracked Pepper'
 champagne_holiday.garnishes_string << 'Grated Nutmeg'
 cobras.garnishes_string << '1 wheel of Lime'
-coffee.garnishes_string << 'Cocoa Nibs'
+coffee_cigarettes.garnishes_string << 'Cocoa Nibs'
 ginger_fever_punch.garnishes_string << '1 sprig of Rosemary'
 heated.garnishes_string << '1 stick of Cinnamon'
 hit.garnishes_string << 'Star Anise'

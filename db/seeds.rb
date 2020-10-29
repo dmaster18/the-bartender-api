@@ -2997,3 +2997,265 @@ top.liqueurs_string << '2 fl oz of Jailbreak Feed the Monkey Hefeweizen'
 ve_n_to.liqueurs_string << '1.52 fl oz of White Smooth Grappa'
 waterfront.liqueurs_string << '1.5 fl oz of Jägermeister'
 watermelon.liqueurs_string << '16 fl oz of White Wine'
+
+a_la_louisiane.liqueurs << bénédictine
+absinthe_suisse.liqueurs << crème_de_menthe
+alabama.liqueurs << amaretto
+amaretto_french.liqueurs << sparkling_wine
+americano.liqueurs << red_vermouth
+another.liqueurs << punt
+aperitivo.liqueurs << lillet_blanc
+aviation.liqueurs << crème_de_violette
+b_52.liqueurs << baileys
+bagrationi.liqueurs << campari
+bamboo.liqueurs << dry_sherry
+barracuda.liqueurs << prosecco
+bicicletta.liqueurs << campari
+bijou.liqueurs << green_chartreuse
+bitter.liqueurs << white_cacao
+black_velvet.liqueurs << guinness
+blood.liqueurs << heering
+blow.liqueurs << irish_cream
+bobby.liqueurs << bénédictine
+boulevardier.liqueurs << campari
+bourbon_rosemary_punch.liqueurs << sparkling_wine
+brandy_crusta.liqueurs << curaçao
+bronx.liqueurs << dry_vermouth
+candy.liqueurs << sparkling_wine
+cape.liqueurs << caperitif
+cbd_spritz.liqueurs << sparkling_wine
+champagne_holiday.liqueurs << champagne
+channel.liqueurs << campari
+cherry.liqueurs << don_cerasum
+chrysanthemum.liqueurs << bénédictine
+cobra.liqueurs << ancho_reyes
+cobras.liqueurs << herbsaint
+cocoa.liqueurs << champagne
+corpose_reviver_two.liqueurs << lillet_blanc
+crimson.liqueurs << punt
+crush.liqueurs << falernum
+curiosity.liqueurs << macvin
+death_by_morning.liqueurs << branca
+death_in_afternoon.liqueurs << champagne
+drunk.liqueurs << cynar
+el_presidente.liqueurs << dry_vermouth
+embarcadero.liqueurs << gentian
+fifty_fifty_birthday.liqueurs << quintinye
+flaming.liqueurs << amaretto
+forbidden_apple.liqueurs << champagne
+frosé.liqueurs << rose
+golden__dream.liqueurs << triple_sec
+golden_cadillac.liqueurs << white_cacao
+golden_gate_spritz.liqueurs << sparkling_wine
+grasshopper.liqueurs << white_cacao
+grave.liqueurs << grand_marnier
+great.liqueurs << pumpkin
+greenpoint.liqueurs << sweet_vermouth
+guinness.liqueurs << guinness
+hanky.liqueurs << fernet
+high_seas.liqueurs << dry_vermouth
+hit.liqueurs << townshend
+holiday.liqueurs << elderflower
+hot_shot.liqueurs << galliano
+illegal.liqueurs << maraschino
+irhsih_shot.liqueurs << guinness
+irish_car_bomb.liqueurs << guinness
+killer.liqueurs << bénédictine
+kir.liqueurs << crème_de_cassis
+kir_royale.liqueurs << crème_de_cassis
+kombucha.liqueurs << aperol
+large_format_mezcal.liqueurs << sweet_vermouth
+large_format_red.liqueurs << maraschino
+last.liqueurs << maraschino
+le.liqueurs << dry_vermouth
+little.liqueurs << white_cacao
+longshoreman.liqueurs << punt
+m_g_and_t.liqueurs << carpano
+mad.liqueurs << domaine
+man_o_war.liqueurs << sweet_vermouth
+mantra.liqueurs << ginger_infused_campari
+martinez.liqueurs << maraschino
+mezcal_negroni.liqueurs << sweet_vermouth
+millionaire.liqueurs << absinthe
+mink.liqueurs << green_chartreuse
+moment.liqueurs << amaro
+monte_cassino.liqueurs << yellow
+mudslide.liqueurs << baileys
+naked.liqueurs << aperol
+negroni.liqueurs << campari
+negroni_sbagliato.liqueurs << campari
+negroni_sorbet.liqueurs << sweet_vermouth
+old_pal.liqueurs << campari
+one.liqueurs << punt
+one_two.liqueurs << victory
+orgasm.liqueurs << amaretto
+paper.liqueurs << aperol
+pink_squirrel.liqueurs << white_cacao
+porn.liqueurs << sparkling_wine
+que.liqueurs << white_port
+quill.liqueurs << luxardo
+rainbow.liqueurs << allspice
+rebirth.liqueurs << distilleria
+red.liqueurs << punt
+remember.liqueurs << heering
+roman.liqueurs << campari
+rosemary.liqueurs << rosemary_campari
+rum_smoke.liqueurs << tempus_bitter
+rustaveli.liqueurs << cynar
+rusty_compass.liqueurs << heering
+saint.liqueurs << crème_de_cassis
+sake.liqueurs << sake
+shamrock.liqueurs << crème_de_menthe
+sin.liqueurs << carpano
+singapore.liqueurs << bénédictine
+slippery.liqueurs << baileys
+snakebite.liqueurs << cider
+south.liqueurs << campari
+spritz.liqueurs << aperol
+sunflower.liqueurs << elderflower
+tart.liqueurs << lillet_rouge
+the_modern.liqueurs << absinthe
+the_spice_is_right.liqueurs << ancho_reyes
+tipperary.liqueurs << green_chartreuse
+toblerone.liqueurs << frangelico
+top.liqueurs << cava
+tuxedo.liqueurs << maraschino
+twentieth_century.liqueurs << crème_de_cacao
+uss.liqueurs << champagne
+vieux.liqueurs << bénédictine
+waldorf.liqueurs << absinthe
+where.liqueurs << fireball
+white_summer.liqueurs << absinthe
+yellow.liqueurs << triple_sec
+zombie.liqueurs << pernod
+
+a_la_louisiane.liqueurs_string << '0.5 fl oz of Bénédictine'
+absinthe_suisse.liqueurs_string << '0.5 fl oz of Crème de Menthe'
+alabama.liqueurs_string << '1 fl oz of Amaretto'
+amaretto_french.liqueurs_string << '2 fl oz of Sparkling Wine'
+americano.liqueurs_string << '1.01 fl oz of Red Vermouth'
+another.liqueurs_string << '0.5 fl oz of Punt e Mes'
+aperitivo.liqueurs_string << '0.5 fl oz of Lillet Blanc'
+aviation.liqueurs_string << '1 barspoon of Crème de Violette'
+b_52.liqueurs_string << "0.68 fl oz of Bailey's Irish Cream"
+bagrationi.liqueurs_string << '1 fl oz of Campari'
+bamboo.liqueurs_string << '1.5 fl oz of Dry Sherry'
+barracuda.liqueurs_string << 'Top up with Prosecco'
+bicicletta.liqueurs_string << '2 fl oz of Campari'
+bijou.liqueurs_string << '0.75 fl oz of Green Chartreuse'
+bitter.liqueurs_string << '0.5 fl oz of White Crème de Cacao'
+black_velvet.liqueurs_string << 'Top up with Guinness Stout'
+blood.liqueurs_string << '0.75 fl oz of Heering Cherry Liqueur'
+blow.liqueurs_string << '0.5 fl oz of Irish Cream'
+bobby.liqueurs_string << '0.5 fl oz of Bénédictine'
+boulevardier.liqueurs_string << '1.01 fl oz of Campari'
+bourbon_rosemary_punch.liqueurs_string << '25.36 fl oz of Sparkling Wine'
+brandy_crusta.liqueurs_string << '1 barspoon of Curaçao'
+bronx.liqueurs_string << '0.34 fl oz of Dry Vermouth'
+candy.liqueurs_string << 'Top up with Sparkling Wine'
+cape.liqueurs_string << '1 fl oz of Caperitif Vermouth'
+cbd_spritz.liqueurs_string << '2 fl oz of Sparkling Wine'
+champagne_holiday.liqueurs_string << '8 fl oz of Champagne'
+channel.liqueurs_string << '0.5 fl oz of Campari'
+cherry.liqueurs_string << '0.25 fl oz of Don Ciccio & Figli Cerasum Aperitivo'
+chrysanthemum.liqueurs_string << '1 fl oz of Bénédictine'
+cobra.liqueurs_string << '0.5 fl oz of Ancho Reyes Ancho Chile Liqueur'
+cobras.liqueurs_string << '1 dash of Herbsaint Liqueur'
+cocoa.liqueurs_string << '1.5 fl oz of Champagne'
+corpose_reviver_two.liqueurs_string << '1.01 fl oz of Lillet Blanc'
+crimson.liqueurs_string << '0.5 fl oz of Punt e Mes'
+crush.liqueurs_string << '0.5 fl oz of Falernum'
+curiosity.liqueurs_string << '1 fl oz of Macvin du Jura Liqueur Wine'
+death_by_morning.liqueurs_string << '0.5 fl oz of Branca Menta'
+death_in_afternoon.liqueurs_string << '4.5 fl oz of Champagne'
+drunk.liqueurs_string << '0.75 fl oz of Cynar'
+el_presidente.liqueurs_string << '1 fl oz of Dry Vermouth'
+embarcadero.liqueurs_string << '1 fl oz of Lo-Fi Gentian Amaro'
+fifty_fifty_birthday.liqueurs_string << '0.75 fl oz of Quintinye Blanc Royal Vermouth '
+flaming.liqueurs_string << '0.75 fl oz of Amaretto'
+forbidden_apple.liqueurs_string << '4 fl oz of Champagne'
+frosé.liqueurs_string << '25.36 fl oz of Rose'
+golden__dream.liqueurs_string << '0.68 fl oz of Triple Sec'
+golden_cadillac.liqueurs_string << '0.68 fl oz of White Crème de Cacao'
+golden_gate_spritz.liqueurs_string << '2 fl oz of Sparkling Wine'
+grasshopper.liqueurs_string << '1.01 fl oz of White Crème de Cacao'
+grave.liqueurs_string << '0.5 fl oz of Grand Marnier'
+great.liqueurs_string << '2 fl oz of Pumpkin Ale'
+greenpoint.liqueurs_string << '0.5 fl oz of Sweet Vermouth'
+guinness.liqueurs_string << '6 fl oz of Guinness Stout'
+hanky.liqueurs_string << '0.25 fl oz of Fernet-Branca'
+high_seas.liqueurs_string << '0.5 fl oz of Dry Vermouth'
+hit.liqueurs_string << '12.68 fl oz of Townshend Bluebird Alpine Liqueur'
+holiday.liqueurs_string << '0.5 fl oz of Elderflower Liqueur'
+hot_shot.liqueurs_string << '0.5 fl oz of Galliano'
+illegal.liqueurs_string << '1 barspoon of Maraschino Luxardo'
+irhsih_shot.liqueurs_string << 'Top up with Guinness Stout'
+irish_car_bomb.liqueurs_string << '12 fl oz of Guinness Stout'
+killer.liqueurs_string << '0.25 fl oz of Bénédictine'
+kir.liqueurs_string << '0.34 fl oz of Crème de Cassis'
+kir_royale.liqueurs_string << '0.5 fl oz of Crème de Cassis'
+kombucha.liqueurs_string << '0.75 fl oz of Aperol'
+large_format_mezcal.liqueurs_string << '9 fl oz of Sweet Vermouth'
+large_format_red.liqueurs_string << '1.25 fl oz of Maraschino Luxardo'
+last.liqueurs_string << '0.76 fl oz of Maraschino Luxardo'
+le.liqueurs_string << '0.75 fl oz of Dry Vermouth'
+little.liqueurs_string << '0.25 fl oz of White Crème de Cacao'
+longshoreman.liqueurs_string << '0.5 fl oz of Punt e Mes'
+m_g_and_t.liqueurs_string << '0.5 fl oz of Carpano Antica Formula Vermouth'
+mad.liqueurs_string << '1 dash of Domaine de Canton Ginger Liqueur'
+man_o_war.liqueurs_string << '0.5 fl oz of Sweet Vermouth'
+mantra.liqueurs_string << '0.75 fl oz of Ginger-Infused Campari'
+martinez.liqueurs_string << '1 barspoon of Maraschino Luxardo'
+mezcal_negroni.liqueurs_string << '1 fl oz of Sweet Vermouth'
+millionaire.liqueurs_string << '0.25 fl oz of Absinthe'
+mink.liqueurs_string << '0.75 fl oz of Green Chartreuse'
+moment.liqueurs_string << '0.5 fl oz of Amaro di Angostura'
+monte_cassino.liqueurs_string << '0.75 fl oz of Yellow Chartreuse'
+mudslide.liqueurs_string << "1 fl oz of Bailey's Irish Cream"
+naked.liqueurs_string << '0.76 fl oz of Aperol'
+negroni.liqueurs_string << '1.01 fl oz of Campari'
+negroni_sbagliato.liqueurs_string << '25.36 fl oz of Campari'
+negroni_sorbet.liqueurs_string << '1 fl oz of Sweet Vermouth'
+old_pal.liqueurs_string << '1 fl oz of Campari'
+one.liqueurs_string << '0.5 fl oz of Punt e Mes'
+one_two.liqueurs_string << '3 fl oz of Victory Prima Pils Pilsner'
+orgasm.liqueurs_string << '0.75 fl oz of Amaretto'
+paper.liqueurs_string << '1.01 fl oz of Aperol'
+pink_squirrel.liqueurs_string << '0.75 fl oz of White Crème de Cacao'
+porn.liqueurs_string << '2 fl oz of Sparkling Wine'
+que.liqueurs_string << '0.5 fl oz of White Port'
+quill.liqueurs_string << '0.75 fl oz of Luxardo Bitter Bianco'
+rainbow.liqueurs_string << '0.5 fl oz of Allspice Dram'
+rebirth.liqueurs_string << '0.25 fl oz of Distilleria Gualco Camomila (Grappa-Based Chamomile Liqueur)'
+red.liqueurs_string << '0.5 fl oz of Punt e Mes'
+remember.liqueurs_string << '2 tsp of Heering Cherry Liqueur'
+roman.liqueurs_string << '0.25 fl oz of Campari'
+rosemary.liqueurs_string << '1 fl oz of Rosemary-Infused Campari'
+rum_smoke.liqueurs_string << '0.25 fl oz of Tempus Fugit Gran Classico Bitter Liqueur'
+rustaveli.liqueurs_string << '1 tsp of Cynar'
+rusty_compass.liqueurs_string << '0.5 fl oz of Heering Cherry Liqueur'
+saint.liqueurs_string << '0.25 fl oz of Crème de Cassis'
+sake.liqueurs_string << '1.5 fl oz of Sake'
+shamrock.liqueurs_string << '1.25 fl oz of Crème de Menthe'
+sin.liqueurs_string << '1 fl oz of Carpano Antica Formula Vermouth'
+singapore.liqueurs_string << '0.25 fl oz of Bénédictine'
+slippery.liqueurs_string << "1 fl oz of Bailey's Irish Cream"
+snakebite.liqueurs_string << '1 fl oz of Cider'
+south.liqueurs_string << '1 fl oz of Campari'
+spritz.liqueurs_string << '2.03 fl oz of Aperol'
+sunflower.liqueurs_string << '0.75 fl oz of Elderflower Liqueur'
+tart.liqueurs_string << '0.75 fl oz of Lillet Rouge'
+the_modern.liqueurs_string << '1 dash of Absinthe'
+the_spice_is_right.liqueurs_string << '0.25 fl oz of Ancho Reyes Ancho Chile Liqueur'
+tipperary.liqueurs_string << '0.51 fl oz of Green Chartreuse'
+toblerone.liqueurs_string << '0.75 fl oz of Frangelico'
+top.liqueurs_string << '2 fl oz of Cava'
+tuxedo.liqueurs_string << '0.5 barspoon of Maraschino Luxardo'
+twentieth_century.liqueurs_string << '0.5 fl oz of Crème de Cacao'
+uss.liqueurs_string << '50.72 fl oz of Champagne'
+vieux.liqueurs_string << '1 barspoon of Bénédictine'
+waldorf.liqueurs_string << '1 dash of Absinthe'
+where.liqueurs_string << '0.5 fl oz of Fireball Cinnamon Whiskey'
+white_summer.liqueurs_string << '6 spritzes of Absinthe'
+yellow.liqueurs_string << '0.51 fl oz of Triple Sec'
+zombie.liqueurs_string << '6 drops of Pernod'

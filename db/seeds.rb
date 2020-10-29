@@ -19,7 +19,7 @@ blackberry = Garnish.create(name: "Blackberry")
 blood_orange = Garnish.create(name: "Blood Orange")
 blueberries = Garnish.create(name: "Blueberries")
 brandied_cherries = Garnish.create(name: "Brandied Cherries")
-brandied_cherry = Garnish.create(name: "Brandied Cherry")
+brandied_ Garnish.create(name: "Brandied Cherry")
 butterscotch_syrup = Garnish.create(name: "Butterscotch Syrup")
 candied_ginger = Garnish.create(name: "Candied Ginger")
 cardamom = Garnish.create(name: "Cardamom")
@@ -148,7 +148,6 @@ white_grapes = Garnish.create(name: "White Grapes")
 whole_candy_cane = Garnish.create(name: "Whole Candy Cane")
 whole_cloves = Garnish.create(name: "Whole Cloves")
 
-seven_up = Mixer.create(name: "7 Up")
 activated_charcoal = Mixer.create(name: "Activated Charcoal")
 agave_nectar = Mixer.create(name: "Agave Nectar")
 agave_syrup = Mixer.create(name: "Agave Syrup")
@@ -166,12 +165,13 @@ aromatic_tonic = Mixer.create(name: "Aromatic Tonic Water")
 assorted_seasonal = Mixer.create(name: "Assorted Seasonal Fruit")
 aurora_hemp_infused = Mixer.create(name: "Aurora Hemp-Infused Beverage")
 avocado = Mixer.create(name: "Avocado")
-bg_reynolds = Mixer.create(name: "B.G. Reynolds Don's Spices #2")
 baked_macintosh = Mixer.create(name: "Baked Macintosh Apple")
 basil_mixer = Mixer.create(name: "Basil")
 beet_juice = Mixer.create(name: "Beet Juice")
+bg_reynolds = Mixer.create(name: "B.G. Reynolds Don's Spices #2")
 bittermens_tiki = Mixer.create(name: "Bittermens Tiki Bitters")
 bitters = Mixer.create(name: "Bitters")
+black_cocoa_and_range_syrup = Mixer.create(name: "Black-Cocoa-And-Range Syrup")
 black_pepper = Mixer.create(name: "Black Pepper")
 black_sesame = Mixer.create(name: "Black Sesame Orgeat")
 black_tea = Mixer.create(name: "Black Tea")
@@ -179,7 +179,6 @@ black_walnut = Mixer.create(name: "Black Walnut Bitters")
 blackberry_mixer = Mixer.create(name: "Blackberries")
 blackberry_jam = Mixer.create(name: "Blackberry Jam")
 blackberry_sage = Mixer.create(name: "Blackberry Sage Tea Syrup")
-black_cocoa_and_range_syrup = Mixer.create(name: "Black-Cocoa-And-Range Syrup")
 blood_orange_mixer = Mixer.create(name: "Blood Orange Juice")
 blueberry_mixer = Mixer.create(name: "Blueberries")
 boiling_water = Mixer.create(name: "Boiling Water")
@@ -210,17 +209,17 @@ chocolate_bitters = Mixer.create(name: "Chocolate Bitters")
 chocolate_ice = Mixer.create(name: "Chocolate Ice Cream")
 chocolate_mole = Mixer.create(name: "Chocolate Mole Bitters")
 chocolate_syrup = Mixer.create(name: "Chocolate Syrup")
-chocomole_mixture = Mixer.create(name: "Chocomole Mixture")
+chocolate_syrup_mixer = Mixer.create(name: "Chocomole Mixture")
 chopped_pear = Mixer.create(name: "Chopped pear")
 chopped_pineapple = Mixer.create(name: "Chopped Pineapple")
 chopped_semisweet = Mixer.create(name: "Chopped Semisweet Chocolate")
 chopped_tart = Mixer.create(name: "Chopped Tart Apples")
 chopped_unsweetened = Mixer.create(name: "Chopped Unsweetened Chocolate")
 cider = Mixer.create(name: "Cider")
-cinnamon = Mixer.create(name: "Cinnamon Simple Syrup")
-cinnamon_simple = Mixer.create(name: "Cinnamon Vanilla Syrup")
+cinnamon_simple = Mixer.create(name: "Cinnamon Simple Syrup")
+cinnamon_vanilla = Mixer.create(name: "Cinnamon Vanilla Syrup")
 cinnamon_syrup = Mixer.create(name: "Cinnamon Syrup")
-cinnamon_vanilla = Mixer.create(name: "Cinnamon")
+cinnamon = Mixer.create(name: "Cinnamon")
 citrus_oleo_saccharum = Mixer.create(name: "Citrus Oleo-Saccharum")
 citrus_syrup = Mixer.create(name: "Citrus Syrup")
 clamato_juice = Mixer.create(name: "Clamato Juice")
@@ -237,8 +236,8 @@ coffee_infused_salt = Mixer.create(name: "Coffee-Infused Salt")
 cola = Mixer.create(name: "Cola ")
 cold_brew_coffee = Mixer.create(name: "Cold-Brew Coffee")
 condensed_milk  = Mixer.create(name: "Condensed Milk ")
-cored_granny = Mixer.create(name: "Cored and Chunked Granny Smith Apples")
 cored_apple = Mixer.create(name: "Cored and Diced Apple")
+cored_granny = Mixer.create(name: "Cored and Chunked Granny Smith Apples")
 cracked_black = Mixer.create(name: "Cracked Black Pepper")
 cran_apple_juice = Mixer.create(name: "Cran-Apple Juice")
 cranberry_juice = Mixer.create(name: "Cranberry Juice")
@@ -247,7 +246,7 @@ cream_of_coconut = Mixer.create(name: "Cream of Coconut")
 cream_soda = Mixer.create(name: "Cream Soda")
 crème_de_coconut = Mixer.create(name: "Crème de Coconut")
 crushed_ice = Mixer.create(name: "Crushed Ice")
-cucumber = Mixer.create(name: "Cucumber")
+cucumber_mixer = Mixer.create(name: "Cucumber")
 cucumber_juice = Mixer.create(name: "Cucumber Juice")
 cucumber_syrup = Mixer.create(name: "Cucumber Syrup")
 demerara_simple = Mixer.create(name: "Demerara Simple Syrup")
@@ -269,7 +268,7 @@ frankincense_essential = Mixer.create(name: "Frankincense Essential Oil ")
 fresh_cream = Mixer.create(name: "Fresh Cream")
 fruit_juice = Mixer.create(name: "Fruit Juice")
 ghia = Mixer.create(name: "Ghia")
-ginger = Mixer.create(name: "Ginger")
+ginger_mixer = Mixer.create(name: "Ginger")
 ginger_ale = Mixer.create(name: "Ginger Ale")
 ginger_beer = Mixer.create(name: "Ginger Beer")
 ginger_honey = Mixer.create(name: "Ginger Honey Syrup")
@@ -298,11 +297,11 @@ honey_mix = Mixer.create(name: "Honey Mix")
 honey_sage = Mixer.create(name: "Honey Sage Syrup")
 honey_syrup = Mixer.create(name: "Honey Syrup")
 hot_buttered = Mixer.create(name: "Hot Buttered Rum Batter")
+hot_coffee = Mixer.create(name: "Hot Coffee")
 hot_hibiscus = Mixer.create(name: "Hot Hibiscus Tea")
 hot_sauce = Mixer.create(name: "Hot Sauce")
 hot_spiced = Mixer.create(name: "Hot Spiced Apple Cider")
 hot_water = Mixer.create(name: "Hot Water")
-hot_coffee = Mixer.create(name: "Hot Coffee")
 ice = Mixer.create(name: "Ice")
 instant_vanilla = Mixer.create(name: "Instant Vanilla Pudding")
 jalapeño_pepper = Mixer.create(name: "Jalapeño Pepper")
@@ -315,21 +314,21 @@ large_eggs = Mixer.create(name: "Large Eggs")
 large_strawberries = Mixer.create(name: "Large Strawberries")
 latitude_29 = Mixer.create(name: "Latitude 29 Formula Orgeat")
 lemon = Mixer.create(name: "Lemon")
+lemon squash = Mixer.create(name: "Lemon Squash")
 lemon_bitters = Mixer.create(name: "Lemon Bitters")
 lemon_juice = Mixer.create(name: "Lemon Juice")
-lemon_sorbet = Mixer.create(name: "Lemon Sorbet")
-lemon squash = Mixer.create(name: "Lemon Squash")
-lemonade = Mixer.create(name: "Lemonade")
 lemon_lime_soda = Mixer.create(name: "Lemon-Lime Soda")
+lemon_sorbet = Mixer.create(name: "Lemon Sorbet")
+lemonade = Mixer.create(name: "Lemonade")
 lemons = Mixer.create(name: "Lemons")
 light_cream = Mixer.create(name: "Light Cream")
 lime_juice = Mixer.create(name: "Lime Juice")
 limeade = Mixer.create(name: "Limeade")
 maldon_salt = Mixer.create(name: "Maldon Salt")
 mango_juice = Mixer.create(name: "Mango Juice")
+mango_pandan_syrup = Mixer.create(name: "Mango-Pandan Syrup")
 mango_purée = Mixer.create(name: "Mango Purée")
 mango_vinegar = Mixer.create(name: "Mango Vinegar")
-mango_pandan_syrup = Mixer.create(name: "Mango-Pandan Syrup")
 maple_syrup = Mixer.create(name: "Maple Syrup")
 maraschino_cherry = Mixer.create(name: "Maraschino Cherry")
 milk = Mixer.create(name: "Milk")
@@ -395,6 +394,7 @@ salt = Mixer.create(name: "Salt")
 sea_salt = Mixer.create(name: "Sea Salt")
 seltzer = Mixer.create(name: "Seltzer")
 separated_eggs = Mixer.create(name: "Separated Eggs")
+seven_up = Mixer.create(name: "7 Up")
 simple_syrup = Mixer.create(name: "Simple Syrup")
 smoked_cherry = Mixer.create(name: "Smoked Cherry Bitters")
 smoked_honey = Mixer.create(name: "Smoked Honey")
@@ -413,11 +413,11 @@ star_anise = Mixer.create(name: "Star Anise")
 steamed_milk = Mixer.create(name: "Steamed Milk")
 strawberries = Mixer.create(name: "Strawberries")
 strawberry = Mixer.create(name: "Strawberry")
+strawberry_rose_syrup = Mixer.create(name: "Strawberry-Rose Syrup")
 strawberry_shrub = Mixer.create(name: "Strawberry Shrub")
 strawberry_syrup = Mixer.create(name: "Strawberry Syrup")
-strawberry_rose_syrup = Mixer.create(name: "Strawberry-Rose Syrup")
-strong_espresso = Mixer.create(name: "Strong Espresso")
 strong_brewed_black = Mixer.create(name: "Strong-Brewed Black Tea")
+strong_espresso = Mixer.create(name: "Strong Espresso")
 sugar_ = Mixer.create(name: "Sugar Cane Juice")
 sugar_cane = Mixer.create(name: "Sugar")
 sugar_syrup = Mixer.create(name: "Sugar Syrup")
@@ -497,7 +497,7 @@ cider_liqueur = Liqueur.create(name: "Cider", liqueur_type: "Cider", description
 clarified_gin = Liqueur.create(name: "Clarified Gin Milk Punch", liqueur_type: nil, description: nil , origin: nil , flavor: nil, abv: nil, color: nil)
 cocchi = Liqueur.create(name: "Cocchi Torino Vermouth", liqueur_type: "Vermouth", description: "An aromatized, fortified wine, flavoured with various botanicals (roots, barks, flowers, seeds, herbs, and spices) and sometimes colored." , origin: "Italy" , flavor: "Varies", abv: "16-22%", color: "Varies")
 coconut = Liqueur.create(name: "Coconut Oil-Washed Campari", liqueur_type: "Campari", description: "Campari is an Italian alcoholic liqueur, considered an apéritif, obtained from the infusion of herbs and fruit (including chinotto and cascarilla) in alcohol and water. It is a bitter, characterised by its dark red colour." , origin: "Italy" , flavor: "Bitter, Spicy and Sweet", abv: "25–28%", color: "Bright Red")
-coffee = Liqueur.create(name: "The Block Coffee Liqueur", liqueur_type: "Coffee Liqueur", description: "A coffee-flavored liqueur." , origin: nil , flavor: "Coffee", abv: "20%", color: "Deep Brown")
+coffee_liqueur = Liqueur.create(name: "The Block Coffee Liqueur", liqueur_type: "Coffee Liqueur", description: "A coffee-flavored liqueur." , origin: nil , flavor: "Coffee", abv: "20%", color: "Deep Brown")
 cointreau = Liqueur.create(name: "Cointreau", liqueur_type: "Triple Sec", description: "A type of strong, sweet and colorless orange-flavored liqueur. It is a variety of Curaçao liqueur, an orange-flavored liqueur made from the dried peels of bitter and sweet oranges." , origin: "France" , flavor: "Orange", abv: "15–40%", color: "Clear")
 combier = Liqueur.create(name: "Combier Liqueur d'Orange", liqueur_type: "Triple Sec", description: "A type of strong, sweet and colorless orange-flavored liqueur. It is a variety of Curaçao liqueur, an orange-flavored liqueur made from the dried peels of bitter and sweet oranges." , origin: "France" , flavor: "Orange", abv: "15–40%", color: "Clear")
 cotton = Liqueur.create(name: "Cotton & Reed Allspice Dram", liqueur_type: "Allspice Dram", description: "A simple liqueur flavored with allspice berries. It's also known as pimento dram, because allspice is a berry from the pimento tree. Allspice dram adds a dark, strong, and spicy counterpoint to Rum and sweet ingredients in tiki drinks." , origin: nil , flavor: "Allspice Berry", abv: "22.5%", color: "Dark Brown")
@@ -535,7 +535,7 @@ foro = Liqueur.create(name: "Foro Amaro", liqueur_type: "Amaro", description: "A
 fort = Liqueur.create(name: "Fort Point Kölsch Ale", liqueur_type: "Beer", description: "Beer is brewed from cereal grains—most commonly from malted barley, though wheat, maize (corn), and rice are also used. During the brewing process, fermentation of the starch sugars in the wort produces ethanol and carbonation in the resulting beer. Most modern beer is brewed with hops, which add bitterness and other flavours and act as a natural preservative and stabilizing agent. Other flavouring agents such as gruit, herbs, or fruits may be included or used instead of hops. In commercial brewing, the natural carbonation effect is often removed during processing and replaced with forced carbonation." , origin: nil , flavor: "Varies", abv: "3-13%", color: "Varies")
 frangelico = Liqueur.create(name: "Frangelico", liqueur_type: "Hazelnut Liqueur", description: "A brand of noisette (flavored with hazelnuts) and herb-flavored liqueur coloured with caramel coloring, which is produced in Canale, Italy. It is 20% alcohol by volume (ABV) or 40 proof." , origin: "Italy" , flavor: "Hazelnut", abv: "2", color: "Amber")
 galliano = Liqueur.create(name: "Galliano", liqueur_type: "Herbal Liqueur", description: "A sweet herbal liqueur, created in 1896 by Italian distiller and brandy producer Arturo Vaccari of Livorno, Tuscany and named after Giuseppe Galliano." , origin: "Italy" , flavor: "Vanilla, Herbal", abv: "30-42.3%", color: "Yellow")
-ginger = Liqueur.create(name: "Ginger Liqueur", liqueur_type: "Ginger Liqueur" , description: "Made from Vietnamese baby ginger and cognac. Delicious and intense, with some definite heat from the ginger amongst a rich and creamy texture. The perfect way to spice up a cocktail, or enjoy over ice." , origin: "France" , flavor: "Ginger, Herbal", abv: "28", color: "Golden")
+ginger_liqueur = Liqueur.create(name: "Ginger Liqueur", liqueur_type: "Ginger Liqueur" , description: "Made from Vietnamese baby ginger and cognac. Delicious and intense, with some definite heat from the ginger amongst a rich and creamy texture. The perfect way to spice up a cocktail, or enjoy over ice." , origin: "France" , flavor: "Ginger, Herbal", abv: "28", color: "Golden")
 ginger_infused_campari = Liqueur.create(name: "Ginger-Infused Campari", liqueur_type: "Campari", description: "Campari is an Italian alcoholic liqueur, considered an apéritif, obtained from the infusion of herbs and fruit (including chinotto and cascarilla) in alcohol and water. It is a bitter, characterised by its dark red colour." , origin: "Italy" , flavor: "Bitter, Spicy and Sweet", abv: "25–28%", color: "Bright Red")
 grahams = Liqueur.create(name: "Graham’s Six Grapes Ruby Port", liqueur_type: "Port", description: "Port wine is a Portuguese fortified wine produced with distilled grape spirits exclusively in the Douro Valley in the northern provinces of Portugal. It is typically a sweet, red wine, often served as a dessert wine, although it also comes in dry, semi-dry, and white varieties" , origin: "Portugal" , flavor: "Sweet", abv: "19-20%", color: "White or Red")
 granada = Liqueur.create(name: "Granada-Vallet Pomegranate Liqueur", liqueur_type: "Pomegranate Liqueur", description: "Made with all-natural California pomegranates, This liqueur offers a highly mixable taste profile that is, at the same time, sweet and tart. This appeals to today's trendsetters through the rich history, spirituality and alluring taste of the pomegranate." , origin: "USA" , flavor: "Pomegranate", abv: "17%", color: "Red")
@@ -691,7 +691,7 @@ canadian_rye = Liquor.create(name: "Canadian Rye Whiskey", liquor_type: "Rye", d
 canadian_whiskey = Liquor.create(name: "Canadian Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
 captain_morgan = Liquor.create(name: "Captain Morgan Spiced Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 casa_dragones = Liquor.create(name: "Casa Dragones Blanco Tequila", liquor_type: "Tequila", description: "A distilled beverage made from the blue agave plant, primarily in the area surrounding the city of Tequila 65 km (40 mi) northwest of Guadalajara, and in the Jaliscan Highlands (Los Altos de Jalisco) of the central western Mexican state of Jalisco. The red volcanic soils in the region of Tequila are well suited for growing the blue agave, and more than 300 million of the plants are harvested there each year. Agave grows differently depending on the region. Blue agaves grown in the highlands Los Altos region are larger and sweeter in aroma and taste. Aside from its geographical distinction, tequila is differentiated from mezcal in that it is made only from blue agave and the beverages are prepared in different ways. Tequila is commonly served neat in Mexico and as a shot with salt and lime around the world. Tequila must have between 35- and 55-percent alcohol content (70 and 110 U.S. proof). It must contain at least 40-percent alcohol (80 U.S. proof) to be sold in the United States and Canada." , origin: "Mexico" , flavor: "Smoky, Spicy, Fruity", abv: "38–55% (usually 40%)", color: "Clear or Gold", ingredients: "Blue Agave")
-cherry = Liquor.create(name: "Cherry Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
+cherry_brandy = Liquor.create(name: "Cherry Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
 chivas = Liquor.create(name: "Chivas Regal 12 Year Old", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
 citrus_gin = Liquor.create(name: "Citrus-Forward Dry Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
 clear = Liquor.create(name: "Clear Creek Pear Eau-De-Vie", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
@@ -950,7 +950,7 @@ canchánchara = Recipe.create(name: 'Canchánchara')
 canchanchara = Recipe.create(name: 'Canchanchara')
 candy = Recipe.create(name: 'Candy Cane Mimosa')
 cape = Recipe.create(name: 'Cape of Good Hope')
-cardamom = Recipe.create(name: 'Cardamom')
+cardamom_recipe = Recipe.create(name: 'Cardamom')
 casino = Recipe.create(name: 'Casino')
 cave = Recipe.create(name: 'Cave Creek')
 cbd_dirty_martini = Recipe.create(name: 'CBD Dirty Martini')
@@ -970,7 +970,7 @@ clover = Recipe.create(name: 'Clover Club')
 cobra = Recipe.create(name: 'Cobra Verde')
 cobras = Recipe.create(name: "Cobra's Fang")
 coco = Recipe.create(name: 'Coco Batida')
-cocoa = Recipe.create(name: 'Cocoa Passion')
+cocoa_passion = Recipe.create(name: 'Cocoa Passion')
 coffee_cigarettes = Recipe.create(name: 'Coffee & Cigarettes')
 cojito = Recipe.create(name: 'Cojito')
 conflict = Recipe.create(name: 'Conflict & Compromise')
@@ -1443,7 +1443,7 @@ calvados_sidecar.liquors << apple_brandy_calvados
 canchánchara.liquors << white
 canchanchara.liquors << rum
 cape.liquors << bluecoat_gin
-cardamom.liquors << pistachio_vodka
+cardamom_recipe.liquors << pistachio_vodka
 casino.liquors << gin
 cave.liquors << mister_katz_rye
 cbd_dirty_martini.liquors << dry_gin
@@ -1460,7 +1460,7 @@ chocomole.liquors << reposado_tequila
 clover.liquors << gin
 cobras.liquors << dark_jamaican_rum
 coco.liquors << leblon_cachaça
-cocoa.liquors << don_julio
+cocoa_passion.liquors << don_julio
 coffee_cigarettes.liquors << block_autumn_gin
 cojito.liquors << white
 conflict.liquors << tequila_ocho
@@ -1881,7 +1881,7 @@ calvados_sidecar.liquors_string << "1 fl oz of Apple Brandy (Boulard Hors d'Âge
 canchánchara.liquors_string << '1.5 fl oz of White Rum'
 canchanchara.liquors_string << '2.03 fl oz of Rum'
 cape.liquors_string << '1 fl oz of Bluecoat Barrel-Finished Gin'
-cardamom.liquors_string << '1.5 fl oz of Pistachio-Fat-Washed Vodka'
+cardamom_recipe.liquors_string << '1.5 fl oz of Pistachio-Fat-Washed Vodka'
 casino.liquors_string << '1.35 fl oz of Gin'
 cave.liquors_string << '1.25 fl oz of Mister Katz’s Rock & Rye'
 cbd_dirty_martini.liquors_string << '2 fl oz of Dry Gin'
@@ -1898,7 +1898,7 @@ chocomole.liquors_string << '1.5 fl oz of Reposado Tequila'
 clover.liquors_string << '1.52 fl oz of Gin'
 cobras.liquors_string << '0.5 fl oz of Dark Jamaican Rum'
 coco.liquors_string << '2 fl oz of Leblon Cachaça '
-cocoa.liquors_string << '1 fl oz of Don Julio Añejo Tequila'
+cocoa_passion.liquors_string << '1 fl oz of Don Julio Añejo Tequila'
 coffee_cigarettes.liquors_string << '1.5 fl oz of The Block Autumn Gin'
 cojito.liquors_string << '0.51 fl oz of White Rum'
 conflict.liquors_string << '1.5 fl oz of Tequila Ocho plata'
@@ -2278,7 +2278,7 @@ rum_punch.liquors << dark
 saison.liquors << george
 samarian.liquors << cabbage
 sea_breeze_cooler.liquors << apricot
-singapore.liquors << cherry
+singapore.liquors << cherry_brandy
 smoky.liquors << blended
 spiced_eggnog.liquors << spiced
 suffering.liquors << brandy
@@ -2398,7 +2398,7 @@ bijou.liqueurs << sweet_vermouth
 black_barrel_old_fashioned.liqueurs << bénédictine
 black_betty.liqueurs << crème_de_cassis
 black_mole_margarita.liqueurs << cointreau
-black_russian.liqueurs << coffee
+black_russian.liqueurs << coffee_liqueur
 blood.liqueurs << sweet_vermouth
 blue_hawaii.liqueurs << blue
 blue_lagoon.liqueurs << blue
@@ -2433,7 +2433,7 @@ conflict.liqueurs << midori
 corpose_reviver_one.liqueurs << sweet_vermouth
 corpose_reviver_two.liqueurs << cointreau
 cosmopolitan.liqueurs << cointreau
-cotter.liqueurs << ginger
+cotter.liqueurs << ginger_liqueur
 crimson.liqueurs << campari
 crush.liqueurs << don_mandarinetto
 crystal.liqueurs << clarified_gin
@@ -2468,7 +2468,7 @@ frozen_margarita.liqueurs << orange_liqueur
 gibson.liqueurs << dry_vermouth
 godfather.liqueurs << amaretto
 golden_dew.liqueurs << kook
-grave.liqueurs << coffee
+grave.liqueurs << coffee_liqueur
 greenpoint.liqueurs << green_chartreuse
 hanky.liqueurs << sweet_vermouth
 harry_potter_butter.liqueurs << butterscotch
@@ -2526,7 +2526,7 @@ moment.liqueurs << liqueur_of_banana
 monkey.liqueurs << absinthe
 monte_carlo.liqueurs << bénédictine
 monte_cassino.liqueurs << bénédictine
-mudslide.liqueurs << coffee
+mudslide.liqueurs << coffee_liqueur
 mule.liqueurs << peachschnapps
 mutual.liqueurs << galliano
 my.liqueurs << grand_marnier
@@ -2622,7 +2622,7 @@ where.liqueurs << dekuyper
 whiskey_in_church.liqueurs << oloroso
 whiskey_mac.liqueurs << stones
 white_lady.liqueurs << triple_sec
-white_russian.liqueurs << coffee
+white_russian.liqueurs << coffee_liqueur
 white_summer.liqueurs << italicus
 winter.liqueurs << bénédictine
 witches_brew.liqueurs << fino
@@ -3034,7 +3034,7 @@ cherry_revolution.liqueurs << don_cerasum
 chrysanthemum.liqueurs << bénédictine
 cobra.liqueurs << ancho_reyes
 cobras.liqueurs << herbsaint
-cocoa.liqueurs << champagne
+cocoa_passion.liqueurs << champagne
 corpose_reviver_two.liqueurs << lillet_blanc
 crimson.liqueurs << punt
 crush.liqueurs << falernum
@@ -3077,7 +3077,7 @@ longshoreman.liqueurs << punt
 m_g_and_t.liqueurs << carpano
 mad.liqueurs << domaine
 man_o_war.liqueurs << sweet_vermouth
-mantra.liqueurs << ginger_infused_campari
+mantra.liqueurs << ginger_liqueur_infused_campari
 martinez.liqueurs << maraschino
 mezcal_negroni.liqueurs << sweet_vermouth
 millionaire.liqueurs << absinthe
@@ -3165,7 +3165,7 @@ cherry_revolution.liqueurs_string << '0.25 fl oz of Don Ciccio & Figli Cerasum A
 chrysanthemum.liqueurs_string << '1 fl oz of Bénédictine'
 cobra.liqueurs_string << '0.5 fl oz of Ancho Reyes Ancho Chile Liqueur'
 cobras.liqueurs_string << '1 dash of Herbsaint Liqueur'
-cocoa.liqueurs_string << '1.5 fl oz of Champagne'
+cocoa_passion.liqueurs_string << '1.5 fl oz of Champagne'
 corpose_reviver_two.liqueurs_string << '1.01 fl oz of Lillet Blanc'
 crimson.liqueurs_string << '0.5 fl oz of Punt e Mes'
 crush.liqueurs_string << '0.5 fl oz of Falernum'
@@ -3274,9 +3274,9 @@ bitter.liqueurs << sparkling_red
 cape.liqueurs << few_anguish
 channel.liqueurs << granada
 chrysanthemum.liqueurs << absinthe
-cocoa.liqueurs << darkcreme
+cocoa_passion.liqueurs << darkcreme
 crimson.liqueurs << heering
-death_by_morning.liqueurs << coffee
+death_by_morning.liqueurs << coffee_liqueur
 flaming.liqueurs << beer
 high_seas.liqueurs << dolin_blanc
 hit.liqueurs << cream
@@ -3302,7 +3302,7 @@ bitter.liqueurs_string << '1 fl oz of Sparkling Red Wine'
 cape.liqueurs_string << '1 spray of FEW Anguish & Regret Liqueur'
 channel.liqueurs_string << '0.25 fl oz of Granada-Vallet Pomegranate Liqueur'
 chrysanthemum.liqueurs_string << '3 dashes of Absinthe'
-cocoa.liqueurs_string << '0.5 fl oz of Dark Crème de Cacao'
+cocoa_passion.liqueurs_string << '0.5 fl oz of Dark Crème de Cacao'
 crimson.liqueurs_string << '0.25 fl oz of Heering Cherry Liqueur'
 death_by_morning.liqueurs_string << '0.5 fl oz of Coffee Liqueur'
 flaming.liqueurs_string << 'Top up with Beer'
@@ -3402,10 +3402,10 @@ bronx.mixers << orange_juice
 brown.mixers << grapefruit_juice
 café.mixers << brewed_coffee
 caipirinha.mixers << wedged_lime
-calvados_sidecar.mixers << cinnamon
+calvados_sidecar.mixers << cinnamon_mixer
 canchánchara.mixers << juiced_lime
 candy.mixers << chocolate_bitters
-cardamom.mixers << brazilian_espresso
+cardamom_recipe.mixers << brazilian_espresso
 casino.mixers << lemon_juice
 cave.mixers << lemon_juice
 cbd_dirty_martini.mixers << green_olive
@@ -3423,7 +3423,7 @@ clover.mixers << lemon_juice
 cobra.mixers << lemon_juice
 cobras.mixers << lime_juice
 coco.mixers << coconut_cream
-cocoa.mixers << unsweetened_passion
+cocoa_passion.mixers << unsweetened_passion
 coffee_cigarettes.mixers << q_tonic
 cojito.mixers << lime_juice
 conflict.mixers << lime_juice
@@ -3829,7 +3829,7 @@ caipirinha.mixers_string << '1 Wedged Lime'
 calvados_sidecar.mixers_string << 'Cinnamon'
 canchánchara.mixers_string << '1 Juiced Lime'
 candy.mixers_string << '1 dash of Chocolate Bitters'
-cardamom.mixers_string << '1.5 fl oz of Brazilian Espresso'
+cardamom_recipe.mixers_string << '1.5 fl oz of Brazilian Espresso'
 casino.mixers_string << '0.34 fl oz of Lemon Juice'
 cave.mixers_string << '0.75 fl oz of Lemon Juice'
 cbd_dirty_martini.mixers_string << '0.5 fl oz of Green Olive Cocktail Brine'
@@ -3847,7 +3847,7 @@ clover.mixers_string << '0.51 fl oz of Lemon Juice'
 cobra.mixers_string << '0.5 fl oz of Lemon Juice'
 cobras.mixers_string << '0.5 fl oz of Lime Juice'
 coco.mixers_string << '2 fl oz of Coconut Cream'
-cocoa.mixers_string << '0.25 fl oz of Unsweetened Passion Fruit Purée'
+cocoa_passion.mixers_string << '0.25 fl oz of Unsweetened Passion Fruit Purée'
 coffee_cigarettes.mixers_string << '5 fl oz of Q Tonic Water'
 cojito.mixers_string << '0.17 fl oz of Lime Juice'
 conflict.mixers_string << '0.75 fl oz of Lime Juice'
@@ -4237,7 +4237,7 @@ caipirinha.mixers << sugar_
 calvados_sidecar.mixers << sugar_
 canchánchara.mixers << honey_syrup
 canchanchara.mixers << lime_juice
-cardamom.mixers << cardamom_syrup
+cardamom_recipe.mixers << cardamom_syrup
 casino.mixers << orange_bitters
 cave.mixers << grenadine
 cbd_dirty_martini.mixers << cracked_black
@@ -4408,7 +4408,7 @@ pink_lady.mixers << egg_white
 pisco_sour.mixers << simple_syrup
 planters_punch.mixers << sugar_cane
 pomelomosa.mixers << himalayan_pink
-ponche.mixers << cinnamon
+ponche.mixers << cinnamon_mixer
 porchlight.mixers << citrus_syrup
 porn.mixers << lime_juice
 port_royal_punch.mixers << mango_juice
@@ -4566,7 +4566,7 @@ caipirinha.mixers_string << 'Sugar'
 calvados_sidecar.mixers_string << 'Sugar'
 canchánchara.mixers_string << 'Honey Syrup'
 canchanchara.mixers_string << 'Lime Juice'
-cardamom.mixers_string << 'Cardamom Syrup'
+cardamom_recipe.mixers_string << 'Cardamom Syrup'
 casino.mixers_string << 'Orange Bitters'
 cave.mixers_string << 'Grenadine'
 cbd_dirty_martini.mixers_string << 'Cracked Black Pepper'
@@ -4851,7 +4851,7 @@ bloody_mary.mixers << worcestershire_sauce
 blueberry.mixers << blueberry_mixer
 bootstitch.mixers << grapefruit_juice
 bordeaux.mixers << orange_bitters
-bourbon_vanilla.mixers << chocolate_syrup
+bourbon_vanilla.mixers << chocolate_syrup_mixer
 bourbon_cider.mixers << apple_cider
 bourbon_old_fashioned.mixers << water
 bourbon_rosemary_punch.mixers << grapefruit_juice
@@ -4904,7 +4904,7 @@ golden_dew.mixers << honey_syrup
 golden_purl.mixers << orange_bitters
 green_beast.mixers << chilled_water
 green_isaac_special.mixers << angostura_mixer
-guinnessfloat.mixers << chocolate_syrup
+guinnessfloat.mixers << chocolate_syrup_mixer
 hey_gourdgeous.mixers << water
 high_tide.mixers << tonic_water
 holiday.mixers << sugar_
@@ -5504,11 +5504,11 @@ aperitivo.mixers << sparkling_water
 bloody_maria.mixers << prepared_horseradish
 bloody_mary.mixers << black_pepper
 bulleit.mixers << ginger_beer
-café_ponche.mixers << cinnamon
+café_ponche.mixers << cinnamon_mixer
 coquito.mixers << ground_nutmeg
 cucumber_cleanse.mixers << egg_white
 dizzy.mixers << soda_water
-hey_gourdgeous.mixers << cinnamon
+hey_gourdgeous.mixers << cinnamon_mixer
 i_left_my_heart.mixers << split_vanilla
 jack_o_lantern.mixers << apple_juice
 mexican.mixers << grenadine
@@ -5637,7 +5637,7 @@ canchánchara.garnishes << lime
 canchanchara.garnishes << lime
 candy.garnishes << melted_chocolate
 cape.garnishes << grated_cinnamon
-cardamom.garnishes << cardamom
+cardamom_recipe.garnishes << cardamom
 casino.garnishes << lemon
 cave.garnishes << lemon
 cbd_dirty_martini.garnishes << green_olive
@@ -5983,7 +5983,7 @@ canchánchara.garnishes_string << '1 wedge of Lime'
 canchanchara.garnishes_string << '1 wedge of Lime'
 candy.garnishes_string << 'Melted Chocolate Chips'
 cape.garnishes_string << 'Grated Cinnamon'
-cardamom.garnishes_string << '3 pods of Cardamom'
+cardamom_recipe.garnishes_string << '3 pods of Cardamom'
 casino.garnishes_string << '1 twist of Lemon'
 cave.garnishes_string << '1 twist of Lemon'
 cbd_dirty_martini.garnishes_string << '1 Green Olive'

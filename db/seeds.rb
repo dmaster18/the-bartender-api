@@ -649,7 +649,7 @@ apple_or_pear = Liquor.create(name: "Apple or Pear Brandy", liquor_type: "Fruit 
 applejack_or_whiskey = Liquor.create(name: "Applejack or American Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
 appleton = Liquor.create(name: "Appleton Estate 12 Year Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 appleton_jamaica_rum = Liquor.create(name: "Appleton Estate Jamaica Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
-apricot = Liquor.create(name: "Apricot Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
+apricot_ginger = Liquor.create(name: "Apricot Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
 aquavit = Liquor.create(name: "Aquavit", liquor_type: "Aquavit", description: "A distilled spirit that is principally produced in Scandinavia, where it has been produced since the 15th century. Akvavit is distilled from grain and potatoes, and is flavoured with a variety of herbs. Akvavit is also popular in Germany. Akvavit gets its distinctive flavour from spices and herbs, and the dominant flavour must (according to the European Union) come from a distillate of caraway and/or dill seed. It typically contains 40% alcohol by volume or 80 proof (U.S.)", origin: "Scandinavia", flavor: "A neutral background flavor similar to vodka_martini.", abv: "37-47%", color: "Yellow or Clear", ingredients: "Grain or Potatoes")
 ardberg_islay = Liquor.create(name: "Ardbeg 10 yr Islay Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
 ardberg_ten_scotch = Liquor.create(name: "Ardbeg 10-Year-Old Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
@@ -866,7 +866,7 @@ aperitivo = Recipe.create(name: 'Aperitivo #1')
 apple_cranberry_moscow_mule = Recipe.create(name: 'Apple Cranberry Moscow Mule')
 apple_toddy = Recipe.create(name: 'Apple Toddy')
 applejack = Recipe.create(name: 'Applejack Rabbit')
-apricot = Recipe.create(name: 'Apricot Ginger Whiskey Sour')
+apricot_ginger = Recipe.create(name: 'Apricot Ginger Whiskey Sour')
 aquavit_buck = Recipe.create(name: 'Aquavit Buck')
 astro = Recipe.create(name: 'Astro pop')
 autumn = Recipe.create(name: 'Autumn Wassail')
@@ -1371,7 +1371,7 @@ aperitivo.liquors << blanco
 apple_cranberry_moscow_mule.liquors << vodka
 apple_toddy.liquors << applejack_bourbon
 applejack.liquors << lairds_bonded_apple
-apricot.liquors << bourbon_rye_scotch
+apricot_ginger.liquors << bourbon_rye_scotch
 aquavit_buck.liquors << aquavit
 autumn.liquors << louis_royer
 aviation.liquors << gin
@@ -1809,7 +1809,7 @@ aperitivo.liquors_string << '0.5 fl oz of Blanco Tequila'
 apple_cranberry_moscow_mule.liquors_string << '2 fl oz of Vodka'
 apple_toddy.liquors_string << "2 fl oz of Bonded Applejack (Laird’s), Cognac or Bourbon"
 applejack.liquors_string << '2 fl oz of Laird’s Bonded Apple Brandy'
-apricot.liquors_string << '2 fl oz of Bourbon, Rye, or Scotch'
+apricot_ginger.liquors_string << '2 fl oz of Bourbon, Rye, or Scotch'
 aquavit_buck.liquors_string << '2 fl oz of Aquavit'
 autumn.liquors_string << '1.5 fl oz of Louis Royer Force 53° VSOP Cognac'
 aviation.liquors_string << '1.52 fl oz of Gin'
@@ -2172,7 +2172,7 @@ strawberry_daiquiri.liquors_string << '1.5 fl oz of Puerto Rican or Jamaican Rum
 strawberry_pisco_sour.liquors_string << '10 fl oz of Pisco'
 suffering.liquors_string << '1.01 fl oz of Gin'
 summer.liquors_string << '1.75 fl oz of Portobello Road Gin'
-summer_served.liquors_string_string << '2 fl oz of 1888 Brugal Rum'
+summer_served.liquors_string << '2 fl oz of 1888 Brugal Rum'
 summerthyme.liquors_string << '11 fl oz of Vodka'
 sunflower.liquors_string << '0.75 fl oz of Gin'
 sussex.liquors_string << '1.75 fl oz of Hendrick’s Gin'
@@ -2233,7 +2233,7 @@ zombie.liquors_string << '1.52 fl oz of Jamaican Dark Rum'
 
 angel.liquors << apricot
 another.liquors << don
-apricot.liquors << apricot
+apricot_ginger.liquors << apricot
 autumn.liquors << santa
 bermuda.liquors << gold_rum
 between.liquors << cognac
@@ -2292,7 +2292,7 @@ zombie.liquors << puerto
 
 angel.liquors_string << '1.01 fl oz of Apricot Brandy'
 another.liquors_string << '1 fl oz of Don Julio Reposado Tequila'
-apricot.liquors_string << '0.25 fl oz of Apricot Brandy'
+apricot_ginger.liquors_string << '0.25 fl oz of Apricot Brandy'
 autumn.liquors_string << '0.5 fl oz of Santa Teresa 1796 Rum'
 bermuda.liquors_string << '4 fl oz of Gold Rum'
 between.liquors_string << '1.01 fl oz of Cognac'
@@ -3343,7 +3343,7 @@ aperitivo.mixers << passion_fruit_puree
 apple_cranberry_moscow_mule.mixers << cran_apple_juice
 apple_toddy.mixers << boiling_water
 applejack.mixers << lemon_juice
-apricot.mixers << lemon_juice
+apricot_ginger.mixers << lemon_juice
 aquavit.mixers << lime_juice
 aviation.mixers << lemon_juice
 bacardi.mixers << lime_juice
@@ -3767,7 +3767,7 @@ aperitivo.mixers_string << '0.5 fl oz of Passion Fruit Puree'
 apple_cranberry_moscow_mule.mixers_string << '1 fl oz of Cran-Apple Juice'
 apple_toddy.mixers_string << 'Top up with Boiling Water'
 applejack.mixers_string << '0.75 fl oz of Lemon Juice'
-apricot.mixers_string << '0.75 fl oz of Lemon Juice'
+apricot_ginger.mixers_string << '0.75 fl oz of Lemon Juice'
 aquavit.mixers_string << '0.75 fl oz of Lime Juice'
 aviation.mixers_string << '0.51 fl oz of Lemon Juice'
 bacardi.mixers_string << '0.68 fl oz of Lime Juice'
@@ -4185,7 +4185,7 @@ aperitivo.mixers << orange_juice
 apple_cranberry_moscow_mule.mixers << lime_juice
 apple_toddy.mixers << baked_macintosh
 applejack.mixers << orange_juice
-apricot.mixers << ginger_syrup
+apricot_ginger.mixers << ginger_syrup
 aquavit.mixers << ginger_syrup
 bacardi.mixers << grenadine
 bamboo.mixers << orange_bitters
@@ -4514,7 +4514,7 @@ aperitivo.mixers_string << 'Orange Juice'
 apple_cranberry_moscow_mule.mixers_string << 'Lime Juice'
 apple_toddy.mixers_string << 'Baked Macintosh Apple'
 applejack.mixers_string << 'Orange Juice'
-apricot.mixers_string << 'Ginger Syrup'
+apricot_ginger.mixers_string << 'Ginger Syrup'
 aquavit.mixers_string << 'Ginger Syrup'
 bacardi.mixers_string << 'Grenadine'
 bamboo.mixers_string << 'Orange Bitters'

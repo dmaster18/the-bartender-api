@@ -2305,7 +2305,7 @@ corpose_reviver_one.liquors_string << '1 fl oz of Apple or Pear Brandy'
 don_quixote.liquors_string << '0.5 fl oz of Appleton Estate 12 Year Rum'
 dorado.liquors_string << '0.5 fl oz of Ilegal Reposado Mezcal'
 duck.liquors_string << '1 fl oz of Sesame-Infused Vodka'
-great.liquors_string << '1 fl oz of Laird's Bonded Apple Brandy'
+great.liquors_string << "1 fl oz of Laird's Bonded Apple Brandy"
 high_on_hog.liquors_string << '2.75 fl oz of Cabin Fever Maple Flavored Whiskey'
 high_seas.liquors_string << '0.25 fl oz of Clear Creek Pear Eau-De-Vie'
 hummer.liquors_string << '1.5 fl oz of Brandy'
@@ -2347,3 +2347,17 @@ vesper.liquors_string << '0.51 fl oz of Vodka'
 vieux.liquors_string << '1.01 fl oz of Cognac'
 white_summer.liquors_string << '0.5 fl oz of Kings County Empire Rye Whiskey'
 zombie.liquors_string << '1.52 fl oz of Puerto Rican Gold Rum'
+
+angel.liquors << calvados
+long.liquors << white
+porchlight.liquors << mellow
+saison.liquors << lairds
+white_summer.liquors << singani
+zombie.liquors << demerara
+
+angel.liquors_string << '1.01 fl oz of Apple Brandy (Calvados)'
+long.liquors_string << '0.51 fl oz of White Rum'
+porchlight.liquors_string << '0.38 fl oz of Mellow Corn Whiskey'
+saison.liquors_string << "0.5 fl oz of Laird’s Bottled-in-Bond Straight Apple Brandy"
+white_summer.liquors_string << '0.5 fl oz of Singani 63 Brandy'
+zombie.liquors_string << '1.01 fl oz of Demerara Rum'

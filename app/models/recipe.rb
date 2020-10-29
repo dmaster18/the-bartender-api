@@ -8,7 +8,7 @@ class Recipe < ApplicationRecord
   has_many :recipe_mixers
   has_many :mixers, through: :recipe_mixers
   has_many :recipe_garnishes
-  has_many :recipe_garnishes, through: :recipe_garnishes
+  has_many :garnishes, through: :recipe_garnishes
   has_many :user_recipes
   has_many :users, through: :user_recipes
 

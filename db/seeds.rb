@@ -1010,7 +1010,7 @@ drunk = Recipe.create(name: 'Drunk Uncle')
 dry = Recipe.create(name: 'Dry martini')
 duck = Recipe.create(name: 'Duck Fried Rice')
 earl = Recipe.create(name: 'Earl Grey MarTEAni')
-eggnogrecipe = Recipe.create(name: 'Eggnog')
+eggnog_recipe = Recipe.create(name: 'Eggnog')
 el_diablo = Recipe.create(name: 'El Diablo')
 el_presidente = Recipe.create(name: 'El Presidente')
 elderflowerfizz = Recipe.create(name: 'Elderflower Fizz')
@@ -1494,7 +1494,7 @@ drunk.liquors << islay
 dry.liquors << gin
 duck.liquors << lemongrass_gin
 earl.liquors << earl_grey_gin
-eggnogrecipe.liquors << rum_bourbon_brandy
+eggnog_recipe.liquors << rum_bourbon_brandy
 el_diablo.liquors << reposado_tequila
 el_presidente.liquors << rum
 elderflowerfizz.liquors << square_one_organic
@@ -1932,7 +1932,7 @@ drunk.liquors_string << '1.5 fl oz of Islay Scotch'
 dry.liquors_string << '2.03 fl oz of Gin'
 duck.liquors_string << '1 fl oz of Lemongrass-Infused Gin'
 earl.liquors_string << '1.5 fl oz of Earl Grey–Tea-Infused Tanqueray Gin'
-eggnogrecipe.liquors_string << '4 fl oz of Rum, Bourbon, or Brandy'
+eggnog_recipe.liquors_string << '4 fl oz of Rum, Bourbon, or Brandy'
 el_diablo.liquors_string << '1.5 fl oz of Reposado Tequila'
 el_presidente.liquors_string << '2 fl oz of Rum'
 elderflowerfizz.liquors_string << '0.5 fl oz of Square One Organic Vodka'
@@ -3454,7 +3454,7 @@ dorado.mixers << yuzu_bitters
 dram.mixers << lime_juice
 duck.mixers << msg
 earl.mixers << lemon_juice
-eggnogrecipe.mixers << egg_white
+eggnog_recipe.mixers << egg_white
 el_diablo.mixers << lime_juice
 el_presidente.mixers << grenadine
 elderflowerfizz.mixers << agave_nectar
@@ -3878,7 +3878,7 @@ dorado.mixers_string << '2 dashes of Yuzu Bitters'
 dram.mixers_string << '0.75 fl oz of Lime Juice'
 duck.mixers_string << '1 dash of MSG'
 earl.mixers_string << '0.75 fl oz of Lemon Juice'
-eggnogrecipe.mixers_string << '1 Egg White'
+eggnog_recipe.mixers_string << '1 Egg White'
 el_diablo.mixers_string << '0.5 fl oz of Lime Juice'
 el_presidente.mixers_string << '1 dash of Grenadine'
 elderflowerfizz.mixers_string << '1 tsp of Agave Nectar'
@@ -4280,7 +4280,7 @@ dorado.mixers << peychauds_bitters_mixer
 dram.mixers << soda_water
 duck.mixers << lime_juice
 earl.mixers << simple_syrup
-eggnogrecipe.mixers << sugar_
+eggnog_recipe.mixers << sugar_
 el_diablo.mixers << ginger_beer
 emerald.mixers << bg_reynolds
 espresso_martini.mixers << strong_espresso
@@ -4609,7 +4609,7 @@ dorado.mixers_string << 'Peychaud’s Bitters'
 dram.mixers_string << 'Soda Water'
 duck.mixers_string << 'Lime Juice'
 earl.mixers_string << 'Simple Syrup'
-eggnogrecipe.mixers_string << 'Sugar'
+eggnog_recipe.mixers_string << 'Sugar'
 el_diablo.mixers_string << 'Ginger Beer'
 emerald.mixers_string << "B.G. Reynolds Don's Spices #2"
 espresso_martini.mixers_string << 'Strong Espresso'
@@ -4889,7 +4889,7 @@ dark_side.mixers << angostura_mixer
 death_by_morning.mixers << angostura_mixer
 dons_gardenia_mix.mixers << cinnamon_syrup
 earl.mixers << egg_white
-eggnog.mixers << whole_milk
+eggnog_recipe.mixers << whole_milk
 emerald.mixers << brewed_dark_roast
 fernetaboutit.mixers << lime_juice
 figgy.mixers << orange_juice
@@ -5093,7 +5093,7 @@ dark_side.mixers_string << '13 dashes of Angostura Bitters'
 death_by_morning.mixers_string << '1 dash of Angostura Bitters'
 dons_gardenia_mix.mixers_string << '1 tsp of Cinnamon Syrup'
 earl.mixers_string << '1 Egg White'
-eggnogrecipe.mixers_string << '10 fl oz of Whole Milk'
+eggnog_recipe.mixers_string << '10 fl oz of Whole Milk'
 emerald.mixers_string << '8 fl oz of Brewed Dark-Roast Coffee'
 fernetaboutit.mixers_string << '3 fl oz of Lime Juice'
 figgy.mixers_string << '0.5 fl oz of Orange Juice'
@@ -5266,7 +5266,7 @@ dark_side.mixers << activated_charcoal
 death_by_morning.mixers << coarse_sea
 dizzy.mixers << egg_white
 dons_gardenia_mix.mixers << vanilla_syrup
-eggnogrecipe.mixers << heavy_cream
+eggnog_recipe.mixers << heavy_cream
 fernetaboutit.mixers << lemon_bitters
 figgy.mixers << lemon_mixer
 forest.mixers << cocktailpunk_alpino
@@ -5324,7 +5324,7 @@ vida.mixers << club_soda
 waterfront.mixers << orange_mixer
 whiskey_smashed.mixers << lime_juice
 white_summer.mixers << celery_salt
-yerba.mixers << mint
+yerba.mixers << mint_mixer
 zombie.mixers << angostura_mixer
 
 absinthe_suisse.mixers_string << '1 Egg White'
@@ -5358,7 +5358,7 @@ dark_side.mixers_string << '1 pinch of Activated Charcoal'
 death_by_morning.mixers_string << '1 pinch of Coarse Sea Salt'
 dizzy.mixers_string << '1 Egg White'
 dons_gardenia_mix.mixers_string << '0.5 tsp of Vanilla Syrup'
-eggnogrecipe.mixers_string << '4 fl oz of Heavy Cream'
+eggnog_recipe.mixers_string << '4 fl oz of Heavy Cream'
 fernetaboutit.mixers_string << '0.75 fl oz of Lemon Bitters'
 figgy.mixers_string << '1 wedge of Lemon'
 forest.mixers_string << '3 Dashes of Cocktailpunk Alpino Bitters'
@@ -6311,7 +6311,7 @@ cowboy.garnishes << lemon
 crush.garnishes << orange
 day_at_the_crawfish.garnishes << blackberries
 earl.garnishes << lemon
-eggnogrecipe.garnishes << grated_nutmeg
+eggnog_recipe.garnishes << grated_nutmeg
 el_diablo.garnishes << lime
 emerald.garnishes << whipped_cream
 figgy.garnishes << sage
@@ -6466,7 +6466,7 @@ cowboy.garnishes_string << '1 peel of Lemon'
 crush.garnishes_string << '1 Orange Wedge'
 day_at_the_crawfish.garnishes_string << '2 Blackberries'
 earl.garnishes_string << '1 twist of Lemon'
-eggnogrecipe.garnishes_string << 'Grated Nutmeg'
+eggnog_recipe.garnishes_string << 'Grated Nutmeg'
 el_diablo.garnishes_string << '1 wedge of Lime'
 emerald.garnishes_string << 'Whipped Cream'
 figgy.garnishes_string << '1 leaf of Sage'

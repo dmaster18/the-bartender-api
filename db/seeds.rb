@@ -649,7 +649,7 @@ apple_or_pear = Liquor.create(name: "Apple or Pear Brandy", liquor_type: "Fruit 
 applejack_or_whiskey = Liquor.create(name: "Applejack or American Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
 appleton = Liquor.create(name: "Appleton Estate 12 Year Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 appleton_jamaica_rum = Liquor.create(name: "Appleton Estate Jamaica Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
-apricot_ginger = Liquor.create(name: "Apricot Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
+apricot = Liquor.create(name: "Apricot Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
 aquavit = Liquor.create(name: "Aquavit", liquor_type: "Aquavit", description: "A distilled spirit that is principally produced in Scandinavia, where it has been produced since the 15th century. Akvavit is distilled from grain and potatoes, and is flavoured with a variety of herbs. Akvavit is also popular in Germany. Akvavit gets its distinctive flavour from spices and herbs, and the dominant flavour must (according to the European Union) come from a distillate of caraway and/or dill seed. It typically contains 40% alcohol by volume or 80 proof (U.S.)", origin: "Scandinavia", flavor: "A neutral background flavor similar to vodka_martini.", abv: "37-47%", color: "Yellow or Clear", ingredients: "Grain or Potatoes")
 ardberg_islay = Liquor.create(name: "Ardbeg 10 yr Islay Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
 ardberg_ten_scotch = Liquor.create(name: "Ardbeg 10-Year-Old Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
@@ -1137,7 +1137,7 @@ macuá = Recipe.create(name: 'Macuá')
 mad = Recipe.create(name: 'Mad Fish')
 magic = Recipe.create(name: 'Magic Cotton Candy Daiquiri')
 mai = Recipe.create(name: 'Mai Tai')
-malibu = Recipe.create(name: 'Malibu Mudslide')
+malibu_mudslide = Recipe.create(name: 'Malibu Mudslide')
 mamie = Recipe.create(name: 'Mamie Taylor')
 man_o_war = Recipe.create(name: "Man o' War")
 mango = Recipe.create(name: 'Mango Basil Lemonade')
@@ -1599,7 +1599,7 @@ macuá.liquors << white
 mad.liquors << vodka
 magic.liquors << light_rum
 mai.liquors << amber_jamaican_rum
-malibu.liquors << malibu_coconut_rum
+malibu_mudslide.liquors << malibu_coconut_rum
 mamie.liquors << blended
 man_o_war.liquors << bourbon
 mango.liquors << cognac_hennessy
@@ -2037,7 +2037,7 @@ macuá.liquors_string << '2 fl oz of White Rum'
 mad.liquors_string << '1 fl oz of Vodka'
 magic.liquors_string << '2 fl oz of Light Rum'
 mai.liquors_string << '1.01 fl oz of Amber Jamaican Rum'
-malibu.liquors_string << '2 fl oz of Malibu Coconut Rum'
+malibu_mudslide.liquors_string << '2 fl oz of Malibu Coconut Rum'
 mamie.liquors_string << '2 fl oz of Blended Scotch'
 man_o_war.liquors_string << '2 fl oz of Bourbon'
 mango.liquors_string << '1.5 fl oz of Hennessy V.S. Cognac'
@@ -3562,7 +3562,7 @@ macuá.mixers << guava_juice
 mad.mixers << raw_sushi_grade
 magic.mixers << juiced_lime
 mai.mixers << orgeat_syrup
-malibu.mixers << steamed_milk
+malibu_mudslide.mixers << steamed_milk
 mamie.mixers << lime_juice
 man_o_war.mixers << lemon_juice
 mango.mixers << lemon_juice
@@ -3986,7 +3986,7 @@ macuá.mixers_string << '2 fl oz of Guava Juice'
 mad.mixers_string << '1 chunk of Raw Sushi-Grade Tuna'
 magic.mixers_string << '1 Juiced Lime'
 mai.mixers_string << '0.51 fl oz of Orgeat Syrup'
-malibu.mixers_string << '8 fl oz of Steamed Milk'
+malibu_mudslide.mixers_string << '8 fl oz of Steamed Milk'
 mamie.mixers_string << '0.75 fl oz of Lime Juice'
 man_o_war.mixers_string << '0.5 fl oz of Lemon Juice'
 mango.mixers_string << 'Lemon Juice'
@@ -4357,7 +4357,7 @@ macuá.mixers << lemon_juice
 mad.mixers << pineapple_juice
 magic.mixers << gourmet_cotton
 mai.mixers << lime_juice
-malibu.mixers << white_chocolate
+malibu_mudslide.mixers << white_chocolate
 mamie.mixers << spicy_ginger
 mango.mixers << mango_purée
 margaritas.mixers << agave_syrup
@@ -4686,7 +4686,7 @@ macuá.mixers_string << 'Lemon Juice'
 mad.mixers_string << 'Pineapple Juice'
 magic.mixers_string << 'Gourmet Cotton Candy'
 mai.mixers_string << 'Lime Juice'
-malibu.mixers_string << 'White Chocolate Chips'
+malibu_mudslide.mixers_string << 'White Chocolate Chips'
 mamie.mixers_string << 'Spicy Ginger Ale'
 mango.mixers_string << 'Mango Purée'
 margaritas.mixers_string << 'Agave Syrup'
@@ -6347,7 +6347,7 @@ le.garnishes << rosemary
 london_toddy.garnishes << lemon
 m_g_and_t.garnishes << cinnamon
 mai.garnishes << lime
-malibu.garnishes << whipped_cream
+malibu_mudslide.garnishes << whipped_cream
 man_o_war.garnishes << brandied_cherry
 mango.garnishes << lemon
 mezcal_mule.garnishes << candied_ginger
@@ -6502,7 +6502,7 @@ le.garnishes_string << '1 sprig of Rosemary'
 london_toddy.garnishes_string << '3 wheels of Lemon'
 m_g_and_t.garnishes_string << '1 stick of Cinnamon'
 mai.garnishes_string << '1 shell of Lime'
-malibu.garnishes_string << 'Whipped Cream'
+malibu_mudslide.garnishes_string << 'Whipped Cream'
 man_o_war.garnishes_string << '1 Brandied Cherry'
 mango.garnishes_string << '1 wheel of Lemon'
 mezcal_mule.garnishes_string << 'Candied Ginger'
@@ -6586,7 +6586,7 @@ hit.garnishes << star_anise
 i_left_my_heart.garnishes << cocoa_powder
 jack_o_lantern.garnishes << cinnamon
 m_g_and_t.garnishes << star_anise
-malibu.garnishes << cinnamon
+malibu_mudslide.garnishes << cinnamon
 mezcal_mule.garnishes << chile_powder
 my.garnishes << pineapple
 night.garnishes << orange
@@ -6621,7 +6621,7 @@ hit.garnishes_string << 'Star Anise'
 i_left_my_heart.garnishes_string << '1 pinch of Cocoa Powder'
 jack_o_lantern.garnishes_string << '1 stick of Cinnamon'
 m_g_and_t.garnishes_string << '4 pods of Star Anise'
-malibu.garnishes_string << 'Cinnamon'
+malibu_mudslide.garnishes_string << 'Cinnamon'
 mezcal_mule.garnishes_string << '1 pinch of Chile Powder'
 my.garnishes_string << '1 leaf of Pineapple'
 night.garnishes_string << '1 twist of Orange'

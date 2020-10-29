@@ -101,7 +101,7 @@ passion_fruit = Garnish.create(name: "Passion Fruit")
 passion_fruit_half = Garnish.create(name: "Passion Fruit Half")
 peach = Garnish.create(name: "Peach")
 peeps_marshmallows = Garnish.create(name: "Peeps Marshmallows")
-peychauds_bitters = Garnish.create(name: "Peychaud’s Bitters ")
+p_bitters = Garnish.create(name: "Peychaud’s Bitters")
 pine = Garnish.create(name: "Pine")
 pineapple = Garnish.create(name: "Pineapple")
 pineapple_or_orange = Garnish.create(name: "Pineapple or Orange")
@@ -5739,7 +5739,7 @@ irish_maid.garnishes << cucumber
 irish_raktajino.garnishes << smoked_paprika
 jack.garnishes << lemon
 jager_old_fashioned.garnishes << orange
-japanese.garnishes << peychauds_bitters
+japanese.garnishes << p_bitters
 jingle.garnishes << pine
 john.garnishes << lemon
 josé.garnishes << lemon

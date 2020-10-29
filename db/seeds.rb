@@ -734,8 +734,8 @@ gold_rum = Liquor.create(name: "Gold Rum", liquor_type: "Rum", description: "A l
 gold_virgin_islands_rum = Liquor.create(name: "Gold Virgin Islands Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 gosling_black_rum = Liquor.create(name: "Gosling’s Black Seal Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 hendricks_gin = Liquor.create(name: "Hendrick’s Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
-hennessy = Liquor.create(name: "Hennessy V.S. Cognac", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
-hennessy_privilege = Liquor.create(name: "Hennessy V.S.O.P Privilège Cognac ", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
+cognac_hennessy = Liquor.create(name: "Hennessy V.S. Cognac", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
+cognac_hennessy_privilege = Liquor.create(name: "Hennessy V.S.O.P Privilège Cognac ", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
 herbaceous_gin = Liquor.create(name: "Herbaceous Dry Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
 high_wire = Liquor.create(name: "High Wire New Southern Revival Sorghum Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
 hwayo = Liquor.create(name: "Hwayo 41° ", liquor_type: "Soju", description: "A clear, colorless distilled beverage of Korean origin.It is usually consumed neat, and its alcohol content varies from about 16.8% to 53% alcohol by volume (ABV).Most brands of soju are made in South Korea. While soju is traditionally made from rice, wheat, or barley, modern producers often replace rice with other starches such as potatoes and sweet potatoes." , origin: "South Korea" , flavor: "Clean, neutral taste", abv: "16.8–53%", color: "Clear", ingredients: "Grain (Rice, Wheat, or Barley)")
@@ -1066,7 +1066,7 @@ harvey = Recipe.create(name: 'Harvey Wallbanger')
 heated = Recipe.create(name: 'Heated Affair')
 hemingway_daiquiri = Recipe.create(name: 'Hemingway Daiquiri')
 hemingway_special = Recipe.create(name: 'Hemingway Special')
-hennessy = Recipe.create(name: 'Hennessy Ginger')
+hennessy_ginger = Recipe.create(name: 'Hennessy Ginger')
 here_comes_the_sun = Recipe.create(name: 'Here Comes the Sun')
 hey_gourdgeous = Recipe.create(name: 'Hey, Gourdgeous')
 high_on_hog = Recipe.create(name: 'High on the Hog')
@@ -1403,7 +1403,7 @@ bloody_mary.liquors << vodka
 blue_blazer.liquors << scotch
 blue_hawaii.liquors << light_rum
 blue_lagoon.liquors << vodka
-blueberry.liquors << hennessy_privilege
+blueberry.liquors << cognac_hennessy_privilege
 bobby.liquors << blended
 boilermaker.liquors << bourbon_or_rye
 bootstitch.liquors << blended_whiskey
@@ -1538,7 +1538,7 @@ harvey.liquors << vodka
 heated.liquors << partida
 hemingway_daiquiri.liquors << white
 hemingway_special.liquors << rum
-hennessy.liquors << hennessy
+hennessy_ginger.liquors << cognac_hennessy
 here_comes_the_sun.liquors << rye
 hey_gourdgeous.liquors << apple_brandy
 high_on_hog.liquors << buffalo_trace
@@ -1601,7 +1601,7 @@ mai.liquors << amber_jamaican_rum
 malibu.liquors << malibu_coconut_rum
 mamie.liquors << blended
 man_o_war.liquors << bourbon
-mango.liquors << hennessy
+mango.liquors << cognac_hennessy
 manhattan.liquors << rye
 mantra.liquors << spiced
 margarita.liquors << tequila
@@ -1976,7 +1976,7 @@ harvey.liquors_string << '1.52 fl oz of Vodka'
 heated.liquors_string << '2 fl oz of Partida Añejo Tequila'
 hemingway_daiquiri.liquors_string << '2 fl oz of White Rum'
 hemingway_special.liquors_string << '2.03 fl oz of Rum'
-hennessy.liquors_string << '1.5 fl oz of Hennessy V.S. Cognac'
+hennessy_ginger.liquors_string << '1.5 fl oz of Hennessy V.S. Cognac'
 here_comes_the_sun.liquors_string << '1.5 fl oz of Rye Whiskey'
 hey_gourdgeous.liquors_string << '25.26 fl oz of Apple Brandy'
 high_on_hog.liquors_string << '3.25 fl oz of Buffalo Trace Kentucky Straight Bourbon'
@@ -3502,7 +3502,7 @@ harvey.mixers << orange_juice
 heated.mixers << hot_spiced
 hemingway_daiquiri.mixers << lime_juice
 hemingway_special.mixers << grapefruit_juice
-hennessy.mixers << ginger_ale
+hennessy_ginger.mixers << ginger_ale
 here_comes_the_sun.mixers << ginger_syrup
 hey_gourdgeous.mixers << lemon_juice
 high_on_hog.mixers << ginger_ale
@@ -3926,7 +3926,7 @@ harvey.mixers_string << '3.04 fl oz of Orange Juice'
 heated.mixers_string << '6 fl oz of Hot Spiced Apple Cider'
 hemingway_daiquiri.mixers_string << '0.75 fl oz of Lime Juice'
 hemingway_special.mixers_string << '1.35 fl oz of Grapefruit Juice'
-hennessy.mixers_string << '3.5 fl oz of Ginger Ale'
+hennessy_ginger.mixers_string << '3.5 fl oz of Ginger Ale'
 here_comes_the_sun.mixers_string << '0.75 fl oz of Ginger Syrup'
 hey_gourdgeous.mixers_string << '16 fl oz of Lemon Juice'
 high_on_hog.mixers_string << '28 fl oz of Ginger Ale'
@@ -5713,7 +5713,7 @@ hanalei.garnishes << pineapple
 hanky.garnishes << orange
 harry_potter_butter.garnishes << whipped_cream
 harvey.garnishes << orange
-hennessy.garnishes << lime
+hennessy_ginger.garnishes << lime
 here_comes_the_sun.garnishes << lemon
 hey_gourdgeous.garnishes << whole_cloves
 high_tide.garnishes << green_apple
@@ -6059,7 +6059,7 @@ hanalei.garnishes_string << '1 wedge of Pineapple'
 hanky.garnishes_string << '1 zest of Orange'
 harry_potter_butter.garnishes_string << 'Whipped Cream'
 harvey.garnishes_string << '1 slice of Orange'
-hennessy.garnishes_string << '1 wedge of Lime'
+hennessy_ginger.garnishes_string << '1 wedge of Lime'
 here_comes_the_sun.garnishes_string << '1 wedge of Lemon'
 hey_gourdgeous.garnishes_string << '1 tbsp of Whole Cloves'
 high_tide.garnishes_string << '2 slices of Green Apple'
@@ -6323,7 +6323,7 @@ harry_potter_butter.garnishes << butterscotch_syrup
 harvey.garnishes << maraschino_cherry
 heated.garnishes << grated_nutmeg
 hemingway_daiquiri.garnishes << lime
-hennessy.garnishes << ginger
+hennessy_ginger.garnishes << ginger
 hey_gourdgeous.garnishes << grated_nutmeg
 high_on_hog.garnishes << bacon
 hit.garnishes << cinnamon
@@ -6478,7 +6478,7 @@ harry_potter_butter.garnishes_string << 'Butterscotch Syrup'
 harvey.garnishes_string << '1 Maraschino Cherry'
 heated.garnishes_string << 'Grated Nutmeg'
 hemingway_daiquiri.garnishes_string << '1 wheel of Lime'
-hennessy.garnishes_string << '3 slices of Ginger'
+hennessy_ginger.garnishes_string << '3 slices of Ginger'
 hey_gourdgeous.garnishes_string << '1 tsp of Grated Nutmeg'
 high_on_hog.garnishes_string << '4 Strips of Bacon'
 hit.garnishes_string << 'Cinnamon'

@@ -2229,3 +2229,121 @@ witches_brew.liquors_string << '2 fl oz of Islay Scotch'
 yellow.liquors_string << '1.01 fl oz of White Rum'
 yerba.liquors_string << '2 fl oz of Partida Reposado Tequila'
 zombie.liquors_string << '1.52 fl oz of Jamaican Dark Rum'
+
+angel.liquors << apricot
+another.liquors << don
+apricot.liquors << apricot
+autumn.liquors << santa
+bermuda.liquors << gold
+between.liquors << cognac
+big_red_sun.liquors << powers
+blue_hawaii.liquors << vodka
+café.liquors << jameson
+cave.liquors << glenlivet
+cobras.liquors << one_five_one_proof
+cojito.liquors << malibu
+corpose_reviver_one.liquors << apple_or_pear
+don_quixote.liquors << appleton
+dorado.liquors << ilegal
+duck.liquors << sesame
+great.liquors << lairds_bonded
+high_on_hog.liquors << cabin
+high_seas.liquors << clear
+hummer.liquors << brandy
+hurricane.liquors << dark
+illegal.liquors << jamaica
+landmaster.liquors << aquavit
+latitude.liquors << rhum
+long.liquors << vodka
+mai.liquors << martinique
+mutual.liquors << ron
+nui.liquors << dark_demerara
+oaxacan.liquors << blanco
+one.liquors << diplomatico
+orange_whip.liquors << vodka
+paradise.liquors << apricot
+pearl.liquors << demerara
+penicillin.liquors << lagavulin
+porchlight.liquors << old
+pot.liquors << islay
+pumpkin_toddy.liquors << rye
+rainbow.liquors << white
+rebirth.liquors << st_george
+ruby.liquors << coconut
+rum_punch.liquors << dark
+saison.liquors << george
+samarian.liquors << cabbage
+sea_breeze_cooler.liquors << apricot
+singapore.liquors << cherry
+smoky.liquors << blended
+spiced_eggnog.liquors << spiced
+suffering.liquors << brandy
+tasman.liquors << lemon
+tea_for_two.liquors << cognac
+the_spice_is_right.liquors << rye
+tom_and_jerry.liquors << cognac
+uncle.liquors << spiced
+uss.liquors << vs
+vesper.liquors << vodka
+vieux.liquors << cognac
+white_summer.liquors << kings
+zombie.liquors << puerto
+
+angel.liquors_string << '1.01 fl oz of Apricot Brandy'
+another.liquors_string << '1 fl oz of Don Julio Reposado Tequila'
+apricot.liquors_string << '0.25 fl oz of Apricot Brandy'
+autumn.liquors_string << '0.5 fl oz of Santa Teresa 1796 Rum'
+bermuda.liquors_string << '4 fl oz of Gold Rum'
+between.liquors_string << '1.01 fl oz of Cognac'
+big_red_sun.liquors_string << '1 fl oz of Power’s Irish Whiskey'
+blue_hawaii.liquors_string << '0.68 fl oz of Vodka'
+café.liquors_string << '0.75 fl oz of Jameson Caskmates Whiskey'
+cave.liquors_string << '1 fl oz of Glenlivet 12-Year Scotch'
+cobras.liquors_string << '0.5 fl oz of 151-Proof Demerara Rum'
+cojito.liquors_string << '0.17 fl oz of Malibu'
+corpose_reviver_one.liquors_string << '1 fl oz of Apple or Pear Brandy'
+don_quixote.liquors_string << '0.5 fl oz of Appleton Estate 12 Year Rum'
+dorado.liquors_string << '0.5 fl oz of Ilegal Reposado Mezcal'
+duck.liquors_string << '1 fl oz of Sesame-Infused Vodka'
+great.liquors_string << '1 fl oz of Laird's Bonded Apple Brandy'
+high_on_hog.liquors_string << '2.75 fl oz of Cabin Fever Maple Flavored Whiskey'
+high_seas.liquors_string << '0.25 fl oz of Clear Creek Pear Eau-De-Vie'
+hummer.liquors_string << '1.5 fl oz of Brandy'
+hurricane.liquors_string << '2 fl oz of Dark Rum'
+illegal.liquors_string << '0.51 fl oz of Jamaica Overproof White Rum'
+landmaster.liquors_string << '0.25 fl oz of Aquavit'
+latitude.liquors_string << '1 fl oz of Rhum Clément V.S.O.P. Martinique Rhum Agricole Vieux'
+long.liquors_string << '0.51 fl oz of Vodka'
+mai.liquors_string << '1.01 fl oz of Martinique Molasses Rum'
+mutual.liquors_string << '0.5 fl oz of Ron Zacapa 23-Year-Old Rum'
+nui.liquors_string << '0.5 fl oz of Dark Demerara Rum'
+oaxacan.liquors_string << '0.25 fl oz of Blanco Tequila'
+one.liquors_string << '2 fl oz of Diplomatico Mantuano Rum'
+orange_whip.liquors_string << '1 fl oz of Vodka'
+paradise.liquors_string << '0.68 fl oz of Apricot Brandy'
+pearl.liquors_string << '0.5 fl oz of Demerara Rum'
+penicillin.liquors_string << '0.25 fl oz of Lagavulin 16y Whiskey'
+porchlight.liquors_string << '0.5 fl oz of Old Overholt Straight Rye Whiskey'
+pot.liquors_string << '0.25 fl oz of Islay Scotch'
+pumpkin_toddy.liquors_string << '0.5 fl oz of Rye Whiskey'
+rainbow.liquors_string << '5 fl oz of White Rum'
+rebirth.liquors_string << '0.5 fl oz of St. George Pear Brandy'
+ruby.liquors_string << '1 fl oz of Coconut Rum'
+rum_punch.liquors_string << '1.25 fl oz of Dark Rum'
+saison.liquors_string << '0.5 fl oz of George Apple Brandy'
+samarian.liquors_string << '0.5 fl oz of Cabbage Rum'
+sea_breeze_cooler.liquors_string << '1 fl oz of Apricot Brandy'
+singapore.liquors_string << '0.51 fl oz of Cherry Brandy'
+smoky.liquors_string << '0.25 fl oz of Blended Scotch'
+spiced_eggnog.liquors_string << '2 fl oz of Spiced Rum'
+suffering.liquors_string << '1.01 fl oz of Brandy'
+tasman.liquors_string << '0.5 fl oz of Lemon Hart 151-Proof Demerara Rum'
+tea_for_two.liquors_string << '8 fl oz of Cognac'
+the_spice_is_right.liquors_string << '1 fl oz of Rye Whiskey'
+tom_and_jerry.liquors_string << '1 fl oz of Cognac'
+uncle.liquors_string << '4 fl oz of Spiced Rum'
+uss.liquors_string << '16 fl oz of V.S. or V.S.O.P.-Grade Cognac'
+vesper.liquors_string << '0.51 fl oz of Vodka'
+vieux.liquors_string << '1.01 fl oz of Cognac'
+white_summer.liquors_string << '0.5 fl oz of Kings County Empire Rye Whiskey'
+zombie.liquors_string << '1.52 fl oz of Puerto Rican Gold Rum'

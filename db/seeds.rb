@@ -212,7 +212,7 @@ cider = Mixer.create(name: "Cider")
 cinnamon_simple = Mixer.create(name: "Cinnamon Simple Syrup")
 cinnamon_vanilla = Mixer.create(name: "Cinnamon Vanilla Syrup")
 cinnamon_syrup = Mixer.create(name: "Cinnamon Syrup")
-cinnamon = Mixer.create(name: "Cinnamon")
+cinnamon_mixer = Mixer.create(name: "Cinnamon")
 citrus_oleo_saccharum = Mixer.create(name: "Citrus Oleo-Saccharum")
 citrus_syrup = Mixer.create(name: "Citrus Syrup")
 clamato_juice = Mixer.create(name: "Clamato Juice")
@@ -2384,7 +2384,7 @@ boozy.mixers << chopped_semisweet
 bordeaux.mixers << maple_syrup
 bossa.mixers << angostura_mixer
 boston.mixers << lemonade
-bourbon_cider.mixers << cinnamon
+bourbon_cider.mixers << cinnamon_mixer
 bourbon_lancer.mixers << angostura_mixer
 bourbon_lemonade.mixers << lemonade
 bourbon_old_fashioned.mixers << sugar_

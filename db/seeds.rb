@@ -5532,3 +5532,37 @@ rainbow.mixers_string << '1 tbsp of Angostura Bitters'
 ramos.mixers_string << '3 dashes of Orange Flower Water'
 sangrita.mixers_string << '15 fl oz of Tomato Juice'
 vampiro.mixers_string << '3 slices of Red Hot Chili Pepper'
+
+bloody_maria.mixers << celery_salt
+hey_gourdgeous.mixers << star_anise
+i_left_my_heart.mixers << salt
+mexican.mixers << grenadine
+ponche.mixers << raisins
+ramos.mixers << vanilla_extract
+sangrita.mixers << tabasco_
+tom_yum.mixers << palm_sugar
+vampiro.mixers << worcestershire_sauce
+
+bloody_maria.mixers_string << '1 pinch of Celery Salt'
+hey_gourdgeous.mixers_string << '8 pods of Star Anise'
+i_left_my_heart.mixers_string << '1 pinch of Salt'
+mexican.mixers_string << '7 dashes of Grenadine'
+ponche.mixers_string << '0.5 cups of Raisins'
+ramos.mixers_string << '2 drops of Vanilla Extract'
+sangrita.mixers_string << '2 fl oz of Tabasco'
+tom_yum.mixers_string << '0.67 fl oz of Palm Sugar Syrup'
+vampiro.mixers_string << '4 fl oz of Worcestershire Sauce'
+
+mexican.mixers << seven_up
+ponche.mixers << juiced_lemon
+ramos.mixers << soda_water
+vampiro.mixers << salt
+
+mexican.mixers_string << '12 fl oz of 7 Up'
+ponche.mixers_string << '1 Juiced Lemon'
+ramos.mixers_string << 'Top up with Soda Water'
+vampiro.mixers_string << '1 Pinch of Salt'
+
+ponche.mixers << water
+
+ponche.mixers_string << '80 fl oz of Water'

@@ -13,7 +13,7 @@ apple_fan = Garnish.create(name: "Apple Fan")
 apple_slices = Garnish.create(name: "Apple Slices")
 bacon = Garnish.create(name: "Bacon")
 banana = Garnish.create(name: "Banana")
- Garnish.create(name: "Basil")
+basil = Garnish.create(name: "Basil")
 blackberries = Garnish.create(name: "Blackberries")
 blackberry = Garnish.create(name: "Blackberry")
 blood_orange = Garnish.create(name: "Blood Orange")
@@ -101,7 +101,7 @@ passion_fruit = Garnish.create(name: "Passion Fruit")
 passion_fruit_half = Garnish.create(name: "Passion Fruit Half")
 peach = Garnish.create(name: "Peach")
 peeps_marshmallows = Garnish.create(name: "Peeps Marshmallows")
-peychauds_bitters  = Garnish.create(name: "Peychaud’s Bitters ")
+peychauds_bitters = Garnish.create(name: "Peychaud’s Bitters ")
 pine = Garnish.create(name: "Pine")
 pineapple = Garnish.create(name: "Pineapple")
 pineapple_or_orange = Garnish.create(name: "Pineapple or Orange")
@@ -5640,7 +5640,7 @@ cape.garnishes << grated_cinnamon
 cardamom_recipe.garnishes << cardamom
 casino.garnishes << lemon
 cave.garnishes << lemon
-cbd_dirty_martini.garnishes << green_olive_mixer
+cbd_dirty_martini.garnishes << green_olive
 cbd_gin_tonic.garnishes << lime
 cbd_moscow_mule.garnishes << mint
 cbd_spritz.garnishes << grapefruit

@@ -635,6 +635,7 @@ old_singe_malt_scotch = Liquor.create(name: "21-Year-Old Single-Malt Scotch", li
 absolut_lime = Liquor.create(name: "Absolut Lime Vodka", liquor_type: "Vodka", description: "A clear distilled alcoholic beverage with different varieties originating in Poland, Russia and Sweden. It is composed primarily of water and ethanol, but sometimes with traces of impurities and flavorings. Traditionally it is made by distilling the liquid from cereal grains that have been fermented, with potatoes arising as a substitute in more recent times, and some modern brands using fruits as the base." , origin: "Poland, Russia, Sweden" , flavor: "No distinctive flavor.", abv: "35–95% (usually 40%)", color: "Clear", ingredients: "Grains (Sorghum, Corn, Rice, Rye or Wheat), Potatoes, Fruits or Sugar.")
 absolut_vodka = Liquor.create(name: "Absolut Vodka", liquor_type: "Vodka", description: "A clear distilled alcoholic beverage with different varieties originating in Poland, Russia and Sweden. It is composed primarily of water and ethanol, but sometimes with traces of impurities and flavorings. Traditionally it is made by distilling the liquid from cereal grains that have been fermented, with potatoes arising as a substitute in more recent times, and some modern brands using fruits as the base." , origin: "Poland, Russia, Sweden" , flavor: "No distinctive flavor.", abv: "35–95% (usually 40%)", color: "Clear", ingredients: "Grains (Sorghum, Corn, Rice, Rye or Wheat), Potatoes, Fruits or Sugar.")
 barbados_rum = Liquor.create(name: "Aged Barbados Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
+agave_tequila = Liquor.create(name: "100% Agave Tequila", liquor_type: "Tequila", description: "A distilled beverage made from the blue agave plant, primarily in the area surrounding the city of Tequila 65 km (40 mi) northwest of Guadalajara, and in the Jaliscan Highlands (Los Altos de Jalisco) of the central western Mexican state of Jalisco. The red volcanic soils in the region of Tequila are well suited for growing the blue agave, and more than 300 million of the plants are harvested there each year. Agave grows differently depending on the region. Blue agaves grown in the highlands Los Altos region are larger and sweeter in aroma and taste. Aside from its geographical distinction, tequila is differentiated from mezcal in that it is made only from blue agave and the beverages are prepared in different ways. Tequila is commonly served neat in Mexico and as a shot with salt and lime around the world. Tequila must have between 35- and 55-percent alcohol content (70 and 110 U.S. proof). It must contain at least 40-percent alcohol (80 U.S. proof) to be sold in the United States and Canada." , origin: "Mexico" , flavor: "Smoky, Spicy, Fruity", abv: "38–55% (usually 40%)", color: "Clear or Gold", ingredients: "Blue Agave")
 aged_rum = Liquor.create(name: "Aged Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 amass_gin = Liquor.create(name: "Amass Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
 amber_jamaican_rum = Liquor.create(name: "Amber Jamaican Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
@@ -1704,7 +1705,7 @@ sangria.liquors << brandy
 saturn.liquors << gin
 sazerac.liquors << cognac
 scofflaw.liquors << bourbon_or_rye
-scotch.liquors << scotch
+scotch_soda.liquors << scotch
 sea_breeze.liquors << vodka
 sea_breeze_cooler.liquors << dry_gin
 set.liquors << bowmore_malt
@@ -2142,7 +2143,7 @@ sangria.liquors_string << '4 fl oz of Brandy'
 saturn.liquors_string << '1.25 fl oz of Gin'
 sazerac.liquors_string << '1.69 fl oz of Cognac'
 scofflaw.liquors_string << '2 fl oz of Bourbon or Rye'
-scotch.liquors_string << '2 fl oz of Scotch'
+scotch_soda.liquors_string << '2 fl oz of Scotch'
 sea_breeze.liquors_string << '1.35 fl oz of Vodka'
 sea_breeze_cooler.liquors_string << '1 fl oz of Dry Gin'
 set.liquors_string << '2 fl oz of Bowmore 12-Year-Old Single-Malt Scotch'
@@ -3662,7 +3663,7 @@ sangrita.mixers << lime_juice
 saturn.mixers << lemon_juice
 sazerac.mixers << sugar_
 scofflaw.mixers << lemon_juice
-scotch.mixers << club_soda
+scotch_soda.mixers << club_soda
 sea_breeze.mixers << cranberry_juice
 sea_breeze_cooler.mixers << juiced_lime_half
 set.mixers << lime_juice
@@ -4086,7 +4087,7 @@ sangrita.mixers_string << '2 fl oz of Lime Juice'
 saturn.mixers_string << '0.5 fl oz of Lemon Juice'
 sazerac.mixers_string << '1 cube of Sugar'
 scofflaw.mixers_string << '0.25 fl oz of Lemon Juice'
-scotch.mixers_string << 'Top up with Club Soda'
+scotch_soda.mixers_string << 'Top up with Club Soda'
 sea_breeze.mixers_string << '4.06 fl oz of Cranberry Juice'
 sea_breeze_cooler.mixers_string << 'Juiced Lime Half'
 set.mixers_string << '0.75 fl oz of Lime Juice'

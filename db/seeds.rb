@@ -5414,3 +5414,121 @@ whiskey_smashed.mixers_string << '6.75 fl oz of Lime Juice'
 white_summer.mixers_string << '1 pinch of Celery Salt'
 yerba.mixers_string << '8 Leaves of Mint'
 zombie.mixers_string << '1 dash of Angostura Bitters'
+
+absinthe_suisse.mixers << rose_flower
+aperitivo.mixers << orange_flower
+black_mole_margarita.mixers << soda_water
+bloody_casear.mixers << ground_pepper
+bloody_maria.mixers << tapatio_hot
+bloody_mary.mixers << celery_salt
+bulleit.mixers << angostura_bitters
+café_ponche.mixers << orange_juice
+cobras.mixers << grenadine
+coquito.mixers << ground_cinnamon
+corpse_reviver_two_one_two.mixers << vanilla_salt
+cucumber_cleanse.mixers << hibiscus_lavender
+death_by_morning.mixers << orange
+dizzy.mixers << heavy_cream
+fernet.mixers << water
+ginger_fever_punch.mixers << ginger_beer
+hey_gourdgeous.mixers << peeled_and
+horn.mixers << soda_water
+i_left_my_heart.mixers << star_anise
+jack_o_lantern.mixers << lemon_juice
+london_toddy.mixers << peychauds_bitters
+mexican.mixers << lime_juice
+miami.mixers << pineapple_juice
+nui.mixers << crushed_ice
+pomelomosa.mixers << simple_syrup
+ponche.mixers << chopped_tart
+port.mixers << orange
+pumpkin_toddy.mixers << boiling_water
+rainbow.mixers << grenadine
+ramos.mixers << egg_white
+roman.mixers << sea_salt
+samarian.mixers << salt
+sangria.mixers << orange_juice
+sangrita.mixers << ground_pepper
+singapura.mixers << angostura_bitters
+spicy_mint.mixers << jalapeño_pepper
+vampiro.mixers << finely_chopped_onion
+waterfront.mixers << lemon
+whiskey_smashed.mixers << water
+
+absinthe_suisse.mixers_string << '8 drops of Rose Flower Water'
+aperitivo.mixers_string << '5 drops of Orange Flower Water'
+black_mole_margarita.mixers_string << 'Top up with Soda Water'
+bloody_casear.mixers_string << '1 pinch of Ground Pepper'
+bloody_maria.mixers_string << '2 dashes of Tapatio Hot Sauce'
+bloody_mary.mixers_string << 'Celery Salt'
+bulleit.mixers_string << '2 dashes of Angostura Bitters'
+café_ponche.mixers_string << '4 fl oz of Orange Juice'
+cobras.mixers_string << '1 dash of Grenadine'
+coquito.mixers_string << '4 tsp of Ground Cinnamon'
+corpse_reviver_two_one_two.mixers_string << '2 dashes of Vanilla Salt'
+cucumber_cleanse.mixers_string << '5 drops of Hibiscus Lavender Oak Bitters'
+death_by_morning.mixers_string << '1 twist of Orange'
+dizzy.mixers_string << '0.5 fl oz of Heavy Cream'
+fernet.mixers_string << '6 fl oz of Water'
+ginger_fever_punch.mixers_string << 'Top up with Ginger Beer'
+hey_gourdgeous.mixers_string << '4 fl oz of Peeled and Sliced Ginger'
+horn.mixers_string << 'Top up with Soda Water'
+i_left_my_heart.mixers_string << '1 pod of Star Anise'
+jack_o_lantern.mixers_string << '1 fl oz of Lemon Juice'
+london_toddy.mixers_string << '6 dashes of Peychaud’s Bitters'
+mexican.mixers_string << '7 fl oz of Lime Juice'
+miami.mixers_string << '2 fl oz of Pineapple Juice'
+nui.mixers_string << '0.5 cups of Crushed Ice'
+pomelomosa.mixers_string << '0.5 fl oz of Simple Syrup'
+ponche.mixers_string << '2 Chopped Tart Apples'
+port.mixers_string << '3 slices of Orange'
+pumpkin_toddy.mixers_string << '5 fl oz of Boiling Water'
+rainbow.mixers_string << '3 fl oz of Grenadine'
+ramos.mixers_string << '1 Egg White'
+roman.mixers_string << '1 pinch of Sea Salt'
+samarian.mixers_string << '1 pinch of Salt'
+sangria.mixers_string << '4 fl oz of Orange Juice'
+sangrita.mixers_string << '2 tsp of Ground Pepper'
+singapura.mixers_string << '2 dashes of Angostura Bitters'
+spicy_mint.mixers_string << '3 slices of Jalapeño Pepper'
+vampiro.mixers_string << '0.5 slices of Finely-Chopped Onion'
+waterfront.mixers_string << '1 wedge of Lemon'
+whiskey_smashed.mixers_string << '2.75 fl oz of Water'
+
+absinthe_suisse.mixers << soda_water
+aperitivo.mixers << sparkling_water
+bloody_maria.mixers << prepared_horseradish
+bloody_mary.mixers << black_pepper
+bulleit.mixers << ginger_beer
+café_ponche.mixers << cinnamon
+coquito.mixers << ground_nutmeg
+cucumber_cleanse.mixers << egg_white
+dizzy.mixers << soda_water
+hey_gourdgeous.mixers << cinnamon
+i_left_my_heart.mixers << split_vanilla
+jack_o_lantern.mixers << apple_juice
+mexican.mixers << grenadine
+ponche.mixers << chopped_pear
+rainbow.mixers << angostura_bitters
+ramos.mixers << orange_flower
+sangrita.mixers << tomato_juice
+vampiro.mixers << red_hot
+
+absinthe_suisse.mixers_string << 'Top up with Soda Water'
+aperitivo.mixers_string << 'Top up with Sparkling Water'
+bloody_maria.mixers_string << '0.5 tbsp of Prepared Horseradish'
+bloody_mary.mixers_string << 'Black Pepper'
+bulleit.mixers_string << 'Top up with Ginger Beer'
+café_ponche.mixers_string << 'Cinnamon'
+coquito.mixers_string << '1 tsp of Ground Nutmeg'
+cucumber_cleanse.mixers_string << '1 Egg White'
+dizzy.mixers_string << 'Top up with Soda Water'
+hey_gourdgeous.mixers_string << '8 sticks of Cinnamon'
+i_left_my_heart.mixers_string << '1 Split Vanilla Bean'
+jack_o_lantern.mixers_string << '2 fl oz of Apple Juice'
+mexican.mixers_string << '6 fl oz of Grenadine'
+ponche.mixers_string << '1 Chopped Pear'
+rainbow.mixers_string << '1 tbsp of Angostura Bitters'
+ramos.mixers_string << '3 dashes of Orange Flower Water'
+sangrita.mixers_string << '15 fl oz of Tomato Juice'
+vampiro.mixers_string << '3 slices of Red Hot Chili Pepper'

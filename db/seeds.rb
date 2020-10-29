@@ -469,7 +469,7 @@ ancho_reyes = Liqueur.create(name: "Ancho Reyes Ancho Chile Liqueur", liqueur_ty
 aperol = Liqueur.create(name: "Aperol", liqueur_type: "Aperol", description: "Aperol is an Italian bitter apéritif made of gentian, rhubarb, and cinchona, among other ingredients. It has a vibrant orange hue. Its name comes from the French slang word for aperitif, which is apero." , origin: "Italy" , flavor: "Bitter", abv: "11%", color: "Orange")
 averna = Liqueur.create(name: "Averna Amaro", liqueur_type: "Amaro", description: "Amaro is an Italian herbal liqueur that is commonly consumed as an after-dinner digestif. It usually has a bitter-sweet flavour, sometimes syrupy, and has an alcohol content between 16% and 40%. Amaro is typically produced by macerating herbs, roots, flowers, bark, and/or citrus peels in alcohol, either neutral spirits or wine, mixing the filtrate with sugar syrup, and allowing the mixture to age in casks or bottles." , origin: "Italy" , flavor: "Bitter-sweet", abv: "16-40%", color: "Varies")
 baileys = Liqueur.create(name: "Bailey's Irish Cream", liqueur_type: "Irish Cream", description: "A cream liqueur based on Irish whiskey, cream and other flavourings. It typically has an ABV (alcohol by volume) level of 15 to 20% and is served on its own or in mixed drinks, most commonly Irish coffee" , origin: "Ireland" , flavor: "Sweet, Creamy", abv: "15-20%", color: "White")
-banana = Liqueur.create(name: "Banana Liqueur", liqueur_type: "Banana Liqueur", description: "A banana-flavored liqueur." , origin: nil , flavor: "Banana", abv: "17-25%", color: "Yellow")
+liqueur_of_banana = Liqueur.create(name: "Banana Liqueur", liqueur_type: "Banana Liqueur", description: "A banana-flavored liqueur." , origin: nil , flavor: "Banana", abv: "17-25%", color: "Yellow")
 bärenjäger = Liqueur.create(name: "Bärenjäger Honey Liqueur", liqueur_type: "Honey Liqueur", description: "Most homemade Bärenfang is based on vodka, but some recipes with a higher alcohol content are based on neutral spirit.", origin: "Germany" , flavor: "Honey", abv: "30-45%", color: "Golden")
 barolo = Liqueur.create(name: "Barolo Chinato", liqueur_type: "Wine", description: "Wine is an alcoholic drink typically made from fermented grape juice. Yeast consumes the sugar in the grapes and converts it to ethanol, carbon dioxide, and heat. Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the grape's growing environment (terroir), and the production process. " , origin: nil , flavor: "Varies", abv: "5.5–25%", color: "Red or White")
 becherovka = Liqueur.create(name: "Becherovka Liqueur", liqueur_type: "Bitters", description: "An herbal bitters drink , often drunk as a digestive aid. It is produced in Karlovy Vary, Czech Republic by the Jan Becher company. The brand is owned by Pernod Ricard. It is made from a secret recipe based on more than twenty types of herbs and spices" , origin: "Czech Republic" , flavor: "Ginger, Cinnamon", abv: "38%", color: "Yellow")
@@ -571,7 +571,7 @@ orange_curaçao = Liqueur.create(name: "Orange Curaçao", liqueur_type: "Curaça
 orange_liqueur = Liqueur.create(name: "Orange Liqueur", liqueur_type: "Orange Liqueur", description: "A type of strong, sweet and colorless orange-flavored liqueur. It is a variety of Curaçao liqueur, an orange-flavored liqueur made from the dried peels of bitter and sweet oranges." , origin: "France" , flavor: "Orange", abv: "15–40%", color: "Clear")
 pama = Liqueur.create(name: "Pama Pomegranate Liqueur", liqueur_type: "Pomegranate Liqueur", description: "Made with all-natural California pomegranates, This liqueur offers a highly mixable taste profile that is, at the same time, sweet and tart. This appeals to today's trendsetters through the rich history, spirituality and alluring taste of the pomegranate." , origin: "USA" , flavor: "Pomegranate", abv: "17", color: "Red")
 passion = Liqueur.create(name: "Passion Fruit Liqueur", liqueur_type: "Passion Fruit Liqueur", description: "The original version of Passoã contains passion-fruit juice from Brazil." , origin: "Brazil" , flavor: "Fruity", abv: "14.9-20%", color: "Orange")
-peach = Liqueur.create(name: "Peach Schnapps", liqueur_type: "Schnapps", description: "Famous for the 'Fuzzy Navel', DeKuyper Peachtree is a classic drink. This liqueur is bursting with the taste of tree-ripened peaches and makes amazing cocktails." , origin: "USA" , flavor: "Peach", abv: "23%", color: "Peach")
+peachschnapps = Liqueur.create(name: "Peach Schnapps", liqueur_type: "Schnapps", description: "Famous for the 'Fuzzy Navel', DeKuyper Peachtree is a classic drink. This liqueur is bursting with the taste of tree-ripened peaches and makes amazing cocktails." , origin: "USA" , flavor: "Peach", abv: "23%", color: "Peach")
 pernod = Liqueur.create(name: "Pernod", liqueur_type: "Anise Liqueur", description: "Pernod is actually a successor of absinthe, the potent liquor popular in the 19th century. The exotic bouquet, when tasted neat, is potent and bittersweet; with the addition of water, it turns milky-opaque and has a long, licorice-like finish" , origin: "France" , flavor: "Licorice, Bittersweet", abv: "45%", color: "Clear")
 pernod_absinthe = Liqueur.create(name: "Pernod Absinthe", liqueur_type: "Absinthe", description: "An anise-flavoured spirit derived from botanicals, including the flowers and leaves of Artemisia absinthium ('grand wormwood'), together with green anise, sweet fennel, and other medicinal and culinary herbs" , origin: "Switzerland" , flavor: "Anise", abv: "45–74%", color: "Green")
 pernod_ricard = Liqueur.create(name: "Pernod Ricard Pastis", liqueur_type: "Pastis", description: "An anise-flavoured spirit and apéritif traditionally from France, typically containing less than 100 g/l sugar and 40–45% ABV" , origin: "France" , flavor: "Anise", abv: "40-45%", color: "Caramel")
@@ -693,7 +693,7 @@ chivas = Liquor.create(name: "Chivas Regal 12 Year Old", liquor_type: "Scotch", 
 citrus_gin = Liquor.create(name: "Citrus-Forward Dry Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
 clear = Liquor.create(name: "Clear Creek Pear Eau-De-Vie", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
 clontarf_irish = Liquor.create(name: "Clontarf Irish Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
-coconut = Liquor.create(name: "Coconut Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
+coconutrum = Liquor.create(name: "Coconut Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 cognac = Liquor.create(name: "Cognac", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
 cognac_rye_whiskey = Liquor.create(name: "Cognac or Rye Whiskey", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
 compass_box_scotch = Liquor.create(name: "Compass Box The Peat Monster Malt Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
@@ -876,7 +876,7 @@ b_52 = Recipe.create(name: 'B-52')
 bacardi = Recipe.create(name: 'Bacardi Cocktail')
 bagrationi = Recipe.create(name: 'Bagrationi')
 bamboo = Recipe.create(name: 'Bamboo')
-banana = Recipe.create(name: 'Banana Daiquiri')
+bananadaiquiri = Recipe.create(name: 'Banana Daiquiri')
 barbados = Recipe.create(name: 'Barbados Rum Punch')
 barracuda = Recipe.create(name: 'Barracuda')
 batida = Recipe.create(name: 'Batida')
@@ -1124,7 +1124,7 @@ lemon_drop_martini = Recipe.create(name: 'Lemon Drop Martini')
 lemon_drop = Recipe.create(name: 'Lemon Drop')
 lights = Recipe.create(name: 'Lights Out Punch')
 lime = Recipe.create(name: 'Lime Rickey')
-limoncello = Recipe.create(name: 'Limoncello & Raspberry Whiskey Sour Popsicles')
+raspberrylimon = Recipe.create(name: 'Limoncello & Raspberry Whiskey Sour Popsicles')
 lions = Recipe.create(name: "Lion's Tail")
 little = Recipe.create(name: 'Little Kiss')
 london_lemonade = Recipe.create(name: 'London Lemonade')
@@ -1195,12 +1195,12 @@ paloma = Recipe.create(name: 'Paloma')
 pandan_coconut = Recipe.create(name: 'Pandan-Coconut Kaki-tail')
 paper = Recipe.create(name: 'Paper Plane')
 paradise = Recipe.create(name: 'Paradise')
-peach = Recipe.create(name: 'Peach Me')
+peachme = Recipe.create(name: 'Peach Me')
 pearl = Recipe.create(name: 'Pearl Diver')
 peeping = Recipe.create(name: 'Peeping Tom')
 pegu = Recipe.create(name: 'Pegu Club')
 penicillin = Recipe.create(name: 'Penicillin')
-pho_king = Recipe.create(name: 'Pho-King Champ')
+phoking = Recipe.create(name: 'Pho-King Champ')
 picon = Recipe.create(name: 'Picon Punch')
 pimms = Recipe.create(name: "Pimm's Cup")
 piña = Recipe.create(name: 'Piña Colada')
@@ -1278,7 +1278,7 @@ snap = Recipe.create(name: 'Snap, Crackle, Drop')
 south = Recipe.create(name: 'South by Southwest')
 southside = Recipe.create(name: 'Southside')
 spanish = Recipe.create(name: 'Spanish Gin & Tonic')
-sparkling_rose = Recipe.create(name: 'Sparkling Rosé Margarita')
+sparkling_margarita = Recipe.create(name: 'Sparkling Rosé Margarita')
 sparkling_watermelon = Recipe.create(name: 'Sparkling Watermelon Punch')
 spcity_margarita = Recipe.create(name: 'Spicy Margarita')
 spiced_eggnog = Recipe.create(name: 'Spiced Eggnog')
@@ -1378,7 +1378,7 @@ aviation.liquors << gin
 b.liquors << cognac
 bacardi.liquors << white
 bagrationi.liquors << brandy
-banana.liquors << aged_rum
+bananadaiquiri.liquors << aged_rum
 barbados.liquors << barbados_rum
 barracuda.liquors << gold_rum
 batida.liquors << cachaça
@@ -1587,7 +1587,7 @@ leeward.liquors << slipsmith_gin
 lemon_drop_martini.liquors << vodka_citron
 lemon_drop.liquors << vodka
 lime.liquors << bourbon_rye_gin
-limoncello.liquors << whiskey
+raspberrylimon.liquors << whiskey
 lions.liquors << bourbon
 london_lemonade.liquors << gin
 london_toddy.liquors << gin
@@ -1650,12 +1650,12 @@ paloma.liquors << agave_tequila
 pandan_coconut.liquors << herbaceous_gin
 paper.liquors << bourbon_whiskey
 paradise.liquors << gin
-peach.liquors << woodford_reserve
+peachme.liquors << woodford_reserve
 pearl.liquors << aged_rum
 peeping.liquors << gin
 pegu.liquors << gin
 penicillin.liquors << blended
-pho_king.liquors << vodka
+phoking.liquors << vodka
 picon.liquors << brandy
 piña.liquors << white
 pina_colada.liquors << light_rum
@@ -1722,7 +1722,7 @@ snap.liquors << don
 south.liquors << ardberg_ten_scotch
 southside.liquors << london_dry_gin
 spanish.liquors << london_dry_gin
-sparkling_rose.liquors << strawberry_blanco
+sparkling_margarita.liquors << strawberry_blanco
 sparkling_watermelon.liquors << vodka
 spcity_margarita.liquors << blanco
 spiced_eggnog.liquors << brandy
@@ -1816,7 +1816,7 @@ aviation.liquors_string << '1.52 fl oz of Gin'
 b.liquors_string << '1 fl oz of Cognac'
 bacardi.liquors_string << '1.52 fl oz of White Rum'
 bagrationi.liquors_string << '1 fl oz of Brandy'
-banana.liquors_string << '2 fl oz of Aged Rum'
+bananadaiquiri.liquors_string << '2 fl oz of Aged Rum'
 barbados.liquors_string << '2 fl oz of Aged Barbados Rum'
 barracuda.liquors_string << '1.52 fl oz of Gold Rum'
 batida.liquors_string << '2 fl oz of Cachaça'
@@ -2025,7 +2025,7 @@ leeward.liquors_string << '0.5 fl oz of Sipsmith VJOP Gin '
 lemon_drop_martini.liquors_string << '1.01 fl oz of Vodka Citron'
 lemon_drop.liquors_string << '2 fl oz of Vodka'
 lime.liquors_string << '2 fl oz of Bourbon, Rye, or Gin'
-limoncello.liquors_string << '2.5 fl oz of Whiskey'
+raspberrylimon.liquors_string << '2.5 fl oz of Whiskey'
 lions.liquors_string << '2 fl oz of Bourbon'
 london_lemonade.liquors_string << '2 fl oz of Gin'
 london_toddy.liquors_string << '6 fl oz of Gin'
@@ -2088,12 +2088,12 @@ paloma.liquors_string << '1.69 fl oz of 100% Agave Tequila'
 pandan_coconut.liquors_string << '0.5 fl oz of Herbaceous Dry Gin'
 paper.liquors_string << '1.01 fl oz of Bourbon Whiskey'
 paradise.liquors_string << '1.18 fl oz of Gin'
-peach.liquors_string << '2.5 fl oz of Woodford Reserve Bourbon'
+peachme.liquors_string << '2.5 fl oz of Woodford Reserve Bourbon'
 pearl.liquors_string << '1.5 fl oz of Aged Rum'
 peeping.liquors_string << '1.5 fl oz of Gin'
 pegu.liquors_string << '1.5 fl oz of Gin'
 penicillin.liquors_string << '2.03 fl oz of Blended Scotch'
-pho_king.liquors_string << '0.66 fl oz of Vodka'
+phoking.liquors_string << '0.66 fl oz of Vodka'
 picon.liquors_string << '0.5 fl oz of Brandy'
 piña.liquors_string << '1.69 fl oz of White Rum'
 pina_colada.liquors_string << '2 fl oz of Light Rum'
@@ -2160,7 +2160,7 @@ snap.liquors_string << '1.5 fl oz of Don Julio Reposado Tequila'
 south.liquors_string << '1 fl oz of Ardbeg 10-Year-Old Scotch'
 southside.liquors_string << '2.03 fl oz of London Dry Gin'
 spanish.liquors_string << '2 fl oz of London Dry Gin'
-sparkling_rose.liquors_string << '10 fl oz of Strawberry-Basil-Infused Blanco Tequila'
+sparkling_margarita.liquors_string << '10 fl oz of Strawberry-Basil-Infused Blanco Tequila'
 sparkling_watermelon.liquors_string << '4 fl oz of Vodka'
 spcity_margarita.liquors_string << '2 fl oz of Blanco Tequila'
 spiced_eggnog.liquors_string << '3 fl oz of Brandy'
@@ -2270,7 +2270,7 @@ pot.liquors << islay
 pumpkin_toddy.liquors << rye
 rainbow.liquors << white
 rebirth.liquors << st_george
-ruby.liquors << coconut
+ruby.liquors << coconutrum
 rum_punch.liquors << dark
 saison.liquors << george
 samarian.liquors << cabbage
@@ -2383,7 +2383,7 @@ autumn.liqueurs << wassail
 aviation.liqueurs << maraschino
 b.liqueurs << bénédictine
 bagrationi.liqueurs << sweet_vermouth
-banana.liqueurs << tempus_banane
+bananadaiquiri.liqueurs << tempus_banane
 barracuda.liqueurs << galliano
 bear.liqueurs << orange_liqueur
 beet.liqueurs << prosecco
@@ -2501,7 +2501,7 @@ latitude.liqueurs << orange_curaçao
 leeward.liqueurs << coconut
 lemon_drop_martini.liqueurs << triple_sec
 lemon_drop.liqueurs << triple_sec
-limoncello.liqueurs << limoncello
+raspberrylimon.liqueurs << limoncello
 lions.liqueurs << allspice
 longshoreman.liqueurs << averna
 lounge.liqueurs << croft
@@ -2519,12 +2519,12 @@ mary.liqueurs << maraschino
 mezcal_negroni.liqueurs << campari
 sourmidori.liqueurs << midori
 millionaire.liqueurs << grand_marnier
-moment.liqueurs << banana
+moment.liqueurs << liqueur_of_banana
 monkey.liqueurs << absinthe
 monte_carlo.liqueurs << bénédictine
 monte_cassino.liqueurs << bénédictine
 mudslide.liqueurs << coffee
-mule.liqueurs << peach
+mule.liqueurs << peachschnapps
 mutual.liqueurs << galliano
 my.liqueurs << grand_marnier
 naked.liqueurs << yellow
@@ -2542,10 +2542,10 @@ one.liqueurs << cocchi
 orgasm.liqueurs << kahlúa
 pandan_coconut.liqueurs << soho
 paper.liqueurs << amaro_nonino
-peach.liqueurs << peach
+peachme.liqueurs << peachschnapps
 peeping.liqueurs << crème_de_violette
 pegu.liqueurs << orange_curaçao
-pho_king.liqueurs << sherry
+phoking.liqueurs << sherry
 picon.liqueurs << amer_picon
 pomelomosa.liqueurs << burgkopf
 pomosa.liqueurs << sparkling_wine
@@ -2562,7 +2562,7 @@ ring.liqueurs << red_chile_aperol
 rob.liqueurs << sweet_vermouth
 rockeys_rum.liqueurs << rockeys
 rosemary.liqueurs << sweet_vermouth
-ruby.liqueurs << peach
+ruby.liqueurs << peachschnapps
 rum_old_fashioned.liqueurs << allspice
 rum_smoke.liqueurs << sherry
 russian.liqueurs << crème_de_cassis
@@ -2576,13 +2576,13 @@ saturn.liqueurs << falernum
 sazerac.liqueurs << absinthe
 scofflaw.liqueurs << dry_vermouth
 set.liqueurs << campari
-sex.liqueurs << peach
+sex.liqueurs << peachschnapps
 sidecar.liqueurs << triple_sec
 sin.liqueurs << cynar
 singapore.liqueurs << cointreau
 singapura.liqueurs << heering
 south.liqueurs << dolin_sweet
-sparkling_rose.liqueurs << sparkling_rose
+sparkling_margarita.liqueurs << sparkling_rose
 sparkling_watermelon.liqueurs << sparkling_wine
 spcity_margarita.liqueurs << orange_liqueur
 spiced_margarita.liqueurs << amaretto
@@ -2593,7 +2593,7 @@ sunflower.liqueurs << cointreau
 sussex.liqueurs << ridgeview
 tart.liqueurs << solerno
 tasman.liqueurs << orange_curaçao
-tea_for_two.liqueurs << peach
+tea_for_two.liqueurs << peachschnapps
 tea_sympathy.liqueurs << kings
 the_lookout.liqueurs << mulled
 the_modern.liqueurs << plymouth
@@ -2650,7 +2650,7 @@ dram.liqueurs << cotton
 fernandito.liqueurs << fernet
 frosé.liqueurs << aperol
 frozen_absinthe.liqueurs << absinthe
-fuzzy.liqueurs << peach
+fuzzy.liqueurs << peachschnapps
 garibaldi.liqueurs << campari
 golden__dream.liqueurs << galliano
 golden_cadillac.liqueurs << galliano
@@ -2698,7 +2698,7 @@ autumn.liqueurs_string << '4 fl oz of Wassail, hot'
 aviation.liqueurs_string << '0.51 fl oz of Maraschino Luxardo'
 b.liqueurs_string << '1 fl oz of Bénédictine'
 bagrationi.liqueurs_string << '1 fl oz of Sweet Vermouth'
-banana.liqueurs_string << '0.5 fl oz of Tempus Fugit Crème de Banane Liqueur'
+bananadaiquiri.liqueurs_string << '0.5 fl oz of Tempus Fugit Crème de Banane Liqueur'
 barracuda.liqueurs_string << '0.51 fl oz of Galliano'
 bear.liqueurs_string << '0.25 fl oz of Orange Liqueur'
 beet.liqueurs_string << 'Top up with Prosecco'
@@ -2816,7 +2816,7 @@ latitude.liqueurs_string << '0.5 fl oz of Orange Curaçao'
 leeward.liqueurs_string << '1 fl oz of Coconut Oil-Washed Campari'
 lemon_drop_martini.liqueurs_string << '0.68 fl oz of Triple Sec'
 lemon_drop.liqueurs_string << '0.5 fl oz of Triple Sec'
-limoncello.liqueurs_string << '4 fl oz of Limoncello'
+raspberrylimon.liqueurs_string << '4 fl oz of Limoncello'
 lions.liqueurs_string << '0.5 fl oz of Allspice Dram'
 longshoreman.liqueurs_string << '0.5 fl oz of Averna Amaro'
 lounge.liqueurs_string << '1.5 fl oz of Croft Pink Port'
@@ -2857,10 +2857,10 @@ one.liqueurs_string << '0.5 fl oz of Cocchi Torino Vermouth'
 orgasm.liqueurs_string << '0.75 fl oz of Kahlúa'
 pandan_coconut.liqueurs_string << '0.5 fl oz of Soho Lychee Liqueur'
 paper.liqueurs_string << '1.01 fl oz of Amaro Nonino'
-peach.liqueurs_string << '0.5 fl oz of Peach Schnapps'
+peachme.liqueurs_string << '0.5 fl oz of Peach Schnapps'
 peeping.liqueurs_string << '0.5 fl oz of Crème de Violette'
 pegu.liqueurs_string << '0.75 fl oz of Orange Curaçao'
-pho_king.liqueurs_string << '0.25 fl oz of Sherry'
+phoking.liqueurs_string << '0.25 fl oz of Sherry'
 picon.liqueurs_string << '1.5 fl oz of Amer Picon'
 pomelomosa.liqueurs_string << '2 fl oz of Burgkopf Grapefruit Radler'
 pomosa.liqueurs_string << '4 fl oz of Sparkling Wine'
@@ -2897,7 +2897,7 @@ sin.liqueurs_string << '1 fl oz of Cynar'
 singapore.liqueurs_string << '0.25 fl oz of Cointreau'
 singapura.liqueurs_string << '0.5 fl oz of Heering Cherry Liqueur'
 south.liqueurs_string << '1 fl oz of Dolin Sweet Vermouth'
-sparkling_rose.liqueurs_string << '25.36 fl oz of Sparkling Rosé'
+sparkling_margarita.liqueurs_string << '25.36 fl oz of Sparkling Rosé'
 sparkling_watermelon.liqueurs_string << 'Top up with Sparkling Wine'
 spcity_margarita.liqueurs_string << '0.5 fl oz of Orange Liqueur'
 spiced_margarita.liqueurs_string << '0.75 fl oz of Amaretto'
@@ -3348,7 +3348,7 @@ aquavit.mixers << lime_juice
 aviation.mixers << lemon_juice
 bacardi.mixers << lime_juice
 bamboo.mixers << angostura_bitters
-banana.mixers << lime_juice
+bananadaiquiri.mixers << lime_juice
 barbados.mixers << lime_juice
 barracuda.mixers << pineapple_juice
 batida.mixers << fruit_juice
@@ -3550,7 +3550,7 @@ leeward.mixers << pandan_cordial
 lemon_drop_martini.mixers << lemon_juice
 lemon_drop.mixers << simple_syrup
 lime.mixers << squeezed_lime
-limoncello.mixers << lemon_sorbet
+raspberrylimon.mixers << lemon_sorbet
 lions.mixers << angostura_bitters
 little.mixers << strawberry_shrub
 london_lemonade.mixers << lemonade
@@ -3612,7 +3612,7 @@ paloma.mixers << lime_juice
 pandan_coconut.mixers << pandan_syrup
 paper.mixers << lemon_juice
 paradise.mixers << orange_juice
-peach.mixers << maraschino_cherry
+peachme.mixers << maraschino_cherry
 pearl.mixers << lime_juice
 peeping.mixers << lemon_juice
 pegu.mixers << lime_juice
@@ -3678,7 +3678,7 @@ snap.mixers << angostura_bitters
 south.mixers << orange_blossom
 southside.mixers << lemon_juice
 spanish.mixers << tonic_water
-sparkling_rose.mixers << lime_juice
+sparkling_margarita.mixers << lime_juice
 sparkling_watermelon.mixers << lime_juice
 spcity_margarita.mixers << lime_juice
 spiced_eggnog.mixers << large_eggs
@@ -3772,7 +3772,7 @@ aquavit.mixers_string << '0.75 fl oz of Lime Juice'
 aviation.mixers_string << '0.51 fl oz of Lemon Juice'
 bacardi.mixers_string << '0.68 fl oz of Lime Juice'
 bamboo.mixers_string << '1 dash of Angostura Bitters'
-banana.mixers_string << '1 fl oz of Lime Juice'
+bananadaiquiri.mixers_string << '1 fl oz of Lime Juice'
 barbados.mixers_string << '1 fl oz of Lime Juice'
 barracuda.mixers_string << '2.03 fl oz of Pineapple Juice'
 batida.mixers_string << '1 fl oz of Fruit Juice'
@@ -3974,7 +3974,7 @@ leeward.mixers_string << '0.75 fl oz of Pandan Cordial'
 lemon_drop_martini.mixers_string << '0.51 fl oz of Lemon Juice'
 lemon_drop.mixers_string << '1 fl oz of Simple Syrup'
 lime.mixers_string << '1 Squeezed Lime Half'
-limoncello.mixers_string << '1 pint of Lemon Sorbet'
+raspberrylimon.mixers_string << '1 pint of Lemon Sorbet'
 lions.mixers_string << '4 dashes of Angostura Bitters'
 little.mixers_string << '0.25 fl oz of Strawberry Shrub'
 london_lemonade.mixers_string << '4 fl oz of Lemonade'
@@ -4036,7 +4036,7 @@ paloma.mixers_string << '0.17 fl oz of Lime Juice'
 pandan_coconut.mixers_string << '2.5 fl oz of Pandan Syrup'
 paper.mixers_string << '1.01 fl oz of Lemon Juice'
 paradise.mixers_string << '0.51 fl oz of Orange Juice'
-peach.mixers_string << '1 Maraschino Cherry'
+peachme.mixers_string << '1 Maraschino Cherry'
 pearl.mixers_string << '0.5 fl oz of Lime Juice'
 peeping.mixers_string << '1 fl oz of Lemon Juice'
 pegu.mixers_string << '1 tsp of Lime Juice'
@@ -4102,7 +4102,7 @@ snap.mixers_string << '7 dashes of Angostura Bitters'
 south.mixers_string << '1 mist of Orange Blossom Water'
 southside.mixers_string << '1.01 fl oz of Lemon Juice'
 spanish.mixers_string << '4 fl oz of Tonic Water'
-sparkling_rose.mixers_string << '5 fl oz of Lime Juice'
+sparkling_margarita.mixers_string << '5 fl oz of Lime Juice'
 sparkling_watermelon.mixers_string << '2 fl oz of Lime Juice'
 spcity_margarita.mixers_string << '1 fl oz of Lime Juice'
 spiced_eggnog.mixers_string << '2 Large Eggs'
@@ -4189,7 +4189,7 @@ apricot_ginger.mixers << ginger_syrup
 aquavit.mixers << ginger_syrup
 bacardi.mixers << grenadine
 bamboo.mixers << orange_bitters
-banana.mixers << demerara_simple
+bananadaiquiri.mixers << demerara_simple
 barbados.mixers << simple_syrup
 barracuda.mixers << lime_juice
 batida.mixers << sugar_
@@ -4347,7 +4347,7 @@ le.mixers << lemon_juice
 leeward.mixers << bittermens_tiki
 lemon_drop.mixers << lemon_juice
 lime.mixers << mineral_water
-limoncello.mixers << raspberries
+raspberrylimon.mixers << raspberries
 lions.mixers << lime_juice
 london_toddy.mixers << cardamom_rock
 long.mixers << simple_syrup
@@ -4391,11 +4391,11 @@ orange_whip.mixers << cream
 painkiller.mixers << orange_juice
 paloma.mixers << salt
 pandan_coconut.mixers << sweetened_coconut
-peach.mixers << angostura_orange
+peachme.mixers << angostura_orange
 pearl.mixers << orange_juice
 peeping.mixers << simple_syrup
 penicillin.mixers << honey_syrup
-pho_king.mixers << pho_broth
+phoking.mixers << pho_broth
 picon.mixers << soda_water
 pimms.mixers << ginger_ale
 piña.mixers << pineapple_juice
@@ -4444,7 +4444,7 @@ singapura.mixers << lime_juice
 smoked.mixers << lemon_juice
 snap.mixers << black_pepper
 southside.mixers << simple_syrup
-sparkling_rose.mixers << agave_syrup
+sparkling_margarita.mixers << agave_syrup
 sparkling_watermelon.mixers << simple_syrup
 spcity_margarita.mixers << agave_syrup
 spiced_eggnog.mixers << sugar_
@@ -4518,7 +4518,7 @@ apricot_ginger.mixers_string << 'Ginger Syrup'
 aquavit.mixers_string << 'Ginger Syrup'
 bacardi.mixers_string << 'Grenadine'
 bamboo.mixers_string << 'Orange Bitters'
-banana.mixers_string << 'Demerara Simple Syrup'
+bananadaiquiri.mixers_string << 'Demerara Simple Syrup'
 barbados.mixers_string << 'Simple Syrup'
 barracuda.mixers_string << 'Lime Juice'
 batida.mixers_string << 'Sugar'
@@ -4676,7 +4676,7 @@ le.mixers_string << 'Lemon Juice'
 leeward.mixers_string << 'Bittermens Tiki Bitters'
 lemon_drop.mixers_string << 'Lemon Juice'
 lime.mixers_string << 'Mineral Water'
-limoncello.mixers_string << 'Raspberries '
+raspberrylimon.mixers_string << 'Raspberries '
 lions.mixers_string << 'Lime Juice'
 london_toddy.mixers_string << 'Cardamom Rock Candy Syrup'
 long.mixers_string << 'Simple Syrup'
@@ -4720,11 +4720,11 @@ orange_whip.mixers_string << 'Cream'
 painkiller.mixers_string << 'Orange Juice'
 paloma.mixers_string << 'Salt'
 pandan_coconut.mixers_string << 'Sweetened Coconut Milk Syrup'
-peach.mixers_string << 'Angostura Orange Bitters'
+peachme.mixers_string << 'Angostura Orange Bitters'
 pearl.mixers_string << 'Orange Juice'
 peeping.mixers_string << 'Simple Syrup'
 penicillin.mixers_string << 'Honey Syrup'
-pho_king.mixers_string << 'Pho Broth'
+phoking.mixers_string << 'Pho Broth'
 picon.mixers_string << 'Soda Water'
 pimms.mixers_string << 'Ginger Ale'
 piña.mixers_string << 'Pineapple Juice'
@@ -4773,7 +4773,7 @@ singapura.mixers_string << 'Lime Juice'
 smoked.mixers_string << 'Lemon Juice'
 snap.mixers_string << 'Black Pepper'
 southside.mixers_string << 'Simple Syrup'
-sparkling_rose.mixers_string << 'Agave Syrup'
+sparkling_margarita.mixers_string << 'Agave Syrup'
 sparkling_watermelon.mixers_string << 'Simple Syrup'
 spcity_margarita.mixers_string << 'Agave Syrup'
 spiced_eggnog.mixers_string << 'Sugar'
@@ -4925,7 +4925,7 @@ kanar.mixers << orange_bitters
 kombucha.mixers << simple_syrup
 landmaster.mixers << black_walnut
 latitude.mixers << simple_syrup
-limoncello.mixers << lemonade
+raspberrylimon.mixers << lemonade
 lions.mixers << simple_syrup
 london_toddy.mixers << hot_water
 long.mixers << cola
@@ -4961,7 +4961,7 @@ paloma.mixers << pink_grapefruit_soda
 pearl.mixers << dons_gardenia
 pegu.mixers << orange_bitters
 penicillin.mixers << ginger
-pho_king.mixers << lime_juice
+phoking.mixers << lime_juice
 pina_colada.mixers << lime_juice
 pisco_sour.mixers << egg_white
 pomelomosa.mixers << grapefruit_juice
@@ -5129,7 +5129,7 @@ kanar.mixers_string << '4 dashes of Orange Bitters'
 kombucha.mixers_string << '0.5 fl oz of Simple Syrup'
 landmaster.mixers_string << '1 dash of Black Walnut Bitters'
 latitude.mixers_string << '0.25 fl oz of Simple Syrup'
-limoncello.mixers_string << '4 fl oz of Lemonade'
+raspberrylimon.mixers_string << '4 fl oz of Lemonade'
 lions.mixers_string << '0.5 fl oz of Simple Syrup'
 london_toddy.mixers_string << '20 fl oz of Hot Water'
 long.mixers_string << 'Top up with Cola'
@@ -5165,7 +5165,7 @@ paloma.mixers_string << '3.38 fl oz of Pink Grapefruit Soda'
 pearl.mixers_string << "0.5 fl oz of Don's Gardenia mix"
 pegu.mixers_string << '1 dash of Orange Bitters'
 penicillin.mixers_string << '3 slices of Ginger'
-pho_king.mixers_string << '0.25 fl oz of Lime Juice'
+phoking.mixers_string << '0.25 fl oz of Lime Juice'
 pina_colada.mixers_string << '0.5 fl oz of Lime Juice'
 pisco_sour.mixers_string << '1 Egg White'
 pomelomosa.mixers_string << '2 fl oz of Grapefruit Juice'
@@ -5289,7 +5289,7 @@ mutual.mixers << angostura_bitters
 nui.mixers << vanilla_syrup
 old_cuban.mixers << mint
 pearl.mixers << angostura_bitters
-pho_king.mixers << mineral_saline
+phoking.mixers << mineral_saline
 pisco_sour.mixers << aromatic_bitters
 pomelomosa.mixers << lime_juice
 ponche.mixers << tamarind_paste
@@ -5381,7 +5381,7 @@ mutual.mixers_string << '2 dashes of Angostura Bitters'
 nui.mixers_string << '1 tsp of Vanilla Syrup'
 old_cuban.mixers_string << '8 leaves of Mint'
 pearl.mixers_string << '1 dash of Angostura Bitters'
-pho_king.mixers_string << '2 drops of Mineral Saline'
+phoking.mixers_string << '2 drops of Mineral Saline'
 pisco_sour.mixers_string << '2 drops of Aromatic Bitters'
 pomelomosa.mixers_string << '0.5 fl oz of Lime Juice'
 ponche.mixers_string << '1 tbsp of Tamarind Paste'
@@ -5803,11 +5803,11 @@ orgasm.garnishes << cherry
 painkiller.garnishes << grated_nutmeg
 paloma.garnishes << lime
 pandan_coconut.garnishes << pandan_leaf
-peach.garnishes << orange
+peachme.garnishes << orange
 peeping.garnishes << peeps_marshmallows
 pegu.garnishes << lime
 penicillin.garnishes << candied_ginger
-pho_king.garnishes << cilantro
+phoking.garnishes << cilantro
 picon.garnishes << lemon
 pimms.garnishes << cucumber
 piña.garnishes << pineapple
@@ -5861,7 +5861,7 @@ snap.garnishes << lime
 south.garnishes << orange
 southside.garnishes << mint
 spanish.garnishes << juniper_berries
-sparkling_rose.garnishes << strawberry
+sparkling_margarita.garnishes << strawberry
 sparkling_watermelon.garnishes << mint
 spcity_margarita.garnishes << salt_rim
 spiced_eggnog.garnishes << grated_nutmeg
@@ -6149,11 +6149,11 @@ orgasm.garnishes_string << '1 Cherry'
 painkiller.garnishes_string << 'Grated Nutmeg'
 paloma.garnishes_string << '1 slice of Lime'
 pandan_coconut.garnishes_string << '1 Pandan Leaf'
-peach.garnishes_string << '1 slice of Orange'
+peachme.garnishes_string << '1 slice of Orange'
 peeping.garnishes_string << 'Peeps Marshmallows'
 pegu.garnishes_string << '1 twist of Lime'
 penicillin.garnishes_string << 'Candied Ginger'
-pho_king.garnishes_string << '1 leaf of Cilantro'
+phoking.garnishes_string << '1 leaf of Cilantro'
 picon.garnishes_string << '1 peel of Lemon'
 pimms.garnishes_string << '1 slice of Cucumber'
 
@@ -6207,7 +6207,7 @@ snap.garnishes_string << '1 wedge of Lime'
 south.garnishes_string << '1 twist of Orange'
 southside.garnishes_string << '1 sprig of Mint'
 spanish.garnishes_string << 'Juniper Berries'
-sparkling_rose.garnishes_string << '3 slices of Strawberry'
+sparkling_margarita.garnishes_string << '3 slices of Strawberry'
 sparkling_watermelon.garnishes_string << '1 sprig of Mint'
 spcity_margarita.garnishes_string << 'Salt Rim'
 spiced_eggnog.garnishes_string << 'Grated Nutmeg'
@@ -6268,7 +6268,7 @@ aperitivo.garnishes << orange_blossom
 apple_cranberry_moscow_mule.garnishes << apple_slices
 apple_toddy.garnishes << grated_nutmeg
 aquavit.garnishes << lime
-banana.garnishes << banana
+bananadaiquiri.garnishes << banana
 barbados.garnishes << lime
 bear.garnishes << rosemary
 beet.garnishes << mint
@@ -6385,7 +6385,7 @@ shamrock.garnishes << andes_crème
 singapore.garnishes << maraschino_cherry
 smoked.garnishes << lemon
 spanish.garnishes << lemon
-sparkling_rose.garnishes << lime
+sparkling_margarita.garnishes << lime
 sparkling_watermelon.garnishes << mint
 spcity_margarita.garnishes << jalapeño
 spiced_margarita.garnishes << jalapeño
@@ -6423,7 +6423,7 @@ aperitivo.garnishes_string << '1 spray of Orange Blossom'
 apple_cranberry_moscow_mule.garnishes_string << 'Apple Slices'
 apple_toddy.garnishes_string << 'Grated Nutmeg'
 aquavit.garnishes_string << '1 wedge of Lime'
-banana.garnishes_string << '1 slice of Banana'
+bananadaiquiri.garnishes_string << '1 slice of Banana'
 barbados.garnishes_string << '1 wheel of Lime'
 bear.garnishes_string << '1 sprig of Rosemary'
 beet.garnishes_string << '6 leaves of Mint'
@@ -6540,7 +6540,7 @@ shamrock.garnishes_string << 'Andes Crème de Menthe Thin'
 singapore.garnishes_string << '1 Maraschino Cherry'
 smoked.garnishes_string << '1 wheel of Lemon'
 spanish.garnishes_string << '1 wheel of Lemon'
-sparkling_rose.garnishes_string << '3 wheels of Lime'
+sparkling_margarita.garnishes_string << '3 wheels of Lime'
 sparkling_watermelon.garnishes_string << '6 leaves of Mint'
 spcity_margarita.garnishes_string << '2 coins of Jalapeño'
 spiced_margarita.garnishes_string << '3 wheels of Jalapeño'
@@ -6596,7 +6596,7 @@ pimms.garnishes << strawberry
 rainbow.garnishes << lime
 smoked.garnishes << grated_nutmeg
 spanish.garnishes << thyme
-sparkling_rose.garnishes << rose_salt
+sparkling_margarita.garnishes << rose_salt
 sparkling_watermelon.garnishes << watermelon
 spcity_margarita.garnishes << lime
 summerthyme.garnishes << orange
@@ -6631,7 +6631,7 @@ pimms.garnishes_string << '1 Strawberry'
 rainbow.garnishes_string << '3 slices of Lime'
 smoked.garnishes_string << 'Grated Nutmeg'
 spanish.garnishes_string << 'Thyme'
-sparkling_rose.garnishes_string << 'Rose Salt'
+sparkling_margarita.garnishes_string << 'Rose Salt'
 sparkling_watermelon.garnishes_string << '1 wedge of Watermelon'
 spcity_margarita.garnishes_string << '1 wedge of Lime'
 summerthyme.garnishes_string << '1 wheel of Orange'

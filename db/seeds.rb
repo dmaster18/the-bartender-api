@@ -1353,3 +1353,879 @@ witches_brew = Recipe.create(name: "Witches' Brew")
 yellow = Recipe.create(name: 'Yellow Bird')
 yerba = Recipe.create(name: 'Yerba Buena')
 zombie = Recipe.create(name: 'Zombie')
+
+a_la_louisiane.liquors << rye
+absinthe_suisse.liquors << blanco
+absolut_lime_drop.liquors << absolut_lime
+absolut_moscow_mule.liquors << absolut_vodka
+airmail.liquors << banks_rum
+amaretto_french.liquors << gin
+amaretto_sour.liquors << bourbon
+amber.liquors << whiskey_or_vodka
+anejo_old_fashioned.liquors << añejo_tequila
+angel.liquors << gin
+añogo.liquors << tequila
+another.liquors << michters_barrel_rye
+aperitivo.liquors << blanco
+apple_cranberry_moscow_mule.liquors << vodka
+apple_toddy.liquors << applejack_bourbon
+applejack.liquors << lairds_bonded_apple
+apricot.liquors << bourbon_rye_scotch
+aquavit.liquors << aquavit
+autumn.liquors << louis_royer
+aviation.liquors << gin
+b.liquors << cognac
+bacardi.liquors << white
+bagrationi.liquors << brandy
+banana.liquors << aged_rum
+barbados.liquors << barbados_rum
+barracuda.liquors << gold
+batida.liquors << cachaça
+bear.liquors << gin
+bebbo.liquors << london_dry_gin
+bees.liquors << dry_gin
+beet.liquors << vodka
+bentons.liquors << fat_washed_four_roses
+bermuda.liquors << black_rum
+between.liquors << white
+big_red.liquors << johnnie_red
+big_red_sun.liquors << monkey_shoulder
+bijou.liquors << gin
+black_barrel_old_fashioned.liquors << jameson_black_barrel
+black_betty.liquors << blanco
+black_mole_margarita.liquors << mezcal
+black_russian.liquors << vodka
+blood.liquors << scotch
+bloody_caesar.liquors << vodka
+bloody_casear.liquors << vodka
+bloody_maria.liquors << tequila
+bloody_mary.liquors << vodka
+blue_blazer.liquors << scotch
+blue_hawaii.liquors << light_rum
+blue_lagoon.liquors << vodka
+blueberry.liquors << hennessy_privilege
+bobby.liquors << blended
+boilermaker.liquors << bourbon_or_rye
+bootstitch.liquors << blended_whiskey
+boozy.liquors << any_spirt
+bordeaux.liquors << makers_mark
+bossa.liquors << leblon_cachaça_especial
+boston.liquors << smith_traditional_jamaica
+boulevardier.liquors << bourbon
+bourbon.liquors << bourbon
+bourbon_cider.liquors << bourbon
+bourbon_lancer.liquors << bourbon
+bourbon_lemonade.liquors << bulleit_bourbon
+bourbon_old_fashioned.liquors << bourbon
+bourbon_root_beer.liquors << bourbon
+bourbon_rosemary_punch.liquors << bourbon
+bourbon_strawberry.liquors << bourbon
+bramble.liquors << gin
+brandy_alexander.liquors << cognac
+brandy_crusta.liquors << brandy
+brandy_daisy.liquors << brandy
+brandy_old_fashioned.liquors << brandy
+brandy_sangaree.liquors << brandy
+brandy_sour.liquors << cyprus_brandy
+brave.liquors << tequila
+brazilian.liquors << novo_fogo_cachaça
+bronx.liquors << gin
+brown.liquors << bourbon
+bulleit.liquors << bulleit_bourbon
+café.liquors << plantation_five_rum
+café_ponche.liquors << diplomatico_rum
+caipirinha.liquors << cachaça
+calvados.liquors << apple_brandy_calvados
+canchã¡nchara.liquors << white
+canchanchara.liquors << rum
+cape.liquors << bluecoat_gin
+cardamom.liquors << pistachio_vodka
+casino.liquors << gin
+cave.liquors << mister_katz_rye
+cbd_dirty_martini.liquors << dry_gin
+cbd_gin_tonic.liquors << gin
+cbd_moscow_mule.liquors << vodka
+cbd_spritz.liquors << vodka
+champagne_cocktail.liquors << cognac
+champagne_holiday.liquors << genever
+charleston.liquors << high_wire
+cherry.liquors << vodka
+chi.liquors << pineapple_square_one
+chimayó.liquors << tequila
+chocomole.liquors << reposado_tequila
+clover.liquors << gin
+cobras.liquors << dark_jamaican_rum
+coco.liquors << leblon_cachaça
+cocoa.liquors << don_julio
+coffee.liquors << block_autumn_gin
+cojito.liquors << white
+conflict.liquors << tequila_ocho
+coquito.liquors << white
+corpose_reviver_one.liquors << cognac
+corpose_reviver_two.liquors << gin
+corpse_reviver_two_one_two.liquors << chivas
+cosmopolitan.liquors << vodka_citron
+cotter.liquors << ransom_old_tom_gin
+cowboy.liquors << stranahan
+crimson.liquors << rittenhouse_rye
+crush.liquors << cotton_white_rum
+crystal.liquors << gin
+cuba.liquors << white
+cuban.liquors << white
+cucumber_cleanse.liquors << vodka
+cucumber_lime.liquors << vodka
+curiosity.liquors << monkey_gin
+daiquiri.liquors << white
+dark_and_stormy.liquors << dark
+dark_n_stormy.liquors << gosling_black_rum
+dark_side.liquors << makers_mark_forty_six
+darkside.liquors << london_dry_gin
+devils_margarita.liquors << blanco
+dizzy.liquors << bardstown
+don_alfredo.liquors << pisco
+don_quixote.liquors << don_q_rum
+dorado.liquors << patron_reposado
+dragones.liquors << casa_dragones
+drunk.liquors << islay
+dry.liquors << gin
+duck.liquors << lemongrass_gin
+earl.liquors << earl_grey_gin
+eggnog.liquors << rum_bourbon_brandy
+el_diablo.liquors << reposado_tequila
+el_presidente.liquors << rum
+elderflower.liquors << square_one_organic
+embarcadero.liquors << rye
+emerald.liquors << el_dorado_rum
+espresso.liquors << vodka
+fernet.liquors << appleton_jamaica_rum
+fifty_fifty_birthday.liquors << amass_gin
+figgy.liquors << black_fig_cognac
+flaming.liquors << rum
+flannel.liquors << cognac
+flor.liquors << flor_rum
+forbidden_apple.liquors << calvados
+forbidden_sour.liquors << bourbon
+forest.liquors << gin
+francophile.liquors << calvados
+frank.liquors << blended
+french_connection.liquors << cognac
+french_harvest.liquors << dry_gin
+french_martini.liquors << vodka
+french_seventy_five.liquors << gin
+frisky.liquors << irish
+frohito.liquors << virgin_islands_rum
+frozen_daiquiri.liquors << rum
+frozen_margarita.liquors << blanco
+gibson.liquors << gin
+gimlet.liquors << gin
+gin_and_tonic.liquors << gin
+gin_fizz.liquors << gin
+ginger_ale_highball.liquors << rye
+ginger_fever_punch.liquors << blanco
+godfather.liquors << blended
+gold.liquors << bourbon
+golden_dew.liquors << hwayo
+golden_purl.liquors << leopolds_gin
+grave.liquors << vanilla_brandy
+great.liquors << rittenhouse_bonded_rye
+green_isaac_special.liquors << london_dry_gin
+greenpoint.liquors << rye
+greyhound.liquors << gin
+hanalei.liquors << vodka_white_rum
+hanky.liquors << london_dry_gin
+harry_potter_butter.liquors << vanilla_vodka
+harvey.liquors << vodka
+heated.liquors << partida
+hemingway_daiquiri.liquors << white
+hemingway_special.liquors << rum
+hennessy.liquors << hennessy
+here_comes_the_sun.liquors << rye
+hey_gourdgeous.liquors << apple_brandy
+high_on_hog.liquors << buffalo_trace
+high_seas.liquors << silver_oat_whiskey
+high_tide.liquors << japanese_whiskey
+honey.liquors << bottled_in_bourbon
+horn.liquors << el_jimador
+horses_neck.liquors << brandy
+hot_blooded.liquors << rye
+hot_buttered_rum.liquors << gold
+hot_toddy.liquors << bourbon_rye_scotch
+hummer.liquors << vodka
+hurricane.liquors << light_rum
+i_left_my_heart.liquors << tequila
+illegal.liquors << mezcal
+infused.liquors << infused_vodka
+irhsih_shot.liquors << irish
+irish_affrogato.liquors << irish
+irish_buck.liquors << irish
+irish_car_bomb.liquors << irish
+irish_coffee.liquors << irish
+irish_maid.liquors << irish
+irish_raktajino.liquors << irish
+island.liquors << aged_rum
+jack.liquors << apple_brandy
+jack_o_lantern.liquors << flor_grand_reserve_rum
+jager_old_fashioned.liquors << rye
+japanese.liquors << nikka_coffey
+jingle.liquors << pine_vodka
+john.liquors << gin
+josé.liquors << ilegal_joven_mezcal
+jungle.liquors << dark
+kamikaze.liquors << vodka
+kanar.liquors << xo_cognac
+kentucky.liquors << bourbon
+killer.liquors << aromatic_gin
+kylo.liquors << crater_lake_rye
+landmaster.liquors << fortaleza
+large_format_mezcal.liquors << mezcal
+large_format_red.liquors << rittenhouse_rye
+last.liquors << gin
+last_minute.liquors << bourbon_or_brandy
+latitude.liquors << coruba_dark_rum
+leeward.liquors << slipsmith_gin
+lemon.liquors << vodka_citron
+lemon_drop.liquors << vodka
+lime.liquors << bourbon_rye_gin
+limoncello.liquors << whiskey
+lions.liquors << bourbon
+london_lemonade.liquors << gin
+london_toddy.liquors << gin
+long.liquors << tequila
+longshoreman.liquors << rye
+lounge.liquors << siete_leguas
+m_g_and_t.liquors << blaum_reserve
+macuá.liquors << white
+mad.liquors << vodka
+magic.liquors << light_rum
+mai.liquors << amber_jamaican_rum
+malibu.liquors << malibu_coconut_rum
+mamie.liquors << blended
+man_o_war.liquors << bourbon
+mango.liquors << hennessy
+manhattan.liquors << rye
+mantra.liquors << spiced
+margarita.liquors << tequila
+margaritas.liquors << tequila
+martinez.liquors << london_dry_gin
+mary.liquors << white
+master.liquors << pisco
+mexican.liquors << blanco
+mezcal_mule.liquors << sombra_mezcal
+mezcal_negroni.liquors << mezcal
+miami.liquors << rum
+midori.liquors << vodka
+millionaire.liquors << bourbon
+mink.liquors << don_julio_blanco
+mint.liquors << bourbon
+mojito.liquors << white
+moment.liquors << woodford_double_oak
+monkey.liquors << gin
+monte_carlo.liquors << rye
+monte_cassino.liquors << rittenhouse_rye
+moscow.liquors << vodka
+mudslide.liquors << vodka
+mule.liquors << dark_rum_vodka
+mutual.liquors << plantation_barbados_rum
+my.liquors << banks_rum
+naked.liquors << mezcal
+negroni.liquors << gin
+negroni_sorbet.liquors << gin
+new_year_sparkler.liquors << berry_vodka
+nino.liquors << brandy
+northern.liquors << crown_royal
+nui.liquors << gold_virgin_islands_rum
+ny_sour.liquors << whiskey
+oaks.liquors << vodka
+oaxacan.liquors << mezcal
+old_cuban.liquors << aged_rum
+old_fashioned.liquors << bourbon_or_whiskey
+old_pal.liquors << rye
+one.liquors << islay
+one_two.liquors << johnnie_double
+orange_whip.liquors << rum
+orgasm.liquors << vodka
+painkiller.liquors << pussers_rum
+paloma.liquors << agave_tequila
+pandan_coconut.liquors << herbaceous_gin
+paper.liquors << bourbon_whiskey
+paradise.liquors << gin
+peach.liquors << woodford_reserve
+pearl.liquors << aged_rum
+peeping.liquors << gin
+pegu.liquors << gin
+penicillin.liquors << blended
+pho_king.liquors << vodka
+picon.liquors << brandy
+piña.liquors << white
+pina_colada.liquors << light_rum
+pink_gin.liquors << gin
+pink_lady.liquors << gin
+pisco.liquors << pisco
+planters_punch.liquors << jamaican_rum
+pomelomosa.liquors << blanco
+pomosa.liquors << van_gogh_vodka
+ponche.liquors << light_rum
+porchlight.liquors << george_dickel
+porn.liquors << vanilla_vodka
+port.liquors << captain_morgan
+porto.liquors << brandy
+pot.liquors << irish
+presbyterian.liquors << scotch_bourbon_or_rye
+pumpkin_buck.liquors << applejack_or_whiskey
+pumpkin_sazerac.liquors << cognac_rye_whiskey
+pumpkin_toddy.liquors << apple_brandy
+que.liquors << azuñia_organic
+quill.liquors << london_dry_gin
+rainbow.liquors << dark
+ramos.liquors << gin
+raymond.liquors << canadian_rye
+rebirth.liquors << singani
+red.liquors << rye
+reggae.liquors << white
+remember.liquors << rye
+ring.liquors << mezcal
+rob.liquors << scotch
+rockeys_rum.liquors << light_rum
+rosemary.liquors << mezcal
+royal.liquors << old_singe_malt_scotch
+ruby.liquors << vodka
+rum_old_fashioned.liquors << dark
+rum_punch.liquors << light_rum
+rum_smoke.liquors << aged_rum
+russian.liquors << vodka
+rustaveli.liquors << brandy
+rusty_compass.liquors << compass_box_scotch
+rusy_nail.liquors << scotch
+saint.liquors << pisco
+saison.liquors << whiskey_adrien
+salty.liquors << gin_or_vodka
+samarian.liquors << white
+sangria.liquors << brandy
+saturn.liquors << gin
+sazerac.liquors << cognac
+scofflaw.liquors << bourbon_or_rye
+scotch.liquors << scotch
+sea_breeze.liquors << vodka
+sea_breeze_cooler.liquors << dry_gin
+set.liquors << bowmore_malt
+seven_and_seven.liquors << seagrams
+sex.liquors << vodka
+shamrock.liquors << vanilla_vodka
+sidecar.liquors << cognac
+sin.liquors << macallan
+singapore.liquors << gin
+singapura.liquors << citrus_gin
+smoked.liquors << famous_grouse
+smoky.liquors << gin
+snap.liquors << don
+south.liquors << ardberg_ten_scotch
+southside.liquors << london_dry_gin
+spanish.liquors << london_dry_gin
+sparkling_rose.liquors << strawberry_blanco
+sparkling_watermelon.liquors << vodka
+spcity_margarita.liquors << blanco
+spiced_eggnog.liquors << brandy
+spiced_margarita.liquors << blanco
+spicy_mint.liquors << blanco
+stinger.liquors << cognac
+stone.liquors << rye_bourbon_rum_brandy
+strawberry_daiquiri.liquors << puerto_jamaican_rum
+strawberry_pisco_sour.liquors << pisco
+suffering.liquors << gin
+summer.liquors << portobello_gin
+summer_served.liquors << brugal_rum
+summerthyme.liquors << vodka
+sunflower.liquors << gin
+sussex.liquors << hendricks_gin
+switchel.liquors << bourbon_scotch_sherry
+tart.liquors << glenfiddich
+tasman.liquors << one_five_one_gold
+tea_for_two.liquors << jamaican_rum
+tea_sympathy.liquors << avua_cachaça
+tequila_mockingbird.liquors << silver_tequila
+tequila_sunrise.liquors << tequila
+thai.liquors << spiced
+the_dead_rabbit.liquors << clontarf_irish
+the_lookout.liquors << rum
+the_modern.liquors << johnnie_black
+the_spice_is_right.liquors << pineapple_rum
+timberpoint.liquors << gin
+tipperary.liquors << irish
+tom_and_jerry.liquors << dark
+tom_collins.liquors << old_town_gin
+tom_yum.liquors << vodka
+tommys_margarita.liquors << tequila
+tootsie.liquors << rye
+toronto.liquors << canadian_rye
+trinidad.liquors << rye
+turf.liquors << gin
+tuxedo.liquors << gin
+twentieth_century.liquors << gin
+uncle.liquors << bourbon
+upper.liquors << cachaça
+uss.liquors << dark_jamaican_rum
+vampiro.liquors << tequila
+vesper.liquors << gin
+vida.liquors << del_maguey_mezcal
+vieux.liquors << rye
+vodka.liquors << vodka
+waldorf.liquors << rye
+ward.liquors << rye
+washington_apple.liquors << canadian_whiskey
+washington_apple_shot.liquors << canadian_whiskey
+watermelon_blackberry.liquors << pura_vida
+whats_up.liquors << bourbon
+where.liquors << brandy
+whiskey_in_church.liquors << ardberg_islay
+whiskey_mac.liquors << blended
+whiskey_skin.liquors << scotch
+whiskey_smashed.liquors << woodford_kentucky
+whiskey_sour.liquors << bourbon_whiskey
+white_cargo.liquors << dry_gin
+white_lady.liquors << gin
+white_russian.liquors << vodka
+white_summer.liquors << white_corn_whiskey
+winter.liquors << casa_dragones
+wisconsin.liquors << brandy
+witches_brew.liquors << islay
+yellow.liquors << white
+yerba.liquors << partida_reposado
+zombie.liquors << jamaican_dark_rum
+
+a_la_louisiane.liquors_string << '2 fl oz of Rye Whiskey'
+absinthe_suisse.liquors_string << '0.25 fl oz of Blanco Tequila'
+absolut_lime_drop.liquors_string << '1 fl oz of Absolut Lime Vodka'
+absolut_moscow_mule.liquors_string << '0.66 fl oz of Absolut Vodka'
+airmail.liquors_string << '1 fl oz of Banks 5-Island Rum'
+amaretto_french.liquors_string << '1.5 fl oz of Gin'
+amaretto_sour.liquors_string << '0.75 fl oz of Bourbon'
+amber.liquors_string << '3 fl oz of Whiskey or Vodka'
+anejo_old_fashioned.liquors_string << '3 fl oz of Añejo Tequila'
+angel.liquors_string << '1.01 fl oz of Gin'
+añogo.liquors_string << '1.5 fl oz of Tequila'
+another.liquors_string << "2 fl oz of Michter's Single Barrel Rye Whiskey"
+aperitivo.liquors_string << '0.5 fl oz of Blanco Tequila'
+apple_cranberry_moscow_mule.liquors_string << '2 fl oz of Vodka'
+apple_toddy.liquors_string << "2 fl oz of Bonded Applejack (Laird’s), Cognac or Bourbon"
+applejack.liquors_string << '2 fl oz of Laird’s Bonded Apple Brandy'
+apricot.liquors_string << '2 fl oz of Bourbon, Rye, or Scotch'
+aquavit.liquors_string << '2 fl oz of Aquavit'
+autumn.liquors_string << '1.5 fl oz of Louis Royer Force 53° VSOP Cognac'
+aviation.liquors_string << '1.52 fl oz of Gin'
+b.liquors_string << '1 fl oz of Cognac'
+bacardi.liquors_string << '1.52 fl oz of White Rum'
+bagrationi.liquors_string << '1 fl oz of Brandy'
+banana.liquors_string << '2 fl oz of Aged Rum'
+barbados.liquors_string << '2 fl oz of Aged Barbados Rum'
+barracuda.liquors_string << '1.52 fl oz of Gold Rum'
+batida.liquors_string << '2 fl oz of Cachaça'
+bear.liquors_string << '1.5 fl oz of Gin'
+bebbo.liquors_string << '1.5 fl oz of London Dry Gin'
+bees.liquors_string << '1.78 fl oz of Dry Gin'
+beet.liquors_string << '2 fl oz of Vodka'
+bentons.liquors_string << '2 fl oz of Fat-Washed Four Roses Bourbon'
+bermuda.liquors_string << '4 fl oz of Black Rum'
+between.liquors_string << '1.01 fl oz of White Rum'
+big_red.liquors_string << '2 fl oz of Johnnie Walker Red Label Scotch'
+big_red_sun.liquors_string << '1 fl oz of Monkey Shoulder Scotch '
+bijou.liquors_string << '1 fl oz of Gin'
+black_barrel_old_fashioned.liquors_string << '2 fl oz of Jameson Black Barrel Whiskey'
+black_betty.liquors_string << '1.5 fl oz of Blanco Tequila'
+black_mole_margarita.liquors_string << '1.75 fl oz of Mezcal'
+black_russian.liquors_string << '1.69 fl oz of Vodka'
+blood.liquors_string << '0.75 fl oz of Scotch'
+bloody_caesar.liquors_string << '1.5 fl oz of Vodka'
+bloody_casear.liquors_string << '0.51 fl oz of Vodka'
+bloody_maria.liquors_string << '2 fl oz of Tequila'
+bloody_mary.liquors_string << '1.52 fl oz of Vodka'
+blue_blazer.liquors_string << '4 fl oz of Scotch'
+blue_hawaii.liquors_string << '0.68 fl oz of Light Rum'
+blue_lagoon.liquors_string << '1 fl oz of Vodka'
+blueberry.liquors_string << '1.5 fl oz of Hennessy V.S.O.P Privilège Cognac '
+bobby.liquors_string << '1 fl oz of Blended Scotch'
+boilermaker.liquors_string << '1 fl oz of Bourbon or Rye'
+bootstitch.liquors_string << '2 fl oz of Blended Whiskey'
+boozy.liquors_string << '1.5 fl oz of Any Spirit'
+bordeaux.liquors_string << '2 fl oz of Maker’s Mark 46 Bourbon'
+bossa.liquors_string << '1.5 fl oz of Leblon Reserva Especial Cachaça '
+boston.liquors_string << '2 fl oz of Smith & Cross Traditional Jamaica Rum'
+boulevardier.liquors_string << '1.52 fl oz of Bourbon'
+bourbon.liquors_string << '6 fl oz of Bourbon'
+bourbon_cider.liquors_string << '2 fl oz of Bourbon'
+bourbon_lancer.liquors_string << '9 fl oz of Bourbon'
+bourbon_lemonade.liquors_string << '1.25 fl oz of Bulleit Bourbon'
+bourbon_old_fashioned.liquors_string << '2 fl oz of Bourbon'
+bourbon_root_beer.liquors_string << '2 fl oz of Bourbon'
+bourbon_rosemary_punch.liquors_string << '12 fl oz of Bourbon'
+bourbon_strawberry.liquors_string << '2 fl oz of Bourbon'
+bramble.liquors_string << '1.69 fl oz of Gin'
+brandy_alexander.liquors_string << '1.01 fl oz of Cognac'
+brandy_crusta.liquors_string << '1.78 fl oz of Brandy'
+brandy_daisy.liquors_string << '1.5 fl oz of Brandy'
+brandy_old_fashioned.liquors_string << '2 fl oz of Brandy'
+brandy_sangaree.liquors_string << '2 fl oz of Brandy'
+brandy_sour.liquors_string << '1.69 fl oz of Cyprus Brandy'
+brave.liquors_string << '1.5 fl oz of Tequila'
+brazilian.liquors_string << '1.5 fl oz of Novo Fogo Chameleon Cachaça '
+bronx.liquors_string << '1.01 fl oz of Gin'
+brown.liquors_string << '1.5 fl oz of Bourbon'
+bulleit.liquors_string << '1.5 fl oz of Bulleit Bourbon'
+café.liquors_string << '0.75 fl oz of Plantation Five-Year-Old Rum'
+café_ponche.liquors_string << '12 fl oz of Diplomático Añejo Rum'
+caipirinha.liquors_string << '2.03 fl oz of Cachaça'
+calvados.liquors_string << "1 fl oz of Apple Brandy (Boulard Hors d'Âge Calvados)"
+canchã¡nchara.liquors_string << '1.5 fl oz of White Rum'
+canchanchara.liquors_string << '2.03 fl oz of Rum'
+cape.liquors_string << '1 fl oz of Bluecoat Barrel-Finished Gin'
+cardamom.liquors_string << '1.5 fl oz of Pistachio-Fat-Washed Vodka'
+casino.liquors_string << '1.35 fl oz of Gin'
+cave.liquors_string << '1.25 fl oz of Mister Katz’s Rock & Rye'
+cbd_dirty_martini.liquors_string << '2 fl oz of Dry Gin'
+cbd_gin_tonic.liquors_string << '2 fl oz of Gin'
+cbd_moscow_mule.liquors_string << '2 fl oz of Vodka'
+cbd_spritz.liquors_string << '1 fl oz of Vodka'
+champagne_cocktail.liquors_string << '0.34 fl oz of Cognac'
+champagne_holiday.liquors_string << '12 fl oz of Genever'
+charleston.liquors_string << '2 fl oz of High Wire New Southern Revival Sorghum Whiskey'
+cherry.liquors_string << '1.25 fl oz of Vodka'
+chi.liquors_string << '2.5 fl oz of Pineapple-Infused Square One Organic Vodka'
+chimayó.liquors_string << '1.5 fl oz of Tequila'
+chocomole.liquors_string << '1.5 fl oz of Reposado Tequila'
+clover.liquors_string << '1.52 fl oz of Gin'
+cobras.liquors_string << '0.5 fl oz of Dark Jamaican Rum'
+coco.liquors_string << '2 fl oz of Leblon Cachaça '
+cocoa.liquors_string << '1 fl oz of Don Julio Añejo Tequila'
+coffee.liquors_string << '1.5 fl oz of The Block Autumn Gin'
+cojito.liquors_string << '0.51 fl oz of White Rum'
+conflict.liquors_string << '1.5 fl oz of Tequila Ocho plata'
+coquito.liquors_string << '25.26 fl oz of White Rum'
+corpose_reviver_one.liquors_string << '1 fl oz of Cognac'
+corpose_reviver_two.liquors_string << '1.01 fl oz of Gin'
+corpse_reviver_two_one_two.liquors_string << '1.5 fl oz of Chivas Regal 12 Year Old'
+cosmopolitan.liquors_string << '1.35 fl oz of Vodka Citron'
+cotter.liquors_string << '1.75 fl oz of Ransom Old Tom Gin'
+cowboy.liquors_string << "2.5 fl oz of Stranahan's Colorado Whiskey"
+crimson.liquors_string << '1 fl oz of Rittenhouse Rye'
+crush.liquors_string << '1 fl oz of Cotton & Reed White Rum'
+crystal.liquors_string << '1.25 fl oz of Gin'
+cuba.liquors_string << '1.69 fl oz of White Rum'
+cuban.liquors_string << '1.52 fl oz of White Rum'
+cucumber_cleanse.liquors_string << '2 fl oz of Vodka'
+cucumber_lime.liquors_string << '1.5 fl oz of Vodka'
+curiosity.liquors_string << '1 fl oz of Monkey 47 Gin'
+daiquiri.liquors_string << '2.03 fl oz of White Rum'
+dark_and_stormy.liquors_string << '2.03 fl oz of Dark Rum'
+dark_n_stormy.liquors_string << "2 fl oz of Gosling’s Black Seal Rum"
+dark_side.liquors_string << "1.5 fl oz of Maker’s Mark 46 Whiskey"
+darkside.liquors_string << '2.5 fl oz of London Dry Gin'
+devils_margarita.liquors_string << '1.5 fl oz of Blanco Tequila'
+dizzy.liquors_string << '2 fl oz of Bardstown Fusion Bourbon'
+don_alfredo.liquors_string << '1.52 fl oz of Pisco'
+don_quixote.liquors_string << '1.5 fl oz of Don Q Cristal Rum'
+dorado.liquors_string << '1.5 fl oz of Patrón Reposado Tequila'
+dragones.liquors_string << '1.5 fl oz of Casa Dragones Blanco Tequila'
+drunk.liquors_string << '1.5 fl oz of Islay Scotch'
+dry.liquors_string << '2.03 fl oz of Gin'
+duck.liquors_string << '1 fl oz of Lemongrass-Infused Gin'
+earl.liquors_string << '1.5 fl oz of Earl Grey–Tea-Infused Tanqueray Gin'
+eggnog.liquors_string << '4 fl oz of Rum, Bourbon, or Brandy'
+el_diablo.liquors_string << '1.5 fl oz of Reposado Tequila'
+el_presidente.liquors_string << '2 fl oz of Rum'
+elderflower.liquors_string << '0.5 fl oz of Square One Organic Vodka'
+embarcadero.liquors_string << '1 fl oz of Rye Whiskey'
+emerald.liquors_string << '1.5 fl oz of El Dorado Special Reserve 15-Year-Old Rum'
+espresso.liquors_string << '1.69 fl oz of Vodka'
+fernet.liquors_string << '3 fl oz of Appleton Estate Jamaica Rum'
+fifty_fifty_birthday.liquors_string << '1.5 fl oz of Amass Gin'
+figgy.liquors_string << '2 fl oz of Black-Fig-Infused Cognac'
+flaming.liquors_string << '0.25 fl oz of Rum'
+flannel.liquors_string << '1 fl oz of Cognac'
+flor.liquors_string << '1.5 fl oz of Flor de Caña 18-Year-Old Rum'
+forbidden_apple.liquors_string << '1 fl oz of Apple Brandy (Calvados)'
+forbidden_sour.liquors_string << '1 fl oz of Bourbon'
+forest.liquors_string << '1.5 fl oz of Gin'
+francophile.liquors_string << '1 fl oz of Apple Brandy (Calvados)'
+frank.liquors_string << '2 fl oz of Blended Scotch'
+french_connection.liquors_string << '1.18 fl oz of Cognac'
+french_harvest.liquors_string << '1.5 fl oz of Dry Gin'
+french_martini.liquors_string << '1.52 fl oz of Vodka'
+french_seventy_five.liquors_string << '1.01 fl oz of Gin'
+frisky.liquors_string << '1 fl oz of Irish Whiskey'
+frohito.liquors_string << '4 fl oz of Virgin Islands Rum'
+frozen_daiquiri.liquors_string << '2 fl oz of Rum'
+frozen_margarita.liquors_string << '2 fl oz of Blanco Tequila'
+gibson.liquors_string << '2.03 fl oz of Gin'
+gimlet.liquors_string << '2.5 fl oz of Gin'
+gin_and_tonic.liquors_string << '2 fl oz of Gin'
+gin_fizz.liquors_string << '1.52 fl oz of Gin'
+ginger_ale_highball.liquors_string << '1.5 fl oz of Rye Whiskey'
+ginger_fever_punch.liquors_string << '1.5 fl oz of Blanco Tequila'
+godfather.liquors_string << '2 fl oz of Blended Scotch'
+gold.liquors_string << '2 fl oz of Bourbon'
+golden_dew.liquors_string << '2 fl oz of Hwayo 41° Soju'
+golden_purl.liquors_string << "1.5 fl oz of Leopold’s American Small-Batch Gin"
+grave.liquors_string << '1.5 fl oz of Vanilla Brandy'
+great.liquors_string << '1 fl oz of Rittenhouse Bonded Rye'
+green_isaac_special.liquors_string << '2 fl oz of London Dry Gin'
+greenpoint.liquors_string << '2 fl oz of Rye Whiskey'
+greyhound.liquors_string << '1.69 fl oz of Gin'
+hanalei.liquors_string << '25.26 fl oz of Vodka or White Rum'
+hanky.liquors_string << '1.52 fl oz of London Dry Gin'
+harry_potter_butter.liquors_string << '1 fl oz of Vanilla Vodka'
+harvey.liquors_string << '1.52 fl oz of Vodka'
+heated.liquors_string << '2 fl oz of Partida Añejo Tequila'
+hemingway_daiquiri.liquors_string << '2 fl oz of White Rum'
+hemingway_special.liquors_string << '2.03 fl oz of Rum'
+hennessy.liquors_string << '1.5 fl oz of Hennessy V.S. Cognac'
+here_comes_the_sun.liquors_string << '1.5 fl oz of Rye Whiskey'
+hey_gourdgeous.liquors_string << '25.26 fl oz of Apple Brandy'
+high_on_hog.liquors_string << '3.25 fl oz of Buffalo Trace Kentucky Straight Bourbon'
+high_seas.liquors_string << '0.75 fl oz of Aonori-Infused High West Silver Oat Whiskey'
+high_tide.liquors_string << '1 fl oz of Japanese Whiskey'
+honey.liquors_string << '2 fl oz of Bottled-in-Bond Bourbon'
+horn.liquors_string << '1.5 fl oz of El Jimador Blanco Tequila'
+horses_neck.liquors_string << '1.35 fl oz of Brandy'
+hot_blooded.liquors_string << '2 fl oz of Rye Whiskey'
+hot_buttered_rum.liquors_string << '0.5 fl oz of Gold Rum'
+hot_toddy.liquors_string << '2 fl oz of Bourbon, Rye, or Scotch'
+hummer.liquors_string << '1 fl oz of Vodka'
+hurricane.liquors_string << '2 fl oz of Light Rum'
+i_left_my_heart.liquors_string << '2.5 fl oz of Tequila'
+illegal.liquors_string << '1.01 fl oz of Mezcal'
+infused.liquors_string << '2 fl oz of Infused Vodka or Tequila'
+irhsih_shot.liquors_string << '0.5 fl oz of Irish Whiskey'
+irish_affrogato.liquors_string << '0.75 fl oz of Irish Whiskey'
+irish_buck.liquors_string << '1.5 fl oz of Irish Whiskey'
+irish_car_bomb.liquors_string << '0.5 fl oz of Irish Whiskey'
+irish_coffee.liquors_string << '1.35 fl oz of Irish Whiskey'
+irish_maid.liquors_string << '2 fl oz of Irish Whiskey'
+irish_raktajino.liquors_string << '1.5 fl oz of Irish Whiskey'
+island.liquors_string << '2 fl oz of Aged Rum'
+jack.liquors_string << '1.5 fl oz of Apple Brandy'
+jack_o_lantern.liquors_string << '2 fl oz of Flor de Caña 7-Year-Old Grand Reserve Rum'
+jager_old_fashioned.liquors_string << '1 fl oz of Rye Whiskey'
+japanese.liquors_string << '2 fl oz of Nikka Coffey Grain Japanese Whiskey'
+jingle.liquors_string << '2 fl oz of Pine-Infused Vodka'
+john.liquors_string << '1.52 fl oz of Gin'
+josé.liquors_string << '1 fl oz of Ilegal Joven Mezcal'
+jungle.liquors_string << '1.5 fl oz of Dark Rum'
+kamikaze.liquors_string << '1.01 fl oz of Vodka'
+kanar.liquors_string << '1 fl oz of XO Cognac'
+kentucky.liquors_string << '2 fl oz of Bourbon'
+killer.liquors_string << '2 fl oz of Aromatic Gin'
+kylo.liquors_string << '2 fl oz of Crater Lake Rye Whiskey'
+landmaster.liquors_string << '1 fl oz of Fortaleza Still-Strength Blanco Tequila'
+large_format_mezcal.liquors_string << '9 fl oz of Mezcal'
+large_format_red.liquors_string << '10 fl oz of Rittenhouse Rye'
+last.liquors_string << '0.76 fl oz of Gin'
+last_minute.liquors_string << '2 fl oz of Bourbon or Brandy'
+latitude.liquors_string << '1 fl oz of Coruba Dark Jamaican Rum'
+leeward.liquors_string << '0.5 fl oz of Sipsmith VJOP Gin '
+lemon.liquors_string << '1.01 fl oz of Vodka Citron'
+lemon_drop.liquors_string << '2 fl oz of Vodka'
+lime.liquors_string << '2 fl oz of Bourbon, Rye, or Gin'
+limoncello.liquors_string << '2.5 fl oz of Whiskey'
+lions.liquors_string << '2 fl oz of Bourbon'
+london_lemonade.liquors_string << '2 fl oz of Gin'
+london_toddy.liquors_string << '6 fl oz of Gin'
+long.liquors_string << '0.51 fl oz of Tequila'
+longshoreman.liquors_string << '2 fl oz of Rye Whiskey'
+lounge.liquors_string << '0.75 fl oz of Siete Leguas Añejo Tequila'
+m_g_and_t.liquors_string << '1 fl oz of Blaum Bros. Oak Reserve Gin'
+macuá.liquors_string << '2 fl oz of White Rum'
+mad.liquors_string << '1 fl oz of Vodka'
+magic.liquors_string << '2 fl oz of Light Rum'
+mai.liquors_string << '1.01 fl oz of Amber Jamaican Rum'
+malibu.liquors_string << '2 fl oz of Malibu Coconut Rum'
+mamie.liquors_string << '2 fl oz of Blended Scotch'
+man_o_war.liquors_string << '2 fl oz of Bourbon'
+mango.liquors_string << '1.5 fl oz of Hennessy V.S. Cognac'
+manhattan.liquors_string << '1.69 fl oz of Rye Whiskey'
+mantra.liquors_string << '1 fl oz of Spiced Rum'
+margarita.liquors_string << '1.69 fl oz of Tequila'
+margaritas.liquors_string << '22 fl oz of Tequila'
+martinez.liquors_string << '1.52 fl oz of London Dry Gin'
+mary.liquors_string << '1.52 fl oz of White Rum'
+master.liquors_string << '2 fl oz of Pisco'
+mexican.liquors_string << '15 fl oz of Blanco Tequila'
+mezcal_mule.liquors_string << '1.5 fl oz of Sombra Mezcal'
+mezcal_negroni.liquors_string << '1 fl oz of Mezcal'
+miami.liquors_string << '2 fl oz of Rum'
+midori.liquors_string << '1 fl oz of Vodka'
+millionaire.liquors_string << '2 fl oz of Bourbon'
+mink.liquors_string << '0.75 fl oz of Don Julio Blanco Tequila'
+mint.liquors_string << '2.03 fl oz of Bourbon'
+mojito.liquors_string << '1.35 fl oz of White Rum'
+moment.liquors_string << '1.75 fl oz of Woodford Reserve Double Oaked Bourbon'
+monkey.liquors_string << '1.52 fl oz of Gin'
+monte_carlo.liquors_string << '2 fl oz of Rye Whiskey'
+monte_cassino.liquors_string << '0.75 fl oz of Rittenhouse Rye'
+moscow.liquors_string << '1.52 fl oz of Vodka'
+mudslide.liquors_string << '1 fl oz of Vodka'
+mule.liquors_string << '1 fl oz of Dark Rum, Vodka, Tequila, Mezcal or Gin'
+mutual.liquors_string << '1.5 fl oz of Plantation Barbados Five-Year-Old Rum'
+my.liquors_string << '2 fl oz of Banks 5-Island Rum'
+naked.liquors_string << '0.76 fl oz of Mezcal'
+negroni.liquors_string << '1.01 fl oz of Gin'
+negroni_sorbet.liquors_string << '1 fl oz of Gin'
+new_year_sparkler.liquors_string << '1 fl oz of Berry-Flavored Vodka'
+nino.liquors_string << '1 fl oz of Brandy'
+northern.liquors_string << '1.5 fl oz of Crown Royal Northern Harvest Rye'
+nui.liquors_string << '1.5 fl oz of Gold Virgin Islands Rum'
+ny_sour.liquors_string << '2.03 fl oz of Whiskey'
+oaks.liquors_string << '1.5 fl oz of Vodka'
+oaxacan.liquors_string << '0.75 fl oz of Mezcal'
+old_cuban.liquors_string << '1.52 fl oz of Aged Rum'
+old_fashioned.liquors_string << '1.52 fl oz of Bourbon or Whiskey'
+old_pal.liquors_string << '1 fl oz of Rye Whiskey'
+one.liquors_string << '1 Spritz of Islay Scotch'
+one_two.liquors_string << '1.5 fl oz of Johnnie Walker Double Black Scotch'
+orange_whip.liquors_string << '0.34 fl oz of Rum'
+orgasm.liquors_string << '0.75 fl oz of Vodka'
+painkiller.liquors_string << "2 fl oz of Pusser's Rum"
+paloma.liquors_string << '1.69 fl oz of 100% Agave Tequila'
+pandan_coconut.liquors_string << '0.5 fl oz of Herbaceous Dry Gin'
+paper.liquors_string << '1.01 fl oz of Bourbon Whiskey'
+paradise.liquors_string << '1.18 fl oz of Gin'
+peach.liquors_string << '2.5 fl oz of Woodford Reserve Bourbon'
+pearl.liquors_string << '1.5 fl oz of Aged Rum'
+peeping.liquors_string << '1.5 fl oz of Gin'
+pegu.liquors_string << '1.5 fl oz of Gin'
+penicillin.liquors_string << '2.03 fl oz of Blended Scotch'
+pho_king.liquors_string << '0.66 fl oz of Vodka'
+picon.liquors_string << '0.5 fl oz of Brandy'
+piña.liquors_string << '1.69 fl oz of White Rum'
+pina_colada.liquors_string << '2 fl oz of Light Rum'
+pink_gin.liquors_string << '1 fl oz of Gin'
+pink_lady.liquors_string << '1.5 fl oz of Gin'
+pisco.liquors_string << '2.03 fl oz of Pisco'
+planters_punch.liquors_string << '1.52 fl oz of Jamaican Rum'
+pomelomosa.liquors_string << '1 fl oz of Blanco Tequila'
+pomosa.liquors_string << '1 fl oz of Van Gogh Pomegranate Vodka'
+ponche.liquors_string << '10 fl oz of Light Rum'
+porchlight.liquors_string << '0.5 fl oz of George Dickel Superior No. 12 Tennessee Whiskey'
+porn.liquors_string << '1.5 fl oz of Vanilla Vodka'
+port.liquors_string << '25.26 fl oz of Captain Morgan Spiced Rum'
+porto.liquors_string << '0.51 fl oz of Brandy'
+pot.liquors_string << '1.75 fl oz of Irish Whiskey'
+presbyterian.liquors_string << '2 fl oz of Scotch, Bourbon or Rye'
+pumpkin_buck.liquors_string << '1.5 fl oz of Applejack or American Whiskey'
+pumpkin_sazerac.liquors_string << '2 fl oz of Cognac or Rye Whiskey'
+pumpkin_toddy.liquors_string << '1 fl oz of Apple Brandy'
+que.liquors_string << '2 fl oz of Azuñia Organic Blanco Tequila'
+quill.liquors_string << '1.5 fl oz of London Dry Gin'
+rainbow.liquors_string << '5 fl oz of Dark Rum'
+ramos.liquors_string << '1.52 fl oz of Gin'
+raymond.liquors_string << '2 fl oz of Canadian Rye Whiskey'
+rebirth.liquors_string << '0.25 fl oz of Singani 63 Brandy'
+red.liquors_string << '2 fl oz of Rye Whiskey'
+reggae.liquors_string << '2 fl oz of White Rum'
+remember.liquors_string << '2 fl oz of Rye Whiskey'
+ring.liquors_string << '1.5 fl oz of Mezcal'
+rob.liquors_string << '1.52 fl oz of Scotch'
+rockeys_rum.liquors_string << '1 fl oz of Light Rum'
+rosemary.liquors_string << '1.25 fl oz of Mezcal'
+royal.liquors_string << '3 fl oz of 21-Year-Old Single-Malt Scotch'
+ruby.liquors_string << '1 fl oz of Vodka'
+rum_old_fashioned.liquors_string << '2 fl oz of Dark Rum'
+rum_punch.liquors_string << '1.25 fl oz of Light Rum'
+rum_smoke.liquors_string << '1.5 fl oz of Aged Rum'
+russian.liquors_string << '0.85 fl oz of Vodka'
+rustaveli.liquors_string << '1 fl oz of Brandy'
+rusty_compass.liquors_string << '1.5 fl oz of Compass Box The Peat Monster Malt Scotch'
+rusy_nail.liquors_string << '1.52 fl oz of Scotch'
+saint.liquors_string << '1.5 fl oz of Pisco'
+saison.liquors_string << '0.5 fl oz of Whiskey (Adrien Camut Six-Year-Old Calvados)'
+salty.liquors_string << '1.35 fl oz of Gin or Vodka'
+samarian.liquors_string << '1.5 fl oz of White Rum'
+sangria.liquors_string << '4 fl oz of Brandy'
+saturn.liquors_string << '1.25 fl oz of Gin'
+sazerac.liquors_string << '1.69 fl oz of Cognac'
+scofflaw.liquors_string << '2 fl oz of Bourbon or Rye'
+scotch.liquors_string << '2 fl oz of Scotch'
+sea_breeze.liquors_string << '1.35 fl oz of Vodka'
+sea_breeze_cooler.liquors_string << '1 fl oz of Dry Gin'
+set.liquors_string << '2 fl oz of Bowmore 12-Year-Old Single-Malt Scotch'
+seven_and_seven.liquors_string << "1.5 fl oz of Seagram's Seven Crown Whiskey"
+sex.liquors_string << '1.35 fl oz of Vodka'
+shamrock.liquors_string << '1.25 fl oz of Vanilla Vodka'
+sidecar.liquors_string << '1.69 fl oz of Cognac'
+sin.liquors_string << '1 fl oz of The Macallan 12-Year-Old Single-Malt Scotch'
+singapore.liquors_string << '1.01 fl oz of Gin'
+singapura.liquors_string << '1.5 fl oz of Citrus-Forward Dry Gin'
+smoked.liquors_string << '1 fl oz of Famous Grouse Smoky Black Blended Scotch'
+smoky.liquors_string << '2.5 fl oz of Gin'
+snap.liquors_string << '1.5 fl oz of Don Julio Reposado Tequila'
+south.liquors_string << '1 fl oz of Ardbeg 10-Year-Old Scotch'
+southside.liquors_string << '2.03 fl oz of London Dry Gin'
+spanish.liquors_string << '2 fl oz of London Dry Gin'
+sparkling_rose.liquors_string << '10 fl oz of Strawberry-Basil-Infused Blanco Tequila'
+sparkling_watermelon.liquors_string << '4 fl oz of Vodka'
+spcity_margarita.liquors_string << '2 fl oz of Blanco Tequila'
+spiced_eggnog.liquors_string << '3 fl oz of Brandy'
+spiced_margarita.liquors_string << '2 fl oz of Blanco Tequila'
+spicy_mint.liquors_string << '2 fl oz of Blanco Tequila'
+stinger.liquors_string << '1.69 fl oz of Cognac'
+stone.liquors_string << '2 fl oz of Rye, Bourbon, Rum or Brandy'
+strawberry_daiquiri.liquors_string << '1.5 fl oz of Puerto Rican or Jamaican Rum'
+strawberry_pisco_sour.liquors_string << '10 fl oz of Pisco'
+suffering.liquors_string << '1.01 fl oz of Gin'
+summer.liquors_string << '1.75 fl oz of Portobello Road Gin'
+summer_served.liquors_string_string << '2 fl oz of 1888 Brugal Rum'
+summerthyme.liquors_string << '11 fl oz of Vodka'
+sunflower.liquors_string << '0.75 fl oz of Gin'
+sussex.liquors_string << '1.75 fl oz of Hendrick’s Gin'
+switchel.liquors_string << '1 fl oz of Bourbon, White or Aged Rum, Blended Scotch, Oloroso Sherry or Amaro Montenegro '
+tart.liquors_string << '0.75 fl oz of Glenfiddich 12-Year-Old Single Malt Scotch'
+tasman.liquors_string << '1 fl oz of 151-Proof Gold Caribbean Rum'
+tea_for_two.liquors_string << '16 fl oz of Jamaican Rum'
+tea_sympathy.liquors_string << '1 fl oz of Avuá Amburana Cachaça'
+tequila_mockingbird.liquors_string << '2 fl oz of Silver Tequila'
+tequila_sunrise.liquors_string << '1.52 fl oz of Tequila'
+thai.liquors_string << '2 fl oz of Spiced Rum'
+the_dead_rabbit.liquors_string << '1.5 fl oz of Clontarf Irish Whiskey'
+the_lookout.liquors_string << '2 fl oz of Rum'
+the_modern.liquors_string << '1.5 fl oz of Johnnie Walker Black Label Scotch'
+the_spice_is_right.liquors_string << '1 fl oz of Pineapple Rum'
+timberpoint.liquors_string << '2 fl oz of Gin'
+tipperary.liquors_string << '1.69 fl oz of Irish Whiskey'
+tom_and_jerry.liquors_string << '1 fl oz of Dark Rum'
+tom_collins.liquors_string << '1.52 fl oz of Old Tom Gin'
+tom_yum.liquors_string << '1.75 fl oz of Vodka'
+tommys_margarita.liquors_string << '1.52 fl oz of Tequila'
+tootsie.liquors_string << '2 fl oz of Rye Whiskey'
+toronto.liquors_string << '2 fl oz of Canadian Rye Whiskey'
+trinidad.liquors_string << '0.51 fl oz of Rye Whiskey'
+turf.liquors_string << '2 fl oz of Gin'
+tuxedo.liquors_string << '1.01 fl oz of Gin'
+twentieth_century.liquors_string << '1.5 fl oz of Gin'
+uncle.liquors_string << '8 fl oz of Bourbon'
+upper.liquors_string << '0.75 fl oz of Cachaça'
+uss.liquors_string << '16 fl oz of Dark Jamaican Rum'
+vampiro.liquors_string << '1.69 fl oz of Tequila'
+vesper.liquors_string << '1.52 fl oz of Gin'
+vida.liquors_string << '2 fl oz of Del Maguey Vida Mezcal'
+vieux.liquors_string << '1.01 fl oz of Rye Whiskey'
+vodka.liquors_string << '2.5 fl oz of Vodka'
+waldorf.liquors_string << '2 fl oz of Rye Whiskey'
+ward.liquors_string << '2 fl oz of Rye Whiskey'
+washington_apple.liquors_string << '1 fl oz of Canadian Whiskey'
+washington_apple_shot.liquors_string << '0.75 fl oz of Canadian Whiskey'
+watermelon_blackberry.liquors_string << '4 fl oz of Pura Vida Tequila'
+whats_up.liquors_string << '1.75 fl oz of Bourbon'
+where.liquors_string << '1 fl oz of Brandy'
+whiskey_in_church.liquors_string << '2 fl oz of Ardbeg 10 yr Islay Scotch'
+whiskey_mac.liquors_string << '1.5 fl oz of Blended Scotch'
+whiskey_skin.liquors_string << '2 fl oz of Scotch'
+whiskey_smashed.liquors_string << '8.75 fl oz of Woodford Reserve Kentucky Straight Bourbon'
+whiskey_sour.liquors_string << '1.52 fl oz of Bourbon Whiskey'
+white_cargo.liquors_string << '1 fl oz of Dry Gin'
+white_lady.liquors_string << '1.35 fl oz of Gin'
+white_russian.liquors_string << '1.69 fl oz of Vodka'
+white_summer.liquors_string << '1 fl oz of White Corn Whiskey'
+winter.liquors_string << '1.5 fl oz of Casa Dragones Blanco Tequila'
+wisconsin.liquors_string << '2 fl oz of Brandy'
+witches_brew.liquors_string << '2 fl oz of Islay Scotch'
+yellow.liquors_string << '1.01 fl oz of White Rum'
+yerba.liquors_string << '2 fl oz of Partida Reposado Tequila'
+zombie.liquors_string << '1.52 fl oz of Jamaican Dark Rum'

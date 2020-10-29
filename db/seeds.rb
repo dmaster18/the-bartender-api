@@ -509,7 +509,7 @@ croft = Liqueur.create(name: "Croft Pink Port", liqueur_type: "Port", descriptio
 curaçao = Liqueur.create(name: "Curaçao", liqueur_type: "Curaçao", description: "A liqueur flavored with the dried peel of the bitter orange laraha, a citrus fruit, grown on the Dutch island of Curaçao." , origin: "Curaçao " , flavor: "Bitter and Sweet Orange", abv: "15–40%", color: "Blue or Orange")
 cynar = Liqueur.create(name: "Cynar", liqueur_type: "Amaro", description: "Amaro is an Italian herbal liqueur that is commonly consumed as an after-dinner digestif. It usually has a bitter-sweet flavour, sometimes syrupy, and has an alcohol content between 16% and 40%. Amaro is typically produced by macerating herbs, roots, flowers, bark, and/or citrus peels in alcohol, either neutral spirits or wine, mixing the filtrate with sugar syrup, and allowing the mixture to age in casks or bottles." , origin: "Italy" , flavor: "Bitter-sweet", abv: "16-40%", color: "Varies")
 cyril = Liqueur.create(name: "Cyril Zangs Ciderman Apple Cider", liqueur_type: "Cider", description: "The juice of most varieties of apple can be used to make cider, but cider apples are best. The addition of sugar or extra fruit before a second fermentation increases the ethanol content of the resulting beverage. Cider alcohol content varies from 1.2% to 8.5% ABV or more in traditional English ciders, and 3.5% to 12% in continental ciders." , origin: nil , flavor: "Apple", abv: "1.2-12%", color: "Pale to Yellow")
-dark = Liqueur.create(name: "Dark Crème de Cacao", liqueur_type: "Chocolate Liqueur", description: "Crème de cacao may be either clear or a dark caramel color, which is often labeled 'dark crème de cacao'. The French word 'crème' refers to the creamy texture of this very sweet liqueur, achieved by having a sugar content of at least 250 g/l as required by European law, and there is no dairy cream in it. The alcohol content of crème de cacao varies, but 20% to 25% ABV (40–50 proof (U.S.)) is common." , origin: "France" , flavor: "Chocolate", abv: "20-25%", color: "Dark")
+darkcreme = Liqueur.create(name: "Dark Crème de Cacao", liqueur_type: "Chocolate Liqueur", description: "Crème de cacao may be either clear or a dark caramel color, which is often labeled 'dark crème de cacao'. The French word 'crème' refers to the creamy texture of this very sweet liqueur, achieved by having a sugar content of at least 250 g/l as required by European law, and there is no dairy cream in it. The alcohol content of crème de cacao varies, but 20% to 25% ABV (40–50 proof (U.S.)) is common." , origin: "France" , flavor: "Chocolate", abv: "20-25%", color: "Dark")
 dekuyper = Liqueur.create(name: "Dekuyper Pucker Sour Apple Schnapps", liqueur_type: "Schnapps", description: "Enjoy the fresh, sweet taste of apples with a mouth-puckering finish. The sweet and sour blend make this a must for the perfect Appletini. Also makes a great addition to a variety of cocktails, or savor on its own. United States, Apple. Mr Stacks Sour Apple Schnapps Liqueurs/Cordials/Schnapps Fruit Apple " , origin: "USA" , flavor: "Sour Apple", abv: "15%", color: "Light green")
 distilleria = Liqueur.create(name: "Distilleria Gualco Camomila (Grappa-Based Chamomile Liqueur)", liqueur_type: "Grappa", description: "A fragrant, grape-based pomace brandy of Italian origin that contains 35 to 60 percent alcohol by volume (70 to 120 US proof)." , origin: "Italy" , flavor: "Varies", abv: "35-60%", color: "Clear")
 dolin_blanc = Liqueur.create(name: "Dolin Blanc Vermouth", liqueur_type: "Vermouth", description: "An aromatized, fortified wine, flavoured with various botanicals (roots, barks, flowers, seeds, herbs, and spices) and sometimes colored." , origin: "Italy" , flavor: "Varies", abv: "16-22%", color: "Varies")
@@ -1015,7 +1015,7 @@ embarcadero = Recipe.create(name: 'Embarcadero')
 emerald = Recipe.create(name: 'Emerald Isle of the Caribbean')
 espresso = Recipe.create(name: 'Espresso martini')
 fernandito = Recipe.create(name: 'Fernandito')
-fernet = Recipe.create(name: 'Fernet About It')
+fernetaboutit = Recipe.create(name: 'Fernet About It')
 fifty_fifty_birthday = Recipe.create(name: '50/50 Birthday')
 figgy = Recipe.create(name: 'Figgy Smalls')
 flaming = Recipe.create(name: 'Flaming Dr. Pepper Shot')
@@ -1154,7 +1154,7 @@ mezcal_mule = Recipe.create(name: 'Mezcal Mule')
 mezcal_negroni = Recipe.create(name: 'Mezcal Negroni')
 miami = Recipe.create(name: 'Miami Vice')
 michelada = Recipe.create(name: 'Michelada')
-midori = Recipe.create(name: 'Midori Sour')
+sourmidori = Recipe.create(name: 'Midori Sour')
 milk = Recipe.create(name: 'Milk & Honey')
 millionaire = Recipe.create(name: 'Millionaire')
 mimosa = Recipe.create(name: 'Mimosa')
@@ -1216,7 +1216,7 @@ ponche = Recipe.create(name: 'Ponche Navideño')
 porchcrawler = Recipe.create(name: 'Porchcrawler')
 porchlight = Recipe.create(name: 'Porchlight 7&7')
 porn = Recipe.create(name: 'Porn Star Martini')
-port = Recipe.create(name: 'Port Royal Punch')
+port_royal_punch = Recipe.create(name: 'Port Royal Punch')
 porto = Recipe.create(name: 'Porto flip')
 pot = Recipe.create(name: 'Pot of Gold')
 presbyterian = Recipe.create(name: 'Presbyterian')
@@ -1351,7 +1351,7 @@ white_summer = Recipe.create(name: 'White Summer Sazerac')
 winter = Recipe.create(name: 'Winter Flower')
 wisconsin = Recipe.create(name: 'Wisconsin Old Fashioned')
 witches_brew = Recipe.create(name: "Witches' Brew")
-yellow = Recipe.create(name: 'Yellow Bird')
+yellow_bird = Recipe.create(name: 'Yellow Bird')
 yerba = Recipe.create(name: 'Yerba Buena')
 zombie = Recipe.create(name: 'Zombie')
 
@@ -1498,7 +1498,7 @@ elderflower.liquors << square_one_organic
 embarcadero.liquors << rye
 emerald.liquors << el_dorado_rum
 espresso.liquors << vodka
-fernet.liquors << appleton_jamaica_rum
+fernetaboutit.liquors << appleton_jamaica_rum
 fifty_fifty_birthday.liquors << amass_gin
 figgy.liquors << black_fig_cognac
 flaming.liquors << rum
@@ -1614,7 +1614,7 @@ mexican.liquors << blanco
 mezcal_mule.liquors << sombra_mezcal
 mezcal_negroni.liquors << mezcal
 miami.liquors << rum
-midori.liquors << vodka
+sourmidori.liquors << vodka
 millionaire.liquors << bourbon
 mink.liquors << don_julio_blanco
 mint.liquors << bourbon
@@ -1668,7 +1668,7 @@ pomosa.liquors << van_gogh_vodka
 ponche.liquors << light_rum
 porchlight.liquors << george_dickel
 porn.liquors << vanilla_vodka
-port.liquors << captain_morgan
+port_royal_punch.liquors << captain_morgan
 porto.liquors << brandy
 pot.liquors << irish
 presbyterian.liquors << scotch_bourbon_or_rye
@@ -1688,7 +1688,7 @@ ring.liquors << mezcal
 rob.liquors << scotch
 rockeys_rum.liquors << light_rum
 rosemary.liquors << mezcal
-royal.liquors << old_singe_malt_scotch
+port_royal_punch.liquors << old_singe_malt_scotch
 ruby.liquors << vodka
 rum_old_fashioned.liquors << dark
 rum_punch.liquors << light_rum
@@ -1789,7 +1789,7 @@ white_summer.liquors << white_corn_whiskey
 winter.liquors << casa_dragones
 wisconsin.liquors << brandy
 witches_brew.liquors << islay
-yellow.liquors << white
+yellow_bird.liquors << white
 yerba.liquors << partida_reposado
 zombie.liquors << jamaican_dark_rum
 
@@ -1936,7 +1936,7 @@ elderflower.liquors_string << '0.5 fl oz of Square One Organic Vodka'
 embarcadero.liquors_string << '1 fl oz of Rye Whiskey'
 emerald.liquors_string << '1.5 fl oz of El Dorado Special Reserve 15-Year-Old Rum'
 espresso.liquors_string << '1.69 fl oz of Vodka'
-fernet.liquors_string << '3 fl oz of Appleton Estate Jamaica Rum'
+fernetaboutit.liquors_string << '3 fl oz of Appleton Estate Jamaica Rum'
 fifty_fifty_birthday.liquors_string << '1.5 fl oz of Amass Gin'
 figgy.liquors_string << '2 fl oz of Black-Fig-Infused Cognac'
 flaming.liquors_string << '0.25 fl oz of Rum'
@@ -2052,7 +2052,7 @@ mexican.liquors_string << '15 fl oz of Blanco Tequila'
 mezcal_mule.liquors_string << '1.5 fl oz of Sombra Mezcal'
 mezcal_negroni.liquors_string << '1 fl oz of Mezcal'
 miami.liquors_string << '2 fl oz of Rum'
-midori.liquors_string << '1 fl oz of Vodka'
+sourmidori.liquors_string << '1 fl oz of Vodka'
 millionaire.liquors_string << '2 fl oz of Bourbon'
 mink.liquors_string << '0.75 fl oz of Don Julio Blanco Tequila'
 mint.liquors_string << '2.03 fl oz of Bourbon'
@@ -2106,7 +2106,7 @@ pomosa.liquors_string << '1 fl oz of Van Gogh Pomegranate Vodka'
 ponche.liquors_string << '10 fl oz of Light Rum'
 porchlight.liquors_string << '0.5 fl oz of George Dickel Superior No. 12 Tennessee Whiskey'
 porn.liquors_string << '1.5 fl oz of Vanilla Vodka'
-port.liquors_string << '25.26 fl oz of Captain Morgan Spiced Rum'
+port_royal_punch.liquors_string << '25.26 fl oz of Captain Morgan Spiced Rum'
 porto.liquors_string << '0.51 fl oz of Brandy'
 pot.liquors_string << '1.75 fl oz of Irish Whiskey'
 presbyterian.liquors_string << '2 fl oz of Scotch, Bourbon or Rye'
@@ -2126,7 +2126,7 @@ ring.liquors_string << '1.5 fl oz of Mezcal'
 rob.liquors_string << '1.52 fl oz of Scotch'
 rockeys_rum.liquors_string << '1 fl oz of Light Rum'
 rosemary.liquors_string << '1.25 fl oz of Mezcal'
-royal.liquors_string << '3 fl oz of 21-Year-Old Single-Malt Scotch'
+port_royal_punch.liquors_string << '3 fl oz of 21-Year-Old Single-Malt Scotch'
 ruby.liquors_string << '1 fl oz of Vodka'
 rum_old_fashioned.liquors_string << '2 fl oz of Dark Rum'
 rum_punch.liquors_string << '1.25 fl oz of Light Rum'
@@ -2227,7 +2227,7 @@ white_summer.liquors_string << '1 fl oz of White Corn Whiskey'
 winter.liquors_string << '1.5 fl oz of Casa Dragones Blanco Tequila'
 wisconsin.liquors_string << '2 fl oz of Brandy'
 witches_brew.liquors_string << '2 fl oz of Islay Scotch'
-yellow.liquors_string << '1.01 fl oz of White Rum'
+yellow_bird.liquors_string << '1.01 fl oz of White Rum'
 yerba.liquors_string << '2 fl oz of Partida Reposado Tequila'
 zombie.liquors_string << '1.52 fl oz of Jamaican Dark Rum'
 
@@ -2449,7 +2449,7 @@ elderflower.liqueurs << st_germain
 embarcadero.liqueurs << lo_fi_vermouth
 emerald.liqueurs << velvet
 espresso.liqueurs << kahlúa
-fernet.liqueurs << fernet
+fernetaboutit.liqueurs << fernet
 fifty_fifty_birthday.liqueurs << dolin_dy
 figgy.liqueurs << grand_marnier
 flannel.liqueurs << allspice
@@ -2479,7 +2479,7 @@ high_seas.liqueurs << cappelletti
 high_tide.liqueurs << cointreau
 horn.liqueurs << midori
 hot_blooded.liqueurs << ancho_reyes
-hummer.liqueurs << dark
+hummer.liqueurs << darkcreme
 i_left_my_heart.liqueurs << ancho_reyes
 illegal.liqueurs << falernum
 irhsih_shot.liqueurs << baileys
@@ -2517,7 +2517,7 @@ margaritas.liqueurs << cointreau
 martinez.liqueurs << sweet_vermouth
 mary.liqueurs << maraschino
 mezcal_negroni.liqueurs << campari
-midori.liqueurs << midori
+sourmidori.liqueurs << midori
 millionaire.liqueurs << grand_marnier
 moment.liqueurs << banana
 monkey.liqueurs << absinthe
@@ -2623,7 +2623,7 @@ white_russian.liqueurs << coffee
 white_summer.liqueurs << italicus
 winter.liqueurs << bénédictine
 witches_brew.liqueurs << fino
-yellow.liqueurs << galliano
+yellow_bird.liqueurs << galliano
 zombie.liqueurs << falernum
 absinthe_drip.liqueurs << absinthe
 alabama.liqueurs << sloe
@@ -2764,7 +2764,7 @@ elderflower.liqueurs_string << '0.5 fl oz of St-Germain'
 embarcadero.liqueurs_string << '1 fl oz of Lo-Fi Sweet Vermouth'
 emerald.liqueurs_string << '0.25 fl oz of Velvet Falernum'
 espresso.liqueurs_string << '1.01 fl oz of Kahlúa'
-fernet.liqueurs_string << '6 fl oz of Fernet-Branca'
+fernetaboutit.liqueurs_string << '6 fl oz of Fernet-Branca'
 fifty_fifty_birthday.liqueurs_string << '0.75 fl oz of Dolin Dry Vermouth'
 figgy.liqueurs_string << '0.75 fl oz of Grand Marnier'
 flannel.liqueurs_string << '0.25 fl oz of Allspice Dram'
@@ -2832,7 +2832,7 @@ margaritas.liqueurs_string << '14 fl oz of Cointreau'
 martinez.liqueurs_string << '1.52 fl oz of Sweet Vermouth'
 mary.liqueurs_string << '0.25 fl oz of Maraschino Luxardo'
 mezcal_negroni.liqueurs_string << '1 fl oz of Campari'
-midori.liqueurs_string << '1 fl oz of Midori'
+sourmidori.liqueurs_string << '1 fl oz of Midori'
 millionaire.liqueurs_string << '0.75 fl oz of Grand Marnier'
 moment.liqueurs_string << '0.75 fl oz of Banana Liqueur'
 monkey.liqueurs_string << '1 tbsp of Absinthe'
@@ -2938,7 +2938,7 @@ white_russian.liqueurs_string << '0.68 fl oz of Coffee Liqueur'
 white_summer.liqueurs_string << '0.25 fl oz of Italicus Aperitivo'
 winter.liqueurs_string << '0.25 fl oz of Bénédictine'
 witches_brew.liqueurs_string << '0.5 fl oz of Fino Sherry'
-yellow.liqueurs_string << '0.51 fl oz of Galliano'
+yellow_bird.liqueurs_string << '0.51 fl oz of Galliano'
 zombie.liqueurs_string << '0.51 fl oz of Falernum'
 absinthe_drip.liqueurs_string << '1.5 fl oz of Absinthe'
 alabama.liqueurs_string << '1 fl oz of Sloe gin'
@@ -3127,7 +3127,7 @@ vieux.liqueurs << bénédictine
 waldorf.liqueurs << absinthe
 where.liqueurs << fireball
 white_summer.liqueurs << absinthe
-yellow.liqueurs << triple_sec
+yellow_bird.liqueurs << triple_sec
 zombie.liqueurs << pernod
 
 a_la_louisiane.liqueurs_string << '0.5 fl oz of Bénédictine'
@@ -3258,7 +3258,7 @@ vieux.liqueurs_string << '1 barspoon of Bénédictine'
 waldorf.liqueurs_string << '1 dash of Absinthe'
 where.liqueurs_string << '0.5 fl oz of Fireball Cinnamon Whiskey'
 white_summer.liqueurs_string << '6 spritzes of Absinthe'
-yellow.liqueurs_string << '0.51 fl oz of Triple Sec'
+yellow_bird.liqueurs_string << '0.51 fl oz of Triple Sec'
 zombie.liqueurs_string << '6 drops of Pernod'
 
 a_la_louisiane.liqueurs << absinthe
@@ -3271,7 +3271,7 @@ bitter.liqueurs << sparkling_red
 cape.liqueurs << few_anguish
 channel.liqueurs << granada
 chrysanthemum.liqueurs << absinthe
-cocoa.liqueurs << dark
+cocoa.liqueurs << darkcreme
 crimson.liqueurs << heering
 death_by_morning.liqueurs << coffee
 flaming.liqueurs << beer
@@ -3458,7 +3458,7 @@ elderflower.mixers << agave_nectar
 emerald.mixers << cinnamon_simple
 espresso.mixers << sugar_syrup
 fernandito.mixers << cola
-fernet.mixers << simple_syrup
+fernetaboutit.mixers << simple_syrup
 figgy.mixers << simple_syrup
 flannel.mixers << orange_juice
 flor.mixers << sparkling_water
@@ -3575,7 +3575,7 @@ master.mixers << lemon_juice
 mexican.mixers << quartered_limes
 mezcal_mule.mixers << lime_juice
 miami.mixers << strawberries
-midori.mixers << lemon_juice
+sourmidori.mixers << lemon_juice
 milk.mixers << milk
 millionaire.mixers << lemon_juice
 mimosa.mixers << orange_juice
@@ -3630,7 +3630,7 @@ pomelomosa.mixers << juiced_lime
 ponche.mixers << piloncillo
 porchlight.mixers << black_tea
 porn.mixers << passion_fruit_puree
-port.mixers << pineapple_juice
+port_royal_punch.mixers << pineapple_juice
 porto.mixers << egg_yolk
 pot.mixers << lemon_juice
 presbyterian.mixers << ginger
@@ -3649,7 +3649,7 @@ rob.mixers << angostura_bitters
 rockeys_rum.mixers << pineapple_juice
 roman.mixers << cold_brew_coffee
 rose_colored_glass.mixers << angostura_bitters
-royal.mixers << tea_syrup
+port_royal_punch.mixers << tea_syrup
 ruby.mixers << pineapple_juice
 rum_old_fashioned.mixers << demerara_syrup
 rum_punch.mixers << pineapple_juice
@@ -3744,7 +3744,7 @@ white_summer.mixers << simple_syrup
 winter.mixers << hot_hibiscus
 wisconsin.mixers << lemon_lime_soda
 witches_brew.mixers << lemon_juice
-yellow.mixers << lime_juice
+yellow_bird.mixers << lime_juice
 yerba.mixers << lime_juice
 zombie.mixers << lime_juice
 
@@ -3882,7 +3882,7 @@ elderflower.mixers_string << '1 tsp of Agave Nectar'
 emerald.mixers_string << '0.5 fl oz of Cinnamon Simple Syrup'
 espresso.mixers_string << '0.34 fl oz of Sugar Syrup'
 fernandito.mixers_string << 'Top up with Cola'
-fernet.mixers_string << '17.75 fl oz of Simple Syrup'
+fernetaboutit.mixers_string << '17.75 fl oz of Simple Syrup'
 figgy.mixers_string << '0.25 fl oz of Simple Syrup'
 flannel.mixers_string << '0.25 fl oz of Orange Juice'
 flor.mixers_string << '1 spash of Sparkling Water'
@@ -3999,7 +3999,7 @@ master.mixers_string << '1 fl oz of Lemon Juice'
 mexican.mixers_string << '3 Quartered Limes'
 mezcal_mule.mixers_string << '0.75 fl oz of Lime Juice'
 miami.mixers_string << '8 fl oz of Strawberries'
-midori.mixers_string << '0.5 fl oz of Lemon Juice'
+sourmidori.mixers_string << '0.5 fl oz of Lemon Juice'
 milk.mixers_string << 'Top up with Milk'
 millionaire.mixers_string << '0.5 fl oz of Lemon Juice'
 mimosa.mixers_string << '2.54 fl oz of Orange Juice'
@@ -4054,7 +4054,7 @@ pomelomosa.mixers_string << '1 wedge of Juiced Lime'
 ponche.mixers_string << '12 fl oz of Piloncillo (Mexican-Style Unrefined Brown Sugar)'
 porchlight.mixers_string << '0.25 fl oz of Black Tea'
 porn.mixers_string << '1 fl oz of Passion Fruit Puree'
-port.mixers_string << '96 fl oz of Pineapple Juice'
+port_royal_punch.mixers_string << '96 fl oz of Pineapple Juice'
 porto.mixers_string << '0.34 fl oz of Egg Yolk'
 pot.mixers_string << '0.75 fl oz of Lemon Juice'
 presbyterian.mixers_string << 'Top up with Ginger'
@@ -4073,7 +4073,7 @@ rob.mixers_string << '1 dash of Angostura Bitters'
 rockeys_rum.mixers_string << '1 fl oz of Pineapple Juice'
 roman.mixers_string << '1 fl oz of Cold-Brew Coffee'
 rose_colored_glass.mixers_string << '0.25 fl oz of Angostura Bitters'
-royal.mixers_string << '1 fl oz of Tea Syrup'
+port_royal_punch.mixers_string << '1 fl oz of Tea Syrup'
 ruby.mixers_string << '3 fl oz of Pineapple Juice'
 rum_old_fashioned.mixers_string << '1 barspoon of Demerara Syrup'
 rum_punch.mixers_string << '2 fl oz of Pineapple Juice'
@@ -4168,7 +4168,7 @@ white_summer.mixers_string << '0.25 fl oz of Simple Syrup'
 winter.mixers_string << '4.25 fl oz of Hot Hibiscus Tea'
 wisconsin.mixers_string << '1 dash of Lemon-Lime Soda'
 witches_brew.mixers_string << '1 fl oz of Lemon Juice'
-yellow.mixers_string << '0.51 fl oz of Lime Juice'
+yellow_bird.mixers_string << '0.51 fl oz of Lime Juice'
 yerba.mixers_string << '0.5 fl oz of Lime Juice'
 zombie.mixers_string << '0.68 fl oz of Lime Juice'
 
@@ -4281,7 +4281,7 @@ eggnog.mixers << sugar_
 el_diablo.mixers << ginger_beer
 emerald.mixers << bg_reynolds
 espresso.mixers << strong_espresso
-fernet.mixers << lemon_juice
+fernetaboutit.mixers << lemon_juice
 figgy.mixers << lemon_juice
 flannel.mixers << apple_cider_syrup
 forbidden_sour.mixers << simple_syrup
@@ -4366,7 +4366,7 @@ master.mixers << maple_syrup
 mexican.mixers << quartered_lemons
 mezcal_mule.mixers << boiron_passion
 miami.mixers << lime_juice
-midori.mixers << lime_juice
+sourmidori.mixers << lime_juice
 millionaire.mixers << grenadine
 mint.mixers << water
 mojito.mixers << sugar_
@@ -4408,7 +4408,7 @@ pomelomosa.mixers << himalayan_pink
 ponche.mixers << cinnamon
 porchlight.mixers << citrus_syrup
 porn.mixers << lime_juice
-port.mixers << mango_juice
+port_royal_punch.mixers << mango_juice
 pot.mixers << ginger_honey
 presbyterian.mixers <<
 pumpkin_sazerac.mixers << peychauds_bitters
@@ -4422,7 +4422,7 @@ ring.mixers << lime_juice
 rockeys_rum.mixers << lime_juice
 roman.mixers << pineapple_juice
 rose_colored_glass.mixers << lemon_juice
-royal.mixers << apple_juice
+port_royal_punch.mixers << apple_juice
 ruby.mixers << cranberry_juice
 rum_old_fashioned.mixers << orange_bitters
 rum_punch.mixers << orange_juice
@@ -4610,7 +4610,7 @@ eggnog.mixers_string << 'Sugar'
 el_diablo.mixers_string << 'Ginger Beer'
 emerald.mixers_string << "B.G. Reynolds Don's Spices #2"
 espresso.mixers_string << 'Strong Espresso'
-fernet.mixers_string << 'Lemon Juice'
+fernetaboutit.mixers_string << 'Lemon Juice'
 figgy.mixers_string << 'Lemon Juice'
 flannel.mixers_string << 'Apple Cider Syrup'
 forbidden_sour.mixers_string << 'Simple Syrup'
@@ -4695,7 +4695,7 @@ master.mixers_string << 'Maple Syrup'
 mexican.mixers_string << 'Quartered Lemons'
 mezcal_mule.mixers_string << 'Boiron Passion Fruit Purée'
 miami.mixers_string << 'Lime Juice'
-midori.mixers_string << 'Lime Juice'
+sourmidori.mixers_string << 'Lime Juice'
 millionaire.mixers_string << 'Grenadine'
 mint.mixers_string << 'Water'
 mojito.mixers_string << 'Sugar'
@@ -4737,7 +4737,7 @@ pomelomosa.mixers_string << 'Himalayan Pink salt and Tajín seasoning Mix (1:1)'
 ponche.mixers_string << 'Cinnamon'
 porchlight.mixers_string << 'Citrus Syrup'
 porn.mixers_string << 'Lime Juice'
-port.mixers_string << 'Mango Juice'
+port_royal_punch.mixers_string << 'Mango Juice'
 pot.mixers_string << 'Ginger Honey Syrup'
 presbyterian.mixers_string << 'Club Soda'
 pumpkin_sazerac.mixers_string << 'Peychaud’s Bitters'
@@ -4751,7 +4751,7 @@ ring.mixers_string << 'Lime Juice'
 rockeys_rum.mixers_string << 'Lime Juice'
 roman.mixers_string << 'Pineapple Juice'
 rose_colored_glass.mixers_string << 'Lemon Juice'
-royal.mixers_string << 'Apple Juice'
+port_royal_punch.mixers_string << 'Apple Juice'
 ruby.mixers_string << 'Cranberry Juice'
 rum_old_fashioned.mixers_string << 'Orange Bitters'
 rum_punch.mixers_string << 'Orange Juice'
@@ -4888,7 +4888,7 @@ dons_gardenia_mix.mixers << cinnamon_syrup
 earl.mixers << egg_white
 eggnog.mixers << whole_milk
 emerald.mixers << brewed_dark_roast
-fernet.mixers << lime_juice
+fernetaboutit.mixers << lime_juice
 figgy.mixers << orange_juice
 forest.mixers << seltzer
 francophile.mixers << water
@@ -4938,7 +4938,7 @@ master.mixers << ground_cayenne
 mexican.mixers << quartered_orange
 mezcal_mule.mixers << agave_nectar
 miami.mixers << simple_syrup
-midori.mixers << soda_water
+sourmidori.mixers << soda_water
 millionaire.mixers << egg_white
 mint.mixers << mint
 mojito.mixers << mint
@@ -4968,7 +4968,7 @@ pomelomosa.mixers << grapefruit_juice
 ponche.mixers << whole_cloves
 porchlight.mixers << pebble_ice
 porn.mixers << vanilla_syrup
-port.mixers << sprite
+port_royal_punch.mixers << sprite
 pot.mixers << egg_white
 pumpkin_toddy.mixers << pumpkin_puree
 que.mixers << tonic_water
@@ -4978,7 +4978,7 @@ reggae.mixers << lime_juice
 ring.mixers << agave_nectar
 roman.mixers << lime_juice
 rose_colored_glass.mixers << simple_syrup
-royal.mixers << lemonade
+port_royal_punch.mixers << lemonade
 ruby.mixers << grenadine
 rum_old_fashioned.mixers << angostura_bitters
 rum_punch.mixers << lime_juice
@@ -5092,7 +5092,7 @@ dons_gardenia_mix.mixers_string << '1 tsp of Cinnamon Syrup'
 earl.mixers_string << '1 Egg White'
 eggnog.mixers_string << '10 fl oz of Whole Milk'
 emerald.mixers_string << '8 fl oz of Brewed Dark-Roast Coffee'
-fernet.mixers_string << '3 fl oz of Lime Juice'
+fernetaboutit.mixers_string << '3 fl oz of Lime Juice'
 figgy.mixers_string << '0.5 fl oz of Orange Juice'
 forest.mixers_string << 'Top up with Seltzer'
 francophile.mixers_string << '3 fl oz of Water'
@@ -5142,7 +5142,7 @@ master.mixers_string << '1 dash of Ground Cayenne Pepper'
 mexican.mixers_string << '1 Quartered Orange'
 mezcal_mule.mixers_string << '0.5 fl oz of Agave Nectar'
 miami.mixers_string << '0.5 fl oz of Simple Syrup'
-midori.mixers_string << 'Top up with Soda Water'
+sourmidori.mixers_string << 'Top up with Soda Water'
 millionaire.mixers_string << '0.5 fl oz of Egg White'
 mint.mixers_string << '4 leaves of Mint'
 mojito.mixers_string << '6 sprigs of Mint'
@@ -5172,7 +5172,7 @@ pomelomosa.mixers_string << '2 fl oz of Grapefruit Juice'
 ponche.mixers_string << '5 fl oz of Whole Cloves'
 porchlight.mixers_string << '2.5 fl oz of Pebble Ice'
 porn.mixers_string << '0.5 fl oz of Vanilla Syrup'
-port.mixers_string << '12 fl oz of Sprite'
+port_royal_punch.mixers_string << '12 fl oz of Sprite'
 pot.mixers_string << '1 Egg White'
 pumpkin_toddy.mixers_string << '1 tsp of Pumpkin Puree'
 que.mixers_string << 'Top up with Tonic Water'
@@ -5182,7 +5182,7 @@ reggae.mixers_string << '0.5 fl oz of Lime Juice'
 ring.mixers_string << '0.25 fl oz of Agave Nectar'
 roman.mixers_string << '0.75 fl oz of Lime Juice'
 rose_colored_glass.mixers_string << '1 fl oz of Simple Syrup'
-royal.mixers_string << 'Top up with Lemonade'
+port_royal_punch.mixers_string << 'Top up with Lemonade'
 ruby.mixers_string << '1 splash of Grenadine'
 rum_old_fashioned.mixers_string << '2 dashes of Angostura Bitters'
 rum_punch.mixers_string << '0.25 fl oz of Lime Juice'
@@ -5264,7 +5264,7 @@ death_by_morning.mixers << coarse_sea
 dizzy.mixers << egg_white
 dons_gardenia_mix.mixers << vanilla_syrup
 eggnog.mixers << heavy_cream
-fernet.mixers << lemon_bitters
+fernetaboutit.mixers << lemon_bitters
 figgy.mixers << lemon
 forest.mixers << cocktailpunk_alpino
 ginger_fever_punch.mixers << goji_ginger
@@ -5293,14 +5293,14 @@ pho_king.mixers << mineral_saline
 pisco_sour.mixers << aromatic_bitters
 pomelomosa.mixers << lime_juice
 ponche.mixers << tamarind_paste
-port.mixers << grenadine
+port_royal_punch.mixers << grenadine
 pumpkin_toddy.mixers << angostura_bitters
 rainbow.mixers << lime_juice
 ramos.mixers << cream
 reggae.mixers << strawberry_syrup
 ring.mixers << peychauds_bitters
 roman.mixers << demerara_sugar
-royal.mixers << thistle
+port_royal_punch.mixers << thistle
 rum_punch.mixers << grenadine
 saint.mixers << egg_white
 samarian.mixers << lime_juice
@@ -5356,7 +5356,7 @@ death_by_morning.mixers_string << '1 pinch of Coarse Sea Salt'
 dizzy.mixers_string << '1 Egg White'
 dons_gardenia_mix.mixers_string << '0.5 tsp of Vanilla Syrup'
 eggnog.mixers_string << '4 fl oz of Heavy Cream'
-fernet.mixers_string << '0.75 fl oz of Lemon Bitters'
+fernetaboutit.mixers_string << '0.75 fl oz of Lemon Bitters'
 figgy.mixers_string << '1 wedge of Lemon'
 forest.mixers_string << '3 Dashes of Cocktailpunk Alpino Bitters'
 ginger_fever_punch.mixers_string << '0.5 fl oz of Goji Ginger Syrup'
@@ -5385,14 +5385,14 @@ pho_king.mixers_string << '2 drops of Mineral Saline'
 pisco_sour.mixers_string << '2 drops of Aromatic Bitters'
 pomelomosa.mixers_string << '0.5 fl oz of Lime Juice'
 ponche.mixers_string << '1 tbsp of Tamarind Paste'
-port.mixers_string << '4.5 fl oz of Grenadine'
+port_royal_punch.mixers_string << '4.5 fl oz of Grenadine'
 pumpkin_toddy.mixers_string << '2 dashes of Angostura Bitters'
 rainbow.mixers_string << '3 fl oz of Lime Juice'
 ramos.mixers_string << '2.03 fl oz of Cream'
 reggae.mixers_string << '0.5 fl oz of Strawberry Syrup'
 ring.mixers_string << '1 dash of Peychaud’s bitters'
 roman.mixers_string << '0.25 fl oz of Demerara Sugar'
-royal.mixers_string << '1 Thistle'
+port_royal_punch.mixers_string << '1 Thistle'
 rum_punch.mixers_string << '0.25 fl oz of Grenadine'
 saint.mixers_string << '1 Egg White'
 samarian.mixers_string << '0.5 fl oz of Lime Juice'
@@ -5430,7 +5430,7 @@ corpse_reviver_two_one_two.mixers << vanilla_salt
 cucumber_cleanse.mixers << hibiscus_lavender
 death_by_morning.mixers << orange
 dizzy.mixers << heavy_cream
-fernet.mixers << water
+fernetaboutit.mixers << water
 ginger_fever_punch.mixers << ginger_beer
 hey_gourdgeous.mixers << peeled_and
 horn.mixers << soda_water
@@ -5442,7 +5442,7 @@ miami.mixers << pineapple_juice
 nui.mixers << crushed_ice
 pomelomosa.mixers << simple_syrup
 ponche.mixers << chopped_tart
-port.mixers << orange
+port_royal_punch.mixers << orange
 pumpkin_toddy.mixers << boiling_water
 rainbow.mixers << grenadine
 ramos.mixers << egg_white
@@ -5470,7 +5470,7 @@ corpse_reviver_two_one_two.mixers_string << '2 dashes of Vanilla Salt'
 cucumber_cleanse.mixers_string << '5 drops of Hibiscus Lavender Oak Bitters'
 death_by_morning.mixers_string << '1 twist of Orange'
 dizzy.mixers_string << '0.5 fl oz of Heavy Cream'
-fernet.mixers_string << '6 fl oz of Water'
+fernetaboutit.mixers_string << '6 fl oz of Water'
 ginger_fever_punch.mixers_string << 'Top up with Ginger Beer'
 hey_gourdgeous.mixers_string << '4 fl oz of Peeled and Sliced Ginger'
 horn.mixers_string << 'Top up with Soda Water'
@@ -5482,7 +5482,7 @@ miami.mixers_string << '2 fl oz of Pineapple Juice'
 nui.mixers_string << '0.5 cups of Crushed Ice'
 pomelomosa.mixers_string << '0.5 fl oz of Simple Syrup'
 ponche.mixers_string << '2 Chopped Tart Apples'
-port.mixers_string << '3 slices of Orange'
+port_royal_punch.mixers_string << '3 slices of Orange'
 pumpkin_toddy.mixers_string << '5 fl oz of Boiling Water'
 rainbow.mixers_string << '3 fl oz of Grenadine'
 ramos.mixers_string << '1 Egg White'
@@ -5778,7 +5778,7 @@ mexican.garnishes << lime
 mezcal_mule.garnishes << cucumber
 mezcal_negroni.garnishes << orange_wheel_half
 miami.garnishes << pineapple
-midori.garnishes << lemon
+sourmidori.garnishes << lemon
 milk.garnishes << orange
 mimosa.garnishes << orange
 mink.garnishes << cayenne_pepper
@@ -5836,7 +5836,7 @@ rob.garnishes << maraschino_cherries
 roman.garnishes << cinnamon
 rose_colored_glass.garnishes << red_rose
 rosemary.garnishes << grapefruit
-royal.garnishes << lemon
+port_royal_punch.garnishes << lemon
 ruby.garnishes << orange
 rum_punch.garnishes << maraschino_cherry
 rusty_compass.garnishes << orange
@@ -6124,7 +6124,7 @@ mexican.garnishes_string << '1 wedge of Lime'
 mezcal_mule.garnishes_string << '3 slices of Cucumber'
 mezcal_negroni.garnishes_string << 'Orange Wheel Half'
 miami.garnishes_string << '1 slice of Pineapple'
-midori.garnishes_string << '1 wheel of Lemon'
+sourmidori.garnishes_string << '1 wheel of Lemon'
 milk.garnishes_string << '1 Orange'
 mimosa.garnishes_string << '1 twist of Orange'
 mink.garnishes_string << '1 slice of Cayenne Pepper'
@@ -6182,7 +6182,7 @@ rob.garnishes_string << '2 Maraschino Cherries'
 roman.garnishes_string << '1 stick of Cinnamon'
 rose_colored_glass.garnishes_string << '5 petals of Red Rose'
 rosemary.garnishes_string << '1 peel of Grapefruit'
-royal.garnishes_string << '1 wheel of Lemon'
+port_royal_punch.garnishes_string << '1 wheel of Lemon'
 ruby.garnishes_string << '1 wheel of Orange'
 rum_punch.garnishes_string << '1 Maraschino Cherry'
 rusty_compass.garnishes_string << '1 peel of Orange'

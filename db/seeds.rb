@@ -5566,3 +5566,1005 @@ vampiro.mixers_string << '1 Pinch of Salt'
 ponche.mixers << water
 
 ponche.mixers_string << '80 fl oz of Water'
+
+a_la_louisiane.garnishes << maraschino_cherry
+absinthe_suisse.garnishes << mint
+absolut_lime_drop.garnishes << lime
+absolut_moscow_mule.garnishes << lime
+alabama.garnishes << orange
+alligator.garnishes << grated_nutmeg
+amaretto_french.garnishes << lemon
+amaretto_sour.garnishes << lemon
+americano.garnishes << orange
+anejo_old_fashioned.garnishes << orange
+añogo.garnishes << flamed_orange
+another.garnishes << orange
+aperitivo.garnishes << passion_fruit
+apple_cranberry_moscow_mule.garnishes << cranberries
+applejack.garnishes << lemon
+autumn.garnishes << skewered_apples
+aviation.garnishes << cherry
+b_52.garnishes << stirrer
+bacardi.garnishes << lime
+bamboo.garnishes << lemon
+barbados.garnishes << nutmeg
+bear.garnishes << edible_flower
+bebbo.garnishes << lemon
+bees.garnishes << lemon_or_orange
+bentons.garnishes << orange
+bicicletta.garnishes << orange
+big_red_sun.garnishes << apple_fan
+bijou.garnishes << orange
+black_barrel_old_fashioned.garnishes << orange
+black_betty.garnishes << dehydrated_beetroot
+black_mole_margarita.garnishes << lime
+blood.garnishes << orange
+bloody_caesar.garnishes << cucumber
+bloody_casear.garnishes << lime
+bloody_maria.garnishes << ground_black
+bloody_mary.garnishes << celery
+blow.garnishes << whipped_cream
+blue_blazer.garnishes << lemon
+blue_hawaii.garnishes << pineapple_or_orange
+blueberry.garnishes << mint
+bobby.garnishes << lemon
+bootstitch.garnishes << rosemary
+bordeaux.garnishes << maraschino_cherry
+bossa.garnishes << orange
+boston.garnishes << strawberry
+boulevardier.garnishes << orange
+bourbon_cider.garnishes << apple
+bourbon_lancer.garnishes << lemon
+bourbon_rosemary_punch.garnishes << grapefruit
+bourbon_strawberry.garnishes << mint
+bramble.garnishes << blackberry
+brandy_alexander.garnishes << nutmeg
+brandy_crusta.garnishes << orange_or_lemon
+brandy_old_fashioned.garnishes << orange
+brandy_sangaree.garnishes << grated_nutmeg
+brazilian.garnishes << lime
+bronx.garnishes << orange
+brown.garnishes << grapefruit
+bulleit.garnishes << lemon
+café_ponche.garnishes << orange
+caipirinha.garnishes << sugarcane
+calvados.garnishes << orange
+canchã¡nchara.garnishes << lime
+canchanchara.garnishes << lime
+candy.garnishes << melted_chocolate
+cape.garnishes << grated_cinnamon
+cardamom.garnishes << cardamom
+casino.garnishes << lemon
+cave.garnishes << lemon
+cbd_dirty_martini.garnishes << green_olive
+cbd_gin_tonic.garnishes << lime
+cbd_moscow_mule.garnishes << mint
+cbd_spritz.garnishes << grapefruit
+champagne_cocktail.garnishes << orange
+champagne_holiday.garnishes << star_anise
+channel.garnishes << grapefruit
+charleston.garnishes << whipped_cream
+cherry.garnishes << orange
+chimayó.garnishes << unpeeled_apple
+chocomole.garnishes << chile_powder
+chrysanthemum.garnishes << orange
+coco.garnishes << shredded_toasted_coconut
+cojito.garnishes << trimmed_coconut
+conflict.garnishes << cilantro
+coquito.garnishes << cinnamon
+cosmopolitan.garnishes << lime
+cotter.garnishes << sliced_ginger
+cowboy.garnishes << coffee
+cranberry_ginger.garnishes << sugared_cranberries
+crimson.garnishes << grapefruit
+crystal.garnishes << orange_blossom_bubbles
+cuba.garnishes << lime
+cuban.garnishes << lemon
+cucumber_cleanse.garnishes << ground_cayenne
+cucumber_lime.garnishes << basil
+curiosity.garnishes << lemon
+dark_and_stormy.garnishes << lime
+dark_n_stormy.garnishes << lime
+dark_side.garnishes << jasmine_flower
+darkside.garnishes << maraschino_cherry
+day_at_the_crawfish.garnishes << mint
+death_by_morning.garnishes << mint
+dizzy.garnishes << star_anise
+dorado.garnishes << lemon
+dragones.garnishes << citrus
+dram.garnishes << lime
+drunk.garnishes << grapefruit
+dry.garnishes << olive_or_lemon
+duck.garnishes << fortune_cookie
+earl.garnishes << sugar_rim
+el_diablo.garnishes << blackberry
+elderflower.garnishes << organic_thyme
+espresso.garnishes << coffee
+fifty_fifty_birthday.garnishes << lemon
+figgy.garnishes << vanilla_sugar
+flannel.garnishes << orange
+forbidden_apple.garnishes << orange
+forbidden_sour.garnishes << orange
+forest.garnishes << lemon
+francophile.garnishes << apple
+frank.garnishes << lemon
+french_harvest.garnishes << lemon
+frohito.garnishes << mint
+frosé.garnishes << lemon
+frozen_daiquiri.garnishes << lime
+frozen_margarita.garnishes << salt_rim
+garibaldi.garnishes << orange
+gibson.garnishes << silverskin_onion
+gimlet.garnishes << lime
+gin_and_tonic.garnishes << lime
+gin_fizz.garnishes << lemon
+ginger_fever_punch.garnishes << pomegranate_seeds
+gold.garnishes << lemon
+golden_dew.garnishes << chamoe_or
+golden_gate_spritz.garnishes << grapefruit
+golden_purl.garnishes << orange
+grave.garnishes << whipped_cream
+great.garnishes << grated_nutmeg
+green_beast.garnishes << cucumber
+green_isaac_special.garnishes << lime
+greenpoint.garnishes << lemon
+half.garnishes << orange
+hanalei.garnishes << pineapple
+hanky.garnishes << orange
+harry_potter_butter.garnishes << whipped_cream
+harvey.garnishes << orange
+hennessy.garnishes << lime
+here_comes_the_sun.garnishes << lemon
+hey_gourdgeous.garnishes << whole_cloves
+high_tide.garnishes << green_apple
+hit.garnishes << grated_nutmeg
+holiday.garnishes << rock_candy
+honey.garnishes << orange
+horn.garnishes << lime
+horses_neck.garnishes << lemon
+hot_blooded.garnishes << blood_orange
+hot_buttered_rum.garnishes << grated_nutmeg
+hot_toddy.garnishes << lemon
+hummer.garnishes << lemon
+hurricane.garnishes << orange
+i_left_my_heart.garnishes << cayenne_pepper
+infused.garnishes << lime
+irish_affrogato.garnishes << whipped_cream
+irish_buck.garnishes << lime
+irish_maid.garnishes << cucumber
+irish_raktajino.garnishes << smoked_paprika
+jack.garnishes << lemon
+jager_old_fashioned.garnishes << orange
+japanese.garnishes << peychauds_bitters
+jingle.garnishes << pine
+john.garnishes << lemon
+josé.garnishes << lemon
+jungle.garnishes << pineapple
+kamikaze.garnishes << lime
+kanar.garnishes << salt_rim
+kentucky.garnishes << mint
+killer.garnishes << lemon
+kir_royale.garnishes << lemon
+kombucha.garnishes << lemon
+kylo.garnishes << lime
+landmaster.garnishes << celery
+last_minute.garnishes << lemon_or_orange
+latitude.garnishes << lime
+leeward.garnishes << pandan_leaf
+lemon.garnishes << lemon
+lemon_drop.garnishes << sugar_rim
+lions.garnishes << orange
+little.garnishes << strawberry
+london_lemonade.garnishes << lemon
+london_toddy.garnishes << star_anise
+long.garnishes << lemon
+longshoreman.garnishes << flamed_orange
+lounge.garnishes << grapefruit
+m_g_and_t.garnishes << dehydrated_lemon
+macuá.garnishes << lemon
+mad.garnishes << ground_black
+magic.garnishes << lime
+mai.garnishes << spearmint
+mamie.garnishes << lime
+man_o_war.garnishes << lemon
+mango.garnishes << basil
+manhattan.garnishes << maraschino_cherry
+mantra.garnishes << medjool_date
+margarita.garnishes << salt_rim
+margaritas.garnishes << lime
+martinez.garnishes << lemon
+mexican.garnishes << lime
+mezcal_mule.garnishes << cucumber
+mezcal_negroni.garnishes << orange_wheel_half
+miami.garnishes << pineapple
+midori.garnishes << lemon
+milk.garnishes << orange
+mimosa.garnishes << orange
+mink.garnishes << cayenne_pepper
+mint.garnishes << mint
+mojito.garnishes << mint
+monte_cassino.garnishes << lemon
+moscow.garnishes << lime
+mule.garnishes << lime
+mutual.garnishes << pineapple
+negroni.garnishes << orange
+negroni_sbagliato.garnishes << grated_cinnamon
+negroni_sorbet.garnishes << orange
+new_year_sparkler.garnishes << skewered_raspberries
+nui.garnishes << cinnamon
+ny_sour.garnishes << lemon_or_orange
+oaks.garnishes << lemon
+old_cuban.garnishes << mint
+old_fashioned.garnishes << orange
+old_pal.garnishes << lemon
+one_two.garnishes << la_boíte
+orgasm.garnishes << cherry
+painkiller.garnishes << grated_nutmeg
+paloma.garnishes << lime
+pandan_coconut.garnishes << pandan_leaf
+peach.garnishes << orange
+peeping.garnishes << peeps_marshmallows
+pegu.garnishes << lime
+penicillin.garnishes << candied_ginger
+pho_king.garnishes << cilantro
+picon.garnishes << lemon
+pimms.garnishes << cucumber
+piña.garnishes << pineapple
+pina_colada.garnishes << pineapple
+pink_gin.garnishes << lemon
+pink_lady.garnishes << cherry
+planters_punch.garnishes << orange
+pomelomosa.garnishes << grapefruit
+pomosa.garnishes << strawberry
+ponche.garnishes << dried_hibiscus
+porchlight.garnishes << lime
+porn.garnishes << passion_fruit_half
+porto.garnishes << grated_nutmeg
+pot.garnishes << gold
+pumpkin_buck.garnishes << candied_ginger
+pumpkin_sazerac.garnishes << lemon
+que.garnishes << thyme
+quill.garnishes << grapefruit
+rainbow.garnishes << pineapple
+ramos.garnishes << lemon
+red.garnishes << maraschino_cherry
+reggae.garnishes << pineapple
+remember.garnishes << brandied_cherry
+ring.garnishes << lime
+rob.garnishes << maraschino_cherries
+roman.garnishes << cinnamon
+rose_colored_glass.garnishes << red_rose
+rosemary.garnishes << grapefruit
+royal.garnishes << lemon
+ruby.garnishes << orange
+rum_punch.garnishes << maraschino_cherry
+rusty_compass.garnishes << orange
+rusy_nail.garnishes << lemon
+saint.garnishes << edible_flower
+saison.garnishes << lemon
+salty.garnishes << salted_glass
+sangria.garnishes << orange
+sangrita.garnishes << jalapeño
+saturn.garnishes << edible_flower
+sazerac.garnishes << lemon
+sea_breeze.garnishes << lime
+sea_breeze_cooler.garnishes << mint
+set.garnishes << mint
+sex.garnishes << orange
+shamrock.garnishes << whipped_cream
+singapore.garnishes << pineapple
+singapura.garnishes << pandan_leaf
+smoked.garnishes << rosemary
+smoky.garnishes << lemon
+snap.garnishes << lime
+south.garnishes << orange
+southside.garnishes << mint
+spanish.garnishes << juniper_berries
+sparkling_rose.garnishes << strawberry
+sparkling_watermelon.garnishes << mint
+spcity_margarita.garnishes << salt_rim
+spiced_eggnog.garnishes << grated_nutmeg
+spiced_margarita.garnishes << lime
+spicy_mint.garnishes << salt_rim
+spritz.garnishes << orange
+stone.garnishes << mint
+suffering.garnishes << mint
+summer.garnishes << grapefruit
+summerthyme.garnishes << orange
+sunflower.garnishes << lemon
+switchel.garnishes << sage
+tart.garnishes << orange
+tea_for_two.garnishes << lemon
+tea_sympathy.garnishes << lemon
+tequila_sunrise.garnishes << orange
+the_dead_rabbit.garnishes << nutmeg
+the_modern.garnishes << maraschino_cherry
+the_spice_is_right.garnishes << grated_nutmeg
+timberpoint.garnishes << cucumber
+tipperary.garnishes << orange
+toblerone.garnishes << toblerone_chocolate
+tom_and_jerry.garnishes << nutmeg
+tom_collins.garnishes << lemon
+tom_yum.garnishes << lime
+tootsie.garnishes << maraschino_cherry
+toronto.garnishes << orange
+turf.garnishes << lemon
+tuxedo.garnishes << cherry
+uncle.garnishes << grated_nutmeg
+upper.garnishes << grapefruit
+uss.garnishes << lemon
+ve_n_to.garnishes << lemon
+vesper.garnishes << lemon
+vida.garnishes << chile_piquin
+vieux.garnishes << orange
+vodka.garnishes << lemon
+ward.garnishes << speared_cherries
+washington_apple.garnishes << apple
+waterfront.garnishes << mint
+watermelon.garnishes << watermelon
+whats_up.garnishes << rosemary_or_thyme
+whiskey_in_church.garnishes << lemon
+whiskey_skin.garnishes << lemon
+whiskey_smashed.garnishes << lemon
+whiskey_sour.garnishes << maraschino_cherry
+white_cargo.garnishes << grated_nutmeg
+white_summer.garnishes << edible_flower
+wisconsin.garnishes << orange
+yerba.garnishes << mint
+zombie.garnishes << mint
+
+a_la_louisiane.garnishes_string << '1 Maraschino Cherry'
+absinthe_suisse.garnishes_string << '1 sprig of Mint'
+absolut_lime_drop.garnishes_string << '1 wedge of Lime'
+absolut_moscow_mule.garnishes_string << '1 wedge of Lime'
+alabama.garnishes_string << '1 wedge of Orange'
+alligator.garnishes_string << 'Grated Nutmeg'
+amaretto_french.garnishes_string << '1 curl of Lemon'
+amaretto_sour.garnishes_string << '1 twist of Lemon'
+americano.garnishes_string << '1 slice of Orange'
+anejo_old_fashioned.garnishes_string << '1 peel of Orange'
+añogo.garnishes_string << '1 peel of Flamed Orange'
+another.garnishes_string << '1 twist of Orange'
+aperitivo.garnishes_string << 'Passion Fruit Quarter'
+apple_cranberry_moscow_mule.garnishes_string << 'Cranberries'
+applejack.garnishes_string << '1 twist of Lemon'
+autumn.garnishes_string << '3 slices of Skewered Apples'
+aviation.garnishes_string << '1 Cherry'
+b_52.garnishes_string << '1 Stirrer'
+bacardi.garnishes_string << '1 slice of Lime'
+bamboo.garnishes_string << '1 twist of Lemon'
+barbados.garnishes_string << 'Nutmeg'
+bear.garnishes_string << '1 Edible Flower'
+bebbo.garnishes_string << '1 twist of Lemon'
+bees.garnishes_string << '1 zest of Lemon or Orange'
+bentons.garnishes_string << '1 peel of Orange'
+bicicletta.garnishes_string << '2 wheels of Orange'
+big_red_sun.garnishes_string << '1 Apple FAN'
+bijou.garnishes_string << '1 twist of Orange'
+black_barrel_old_fashioned.garnishes_string << '1 slice of Orange'
+black_betty.garnishes_string << 'Dehydrated Beetroot Sugar'
+black_mole_margarita.garnishes_string << '1 wheel of Lime'
+blood.garnishes_string << '1 peel of Orange'
+bloody_caesar.garnishes_string << '1 spear of Cucumber'
+bloody_casear.garnishes_string << '1 wedge of Lime'
+bloody_maria.garnishes_string << '1 pinch of Ground Black Pepper'
+bloody_mary.garnishes_string << '1 stalk of Celery'
+blow.garnishes_string << 'Whipped Cream'
+blue_blazer.garnishes_string << '1 peel of Lemon'
+blue_hawaii.garnishes_string << '1 slice of Pineapple or Orange'
+blueberry.garnishes_string << '1 sprig of Mint'
+bobby.garnishes_string << '1 peel of Lemon'
+bootstitch.garnishes_string << '1 sprig of Rosemary'
+bordeaux.garnishes_string << '1 Maraschino Cherry'
+bossa.garnishes_string << '1 twist of Orange'
+boston.garnishes_string << '1 Strawberry'
+boulevardier.garnishes_string << '1 zest of Orange'
+bourbon_cider.garnishes_string << '1 slice of Apple'
+bourbon_lancer.garnishes_string << '1 peel of Lemon'
+bourbon_rosemary_punch.garnishes_string << '1 wheel of Grapefruit'
+bourbon_strawberry.garnishes_string << '1 sprig of Mint'
+bramble.garnishes_string << '1 Blackberry'
+brandy_alexander.garnishes_string << 'Nutmeg'
+brandy_crusta.garnishes_string << '1 twist of Orange or Lemon'
+brandy_old_fashioned.garnishes_string << '2 slices of Orange'
+brandy_sangaree.garnishes_string << 'Grated Nutmeg'
+brazilian.garnishes_string << '1 slice of Lime'
+bronx.garnishes_string << '1 twist of Orange'
+brown.garnishes_string << '1 twist of Grapefruit'
+bulleit.garnishes_string << '1 wheel of Lemon'
+café_ponche.garnishes_string << '2 peels of Orange'
+caipirinha.garnishes_string << '1 stick of Sugarcane'
+calvados.garnishes_string << '1 twist of Orange'
+canchã¡nchara.garnishes_string << '1 wedge of Lime'
+canchanchara.garnishes_string << '1 wedge of Lime'
+candy.garnishes_string << 'Melted Chocolate Chips'
+cape.garnishes_string << 'Grated Cinnamon'
+cardamom.garnishes_string << '3 pods of Cardamom'
+casino.garnishes_string << '1 twist of Lemon'
+cave.garnishes_string << '1 twist of Lemon'
+cbd_dirty_martini.garnishes_string << '1 Green Olive'
+cbd_gin_tonic.garnishes_string << '1 wheel of Lime'
+cbd_moscow_mule.garnishes_string << '1 sprig of Mint'
+cbd_spritz.garnishes_string << '1 slice of Grapefruit'
+champagne_cocktail.garnishes_string << '1 slice of Orange'
+champagne_holiday.garnishes_string << '1 pod of Star Anise'
+channel.garnishes_string << '1 twist of Grapefruit'
+charleston.garnishes_string << 'Whipped Cream'
+cherry.garnishes_string << '1 wheel of Orange'
+chimayó.garnishes_string << '1 slice of Unpeeled Apple'
+chocomole.garnishes_string << '1 dash of Chile Powder'
+chrysanthemum.garnishes_string << '1 twist of Orange'
+coco.garnishes_string << 'Shredded Toasted Coconut'
+cojito.garnishes_string << 'Trimmed Coconut'
+conflict.garnishes_string << '7 slices of Cilantro'
+coquito.garnishes_string << '3 sticks of Cinnamon'
+cosmopolitan.garnishes_string << '1 slice of Lime'
+cotter.garnishes_string << 'Sliced Ginger'
+cowboy.garnishes_string << '2 beans of Coffee'
+cranberry_ginger.garnishes_string << 'Sugared Cranberries'
+crimson.garnishes_string << '1 twist of Grapefruit'
+crystal.garnishes_string << 'Orange Blossom Bubbles'
+cuba.garnishes_string << '1 wedge of Lime'
+cuban.garnishes_string << '1 slice of Lemon'
+cucumber_cleanse.garnishes_string << 'Ground Cayenne'
+cucumber_lime.garnishes_string << '1 leaf of Basil'
+curiosity.garnishes_string << '1 twist of Lemon'
+dark_and_stormy.garnishes_string << '1 wedge of Lime'
+dark_n_stormy.garnishes_string << '1 wedge of Lime'
+dark_side.garnishes_string << '1 Jasmine Flower'
+darkside.garnishes_string << '1 Maraschino Cherry'
+day_at_the_crawfish.garnishes_string << '1 sprig of Mint'
+death_by_morning.garnishes_string << '1 sprig of Mint'
+dizzy.garnishes_string << '1 pod of Star Anise'
+dorado.garnishes_string << '1 twist of Lemon'
+dragones.garnishes_string << '1 twist of Citrus'
+dram.garnishes_string << '1 wheel of Lime'
+drunk.garnishes_string << '1 twist of Grapefruit'
+dry.garnishes_string << '1 twist of Olive or Lemon'
+duck.garnishes_string << '1 Fortune Cookie'
+earl.garnishes_string << 'Sugar Rim'
+el_diablo.garnishes_string << '1 Blackberry'
+elderflower.garnishes_string << 'Organic Thyme'
+espresso.garnishes_string << '3 beans of Coffee'
+fifty_fifty_birthday.garnishes_string << '1 twist of Lemon'
+figgy.garnishes_string << '1 pinch of Vanilla Sugar'
+flannel.garnishes_string << '1 peel of Orange'
+forbidden_apple.garnishes_string << '1 twist of Orange'
+forbidden_sour.garnishes_string << '1 wheel of Orange'
+forest.garnishes_string << '1 twist of Lemon'
+francophile.garnishes_string << '1 slice of Apple'
+frank.garnishes_string << '1 peel of Lemon'
+french_harvest.garnishes_string << '1 peel of Lemon'
+frohito.garnishes_string << '2 sprigs of Mint'
+frosé.garnishes_string << '1 twist of Lemon'
+frozen_daiquiri.garnishes_string << '1 wheel of Lime'
+frozen_margarita.garnishes_string << 'Salt Rim'
+garibaldi.garnishes_string << '1 wedge of Orange'
+gibson.garnishes_string << 'Silverskin Onion'
+gimlet.garnishes_string << '1 wheel of Lime'
+gin_and_tonic.garnishes_string << '2 wheels of Lime'
+gin_fizz.garnishes_string << '1 slice of Lemon'
+ginger_fever_punch.garnishes_string << 'Pomegranate Seeds'
+gold.garnishes_string << '1 peel of Lemon'
+golden_dew.garnishes_string << '1 slice of Chamoe or Honeydew'
+golden_gate_spritz.garnishes_string << '1 wedge of Grapefruit'
+golden_purl.garnishes_string << '1 peel of Orange'
+grave.garnishes_string << 'Whipped Cream'
+great.garnishes_string << 'Grated Nutmeg'
+green_beast.garnishes_string << '3 slices of Cucumber'
+green_isaac_special.garnishes_string << '1 wedge of Lime'
+greenpoint.garnishes_string << '1 peel of Lemon'
+half.garnishes_string << '1 wedge of Orange'
+hanalei.garnishes_string << '1 wedge of Pineapple'
+hanky.garnishes_string << '1 zest of Orange'
+harry_potter_butter.garnishes_string << 'Whipped Cream'
+harvey.garnishes_string << '1 slice of Orange'
+hennessy.garnishes_string << '1 wedge of Lime'
+here_comes_the_sun.garnishes_string << '1 wedge of Lemon'
+hey_gourdgeous.garnishes_string << '1 tbsp of Whole Cloves'
+high_tide.garnishes_string << '2 slices of Green Apple'
+hit.garnishes_string << 'Grated Nutmeg'
+holiday.garnishes_string << '1 stick of Rock Candy'
+honey.garnishes_string << '1 peel of Orange'
+horn.garnishes_string << '1 wheel of Lime'
+horses_neck.garnishes_string << '1 zest of Lemon'
+hot_blooded.garnishes_string << '1 twist of Blood Orange'
+hot_buttered_rum.garnishes_string << 'Grated Nutmeg'
+hot_toddy.garnishes_string << '1 peel of Lemon'
+hummer.garnishes_string << '1 peel of Lemon'
+hurricane.garnishes_string << '1 wheel of Orange'
+i_left_my_heart.garnishes_string << '1 pinch of Cayenne Pepper'
+infused.garnishes_string << '1 wheel of Lime'
+irish_affrogato.garnishes_string << 'Whipped Cream'
+irish_buck.garnishes_string << '1 wheel of Lime'
+irish_maid.garnishes_string << '2 slices of Cucumber'
+irish_raktajino.garnishes_string << 'Smoked Paprika'
+jack.garnishes_string << '1 twist of Lemon'
+jager_old_fashioned.garnishes_string << '1 twist of Orange'
+japanese.garnishes_string << '5 drops of Peychaud’s Bitters '
+jingle.garnishes_string << '3 sprigs of Pine'
+john.garnishes_string << '1 slice of Lemon'
+josé.garnishes_string << '1 twist of Lemon'
+jungle.garnishes_string << '1 wedge of Pineapple'
+kamikaze.garnishes_string << '1 slice of Lime'
+kanar.garnishes_string << 'Salt Rim'
+kentucky.garnishes_string << '1 sprig of Mint'
+killer.garnishes_string << '1 twist of Lemon'
+kir_royale.garnishes_string << '1 twist of Lemon'
+kombucha.garnishes_string << '1 slice of Lemon'
+kylo.garnishes_string << '1 twist of Lime'
+landmaster.garnishes_string << '3 leaves of Celery'
+last_minute.garnishes_string << '1 peel of Lemon or Orange'
+latitude.garnishes_string << '1 shell of Lime'
+leeward.garnishes_string << 'Pandan Leaf'
+lemon.garnishes_string << '1 slice of Lemon'
+lemon_drop.garnishes_string << 'Sugar Rim'
+lions.garnishes_string << '1 peel of Orange'
+little.garnishes_string << '1 Strawberry'
+london_lemonade.garnishes_string << '1 wheel of Lemon'
+london_toddy.garnishes_string << '1 pod of Star Anise'
+long.garnishes_string << '1 slice of Lemon'
+longshoreman.garnishes_string << '1 peel of Flamed Orange'
+lounge.garnishes_string << '1 wheel of Grapefruit'
+m_g_and_t.garnishes_string << '2 wheels of Dehydrated Lemon'
+macuá.garnishes_string << '1 slice of Lemon'
+mad.garnishes_string << '1 dash of Ground Black Pepper'
+magic.garnishes_string << '1 wheel of Lime'
+mai.garnishes_string << '3 leaves of Spearmint'
+mamie.garnishes_string << '1 wedge of Lime'
+man_o_war.garnishes_string << '1 peel of Lemon'
+mango.garnishes_string << '1 leaf of Basil'
+manhattan.garnishes_string << '1 Maraschino Cherry'
+mantra.garnishes_string << '1 Medjool Date'
+margarita.garnishes_string << 'Salt Rim'
+margaritas.garnishes_string << '12 wheels of Lime'
+martinez.garnishes_string << '1 zest of Lemon'
+mexican.garnishes_string << '1 wedge of Lime'
+mezcal_mule.garnishes_string << '3 slices of Cucumber'
+mezcal_negroni.garnishes_string << 'Orange Wheel Half'
+miami.garnishes_string << '1 slice of Pineapple'
+midori.garnishes_string << '1 wheel of Lemon'
+milk.garnishes_string << '1 Orange'
+mimosa.garnishes_string << '1 twist of Orange'
+mink.garnishes_string << '1 slice of Cayenne Pepper'
+mint.garnishes_string << '1 sprig of Mint'
+mojito.garnishes_string << '1 sprig of Mint'
+monte_cassino.garnishes_string << '1 twist of Lemon'
+moscow.garnishes_string << '1 slice of Lime'
+mule.garnishes_string << '1 wedge of Lime'
+mutual.garnishes_string << '1 leaf of Pineapple'
+negroni.garnishes_string << '1 slice of Orange'
+negroni_sbagliato.garnishes_string << 'Grated Cinnamon'
+negroni_sorbet.garnishes_string << '1 twist of Orange'
+new_year_sparkler.garnishes_string << 'Skewered Raspberries'
+nui.garnishes_string << '1 stick of Cinnamon'
+ny_sour.garnishes_string << '1 zest of Lemon or Orange'
+oaks.garnishes_string << '1 wheel of Lemon'
+old_cuban.garnishes_string << '3 sprigs of Mint'
+old_fashioned.garnishes_string << '1 slice of Orange'
+old_pal.garnishes_string << '1 twist of Lemon'
+one_two.garnishes_string << 'La Boíte Borneo N. 26 Spice Mix'
+orgasm.garnishes_string << '1 Cherry'
+painkiller.garnishes_string << 'Grated Nutmeg'
+paloma.garnishes_string << '1 slice of Lime'
+pandan_coconut.garnishes_string << '1 Pandan Leaf'
+peach.garnishes_string << '1 slice of Orange'
+peeping.garnishes_string << 'Peeps Marshmallows'
+pegu.garnishes_string << '1 twist of Lime'
+penicillin.garnishes_string << 'Candied Ginger'
+pho_king.garnishes_string << '1 leaf of Cilantro'
+picon.garnishes_string << '1 peel of Lemon'
+pimms.garnishes_string << '1 slice of Cucumber'
+
+pina_colada.garnishes_string << '1 wedge of Pineapple'
+pink_gin.garnishes_string << '1 slice of Lemon'
+pink_lady.garnishes_string << '1 Cherry'
+planters_punch.garnishes_string << '1 zest of Orange'
+pomelomosa.garnishes_string << '1 wheel of Grapefruit'
+pomosa.garnishes_string << '1 Strawberry'
+ponche.garnishes_string << '8 fl oz of Dried Hibiscus Flowers'
+porchlight.garnishes_string << '1 wedge of Lime'
+porn.garnishes_string << 'Passion Fruit Half'
+porto.garnishes_string << 'Grated Nutmeg'
+pot.garnishes_string << 'Gold Flakes'
+pumpkin_buck.garnishes_string << 'Candied Ginger'
+pumpkin_sazerac.garnishes_string << '1 twist of Lemon'
+que.garnishes_string << 'Thyme'
+quill.garnishes_string << '1 twist of Grapefruit'
+rainbow.garnishes_string << '3 slices of Pineapple'
+ramos.garnishes_string << '1 slice of Lemon'
+red.garnishes_string << '1 Maraschino Cherry'
+reggae.garnishes_string << '1 slice of Pineapple'
+remember.garnishes_string << '1 Brandied Cherry'
+ring.garnishes_string << '1 wheel of Lime'
+rob.garnishes_string << '2 Maraschino Cherries'
+roman.garnishes_string << '1 stick of Cinnamon'
+rose_colored_glass.garnishes_string << '5 petals of Red Rose'
+rosemary.garnishes_string << '1 peel of Grapefruit'
+royal.garnishes_string << '1 wheel of Lemon'
+ruby.garnishes_string << '1 wheel of Orange'
+rum_punch.garnishes_string << '1 Maraschino Cherry'
+rusty_compass.garnishes_string << '1 peel of Orange'
+rusy_nail.garnishes_string << '1 slice of Lemon'
+saint.garnishes_string << '1 Edible Flower'
+saison.garnishes_string << '1 twist of Lemon'
+salty.garnishes_string << 'Salted Rim'
+sangria.garnishes_string << '1 wheel of Orange'
+sangrita.garnishes_string << '1 pepper of Jalapeño'
+saturn.garnishes_string << '1 Edible Flower'
+sazerac.garnishes_string << '1 peel of Lemon'
+sea_breeze.garnishes_string << '1 slice of Lime'
+sea_breeze_cooler.garnishes_string << '1 sprig of Mint'
+set.garnishes_string << '6 leaves of Mint'
+sex.garnishes_string << '1 slice of Orange'
+shamrock.garnishes_string << 'Whipped Cream'
+singapore.garnishes_string << '1 slice of Pineapple'
+singapura.garnishes_string << '1 Pandan Leaf'
+smoked.garnishes_string << '1 sprig of Rosemary'
+smoky.garnishes_string << '1 twist of Lemon'
+snap.garnishes_string << '1 wedge of Lime'
+south.garnishes_string << '1 twist of Orange'
+southside.garnishes_string << '1 sprig of Mint'
+spanish.garnishes_string << 'Juniper Berries'
+sparkling_rose.garnishes_string << '3 slices of Strawberry'
+sparkling_watermelon.garnishes_string << '1 sprig of Mint'
+spcity_margarita.garnishes_string << 'Salt Rim'
+spiced_eggnog.garnishes_string << 'Grated Nutmeg'
+spiced_margarita.garnishes_string << '1 wedge of Lime'
+spicy_mint.garnishes_string << 'Salt Rim'
+spritz.garnishes_string << '1 slice of Orange'
+stone.garnishes_string << '1 sprig of Mint'
+suffering.garnishes_string << '1 sprig of Mint'
+summer.garnishes_string << '1 twist of Grapefruit'
+summerthyme.garnishes_string << '5 wheels of Orange'
+sunflower.garnishes_string << '1 peel of Lemon'
+switchel.garnishes_string << '1 leaf of Sage'
+tart.garnishes_string << '1 peel of Orange'
+tea_for_two.garnishes_string << '2 wheels of Lemon'
+tea_sympathy.garnishes_string << '1 wheel of Lemon'
+tequila_sunrise.garnishes_string << '1 slice of Orange'
+the_dead_rabbit.garnishes_string << 'Nutmeg'
+the_modern.garnishes_string << '1 Maraschino Cherry'
+the_spice_is_right.garnishes_string << 'Grated Nutmeg'
+timberpoint.garnishes_string << '1 slice of Cucumber'
+tipperary.garnishes_string << '1 slice of Orange'
+toblerone.garnishes_string << 'Toblerone Chocolate Shavings'
+tom_and_jerry.garnishes_string << 'Nutmeg'
+tom_collins.garnishes_string << '1 slice of Lemon'
+tom_yum.garnishes_string << '1 wedge of Lime'
+tootsie.garnishes_string << '1 Maraschino Cherry'
+toronto.garnishes_string << '1 peel of Orange'
+turf.garnishes_string << '1 peel of Lemon'
+tuxedo.garnishes_string << '1 Cherry'
+uncle.garnishes_string << '1 pinch of Grated Nutmeg'
+upper.garnishes_string << '1 twist of Grapefruit'
+uss.garnishes_string << '1 slice of Lemon'
+ve_n_to.garnishes_string << '1 zest of Lemon'
+vesper.garnishes_string << '1 twist of Lemon'
+vida.garnishes_string << 'Chile Piquin Rim'
+vieux.garnishes_string << '1 zest of Orange'
+vodka.garnishes_string << '1 twist of Lemon'
+ward.garnishes_string << '2 Speared Cherries'
+washington_apple.garnishes_string << '1 slice of Apple'
+waterfront.garnishes_string << '3 sprigs of Mint'
+watermelon.garnishes_string << '1 wedge of Watermelon'
+whats_up.garnishes_string << '1 sprig of Rosemary or Thyme'
+whiskey_in_church.garnishes_string << '1 twist of Lemon'
+whiskey_skin.garnishes_string << '1 peel of Lemon'
+whiskey_smashed.garnishes_string << '4 wheels of Lemon'
+whiskey_sour.garnishes_string << '1 Maraschino Cherry'
+white_cargo.garnishes_string << 'Grated Nutmeg'
+white_summer.garnishes_string << '1 Edible Flower'
+wisconsin.garnishes_string << '2 slices of Orange'
+yerba.garnishes_string << '1 sprig of Mint'
+zombie.garnishes_string << '1 sprig of Mint'
+
+airmail.garnishes << grated_nutmeg
+amaretto_sour.garnishes << brandied_cherries
+americano.garnishes << lemon
+anejo_old_fashioned.garnishes << brandied_cherry
+aperitivo.garnishes << orange_blossom
+apple_cranberry_moscow_mule.garnishes << apple_slices
+apple_toddy.garnishes << grated_nutmeg
+aquavit.garnishes << lime
+banana.garnishes << banana
+barbados.garnishes << lime
+bear.garnishes << rosemary
+beet.garnishes << mint
+beton.garnishes << lemon
+bloody_caesar.garnishes << lime
+bloody_casear.garnishes << celery
+bloody_maria.garnishes << lime
+bloody_mary.garnishes << lemon
+blue_hawaii.garnishes << maraschino_cherry
+blue_lagoon.garnishes << orange
+boozy.garnishes << mini_marshmallows
+boston.garnishes << orange
+bourbon_cider.garnishes << cinnamon
+bourbon_lemonade.garnishes << lemon
+bourbon_rosemary_punch.garnishes << rosemary
+bourbon_strawberry.garnishes << blueberries
+bramble.garnishes << lemon
+brandy_old_fashioned.garnishes << maraschino_cherries
+brazilian.garnishes << ginger
+bulleit.garnishes << strawberry
+café_ponche.garnishes << cinnamon
+caipirinha.garnishes << lime
+candy.garnishes << crushed_candy
+cape.garnishes << oregano
+casino.garnishes << maraschino_cherry
+cbd_dirty_martini.garnishes << cbd_oil
+cbd_gin_tonic.garnishes << rosemary
+cbd_moscow_mule.garnishes << lime
+champagne_cocktail.garnishes << maraschino_cherry
+champagne_holiday.garnishes << pineapple
+cherry.garnishes << maraschino_cherry
+chocomole.garnishes << corn_chip
+cobra.garnishes << thyme
+cobras.garnishes << mint
+coffee.garnishes << coffee
+cowboy.garnishes << lemon
+crush.garnishes << orange
+day_at_the_crawfish.garnishes << blackberries
+earl.garnishes << lemon
+eggnog.garnishes << grated_nutmeg
+el_diablo.garnishes << lime
+emerald.garnishes << whipped_cream
+figgy.garnishes << sage
+flor.garnishes << orange
+forbidden_sour.garnishes << cherry
+forest.garnishes << pine
+francophile.garnishes << cinnamon
+frozen_absinthe.garnishes << star_anise
+frozen_margarita.garnishes << lime
+ginger_fever_punch.garnishes << grapefruit
+grave.garnishes << crushed_oreo
+harry_potter_butter.garnishes << butterscotch_syrup
+harvey.garnishes << maraschino_cherry
+heated.garnishes << grated_nutmeg
+hemingway_daiquiri.garnishes << lime
+hennessy.garnishes << ginger
+hey_gourdgeous.garnishes << grated_nutmeg
+high_on_hog.garnishes << bacon
+hit.garnishes << cinnamon
+honey.garnishes << sage
+hot_blooded.garnishes << lime
+hot_buttered_rum.garnishes << cinnamon
+hurricane.garnishes << cherry
+i_left_my_heart.garnishes << orange
+infused.garnishes << lemon_basil
+irish_affrogato.garnishes << chocolate_shavings
+jack_o_lantern.garnishes << apple
+japanese.garnishes << angostura_bitters
+jingle.garnishes << cranberries
+john.garnishes << maraschino_cherry
+kanar.garnishes << lemon_oil
+large_format_mezcal.garnishes << orange
+last_minute.garnishes << cinnamon
+latitude.garnishes << mint
+le.garnishes << rosemary
+london_toddy.garnishes << lemon
+m_g_and_t.garnishes << cinnamon
+mai.garnishes << lime
+malibu.garnishes << whipped_cream
+man_o_war.garnishes << brandied_cherry
+mango.garnishes << lemon
+mezcal_mule.garnishes << candied_ginger
+milk.garnishes << cinnamon
+millionaire.garnishes << grated_nutmeg
+mojito.garnishes << lime
+mudslide.garnishes << chocolate
+mutual.garnishes << espresso
+my.garnishes << thai_chile
+night.garnishes << rosemary
+northern.garnishes << lemon
+nui.garnishes << orange
+ny_sour.garnishes << cherry
+oaks.garnishes << blackberries
+old_fashioned.garnishes << maraschino_cherry
+one_two.garnishes << grapefruit
+painkiller.garnishes << pineapple
+pearl.garnishes << edible_orchid
+pimms.garnishes << mint
+piña.garnishes << maraschino_cherry
+pina_colada.garnishes << pineapple
+ponche.garnishes << lemon
+pumpkin_buck.garnishes << grated_nutmeg
+pumpkin_toddy.garnishes << grated_cinnamon
+que.garnishes << orange
+rainbow.garnishes << orange
+reggae.garnishes << mint
+rosemary.garnishes << rosemary
+ruby.garnishes << umbrella
+rum_old_fashioned.garnishes << orange
+rum_smoke.garnishes << flamed_rosemary
+saturn.garnishes << orange
+set.garnishes << flaming_lime
+shamrock.garnishes << andes_crème
+singapore.garnishes << maraschino_cherry
+smoked.garnishes << lemon
+spanish.garnishes << lemon
+sparkling_rose.garnishes << lime
+sparkling_watermelon.garnishes << mint
+spcity_margarita.garnishes << jalapeño
+spiced_margarita.garnishes << jalapeño
+spicy_mint.garnishes << mint
+strawberry_daiquiri.garnishes << edible_orchid
+suffering.garnishes << orange
+summer.garnishes << juniper_berries
+summerthyme.garnishes << lemon
+sussex.garnishes << lemon
+tea_for_two.garnishes << peach
+tea_sympathy.garnishes << cinnamon
+tequila_sunrise.garnishes << cherry
+thai.garnishes << makrut_lime
+toblerone.garnishes << chocolate_syrup
+tom_and_jerry.garnishes << clove
+tom_collins.garnishes << maraschino_cherry
+tom_yum.garnishes << makrut_lime
+top.garnishes << strawberry
+tuxedo.garnishes << lemon
+uss.garnishes << grated_nutmeg
+ve_n_to.garnishes << white_grapes
+vida.garnishes << grapefruit_wheel
+vieux.garnishes << maraschino_cherry
+whiskey_smashed.garnishes << mint
+whiskey_sour.garnishes << half_orange
+winter.garnishes << clove_studded_lemon
+wisconsin.garnishes << maraschino_cherries
+yerba.garnishes << lime
+
+airmail.garnishes_string << 'Grated Nutmeg'
+amaretto_sour.garnishes_string << 'Brandied Cherries'
+americano.garnishes_string << '1 twist of Lemon'
+anejo_old_fashioned.garnishes_string << '1 Brandied Cherry'
+aperitivo.garnishes_string << '1 spray of Orange Blossom'
+apple_cranberry_moscow_mule.garnishes_string << 'Apple Slices'
+apple_toddy.garnishes_string << 'Grated Nutmeg'
+aquavit.garnishes_string << '1 wedge of Lime'
+banana.garnishes_string << '1 slice of Banana'
+barbados.garnishes_string << '1 wheel of Lime'
+bear.garnishes_string << '1 sprig of Rosemary'
+beet.garnishes_string << '6 leaves of Mint'
+beton.garnishes_string << '1 wedge of Lemon'
+bloody_caesar.garnishes_string << '1 wedge of Lime'
+bloody_casear.garnishes_string << '1 stalk of Celery'
+bloody_maria.garnishes_string << '1 wedge of Lime'
+bloody_mary.garnishes_string << '1 wedge of Lemon'
+blue_hawaii.garnishes_string << '1 Maraschino Cherry'
+blue_lagoon.garnishes_string << '1 wheel of Orange'
+boozy.garnishes_string << 'Mini Marshmallows'
+boston.garnishes_string << '1 slice of Orange'
+bourbon_cider.garnishes_string << '1 stick of Cinnamon'
+bourbon_lemonade.garnishes_string << '1 wedge of Lemon'
+bourbon_rosemary_punch.garnishes_string << 'Rosemary'
+bourbon_strawberry.garnishes_string << 'Blueberries'
+bramble.garnishes_string << '1 slice of Lemon'
+brandy_old_fashioned.garnishes_string << '2 Maraschino Cherries'
+brazilian.garnishes_string << '1 peel of Ginger'
+bulleit.garnishes_string << '1 Strawberry'
+café_ponche.garnishes_string << '1 stick of Cinnamon'
+caipirinha.garnishes_string << '1 slice of Lime'
+candy.garnishes_string << '1 Crushed Candy Cane'
+cape.garnishes_string << 'Oregano'
+casino.garnishes_string << '1 Maraschino Cherry'
+cbd_dirty_martini.garnishes_string << 'CBD Oil'
+cbd_gin_tonic.garnishes_string << '1 sprig of Rosemary'
+cbd_moscow_mule.garnishes_string << '1 wedge of Lime'
+champagne_cocktail.garnishes_string << '1 Maraschino Cherry'
+champagne_holiday.garnishes_string << '1 slice of Pineapple'
+cherry.garnishes_string << '1 Maraschino Cherry'
+chocomole.garnishes_string << '1 Corn Chip'
+cobra.garnishes_string << '1 sprig of Thyme'
+cobras.garnishes_string << 'Mint'
+coffee.garnishes_string << 'Coffee'
+cowboy.garnishes_string << '1 peel of Lemon'
+crush.garnishes_string << '1 Orange Wedge'
+day_at_the_crawfish.garnishes_string << '2 Blackberries'
+earl.garnishes_string << '1 twist of Lemon'
+eggnog.garnishes_string << 'Grated Nutmeg'
+el_diablo.garnishes_string << '1 wedge of Lime'
+emerald.garnishes_string << 'Whipped Cream'
+figgy.garnishes_string << '1 leaf of Sage'
+flor.garnishes_string << '1 twist of Orange'
+forbidden_sour.garnishes_string << '1 Cherry'
+forest.garnishes_string << '1 sprig of Pine'
+francophile.garnishes_string << '1 stick of Cinnamon'
+frozen_absinthe.garnishes_string << '1 pod of Star Anise'
+frozen_margarita.garnishes_string << '1 wheel of Lime'
+ginger_fever_punch.garnishes_string << '1 slice of Grapefruit'
+grave.garnishes_string << 'Crushed Oreo Cookies'
+harry_potter_butter.garnishes_string << 'Butterscotch Syrup'
+harvey.garnishes_string << '1 Maraschino Cherry'
+heated.garnishes_string << 'Grated Nutmeg'
+hemingway_daiquiri.garnishes_string << '1 wheel of Lime'
+hennessy.garnishes_string << '3 slices of Ginger'
+hey_gourdgeous.garnishes_string << '1 tsp of Grated Nutmeg'
+high_on_hog.garnishes_string << '4 Strips of Bacon'
+hit.garnishes_string << 'Cinnamon'
+honey.garnishes_string << '1 leaf of Sage'
+hot_blooded.garnishes_string << '1 twist of Lime'
+hot_buttered_rum.garnishes_string << '1 stick of Cinnamon'
+hurricane.garnishes_string << 'Cherry'
+i_left_my_heart.garnishes_string << '1 twist of Orange'
+infused.garnishes_string << '1 leaf of Lemon-Basil'
+irish_affrogato.garnishes_string << 'Chocolate Shavings'
+jack_o_lantern.garnishes_string << '3 slices of Apple'
+japanese.garnishes_string << '5 drops of Angostura Bitters'
+jingle.garnishes_string << 'Cranberries'
+john.garnishes_string << '1 Maraschino Cherry'
+kanar.garnishes_string << 'Lemon Oil'
+large_format_mezcal.garnishes_string << '1 peel of Orange'
+last_minute.garnishes_string << '3 sticks of Cinnamon'
+latitude.garnishes_string << '1 sprig of Mint'
+le.garnishes_string << '1 sprig of Rosemary'
+london_toddy.garnishes_string << '3 wheels of Lemon'
+m_g_and_t.garnishes_string << '1 stick of Cinnamon'
+mai.garnishes_string << '1 shell of Lime'
+malibu.garnishes_string << 'Whipped Cream'
+man_o_war.garnishes_string << '1 Brandied Cherry'
+mango.garnishes_string << '1 wheel of Lemon'
+mezcal_mule.garnishes_string << 'Candied Ginger'
+milk.garnishes_string << '1 stick of Cinnamon'
+millionaire.garnishes_string << 'Grated Nutmeg'
+mojito.garnishes_string << '1 slice of Lime'
+mudslide.garnishes_string << 'Chocolate'
+mutual.garnishes_string << '4 beans of Espresso'
+my.garnishes_string << '1 Thai Chile Pepper'
+night.garnishes_string << '1 sprig of Rosemary'
+northern.garnishes_string << '1 wheel of Lemon'
+nui.garnishes_string << '1 peel of Orange'
+ny_sour.garnishes_string << 'Cherry'
+oaks.garnishes_string << 'Blackberries'
+old_fashioned.garnishes_string << '1 Maraschino Cherry'
+one_two.garnishes_string << 'Grapefruit Wheel Half'
+painkiller.garnishes_string << '1 wedge of Pineapple'
+pearl.garnishes_string << '1 Edible Orchid'
+pimms.garnishes_string << '1 sprig of Mint'
+piña.garnishes_string << '1 Maraschino Cherry'
+pina_colada.garnishes_string << '1 leaf of Pineapple'
+ponche.garnishes_string << '1 slice of Lemon'
+pumpkin_buck.garnishes_string << 'Grated Nutmeg'
+pumpkin_toddy.garnishes_string << '1 pinch of Grated Cinnamon'
+que.garnishes_string << '1 wheel of Orange'
+rainbow.garnishes_string << '3 slices of Orange'
+reggae.garnishes_string << '1 sprig of Mint'
+rosemary.garnishes_string << '1 sprig of Rosemary'
+ruby.garnishes_string << '1 Umbrella'
+rum_old_fashioned.garnishes_string << '1 twist of Orange'
+rum_smoke.garnishes_string << '1 sprig of Flamed Rosemary'
+saturn.garnishes_string << '1 peel of Orange'
+set.garnishes_string << '1 shell of Flaming Lime'
+shamrock.garnishes_string << 'Andes Crème de Menthe Thin'
+singapore.garnishes_string << '1 Maraschino Cherry'
+smoked.garnishes_string << '1 wheel of Lemon'
+spanish.garnishes_string << '1 wheel of Lemon'
+sparkling_rose.garnishes_string << '3 wheels of Lime'
+sparkling_watermelon.garnishes_string << '6 leaves of Mint'
+spcity_margarita.garnishes_string << '2 coins of Jalapeño'
+spiced_margarita.garnishes_string << '3 wheels of Jalapeño'
+spicy_mint.garnishes_string << '1 sprig of Mint'
+strawberry_daiquiri.garnishes_string << '1 Edible Orchid'
+suffering.garnishes_string << '1 slice of Orange'
+summer.garnishes_string << 'Juniper Berries'
+summerthyme.garnishes_string << '2 wheels of Lemon'
+sussex.garnishes_string << '1 twist of Lemon'
+tea_for_two.garnishes_string << '2 slices of Peach'
+tea_sympathy.garnishes_string << '1 stick of Cinnamon'
+tequila_sunrise.garnishes_string << 'Cherry'
+thai.garnishes_string << '2 leaves of Makrut Lime'
+toblerone.garnishes_string << 'Chocolate Syrup Rim'
+tom_and_jerry.garnishes_string << '1 Clove'
+tom_collins.garnishes_string << '1 Maraschino Cherry'
+tom_yum.garnishes_string << '1 leaf of Makrut Lime'
+top.garnishes_string << '1 slice of Strawberry'
+tuxedo.garnishes_string << '1 zest of Lemon'
+uss.garnishes_string << 'Grated Nutmeg'
+ve_n_to.garnishes_string << 'White Grapes'
+vida.garnishes_string << 'Grapefruit Wheel Quarter'
+vieux.garnishes_string << '1 Maraschino Cherry'
+whiskey_smashed.garnishes_string << '4 leaves of Mint'
+whiskey_sour.garnishes_string << 'Half Orange Slice'
+winter.garnishes_string << '1 Clove-Studded Lemon'
+wisconsin.garnishes_string << '2 Maraschino Cherries'
+yerba.garnishes_string << '1 wheel of Lime'

@@ -126,9 +126,11 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
-    t.string "description"
+    t.text "description"
+    t.string "timing"
+    t.text "preparation"
+    t.string "iba_category"
     t.string "flavor"
-    t.string "instructions"
     t.string "ingredient_string"
     t.float "servings"
     t.integer "time"
@@ -140,6 +142,10 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.integer "general_ranking"
     t.integer "user_ranking"
     t.string "source"
+    t.text "liquors_string"
+    t.text "liqueurs_string"
+    t.text "mixers_string"
+    t.text "garnishes_string"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1058,7 +1058,7 @@ green_beast = Recipe.create(name: 'Green Beast')
 green_isaac_special = Recipe.create(name: "Green Isaac's Special")
 greenpoint = Recipe.create(name: 'Greenpoint')
 greyhound = Recipe.create(name: 'Greyhound')
-guinness = Recipe.create(name: 'Guinness Chocolate Float')
+guinnessfloat = Recipe.create(name: 'Guinness Chocolate Float')
 half = Recipe.create(name: 'Half Moon Bay')
 hanalei = Recipe.create(name: 'Hanalei Sun')
 hanky = Recipe.create(name: 'Hanky Panky')
@@ -1202,7 +1202,7 @@ pegu = Recipe.create(name: 'Pegu Club')
 penicillin = Recipe.create(name: 'Penicillin')
 phoking = Recipe.create(name: 'Pho-King Champ')
 picon = Recipe.create(name: 'Picon Punch')
-pimms = Recipe.create(name: "Pimm's Cup")
+pimmscup = Recipe.create(name: "Pimm's Cup")
 piña = Recipe.create(name: 'Piña Colada')
 pina_colada = Recipe.create(name: 'Piña Colada')
 pink_gin = Recipe.create(name: 'Pink Gin')
@@ -1328,7 +1328,7 @@ vampiro = Recipe.create(name: 'Vampiro')
 ve_n_to = Recipe.create(name: 'Ve.n.to')
 vesper = Recipe.create(name: 'Vesper')
 vida = Recipe.create(name: 'Vida Paloma')
-vieux = Recipe.create(name: 'Vieux Carré')
+vieuxcarre = Recipe.create(name: 'Vieux Carré')
 vodka_martini = Recipe.create(name: 'Vodka Martini')
 waldorf = Recipe.create(name: 'Waldorf')
 ward = Recipe.create(name: 'Ward Eight')
@@ -1768,7 +1768,7 @@ uss.liquors << dark_jamaican_rum
 vampiro.liquors << tequila
 vesper.liquors << gin
 vida.liquors << del_maguey_mezcal
-vieux.liquors << rye
+vieuxcarre.liquors << rye
 vodka_martini.liquors << vodka
 waldorf.liquors << rye
 ward.liquors << rye
@@ -2206,7 +2206,7 @@ uss.liquors_string << '16 fl oz of Dark Jamaican Rum'
 vampiro.liquors_string << '1.69 fl oz of Tequila'
 vesper.liquors_string << '1.52 fl oz of Gin'
 vida.liquors_string << '2 fl oz of Del Maguey Vida Mezcal'
-vieux.liquors_string << '1.01 fl oz of Rye Whiskey'
+vieuxcarre.liquors_string << '1.01 fl oz of Rye Whiskey'
 vodka_martini.liquors_string << '2.5 fl oz of Vodka'
 waldorf.liquors_string << '2 fl oz of Rye Whiskey'
 ward.liquors_string << '2 fl oz of Rye Whiskey'
@@ -2286,7 +2286,7 @@ tom_and_jerry.liquors << cognac
 uncle.liquors << spiced
 uss.liquors << vs
 vesper.liquors << vodka
-vieux.liquors << cognac
+vieuxcarre.liquors << cognac
 white_summer.liquors << kings
 zombie.liquors << puerto
 
@@ -2345,7 +2345,7 @@ tom_and_jerry.liquors_string << '1 fl oz of Cognac'
 uncle.liquors_string << '4 fl oz of Spiced Rum'
 uss.liquors_string << '16 fl oz of V.S. or V.S.O.P.-Grade Cognac'
 vesper.liquors_string << '0.51 fl oz of Vodka'
-vieux.liquors_string << '1.01 fl oz of Cognac'
+vieuxcarre.liquors_string << '1.01 fl oz of Cognac'
 white_summer.liquors_string << '0.5 fl oz of Kings County Empire Rye Whiskey'
 zombie.liquors_string << '1.52 fl oz of Puerto Rican Gold Rum'
 
@@ -2608,7 +2608,7 @@ tuxedo.liqueurs << dry_vermouth
 twentieth_century.liqueurs << kina
 uss.liqueurs << grand_marnier
 vesper.liqueurs << lillet_blanc
-vieux.liqueurs << sweet_vermouth
+vieuxcarre.liqueurs << sweet_vermouth
 vodka_martini.liqueurs << dry_vermouth
 waldorf.liqueurs << sweet_vermouth
 washington_apple.liqueurs << sour
@@ -2669,7 +2669,7 @@ milk.liqueurs << bénédictine
 mimosa.liqueurs << champagne
 negroni_sbagliato.liqueurs << sweet_vermouth
 orange_sherbet.liqueurs << champagne
-pimms.liqueurs << pimms
+pimmscup.liqueurs << pimms
 pink_squirrel.liqueurs << tempus_noyaux
 professor.liqueurs << fort
 roman.liqueurs << amaro_angostura
@@ -2923,7 +2923,7 @@ tuxedo.liqueurs_string << '1.01 fl oz of Dry Vermouth'
 twentieth_century.liqueurs_string << '0.75 fl oz of Kina Lillet'
 uss.liqueurs_string << '4 fl oz of Grand Marnier'
 vesper.liqueurs_string << '0.25 fl oz of Lillet Blanc'
-vieux.liqueurs_string << '1.01 fl oz of Sweet Vermouth'
+vieuxcarre.liqueurs_string << '1.01 fl oz of Sweet Vermouth'
 vodka_martini.liqueurs_string << '0.5 fl oz of Dry Vermouth'
 waldorf.liqueurs_string << '0.75 fl oz of Sweet Vermouth'
 washington_apple.liqueurs_string << '1 fl oz of Sour Apple Schnapps'
@@ -2984,7 +2984,7 @@ milk.liqueurs_string << '1.75 fl oz of Bénédictine'
 mimosa.liqueurs_string << '2.54 fl oz of Champagne'
 negroni_sbagliato.liqueurs_string << '25.36 fl oz of Sweet Vermouth'
 orange_sherbet.liqueurs_string << '25.36 fl oz of Champagne'
-pimms.liqueurs_string << '2 fl oz of Pimm’s No. 1'
+pimmscup.liqueurs_string << '2 fl oz of Pimm’s No. 1'
 pink_squirrel.liqueurs_string << '0.75 fl oz of Tempus Fugit Crème de Noyaux'
 professor.liqueurs_string << '6 fl oz of Fort Point Kölsch Ale'
 roman.liqueurs_string << '1 fl oz of Amaro Meletti'
@@ -3052,7 +3052,7 @@ grasshopper.liqueurs << white_cacao
 grave.liqueurs << grand_marnier
 great.liqueurs << pumpkin
 greenpoint.liqueurs << sweet_vermouth
-guinness.liqueurs << guinness
+guinnessfloat.liqueurs << guinness
 hanky.liqueurs << fernet
 high_seas.liqueurs << dry_vermouth
 hit.liqueurs << townshend
@@ -3123,7 +3123,7 @@ top.liqueurs << cava
 tuxedo.liqueurs << maraschino
 twentieth_century.liqueurs << crème_de_cacao
 uss.liqueurs << champagne
-vieux.liqueurs << bénédictine
+vieuxcarre.liqueurs << bénédictine
 waldorf.liqueurs << absinthe
 where.liqueurs << fireball
 white_summer.liqueurs << absinthe
@@ -3183,7 +3183,7 @@ grasshopper.liqueurs_string << '1.01 fl oz of White Crème de Cacao'
 grave.liqueurs_string << '0.5 fl oz of Grand Marnier'
 great.liqueurs_string << '2 fl oz of Pumpkin Ale'
 greenpoint.liqueurs_string << '0.5 fl oz of Sweet Vermouth'
-guinness.liqueurs_string << '6 fl oz of Guinness Stout'
+guinnessfloat.liqueurs_string << '6 fl oz of Guinness Stout'
 hanky.liqueurs_string << '0.25 fl oz of Fernet-Branca'
 high_seas.liqueurs_string << '0.5 fl oz of Dry Vermouth'
 hit.liqueurs_string << '12.68 fl oz of Townshend Bluebird Alpine Liqueur'
@@ -3254,7 +3254,7 @@ top.liqueurs_string << '2 fl oz of Cava'
 tuxedo.liqueurs_string << '0.5 barspoon of Maraschino Luxardo'
 twentieth_century.liqueurs_string << '0.5 fl oz of Crème de Cacao'
 uss.liqueurs_string << '50.72 fl oz of Champagne'
-vieux.liqueurs_string << '1 barspoon of Bénédictine'
+vieuxcarre.liqueurs_string << '1 barspoon of Bénédictine'
 waldorf.liqueurs_string << '1 dash of Absinthe'
 where.liqueurs_string << '0.5 fl oz of Fireball Cinnamon Whiskey'
 white_summer.liqueurs_string << '6 spritzes of Absinthe'
@@ -3618,7 +3618,7 @@ peeping.mixers << lemon_juice
 pegu.mixers << lime_juice
 penicillin.mixers << lemon_juice
 picon.mixers << grenadine
-pimms.mixers << lemon_juice
+pimmscup.mixers << lemon_juice
 piña.mixers << coconut_cream
 pina_colada.mixers << cream_of_coconut
 pink_gin.mixers << water
@@ -3722,7 +3722,7 @@ uss.mixers << lemons
 vampiro.mixers << tomato_juice
 ve_n_to.mixers << lemon_juice
 vida.mixers << grapefruit_juice
-vieux.mixers << peychauds_bitters
+vieuxcarre.mixers << peychauds_bitters
 vodka_martini.mixers << orange_bitters
 waldorf.mixers << angostura_bitters
 ward.mixers << lemon_juice
@@ -4042,7 +4042,7 @@ peeping.mixers_string << '1 fl oz of Lemon Juice'
 pegu.mixers_string << '1 tsp of Lime Juice'
 penicillin.mixers_string << '0.76 fl oz of Lemon Juice'
 picon.mixers_string << '0.25 fl oz of Grenadine'
-pimms.mixers_string << '0.5 fl oz of Lemon Juice'
+pimmscup.mixers_string << '0.5 fl oz of Lemon Juice'
 piña.mixers_string << '10.14 fl oz of Coconut Cream'
 pina_colada.mixers_string << '1.5 fl oz of Cream of Coconut'
 pink_gin.mixers_string << '1 fl oz of Water'
@@ -4146,7 +4146,7 @@ uss.mixers_string << '6 Lemons'
 vampiro.mixers_string << '2.37 fl oz of Tomato Juice'
 ve_n_to.mixers_string << '0.76 fl oz of Lemon Juice'
 vida.mixers_string << '3 fl oz of Grapefruit Juice'
-vieux.mixers_string << '2 dashes of Peychaud’s Bitters'
+vieuxcarre.mixers_string << '2 dashes of Peychaud’s Bitters'
 vodka_martini.mixers_string << '1 fl oz of Orange Bitters'
 waldorf.mixers_string << '3 dashes of Angostura Bitters'
 ward.mixers_string << '0.5 fl oz of Lemon Juice'
@@ -4305,7 +4305,7 @@ great.mixers << whole_egg
 green_beast.mixers << lime_juice
 green_isaac_special.mixers << lime_juice
 greenpoint.mixers << orange_bitters
-guinness.mixers << chocolate_ice
+guinnessfloat.mixers << chocolate_ice
 heated.mixers << heavy_cream
 hemingway_daiquiri.mixers << grapefruit_juice
 hemingway_special.mixers << lime_juice
@@ -4397,7 +4397,7 @@ peeping.mixers << simple_syrup
 penicillin.mixers << honey_syrup
 phoking.mixers << pho_broth
 picon.mixers << soda_water
-pimms.mixers << ginger_ale
+pimmscup.mixers << ginger_ale
 piña.mixers << pineapple_juice
 pina_colada.mixers << pineapple_juice
 pink_gin.mixers << angostura_bitters
@@ -4634,7 +4634,7 @@ great.mixers_string << 'Whole Egg'
 green_beast.mixers_string << 'Lime Juice'
 green_isaac_special.mixers_string << 'Lime Juice'
 greenpoint.mixers_string << 'Orange Bitters'
-guinness.mixers_string << 'Chocolate Ice Cream'
+guinnessfloat.mixers_string << 'Chocolate Ice Cream'
 heated.mixers_string << 'Heavy Cream'
 hemingway_daiquiri.mixers_string << 'Grapefruit Juice'
 hemingway_special.mixers_string << 'Lime Juice'
@@ -4726,7 +4726,7 @@ peeping.mixers_string << 'Simple Syrup'
 penicillin.mixers_string << 'Honey Syrup'
 phoking.mixers_string << 'Pho Broth'
 picon.mixers_string << 'Soda Water'
-pimms.mixers_string << 'Ginger Ale'
+pimmscup.mixers_string << 'Ginger Ale'
 piña.mixers_string << 'Pineapple Juice'
 pina_colada.mixers_string << 'Pineapple Juice'
 pink_gin.mixers_string << 'Angostura Bitters'
@@ -4901,7 +4901,7 @@ golden_dew.mixers << honey_syrup
 golden_purl.mixers << orange_bitters
 green_beast.mixers << chilled_water
 green_isaac_special.mixers << angostura_bitters
-guinness.mixers << chocolate_syrup
+guinnessfloat.mixers << chocolate_syrup
 hey_gourdgeous.mixers << water
 high_tide.mixers << tonic_water
 holiday.mixers << sugar_
@@ -5105,7 +5105,7 @@ golden_dew.mixers_string << '0.5 barspoon of Honey Syrup'
 golden_purl.mixers_string << '2 dashes of Orange Bitters'
 green_beast.mixers_string << '4 fl oz of Chilled Water'
 green_isaac_special.mixers_string << '3 dashes of Angostura Bitters'
-guinness.mixers_string << 'Chocolate Syrup'
+guinnessfloat.mixers_string << 'Chocolate Syrup'
 hey_gourdgeous.mixers_string << '8 fl oz of Water'
 high_tide.mixers_string << 'Top up with Tonic Water'
 holiday.mixers_string << '1 cube of Sugar'
@@ -5809,7 +5809,7 @@ pegu.garnishes << lime
 penicillin.garnishes << candied_ginger
 phoking.garnishes << cilantro
 picon.garnishes << lemon
-pimms.garnishes << cucumber
+pimmscup.garnishes << cucumber
 piña.garnishes << pineapple
 pina_colada.garnishes << pineapple
 pink_gin.garnishes << lemon
@@ -5897,7 +5897,7 @@ uss.garnishes << lemon
 ve_n_to.garnishes << lemon
 vesper.garnishes << lemon
 vida.garnishes << chile_piquin
-vieux.garnishes << orange
+vieuxcarre.garnishes << orange
 vodka_martini.garnishes << lemon
 ward.garnishes << speared_cherries
 washington_apple.garnishes << apple
@@ -6155,7 +6155,7 @@ pegu.garnishes_string << '1 twist of Lime'
 penicillin.garnishes_string << 'Candied Ginger'
 phoking.garnishes_string << '1 leaf of Cilantro'
 picon.garnishes_string << '1 peel of Lemon'
-pimms.garnishes_string << '1 slice of Cucumber'
+pimmscup.garnishes_string << '1 slice of Cucumber'
 
 pina_colada.garnishes_string << '1 wedge of Pineapple'
 pink_gin.garnishes_string << '1 slice of Lemon'
@@ -6243,7 +6243,7 @@ uss.garnishes_string << '1 slice of Lemon'
 ve_n_to.garnishes_string << '1 zest of Lemon'
 vesper.garnishes_string << '1 twist of Lemon'
 vida.garnishes_string << 'Chile Piquin Rim'
-vieux.garnishes_string << '1 zest of Orange'
+vieuxcarre.garnishes_string << '1 zest of Orange'
 vodka_martini.garnishes_string << '1 twist of Lemon'
 ward.garnishes_string << '2 Speared Cherries'
 washington_apple.garnishes_string << '1 slice of Apple'
@@ -6366,7 +6366,7 @@ old_fashioned.garnishes << maraschino_cherry
 one_two.garnishes << grapefruit
 painkiller.garnishes << pineapple
 pearl.garnishes << edible_orchid
-pimms.garnishes << mint
+pimmscup.garnishes << mint
 piña.garnishes << maraschino_cherry
 pina_colada.garnishes << pineapple
 ponche.garnishes << lemon
@@ -6408,7 +6408,7 @@ tuxedo.garnishes << lemon
 uss.garnishes << grated_nutmeg
 ve_n_to.garnishes << white_grapes
 vida.garnishes << grapefruit_wheel
-vieux.garnishes << maraschino_cherry
+vieuxcarre.garnishes << maraschino_cherry
 whiskey_smashed.garnishes << mint
 whiskey_sour.garnishes << half_orange
 winter.garnishes << clove_studded_lemon
@@ -6521,7 +6521,7 @@ old_fashioned.garnishes_string << '1 Maraschino Cherry'
 one_two.garnishes_string << 'Grapefruit Wheel Half'
 painkiller.garnishes_string << '1 wedge of Pineapple'
 pearl.garnishes_string << '1 Edible Orchid'
-pimms.garnishes_string << '1 sprig of Mint'
+pimmscup.garnishes_string << '1 sprig of Mint'
 piña.garnishes_string << '1 Maraschino Cherry'
 pina_colada.garnishes_string << '1 leaf of Pineapple'
 ponche.garnishes_string << '1 slice of Lemon'
@@ -6563,7 +6563,7 @@ tuxedo.garnishes_string << '1 zest of Lemon'
 uss.garnishes_string << 'Grated Nutmeg'
 ve_n_to.garnishes_string << 'White Grapes'
 vida.garnishes_string << 'Grapefruit Wheel Quarter'
-vieux.garnishes_string << '1 Maraschino Cherry'
+vieuxcarre.garnishes_string << '1 Maraschino Cherry'
 whiskey_smashed.garnishes_string << '4 leaves of Mint'
 whiskey_sour.garnishes_string << 'Half Orange Slice'
 winter.garnishes_string << '1 Clove-Studded Lemon'
@@ -6592,7 +6592,7 @@ my.garnishes << pineapple
 night.garnishes << orange
 northern.garnishes << mint
 pearl.garnishes << pineapple
-pimms.garnishes << strawberry
+pimmscup.garnishes << strawberry
 rainbow.garnishes << lime
 smoked.garnishes << grated_nutmeg
 spanish.garnishes << thyme
@@ -6627,7 +6627,7 @@ my.garnishes_string << '1 leaf of Pineapple'
 night.garnishes_string << '1 twist of Orange'
 northern.garnishes_string << '1 sprig of Mint'
 pearl.garnishes_string << '1 leaf of Pineapple'
-pimms.garnishes_string << '1 Strawberry'
+pimmscup.garnishes_string << '1 Strawberry'
 rainbow.garnishes_string << '3 slices of Lime'
 smoked.garnishes_string << 'Grated Nutmeg'
 spanish.garnishes_string << 'Thyme'
@@ -6643,7 +6643,7 @@ vida.garnishes_string << '1 sprig of Cilantro'
 beet.garnishes << lemon
 bloody_maria.garnishes << cucumber
 jack_o_lantern.garnishes << pumpkin
-pimms.garnishes << lemon
+pimmscup.garnishes << lemon
 sparkling_watermelon.garnishes << lime
 summerthyme.garnishes << thyme
 thai.garnishes << orange
@@ -6653,7 +6653,7 @@ vida.garnishes << jalapeño
 beet.garnishes_string << '1 twist of Lemon'
 bloody_maria.garnishes_string << '1 spear of Cucumber'
 jack_o_lantern.garnishes_string << '5 seeds of Pumpkin'
-pimms.garnishes_string << '1 wheel of Lemon'
+pimmscup.garnishes_string << '1 wheel of Lemon'
 sparkling_watermelon.garnishes_string << '1 wheel of Lime'
 summerthyme.garnishes_string << '1 sprig of Thyme'
 thai.garnishes_string << '1 peel of Orange'
@@ -6661,11 +6661,11 @@ tom_yum.garnishes_string << 'Red Pepper Flakes'
 vida.garnishes_string << '1 round of Jalapeño'
 
 bloody_maria.garnishes << sweet_pepper
-pimms.garnishes << orange
+pimmscup.garnishes << orange
 tom_yum.garnishes << makrut_lime_leaf
 
 bloody_maria.garnishes_string << 'Sweet Pepper'
-pimms.garnishes_string << 'Orange'
+pimmscup.garnishes_string << 'Orange'
 tom_yum.garnishes_string << 'Makrut Lime Leaf'
 
 bloody_maria.garnishes << jalapeño_pepper

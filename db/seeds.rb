@@ -939,10 +939,10 @@ bronx = Recipe.create(name: 'Bronx')
 brown = Recipe.create(name: 'Brown Derby')
 bulleit = Recipe.create(name: 'Bulleit Bourbon Kentucky Buck')
 café = Recipe.create(name: 'Café Correcto con Coco')
-café_ponche = Recipe.create(name: 'Café CorrecciÃ³n Ponche')
+café_ponche = Recipe.create(name: 'Café Corrección Ponche')
 caipirinha = Recipe.create(name: 'Caipirinha')
-calvados = Recipe.create(name: 'Calvados Sidecar')
-canchã¡nchara = Recipe.create(name: 'CanchÃ¡nchara')
+calvados_sidecar = Recipe.create(name: 'Calvados Sidecar')
+canchánchara = Recipe.create(name: 'Canchánchara')
 canchanchara = Recipe.create(name: 'Canchanchara')
 candy = Recipe.create(name: 'Candy Cane Mimosa')
 cape = Recipe.create(name: 'Cape of Good Hope')
@@ -1207,7 +1207,7 @@ pina_colada = Recipe.create(name: 'Piña Colada')
 pink_gin = Recipe.create(name: 'Pink Gin')
 pink_lady = Recipe.create(name: 'Pink lady')
 pink_squirrel = Recipe.create(name: 'Pink Squirrel')
-pisco = Recipe.create(name: 'Pisco Sour')
+pisco_sour = Recipe.create(name: 'Pisco Sour')
 planters_punch = Recipe.create(name: "Planter's Punch")
 pomelomosa = Recipe.create(name: 'Pomelomosa')
 pomosa = Recipe.create(name: 'Pomosa')
@@ -1258,7 +1258,7 @@ sangrita = Recipe.create(name: 'Sangrita')
 saturn = Recipe.create(name: 'Saturn')
 sazerac = Recipe.create(name: 'Sazerac')
 scofflaw = Recipe.create(name: 'Scofflaw')
-scotch = Recipe.create(name: 'Scotch & Soda')
+scotch_soda = Recipe.create(name: 'Scotch & Soda')
 sea_breeze = Recipe.create(name: 'Sea Breeze')
 sea_breeze_cooler = Recipe.create(name: 'Sea Breeze Cooler')
 set = Recipe.create(name: 'Set the New Year on Fire')
@@ -1379,7 +1379,7 @@ bacardi.liquors << white
 bagrationi.liquors << brandy
 banana.liquors << aged_rum
 barbados.liquors << barbados_rum
-barracuda.liquors << gold
+barracuda.liquors << gold_rum
 batida.liquors << cachaça
 bear.liquors << gin
 bebbo.liquors << london_dry_gin
@@ -1412,7 +1412,7 @@ bordeaux.liquors << makers_mark
 bossa.liquors << leblon_cachaça_especial
 boston.liquors << smith_traditional_jamaica
 boulevardier.liquors << bourbon
-bourbon.liquors << bourbon
+bourbon_vanilla.liquors << bourbon
 bourbon_cider.liquors << bourbon
 bourbon_lancer.liquors << bourbon
 bourbon_lemonade.liquors << bulleit_bourbon
@@ -1435,8 +1435,8 @@ bulleit.liquors << bulleit_bourbon
 café.liquors << plantation_five_rum
 café_ponche.liquors << diplomatico_rum
 caipirinha.liquors << cachaça
-calvados.liquors << apple_brandy_calvados
-canchã¡nchara.liquors << white
+calvados_sidecar.liquors << apple_brandy_calvados
+canchánchara.liquors << white
 canchanchara.liquors << rum
 cape.liquors << bluecoat_gin
 cardamom.liquors << pistachio_vodka
@@ -1660,7 +1660,7 @@ piña.liquors << white
 pina_colada.liquors << light_rum
 pink_gin.liquors << gin
 pink_lady.liquors << gin
-pisco.liquors << pisco
+pisco_sour.liquors << pisco
 planters_punch.liquors << jamaican_rum
 pomelomosa.liquors << blanco
 pomosa.liquors << van_gogh_vodka
@@ -1850,7 +1850,7 @@ bordeaux.liquors_string << '2 fl oz of Maker’s Mark 46 Bourbon'
 bossa.liquors_string << '1.5 fl oz of Leblon Reserva Especial Cachaça '
 boston.liquors_string << '2 fl oz of Smith & Cross Traditional Jamaica Rum'
 boulevardier.liquors_string << '1.52 fl oz of Bourbon'
-bourbon.liquors_string << '6 fl oz of Bourbon'
+bourbon_vanilla.liquors_string << '6 fl oz of Bourbon'
 bourbon_cider.liquors_string << '2 fl oz of Bourbon'
 bourbon_lancer.liquors_string << '9 fl oz of Bourbon'
 bourbon_lemonade.liquors_string << '1.25 fl oz of Bulleit Bourbon'
@@ -1873,8 +1873,8 @@ bulleit.liquors_string << '1.5 fl oz of Bulleit Bourbon'
 café.liquors_string << '0.75 fl oz of Plantation Five-Year-Old Rum'
 café_ponche.liquors_string << '12 fl oz of Diplomático Añejo Rum'
 caipirinha.liquors_string << '2.03 fl oz of Cachaça'
-calvados.liquors_string << "1 fl oz of Apple Brandy (Boulard Hors d'Âge Calvados)"
-canchã¡nchara.liquors_string << '1.5 fl oz of White Rum'
+calvados_sidecar.liquors_string << "1 fl oz of Apple Brandy (Boulard Hors d'Âge Calvados)"
+canchánchara.liquors_string << '1.5 fl oz of White Rum'
 canchanchara.liquors_string << '2.03 fl oz of Rum'
 cape.liquors_string << '1 fl oz of Bluecoat Barrel-Finished Gin'
 cardamom.liquors_string << '1.5 fl oz of Pistachio-Fat-Washed Vodka'
@@ -2098,7 +2098,7 @@ piña.liquors_string << '1.69 fl oz of White Rum'
 pina_colada.liquors_string << '2 fl oz of Light Rum'
 pink_gin.liquors_string << '1 fl oz of Gin'
 pink_lady.liquors_string << '1.5 fl oz of Gin'
-pisco.liquors_string << '2.03 fl oz of Pisco'
+pisco_sour.liquors_string << '2.03 fl oz of Pisco'
 planters_punch.liquors_string << '1.52 fl oz of Jamaican Rum'
 pomelomosa.liquors_string << '1 fl oz of Blanco Tequila'
 pomosa.liquors_string << '1 fl oz of Van Gogh Pomegranate Vodka'
@@ -2413,7 +2413,7 @@ brandy_sangaree.liqueurs << port
 brave.liqueurs << kahlúa
 bronx.liqueurs << sweet_vermouth
 café_ponche.liqueurs << punt
-calvados.liqueurs << cointreau
+calvados_sidecar.liqueurs << cointreau
 cape.liqueurs << sandeman
 casino.liqueurs << maraschino
 cave.liqueurs << campari
@@ -2728,7 +2728,7 @@ brandy_sangaree.liqueurs_string << '1 fl oz of Port'
 brave.liqueurs_string << '0.5 fl oz of Kahlúa'
 bronx.liqueurs_string << '0.51 fl oz of Sweet Vermouth'
 café_ponche.liqueurs_string << '4 fl oz of Punt e Mes'
-calvados.liqueurs_string << '1 fl oz of Cointreau'
+calvados_sidecar.liqueurs_string << '1 fl oz of Cointreau'
 cape.liqueurs_string << '1 fl oz of Sandeman 20-year-old Tawny Porto'
 casino.liqueurs_string << '0.34 fl oz of Maraschino Luxardo'
 cave.liqueurs_string << '0.25 fl oz of Campari'
@@ -3379,7 +3379,7 @@ boozy.mixers << chopped_semisweet
 bordeaux.mixers << maple_syrup
 bossa.mixers << angostura_bitters
 boston.mixers << lemonade
-bourbon.mixers << vanilla_ice
+bourbon_vanilla.mixers << vanilla_ice
 bourbon_cider.mixers << cinnamon_vanilla
 bourbon_lancer.mixers << angostura_bitters
 bourbon_lemonade.mixers << lemonade
@@ -3398,8 +3398,8 @@ bronx.mixers << orange_juice
 brown.mixers << grapefruit_juice
 café.mixers << brewed_coffee
 caipirinha.mixers << wedged_lime
-calvados.mixers << cinnamon
-canchã¡nchara.mixers << juiced_lime
+calvados_sidecar.mixers << cinnamon
+canchánchara.mixers << juiced_lime
 candy.mixers << chocolate_bitters
 cardamom.mixers << brazilian_espresso
 casino.mixers << lemon_juice
@@ -3623,7 +3623,7 @@ pina_colada.mixers << cream_of_coconut
 pink_gin.mixers << water
 pink_lady.mixers << grenadine
 pink_squirrel.mixers << heavy_cream
-pisco.mixers << lemon_juice
+pisco_sour.mixers << lemon_juice
 planters_punch.mixers << lime_juice
 pomelomosa.mixers << juiced_lime
 ponche.mixers << piloncillo
@@ -3803,7 +3803,7 @@ boozy.mixers_string << '2 fl oz of Chopped Semisweet Chocolate'
 bordeaux.mixers_string << '1 tbsp of Maple Syrup'
 bossa.mixers_string << '2 dashes of Angostura Bitters'
 boston.mixers_string << 'Top up with Lemonade'
-bourbon.mixers_string << '3 cups of Vanilla Ice Cream'
+bourbon_vanilla.mixers_string << '3 cups of Vanilla Ice Cream'
 bourbon_cider.mixers_string << '0.75 fl oz of Cinnamon Vanilla Syrup'
 bourbon_lancer.mixers_string << '3 dashes of Angostura Bitters'
 bourbon_lemonade.mixers_string << '4 fl oz of Lemonade'
@@ -3822,8 +3822,8 @@ bronx.mixers_string << '0.51 fl oz of Orange Juice'
 brown.mixers_string << '1 fl oz of Grapefruit Juice'
 café.mixers_string << '1 fl oz of Brewed Coffee'
 caipirinha.mixers_string << '1 Wedged Lime'
-calvados.mixers_string << 'Cinnamon'
-canchã¡nchara.mixers_string << '1 Juiced Lime'
+calvados_sidecar.mixers_string << 'Cinnamon'
+canchánchara.mixers_string << '1 Juiced Lime'
 candy.mixers_string << '1 dash of Chocolate Bitters'
 cardamom.mixers_string << '1.5 fl oz of Brazilian Espresso'
 casino.mixers_string << '0.34 fl oz of Lemon Juice'
@@ -4047,7 +4047,7 @@ pina_colada.mixers_string << '1.5 fl oz of Cream of Coconut'
 pink_gin.mixers_string << '1 fl oz of Water'
 pink_lady.mixers_string << '1 dash of Grenadine'
 pink_squirrel.mixers_string << '1.5 fl oz of Heavy Cream'
-pisco.mixers_string << '1.01 fl oz of Lemon Juice'
+pisco_sour.mixers_string << '1.01 fl oz of Lemon Juice'
 planters_punch.mixers_string << '0.51 fl oz of Lime Juice'
 pomelomosa.mixers_string << '1 wedge of Juiced Lime'
 ponche.mixers_string << '12 fl oz of Piloncillo (Mexican-Style Unrefined Brown Sugar)'
@@ -4215,7 +4215,7 @@ bootstitch.mixers << agave_nectar
 boozy.mixers << heated_milk
 bordeaux.mixers << lemon_juice
 bossa.mixers << agave_nectar
-bourbon.mixers << whole_milk
+bourbon_vanilla.mixers << whole_milk
 bourbon_cider.mixers << lemon_juice
 bourbon_old_fashioned.mixers << angostura_bitters
 bourbon_rosemary_punch.mixers << honey_syrup
@@ -4230,8 +4230,8 @@ bulleit.mixers << lemon_juice
 café.mixers << almond_milk
 café_ponche.mixers << demerara_sugar
 caipirinha.mixers << sugar_
-calvados.mixers << sugar_
-canchã¡nchara.mixers << honey_syrup
+calvados_sidecar.mixers << sugar_
+canchánchara.mixers << honey_syrup
 canchanchara.mixers << lime_juice
 cardamom.mixers << cardamom_syrup
 casino.mixers << orange_bitters
@@ -4401,7 +4401,7 @@ piña.mixers << pineapple_juice
 pina_colada.mixers << pineapple_juice
 pink_gin.mixers << angostura_bitters
 pink_lady.mixers << egg_white
-pisco.mixers << simple_syrup
+pisco_sour.mixers << simple_syrup
 planters_punch.mixers << sugar_cane
 pomelomosa.mixers << himalayan_pink
 ponche.mixers << cinnamon
@@ -4544,7 +4544,7 @@ bootstitch.mixers_string << 'Agave Nectar'
 boozy.mixers_string << 'Heated Milk'
 bordeaux.mixers_string << 'Lemon Juice'
 bossa.mixers_string << 'Agave Nectar'
-bourbon.mixers_string << 'Whole Milk'
+bourbon_vanilla.mixers_string << 'Whole Milk'
 bourbon_cider.mixers_string << 'Lemon Juice'
 bourbon_old_fashioned.mixers_string << 'Angostura Bitters'
 bourbon_rosemary_punch.mixers_string << 'Honey Syrup'
@@ -4559,8 +4559,8 @@ bulleit.mixers_string << 'Lemon Juice'
 café.mixers_string << 'Almond Milk'
 café_ponche.mixers_string << 'Demerara Sugar'
 caipirinha.mixers_string << 'Sugar'
-calvados.mixers_string << 'Sugar'
-canchã¡nchara.mixers_string << 'Honey Syrup'
+calvados_sidecar.mixers_string << 'Sugar'
+canchánchara.mixers_string << 'Honey Syrup'
 canchanchara.mixers_string << 'Lime Juice'
 cardamom.mixers_string << 'Cardamom Syrup'
 casino.mixers_string << 'Orange Bitters'
@@ -4730,7 +4730,7 @@ piña.mixers_string << 'Pineapple Juice'
 pina_colada.mixers_string << 'Pineapple Juice'
 pink_gin.mixers_string << 'Angostura Bitters'
 pink_lady.mixers_string << 'Egg White'
-pisco.mixers_string << 'Simple Syrup'
+pisco_sour.mixers_string << 'Simple Syrup'
 planters_punch.mixers_string << 'Sugar Cane Juice'
 pomelomosa.mixers_string << 'Himalayan Pink salt and Tajín seasoning Mix (1:1)'
 ponche.mixers_string << 'Cinnamon'
@@ -4847,7 +4847,7 @@ bloody_mary.mixers << worcestershire_sauce
 blueberry.mixers << blueberries
 bootstitch.mixers << grapefruit_juice
 bordeaux.mixers << orange_bitters
-bourbon.mixers << chocolate_syrup
+bourbon_vanilla.mixers << chocolate_syrup
 bourbon_cider.mixers << apple_cider
 bourbon_old_fashioned.mixers << water
 bourbon_rosemary_punch.mixers << grapefruit_juice
@@ -4858,8 +4858,8 @@ brandy_sour.mixers << carbonated_water
 brazilian.mixers << aromatic_bitters
 bulleit.mixers << strawberry
 café_ponche.mixers << cold_brew_coffee
-calvados.mixers << lemon_juice
-canchã¡nchara.mixers << soda_water
+calvados_sidecar.mixers << lemon_juice
+canchánchara.mixers << soda_water
 canchanchara.mixers << honey
 cave.mixers << club_soda
 cbd_moscow_mule.mixers << ginger_beer
@@ -4962,7 +4962,7 @@ pegu.mixers << orange_bitters
 penicillin.mixers << ginger
 pho_king.mixers << lime_juice
 pina_colada.mixers << lime_juice
-pisco.mixers << egg_white
+pisco_sour.mixers << egg_white
 pomelomosa.mixers << grapefruit_juice
 ponche.mixers << whole_cloves
 porchlight.mixers << pebble_ice
@@ -5051,7 +5051,7 @@ bloody_mary.mixers_string << '3 dashes of Worcestershire Sauce'
 blueberry.mixers_string << '4 Blueberries'
 bootstitch.mixers_string << '1.5 fl oz of Grapefruit Juice'
 bordeaux.mixers_string << '5 dashes of Orange Bitters'
-bourbon.mixers_string << '6 tbsp of Chocolate Syrup'
+bourbon_vanilla.mixers_string << '6 tbsp of Chocolate Syrup'
 bourbon_cider.mixers_string << '1 fl oz of Apple Cider'
 bourbon_old_fashioned.mixers_string << '1 tsp of Water'
 bourbon_rosemary_punch.mixers_string << '6 fl oz of Grapefruit Juice'
@@ -5062,8 +5062,8 @@ brandy_sour.mixers_string << 'Top up with Carbonated Water'
 brazilian.mixers_string << '2 dashes of Aromatic Bitters'
 bulleit.mixers_string << '1 Strawberry'
 café_ponche.mixers_string << '8 fl oz of Cold-Brew Coffee'
-calvados.mixers_string << '1 fl oz of Lemon Juice'
-canchã¡nchara.mixers_string << '1 splash of Soda Water'
+calvados_sidecar.mixers_string << '1 fl oz of Lemon Juice'
+canchánchara.mixers_string << '1 splash of Soda Water'
 canchanchara.mixers_string << '0.51 fl oz of Honey'
 cave.mixers_string << '1 fl oz of Club Soda'
 cbd_moscow_mule.mixers_string << 'Top up with Ginger Beer'
@@ -5166,7 +5166,7 @@ pegu.mixers_string << '1 dash of Orange Bitters'
 penicillin.mixers_string << '3 slices of Ginger'
 pho_king.mixers_string << '0.25 fl oz of Lime Juice'
 pina_colada.mixers_string << '0.5 fl oz of Lime Juice'
-pisco.mixers_string << '1 Egg White'
+pisco_sour.mixers_string << '1 Egg White'
 pomelomosa.mixers_string << '2 fl oz of Grapefruit Juice'
 ponche.mixers_string << '5 fl oz of Whole Cloves'
 porchlight.mixers_string << '2.5 fl oz of Pebble Ice'
@@ -5289,7 +5289,7 @@ nui.mixers << vanilla_syrup
 old_cuban.mixers << mint
 pearl.mixers << angostura_bitters
 pho_king.mixers << mineral_saline
-pisco.mixers << aromatic_bitters
+pisco_sour.mixers << aromatic_bitters
 pomelomosa.mixers << lime_juice
 ponche.mixers << tamarind_paste
 port.mixers << grenadine
@@ -5381,7 +5381,7 @@ nui.mixers_string << '1 tsp of Vanilla Syrup'
 old_cuban.mixers_string << '8 leaves of Mint'
 pearl.mixers_string << '1 dash of Angostura Bitters'
 pho_king.mixers_string << '2 drops of Mineral Saline'
-pisco.mixers_string << '2 drops of Aromatic Bitters'
+pisco_sour.mixers_string << '2 drops of Aromatic Bitters'
 pomelomosa.mixers_string << '0.5 fl oz of Lime Juice'
 ponche.mixers_string << '1 tbsp of Tamarind Paste'
 port.mixers_string << '4.5 fl oz of Grenadine'
@@ -5628,8 +5628,8 @@ brown.garnishes << grapefruit
 bulleit.garnishes << lemon
 café_ponche.garnishes << orange
 caipirinha.garnishes << sugarcane
-calvados.garnishes << orange
-canchã¡nchara.garnishes << lime
+calvados_sidecar.garnishes << orange
+canchánchara.garnishes << lime
 canchanchara.garnishes << lime
 candy.garnishes << melted_chocolate
 cape.garnishes << grated_cinnamon
@@ -5974,8 +5974,8 @@ brown.garnishes_string << '1 twist of Grapefruit'
 bulleit.garnishes_string << '1 wheel of Lemon'
 café_ponche.garnishes_string << '2 peels of Orange'
 caipirinha.garnishes_string << '1 stick of Sugarcane'
-calvados.garnishes_string << '1 twist of Orange'
-canchã¡nchara.garnishes_string << '1 wedge of Lime'
+calvados_sidecar.garnishes_string << '1 twist of Orange'
+canchánchara.garnishes_string << '1 wedge of Lime'
 canchanchara.garnishes_string << '1 wedge of Lime'
 candy.garnishes_string << 'Melted Chocolate Chips'
 cape.garnishes_string << 'Grated Cinnamon'

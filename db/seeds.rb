@@ -723,14 +723,14 @@ fat_washed_four_roses = Liquor.create(name: "Fat-Washed Four Roses Bourbon", liq
 flor_rum = Liquor.create(name: "Flor de Caña 18-Year-Old Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 flor_grand_reserve_rum = Liquor.create(name: "Flor de Caña 7-Year-Old Grand Reserve Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 fortaleza = Liquor.create(name: "Fortaleza Still-Strength Blanco Tequila", liquor_type: "Tequila", description: "A distilled beverage made from the blue agave plant, primarily in the area surrounding the city of Tequila 65 km (40 mi) northwest of Guadalajara, and in the Jaliscan Highlands (Los Altos de Jalisco) of the central western Mexican state of Jalisco. The red volcanic soils in the region of Tequila are well suited for growing the blue agave, and more than 300 million of the plants are harvested there each year. Agave grows differently depending on the region. Blue agaves grown in the highlands Los Altos region are larger and sweeter in aroma and taste. Aside from its geographical distinction, tequila is differentiated from mezcal in that it is made only from blue agave and the beverages are prepared in different ways. Tequila is commonly served neat in Mexico and as a shot with salt and lime around the world. Tequila must have between 35- and 55-percent alcohol content (70 and 110 U.S. proof). It must contain at least 40-percent alcohol (80 U.S. proof) to be sold in the United States and Canada." , origin: "Mexico" , flavor: "Smoky, Spicy, Fruity", abv: "38–55% (usually 40%)", color: "Clear or Gold", ingredients: "Blue Agave")
-genever = Liquor.create(name: "Genever", liquor_type: "Genever", description: "The juniper-flavored traditional liquor in the Netherlands, Belgium and adjoining areas in northern France and northwestern Germany. The European Union regulations specify that only liquor made in these two countries, two northern French departments and two German federal states can use the name jenever/genever/genièvre. Gin was developed in Britain after introduction of jenever to the island. Jonge jenever has a neutral taste, like vodka, with a slight aroma of juniper and malt wine. Oude jenever has a smoother, very aromatic taste with malty flavours. Oude jenever is sometimes aged in wood; its malty, woody and smoky flavours resemble whisky. Different grains used in the production process – such as barley, wheat, spelt and rye – produce different flavoured jenevers. The taste is sometimes enhanced by adopting barrels previously used for American whiskey." , origin: "The Netherlands , flavor: "Neutral, Juniper", abv: "40-50%", color: "Clear", ingredients: "Juniper Berries")
+genever = Liquor.create(name: "Genever", liquor_type: "Genever", description: "The juniper-flavored traditional liquor in the Netherlands, Belgium and adjoining areas in northern France and northwestern Germany. The European Union regulations specify that only liquor made in these two countries, two northern French departments and two German federal states can use the name jenever/genever/genièvre. Gin was developed in Britain after introduction of jenever to the island. Jonge jenever has a neutral taste, like vodka, with a slight aroma of juniper and malt wine. Oude jenever has a smoother, very aromatic taste with malty flavours. Oude jenever is sometimes aged in wood; its malty, woody and smoky flavours resemble whisky. Different grains used in the production process – such as barley, wheat, spelt and rye – produce different flavoured jenevers. The taste is sometimes enhanced by adopting barrels previously used for American whiskey." , origin: "The Netherlands" , flavor: "Neutral, Juniper", abv: "40-50%", color: "Clear", ingredients: "Juniper Berries")
 george = Liquor.create(name: "George Apple Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries)")
 george_dickel = Liquor.create(name: "George Dickel Superior No. 12 Tennessee Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
 gin = Liquor.create(name: "Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
 gin_or_vodka = Liquor.create(name: "Gin or Vodka", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
 glenfiddich = Liquor.create(name: "Glenfiddich 12-Year-Old Single Malt Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients: "Malted Barley")
 glenlivet = Liquor.create(name: "Glenlivet 12-Year Scotch", liquor_type: "Scotch", description: "Malt whisky or grain whisky (or a blend of the two), made in Scotland. Scotch whisky must be made in a manner specified by law. As of 2018, there were 133 Scotch whisky distilleries operating in Scotland. All Scotch whisky must be aged in oak barrels for at least three years. Any age statement on a bottle of Scotch whisky, expressed in numerical form, must reflect the age of the youngest whisky used to produce that product. A whisky with an age statement is known as guaranteed-age whisky. A whisky without an age statement is known as a no age statement (NAS) whisky, the only guarantee being that all whisky contained in that bottle is at least three years old. The minimum bottling strength according to the regulation is 40% alcohol by volume." , origin: "Scotland" , flavor: "Smoky, Spicy, Fruity", abv: "40–63.5%", color: "Brown", ingredients:"Malted Barley")
-gold = Liquor.create(name: "Gold Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
+gold_rum = Liquor.create(name: "Gold Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 gold_virgin_islands_rum = Liquor.create(name: "Gold Virgin Islands Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 gosling_black_rum = Liquor.create(name: "Gosling’s Black Seal Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 hendricks_gin = Liquor.create(name: "Hendrick’s Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
@@ -866,7 +866,7 @@ apple_cranberry_moscow_mule = Recipe.create(name: 'Apple Cranberry Moscow Mule')
 apple_toddy = Recipe.create(name: 'Apple Toddy')
 applejack = Recipe.create(name: 'Applejack Rabbit')
 apricot = Recipe.create(name: 'Apricot Ginger Whiskey Sour')
-aquavit = Recipe.create(name: 'Aquavit Buck')
+aquavit_buck = Recipe.create(name: 'Aquavit Buck')
 astro = Recipe.create(name: 'Astro pop')
 autumn = Recipe.create(name: 'Autumn Wassail')
 aviation = Recipe.create(name: 'Aviation')
@@ -1044,7 +1044,7 @@ gin_fizz = Recipe.create(name: 'Gin fizz')
 ginger_ale_highball = Recipe.create(name: 'Ginger Ale Highball')
 ginger_fever_punch = Recipe.create(name: 'Ginger Fever Punch')
 godfather = Recipe.create(name: 'Godfather')
-gold = Recipe.create(name: 'Gold Rush')
+gold_rush = Recipe.create(name: 'Gold Rush')
 golden__dream = Recipe.create(name: 'Golden dream')
 golden_cadillac = Recipe.create(name: 'Golden Cadillac')
 golden_dew = Recipe.create(name: 'Golden Dew')
@@ -1371,7 +1371,7 @@ apple_cranberry_moscow_mule.liquors << vodka
 apple_toddy.liquors << applejack_bourbon
 applejack.liquors << lairds_bonded_apple
 apricot.liquors << bourbon_rye_scotch
-aquavit.liquors << aquavit
+aquavit_buck.liquors << aquavit
 autumn.liquors << louis_royer
 aviation.liquors << gin
 b.liquors << cognac
@@ -1523,7 +1523,7 @@ gin_fizz.liquors << gin
 ginger_ale_highball.liquors << rye
 ginger_fever_punch.liquors << blanco
 godfather.liquors << blended
-gold.liquors << bourbon
+gold_rush.liquors << bourbon
 golden_dew.liquors << hwayo
 golden_purl.liquors << leopolds_gin
 grave.liquors << vanilla_brandy
@@ -1548,7 +1548,7 @@ honey.liquors << bottled_in_bourbon
 horn.liquors << el_jimador
 horses_neck.liquors << brandy
 hot_blooded.liquors << rye
-hot_buttered_rum.liquors << gold
+hot_buttered_rum.liquors << gold_rum
 hot_toddy.liquors << bourbon_rye_scotch
 hummer.liquors << vodka
 hurricane.liquors << light_rum
@@ -1961,7 +1961,7 @@ gin_fizz.liquors_string << '1.52 fl oz of Gin'
 ginger_ale_highball.liquors_string << '1.5 fl oz of Rye Whiskey'
 ginger_fever_punch.liquors_string << '1.5 fl oz of Blanco Tequila'
 godfather.liquors_string << '2 fl oz of Blended Scotch'
-gold.liquors_string << '2 fl oz of Bourbon'
+gold_rush.liquors_string << '2 fl oz of Bourbon'
 golden_dew.liquors_string << '2 fl oz of Hwayo 41° Soju'
 golden_purl.liquors_string << "1.5 fl oz of Leopold’s American Small-Batch Gin"
 grave.liquors_string << '1.5 fl oz of Vanilla Brandy'
@@ -2234,7 +2234,7 @@ angel.liquors << apricot
 another.liquors << don
 apricot.liquors << apricot
 autumn.liquors << santa
-bermuda.liquors << gold
+bermuda.liquors << gold_rum
 between.liquors << cognac
 big_red_sun.liquors << powers
 blue_hawaii.liquors << vodka
@@ -3482,7 +3482,7 @@ gin_and_tonic.mixers << tonic_water
 gin_fizz.mixers << lemon_juice
 ginger_ale_highball.mixers << ginger_ale
 ginger_fever_punch.mixers << lime_juice
-gold.mixers << honey_syrup
+gold_rush.mixers << honey_syrup
 golden__dream.mixers << orange_juice
 golden_cadillac.mixers << half_and_half
 golden_dew.mixers << chamoe_juice
@@ -3906,7 +3906,7 @@ gin_and_tonic.mixers_string << '4 fl oz of Tonic Water'
 gin_fizz.mixers_string << '1.01 fl oz of Lemon Juice'
 ginger_ale_highball.mixers_string << 'Top up with Ginger Ale'
 ginger_fever_punch.mixers_string << '0.75 fl oz of Lime Juice'
-gold.mixers_string << '1 fl oz of Honey Syrup'
+gold_rush.mixers_string << '1 fl oz of Honey Syrup'
 golden__dream.mixers_string << '0.68 fl oz of Orange Juice'
 golden_cadillac.mixers_string << '0.68 fl oz of Half and Half'
 golden_dew.mixers_string << '2.5 fl oz of Chamoe Juice (or Honeydew Juice)'
@@ -4296,7 +4296,7 @@ frozen_daiquiri.mixers << simple_syrup
 gimlet.mixers << simple_syrup
 gin_fizz.mixers << simple_syrup
 ginger_fever_punch.mixers << pomegranate_juice
-gold.mixers << lemon_juice
+gold_rush.mixers << lemon_juice
 golden__dream.mixers << fresh_cream
 golden_dew.mixers << lemon_juice
 golden_purl.mixers << maple_syrup
@@ -4625,7 +4625,7 @@ frozen_daiquiri.mixers_string << 'Simple Syrup'
 gimlet.mixers_string << 'Simple Syrup'
 gin_fizz.mixers_string << 'Simple Syrup'
 ginger_fever_punch.mixers_string << 'Pomegranate Juice'
-gold.mixers_string << 'Lemon Juice'
+gold_rush.mixers_string << 'Lemon Juice'
 golden__dream.mixers_string << 'Fresh Cream'
 golden_dew.mixers_string << 'Lemon Juice'
 golden_purl.mixers_string << 'Maple Syrup'
@@ -5699,7 +5699,7 @@ gimlet.garnishes << lime
 gin_and_tonic.garnishes << lime
 gin_fizz.garnishes << lemon
 ginger_fever_punch.garnishes << pomegranate_seeds
-gold.garnishes << lemon
+gold_rush.garnishes << lemon
 golden_dew.garnishes << chamoe_or
 golden_gate_spritz.garnishes << grapefruit
 golden_purl.garnishes << orange
@@ -6045,7 +6045,7 @@ gimlet.garnishes_string << '1 wheel of Lime'
 gin_and_tonic.garnishes_string << '2 wheels of Lime'
 gin_fizz.garnishes_string << '1 slice of Lemon'
 ginger_fever_punch.garnishes_string << 'Pomegranate Seeds'
-gold.garnishes_string << '1 peel of Lemon'
+gold_rush.garnishes_string << '1 peel of Lemon'
 golden_dew.garnishes_string << '1 slice of Chamoe or Honeydew'
 golden_gate_spritz.garnishes_string << '1 wedge of Grapefruit'
 golden_purl.garnishes_string << '1 peel of Orange'

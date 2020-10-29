@@ -327,7 +327,7 @@ maraschino_cherry_mixer = Mixer.create(name: "Maraschino Cherry")
 milk = Mixer.create(name: "Milk")
 mineral_saline = Mixer.create(name: "Mineral Saline")
 mineral_water = Mixer.create(name: "Mineral Water")
-mint = Mixer.create(name: "Mint")
+mint_mixer = Mixer.create(name: "Mint")
 mint_extract = Mixer.create(name: "Mint Extract")
 mint_simple = Mixer.create(name: "Mint Simple Syrup")
 mole_bitters = Mixer.create(name: "Mole Bitters")
@@ -718,7 +718,7 @@ fat_washed_four_roses = Liquor.create(name: "Fat-Washed Four Roses Bourbon", liq
 flor_grand_reserve_rum = Liquor.create(name: "Flor de Caña 7-Year-Old Grand Reserve Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 flor_rum = Liquor.create(name: "Flor de Caña 18-Year-Old Rum", liquor_type: "Rum", description: "A liquor made by fermenting then distilling sugarcane molasses or sugarcane juice. The distillate, a clear liquid, is usually aged in oak barrels. Most rums are produced in Caribbean and American countries, but also in other sugar-producing countries, such as the Philippines and India.Rums are produced in various grades. Light rums are commonly used in cocktails, whereas 'golden' and 'dark' rums were typically consumed straight or neat, iced ('on the rocks'), or used for cooking, but are now commonly consumed with mixers. Premium rums are made to be consumed either straight or iced." , origin: "The Caribbean" , flavor: "Sweet, Toasted Sugar", abv: "37.5–80% (usually 40%)", color: nil, ingredients: "Sugarcane")
 fortaleza = Liquor.create(name: "Fortaleza Still-Strength Blanco Tequila", liquor_type: "Tequila", description: "A distilled beverage made from the blue agave plant, primarily in the area surrounding the city of Tequila 65 km (40 mi) northwest of Guadalajara, and in the Jaliscan Highlands (Los Altos de Jalisco) of the central western Mexican state of Jalisco. The red volcanic soils in the region of Tequila are well suited for growing the blue agave, and more than 300 million of the plants are harvested there each year. Agave grows differently depending on the region. Blue agaves grown in the highlands Los Altos region are larger and sweeter in aroma and taste. Aside from its geographical distinction, tequila is differentiated from mezcal in that it is made only from blue agave and the beverages are prepared in different ways. Tequila is commonly served neat in Mexico and as a shot with salt and lime around the world. Tequila must have between 35- and 55-percent alcohol content (70 and 110 U.S. proof). It must contain at least 40-percent alcohol (80 U.S. proof) to be sold in the United States and Canada." , origin: "Mexico" , flavor: "Smoky, Spicy, Fruity", abv: "38–55% (usually 40%)", color: "Clear or Gold", ingredients: "Blue Agave")
-genever = Liquor.create(name: "Genever", liquor_type: "Genever", description: "The juniper-flavored traditional liquor in the Netherlands, Belgium and adjoining areas in northern France and northwestern Germany. The European Union regulations specify that only liquor made in these two countries, two northern French departments and two German federal states can use the name jenever/genever/genièvre. Gin was developed in Britain after introduction of jenever to the island. Jonge jenever has a neutral taste, like vodka, with a slight aroma of juniper and malt wine. Oude jenever has a smoother, very aromatic taste with malty flavours. Oude jenever is sometimes aged in wood; its malty, woody and smoky flavours resemble whisky. Different grains used in the production process – such as barley, wheat, spelt and rye – produce different flavoured jenevers. The taste is sometimes enhanced by adopting barrels previously used for American whiskey." , origin: "The Netherlands , flavor: "Neutral, Juniper", abv: "40-50%", color: "Clear", ingredients: "Juniper Berries")
+genever = Liquor.create(name: "Genever", liquor_type: "Genever", description: "The juniper-flavored traditional liquor in the Netherlands, Belgium and adjoining areas in northern France and northwestern Germany. The European Union regulations specify that only liquor made in these two countries, two northern French departments and two German federal states can use the name jenever/genever/genièvre. Gin was developed in Britain after introduction of jenever to the island. Jonge jenever has a neutral taste, like vodka, with a slight aroma of juniper and malt wine. Oude jenever has a smoother, very aromatic taste with malty flavours. Oude jenever is sometimes aged in wood; its malty, woody and smoky flavours resemble whisky. Different grains used in the production process – such as barley, wheat, spelt and rye – produce different flavoured jenevers. The taste is sometimes enhanced by adopting barrels previously used for American whiskey." , origin: "The Netherlands" , flavor: "Neutral, Juniper", abv: "40-50%", color: "Clear", ingredients: "Juniper Berries")
 george = Liquor.create(name: "George Apple Brandy", liquor_type: "Fruit Brandy", description: "Fruit spirit (or fruit brandy) is a distilled beverage produced from mash, juice, wine or residues of edible fruits. The term covers a broad class of spirits produced across the world, and typically excludes beverages made from grapes, which are referred to as plain brandy (when made from distillation from wine) or pomace brandy (when made directly from grape pomace). Apples, pears, apricots, plums and cherries are the most commonly used fruits." , origin: nil , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Varies", ingredients: "Fruit (Apples, Pears, Apricots, Plums, or Cherries) ")
 george_dickel = Liquor.create(name: "George Dickel Superior No. 12 Tennessee Whiskey", liquor_type: "Whiskey", description: "A type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak." , origin: "Ancient Mesopotamia (Possibly)" , flavor: "Smoky, Sweet, Spicy, or Nutty", abv: "40–68% (usually 40%, 43% or 46%)", color: nil, ingredients: "Grains (Corn, Rye, Barley, or Wheat)")
 gin = Liquor.create(name: "Gin", liquor_type: "Gin", description: "A distilled alcoholic drink that derives its predominant flavour from juniper berries. Gin originated as a medicinal liquor made by monks and alchemists across Europe, particularly in Southern France, Flanders and the Netherlands, to provide aqua vita from distillates of grapes and grains. It then became an object of commerce in the spirits industry. Gin emerged in England after the introduction of the jenever, a Dutch and Belgian liquor that was originally a medicine." , origin: "The Netherlands" , flavor: "Herbal, Piney", abv: "37.5–50%", color: "Clear, ingredients:Juniper Berries")
@@ -848,7 +848,7 @@ absolut_lime_drop = Recipe.create(name: 'Absolut Lime Drop')
 absolut_moscow_mule = Recipe.create(name: 'Absolut Moscow Mule')
 airmail = Recipe.create(name: 'Airmail Punch')
 alabama = Recipe.create(name: 'Alabama Slammer')
-alligator = Recipe.create(name: 'L'Alligator C'Est Vert')
+alligator = Recipe.create(name: "L'Alligator C'Est Vert")
 amaretto_french = Recipe.create(name: 'Amaretto French 75')
 amaretto_sour = Recipe.create(name: 'Amaretto Sour')
 amber = Recipe.create(name: 'Amber Moon')
@@ -1057,7 +1057,7 @@ guinnessfloat = Recipe.create(name: 'Guinness Chocolate Float')
 half = Recipe.create(name: 'Half Moon Bay')
 hanalei = Recipe.create(name: 'Hanalei Sun')
 hanky = Recipe.create(name: 'Hanky Panky')
-harry_potter_butter = Recipe.create(name: ''Harry Potter' Butterbeer')
+harry_potter_butter = Recipe.create(name: "'Harry Potter' Butterbeer")
 harvey = Recipe.create(name: 'Harvey Wallbanger')
 heated = Recipe.create(name: 'Heated Affair')
 hemingway_daiquiri = Recipe.create(name: 'Hemingway Daiquiri')
@@ -1092,7 +1092,7 @@ irish_maid = Recipe.create(name: 'Irish Maid')
 irish_raktajino = Recipe.create(name: 'Irish Raktajino')
 island = Recipe.create(name: 'Island Oasis')
 jack = Recipe.create(name: 'Jack Rose')
-jack_o_lantern = Recipe.create(name: 'Jack-o'-Lantern Punch')
+jack_o_lantern = Recipe.create(name: "Jack-o'-Lantern Punch")
 jager_old_fashioned = Recipe.create(name: 'Jägermeister Old Fashioned')
 japanese = Recipe.create(name: 'Japanese Sour')
 jingle = Recipe.create(name: 'Jingle Ball')
@@ -1195,7 +1195,7 @@ pegu = Recipe.create(name: 'Pegu Club')
 penicillin = Recipe.create(name: 'Penicillin')
 phoking = Recipe.create(name: 'Pho-King Champ')
 picon = Recipe.create(name: 'Picon Punch')
-pimms = Recipe.create(name: "Pimm's Cup")
+pimmscup = Recipe.create(name: "Pimm's Cup")
 piña = Recipe.create(name: 'Piña Colada')
 pina_colada = Recipe.create(name: 'Piña Colada')
 pink_gin = Recipe.create(name: 'Pink Gin')
@@ -1332,7 +1332,7 @@ washington_apple_shot = Recipe.create(name: 'Washington Apple Shot')
 waterfront = Recipe.create(name: 'Waterfront Cooler')
 watermelon_blackberry = Recipe.create(name: 'Watermelon-Blackberry Margarita Popsicles')
 watermelon_spritzer = Recipe.create(name: 'Watermelon White Wine Spritzer')
-whats_up = Recipe.create(name: 'What's Up, Doc')
+whats_up = Recipe.create(name: "What's Up, Doc")
 where = Recipe.create(name: 'Where No Man Has Gone Before')
 whiskey_in_church = Recipe.create(name: 'Whiskey in Church')
 whiskey_mac = Recipe.create(name: 'Whiskey Mac')
@@ -2828,7 +2828,7 @@ clover.mixers << raspberry_syrup
 cobra.mixers << aromatic_tonic
 cobras.mixers << orange_juice
 coco.mixers << condensed_milk 
-cojito.mixers << mint
+cojito.mixers << mint_mixer
 conflict.mixers << agave_nectar
 coquito.mixers << evaporated_milk
 corpse_reviver_two_one_two.mixers << cold_brew_coffee
@@ -3126,7 +3126,7 @@ chocomole.mixers << agave_nectar
 clover.mixers << egg_white
 cobras.mixers << fassionola_syrup
 coco.mixers << simple_syrup
-cojito.mixers << mint
+cojito.mixers << mint_mixer
 conflict.mixers << jalapeño_pepper_mixer
 coquito.mixers << cream_of_coconut
 corpse_reviver_two_one_two.mixers << palm_sugar
@@ -3149,7 +3149,7 @@ forest.mixers << seltzer
 francophile.mixers << water
 french_harvest.mixers << sparkling_cider
 frisky.mixers << angostura_mixer
-frohito.mixers << mint
+frohito.mixers << mint_mixer
 gin_fizz.mixers << soda_water
 ginger_fever_punch.mixers << grapefruit_juice
 golden_dew.mixers << honey_syrup
@@ -3193,8 +3193,8 @@ mexican.mixers << quartered_orange
 mezcal_mule.mixers << agave_nectar
 miami.mixers << simple_syrup
 millionaire.mixers << egg_white
-mint_julep.mixers << mint
-mojito.mixers << mint
+mint_julep.mixers << mint_mixer
+mojito.mixers << mint_mixer
 moment.mixers << yerba_mate
 mule.mixers << ginger_beer
 mutual.mixers << demerara_syrup
@@ -3247,7 +3247,7 @@ singapore.mixers << lime_juice
 singapura.mixers << orange_juice
 smoked.mixers << hot_water
 sourmidori.mixers << soda_water
-southside.mixers << mint
+southside.mixers << mint_mixer
 spiced_eggnog.mixers << whole_milk
 spicy_mint.mixers << salt
 strawberry_daiquiri.mixers << large_strawberries
@@ -3337,7 +3337,7 @@ mezcal_mule.mixers << ginger_beer
 miami.mixers << cream_of_coconut
 mutual.mixers << angostura_mixer
 nui.mixers << vanilla_syrup
-old_cuban.mixers << mint
+old_cuban.mixers << mint_mixer
 pearl.mixers << angostura_mixer
 phoking.mixers << mineral_saline
 pisco_sour.mixers << aromatic_bitters
@@ -3371,7 +3371,7 @@ vida.mixers << club_soda
 waterfront.mixers << orange_mixer
 whiskey_smashed.mixers << lime_juice
 white_summer.mixers << celery_salt
-yerba.mixers << mint
+yerba.mixers << mint_mixer
 zombie.mixers << angostura_mixer
 absinthe_suisse.mixers << soda_water
 aperitivo.mixers << sparkling_water

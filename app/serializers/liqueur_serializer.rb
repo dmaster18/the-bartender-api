@@ -1,5 +1,5 @@
-class LiqueursSerializer
+class LiqueurSerializer
   include FastJsonapi::ObjectSerializer
   attributes :name, :description, :origin, :flavor
-  has_many :recipes
+  has_many :recipes, serializer: RecipeSerializer
 end

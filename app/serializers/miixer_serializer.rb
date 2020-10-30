@@ -1,4 +1,4 @@
-class LiquorSerializer
+class MiixerSerializer
   include FastJsonapi::ObjectSerializer
   attributes 
 end

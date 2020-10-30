@@ -4,5 +4,5 @@ class RecipeSerializer
   has_many :mixers
   has_many :garnishes
   has_many :liquors
-  has_many :liqueur
+  has_many :liqueurs
 end

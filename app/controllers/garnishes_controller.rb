@@ -12,5 +12,4 @@ class GarnishesController < ApplicationController
     render json: GarnishSerializer.new(garnish, options)
   end
 
-
 end

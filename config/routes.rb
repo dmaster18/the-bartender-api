@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   resources :ingedients
   resources :recipes
   resources :users
-  
+
+  get '/patients/:id', to: 'patients#show'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -1,16 +1,15 @@
 class LiquorsController < ApplicationController
   def index
-    recipes = Recipe.all
-    render json: RecipeSerializer.new(recipes)
+    liquors = Liquor.all
+    render json: LiqueurSerializer.new(liquors)
   end
 
   def show
-    recipe = Recipe.find_by(id: params[:id])
+    liquor = Liquor.find_by(id: params[:id])
     options = {
-      include: [:mixers, :garnishes, :liquors, :liqueurs]
+      include: [:recipes]
     }
-    render json: RecipeSerializer.new(recipe, options)
+    render json: LiqueurSerializer.new(liquor, options)
   end
-
 
 end

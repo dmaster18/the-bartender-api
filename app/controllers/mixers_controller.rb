@@ -1,16 +1,15 @@
 class MixersController < ApplicationController
   def index
-    recipes = Recipe.all
-    render json: RecipeSerializer.new(recipes)
+    mixers = Mixer.all
+    render json: MixerSerializer.new(mixers)
   end
 
   def show
-    recipe = Recipe.find_by(id: params[:id])
+    mixer = Mixer.find_by(id: params[:id])
     options = {
-      include: [:mixers, :garnishes, :liquors, :liqueurs]
+      include: [:recipes]
     }
-    render json: RecipeSerializer.new(recipe, options)
+    render json: MixerSerializer.new(mixer, options)
   end
-
 
 end

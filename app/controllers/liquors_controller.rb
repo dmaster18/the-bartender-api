@@ -1,7 +1,7 @@
 class LiquorsController < ApplicationController
   def index
     liquors = Liquor.all
-    render json: LiqueurSerializer.new(liquors)
+    render json: LiquorSerializer.new(liquors)
   end
 
   def show
@@ -9,7 +9,7 @@ class LiquorsController < ApplicationController
     options = {
       include: [:recipes]
     }
-    render json: LiqueurSerializer.new(liquor, options)
+    render json: LiquorSerializer.new(liquor, options)
   end
 
 end

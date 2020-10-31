@@ -6,7 +6,7 @@ function fetchRecipes() {
 }
 
 function renderRecipes(json) {
-  const recipes = document.querySelector('pre').innerText
+  const recipes = JSON.parse(document.querySelector('pre').innerText)
   json.forEach(recipe => {
     const p = document.createElement('p')
     p.innerHTML = `<p>${recipe.name}</p>`

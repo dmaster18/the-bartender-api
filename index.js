@@ -1,5 +1,5 @@
 function fetchRecipes() {
-  recipes_url = "http://localhost:3000/recipes"
+  const recipes_url = "http://localhost:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => renderRecipes(json))

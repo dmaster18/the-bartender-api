@@ -15,9 +15,11 @@ function renderRecipes(json) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed')
+  console.log('DOM fully loaded and parsed');
   fetchRecipes();
 })
+
+
 
 /*function recipeCard(json){
   json.forEach(recipe => {
@@ -52,6 +54,4 @@ function liqueurCorrect?(question) {
   } else {
     liqueurElement.style.backgroundColor = "red"
   }
-}*/
-
-}
+}}*/

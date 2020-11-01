@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchRecipes();
 })
 
-function recipeCard(json){
+/*function recipeCard(json){
   json.forEach(recipe => {
     const recipeCard = document.createElement("div.card")
     recipeCard.innerHTML = `<div.container><h2><b>${recipe.name}</b></h2><p>${liquorsElement}</p><p>liqueursElement</p><p>mixersElement</p><p>garnishesElement</p></div>`
@@ -52,6 +52,6 @@ function liqueurCorrect?(question) {
   } else {
     liqueurElement.style.backgroundColor = "red"
   }
-}
+}*/
 
 }

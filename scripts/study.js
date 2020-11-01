@@ -29,9 +29,9 @@ function renderRecipeCards(json){
       recipeCard.appendChild(mixersElement);
     }
     if (recipe.attributes.garnishes) {
-      const garnishes = recipe.attributes.garnishes.forEach(garnish => `<li.garnish>${garnish.name}</li>`);
+      const garnishes = recipe.attributes.garnishes.forEach(garnish => garnishesElement.appendChild(`<li.garnish>${garnish.name}</li>`));
       const garnishesElement = document.createElement('p.garnishes')
-      garnishesElement.innerHTML = `<b><u>Garnishes:</u> </b><ol>${garnishes}</ol>`;
+      garnishesElement.innerHTML = `<b><u>Garnishes:</u> </b><ol>${garnish_array}</ol>`;
       recipeCard.appendChild(garnishesElement);
     }
     main.appendChild(recipeCard);

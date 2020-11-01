@@ -1,10 +1,10 @@
 class RecipesController < ApplicationController
   def index
     recipes = Recipe.all
-    #options = {
-    #  include: [:mixers, :garnishes, :liquors, :liqueurs]
-    #}
-    render json: RecipeSerializer.new(recipes)
+    options = {
+      include: [:mixers, :garnishes, :liquors, :liqueurs]
+    }
+    render json: RecipeSerializer.new(recipes, options)
   end
 
   def show

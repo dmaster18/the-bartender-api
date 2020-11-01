@@ -44,4 +44,14 @@ function liquorCorrect?(question) {
   }
 }
 
+function liqueurCorrect?(question) {
+  const recipeCard = document.querySelector("div.card")
+  liqueurElement = document.querySelector("li.liqueur")
+  if (recipe.liqueurs.includes(user_input) {
+    liqueurElement.style.backgroundColor = "green"
+  } else {
+    liqueurElement.style.backgroundColor = "red"
+  }
+}
+
 }

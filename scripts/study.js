@@ -24,7 +24,7 @@ function renderRecipeCards(json) {
     }
     if (recipe.attributes.liqueurs) {
       const liqueursTitle = document.createElement('h4.liqueursTitle')
-      liqueursTitle.innerHTML = '<b><u>Garnishes</u></b>'
+      liqueursTitle.innerHTML = '<b><u>Liqueurs</u></b>'
       recipeCard.appendChild(liqueursTitle)
       const liqueursElement = document.createElement('ul.liqueurs')
       const liqueurs = recipe.attributes.liqueurs.forEach( liqueur =>
@@ -36,7 +36,7 @@ function renderRecipeCards(json) {
     }
     if (recipe.attributes.mixers) {
       const mixersTitle = document.createElement('h4.mixersTitle')
-      mixersTitle.innerHTML = '<b><u>Garnishes</u></b>'
+      mixersTitle.innerHTML = '<b><u>Mixers</u></b>'
       recipeCard.appendChild(mixersTitle)
       const mixersElement = document.createElement('ul.mixers')
       const mixers = recipe.attributes.mixers.forEach( mixer =>

@@ -6,10 +6,9 @@ function fetchRecipes() {
 }
 
 function renderRecipes(json) {
-  const recipes = JSON.parse(json.querySelector('pre').innerText)
-  json.forEach(recipe => {
+  JSON.parse(json.querySelector('pre').innerText)["data"].forEach(recipe => {
     const p = document.createElement('p')
-    p.innerHTML = `<p>${recipe.name}</p>`
+    p.innerHTML = `<p>${recipe.attributes.name}</p>`
     main.appendChild(p)
   })
 }

@@ -8,7 +8,7 @@ function fetchRecipes() {
 function renderRecipeCards(json){
   json["data"].forEach(recipe => {
     const main = document.querySelector('main')
-    const recipeCard = document.createElement("div.card")
+    const recipeCard = document.createElement('div.card')  
     recipeCard.innerHTML = `<div.container><h2><b>${recipe.attributes.name}</b></h2></div>`
     if (recipe.attributes.liquors) {
       const liquors = recipe.attributes.liquors.forEach(liquor => `<li.liquor>${liquor}</li>`)

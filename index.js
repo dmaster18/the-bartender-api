@@ -1,13 +1,14 @@
 function fetchRecipes() {
-  const recipes_url = "http://localhost:3000/recipes"
+  const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => renderRecipes(json))
 }
 
 function renderRecipes(json) {
-  JSON.parse(json.querySelector('pre').innerText)["data"].forEach(recipe => {
+  json["data"].forEach(recipe => {
     const p = document.createElement('p')
+    const main = document.querySelector('main')
     p.innerHTML = `<p>${recipe.attributes.name}</p>`
     main.appendChild(p)
   })

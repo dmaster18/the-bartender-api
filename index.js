@@ -22,9 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
 function recipeCard(json){
   json.forEach(recipe => {
     const recipeCard = document.createElement("div.card")
-    recipeCard.innerHTML = `<div.container><h2><b>${recipe.name}</b></h2></div>`
-    const liquorElement = `<p><b>Liquors:</b><ol>${liquors}</ol></p>`
+    recipeCard.innerHTML = `<div.container><h2><b>${recipe.name}</b></h2><p>${liquorsElement}</p><p>liqueursElement</p><p>mixersElement</p><p>garnishesElement</p></div>`
+    const liquorsElement = `<p><b><u>Liquors:</u></b><ol>${liquors}</ol></p>`
     const liquors = recipe.liquors.forEach(liquor => `<li>${liquor}</li>`)
+    const liqueursElement = `<p><b><u>Liqueurs:</u></b><ol>${liqueurs}</ol></p>`
+    const liqueurs = recipe.liqueurs.forEach(liqueur => `<li>${liqueur}</li>`)
+    const mixersElement = `<p><b><u>Mixers:</u></b><ol>${mixers}</ol></p>`
+    const mixers = recipe.mixers.forEach(mixer => `<li>${mixer}</li>`)
+    const garnishesElement = `<p><b><u>Garnishes:</u></b><ol>${garnishes}</ol></p>`
+    const garnishes = recipe.garnishes.forEach(garnish => `<li>${garnish}</li>`)
   })
 }
 

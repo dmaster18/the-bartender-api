@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
 const recipeCard(json){
 
   json.forEach(recipe=> {
-    const recipeCard = document.createElement()
+    const recipeCard = document.createElement("div.card")
+    recipeCard.innerHTML = `<div.container><h2><b>${recipe.name}</b></h2></div>`
 
 
 
@@ -36,6 +37,8 @@ const recipeCard(json){
     </div>
   </div>
 
+
+  header.innerHTML = "<h1>Poodles!</h1><h3>An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a post-Frankfurt School Appropriationist Perspective</h3><p><em>By: Byron Q. Poodle, Esq., BA.</em></p>";
 
 
 }

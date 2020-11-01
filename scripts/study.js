@@ -63,10 +63,10 @@ function renderIngredientCards(json) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
   fetchIngredients();
-})
+})*/
 
 function fetchRecipes() {
   const recipes_url = "http://127.0.0.1:3000/recipes"

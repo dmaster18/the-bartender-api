@@ -19,4 +19,7 @@ class Recipe < ApplicationRecord
   serialize :liqueurs_string, Array
   serialize :mixers_string, Array
   serialize :garnishes_string, Array
+
+  accepts_nested_attributes_for :liquors, :liqueurs, :mixers, :garnishes
+
 end

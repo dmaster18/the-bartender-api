@@ -1,13 +1,13 @@
-fetchRecipeCards() {
+function fetchRecipes() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => renderRecipeCards(json))
 }
 
-function renderRecipeCards(json){
-  json["data"].forEach(recipe => {
-    const main = document.querySelector('main')
+function renderRecipeCards(json) {
+  json["data"].forEach(recipe =>
+    {const main = document.querySelector('main')
     const recipeCard = document.createElement('div.card')
     recipeCard.innerHTML = `<div.container><h2><b>${recipe.attributes.name}</b></h2></div>`
     if (recipe.attributes.liquors) {
@@ -20,7 +20,7 @@ function renderRecipeCards(json){
         liquor_line.innerHTML = `<li>${liquor.name}</li>`
         liquorsElement.appendChild(liquor_line)
       })
-      recipeCard.appendChild(liquorssElement);
+      recipeCard.appendChild(liquorsElement);
     }
     if (recipe.attributes.liqueurs) {
       const liqueursTitle = document.createElement('h4.liqueursTitle')
@@ -64,5 +64,5 @@ function renderRecipeCards(json){
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
-  fetchRecipeCards();
+  fetchRecipes();
 })

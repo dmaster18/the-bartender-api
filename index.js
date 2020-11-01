@@ -19,15 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchRecipes();
 })
 
-const recipeCard(json){
-
-  json.forEach(recipe=> {
+function recipeCard(json){
+  json.forEach(recipe => {
     const recipeCard = document.createElement("div.card")
     recipeCard.innerHTML = `<div.container><h2><b>${recipe.name}</b></h2></div>`
-
-
-
+    const liquorElement = `<p><b>Liquors:</b><ol>${liquors}</ol></p>`
+    const liquors = recipe.liquors.forEach(liquor => `<li>${liquor}</li>`)
   })
+}
 
   <div class="card">
     <img src="img_avatar.png" alt="Avatar" style="width:100%">

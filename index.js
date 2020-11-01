@@ -15,6 +15,11 @@ function renderRecipes(json) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed
+  console.log('DOM fully loaded and parsed')
+  fetchRecipes();
+})
+
+document.addEventListener('click', function() {
+  console.log('DOM fully loaded and parsed')
   fetchRecipes();
 })

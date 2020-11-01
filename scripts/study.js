@@ -75,6 +75,7 @@ function fetchRecipes() {
   .then(json => renderRecipeCards(json))
 }
 
+
 function renderRecipeCards(json) {
   json["data"].forEach(recipe =>
     {const main = document.querySelector('main')
@@ -85,9 +86,9 @@ function renderRecipeCards(json) {
       liquorsTitle.innerHTML = '<b><u>Liquors</u></b>'
       recipeCard.appendChild(liquorsTitle)
       const liquorsElement = document.createElement('ul.liquors')
-      const liquors = recipe.attributes.liquors.forEach( liquor =>
+      const liquors = recipe.attributes.liquors_string.forEach( liquor =>
         {const liquor_line = document.createElement('li.liquor')
-        liquor_line.innerHTML = `<li>${liquor.name}</li>`
+        liquor_line.innerHTML = `<li>${liquor}</li>`
         liquorsElement.appendChild(liquor_line)
       })
       recipeCard.appendChild(liquorsElement);
@@ -97,9 +98,9 @@ function renderRecipeCards(json) {
       liqueursTitle.innerHTML = '<b><u>Liqueurs</u></b>'
       recipeCard.appendChild(liqueursTitle)
       const liqueursElement = document.createElement('ul.liqueurs')
-      const liqueurs = recipe.attributes.liqueurs.forEach( liqueur =>
+      const liqueurs = recipe.attributes.liqueurs_string.forEach( liqueur =>
         {const liqueur_line = document.createElement('li.liqueur')
-        liqueur_line.innerHTML = `<li>${liqueur.name}</li>`
+        liqueur_line.innerHTML = `<li>${liqueur}</li>`
         liqueursElement.appendChild(liqueur_line)
       })
       recipeCard.appendChild(liqueursElement);
@@ -109,9 +110,9 @@ function renderRecipeCards(json) {
       mixersTitle.innerHTML = '<b><u>Mixers</u></b>'
       recipeCard.appendChild(mixersTitle)
       const mixersElement = document.createElement('ul.mixers')
-      const mixers = recipe.attributes.mixers.forEach( mixer =>
+      const mixers = recipe.attributes.mixers_string.forEach( mixer =>
         {const mixer_line = document.createElement('li.mixer')
-        mixer_line.innerHTML = `<li>${mixer.name}</li>`
+        mixer_line.innerHTML = `<li>${mixer}</li>`
         mixersElement.appendChild(mixer_line)
       })
       recipeCard.appendChild(mixersElement);
@@ -121,9 +122,9 @@ function renderRecipeCards(json) {
       garnishesTitle.innerHTML = '<b><u>Garnishes</u></b>'
       recipeCard.appendChild(garnishesTitle)
       const garnishesElement = document.createElement('ul.garnishes')
-      const garnishes = recipe.attributes.garnishes.forEach( garnish =>
+      const garnishes = recipe.attributes.garnishes_string.forEach( garnish =>
         {const garnish_line = document.createElement('li.garnish')
-        garnish_line.innerHTML = `<li>${garnish.name}</li>`
+        garnish_line.innerHTML = `<li>${garnish}</li>`
         garnishesElement.appendChild(garnish_line)
       })
       recipeCard.appendChild(garnishesElement);

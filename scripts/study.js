@@ -1,4 +1,4 @@
-function fetchRecipes() {
+function fetchRecipeCards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
@@ -40,5 +40,5 @@ function renderRecipeCards(json){
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
-  fetchRecipes();
+  fetchRecipeCards();
 })

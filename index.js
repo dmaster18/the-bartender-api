@@ -6,7 +6,7 @@ function fetchRecipes() {
 }
 
 function renderRecipes(json) {
-  const recipes = JSON.parse(document.querySelector('pre').innerText)
+  const recipes = JSON.parse(json.querySelector('pre').innerText)
   json.forEach(recipe => {
     const p = document.createElement('p')
     p.innerHTML = `<p>${recipe.name}</p>`
@@ -15,5 +15,6 @@ function renderRecipes(json) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks();
+  console.log('DOM fully loaded and parsed
+  fetchRecipes();
 })

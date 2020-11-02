@@ -1,4 +1,4 @@
-function fetchIngredientCards() {
+/*function fetchIngredientCards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
@@ -65,12 +65,25 @@ function renderIngredientCards(json) {
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
   fetchIngredientCards();
-})
+})*/
 
-function renderRandomIngredientCard(json) {
-
-
+function fetchRandomIngredientCard() {
+  const recipes_url = "http://127.0.0.1:3000/recipes"
+  return fetch(recipes_url)
+  .then(resp => resp.json())
+  .then(json => generateRandomIngredientCard(json))
 }
+
+function generateRandomIngredientCard(json) {
+  const randomNumber = Math.floor(Math.random() * 508);
+  const randomIngredientCard = json["data"][randomNumber];
+  randomIngredientCard;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM fully loaded and parsed');
+  fetchRandomIngredientCard();
+})
 
 
 

@@ -1,27 +1,4 @@
-function fetchIngredientCards() {
-  const recipes_url = "http://127.0.0.1:3000/recipes"
-  return fetch(recipes_url)
-  .then(resp => resp.json())
-  .then(json => renderIngredientCards(json))
-}
-
-function renderIngredientCards(json) {
-  json["data"].forEach(recipe => generateIngredientCard(recipe))
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed');
-  fetchIngredientCards();
-})
-/*
-function fetchRandomIngredientCard() {
-  const recipes_url = "http://127.0.0.1:3000/recipes"
-  return fetch(recipes_url)
-  .then(resp => resp.json())
-  .then(json => renderRandomIngredientCard(json))
-}
-
-function generateIngredientCard(recipe) {
+function generateIngredientCard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML
   const ingredientCard = document.createElement('div.card')
   const main = document.querySelector('main');
   ingredientCard.innerHTML = `<div.container><h2><b>${recipe.attributes.name}</b></h2></div>`
@@ -76,6 +53,29 @@ function generateIngredientCard(recipe) {
   main.appendChild(ingredientCard);
 }
 
+
+function fetchIngredientCards() {
+  const recipes_url = "http://127.0.0.1:3000/recipes"
+  return fetch(recipes_url)
+  .then(resp => resp.json())
+  .then(json => renderIngredientCards(json))
+}
+
+function renderIngredientCards(json) {
+  json["data"].forEach(recipe => generateIngredientCard(recipe))
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM fully loaded and parsed');
+  fetchIngredientCards();
+})
+/*
+function fetchRandomIngredientCard() {
+  const recipes_url = "http://127.0.0.1:3000/recipes"
+  return fetch(recipes_url)
+  .then(resp => resp.json())
+  .then(json => renderRandomIngredientCard(json))
+}
 
 function renderRandomIngredientCard(json) {
   const randomNumber = Math.floor(Math.random() * 508);

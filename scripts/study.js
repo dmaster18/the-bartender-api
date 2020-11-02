@@ -1,7 +1,7 @@
 function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML
   const main = document.querySelector('main');
   const card = document.createElement('div.card');
-  const cardInner = document.createElement('div.card');
+  const cardInner = document.createElement('div.card-inner');
   const cardFront = document.createElement('div.card-front');
   const cardBack = document.createElement('div.card-back');
   cardFront.innerHTML = `<div.card-front><h2><b>${recipe.attributes.name}</b></h2></div>`

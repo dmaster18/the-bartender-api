@@ -1,4 +1,4 @@
-function fetchIngredients() {
+function fetchIngredientCards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
@@ -62,13 +62,22 @@ function renderIngredientCards(json) {
   })
 }
 
-
-/*document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM fully loaded and parsed');
-  fetchIngredients();
-})*/
+  fetchIngredientCards();
+})
 
-function fetchRecipes() {
+function renderIngredientCards(json) {
+
+
+
+
+}
+
+
+
+
+/*function fetchRecipes() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
@@ -136,4 +145,4 @@ function renderRecipeCards(json) {
 document.addEventListener('click', function() {
   console.log('DOM fully loaded and parsed');
   fetchRecipes();
-})
+})*/

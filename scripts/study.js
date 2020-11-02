@@ -10,7 +10,7 @@ function renderIngredientCards(json) {
     {const main = document.querySelector('main')
     const ingredientCard = document.createElement('div.card')
     ingredientCard.innerHTML = `<div.container><h2><b>${recipe.attributes.name}</b></h2></div>`
-    if (recipe.attributes.liquors) {
+    if (recipe.attributes.liquors.length > 0) {
       const liquorsTitle = document.createElement('h4.liquorsTitle')
       liquorsTitle.innerHTML = '<b><u>Liquors</u></b>'
       ingredientCard.appendChild(liquorsTitle)
@@ -22,7 +22,7 @@ function renderIngredientCards(json) {
       })
       ingredientCard.appendChild(liquorsElement);
     }
-    if (recipe.attributes.liqueurs) {
+    if (recipe.attributes.liqueurs.length > 0) {
       const liqueursTitle = document.createElement('h4.liqueursTitle')
       liqueursTitle.innerHTML = '<b><u>Liqueurs</u></b>'
       ingredientCard.appendChild(liqueursTitle)
@@ -34,7 +34,7 @@ function renderIngredientCards(json) {
       })
       ingredientCard.appendChild(liqueursElement);
     }
-    if (recipe.attributes.mixers) {
+    if (recipe.attributes.mixers.length > 0) {
       const mixersTitle = document.createElement('h4.mixersTitle')
       mixersTitle.innerHTML = '<b><u>Mixers</u></b>'
       ingredientCard.appendChild(mixersTitle)
@@ -46,7 +46,7 @@ function renderIngredientCards(json) {
       })
       ingredientCard.appendChild(mixersElement);
     }
-    if (recipe.attributes.garnishes) {
+    if (recipe.attributes.garnishes.length > 0) {
       const garnishesTitle = document.createElement('h4.garnishesTitle')
       garnishesTitle.innerHTML = '<b><u>Garnishes</u></b>'
       ingredientCard.appendChild(garnishesTitle)

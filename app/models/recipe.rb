@@ -2,8 +2,6 @@ class Recipe < ApplicationRecord
   #has_many :recipe_ingredients
   #has_many :ingredients, through: :recipe_ingredients
 
-  attr_accessor :liquors_array, :liqueurs_array, :mixers_array, :garnishes_array
-
   has_many :recipe_liquors
   has_many :liquors, through: :recipe_liquors
   has_many :recipe_liqueurs

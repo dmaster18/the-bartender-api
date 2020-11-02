@@ -142,10 +142,10 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.integer "general_ranking"
     t.integer "user_ranking"
     t.string "source"
-    t.text "liquors_string"
-    t.text "liqueurs_string"
-    t.text "mixers_string"
-    t.text "garnishes_string"
+    t.text "liquors_array"
+    t.text "liqueurs_array"
+    t.text "mixers_array"
+    t.text "garnishes_array"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

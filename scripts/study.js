@@ -67,9 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchIngredientCards();
 })
 
-function renderIngredientCards(json) {
-
-
+function renderRandomIngredientCard(json) {
 
 
 }

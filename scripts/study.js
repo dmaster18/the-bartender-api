@@ -74,11 +74,9 @@ function fetchRandomIngredientCard() {
   .then(json => renderRandomIngredientCard(json))
 }
 
-function renderRandomIngredientCard(json) {
-  const randomNumber = Math.floor(Math.random() * 508);
-  const recipe = json["data"][randomNumber];
-  const main = document.querySelector('main')
+function generateIngredientCard(recipe) {
   const ingredientCard = document.createElement('div.card')
+  const main = document.querySelector('main');
   ingredientCard.innerHTML = `<div.container><h2><b>${recipe.attributes.name}</b></h2></div>`
   if (recipe.attributes.liquors.length > 0) {
     const liquorsTitle = document.createElement('h4.liquorsTitle')
@@ -129,6 +127,14 @@ function renderRandomIngredientCard(json) {
     ingredientCard.appendChild(garnishesElement);
   }
   main.appendChild(ingredientCard);
+}
+
+
+function renderRandomIngredientCard(json) {
+  const randomNumber = Math.floor(Math.random() * 508);
+  const recipe = json["data"][randomNumber];
+  const main = document.querySelector('main');
+  generateIngredientCard(recipe);
 }
 
 document.addEventListener('DOMContentLoaded', function() {

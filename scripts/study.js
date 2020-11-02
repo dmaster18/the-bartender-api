@@ -61,7 +61,7 @@ function fetchIngredientCards() {
   .then(json => renderIngredientCards(json))
 }
 
-function renderIngredientCards(json) {
+function renderIngredientCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
   json["data"].forEach(recipe => generateIngredientCard(recipe))
 }
 
@@ -77,7 +77,7 @@ function fetchRandomIngredientCard() {
   .then(json => renderRandomIngredientCard(json))
 }
 
-function renderRandomIngredientCard(json) {
+function renderRandomIngredientCard(json) { //Renders random Cocktail Recipe Ingredient Index Card
   const randomNumber = Math.floor(Math.random() * 508);
   const recipe = json["data"][randomNumber];
   const main = document.querySelector('main');

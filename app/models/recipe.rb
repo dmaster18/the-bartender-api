@@ -15,10 +15,10 @@ class Recipe < ApplicationRecord
   validates :name, presence: true
   validates :name, uniqueness: true
 
-  serialize :liquors_string, Array
-  serialize :liqueurs_string, Array
-  serialize :mixers_string, Array
-  serialize :garnishes_string, Array
+  serialize :liquors_array, Array
+  serialize :liqueurs_array, Array
+  serialize :mixers_array, Array
+  serialize :garnishes_array, Array
 
   #accepts_nested_attributes_for :liquors, :liqueurs, :mixers, :garnishes
 

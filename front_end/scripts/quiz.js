@@ -24,16 +24,16 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCards);
 }
 
-function generateQuiz(question) {
-
-
-
-
-}
-
-function quizCards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
+function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
+
+
+//function generateQuiz(question) {
+
+}
+
+
 
 
 

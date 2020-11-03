@@ -46,7 +46,7 @@ class Recipe < ApplicationRecord
   end
 
 
-  def generateQuestion
+  def generate_question
     liquors = []
     liqueurs = []
     mixers = []

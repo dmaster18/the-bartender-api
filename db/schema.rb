@@ -146,6 +146,8 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.text "liqueurs_array"
     t.text "mixers_array"
     t.text "garnishes_array"
+    t.text "all_ingredients"
+    t.text "correct_ingredients"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

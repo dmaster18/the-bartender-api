@@ -841,514 +841,514 @@ woodford_kentucky = Liquor.create(name: "Woodford Reserve Kentucky Straight Bour
 woodford_reserve = Liquor.create(name: "Woodford Reserve Bourbon", liquor_type: "Bourbon", description: "A type of American whiskey, a barrel-aged distilled spirit made primarily from corn. The name ultimately derives from the French Bourbon dynasty, although the precise inspiration for the whiskey's name is uncertain; contenders include Bourbon County in Kentucky and Bourbon Street in New Orleans, both of which are named after the dynasty. Bourbon has been distilled since the 18th century. The name 'Bourbon' was not applied until the 1850s, and the Kentucky etymology was not advanced until the 1870s.  Although bourbon may be made anywhere in the United States, it is strongly associated with the American South and with Kentucky in particular.", origin: "USA", flavor: "Vanilla, Oak, Caramel", abv: "40–68% (usually 40%, 43% or 46%)", color: "Copper", ingredients: "Grain (Primarily Corn)")
 xo_cognac = Liquor.create(name: "XO Cognac", liquor_type: "Cognac", description: "A variety of brandy named after the commune of Cognac, France. It is produced in the surrounding wine-growing region in the departments of Charente and Charente-Maritime. Cognac production falls under French appellation d'origine contrôlée designation, with production methods and naming required to meet certain legal requirements. Among the specified grapes, Ugni blanc, known locally as Saint-Emilion, is most widely used. The brandy must be twice distilled in copper pot stills and aged at least two years in French oak barrels from Limousin or Tronçais. Cognac matures in the same way as whiskies and wines barrel age, and most cognacs spend considerably longer 'on the wood' than the minimum legal requirement." , origin: "France" , flavor: "Fruity,  Sweet", abv: "40-45%", color: "Brown", ingredients: "Grapes")
 
-a_la_louisiane = Recipe.create(name: 'A La Louisiane')
-absinthe_drip = Recipe.create(name: 'Absinthe Drip')
-absinthe_suisse = Recipe.create(name: 'Absinthe Suisse')
-absolut_lime_drop = Recipe.create(name: 'Absolut Lime Drop')
-absolut_moscow_mule = Recipe.create(name: 'Absolut Moscow Mule')
-airmail = Recipe.create(name: 'Airmail Punch')
-alabama = Recipe.create(name: 'Alabama Slammer')
-alligator = Recipe.create(name: "L'Alligator C'Est Vert")
-amaretto_french = Recipe.create(name: 'Amaretto French 75')
-amaretto_sour = Recipe.create(name: 'Amaretto Sour')
-amber = Recipe.create(name: 'Amber Moon')
-americano = Recipe.create(name: 'Americano')
-anejo_old_fashioned = Recipe.create(name: 'Añejo Old Fashioned')
-angel = Recipe.create(name: 'Angel Face')
-añogo = Recipe.create(name: 'Añogo')
-another = Recipe.create(name: 'Another Fine Mes')
-aperitivo = Recipe.create(name: 'Aperitivo #1')
-apple_cranberry_moscow_mule = Recipe.create(name: 'Apple Cranberry Moscow Mule')
-apple_toddy = Recipe.create(name: 'Apple Toddy')
-applejack = Recipe.create(name: 'Applejack Rabbit')
-apricot_ginger = Recipe.create(name: 'Apricot Ginger Whiskey Sour')
-aquavit_buck = Recipe.create(name: 'Aquavit Buck')
-astro = Recipe.create(name: 'Astro pop')
-autumn = Recipe.create(name: 'Autumn Wassail')
-aviation = Recipe.create(name: 'Aviation')
-b = Recipe.create(name: 'B and B')
-b_52 = Recipe.create(name: 'B-52')
-bacardi = Recipe.create(name: 'Bacardi Cocktail')
-bagrationi = Recipe.create(name: 'Bagrationi')
-bamboo = Recipe.create(name: 'Bamboo')
-bananadaiquiri = Recipe.create(name: 'Banana Daiquiri')
-barbados = Recipe.create(name: 'Barbados Rum Punch')
-barracuda = Recipe.create(name: 'Barracuda')
-batida = Recipe.create(name: 'Batida')
-bear = Recipe.create(name: 'Bear With Me, Honey')
-bebbo = Recipe.create(name: 'Bebbo')
-bees = bees = Recipe.create(name: "Bee's Knees")
-beet = Recipe.create(name: 'Beet Rose')
-bellini = Recipe.create(name: 'Bellini')
-bentons = bentons = Recipe.create(name: "Benton's Old Fashioned")
-bermuda = Recipe.create(name: 'Bermuda Rum Swizzle')
-beton = Recipe.create(name: 'Beton')
-between = Recipe.create(name: 'Between the Sheets')
-bicicletta = Recipe.create(name: 'Bicicletta')
-big_red = Recipe.create(name: 'Big Red')
-big_red_sun = Recipe.create(name: 'Big Red Sun')
-bijou = Recipe.create(name: 'Bijou')
-bitter = Recipe.create(name: 'Bitter Temptation')
-black_barrel_old_fashioned = Recipe.create(name: 'Black Barrel Old Fashioned')
-black_betty = Recipe.create(name: 'Black Betty')
-black_mole_margarita = Recipe.create(name: 'Black Mole Margarita')
-black_russian = Recipe.create(name: 'Black Russian')
-black_velvet = Recipe.create(name: 'Black Velvet')
-blood = Recipe.create(name: 'Blood & Sand')
-bloody_caesar = Recipe.create(name: 'Bloody Caesar')
-bloody_casear = Recipe.create(name: 'Bloody Casear')
-bloody_maria = Recipe.create(name: 'Bloody Maria')
-bloody_mary = Recipe.create(name: 'Bloody Mary')
-bloody_roman = Recipe.create(name: 'Bloody Roman')
-blow = Recipe.create(name: 'Blow Job')
-blue_blazer = Recipe.create(name: 'Blue Blazer')
-blue_hawaii = Recipe.create(name: 'Blue Hawaii')
-blue_lagoon = Recipe.create(name: 'Blue Lagoon')
-blueberry = Recipe.create(name: 'Blueberry Mojito')
-boat = Recipe.create(name: 'Boat House Punch')
-bobby = Recipe.create(name: 'Bobby Burns')
-boilermaker = Recipe.create(name: 'Boilermaker')
-bootstitch = Recipe.create(name: 'Bootstitch')
-boozy = Recipe.create(name: 'Boozy Hot Chocolate')
-bordeaux = Recipe.create(name: 'Bordeaux Sour')
-bossa = Recipe.create(name: 'Bossa Manhattan')
-boston = Recipe.create(name: 'Boston Rum Punch')
-boulevardier = Recipe.create(name: 'Boulevardier')
-bourbon_cider = Recipe.create(name: 'Bourbon Cider Slushie')
-bourbon_lancer = Recipe.create(name: 'Bourbon Lancer')
-bourbon_lemonade = Recipe.create(name: 'Bourbon Lemonade')
-bourbon_old_fashioned = Recipe.create(name: 'Bourbon Old Fashioned')
-bourbon_root_beer = Recipe.create(name: 'Bourbon & Root Beer')
-bourbon_rosemary_punch = Recipe.create(name: 'Bourbon Rosemary Punch')
-bourbon_strawberry = Recipe.create(name: 'Bourbon Strawberry Iced Tea')
-bourbon_vanilla = Recipe.create(name: 'Bourbon, Vanilla & Chocolate Milkshake')
-bramble = Recipe.create(name: 'Bramble')
-brandy_alexander = Recipe.create(name: 'Brandy Alexander')
-brandy_crusta = Recipe.create(name: 'Brandy Crusta')
-brandy_daisy = Recipe.create(name: 'Brandy daisy')
-brandy_old_fashioned = Recipe.create(name: 'Brandy Old Fashioned')
-brandy_sangaree = Recipe.create(name: 'Brandy Sangaree')
-brandy_sour = Recipe.create(name: 'Brandy sour')
-brave = Recipe.create(name: 'Brave Bull')
-brazilian = Recipe.create(name: 'Brazilian Buck')
-bronx = Recipe.create(name: 'Bronx')
-brown = Recipe.create(name: 'Brown Derby')
-bulleit = Recipe.create(name: 'Bulleit Bourbon Kentucky Buck')
-café = Recipe.create(name: 'Café Correcto con Coco')
-café_ponche = Recipe.create(name: 'Café CorrecciÃ³n Ponche')
-caipirinha = Recipe.create(name: 'Caipirinha')
-calvados_sidecar = Recipe.create(name: 'Calvados Sidecar')
-canchã¡nchara = Recipe.create(name: 'CanchÃ¡nchara')
-canchanchara = Recipe.create(name: 'Canchanchara')
-candy = Recipe.create(name: 'Candy Cane Mimosa')
-cape = Recipe.create(name: 'Cape of Good Hope')
-cardamom_recipe = Recipe.create(name: 'Cardamom')
-casino = Recipe.create(name: 'Casino')
-cave = Recipe.create(name: 'Cave Creek')
-cbd_dirty_martini = Recipe.create(name: 'CBD Dirty Martini')
-cbd_gin_tonic = Recipe.create(name: 'CBD Gin & Tonic')
-cbd_moscow_mule = Recipe.create(name: 'CBD Moscow Mule')
-cbd_spritz = Recipe.create(name: 'CBD Spritz')
-champagne_cocktail = Recipe.create(name: 'Champagne cocktail')
-champagne_holiday = Recipe.create(name: 'Champagne Holiday Punch')
-channel = Recipe.create(name: 'Channel Orange')
-charleston = Recipe.create(name: 'Charleston Breakfast Coffee')
-cherry_revolution = Recipe.create(name: 'Cherry Revolution')
-chi = Recipe.create(name: 'Chi Chi Organico')
-chimayó = Recipe.create(name: 'Chimayó Cocktail')
-chocomole = Recipe.create(name: 'Chocomole')
-chrysanthemum = Recipe.create(name: 'Chrysanthemum')
-clover = Recipe.create(name: 'Clover Club')
-cobra = Recipe.create(name: 'Cobra Verde')
-cobras = cobras = Recipe.create(name: "Cobra's Fang")
-coco = Recipe.create(name: 'Coco Batida')
-cocoa_passion = Recipe.create(name: 'Cocoa Passion')
-coffee_cigarettes = Recipe.create(name: 'Coffee & Cigarettes')
-cojito = Recipe.create(name: 'Cojito')
-conflict = Recipe.create(name: 'Conflict & Compromise')
-coquito = Recipe.create(name: 'Coquito')
-corpose_reviver_one = Recipe.create(name: 'Corpse Reviver No. 1')
-corpose_reviver_two = Recipe.create(name: 'Corpse Reviver #2')
-corpse_reviver_two_one_two = Recipe.create(name: 'Corpse Reviver 212')
-cosmopolitan = Recipe.create(name: 'Cosmopolitan')
-cotter = Recipe.create(name: 'Cotter Swizzle')
-cowboy = Recipe.create(name: 'Cowboy Coffee')
-cranberry_ginger = Recipe.create(name: 'Cranberry-Ginger Mimosa')
-crimson = Recipe.create(name: 'Crimson King')
-crush = Recipe.create(name: 'Crush Crush')
-crystal = Recipe.create(name: 'Crystal Ramos Gin Fizz')
-cuba = Recipe.create(name: 'Cuba libre')
-cuban = Recipe.create(name: 'Cuban Sunset')
-cucumber_cleanse = Recipe.create(name: 'Cucumber Cleanse')
-cucumber_lime = Recipe.create(name: 'Cucumber, Basil & Lime Gimlet')
-curiosity = Recipe.create(name: 'Curiosity Killed the Cat, You Know')
-daiquiri = Recipe.create(name: 'Daiquiri')
-dark_and_stormy = Recipe.create(name: "Dark and Stormy")
-dark_n_stormy = Recipe.create(name: "Dark 'n Stormy")
-dark_side = Recipe.create(name: 'Dark Side')
-darkside = Recipe.create(name: 'Darkside')
-day_at_the_crawfish = Recipe.create(name: 'A Day at the (Crawfish) Races')
-death_by_morning = Recipe.create(name: 'Death by Morning')
-death_in_afternoon = Recipe.create(name: 'Death in the Afternoon')
-devils_margarita = Recipe.create(name: "Devil's Margarita")
-dizzy = Recipe.create(name: 'Dizzy Delight')
-don_alfredo = Recipe.create(name: 'Don Alfredo')
-don_quixote = Recipe.create(name: 'Don Quixote')
-dons_gardenia_mix = Recipe.create(name: "Don's Gardenia Mix")
-dorado = Recipe.create(name: 'Dorado Old Fashioned')
-dragones = Recipe.create(name: 'Dragones Rocks')
-dram = Recipe.create(name: 'Dram Rickey')
-drunk = Recipe.create(name: 'Drunk Uncle')
-dry = Recipe.create(name: 'Dry Martini')
-duck = Recipe.create(name: 'Duck Fried Rice')
-earl = Recipe.create(name: 'Earl Grey MarTEAni')
-eggnogrecipe = Recipe.create(name: 'Eggnog')
-el_diablo = Recipe.create(name: 'El Diablo')
-el_presidente = Recipe.create(name: 'El Presidente')
-elderflowerfizz = Recipe.create(name: 'Elderflower Fizz')
-embarcadero = Recipe.create(name: 'Embarcadero')
-emerald = Recipe.create(name: 'Emerald Isle of the Caribbean')
-espresso_martini = Recipe.create(name: 'Espresso martini')
-fernandito = Recipe.create(name: 'Fernandito')
-fernetaboutit = Recipe.create(name: 'Fernet About It')
-fifty_fifty_birthday = Recipe.create(name: '50/50 Birthday')
-figgy = Recipe.create(name: 'Figgy Smalls')
-flaming = Recipe.create(name: 'Flaming Dr. Pepper Shot')
-flannel = Recipe.create(name: 'Flannel')
-flor = Recipe.create(name: 'Flor Sparkling')
-forbidden_apple = Recipe.create(name: 'Forbidden Apple')
-forbidden_sour = Recipe.create(name: 'Forbidden Sour')
-forest = Recipe.create(name: 'Forest Sprite')
-francophile = Recipe.create(name: 'Francophile')
-frank = Recipe.create(name: "Frank Caiafa's Rob Roy")
-french_connection = Recipe.create(name: 'French Connection')
-french_harvest = Recipe.create(name: 'French Harvest')
-french_martini = Recipe.create(name: 'French martini')
-french_seventy_five = Recipe.create(name: 'French 75')
-frisky = Recipe.create(name: 'Frisky Whiskey')
-frohito = Recipe.create(name: 'Frohito')
-frosé = Recipe.create(name: 'Frosé')
-frozen_absinthe = Recipe.create(name: 'Frozen Absinthe Frappé')
-frozen_daiquiri = Recipe.create(name: 'Frozen Daiquiri')
-frozen_margarita = Recipe.create(name: 'Frozen Margarita')
-fuzzy = Recipe.create(name: 'Fuzzy Navel')
-garibaldi = Recipe.create(name: 'Garibaldi')
-gibson = Recipe.create(name: 'Gibson')
-gimlet = Recipe.create(name: 'Gimlet')
-gin_and_tonic = Recipe.create(name: 'Gin and tonic')
-gin_fizz = Recipe.create(name: 'Gin fizz')
-ginger_ale_highball = Recipe.create(name: 'Ginger Ale Highball')
-ginger_fever_punch = Recipe.create(name: 'Ginger Fever Punch')
-godfather = Recipe.create(name: 'Godfather')
-gold_rush = Recipe.create(name: 'Gold Rush')
-golden__dream = Recipe.create(name: 'Golden dream')
-golden_cadillac = Recipe.create(name: 'Golden Cadillac')
-golden_dew = Recipe.create(name: 'Golden Dew')
-golden_gate_spritz = Recipe.create(name: 'Golden Gate Spritz')
-golden_purl = Recipe.create(name: 'Golden Purl')
-grasshopper = Recipe.create(name: 'Grasshopper')
-grave = Recipe.create(name: 'Grave Digger')
-great = Recipe.create(name: 'Great Pumpkin')
-green_beast = Recipe.create(name: 'Green Beast')
-green_isaac_special = Recipe.create(name: "Green Isaac's Special")
-greenpoint = Recipe.create(name: 'Greenpoint')
-greyhound = Recipe.create(name: 'Greyhound')
-guinnessfloat = Recipe.create(name: 'Guinness Chocolate Float')
-half = Recipe.create(name: 'Half Moon Bay')
-hanalei = Recipe.create(name: 'Hanalei Sun')
-hanky = Recipe.create(name: 'Hanky Panky')
-harry_potter_butter = Recipe.create(name: "'Harry Potter' Butterbeer")
-harvey = Recipe.create(name: 'Harvey Wallbanger')
-heated = Recipe.create(name: 'Heated Affair')
-hemingway_daiquiri = Recipe.create(name: 'Hemingway Daiquiri')
-hemingway_special = Recipe.create(name: 'Hemingway Special')
-hennessy_ginger = Recipe.create(name: 'Hennessy Ginger')
-here_comes_the_sun = Recipe.create(name: 'Here Comes the Sun')
-hey_gourdgeous = Recipe.create(name: 'Hey, Gourdgeous')
-high_on_hog = Recipe.create(name: 'High on the Hog')
-high_seas = Recipe.create(name: 'High Seas')
-high_tide = Recipe.create(name: 'High Tide')
-hit = Recipe.create(name: 'Hit Me Baby One More GlÃ¼hwein')
-holiday = Recipe.create(name: 'Holiday Sparkler Wine')
-honey_bourbon = Recipe.create(name: 'Honey Winter Bourbon')
-horn = Recipe.create(name: 'Horn of the Bulls')
-horses_neck = Recipe.create(name: "Horse's Neck")
-hot_blooded = Recipe.create(name: 'Hot Blooded')
-hot_buttered_rum = Recipe.create(name: 'Hot Buttered Rum')
-hot_caramel = Recipe.create(name: 'Hot Caramel Buttered Rum')
-hot_shot = Recipe.create(name: 'Hot Shot')
-hot_toddy = Recipe.create(name: 'Hot Toddy')
-hummer = Recipe.create(name: 'Hummer')
-hurricane = Recipe.create(name: 'Hurricane')
-i_left_my_heart = Recipe.create(name: 'I Left My Heart in Jalisco')
-illegal = Recipe.create(name: 'Illegal')
-infused = Recipe.create(name: 'Infused Tom Collins')
-irhsih_shot = Recipe.create(name: 'Irish Shot')
-irish_affrogato = Recipe.create(name: 'Irish Affogato')
-irish_buck = Recipe.create(name: 'Irish Buck')
-irish_car_bomb = Recipe.create(name: 'Irish Car Bomb')
-irish_coffee = Recipe.create(name: 'Irish coffee')
-irish_maid = Recipe.create(name: 'Irish Maid')
-irish_raktajino = Recipe.create(name: 'Irish Raktajino')
-island = Recipe.create(name: 'Island Oasis')
-jack = Recipe.create(name: 'Jack Rose')
-jack_o_lantern = Recipe.create(name: "Jack-o'-Lantern Punch")
-jager_old_fashioned = Recipe.create(name: 'Jägermeister Old Fashioned')
-japanese = Recipe.create(name: 'Japanese Sour')
-jingle = Recipe.create(name: 'Jingle Ball')
-john = Recipe.create(name: 'John Collins')
-josé = Recipe.create(name: 'José Wallbanger')
-jungle = Recipe.create(name: 'Jungle Bird')
-kamikaze = Recipe.create(name: 'Kamikaze')
-kanar = Recipe.create(name: 'Kanar Sazerac')
-kentucky = Recipe.create(name: 'Kentucky Mule')
-killer = Recipe.create(name: 'Killer Queen')
-kir = Recipe.create(name: 'Kir')
-kir_royale = Recipe.create(name: 'Kir Royale')
-kombucha = Recipe.create(name: 'Kombucha Sangria')
-kylo = Recipe.create(name: 'Kylo Rye')
-landmaster = Recipe.create(name: 'Landmaster')
-large_format_mezcal = Recipe.create(name: 'Large-Format Mezcal Negroni')
-large_format_red = Recipe.create(name: 'Large-Format Red Hook')
-last = Recipe.create(name: 'Last Word')
-last_minute = Recipe.create(name: 'Last-Minute Mulled Wine')
-latitude = Recipe.create(name: 'Latitude 29 Mai Tai')
-le = Recipe.create(name: 'Le Grand Louis')
-leeward = Recipe.create(name: 'Leeward Negroni')
-lemon_drop = Recipe.create(name: 'Lemon Drop')
-lemon_drop_martini = Recipe.create(name: 'Lemon drop martini')
-lights = Recipe.create(name: 'Lights Out Punch')
-lime_rickey = Recipe.create(name: 'Lime Rickey')
-lions = Recipe.create(name: "Lion's Tail")
-little = Recipe.create(name: 'Little Kiss')
-london_lemonade = Recipe.create(name: 'London Lemonade')
-london_toddy = Recipe.create(name: 'London Toddy')
-long = Recipe.create(name: 'Long Island iced tea')
-longshoreman = Recipe.create(name: 'Longshoreman')
-lounge = Recipe.create(name: 'Lounge Chair Afternoon')
-m_g_and_t = Recipe.create(name: 'M Gin & Tonic')
-macuá = Recipe.create(name: 'Macuá')
-mad = Recipe.create(name: 'Mad Fish')
-magic = Recipe.create(name: 'Magic Cotton Candy Daiquiri')
-mai = Recipe.create(name: 'Mai Tai')
-malibu_mudslide = Recipe.create(name: 'Malibu Mudslide')
-mamie = Recipe.create(name: 'Mamie Taylor')
-man_o_war = Recipe.create(name: "Man o' War")
-mango = Recipe.create(name: 'Mango Basil Lemonade')
-manhattan = Recipe.create(name: 'Manhattan')
-mantra = Recipe.create(name: 'Mantra')
-maple = Recipe.create(name: 'Maple Beet Shrub')
-margarita = Recipe.create(name: 'Margarita')
-margaritas = Recipe.create(name: 'Margaritas by the Pitcher')
-martinez = Recipe.create(name: 'Martinez')
-mary = Recipe.create(name: 'Mary Pickford')
-master = Recipe.create(name: 'Master Cleanse Shot')
-mexican = Recipe.create(name: 'Mexican Punch')
-mezcal_mule = Recipe.create(name: 'Mezcal Mule')
-mezcal_negroni = Recipe.create(name: 'Mezcal Negroni')
-miami = Recipe.create(name: 'Miami Vice')
-michelada = Recipe.create(name: 'Michelada')
-milk_honey = Recipe.create(name: 'Milk & Honey')
-millionaire = Recipe.create(name: 'Millionaire')
-mimosa = Recipe.create(name: 'Mimosa')
-mink = Recipe.create(name: 'Mink Coat & No Manners')
-mint_julep = Recipe.create(name: 'Mint julep')
-mojito = Recipe.create(name: 'Mojito')
-moment = Recipe.create(name: 'Moment of Clarity')
-monkey = Recipe.create(name: 'Monkey Gland')
-monte_carlo = Recipe.create(name: 'Monte Carlo')
-monte_cassino = Recipe.create(name: 'Monte Cassino')
-moscow = Recipe.create(name: 'Moscow mule')
-mudslide = Recipe.create(name: 'Mudslide')
-mule = Recipe.create(name: 'Mule')
-mutual = Recipe.create(name: 'Mutual Friend')
-my = Recipe.create(name: 'My Thai')
-naked = Recipe.create(name: 'Naked and Famous')
-negroni = Recipe.create(name: 'Negroni')
-negroni_sbagliato = Recipe.create(name: 'Negroni Sbagliato')
-negroni_sorbet = Recipe.create(name: 'Negroni Sorbet')
-new_year_sparkler = Recipe.create(name: "New Year's Sparkler")
-night = Recipe.create(name: 'Night at the Spritz')
-nino = Recipe.create(name: 'Nino')
-northern = Recipe.create(name: 'Northern Harvest Buck')
-nui = Recipe.create(name: 'Nui Nui')
-ny_sour = Recipe.create(name: 'New York Sour')
-oaks = Recipe.create(name: 'Oaks Lily')
-oaxacan = Recipe.create(name: 'Oaxacan Tail')
-old_cuban = Recipe.create(name: 'Old Cuban')
-old_fashioned = Recipe.create(name: 'Old fashioned')
-old_pal = Recipe.create(name: 'Old Pal')
-one = Recipe.create(name: 'One Last Midnight')
-one_two = Recipe.create(name: 'One-Two Punch')
-orange_sherbet_mimosa = Recipe.create(name: 'Orange Sherbet Mimosa Punch')
-orange_whip = Recipe.create(name: 'Orange Whip')
-orgasm = Recipe.create(name: 'Orgasm')
-painkiller = Recipe.create(name: 'Painkiller')
-paloma = Recipe.create(name: 'Paloma')
-pandan_coconut = Recipe.create(name: 'Pandan-Coconut Kaki-tail')
-paper = Recipe.create(name: 'Paper Plane')
-paradise = Recipe.create(name: 'Paradise')
-peachme = Recipe.create(name: 'Peach Me')
-pearl = Recipe.create(name: 'Pearl Diver')
-peeping = Recipe.create(name: 'Peeping Tom')
-pegu = Recipe.create(name: 'Pegu Club')
-penicillin = Recipe.create(name: 'Penicillin')
-phoking = Recipe.create(name: 'Pho-King Champ')
-picon = Recipe.create(name: 'Picon Punch')
-pimmscup = Recipe.create(name: "Pimm's Cup")
-piña = Recipe.create(name: 'Piña Colada')
-pina_colada = Recipe.create(name: 'Piña Colada')
-pink_gin = Recipe.create(name: 'Pink Gin')
-pink_lady = Recipe.create(name: 'Pink lady')
-pink_squirrel = Recipe.create(name: 'Pink Squirrel')
-pisco_sour = Recipe.create(name: 'Pisco Sour')
-planters_punch = Recipe.create(name: "Planter's Punch")
-pomelomosa = Recipe.create(name: 'Pomelomosa')
-pomosa = Recipe.create(name: 'Pomosa')
-ponche = Recipe.create(name: 'Ponche Navideño')
-porchcrawler = Recipe.create(name: 'Porchcrawler')
-porchlight = Recipe.create(name: 'Porchlight 7&7')
-porn = Recipe.create(name: 'Porn Star Martini')
-port_royal_punch = Recipe.create(name: 'Port Royal Punch')
-porto = Recipe.create(name: 'Porto flip')
-pot = Recipe.create(name: 'Pot of Gold')
-presbyterian = Recipe.create(name: 'Presbyterian')
-professor = Recipe.create(name: 'Professor')
-pumpkin_buck = Recipe.create(name: 'Pumpkin Buck')
-pumpkin_sazerac = Recipe.create(name: 'Pumpkin Sazerac')
-pumpkin_toddy = Recipe.create(name: 'Pumpkin Toddy')
-que = Recipe.create(name: 'Que Bueno')
-quill = Recipe.create(name: 'Quill Riff')
-rainbow = Recipe.create(name: "Rainbow Planter's Punch")
-ramos = Recipe.create(name: 'Ramos Fizz')
-raspberrylimon = Recipe.create(name: 'Limoncello & Raspberry Whiskey Sour Popsicles')
-raymond = Recipe.create(name: 'Raymond Massey')
-rebirth = Recipe.create(name: 'Re:Birth')
-red = Recipe.create(name: 'Red Hook')
-reggae = Recipe.create(name: 'Reggae Rum Punch')
-remember = Recipe.create(name: 'Remember the Maine')
-rickey = Recipe.create(name: 'Rickey')
-ring = Recipe.create(name: 'Ring the Alarm')
-rob = Recipe.create(name: 'Rob Roy')
-rockeys_rum = Recipe.create(name: "Rockey's & Rum Swizzle")
-roman = Recipe.create(name: 'Roman Holiday')
-rose_colored_glass = Recipe.create(name: 'Rose-Colored Glass')
-rosemary_mezcal = Recipe.create(name: 'Rosemary Mezcal Negroni')
-royal = Recipe.create(name: 'Royal Balmoral Punch')
-ruby = Recipe.create(name: 'Ruby Relaxer')
-rum_old_fashioned = Recipe.create(name: 'Rum Old Fashioned')
-rum_punch = Recipe.create(name: 'Rum Punch')
-rum_smoke = Recipe.create(name: 'Rum & Smoke')
-russian = Recipe.create(name: 'Russian Spring Punch')
-rustaveli = Recipe.create(name: 'Rustaveli')
-rusty_compass = Recipe.create(name: 'Rusty Compass')
-rusy_nail = Recipe.create(name: 'Rusty Nail')
-saint = Recipe.create(name: 'Saint Balthazar')
-saison = Recipe.create(name: 'Saison Highball')
-sakebomb = Recipe.create(name: 'Sake bomb')
-salty = Recipe.create(name: 'Salty Dog')
-samarian = Recipe.create(name: 'Samarian Sunset')
-sangria = Recipe.create(name: 'Sangria')
-sangrita = Recipe.create(name: 'Sangrita')
-saturn = Recipe.create(name: 'Saturn')
-sazerac = Recipe.create(name: 'Sazerac')
-scofflaw = Recipe.create(name: 'Scofflaw')
-scotch_soda = Recipe.create(name: 'Scotch & Soda')
-sea_breeze = Recipe.create(name: 'Sea Breeze')
-sea_breeze_cooler = Recipe.create(name: 'Sea Breeze Cooler')
-set = Recipe.create(name: 'Set the New Year on Fire')
-seven_and_seven = Recipe.create(name: '7 and 7')
-sex = Recipe.create(name: 'Sex on the Beach')
-shamrock = Recipe.create(name: 'Shamrock Shot')
-sidecar = Recipe.create(name: 'Sidecar')
-sin = Recipe.create(name: 'Sin Cyn')
-singapore = Recipe.create(name: 'Singapore Sling')
-singapura = Recipe.create(name: 'Singapura')
-slippery = Recipe.create(name: 'Slippery nipple')
-smoked = Recipe.create(name: 'Smoked Honey Toddy')
-smoky = Recipe.create(name: 'Smoky Martini')
-snakebite = Recipe.create(name: 'Snakebite')
-snap = Recipe.create(name: 'Snap, Crackle, Drop')
-sourmidori = Recipe.create(name: 'Midori Sour')
-south = Recipe.create(name: 'South by Southwest')
-southside = Recipe.create(name: 'Southside')
-spanish = Recipe.create(name: 'Spanish Gin & Tonic')
-sparkling_margarita = Recipe.create(name: 'Sparkling Rosé Margarita')
-sparkling_watermelon = Recipe.create(name: 'Sparkling Watermelon Punch')
-spcity_margarita = Recipe.create(name: 'Spicy Margarita')
-spiced_eggnog = Recipe.create(name: 'Spiced Eggnog')
-spiced_margarita = Recipe.create(name: 'Spiced Margarita')
-spicy_mint = Recipe.create(name: 'Spicy Mint Avocado Margarita')
-spritz = Recipe.create(name: 'Spritz')
-stinger = Recipe.create(name: 'Stinger')
-stone = Recipe.create(name: 'Stone Fence')
-strawberry_daiquiri = Recipe.create(name: 'Strawberry Daiquiri')
-strawberry_pisco_sour = Recipe.create(name: 'Strawberry Pisco Sour')
-suffering = Recipe.create(name: 'Suffering Bastard')
-summer = Recipe.create(name: 'Summer Serve Copa')
-summer_served = Recipe.create(name: '1888 Summer Serve')
-summerthyme = Recipe.create(name: 'Summerthyme Screwdriver')
-sunflower = Recipe.create(name: 'Sunflower')
-sussex = Recipe.create(name: 'Sussex 75')
-switchel = Recipe.create(name: 'Switchel')
-tart = Recipe.create(name: "Tart n' Sand")
-tasman = Recipe.create(name: 'Tasman Sea')
-tea_for_two = Recipe.create(name: 'Tea for Two')
-tea_sympathy = Recipe.create(name: 'Tea & Sympathy')
-tequila_mockingbird = Recipe.create(name: 'Tequila Mockingbird')
-tequila_sunrise = Recipe.create(name: 'Tequila Sunrise')
-thai = Recipe.create(name: 'Thai Old Fashioned')
-the_dead_rabbit = Recipe.create(name: 'The Dead Rabbit Irish Coffee')
-the_lookout = Recipe.create(name: 'The Lookout')
-the_modern = Recipe.create(name: 'The Modern')
-the_spice_is_right = Recipe.create(name: 'The Spice Is Right')
-timberpoint = Recipe.create(name: 'Timberpoint Cooler')
-tipperary = Recipe.create(name: 'Tipperary')
-toblerone = Recipe.create(name: 'Toblerone')
-tom_and_jerry = Recipe.create(name: 'Tom & Jerry')
-tom_collins = Recipe.create(name: 'Tom Collins')
-tom_yum = Recipe.create(name: 'Tom Yum on a Rock')
-tommys_margarita = Recipe.create(name: "Tommy's Margarita")
-tootsie = Recipe.create(name: 'Tootsie Roll')
-top = Recipe.create(name: 'Top of the Morning')
-toronto = Recipe.create(name: 'Toronto')
-trinidad = Recipe.create(name: 'Trinidad Sour')
-turf = Recipe.create(name: 'Turf Club')
-tuxedo = Recipe.create(name: 'Tuxedo')
-twentieth_century = Recipe.create(name: '20th Century')
-uncle = Recipe.create(name: "Uncle Angelo's Eggnog")
-upper = Recipe.create(name: 'Upper Cut')
-uss = Recipe.create(name: 'USS Richmond Punch')
-vampiro = Recipe.create(name: 'Vampiro')
-ve_n_to = Recipe.create(name: 'Ve.n.to')
-vesper = Recipe.create(name: 'Vesper')
-vida = Recipe.create(name: 'Vida Paloma')
-vieuxcarre = Recipe.create(name: 'Vieux Carré')
-vodka_martini = Recipe.create(name: 'Vodka Martini')
-waldorf = Recipe.create(name: 'Waldorf')
-ward = Recipe.create(name: 'Ward Eight')
-washington_apple = Recipe.create(name: 'Washington Apple')
-washington_apple_shot = Recipe.create(name: 'Washington Apple Shot')
-waterfront = Recipe.create(name: 'Waterfront Cooler')
-watermelon_blackberry = Recipe.create(name: 'Watermelon-Blackberry Margarita Popsicles')
-watermelon_spritzer = Recipe.create(name: 'Watermelon White Wine Spritzer')
-whats_up = Recipe.create(name: "What's Up, Doc")
-where = Recipe.create(name: 'Where No Man Has Gone Before')
-whiskey_in_church = Recipe.create(name: 'Whiskey in Church')
-whiskey_mac = Recipe.create(name: 'Whiskey Mac')
-whiskey_skin = Recipe.create(name: 'Whiskey Skin')
-whiskey_smashed = Recipe.create(name: 'Whiskey Smashed')
-whiskey_sour = Recipe.create(name: 'Whiskey sour')
-white_cargo = Recipe.create(name: 'White Cargo')
-white_lady = Recipe.create(name: 'White Lady')
-white_russian = Recipe.create(name: 'White Russian')
-white_summer = Recipe.create(name: 'White Summer Sazerac')
-winter = Recipe.create(name: 'Winter Flower')
-wisconsin = Recipe.create(name: 'Wisconsin Old Fashioned')
-witches_brew = Recipe.create(name: "Witches' Brew")
-yellow_bird = Recipe.create(name: 'Yellow Bird')
-yerba = Recipe.create(name: 'Yerba Buena')
-zombie = Recipe.create(name: 'Zombie')
+a_la_louisiane = Recipe.new(name: 'A La Louisiane')
+absinthe_drip = Recipe.new(name: 'Absinthe Drip')
+absinthe_suisse = Recipe.new(name: 'Absinthe Suisse')
+absolut_lime_drop = Recipe.new(name: 'Absolut Lime Drop')
+absolut_moscow_mule = Recipe.new(name: 'Absolut Moscow Mule')
+airmail = Recipe.new(name: 'Airmail Punch')
+alabama = Recipe.new(name: 'Alabama Slammer')
+alligator = Recipe.new(name: "L'Alligator C'Est Vert")
+amaretto_french = Recipe.new(name: 'Amaretto French 75')
+amaretto_sour = Recipe.new(name: 'Amaretto Sour')
+amber = Recipe.new(name: 'Amber Moon')
+americano = Recipe.new(name: 'Americano')
+anejo_old_fashioned = Recipe.new(name: 'Añejo Old Fashioned')
+angel = Recipe.new(name: 'Angel Face')
+añogo = Recipe.new(name: 'Añogo')
+another = Recipe.new(name: 'Another Fine Mes')
+aperitivo = Recipe.new(name: 'Aperitivo #1')
+apple_cranberry_moscow_mule = Recipe.new(name: 'Apple Cranberry Moscow Mule')
+apple_toddy = Recipe.new(name: 'Apple Toddy')
+applejack = Recipe.new(name: 'Applejack Rabbit')
+apricot_ginger = Recipe.new(name: 'Apricot Ginger Whiskey Sour')
+aquavit_buck = Recipe.new(name: 'Aquavit Buck')
+astro = Recipe.new(name: 'Astro pop')
+autumn = Recipe.new(name: 'Autumn Wassail')
+aviation = Recipe.new(name: 'Aviation')
+b = Recipe.new(name: 'B and B')
+b_52 = Recipe.new(name: 'B-52')
+bacardi = Recipe.new(name: 'Bacardi Cocktail')
+bagrationi = Recipe.new(name: 'Bagrationi')
+bamboo = Recipe.new(name: 'Bamboo')
+bananadaiquiri = Recipe.new(name: 'Banana Daiquiri')
+barbados = Recipe.new(name: 'Barbados Rum Punch')
+barracuda = Recipe.new(name: 'Barracuda')
+batida = Recipe.new(name: 'Batida')
+bear = Recipe.new(name: 'Bear With Me, Honey')
+bebbo = Recipe.new(name: 'Bebbo')
+bees = bees = Recipe.new(name: "Bee's Knees")
+beet = Recipe.new(name: 'Beet Rose')
+bellini = Recipe.new(name: 'Bellini')
+bentons = bentons = Recipe.new(name: "Benton's Old Fashioned")
+bermuda = Recipe.new(name: 'Bermuda Rum Swizzle')
+beton = Recipe.new(name: 'Beton')
+between = Recipe.new(name: 'Between the Sheets')
+bicicletta = Recipe.new(name: 'Bicicletta')
+big_red = Recipe.new(name: 'Big Red')
+big_red_sun = Recipe.new(name: 'Big Red Sun')
+bijou = Recipe.new(name: 'Bijou')
+bitter = Recipe.new(name: 'Bitter Temptation')
+black_barrel_old_fashioned = Recipe.new(name: 'Black Barrel Old Fashioned')
+black_betty = Recipe.new(name: 'Black Betty')
+black_mole_margarita = Recipe.new(name: 'Black Mole Margarita')
+black_russian = Recipe.new(name: 'Black Russian')
+black_velvet = Recipe.new(name: 'Black Velvet')
+blood = Recipe.new(name: 'Blood & Sand')
+bloody_caesar = Recipe.new(name: 'Bloody Caesar')
+bloody_casear = Recipe.new(name: 'Bloody Casear')
+bloody_maria = Recipe.new(name: 'Bloody Maria')
+bloody_mary = Recipe.new(name: 'Bloody Mary')
+bloody_roman = Recipe.new(name: 'Bloody Roman')
+blow = Recipe.new(name: 'Blow Job')
+blue_blazer = Recipe.new(name: 'Blue Blazer')
+blue_hawaii = Recipe.new(name: 'Blue Hawaii')
+blue_lagoon = Recipe.new(name: 'Blue Lagoon')
+blueberry = Recipe.new(name: 'Blueberry Mojito')
+boat = Recipe.new(name: 'Boat House Punch')
+bobby = Recipe.new(name: 'Bobby Burns')
+boilermaker = Recipe.new(name: 'Boilermaker')
+bootstitch = Recipe.new(name: 'Bootstitch')
+boozy = Recipe.new(name: 'Boozy Hot Chocolate')
+bordeaux = Recipe.new(name: 'Bordeaux Sour')
+bossa = Recipe.new(name: 'Bossa Manhattan')
+boston = Recipe.new(name: 'Boston Rum Punch')
+boulevardier = Recipe.new(name: 'Boulevardier')
+bourbon_cider = Recipe.new(name: 'Bourbon Cider Slushie')
+bourbon_lancer = Recipe.new(name: 'Bourbon Lancer')
+bourbon_lemonade = Recipe.new(name: 'Bourbon Lemonade')
+bourbon_old_fashioned = Recipe.new(name: 'Bourbon Old Fashioned')
+bourbon_root_beer = Recipe.new(name: 'Bourbon & Root Beer')
+bourbon_rosemary_punch = Recipe.new(name: 'Bourbon Rosemary Punch')
+bourbon_strawberry = Recipe.new(name: 'Bourbon Strawberry Iced Tea')
+bourbon_vanilla = Recipe.new(name: 'Bourbon, Vanilla & Chocolate Milkshake')
+bramble = Recipe.new(name: 'Bramble')
+brandy_alexander = Recipe.new(name: 'Brandy Alexander')
+brandy_crusta = Recipe.new(name: 'Brandy Crusta')
+brandy_daisy = Recipe.new(name: 'Brandy daisy')
+brandy_old_fashioned = Recipe.new(name: 'Brandy Old Fashioned')
+brandy_sangaree = Recipe.new(name: 'Brandy Sangaree')
+brandy_sour = Recipe.new(name: 'Brandy sour')
+brave = Recipe.new(name: 'Brave Bull')
+brazilian = Recipe.new(name: 'Brazilian Buck')
+bronx = Recipe.new(name: 'Bronx')
+brown = Recipe.new(name: 'Brown Derby')
+bulleit = Recipe.new(name: 'Bulleit Bourbon Kentucky Buck')
+café = Recipe.new(name: 'Café Correcto con Coco')
+café_ponche = Recipe.new(name: 'Café CorrecciÃ³n Ponche')
+caipirinha = Recipe.new(name: 'Caipirinha')
+calvados_sidecar = Recipe.new(name: 'Calvados Sidecar')
+canchã¡nchara = Recipe.new(name: 'CanchÃ¡nchara')
+canchanchara = Recipe.new(name: 'Canchanchara')
+candy = Recipe.new(name: 'Candy Cane Mimosa')
+cape = Recipe.new(name: 'Cape of Good Hope')
+cardamom_recipe = Recipe.new(name: 'Cardamom')
+casino = Recipe.new(name: 'Casino')
+cave = Recipe.new(name: 'Cave Creek')
+cbd_dirty_martini = Recipe.new(name: 'CBD Dirty Martini')
+cbd_gin_tonic = Recipe.new(name: 'CBD Gin & Tonic')
+cbd_moscow_mule = Recipe.new(name: 'CBD Moscow Mule')
+cbd_spritz = Recipe.new(name: 'CBD Spritz')
+champagne_cocktail = Recipe.new(name: 'Champagne cocktail')
+champagne_holiday = Recipe.new(name: 'Champagne Holiday Punch')
+channel = Recipe.new(name: 'Channel Orange')
+charleston = Recipe.new(name: 'Charleston Breakfast Coffee')
+cherry_revolution = Recipe.new(name: 'Cherry Revolution')
+chi = Recipe.new(name: 'Chi Chi Organico')
+chimayó = Recipe.new(name: 'Chimayó Cocktail')
+chocomole = Recipe.new(name: 'Chocomole')
+chrysanthemum = Recipe.new(name: 'Chrysanthemum')
+clover = Recipe.new(name: 'Clover Club')
+cobra = Recipe.new(name: 'Cobra Verde')
+cobras = cobras = Recipe.new(name: "Cobra's Fang")
+coco = Recipe.new(name: 'Coco Batida')
+cocoa_passion = Recipe.new(name: 'Cocoa Passion')
+coffee_cigarettes = Recipe.new(name: 'Coffee & Cigarettes')
+cojito = Recipe.new(name: 'Cojito')
+conflict = Recipe.new(name: 'Conflict & Compromise')
+coquito = Recipe.new(name: 'Coquito')
+corpose_reviver_one = Recipe.new(name: 'Corpse Reviver No. 1')
+corpose_reviver_two = Recipe.new(name: 'Corpse Reviver #2')
+corpse_reviver_two_one_two = Recipe.new(name: 'Corpse Reviver 212')
+cosmopolitan = Recipe.new(name: 'Cosmopolitan')
+cotter = Recipe.new(name: 'Cotter Swizzle')
+cowboy = Recipe.new(name: 'Cowboy Coffee')
+cranberry_ginger = Recipe.new(name: 'Cranberry-Ginger Mimosa')
+crimson = Recipe.new(name: 'Crimson King')
+crush = Recipe.new(name: 'Crush Crush')
+crystal = Recipe.new(name: 'Crystal Ramos Gin Fizz')
+cuba = Recipe.new(name: 'Cuba libre')
+cuban = Recipe.new(name: 'Cuban Sunset')
+cucumber_cleanse = Recipe.new(name: 'Cucumber Cleanse')
+cucumber_lime = Recipe.new(name: 'Cucumber, Basil & Lime Gimlet')
+curiosity = Recipe.new(name: 'Curiosity Killed the Cat, You Know')
+daiquiri = Recipe.new(name: 'Daiquiri')
+dark_and_stormy = Recipe.new(name: "Dark and Stormy")
+dark_n_stormy = Recipe.new(name: "Dark 'n Stormy")
+dark_side = Recipe.new(name: 'Dark Side')
+darkside = Recipe.new(name: 'Darkside')
+day_at_the_crawfish = Recipe.new(name: 'A Day at the (Crawfish) Races')
+death_by_morning = Recipe.new(name: 'Death by Morning')
+death_in_afternoon = Recipe.new(name: 'Death in the Afternoon')
+devils_margarita = Recipe.new(name: "Devil's Margarita")
+dizzy = Recipe.new(name: 'Dizzy Delight')
+don_alfredo = Recipe.new(name: 'Don Alfredo')
+don_quixote = Recipe.new(name: 'Don Quixote')
+dons_gardenia_mix = Recipe.new(name: "Don's Gardenia Mix")
+dorado = Recipe.new(name: 'Dorado Old Fashioned')
+dragones = Recipe.new(name: 'Dragones Rocks')
+dram = Recipe.new(name: 'Dram Rickey')
+drunk = Recipe.new(name: 'Drunk Uncle')
+dry = Recipe.new(name: 'Dry Martini')
+duck = Recipe.new(name: 'Duck Fried Rice')
+earl = Recipe.new(name: 'Earl Grey MarTEAni')
+eggnogrecipe = Recipe.new(name: 'Eggnog')
+el_diablo = Recipe.new(name: 'El Diablo')
+el_presidente = Recipe.new(name: 'El Presidente')
+elderflowerfizz = Recipe.new(name: 'Elderflower Fizz')
+embarcadero = Recipe.new(name: 'Embarcadero')
+emerald = Recipe.new(name: 'Emerald Isle of the Caribbean')
+espresso_martini = Recipe.new(name: 'Espresso martini')
+fernandito = Recipe.new(name: 'Fernandito')
+fernetaboutit = Recipe.new(name: 'Fernet About It')
+fifty_fifty_birthday = Recipe.new(name: '50/50 Birthday')
+figgy = Recipe.new(name: 'Figgy Smalls')
+flaming = Recipe.new(name: 'Flaming Dr. Pepper Shot')
+flannel = Recipe.new(name: 'Flannel')
+flor = Recipe.new(name: 'Flor Sparkling')
+forbidden_apple = Recipe.new(name: 'Forbidden Apple')
+forbidden_sour = Recipe.new(name: 'Forbidden Sour')
+forest = Recipe.new(name: 'Forest Sprite')
+francophile = Recipe.new(name: 'Francophile')
+frank = Recipe.new(name: "Frank Caiafa's Rob Roy")
+french_connection = Recipe.new(name: 'French Connection')
+french_harvest = Recipe.new(name: 'French Harvest')
+french_martini = Recipe.new(name: 'French martini')
+french_seventy_five = Recipe.new(name: 'French 75')
+frisky = Recipe.new(name: 'Frisky Whiskey')
+frohito = Recipe.new(name: 'Frohito')
+frosé = Recipe.new(name: 'Frosé')
+frozen_absinthe = Recipe.new(name: 'Frozen Absinthe Frappé')
+frozen_daiquiri = Recipe.new(name: 'Frozen Daiquiri')
+frozen_margarita = Recipe.new(name: 'Frozen Margarita')
+fuzzy = Recipe.new(name: 'Fuzzy Navel')
+garibaldi = Recipe.new(name: 'Garibaldi')
+gibson = Recipe.new(name: 'Gibson')
+gimlet = Recipe.new(name: 'Gimlet')
+gin_and_tonic = Recipe.new(name: 'Gin and tonic')
+gin_fizz = Recipe.new(name: 'Gin fizz')
+ginger_ale_highball = Recipe.new(name: 'Ginger Ale Highball')
+ginger_fever_punch = Recipe.new(name: 'Ginger Fever Punch')
+godfather = Recipe.new(name: 'Godfather')
+gold_rush = Recipe.new(name: 'Gold Rush')
+golden__dream = Recipe.new(name: 'Golden dream')
+golden_cadillac = Recipe.new(name: 'Golden Cadillac')
+golden_dew = Recipe.new(name: 'Golden Dew')
+golden_gate_spritz = Recipe.new(name: 'Golden Gate Spritz')
+golden_purl = Recipe.new(name: 'Golden Purl')
+grasshopper = Recipe.new(name: 'Grasshopper')
+grave = Recipe.new(name: 'Grave Digger')
+great = Recipe.new(name: 'Great Pumpkin')
+green_beast = Recipe.new(name: 'Green Beast')
+green_isaac_special = Recipe.new(name: "Green Isaac's Special")
+greenpoint = Recipe.new(name: 'Greenpoint')
+greyhound = Recipe.new(name: 'Greyhound')
+guinnessfloat = Recipe.new(name: 'Guinness Chocolate Float')
+half = Recipe.new(name: 'Half Moon Bay')
+hanalei = Recipe.new(name: 'Hanalei Sun')
+hanky = Recipe.new(name: 'Hanky Panky')
+harry_potter_butter = Recipe.new(name: "'Harry Potter' Butterbeer")
+harvey = Recipe.new(name: 'Harvey Wallbanger')
+heated = Recipe.new(name: 'Heated Affair')
+hemingway_daiquiri = Recipe.new(name: 'Hemingway Daiquiri')
+hemingway_special = Recipe.new(name: 'Hemingway Special')
+hennessy_ginger = Recipe.new(name: 'Hennessy Ginger')
+here_comes_the_sun = Recipe.new(name: 'Here Comes the Sun')
+hey_gourdgeous = Recipe.new(name: 'Hey, Gourdgeous')
+high_on_hog = Recipe.new(name: 'High on the Hog')
+high_seas = Recipe.new(name: 'High Seas')
+high_tide = Recipe.new(name: 'High Tide')
+hit = Recipe.new(name: 'Hit Me Baby One More GlÃ¼hwein')
+holiday = Recipe.new(name: 'Holiday Sparkler Wine')
+honey_bourbon = Recipe.new(name: 'Honey Winter Bourbon')
+horn = Recipe.new(name: 'Horn of the Bulls')
+horses_neck = Recipe.new(name: "Horse's Neck")
+hot_blooded = Recipe.new(name: 'Hot Blooded')
+hot_buttered_rum = Recipe.new(name: 'Hot Buttered Rum')
+hot_caramel = Recipe.new(name: 'Hot Caramel Buttered Rum')
+hot_shot = Recipe.new(name: 'Hot Shot')
+hot_toddy = Recipe.new(name: 'Hot Toddy')
+hummer = Recipe.new(name: 'Hummer')
+hurricane = Recipe.new(name: 'Hurricane')
+i_left_my_heart = Recipe.new(name: 'I Left My Heart in Jalisco')
+illegal = Recipe.new(name: 'Illegal')
+infused = Recipe.new(name: 'Infused Tom Collins')
+irhsih_shot = Recipe.new(name: 'Irish Shot')
+irish_affrogato = Recipe.new(name: 'Irish Affogato')
+irish_buck = Recipe.new(name: 'Irish Buck')
+irish_car_bomb = Recipe.new(name: 'Irish Car Bomb')
+irish_coffee = Recipe.new(name: 'Irish coffee')
+irish_maid = Recipe.new(name: 'Irish Maid')
+irish_raktajino = Recipe.new(name: 'Irish Raktajino')
+island = Recipe.new(name: 'Island Oasis')
+jack = Recipe.new(name: 'Jack Rose')
+jack_o_lantern = Recipe.new(name: "Jack-o'-Lantern Punch")
+jager_old_fashioned = Recipe.new(name: 'Jägermeister Old Fashioned')
+japanese = Recipe.new(name: 'Japanese Sour')
+jingle = Recipe.new(name: 'Jingle Ball')
+john = Recipe.new(name: 'John Collins')
+josé = Recipe.new(name: 'José Wallbanger')
+jungle = Recipe.new(name: 'Jungle Bird')
+kamikaze = Recipe.new(name: 'Kamikaze')
+kanar = Recipe.new(name: 'Kanar Sazerac')
+kentucky = Recipe.new(name: 'Kentucky Mule')
+killer = Recipe.new(name: 'Killer Queen')
+kir = Recipe.new(name: 'Kir')
+kir_royale = Recipe.new(name: 'Kir Royale')
+kombucha = Recipe.new(name: 'Kombucha Sangria')
+kylo = Recipe.new(name: 'Kylo Rye')
+landmaster = Recipe.new(name: 'Landmaster')
+large_format_mezcal = Recipe.new(name: 'Large-Format Mezcal Negroni')
+large_format_red = Recipe.new(name: 'Large-Format Red Hook')
+last = Recipe.new(name: 'Last Word')
+last_minute = Recipe.new(name: 'Last-Minute Mulled Wine')
+latitude = Recipe.new(name: 'Latitude 29 Mai Tai')
+le = Recipe.new(name: 'Le Grand Louis')
+leeward = Recipe.new(name: 'Leeward Negroni')
+lemon_drop = Recipe.new(name: 'Lemon Drop')
+lemon_drop_martini = Recipe.new(name: 'Lemon drop martini')
+lights = Recipe.new(name: 'Lights Out Punch')
+lime_rickey = Recipe.new(name: 'Lime Rickey')
+lions = Recipe.new(name: "Lion's Tail")
+little = Recipe.new(name: 'Little Kiss')
+london_lemonade = Recipe.new(name: 'London Lemonade')
+london_toddy = Recipe.new(name: 'London Toddy')
+long = Recipe.new(name: 'Long Island iced tea')
+longshoreman = Recipe.new(name: 'Longshoreman')
+lounge = Recipe.new(name: 'Lounge Chair Afternoon')
+m_g_and_t = Recipe.new(name: 'M Gin & Tonic')
+macuá = Recipe.new(name: 'Macuá')
+mad = Recipe.new(name: 'Mad Fish')
+magic = Recipe.new(name: 'Magic Cotton Candy Daiquiri')
+mai = Recipe.new(name: 'Mai Tai')
+malibu_mudslide = Recipe.new(name: 'Malibu Mudslide')
+mamie = Recipe.new(name: 'Mamie Taylor')
+man_o_war = Recipe.new(name: "Man o' War")
+mango = Recipe.new(name: 'Mango Basil Lemonade')
+manhattan = Recipe.new(name: 'Manhattan')
+mantra = Recipe.new(name: 'Mantra')
+maple = Recipe.new(name: 'Maple Beet Shrub')
+margarita = Recipe.new(name: 'Margarita')
+margaritas = Recipe.new(name: 'Margaritas by the Pitcher')
+martinez = Recipe.new(name: 'Martinez')
+mary = Recipe.new(name: 'Mary Pickford')
+master = Recipe.new(name: 'Master Cleanse Shot')
+mexican = Recipe.new(name: 'Mexican Punch')
+mezcal_mule = Recipe.new(name: 'Mezcal Mule')
+mezcal_negroni = Recipe.new(name: 'Mezcal Negroni')
+miami = Recipe.new(name: 'Miami Vice')
+michelada = Recipe.new(name: 'Michelada')
+milk_honey = Recipe.new(name: 'Milk & Honey')
+millionaire = Recipe.new(name: 'Millionaire')
+mimosa = Recipe.new(name: 'Mimosa')
+mink = Recipe.new(name: 'Mink Coat & No Manners')
+mint_julep = Recipe.new(name: 'Mint julep')
+mojito = Recipe.new(name: 'Mojito')
+moment = Recipe.new(name: 'Moment of Clarity')
+monkey = Recipe.new(name: 'Monkey Gland')
+monte_carlo = Recipe.new(name: 'Monte Carlo')
+monte_cassino = Recipe.new(name: 'Monte Cassino')
+moscow = Recipe.new(name: 'Moscow mule')
+mudslide = Recipe.new(name: 'Mudslide')
+mule = Recipe.new(name: 'Mule')
+mutual = Recipe.new(name: 'Mutual Friend')
+my = Recipe.new(name: 'My Thai')
+naked = Recipe.new(name: 'Naked and Famous')
+negroni = Recipe.new(name: 'Negroni')
+negroni_sbagliato = Recipe.new(name: 'Negroni Sbagliato')
+negroni_sorbet = Recipe.new(name: 'Negroni Sorbet')
+new_year_sparkler = Recipe.new(name: "New Year's Sparkler")
+night = Recipe.new(name: 'Night at the Spritz')
+nino = Recipe.new(name: 'Nino')
+northern = Recipe.new(name: 'Northern Harvest Buck')
+nui = Recipe.new(name: 'Nui Nui')
+ny_sour = Recipe.new(name: 'New York Sour')
+oaks = Recipe.new(name: 'Oaks Lily')
+oaxacan = Recipe.new(name: 'Oaxacan Tail')
+old_cuban = Recipe.new(name: 'Old Cuban')
+old_fashioned = Recipe.new(name: 'Old fashioned')
+old_pal = Recipe.new(name: 'Old Pal')
+one = Recipe.new(name: 'One Last Midnight')
+one_two = Recipe.new(name: 'One-Two Punch')
+orange_sherbet_mimosa = Recipe.new(name: 'Orange Sherbet Mimosa Punch')
+orange_whip = Recipe.new(name: 'Orange Whip')
+orgasm = Recipe.new(name: 'Orgasm')
+painkiller = Recipe.new(name: 'Painkiller')
+paloma = Recipe.new(name: 'Paloma')
+pandan_coconut = Recipe.new(name: 'Pandan-Coconut Kaki-tail')
+paper = Recipe.new(name: 'Paper Plane')
+paradise = Recipe.new(name: 'Paradise')
+peachme = Recipe.new(name: 'Peach Me')
+pearl = Recipe.new(name: 'Pearl Diver')
+peeping = Recipe.new(name: 'Peeping Tom')
+pegu = Recipe.new(name: 'Pegu Club')
+penicillin = Recipe.new(name: 'Penicillin')
+phoking = Recipe.new(name: 'Pho-King Champ')
+picon = Recipe.new(name: 'Picon Punch')
+pimmscup = Recipe.new(name: "Pimm's Cup")
+piña = Recipe.new(name: 'Piña Colada')
+pina_colada = Recipe.new(name: 'Piña Colada')
+pink_gin = Recipe.new(name: 'Pink Gin')
+pink_lady = Recipe.new(name: 'Pink lady')
+pink_squirrel = Recipe.new(name: 'Pink Squirrel')
+pisco_sour = Recipe.new(name: 'Pisco Sour')
+planters_punch = Recipe.new(name: "Planter's Punch")
+pomelomosa = Recipe.new(name: 'Pomelomosa')
+pomosa = Recipe.new(name: 'Pomosa')
+ponche = Recipe.new(name: 'Ponche Navideño')
+porchcrawler = Recipe.new(name: 'Porchcrawler')
+porchlight = Recipe.new(name: 'Porchlight 7&7')
+porn = Recipe.new(name: 'Porn Star Martini')
+port_royal_punch = Recipe.new(name: 'Port Royal Punch')
+porto = Recipe.new(name: 'Porto flip')
+pot = Recipe.new(name: 'Pot of Gold')
+presbyterian = Recipe.new(name: 'Presbyterian')
+professor = Recipe.new(name: 'Professor')
+pumpkin_buck = Recipe.new(name: 'Pumpkin Buck')
+pumpkin_sazerac = Recipe.new(name: 'Pumpkin Sazerac')
+pumpkin_toddy = Recipe.new(name: 'Pumpkin Toddy')
+que = Recipe.new(name: 'Que Bueno')
+quill = Recipe.new(name: 'Quill Riff')
+rainbow = Recipe.new(name: "Rainbow Planter's Punch")
+ramos = Recipe.new(name: 'Ramos Fizz')
+raspberrylimon = Recipe.new(name: 'Limoncello & Raspberry Whiskey Sour Popsicles')
+raymond = Recipe.new(name: 'Raymond Massey')
+rebirth = Recipe.new(name: 'Re:Birth')
+red = Recipe.new(name: 'Red Hook')
+reggae = Recipe.new(name: 'Reggae Rum Punch')
+remember = Recipe.new(name: 'Remember the Maine')
+rickey = Recipe.new(name: 'Rickey')
+ring = Recipe.new(name: 'Ring the Alarm')
+rob = Recipe.new(name: 'Rob Roy')
+rockeys_rum = Recipe.new(name: "Rockey's & Rum Swizzle")
+roman = Recipe.new(name: 'Roman Holiday')
+rose_colored_glass = Recipe.new(name: 'Rose-Colored Glass')
+rosemary_mezcal = Recipe.new(name: 'Rosemary Mezcal Negroni')
+royal = Recipe.new(name: 'Royal Balmoral Punch')
+ruby = Recipe.new(name: 'Ruby Relaxer')
+rum_old_fashioned = Recipe.new(name: 'Rum Old Fashioned')
+rum_punch = Recipe.new(name: 'Rum Punch')
+rum_smoke = Recipe.new(name: 'Rum & Smoke')
+russian = Recipe.new(name: 'Russian Spring Punch')
+rustaveli = Recipe.new(name: 'Rustaveli')
+rusty_compass = Recipe.new(name: 'Rusty Compass')
+rusy_nail = Recipe.new(name: 'Rusty Nail')
+saint = Recipe.new(name: 'Saint Balthazar')
+saison = Recipe.new(name: 'Saison Highball')
+sakebomb = Recipe.new(name: 'Sake bomb')
+salty = Recipe.new(name: 'Salty Dog')
+samarian = Recipe.new(name: 'Samarian Sunset')
+sangria = Recipe.new(name: 'Sangria')
+sangrita = Recipe.new(name: 'Sangrita')
+saturn = Recipe.new(name: 'Saturn')
+sazerac = Recipe.new(name: 'Sazerac')
+scofflaw = Recipe.new(name: 'Scofflaw')
+scotch_soda = Recipe.new(name: 'Scotch & Soda')
+sea_breeze = Recipe.new(name: 'Sea Breeze')
+sea_breeze_cooler = Recipe.new(name: 'Sea Breeze Cooler')
+set = Recipe.new(name: 'Set the New Year on Fire')
+seven_and_seven = Recipe.new(name: '7 and 7')
+sex = Recipe.new(name: 'Sex on the Beach')
+shamrock = Recipe.new(name: 'Shamrock Shot')
+sidecar = Recipe.new(name: 'Sidecar')
+sin = Recipe.new(name: 'Sin Cyn')
+singapore = Recipe.new(name: 'Singapore Sling')
+singapura = Recipe.new(name: 'Singapura')
+slippery = Recipe.new(name: 'Slippery nipple')
+smoked = Recipe.new(name: 'Smoked Honey Toddy')
+smoky = Recipe.new(name: 'Smoky Martini')
+snakebite = Recipe.new(name: 'Snakebite')
+snap = Recipe.new(name: 'Snap, Crackle, Drop')
+sourmidori = Recipe.new(name: 'Midori Sour')
+south = Recipe.new(name: 'South by Southwest')
+southside = Recipe.new(name: 'Southside')
+spanish = Recipe.new(name: 'Spanish Gin & Tonic')
+sparkling_margarita = Recipe.new(name: 'Sparkling Rosé Margarita')
+sparkling_watermelon = Recipe.new(name: 'Sparkling Watermelon Punch')
+spcity_margarita = Recipe.new(name: 'Spicy Margarita')
+spiced_eggnog = Recipe.new(name: 'Spiced Eggnog')
+spiced_margarita = Recipe.new(name: 'Spiced Margarita')
+spicy_mint = Recipe.new(name: 'Spicy Mint Avocado Margarita')
+spritz = Recipe.new(name: 'Spritz')
+stinger = Recipe.new(name: 'Stinger')
+stone = Recipe.new(name: 'Stone Fence')
+strawberry_daiquiri = Recipe.new(name: 'Strawberry Daiquiri')
+strawberry_pisco_sour = Recipe.new(name: 'Strawberry Pisco Sour')
+suffering = Recipe.new(name: 'Suffering Bastard')
+summer = Recipe.new(name: 'Summer Serve Copa')
+summer_served = Recipe.new(name: '1888 Summer Serve')
+summerthyme = Recipe.new(name: 'Summerthyme Screwdriver')
+sunflower = Recipe.new(name: 'Sunflower')
+sussex = Recipe.new(name: 'Sussex 75')
+switchel = Recipe.new(name: 'Switchel')
+tart = Recipe.new(name: "Tart n' Sand")
+tasman = Recipe.new(name: 'Tasman Sea')
+tea_for_two = Recipe.new(name: 'Tea for Two')
+tea_sympathy = Recipe.new(name: 'Tea & Sympathy')
+tequila_mockingbird = Recipe.new(name: 'Tequila Mockingbird')
+tequila_sunrise = Recipe.new(name: 'Tequila Sunrise')
+thai = Recipe.new(name: 'Thai Old Fashioned')
+the_dead_rabbit = Recipe.new(name: 'The Dead Rabbit Irish Coffee')
+the_lookout = Recipe.new(name: 'The Lookout')
+the_modern = Recipe.new(name: 'The Modern')
+the_spice_is_right = Recipe.new(name: 'The Spice Is Right')
+timberpoint = Recipe.new(name: 'Timberpoint Cooler')
+tipperary = Recipe.new(name: 'Tipperary')
+toblerone = Recipe.new(name: 'Toblerone')
+tom_and_jerry = Recipe.new(name: 'Tom & Jerry')
+tom_collins = Recipe.new(name: 'Tom Collins')
+tom_yum = Recipe.new(name: 'Tom Yum on a Rock')
+tommys_margarita = Recipe.new(name: "Tommy's Margarita")
+tootsie = Recipe.new(name: 'Tootsie Roll')
+top = Recipe.new(name: 'Top of the Morning')
+toronto = Recipe.new(name: 'Toronto')
+trinidad = Recipe.new(name: 'Trinidad Sour')
+turf = Recipe.new(name: 'Turf Club')
+tuxedo = Recipe.new(name: 'Tuxedo')
+twentieth_century = Recipe.new(name: '20th Century')
+uncle = Recipe.new(name: "Uncle Angelo's Eggnog")
+upper = Recipe.new(name: 'Upper Cut')
+uss = Recipe.new(name: 'USS Richmond Punch')
+vampiro = Recipe.new(name: 'Vampiro')
+ve_n_to = Recipe.new(name: 'Ve.n.to')
+vesper = Recipe.new(name: 'Vesper')
+vida = Recipe.new(name: 'Vida Paloma')
+vieuxcarre = Recipe.new(name: 'Vieux Carré')
+vodka_martini = Recipe.new(name: 'Vodka Martini')
+waldorf = Recipe.new(name: 'Waldorf')
+ward = Recipe.new(name: 'Ward Eight')
+washington_apple = Recipe.new(name: 'Washington Apple')
+washington_apple_shot = Recipe.new(name: 'Washington Apple Shot')
+waterfront = Recipe.new(name: 'Waterfront Cooler')
+watermelon_blackberry = Recipe.new(name: 'Watermelon-Blackberry Margarita Popsicles')
+watermelon_spritzer = Recipe.new(name: 'Watermelon White Wine Spritzer')
+whats_up = Recipe.new(name: "What's Up, Doc")
+where = Recipe.new(name: 'Where No Man Has Gone Before')
+whiskey_in_church = Recipe.new(name: 'Whiskey in Church')
+whiskey_mac = Recipe.new(name: 'Whiskey Mac')
+whiskey_skin = Recipe.new(name: 'Whiskey Skin')
+whiskey_smashed = Recipe.new(name: 'Whiskey Smashed')
+whiskey_sour = Recipe.new(name: 'Whiskey sour')
+white_cargo = Recipe.new(name: 'White Cargo')
+white_lady = Recipe.new(name: 'White Lady')
+white_russian = Recipe.new(name: 'White Russian')
+white_summer = Recipe.new(name: 'White Summer Sazerac')
+winter = Recipe.new(name: 'Winter Flower')
+wisconsin = Recipe.new(name: 'Wisconsin Old Fashioned')
+witches_brew = Recipe.new(name: "Witches' Brew")
+yellow_bird = Recipe.new(name: 'Yellow Bird')
+yerba = Recipe.new(name: 'Yerba Buena')
+zombie = Recipe.new(name: 'Zombie')
 
 a_la_louisiane.liquors << rye
 absinthe_suisse.liquors << blanco
@@ -6563,3 +6563,512 @@ tom_yum.garnishes_array << '1 Pinch of Sea Salt'
 bloody_maria.garnishes_array << 'Queso Fresco'
 tom_yum.garnishes_array << '1 Wheel of Lime'
 tom_yum.garnishes_array << '1 Slice of Red Hot Chile Pepper'
+
+a_la_louisiane.save
+absinthe_drip.save
+absinthe_suisse.save
+absolut_lime_drop.save
+absolut_moscow_mule.save
+airmail.save
+alabama.save
+alligator.save
+amaretto_french.save
+amaretto_sour.save
+amber.save
+americano.save
+anejo_old_fashioned.save
+angel.save
+añogo.save
+another.save
+aperitivo.save
+apple_cranberry_moscow_mule.save
+apple_toddy.save
+applejack.save
+apricot_ginger.save
+aquavit_buck.save
+astro.save
+autumn.save
+aviation.save
+b.save
+b_52.save
+bacardi.save
+bagrationi.save
+bamboo.save
+bananadaiquiri.save
+barbados.save
+barracuda.save
+batida.save
+bear.save
+bebbo.save
+bees.save
+beet.save
+bellini.save
+bentons.save
+bermuda.save
+beton.save
+between.save
+bicicletta.save
+big_red.save
+big_red_sun.save
+bijou.save
+bitter.save
+black_barrel_old_fashioned.save
+black_betty.save
+black_mole_margarita.save
+black_russian.save
+black_velvet.save
+blood.save
+bloody_caesar.save
+bloody_casear.save
+bloody_maria.save
+bloody_mary.save
+bloody_roman.save
+blow.save
+blue_blazer.save
+blue_hawaii.save
+blue_lagoon.save
+blueberry.save
+boat.save
+bobby.save
+boilermaker.save
+bootstitch.save
+boozy.save
+bordeaux.save
+bossa.save
+boston.save
+boulevardier.save
+bourbon_cider.save
+bourbon_lancer.save
+bourbon_lemonade.save
+bourbon_old_fashioned.save
+bourbon_root_beer.save
+bourbon_rosemary_punch.save
+bourbon_strawberry.save
+bourbon_vanilla.save
+bramble.save
+brandy_alexander.save
+brandy_crusta.save
+brandy_daisy.save
+brandy_old_fashioned.save
+brandy_sangaree.save
+brandy_sour.save
+brave.save
+brazilian.save
+bronx.save
+brown.save
+bulleit.save
+café.save
+café_ponche.save
+caipirinha.save
+calvados_sidecar.save
+canchã¡nchara.save
+canchanchara.save
+candy.save
+cape.save
+cardamom_recipe.save
+casino.save
+cave.save
+cbd_dirty_martini.save
+cbd_gin_tonic.save
+cbd_moscow_mule.save
+cbd_spritz.save
+champagne_cocktail.save
+champagne_holiday.save
+channel.save
+charleston.save
+cherry_revolution.save
+chi.save
+chimayó.save
+chocomole.save
+chrysanthemum.save
+clover.save
+cobra.save
+cobras.save
+coco.save
+cocoa_passion.save
+coffee_cigarettes.save
+cojito.save
+conflict.save
+coquito.save
+corpose_reviver_one.save
+corpose_reviver_two.save
+corpse_reviver_two_one_two.save
+cosmopolitan.save
+cotter.save
+cowboy.save
+cranberry_ginger.save
+crimson.save
+crush.save
+crystal.save
+cuba.save
+cuban.save
+cucumber_cleanse.save
+cucumber_lime.save
+curiosity.save
+daiquiri.save
+dark_and_stormy.save
+dark_n_stormy.save
+dark_side.save
+darkside.save
+day_at_the_crawfish.save
+death_by_morning.save
+death_in_afternoon.save
+devils_margarita.save
+dizzy.save
+don_alfredo.save
+don_quixote.save
+dons_gardenia_mix.save
+dorado.save
+dragones.save
+dram.save
+drunk.save
+dry.save
+duck.save
+earl.save
+eggnogrecipe.save
+el_diablo.save
+el_presidente.save
+elderflowerfizz.save
+embarcadero.save
+emerald.save
+espresso_martini.save
+fernandito.save
+fernetaboutit.save
+fifty_fifty_birthday.save
+figgy.save
+flaming.save
+flannel.save
+flor.save
+forbidden_apple.save
+forbidden_sour.save
+forest.save
+francophile.save
+frank.save
+french_connection.save
+french_harvest.save
+french_martini.save
+french_seventy_five.save
+frisky.save
+frohito.save
+frosé.save
+frozen_absinthe.save
+frozen_daiquiri.save
+frozen_margarita.save
+fuzzy.save
+garibaldi.save
+gibson.save
+gimlet.save
+gin_and_tonic.save
+gin_fizz.save
+ginger_ale_highball.save
+ginger_fever_punch.save
+godfather.save
+gold_rush.save
+golden__dream.save
+golden_cadillac.save
+golden_dew.save
+golden_gate_spritz.save
+golden_purl.save
+grasshopper.save
+grave.save
+great.save
+green_beast.save
+green_isaac_special.save
+greenpoint.save
+greyhound.save
+guinnessfloat.save
+half.save
+hanalei.save
+hanky.save
+harry_potter_butter.save
+harvey.save
+heated.save
+hemingway_daiquiri.save
+hemingway_special.save
+hennessy_ginger.save
+here_comes_the_sun.save
+hey_gourdgeous.save
+high_on_hog.save
+high_seas.save
+high_tide.save
+hit.save
+holiday.save
+honey_bourbon.save
+horn.save
+horses_neck.save
+hot_blooded.save
+hot_buttered_rum.save
+hot_caramel.save
+hot_shot.save
+hot_toddy.save
+hummer.save
+hurricane.save
+i_left_my_heart.save
+illegal.save
+infused.save
+irhsih_shot.save
+irish_affrogato.save
+irish_buck.save
+irish_car_bomb.save
+irish_coffee.save
+irish_maid.save
+irish_raktajino.save
+island.save
+jack.save
+jack_o_lantern.save
+jager_old_fashioned.save
+japanese.save
+jingle.save
+john.save
+josé.save
+jungle.save
+kamikaze.save
+kanar.save
+kentucky.save
+killer.save
+kir.save
+kir_royale.save
+kombucha.save
+kylo.save
+landmaster.save
+large_format_mezcal.save
+large_format_red.save
+last.save
+last_minute.save
+latitude.save
+le.save
+leeward.save
+lemon_drop.save
+lemon_drop_martini.save
+lights.save
+lime_rickey.save
+lions.save
+little.save
+london_lemonade.save
+london_toddy.save
+long.save
+longshoreman.save
+lounge.save
+m_g_and_t.save
+macuá.save
+mad.save
+magic.save
+mai.save
+malibu_mudslide.save
+mamie.save
+man_o_war.save
+mango.save
+manhattan.save
+mantra.save
+maple.save
+margarita.save
+margaritas.save
+martinez.save
+mary.save
+master.save
+mexican.save
+mezcal_mule.save
+mezcal_negroni.save
+miami.save
+michelada.save
+milk_honey.save
+millionaire.save
+mimosa.save
+mink.save
+mint_julep.save
+mojito.save
+moment.save
+monkey.save
+monte_carlo.save
+monte_cassino.save
+moscow.save
+mudslide.save
+mule.save
+mutual.save
+my.save
+naked.save
+negroni.save
+negroni_sbagliato.save
+negroni_sorbet.save
+new_year_sparkler.save
+night.save
+nino.save
+northern.save
+nui.save
+ny_sour.save
+oaks.save
+oaxacan.save
+old_cuban.save
+old_fashioned.save
+old_pal.save
+one.save
+one_two.save
+orange_sherbet_mimosa.save
+orange_whip.save
+orgasm.save
+painkiller.save
+paloma.save
+pandan_coconut.save
+paper.save
+paradise.save
+peachme.save
+pearl.save
+peeping.save
+pegu.save
+penicillin.save
+phoking.save
+picon.save
+pimmscup.save
+piña.save
+pina_colada.save
+pink_gin.save
+pink_lady.save
+pink_squirrel.save
+pisco_sour.save
+planters_punch.save
+pomelomosa.save
+pomosa.save
+ponche.save
+porchcrawler.save
+porchlight.save
+porn.save
+port_royal_punch.save
+porto.save
+pot.save
+presbyterian.save
+professor.save
+pumpkin_buck.save
+pumpkin_sazerac.save
+pumpkin_toddy.save
+que.save
+quill.save
+rainbow.save
+ramos.save
+raspberrylimon.save
+raymond.save
+rebirth.save
+red.save
+reggae.save
+remember.save
+rickey.save
+ring.save
+rob.save
+rockeys_rum.save
+roman.save
+rose_colored_glass.save
+rosemary_mezcal.save
+royal.save
+ruby.save
+rum_old_fashioned.save
+rum_punch.save
+rum_smoke.save
+russian.save
+rustaveli.save
+rusty_compass.save
+rusy_nail.save
+saint.save
+saison.save
+sakebomb.save
+salty.save
+samarian.save
+sangria.save
+sangrita.save
+saturn.save
+sazerac.save
+scofflaw.save
+scotch_soda.save
+sea_breeze.save
+sea_breeze_cooler.save
+set.save
+seven_and_seven.save
+sex.save
+shamrock.save
+sidecar.save
+sin.save
+singapore.save
+singapura.save
+slippery.save
+smoked.save
+smoky.save
+snakebite.save
+snap.save
+sourmidori.save
+south.save
+southside.save
+spanish.save
+sparkling_margarita.save
+sparkling_watermelon.save
+spcity_margarita.save
+spiced_eggnog.save
+spiced_margarita.save
+spicy_mint.save
+spritz.save
+stinger.save
+stone.save
+strawberry_daiquiri.save
+strawberry_pisco_sour.save
+suffering.save
+summer.save
+summer_served.save
+summerthyme.save
+sunflower.save
+sussex.save
+switchel.save
+tart.save
+tasman.save
+tea_for_two.save
+tea_sympathy.save
+tequila_mockingbird.save
+tequila_sunrise.save
+thai.save
+the_dead_rabbit.save
+the_lookout.save
+the_modern.save
+the_spice_is_right.save
+timberpoint.save
+tipperary.save
+toblerone.save
+tom_and_jerry.save
+tom_collins.save
+tom_yum.save
+tommys_margarita.save
+tootsie.save
+top.save
+toronto.save
+trinidad.save
+turf.save
+tuxedo.save
+twentieth_century.save
+uncle.save
+upper.save
+uss.save
+vampiro.save
+ve_n_to.save
+vesper.save
+vida.save
+vieuxcarre.save
+vodka_martini.save
+waldorf.save
+ward.save
+washington_apple.save
+washington_apple_shot.save
+waterfront.save
+watermelon_blackberry.save
+watermelon_spritzer.save
+whats_up.save
+where.save
+whiskey_in_church.save
+whiskey_mac.save
+whiskey_skin.save
+whiskey_smashed.save
+whiskey_sour.save
+white_cargo.save
+white_lady.save
+white_russian.save
+white_summer.save
+winter.save
+wisconsin.save
+witches_brew.save
+yellow_bird.save
+yerba.save
+zombie.save

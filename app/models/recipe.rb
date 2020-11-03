@@ -23,7 +23,10 @@ class Recipe < ApplicationRecord
 
   #accepts_nested_attributes_for :liquors, :liqueurs, :mixers, :garnishes
 
-  before_create :complexity
+  before_create :complexity, :generate_question, :all_ingredients, :correct_ingredients
+
+  @all_ingredients = []
+  @correct_ingredients = []
 
   def complexity
     total_ingredients = self.liquors.size + self.liqueurs.size + self.mixers.size + self.garnishes.size
@@ -38,6 +41,67 @@ class Recipe < ApplicationRecord
       difficulty = "Very Hard"
     end
     difficulty
+  end
+
+
+  def generateQuestion
+    liquors = []
+    liqueurs = []
+    mixers = []
+    garnishes = []
+    correct_liquors = self.liquors
+    correct_liqueurs = self.liqueurs
+    correct_mixers = self.mixers
+    correct_garnishes = self.garnishes
+    @correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
+    @correct_ingredients.flatten
+    liquors << correct_liquors
+    liquors.flatten
+    liqueurs << correct_liqueurs
+    liqueurs.flatten
+    mixers << correct_mixers
+    mixers.flatten
+    garnishes << correct_garnishes
+    garnishes.flatten
+    while liquors.length <= 7
+      random_number = rand(216)
+      random_liquor = Liquor.all.find(random_number)
+      unless liquors.include?(random_liquor)
+        liquors << random_liquor
+      end
+    end
+    while liqueurs.length <= 7
+      random_number = rand(173)
+      random_liqueur = Liqueur.all.find(random_number)
+      unless liqueurs.include?(random_liqueur)
+        liqueurs << random_liqueur
+      end
+    end
+    while (mixers.length <= 7)
+      random_number = rand(308)
+      random_mixer = Mixer.all.find(random_number)
+      unless mixers.include?(random_mixer)
+        mixers << random_mixer
+      end
+    end
+    while (garnishes.length <= 4)
+      random_number = rand(142)
+      random_garnish = Garnish.all.find(random_number)
+      unless garnishes.include?(random_garnish)
+        garnishes << random_garnish
+      end
+    end
+    @all_ingredients << liquors << liqueurs << mixers << garnishes
+    @all_ingredients.flatten
+    @all_ingredients
+  end
+
+  def all_ingredients
+    @all_ingredients
+  end
+
+  def correct_ingredients
+    @correct_ingredients
   end
 
 end

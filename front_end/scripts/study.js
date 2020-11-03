@@ -177,9 +177,16 @@ document.addEventListener('click', function() {
 
 function generateQuestion(json) {
   card = renderRandomcard(json);
+  liquors = [];
+  liqueurs = [];
+  mixers = [];
+  garnishes = [];
   correctLiquors = card.querySelectorAll('.liquor');
   correctLiqueurs = card.querySelectorAll('.liqueur');
   correctMixers = card.querySelectorAll('.mixer');
-  correctGarnishes = card.querySelectorAll('garnish');
-
+  correctGarnishes = card.querySelectorAll('.garnish');
+  liquors.push(correctLiquors);
+  liqueurs.push(correctLiqueurs);
+  mixers.push(correctMixers);
+  garnishes.push(correctGarnishes);
 }

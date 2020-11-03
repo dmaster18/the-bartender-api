@@ -26,7 +26,7 @@ Promise.all([
   ...
 
 })
-function generateQuestion(json) {
+function generateQuestion(recipes, liquors, liqueurs, mixers, garnishes) {
   card = renderRandomcard(json);
   liquors = [];
   liqueurs = [];
@@ -41,22 +41,32 @@ function generateQuestion(json) {
   mixers.push(correctMixers.flat());
   garnishes.push(correctGarnishes.flat());
   while (liquors.length <= 7) {
-    randomLiquor = Math.random
-
+    const randomNumber = Math.floor(Math.random() * 217);
+    randomLiquor = liquors[randomNumber];
+    if (!liquors.include(randomLiquor){
+      liquors.push(randomLiquor);
+    }
   }
   while (liqueurs.length <= 7) {
-
-
+    const randomNumber = Math.floor(Math.random() * 174);
+    randomLiqueur = liqueurs[randomNumber];
+    if (!liqueurs.include(randomLiqueur){
+      liqueurs.push(randomLiqueur);
+    }
   }
-
   while (mixers.length <= 7) {
-
-
+    const randomNumber = Math.floor(Math.random() * 309);
+    randomMixer = mixers[randomNumber];
+    if (!mixers.include(randomMixers){
+      mixers.push(randomMixer);
+    }
   }
-
   while (garnishes.length <= 7) {
-
-
+    const randomNumber = Math.floor(Math.random() * 143);
+    randomGarnish = garnishes[randomNumber];
+    if (!garnishes.include(randomGarnish){
+      garnishes.push(randomGarnish);
+    }
   }
 }
 

@@ -10,13 +10,18 @@ function generateQuestion(recipe) {
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');
   main.appendChild(recipeName);
-  const ingredientCard = document.createElement('div');
-  ingredientCard.classList.add('ingredient-card-container');
-  const ingredientCardDetail = document.createElement('div');
-  ingredientCardDetail.classList.add('ingredient-card-detail');
-  ingredientCardDetail.innerText = ``
-  ingredientCard.appendChild(ingredientCardDetail);
-
+  const ingredientCards = document.createElement('div');
+  ingredientCards.classList.add('ingredient-cards');
+  const ingredientCards = recipe.attributes.all_ingredients.forEach(ingredient => {
+    const ingredientCard = document.createElement('div');
+    ingredientCard.classList.add('ingredient-card-container');
+    const ingredientCardDetail = document.createElement('div');
+    ingredientCardDetail.classList.add('ingredient-card-detail');
+    ingredientCardDetail.innerText = `${ingredient.name}`
+    ingredientCard.appendChild(ingredientCardDetail);
+    ingredientCards.appendChild(ingredientCard);
+  })
+  main.appendChild(ingredientCards);
 }
 
 function generateQuiz(question) {

@@ -70,6 +70,9 @@ function generateQuestion(recipes, liquors, liqueurs, mixers, garnishes) {
   }
 }
 
+function evaluateRecipeDifficulty(recipes, liquors, liqueurs, mixers, garnishes) {
+  
+}
 
 
 

@@ -23,4 +23,21 @@ class Recipe < ApplicationRecord
 
   #accepts_nested_attributes_for :liquors, :liqueurs, :mixers, :garnishes
 
+  before_create :complexity
+
+  def complexity
+    total_ingredients = self.liquors.size + self.liqueurs.size + self.mixers.size + self.garnishes.size
+    difficulty = "Easy"
+    if total_ingredients <= 3
+      difficulty = "Easy"
+    elsif total_ingredients <= 5
+      difficulty = "Medium"
+    elsif total_ingredients <= 7
+      difficulty = "Hard"
+    else
+      difficulty = "Very Hard"
+    end
+    difficulty
+  end
+
 end

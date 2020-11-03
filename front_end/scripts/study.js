@@ -174,3 +174,9 @@ document.addEventListener('click', function() {
   console.log('DOM fully loaded and parsed');
   fetchRecipes();
 })*/
+
+function generateQuestion(json) {
+  card = renderRandomcard(json);
+  if 
+
+}

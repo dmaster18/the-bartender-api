@@ -34,13 +34,15 @@ div.card-front, div.card-back {
 
 /* Style the front side (fallback if image is missing) */
 div.card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* Style the back side */
 div.card-back {
-  background-color: dodgerblue;
+  background-color: orange;
   color: white;
   transform: rotateY(180deg);
 }

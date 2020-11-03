@@ -25,7 +25,7 @@ class Recipe < ApplicationRecord
 
   #accepts_nested_attributes_for :liquors, :liqueurs, :mixers, :garnishes
 
-  before_create :complexity, :generate_question, :all_ingredients, :correct_ingredients
+  before_save :complexity, :generate_question, :all_ingredients, :correct_ingredients
 
   @all_ingredients = []
   @correct_ingredients = []

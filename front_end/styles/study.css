@@ -9,23 +9,23 @@ div.card {
   /* This container is needed to position the front and back side */
 div.card-inner {
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 300px;
+  height: 200px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-div.card:hover div.card-inner {
+div.card:active div.card-inner {
   transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 div.card-front, div.card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 200px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -35,7 +35,7 @@ div.card-front {
   background-color: blue;
   color: white;
   text-align: center;
-  padding: 150px;
+  padding: 80px;
 }
 
 /* Style the back side */

@@ -5,13 +5,21 @@ function fetchcards() {
   .then(recipes => rendercards(recipes))
 }
 
-function generateQuizCard(recipe) {
-  r
+function generateQuestion(recipe) {
+  const main = document.querySelector('main');
+  const recipeName = document.createElement('h1');
+  recipeName.classList.add('recipe-name');
+  main.appendChild(recipeName);
+  const ingredientCard = document.createElement('div');
+  ingredientCard.classList.add('ingredient-card-container');
+  const ingredientCardDetail = document.createElement('div');
+  ingredientCardDetail.classList.add('ingredient-card-detail');
+  ingredientCard.appendChild(ingredientCardDetail);
 
 }
 
 function quizCards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
-  recipes["data"].forEach(recipe => generateQuizCard(recipe))
+  recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
 
 

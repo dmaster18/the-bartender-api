@@ -2,31 +2,17 @@ function fetchcards() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => rendercards(json))
+  .then(recipes => rendercards(recipes))
 }
 
-function rendercards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
-  json["data"].forEach(recipe => generatecard(recipe))
+function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
+  recipes["data"].forEach(recipe => generatecard(recipe))
 }
 
 
-Promise.all([
-  fetch('http://127.0.0.1:3000/recipes'),
-  fetch('http://127.0.0.1:3000/liquors'),
-  fetch('http://127.0.0.1:3000/liqueurs'),
-  fetch('http://127.0.0.1:3000/mixers'),
-  fetch('http://127.0.0.1:3000/garnishes')
-]).then(allResponses => {
-  const recipes = allResponses[0]
-  const liquors = allResponses[1]
-  const liqueurs = allResponses[2]
-  const mixers = allResponses[3]
-  const garnishes = allResponses[4]
-}
-  ...
 
-})
-function generateQuestion(recipes, liquors, liqueurs, mixers, garnishes) {
+
+/*function generateQuestion(recipes, liquors, liqueurs, mixers, garnishes) {
   card = renderRandomcard(json);
   liquors = [];
   liqueurs = [];
@@ -70,8 +56,25 @@ function generateQuestion(recipes, liquors, liqueurs, mixers, garnishes) {
   }
 }
 
+Promise.all([
+  fetch('http://127.0.0.1:3000/recipes'),
+  fetch('http://127.0.0.1:3000/liquors'),
+  fetch('http://127.0.0.1:3000/liqueurs'),
+  fetch('http://127.0.0.1:3000/mixers'),
+  fetch('http://127.0.0.1:3000/garnishes')
+]).then(allResponses => {
+  const recipes = allResponses[0]
+  const liquors = allResponses[1]
+  const liqueurs = allResponses[2]
+  const mixers = allResponses[3]
+  const garnishes = allResponses[4]
+}
+  ...
+
+})
+
 function evaluateRecipeDifficulty(recipes, liquors, liqueurs, mixers, garnishes) {
-  
+
 }
 
 

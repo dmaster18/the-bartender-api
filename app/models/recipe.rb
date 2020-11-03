@@ -45,7 +45,6 @@ class Recipe < ApplicationRecord
     difficulty
   end
 
-
   def generate_question
     liquors = []
     liqueurs = []

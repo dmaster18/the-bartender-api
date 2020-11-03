@@ -27,8 +27,8 @@ class Recipe < ApplicationRecord
 
   before_save :complexity, :generate_question, :all_ingredients, :correct_ingredients
 
-  @all_ingredients = []
-  @correct_ingredients = []
+  #@all_ingredients = []
+  #@correct_ingredients = []
 
   def complexity
     total_ingredients = self.liquors.size + self.liqueurs.size + self.mixers.size + self.garnishes.size
@@ -55,8 +55,8 @@ class Recipe < ApplicationRecord
     correct_liqueurs = self.liqueurs
     correct_mixers = self.mixers
     correct_garnishes = self.garnishes
-    @correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
-    @correct_ingredients.flatten
+    correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
+    correct_ingredients.flatten
     liquors << correct_liquors
     liquors.flatten
     liqueurs << correct_liqueurs
@@ -93,17 +93,17 @@ class Recipe < ApplicationRecord
         garnishes << random_garnish
       end
     end
-    @all_ingredients << liquors << liqueurs << mixers << garnishes
-    @all_ingredients.flatten
-    @all_ingredients
+    all_ingredients << liquors << liqueurs << mixers << garnishes
+    all_ingredients.flatten
+    all_ingredients
   end
 
-  def all_ingredients
-    @all_ingredients
-  end
+  #def all_ingredients
+#    @all_ingredients
+#  end
 
-  def correct_ingredients
-    @correct_ingredients
-  end
+#  def correct_ingredients
+#    @correct_ingredients
+#  end
 
 end

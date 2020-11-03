@@ -35,14 +35,18 @@ div.card-front, div.card-back {
 /* Style the front side (fallback if image is missing) */
 div.card-front {
   background-color: blue;
+  height: 300px;
+  width: 400px;
   color: white;
   text-align: center;
-  vertical-align: middle;
+  padding: 50px;
 }
 
 /* Style the back side */
 div.card-back {
   background-color: orange;
   color: white;
+  height: 300px;
+  width: 400px;
   transform: rotateY(180deg);
 }

@@ -5,8 +5,13 @@ function fetchcards() {
   .then(recipes => rendercards(recipes))
 }
 
-function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
-  recipes["data"].forEach(recipe => generatecard(recipe))
+function generateQuizCard(recipe) {
+  r
+
+}
+
+function quizCards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
+  recipes["data"].forEach(recipe => generateQuizCard(recipe))
 }
 
 

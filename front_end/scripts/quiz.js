@@ -109,3 +109,20 @@ constructor(props) {
     function parseJSON(response) {
         return response.json();
     }*/
+
+    /*// store urls to fetch in an array
+const urls = [
+  'https://dog.ceo/api/breeds/list',
+  'https://dog.ceo/api/breeds/image/random'
+];
+
+// use map() to perform a fetch and handle the response for each url
+Promise.all(urls.map(url =>
+  fetch(url)
+    .then(checkStatus)
+    .then(parseJSON)
+    .catch(logError)
+))
+.then(data => {
+  // do something with the data
+})*/

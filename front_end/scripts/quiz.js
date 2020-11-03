@@ -14,7 +14,15 @@ function generateQuestion(recipe) {
   ingredientCard.classList.add('ingredient-card-container');
   const ingredientCardDetail = document.createElement('div');
   ingredientCardDetail.classList.add('ingredient-card-detail');
+  ingredientCardDetail.innerText = ``
   ingredientCard.appendChild(ingredientCardDetail);
+
+}
+
+function generateQuiz(question) {
+
+
+
 
 }
 

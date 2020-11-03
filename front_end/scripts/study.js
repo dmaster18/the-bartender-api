@@ -71,11 +71,11 @@ function fetchcards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => rendercards(json))
+  .then(recipes => rendercards(recipes))
 }
 
-function rendercards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
-  json["data"].forEach(recipe => generatecard(recipe))
+function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
+  recipes["data"].forEach(recipe => generatecard(recipe))
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -87,12 +87,12 @@ function fetchRandomcard() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => renderRandomcard(json))
+  .then(recipes => renderRandomcard(recipes))
 }
 
-function renderRandomcard(json) { //Renders random Cocktail Recipe Ingredient Index Card
+function renderRandomcard(recipes) { //Renders random Cocktail Recipe Ingredient Index Card
   const randomNumber = Math.floor(Math.random() * 508);
-  const recipe = json["data"][randomNumber];
+  const recipe = recipes["data"][randomNumber];
   const main = document.querySelector('main');
   generatecard(recipe);
 }
@@ -109,12 +109,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => renderRecipeCards(json))
+  .then(recipes => renderRecipeCards(recipes))
 }
 
 
-function renderRecipeCards(json) {
-  json["data"].forEach(recipe =>
+function renderRecipeCards(recipes) {
+  recipes["data"].forEach(recipe =>
     {const main = document.querySelector('main')
     const recipeCard = document.createElement('div.card')
     recipeCard.innerHTML = `<div.container><h2><b>${recipe.attributes.name}</b></h2></div>`

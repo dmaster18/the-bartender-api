@@ -38,13 +38,24 @@ function setQuizDifficulty(user_input, recipes) {
   const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Very Hard");
   switch (user_input) {
     case 'Random':
+      while (questions.length <= 9) {
+        const randomNumber = Math.floor(Math.random() * 508);
+        const recipe = recipes[randomNumber];
+        const question = generateQuestion(recipe);
+        if(!questions.include(recipe)) {
+            questions.push(recipe);
+          }
+
+
+      }
+      break;
     case 'Easy':
       while (questions.length <= 9) {
         const randomNumber = Math.floor(Math.random() * 86);
         const recipe = easyQuestions[randomNumber];
         const question = generateQuestion(recipe);
         if(!questions.include(recipe)) {
-            questions.push(recipe)
+            questions.push(recipe);
           }
       }
       break;
@@ -54,7 +65,7 @@ function setQuizDifficulty(user_input, recipes) {
         const recipe = mediumQuestions[randomNumber];
         const question = generateQuestion(recipe);
         if(!questions.include(recipe)) {
-            questions.push(recipe)
+            questions.push(recipe);
           }
       }
       break;
@@ -64,7 +75,7 @@ function setQuizDifficulty(user_input, recipes) {
         const recipe = hardQuestions[randomNumber];
         const question = generateQuestion(recipe);
         if(!questions.include(recipe)) {
-            questions.push(recipe)
+            questions.push(recipe);
           }
       }
       break;

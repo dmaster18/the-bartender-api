@@ -24,12 +24,20 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCards);
 }
 
+function 
+
 function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
 
+function renderQuiz(recipe, difficulty_input, length_input) {
+  recipes["data"].forEach(recipe => generateQuiz(recipe, difficulty_input, length_input))
+}
 
-function setQuizParameters(recipes, difficulty_input, length_input) {
+
+
+
+function generateQuiz(recipes, difficulty_input, length_input) {
   questions = [];
   const main = document.querySelector('main');
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
@@ -59,7 +67,6 @@ function setQuizParameters(recipes, difficulty_input, length_input) {
       length_input = 100;
       break;
   }
-
   switch(difficulty_input) {
     case 'Random':
       while (questions.length < length_input) {
@@ -114,40 +121,8 @@ function setQuizParameters(recipes, difficulty_input, length_input) {
   }
 }
 
-function setQuizLength(user_input) {
-  switch(user_input) {
-    case 'Short':
-
-      break;
-    case 'Medium':
-      break;
-    case 'Long':
-      break;
-  }
-}
 
 
-const expr = 'Papayas';
-switch (expr) {
-  case 'Oranges':
-    console.log('Oranges are $0.59 a pound.');
-    break;
-  case 'Mangoes':
-  case 'Papayas':
-    console.log('Mangoes and papayas are $2.79 a pound.');
-    // expected output: "Mangoes and papayas are $2.79 a pound."
-    break;
-  default:
-    console.log(`Sorry, we are out of ${expr}.`);
-}
-
-function quizDifficulty(user_input) {
-}
-
-function quizLength(user_input) {
-}
-
-//function generateQuiz(question) {}
 
 
 

@@ -28,7 +28,7 @@ function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
 
-/*
+
 function setQuizDifficulty(user_input, recipes) {
   questions = []
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
@@ -47,10 +47,33 @@ function setQuizDifficulty(user_input, recipes) {
         recipe.complexity === "Easy"
       }
     case 'Medium':
+      while questions.length <= 9 {
+        const randomNumber = Math.floor(Math.random() * 234);
+        const recipe = [randomNumber];
+        const main = document.querySelector('main');
+        generatecard(recipe);
+        randomNumber = Math.random()
+        recipe.complexity === "Medium"
+      }
     case 'Hard':
+      while questions.length <= 9 {
+        const randomNumber = Math.floor(Math.random() * 138);
+        const recipe = [randomNumber];
+        const main = document.querySelector('main');
+        generatecard(recipe);
+        randomNumber = Math.random()
+        recipe.complexity === "Hard"
+      }
+
     case 'Very Hard':
-
-
+      while questions.length <= 9 {
+        const randomNumber = Math.floor(Math.random() * 53);
+        const recipe = [randomNumber];
+        const main = document.querySelector('main');
+        generatecard(recipe);
+        randomNumber = Math.random()
+        recipe.complexity === "Very Hard"
+      }
   }
 }
 

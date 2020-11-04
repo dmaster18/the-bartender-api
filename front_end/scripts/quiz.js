@@ -24,7 +24,15 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCards);
 }
 
-function 
+const ingredientCardContainer = document.getElementsByClassName('ingredient-card-container')
+
+ingredientCardContainer.addEventListener("click", myFunction);
+
+function response() {
+  if
+  document.getElementsByClassName('ingredient-card-container')
+
+}
 
 function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))

@@ -48,12 +48,12 @@ const points = 0;
 function questionResponse(question) {
   allIngredients = question.allIngredients;
   correctIngredients = question.correctIngredients;
-  while (userCorrectIngredients.length < correctIngredients.length && userIncorrectIngredients < 3) {
-    if (userIncorrectIngredients.length === 3) {
+  while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
+    if (userIncorrectResponses.length === 3) {
       points += 0;
       alert = 'Wrong!';
     }
-    if (userCorrectIngredients.length === correctIngredients.length) {
+    if (userCorrectResponses.length === correctIngredients.length) {
       points += 1;
       alert = 'Correct!';
     }
@@ -79,14 +79,14 @@ ingredientCardContainers.addEventListener("click", responseHandler(recipe));
 function responseHandler(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients;
   correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
-  userIngredients.push(currentIngredient);
+  userResponses.push(currentIngredient);
   if correctIngredientIds.include(this.id) {
     alert = 'Correct!'
-    userCorrectIngredients.push(currentIngredient);
+    userCorrectResponses.push(currentIngredient);
     this.background.color = 'green';
   } else {
     alert = 'Wrong!'
-    userIncorrectIngredients.push(currentIngredient);
+    userIncorrectResponses.push(currentIngredient);
     this.background.color = 'red';
   }
 }

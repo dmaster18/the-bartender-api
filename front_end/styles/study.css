@@ -46,3 +46,15 @@ div.card-back {
   color: white;
   transform: rotateY(180deg);
 }
+
+h1.recipe-name {
+  text-align: center;
+  padding: 100px;
+}
+
+div.ingredient-card-container {
+  border-style: solid;
+  border-color: black;
+  width: 200px;
+  height: 100px;
+}

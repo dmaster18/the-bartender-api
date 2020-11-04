@@ -45,8 +45,6 @@ function setQuizDifficulty(user_input, recipes) {
         if(!questions.include(recipe)) {
             questions.push(recipe);
           }
-
-
       }
       break;
     case 'Easy':

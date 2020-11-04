@@ -2,7 +2,7 @@ function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => generateQuizNoParams(recipes))
+  .then(recipes => renderQuestionNoParams(generateQuizNoParams(recipes)))
 }
 
 function generateQuizNoParams(recipes) { //Generates quiz with no user parameters
@@ -18,7 +18,7 @@ function generateQuizNoParams(recipes) { //Generates quiz with no user parameter
   return questions;
 }
 
-function renderQuestions(questions) {
+function renderQuestionsNoParams(questions) {
   for(let i = 0; i < questions.length; i++)
   {
     if (questions[i] === 'Incomplete')

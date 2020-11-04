@@ -1,50 +1,53 @@
-const difficulty_input = document.querySelector('difficulty_input').addEventListener('click', function {})
-const length_input = document.querySelector('length_input').addEventListener('click'), function {})
+let difficulty;
+let length;
 
-function fetchQuiz(difficulty_input, length_input) {
+const difficulty_input = document.querySelector('difficulty_button').addEventListener('click', function {difficulty = `${this.innerText}`});
+const length_input = document.querySelector('length_button').addEventListener('click'), function {length = `${this.innerText}`});
+
+function fetchQuiz(difficulty, length) {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => renderQuiz(recipes, difficulty_input, length_input))
+  .then(recipes => renderQuiz(recipes, difficulty, length))
 }
 
-function renderQuiz(recipes, difficulty_input, length_input) {
-  recipes["data"].forEach(recipe => generateQuiz(recipe, difficulty_input, length_input))
+function renderQuiz(recipes, difficulty, length) {
+  recipes["data"].forEach(recipe => generateQuiz(recipe, difficulty, length))
 }
 
-function generateQuiz(recipe, difficulty_input, length_input) {
+function generateQuiz(recipe, difficulty, length) {
   questions = [];
   const main = document.querySelector('main');
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
   const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Medium");
   const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Hard");
   const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Very Hard");
-  switch(length_input) {
+  switch(length) {
     case '5':
-      length_input = 5;
+      length = 5;
       break;
     case '10':
-      length_input = 10;
+      length = 10;
       break;
     case '15':
-      length_input = 15;
+      length = 15;
       break;
     case '20':
-      length_input = 20;
+      length = 20;
       break
     case '25':
-      length_input = 25;
+      length = 25;
       break;
     case '50':
-      length_input = 50;
+      length = 50;
       break;
     case '100':
-      length_input = 100;
+      length = 100;
       break;
   }
-  switch(difficulty_input) {
+  switch(difficulty) {
     case 'Random':
-      while (questions.length < length_input) {
+      while (questions.length < length) {
         const randomNumber = Math.floor(Math.random() * 508);
         const recipe = recipes[randomNumber];
         const question = generateQuestion(recipe);
@@ -54,7 +57,7 @@ function generateQuiz(recipe, difficulty_input, length_input) {
       }
       break;
     case 'Easy':
-      while (questions.length < length_input) {
+      while (questions.length < length) {
         const randomNumber = Math.floor(Math.random() * 86);
         const recipe = easyQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -64,7 +67,7 @@ function generateQuiz(recipe, difficulty_input, length_input) {
       }
       break;
     case 'Medium':
-      while (questions.length < length_input ) {
+      while (questions.length < length ) {
         const randomNumber = Math.floor(Math.random() * 234);
         const recipe = mediumQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -74,7 +77,7 @@ function generateQuiz(recipe, difficulty_input, length_input) {
       }
       break;
     case 'Hard':
-      while (questions.length < length_input) {
+      while (questions.length < length) {
         const randomNumber = Math.floor(Math.random() * 138);
         const recipe = hardQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -84,7 +87,7 @@ function generateQuiz(recipe, difficulty_input, length_input) {
       }
       break;
     case 'Very Hard':
-      while (questions.length < length_input) {
+      while (questions.length < length) {
         const randomNumber = Math.floor(Math.random() * 53);
         const recipe = veryHardQuestions[randomNumber];
         const question = generateQuestion(recipe);

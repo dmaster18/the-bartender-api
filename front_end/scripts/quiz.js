@@ -28,14 +28,17 @@ function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
 
+/*
 function setQuizDifficulty(user_input, recipes) {
   questions = []
+  const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
+  const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Medium");
+  const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Hard");
+  const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Very Hard");
   switch (user_input) {
     case 'Random':
     case 'Easy':
       while questions.length <= 9 {
-        const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
-        
         const randomNumber = Math.floor(Math.random() * 86);
         const recipe = [randomNumber];
         const main = document.querySelector('main');

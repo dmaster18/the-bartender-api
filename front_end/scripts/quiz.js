@@ -15,6 +15,17 @@ function generateQuizNoParams(recipes) { //Generates quiz with no user parameter
     }
   }
   const questions = randomRecipes.map(recipe => questionResponse(generateQuestion(recipe));
+  return questions;
+}
+
+function renderQuestions(questions) {
+  for(let i = 0; i < questions.length; i++)
+  {
+    if (questions[i] === 'Incomplete')
+    {
+      questions[i]();
+    }
+  }
 }
 
 function generateQuestion(recipe) {
@@ -40,12 +51,14 @@ function generateQuestion(recipe) {
   return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-const userIncorrectResponses = [];
-const userCorrectResponses = [];
-const userResponses = [];
-const points = 0;
+let userIncorrectResponses = [];
+let userCorrectResponses = [];
+let userResponses = [];
+let points = 0;
+let questionStatus;
 
 function questionResponse(question) {
+  questionStatus = 'Incomplete'
   allIngredients = question.allIngredients;
   correctIngredients = question.correctIngredients;
   while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
@@ -58,6 +71,8 @@ function questionResponse(question) {
       alert = 'Correct!';
     }
   }
+  questionStatus = 'Complete';
+  return questionStatus;
 }
 
 function calculateQuizScore(recipes) {

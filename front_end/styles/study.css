@@ -52,9 +52,15 @@ h1.recipe-name {
   padding: 100px;
 }
 
-div.ingredient-card-container {
+div.ingredient-card {
   border-style: solid;
   border-color: black;
   width: 200px;
   height: 100px;
 }
+
+div.ingredient-cards-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }

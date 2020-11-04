@@ -99,11 +99,11 @@ function generateQuestion(recipe) {
   recipeName.classList.add('recipe-name');
   main.appendChild(recipeName);
   const ingredientCards = document.createElement('div');
-  ingredientCards.classList.add('ingredient-cards');
+  ingredientCards.classList.add('ingredient-cards-container');
   let i = 0;
   recipe.attributes.all_ingredients.forEach(ingredient => {
     const ingredientCard = document.createElement('div');
-    ingredientCard.classList.add('ingredient-card-container');
+    ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `${i}`);
     const ingredientCardDetail = document.createElement('div');
     ingredientCardDetail.classList.add('ingredient-card-detail');

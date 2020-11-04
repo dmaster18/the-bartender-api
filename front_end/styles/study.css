@@ -61,6 +61,5 @@ div.ingredient-card {
 
 div.ingredient-cards-container {
     display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto auto;
   }

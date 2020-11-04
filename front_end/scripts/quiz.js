@@ -49,33 +49,35 @@ function setQuizDifficulty(user_input, recipes) {
       }
       break;
     case 'Medium':
-      while questions.length <= 9 {
+      while (questions.length <= 9) {
         const randomNumber = Math.floor(Math.random() * 234);
         const recipe = mediumQuestions[randomNumber];
-        generateQuestion(recipe);
-        randomNumber = Math.random()
-        recipe.complexity === "Medium"
-        break;
+        const question = generateQuestion(recipe);
+        if(!questions.include(recipe)) {
+            questions.push(recipe)
+          }
       }
+      break;
     case 'Hard':
-      while questions.length <= 9 {
+      while (questions.length <= 9) {
         const randomNumber = Math.floor(Math.random() * 138);
         const recipe = hardQuestions[randomNumber];
-        generateQuestion(recipe);
-        randomNumber = Math.random()
-        recipe.complexity === "Hard";
-        break;
+        const question = generateQuestion(recipe);
+        if(!questions.include(recipe)) {
+            questions.push(recipe)
+          }
       }
-
+      break;
     case 'Very Hard':
-      while questions.length <= 9 {
+      while (questions.length <= 9) {
         const randomNumber = Math.floor(Math.random() * 53);
         const recipe = veryHardQuestions[randomNumber];
-        generateQuestion(recipe);
-        randomNumber = Math.random();
-        recipe.complexity === "Very Hard";
-        break;
+        const question = generateQuestion(recipe);
+        if(!questions.include(recipe)) {
+            questions.push(recipe)
+          }
       }
+      break;
   }
 }
 

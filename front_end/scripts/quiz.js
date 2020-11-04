@@ -98,8 +98,8 @@ function generateQuestion(recipe) {
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');
   main.appendChild(recipeName);
-  const ingredientCards = document.createElement('div');
-  ingredientCards.classList.add('ingredient-cards-container');
+  const ingredientCardsContainer = document.createElement('div');
+  ingredientCardsContainer.classList.add('ingredient-cards-container');
   let i = 0;
   recipe.attributes.all_ingredients.forEach(ingredient => {
     const ingredientCard = document.createElement('div');
@@ -109,10 +109,10 @@ function generateQuestion(recipe) {
     ingredientCardDetail.classList.add('ingredient-card-detail');
     ingredientCardDetail.innerText = `${ingredient.name}`
     ingredientCard.appendChild(ingredientCardDetail);
-    ingredientCards.appendChild(ingredientCard);
+    ingredientCardsContainer.appendChild(ingredientCard);
     i++;
   })
-  main.appendChild(ingredientCards);
+  main.appendChild(ingredientCardsContainer);
 }
 
 function renderQuestion(recipes) { //Renders Cocktail Recipe Question

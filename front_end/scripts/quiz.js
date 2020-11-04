@@ -14,8 +14,7 @@ function generateQuizNoParams(recipes) { //Generates quiz with no user parameter
       randomRecipes.push(randomRecipe);
     }
   }
-  const questions = randomRecipes.map(recipe => generateQuestion(recipe));
-  questions.forEach(question => questionResponse(question));
+  const questions = randomRecipes.map(recipe => questionResponse(generateQuestion(recipe));
 }
 
 function generateQuestion(recipe) {
@@ -38,6 +37,7 @@ function generateQuestion(recipe) {
     i++;
   })
   main.appendChild(ingredientCardsContainer);
+  return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
 const userIncorrectIngredients = [];
@@ -46,6 +46,8 @@ const userIngredients = [];
 const points = 0;
 
 function questionResponse(question) {
+  allIngredients = question.allIngredients;
+  correctIngredients = question.correctIngredients;
   const correctIngredients = recipe.attributes.correct_ingredients;
   while (userCorrectIngredients.length < correctIngredients.length && userIncorrectIngredients < 3) {
     if (userIncorrectIngredients.length === 3) {

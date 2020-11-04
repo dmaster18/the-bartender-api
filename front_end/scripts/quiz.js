@@ -12,26 +12,36 @@ function generateQuestion(recipe) {
   main.appendChild(recipeName);
   const ingredientCards = document.createElement('div');
   ingredientCards.classList.add('ingredient-cards');
+  let i = 0;
   recipe.attributes.all_ingredients.forEach(ingredient => {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card-container');
+    ingredientCard.setAttribute('id', `${i}`);
     const ingredientCardDetail = document.createElement('div');
     ingredientCardDetail.classList.add('ingredient-card-detail');
     ingredientCardDetail.innerText = `${ingredient.name}`
     ingredientCard.appendChild(ingredientCardDetail);
     ingredientCards.appendChild(ingredientCard);
+    i++;
   })
   main.appendChild(ingredientCards);
 }
 
-const ingredientCardContainer = document.getElementsByClassName('ingredient-card-container')
+const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
 
-ingredientCardContainer.addEventListener("click", myFunction);
 
-function response() {
-  if
-  document.getElementsByClassName('ingredient-card-container')
+ingredientCardContainers.addEventListener("click", responseHandler(recipe));
 
+function responseHandler(recipe) {
+  const correctIngredients = recipe.attributes.correct_ingredients;
+  correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
+  if correctIngredientIds.include(this.id) {
+    alert = 'Correct!'
+    this.background.color = 'green';
+  } else {
+    alert = 'Wrong!'
+    this.background.color = 'red';
+  }
 }
 
 function renderQuestion(recipes) { //Renders Cocktail Recipe Question

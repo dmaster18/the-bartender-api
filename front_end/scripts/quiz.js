@@ -29,16 +29,40 @@ function renderQuestion(recipes) { //Renders Cocktail Recipe Question
 }
 
 
-function setQuizDifficulty(user_input, recipes) {
+function setQuizParameters(recipes, difficulty_input, length_input) {
   questions = [];
   const main = document.querySelector('main');
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
   const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Medium");
   const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Hard");
   const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Very Hard");
-  switch (user_input) {
+  switch(length_input) {
+    case '5':
+      length_input = 5;
+      break;
+    case '10':
+      length_input = 10;
+      break;
+    case '15':
+      length_input = 15;
+      break;
+    case '20':
+      length_input = 20;
+      break
+    case '25':
+      length_input = 25;
+      break;
+    case '50':
+      length_input = 50;
+      break;
+    case '100':
+      length_input = 100;
+      break;
+  }
+
+  switch(difficulty_input) {
     case 'Random':
-      while (questions.length <= 9) {
+      while (questions.length < length_input) {
         const randomNumber = Math.floor(Math.random() * 508);
         const recipe = recipes[randomNumber];
         const question = generateQuestion(recipe);
@@ -48,7 +72,7 @@ function setQuizDifficulty(user_input, recipes) {
       }
       break;
     case 'Easy':
-      while (questions.length <= 9) {
+      while (questions.length < length_input) {
         const randomNumber = Math.floor(Math.random() * 86);
         const recipe = easyQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -58,7 +82,7 @@ function setQuizDifficulty(user_input, recipes) {
       }
       break;
     case 'Medium':
-      while (questions.length <= 9) {
+      while (questions.length < length_input ) {
         const randomNumber = Math.floor(Math.random() * 234);
         const recipe = mediumQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -68,7 +92,7 @@ function setQuizDifficulty(user_input, recipes) {
       }
       break;
     case 'Hard':
-      while (questions.length <= 9) {
+      while (questions.length < length_input) {
         const randomNumber = Math.floor(Math.random() * 138);
         const recipe = hardQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -78,7 +102,7 @@ function setQuizDifficulty(user_input, recipes) {
       }
       break;
     case 'Very Hard':
-      while (questions.length <= 9) {
+      while (questions.length < length_input) {
         const randomNumber = Math.floor(Math.random() * 53);
         const recipe = veryHardQuestions[randomNumber];
         const question = generateQuestion(recipe);
@@ -92,9 +116,13 @@ function setQuizDifficulty(user_input, recipes) {
 
 function setQuizLength(user_input) {
   switch(user_input) {
+    case 'Short':
 
-
-
+      break;
+    case 'Medium':
+      break;
+    case 'Long':
+      break;
   }
 }
 

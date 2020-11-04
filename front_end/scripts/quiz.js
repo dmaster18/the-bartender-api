@@ -2,7 +2,7 @@ function fetchcards() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => rendercards(recipes))
+  .then(recipes => renderQuestion(recipes))
 }
 
 function generateQuestion(recipe) {
@@ -12,7 +12,7 @@ function generateQuestion(recipe) {
   main.appendChild(recipeName);
   const ingredientCards = document.createElement('div');
   ingredientCards.classList.add('ingredient-cards');
-  const ingredientCards = recipe.attributes.all_ingredients.forEach(ingredient => {
+  recipe.attributes.all_ingredients.forEach(ingredient => {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card-container');
     const ingredientCardDetail = document.createElement('div');
@@ -28,10 +28,56 @@ function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
 
+function setQuizDifficulty(user_input, recipes) {
+  questions = []
+  switch (user_input) {
+    case 'Random':
+    case 'Easy':
+      while questions.length <= 9 {
+        const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
+        
+        const randomNumber = Math.floor(Math.random() * 86);
+        const recipe = [randomNumber];
+        const main = document.querySelector('main');
+        generatecard(recipe);
+        randomNumber = Math.random()
+        recipe.complexity === "Easy"
+      }
+    case 'Medium':
+    case 'Hard':
+    case 'Very Hard':
 
-//function generateQuiz(question) {
 
+  }
 }
+
+function setQuizLength(user_input) {
+}
+
+
+const expr = 'Papayas';
+switch (expr) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  default:
+    console.log(`Sorry, we are out of ${expr}.`);
+}
+
+function quizDifficulty(user_input) {
+}
+
+function quizLength(user_input) {
+}
+
+//function generateQuiz(question) {}
+
+
 
 
 

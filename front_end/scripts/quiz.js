@@ -1,3 +1,6 @@
+const difficulty_input = document.querySelector('difficulty_input').addEventListener('click', function {})
+const length_input = document.querySelector('length_input').addEventListener('click'), function {})
+
 function fetchQuiz(difficulty_input, length_input) {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
@@ -104,7 +107,7 @@ function generateQuestion(recipe) {
   recipe.attributes.all_ingredients.forEach(ingredient => {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');
-    ingredientCard.setAttribute('id', `${i}`);
+    ingredientCard.setAttribute('id', `item${i}`);
     const ingredientCardDetail = document.createElement('div');
     ingredientCardDetail.classList.add('ingredient-card-detail');
     ingredientCardDetail.innerText = `${ingredient.name}`

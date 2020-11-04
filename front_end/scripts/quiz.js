@@ -48,7 +48,6 @@ const points = 0;
 function questionResponse(question) {
   allIngredients = question.allIngredients;
   correctIngredients = question.correctIngredients;
-  const correctIngredients = recipe.attributes.correct_ingredients;
   while (userCorrectIngredients.length < correctIngredients.length && userIncorrectIngredients < 3) {
     if (userIncorrectIngredients.length === 3) {
       points += 0;

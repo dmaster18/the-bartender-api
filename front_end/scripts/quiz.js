@@ -30,7 +30,8 @@ function renderQuestion(recipes) { //Renders Cocktail Recipe Question
 
 
 function setQuizDifficulty(user_input, recipes) {
-  questions = []
+  questions = [];
+  const main = document.querySelector('main');
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
   const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Medium");
   const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Hard");
@@ -38,46 +39,52 @@ function setQuizDifficulty(user_input, recipes) {
   switch (user_input) {
     case 'Random':
     case 'Easy':
-      while questions.length <= 9 {
+      while (questions.length <= 9) {
         const randomNumber = Math.floor(Math.random() * 86);
-        const recipe = [randomNumber];
-        const main = document.querySelector('main');
-        generatecard(recipe);
-        randomNumber = Math.random()
-        recipe.complexity === "Easy"
+        const recipe = easyQuestions[randomNumber];
+        const question = generateQuestion(recipe);
+        if(!questions.include(recipe)) {
+            questions.push(recipe)
+          }
       }
+      break;
     case 'Medium':
       while questions.length <= 9 {
         const randomNumber = Math.floor(Math.random() * 234);
-        const recipe = [randomNumber];
-        const main = document.querySelector('main');
-        generatecard(recipe);
+        const recipe = mediumQuestions[randomNumber];
+        generateQuestion(recipe);
         randomNumber = Math.random()
         recipe.complexity === "Medium"
+        break;
       }
     case 'Hard':
       while questions.length <= 9 {
         const randomNumber = Math.floor(Math.random() * 138);
-        const recipe = [randomNumber];
-        const main = document.querySelector('main');
-        generatecard(recipe);
+        const recipe = hardQuestions[randomNumber];
+        generateQuestion(recipe);
         randomNumber = Math.random()
-        recipe.complexity === "Hard"
+        recipe.complexity === "Hard";
+        break;
       }
 
     case 'Very Hard':
       while questions.length <= 9 {
         const randomNumber = Math.floor(Math.random() * 53);
-        const recipe = [randomNumber];
-        const main = document.querySelector('main');
-        generatecard(recipe);
-        randomNumber = Math.random()
-        recipe.complexity === "Very Hard"
+        const recipe = veryHardQuestions[randomNumber];
+        generateQuestion(recipe);
+        randomNumber = Math.random();
+        recipe.complexity === "Very Hard";
+        break;
       }
   }
 }
 
 function setQuizLength(user_input) {
+  switch(user_input) {
+
+
+
+  }
 }
 
 

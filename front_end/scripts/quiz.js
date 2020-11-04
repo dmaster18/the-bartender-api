@@ -1,44 +1,15 @@
-function fetchcards() {
+function fetchQuiz(difficulty_input, length_input) {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => renderQuestion(recipes))
+  .then(recipes => renderQuiz(recipes, difficulty_input, length_input))
 }
 
-function generateQuestion(recipe) {
-  const main = document.querySelector('main');
-  const recipeName = document.createElement('h1');
-  recipeName.classList.add('recipe-name');
-  main.appendChild(recipeName);
-  const ingredientCards = document.createElement('div');
-  ingredientCards.classList.add('ingredient-cards');
-  let i = 0;
-  recipe.attributes.all_ingredients.forEach(ingredient => {
-    const ingredientCard = document.createElement('div');
-    ingredientCard.classList.add('ingredient-card-container');
-    ingredientCard.setAttribute('id', `${i}`);
-    const ingredientCardDetail = document.createElement('div');
-    ingredientCardDetail.classList.add('ingredient-card-detail');
-    ingredientCardDetail.innerText = `${ingredient.name}`
-    ingredientCard.appendChild(ingredientCardDetail);
-    ingredientCards.appendChild(ingredientCard);
-    i++;
-  })
-  main.appendChild(ingredientCards);
-}
-
-function renderQuestion(recipes) { //Renders Cocktail Recipe Question
-  recipes["data"].forEach(recipe => generateQuestion(recipe))
-}
-
-function renderQuiz(recipe, difficulty_input, length_input) {
+function renderQuiz(recipes, difficulty_input, length_input) {
   recipes["data"].forEach(recipe => generateQuiz(recipe, difficulty_input, length_input))
 }
 
-
-
-
-function generateQuiz(recipes, difficulty_input, length_input) {
+function generateQuiz(recipe, difficulty_input, length_input) {
   questions = [];
   const main = document.querySelector('main');
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
@@ -121,6 +92,34 @@ function generateQuiz(recipes, difficulty_input, length_input) {
       break;
   }
 }
+
+function generateQuestion(recipe) {
+  const main = document.querySelector('main');
+  const recipeName = document.createElement('h1');
+  recipeName.classList.add('recipe-name');
+  main.appendChild(recipeName);
+  const ingredientCards = document.createElement('div');
+  ingredientCards.classList.add('ingredient-cards');
+  let i = 0;
+  recipe.attributes.all_ingredients.forEach(ingredient => {
+    const ingredientCard = document.createElement('div');
+    ingredientCard.classList.add('ingredient-card-container');
+    ingredientCard.setAttribute('id', `${i}`);
+    const ingredientCardDetail = document.createElement('div');
+    ingredientCardDetail.classList.add('ingredient-card-detail');
+    ingredientCardDetail.innerText = `${ingredient.name}`
+    ingredientCard.appendChild(ingredientCardDetail);
+    ingredientCards.appendChild(ingredientCard);
+    i++;
+  })
+  main.appendChild(ingredientCards);
+}
+
+function renderQuestion(recipes) { //Renders Cocktail Recipe Question
+  recipes["data"].forEach(recipe => generateQuestion(recipe))
+}
+
+
 
 const userIncorrectIngredients = [];
 const userCorrectIngredients = [];

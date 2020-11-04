@@ -135,12 +135,6 @@ function generateQuiz(recipe, difficulty, length) {
     case '10':
       length = 10;
       break;
-    case '15':
-      length = 15;
-      break;
-    case '20':
-      length = 20;
-      break
     case '25':
       length = 25;
       break;

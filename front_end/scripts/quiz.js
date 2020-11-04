@@ -122,14 +122,17 @@ function generateQuiz(recipes, difficulty_input, length_input) {
   }
 }
 
+const userIncorrectIngredients = [];
+const userCorrectIngredients = [];
+const userIngredients = [];
+const correctCount
 
 function questionResponse(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients;
-  const incorrectIngredients = [];
-  const userIngredients = [];
-  while (userIngredients < correctIngredients) {
-
-
+  while (userIngredients.length < correctIngredients.length) {
+    if (userIncorrectIngredients >= 3) {
+      alert = 'Wrong!'
+    }
   }
 
 }
@@ -151,11 +154,14 @@ ingredientCardContainers.addEventListener("click", responseHandler(recipe));
 function responseHandler(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients;
   correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
+  userIngredients.push(currentIngredient);
   if correctIngredientIds.include(this.id) {
     alert = 'Correct!'
+    userCorrectIngredients.push(currentIngredient);
     this.background.color = 'green';
   } else {
     alert = 'Wrong!'
+    userIncorrectIngredients.push(currentIngredient);
     this.background.color = 'red';
   }
 }

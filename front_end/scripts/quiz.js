@@ -51,11 +51,30 @@ function generateQuestion(recipe) {
   return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
+let points = 0;
+let questionStatus;
 let userIncorrectResponses = [];
 let userCorrectResponses = [];
 let userResponses = [];
-let points = 0;
-let questionStatus;
+
+const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
+
+ingredientCardContainers.addEventListener("click", responseHandler(recipe));
+
+function responseHandler(recipe) {
+  const correctIngredients = recipe.attributes.correct_ingredients;
+  correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
+  userResponses.push(currentIngredient);
+  if correctIngredientIds.includes(this.id) {
+    alert = 'Correct!'
+    userCorrectResponses.push(currentIngredient);
+    this.background.color = 'green';
+  } else {
+    alert = 'Wrong!'
+    userIncorrectResponses.push(currentIngredient);
+    this.background.color = 'red';
+  }
+}
 
 function questionResponse(question) {
   questionStatus = 'Incomplete'
@@ -84,27 +103,6 @@ function calculateQuizScore(recipes) {
 
 }
 
-
-
-const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
-
-
-ingredientCardContainers.addEventListener("click", responseHandler(recipe));
-
-function responseHandler(recipe) {
-  const correctIngredients = recipe.attributes.correct_ingredients;
-  correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
-  userResponses.push(currentIngredient);
-  if correctIngredientIds.include(this.id) {
-    alert = 'Correct!'
-    userCorrectResponses.push(currentIngredient);
-    this.background.color = 'green';
-  } else {
-    alert = 'Wrong!'
-    userIncorrectResponses.push(currentIngredient);
-    this.background.color = 'red';
-  }
-}
 
 
 
@@ -164,7 +162,7 @@ function generateQuiz(recipe, difficulty, length) {
         const randomNumber = Math.floor(Math.random() * 508);
         const recipe = recipes[randomNumber];
         const question = generateQuestion(recipe);
-        if(!questions.include(recipe)) {
+        if(!questions.includes(recipe)) {
             questions.push(recipe);
           }
       }
@@ -174,7 +172,7 @@ function generateQuiz(recipe, difficulty, length) {
         const randomNumber = Math.floor(Math.random() * 86);
         const recipe = easyQuestions[randomNumber];
         const question = generateQuestion(recipe);
-        if(!questions.include(recipe)) {
+        if(!questions.includes(recipe)) {
             questions.push(recipe);
           }
       }
@@ -184,7 +182,7 @@ function generateQuiz(recipe, difficulty, length) {
         const randomNumber = Math.floor(Math.random() * 234);
         const recipe = mediumQuestions[randomNumber];
         const question = generateQuestion(recipe);
-        if(!questions.include(recipe)) {
+        if(!questions.includes(recipe)) {
             questions.push(recipe);
           }
       }
@@ -194,7 +192,7 @@ function generateQuiz(recipe, difficulty, length) {
         const randomNumber = Math.floor(Math.random() * 138);
         const recipe = hardQuestions[randomNumber];
         const question = generateQuestion(recipe);
-        if(!questions.include(recipe)) {
+        if(!questions.includes(recipe)) {
             questions.push(recipe);
           }
       }
@@ -204,7 +202,7 @@ function generateQuiz(recipe, difficulty, length) {
         const randomNumber = Math.floor(Math.random() * 53);
         const recipe = veryHardQuestions[randomNumber];
         const question = generateQuestion(recipe);
-        if(!questions.include(recipe)) {
+        if(!questions.includes(recipe)) {
             questions.push(recipe)
           }
       }

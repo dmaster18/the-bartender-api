@@ -27,23 +27,6 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCards);
 }
 
-const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
-
-
-ingredientCardContainers.addEventListener("click", responseHandler(recipe));
-
-function responseHandler(recipe) {
-  const correctIngredients = recipe.attributes.correct_ingredients;
-  correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
-  if correctIngredientIds.include(this.id) {
-    alert = 'Correct!'
-    this.background.color = 'green';
-  } else {
-    alert = 'Wrong!'
-    this.background.color = 'red';
-  }
-}
-
 function renderQuestion(recipes) { //Renders Cocktail Recipe Question
   recipes["data"].forEach(recipe => generateQuestion(recipe))
 }
@@ -141,6 +124,23 @@ function generateQuiz(recipes, difficulty_input, length_input) {
 
 
 
+
+const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
+
+
+ingredientCardContainers.addEventListener("click", responseHandler(recipe));
+
+function responseHandler(recipe) {
+  const correctIngredients = recipe.attributes.correct_ingredients;
+  correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
+  if correctIngredientIds.include(this.id) {
+    alert = 'Correct!'
+    this.background.color = 'green';
+  } else {
+    alert = 'Wrong!'
+    this.background.color = 'red';
+  }
+}
 
 
 

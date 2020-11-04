@@ -15,7 +15,7 @@ function generateQuizNoParams(recipes) { //Generates quiz with no user parameter
     }
   }
   const questions = randomRecipes.map(recipe => generateQuestion(recipe));
-  questions.forEach(question => renderQuestion(question));
+  questions.forEach(question => questionResponse(renderQuestion(question));
 }
 
 function generateQuestion(recipe) {

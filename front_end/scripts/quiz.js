@@ -123,6 +123,25 @@ function generateQuiz(recipes, difficulty_input, length_input) {
 }
 
 
+function questionResponse(recipe) {
+  const correctIngredients = recipe.attributes.correct_ingredients;
+  const incorrectIngredients = [];
+  const userIngredients = [];
+  while (userIngredients < correctIngredients) {
+
+
+  }
+
+}
+
+function calculateQuizScore() {
+  [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
+    return accumulator + currentValue
+  })
+
+}
+
+
 
 const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
 

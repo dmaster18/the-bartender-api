@@ -40,9 +40,9 @@ function generateQuestion(recipe) {
   return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-const userIncorrectIngredients = [];
-const userCorrectIngredients = [];
-const userIngredients = [];
+const userIncorrectResponses = [];
+const userCorrectResponses = [];
+const userResponses = [];
 const points = 0;
 
 function questionResponse(question) {

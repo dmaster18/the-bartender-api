@@ -125,19 +125,25 @@ function generateQuiz(recipes, difficulty_input, length_input) {
 const userIncorrectIngredients = [];
 const userCorrectIngredients = [];
 const userIngredients = [];
-const correctCount
+const points = 0;
 
 function questionResponse(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients;
-  while (userIngredients.length < correctIngredients.length) {
-    if (userIncorrectIngredients >= 3) {
-      alert = 'Wrong!'
+  while (userCorrectIngredients.length < correctIngredients.length && userIncorrectIngredients < 3) {
+    if (userIncorrectIngredients.length === 3) {
+      points += 0;
+      alert = 'Wrong!';
+    }
+    if (userCorrectIngredients.length === correctIngredients.length) {
+      points += 1;
+      alert = 'Correct!';
     }
   }
-
 }
 
-function calculateQuizScore() {
+function calculateQuizScore(recipes) {
+
+  questionResponse(recipe);
   [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
     return accumulator + currentValue
   })

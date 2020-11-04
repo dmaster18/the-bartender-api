@@ -14,7 +14,8 @@ function generateQuizNoParams(recipes) { //Generates quiz with no user parameter
       randomRecipes.push(randomRecipe);
     }
   }
-  randomRecipes.forEach(recipe => generateQuestion(recipe))
+  const questions = randomRecipes.map(recipe => generateQuestion(recipe));
+  questions.forEach(question => renderQuestion(question));
 }
 
 function generateQuestion(recipe) {
@@ -39,8 +40,9 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCardsContainer);
 }
 
-function renderQuestion(recipes) { //Renders Cocktail Recipe Question
-  recipes["data"].forEach(recipe => generateQuestion(recipe))
+function renderQuestion(question) {
+
+
 }
 
 const userIncorrectIngredients = [];

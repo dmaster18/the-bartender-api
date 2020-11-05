@@ -94,7 +94,7 @@ function questionResponse(question) {
   return questionStatus;
 }
 
-function calculateQuizScore(recipes) {
+/*function calculateQuizScore(recipes) {
 
   questionResponse(recipe);
   [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {

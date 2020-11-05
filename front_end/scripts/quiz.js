@@ -65,20 +65,21 @@ function generateQuestion(recipe) {
   //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
+const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card'));
 
-[].slice.call(document.getElementsByClassName('ingredient-card')).forEach(ingredientCard => {ingredientCard.addEventListener('click',
-  {  //userResponses.push(currentIngredient);
-    if (correctIngredientIds.includes(this.id)) {
-      alert = 'Correct!'
-      //userCorrectResponses.push(currentIngredient);
-      document.getElementById(this.id).style.backgroundColor = 'green';
+ingredientCards.forEach(ingredientCard => {
+    ingredientCard.addEventListener('click',
+    function() {  //userResponses.push(currentIngredient);
+      if (correctIngredientIds.includes(this.id)) {
+        alert = 'Correct!'
+        //userCorrectResponses.push(currentIngredient);
+        document.getElementById(this.id).style.backgroundColor = 'green';
     } else {
-      alert = 'Wrong!'
-      //userIncorrectResponses.push(currentIngredient);
-      document.getElementById(this.id).style.backgroundColor = 'red';
+        alert = 'Wrong!'
+        //userIncorrectResponses.push(currentIngredient);
+        document.getElementById(this.id).style.backgroundColor = 'red';
     }}
-
-)});
+)})
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);

@@ -65,7 +65,7 @@ class Recipe < ApplicationRecord
     garnishes << correct_garnishes
     garnishes.flatten
     while liquors.length <= 7
-      random_number = rand(1..217)
+      random_number = rand(1..216)
       random_liquor = Liquor.all.find(random_number)
       unless liquors.include?(random_liquor)
         liquors << random_liquor
@@ -79,7 +79,7 @@ class Recipe < ApplicationRecord
       end
     end
     while (mixers.length <= 7)
-      random_number = rand(1..309)
+      random_number = rand(1..308)
       random_mixer = Mixer.all.find(random_number)
       unless mixers.include?(random_mixer)
         mixers << random_mixer

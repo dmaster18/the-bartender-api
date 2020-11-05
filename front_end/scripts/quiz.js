@@ -37,7 +37,7 @@ function generateQuestion(recipe) {
   const ingredientCardsContainer = document.createElement('div');
   ingredientCardsContainer.classList.add('ingredient-cards-container');
   let i = 0;
-  recipe.attributes.all_ingredients.forEach(ingredient => {
+  recipe.attributes.all_ingredients.flat().forEach(ingredient => {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `item${i}`);

@@ -14,15 +14,15 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
   for(let i = 1; i <= 2; i++) {
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
-    //if !randomRecipes.includes(randomRecipe) {
+    //if (!randomRecipes.includes(randomRecipe)) {
 
       randomRecipes.push(randomRecipe);
     //}
   }
   const questions = randomRecipes.map(recipe =>
     {
-      allIngredients = [];
-      correctIngredients = [];
+      //allIngredients = [];
+      //correctIngredients = [];
       questionResponse(generateQuestion(recipe));
     });
   return questions;
@@ -84,30 +84,29 @@ function questionResponse(question) {
 
 const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
 
-ingredientCardContainers.addEventListener("click", responseHandler(recipe));
+ingredientCardContainers.addEventListener("click", responseHandler());
 
-function responseHandler(json) {
-  const correctIngredients = json.attributes.correct_ingredients;
+function responseHandler() {
   correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
-  userResponses.push(currentIngredient);
-  if correctIngredientIds.includes(this.id) {
+  //userResponses.push(currentIngredient);
+  if (correctIngredientIds.includes(this.id)) {
     alert = 'Correct!'
-    userCorrectResponses.push(currentIngredient);
-    this.background.color = 'green';
+    //userCorrectResponses.push(currentIngredient);
+    this.style.color = 'green';
   } else {
     alert = 'Wrong!'
-    userIncorrectResponses.push(currentIngredient);
-    this.background.color = 'red';
+    //userIncorrectResponses.push(currentIngredient);
+    this.style.color = 'red';
   }
 }
 
-
+/*
 let points = 0;
 let questionStatus;
 let userIncorrectResponses = [];
 let userCorrectResponses = [];
 let userResponses = [];
-
+/*
 
 
 

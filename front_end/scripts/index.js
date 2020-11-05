@@ -2,7 +2,7 @@ function fetchRecipes() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => renderRecipes(json))
+  .then(json => console.log(json))
 }
 
 function renderRecipes(json) {

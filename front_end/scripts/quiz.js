@@ -7,7 +7,7 @@ function fetchQuizNoParams() {
 
 let allIngredients = [];
 let correctIngredients = [];
-let correctIngredientIds = [];
+let correctIngredientNames = [];
 
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
@@ -42,6 +42,7 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
 function generateQuestion(recipe) {
   allIngredients = recipe.attributes.all_ingredients;
   correctIngredients = recipe.attributes.correct_ingredients;
+  correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
   const main = document.querySelector('main');
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');
@@ -65,12 +66,12 @@ function generateQuestion(recipe) {
   //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card'));
+const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card-detail'));
 
 ingredientCards.forEach(ingredientCard => {
     ingredientCard.addEventListener('click',
     function() {  //userResponses.push(currentIngredient);
-      if (correctIngredientIds.includes(this.id)) {
+      if (correctIngredientNames.includes(this.innerText)) {
         alert = 'Correct!'
         //userCorrectResponses.push(currentIngredient);
         document.getElementById(this.id).style.backgroundColor = 'green';
@@ -83,7 +84,7 @@ ingredientCards.forEach(ingredientCard => {
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);
-  if (correctIngredientIds.includes(this.id)) {
+  if (correctIngredientNames.includes(this.id)) {
     alert = 'Correct!'
     //userCorrectResponses.push(currentIngredient);
     document.getElementById(this.id).style.backgroundColor = 'green';
@@ -108,7 +109,7 @@ function questionResponse(question) {
   questionStatus = 'Incomplete'
   allIngredients = question.allIngredients;
   correctIngredients = question.correctIngredients;
-  correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
+  correctIngredientNames = correctIngredients.map(correctIngredient => {return correctIngredient.id});
   while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
     if (userIncorrectResponses.length === 3) {
       points += 0;

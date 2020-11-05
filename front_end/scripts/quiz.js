@@ -84,9 +84,9 @@ function questionResponse(question) {
   return questionStatus;
 }
 
-const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
+const ingredientCardContainers =
 
-ingredientCardContainers.forEach(ingredientCard => ingredientCard.addEventListener('click', responseHandler()));
+document.querySelectorAll('div.ingredient-card-container').forEach(ingredientCard => {ingredientCard.addEventListener('click', responseHandler())});
 
 function responseHandler() {
   //userResponses.push(currentIngredient);

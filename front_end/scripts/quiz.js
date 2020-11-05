@@ -7,6 +7,7 @@ function fetchQuizNoParams() {
 
 let allIngredients = [];
 let correctIngredients = [];
+let correctIngredientIds = [];
 
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
@@ -61,13 +62,14 @@ function generateQuestion(recipe) {
     i++;
   })
   main.appendChild(ingredientCardsContainer);
-  return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
+  //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
 function questionResponse(question) {
   questionStatus = 'Incomplete'
   allIngredients = question.allIngredients;
   correctIngredients = question.correctIngredients;
+  correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
   while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
     if (userIncorrectResponses.length === 3) {
       points += 0;
@@ -84,10 +86,9 @@ function questionResponse(question) {
 
 const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
 
-ingredientCardContainers.addEventListener("click", responseHandler());
+ingredientCardContainers.forEach(ingredientCard => ingredientCard.addEventListener('click', responseHandler()));
 
 function responseHandler() {
-  correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
   //userResponses.push(currentIngredient);
   if (correctIngredientIds.includes(this.id)) {
     alert = 'Correct!'

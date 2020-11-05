@@ -68,7 +68,7 @@ function generateQuestion(recipe) {
 
 document.querySelectorAll('div.ingredient-card').forEach(ingredientCard => {ingredientCard.addEventListener('click', responseHandler())});
 
-function responseHandler() {
+function responseHandler(id) {
   //userResponses.push(currentIngredient);
   if (correctIngredientIds.includes(this.id)) {
     alert = 'Correct!'

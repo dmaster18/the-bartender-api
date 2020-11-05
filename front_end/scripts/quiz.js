@@ -66,9 +66,21 @@ function generateQuestion(recipe) {
 }
 
 
-[].slice.call(document.getElementsByClassName('ingredient-card')).forEach(ingredientCard => {ingredientCard.addEventListener('click', responseHandler())});
+[].slice.call(document.getElementsByClassName('ingredient-card')).forEach(ingredientCard => {ingredientCard.addEventListener('click',
+  {  //userResponses.push(currentIngredient);
+    if (correctIngredientIds.includes(this.id)) {
+      alert = 'Correct!'
+      //userCorrectResponses.push(currentIngredient);
+      document.getElementById(this.id).style.backgroundColor = 'green';
+    } else {
+      alert = 'Wrong!'
+      //userIncorrectResponses.push(currentIngredient);
+      document.getElementById(this.id).style.backgroundColor = 'red';
+    }}
 
-function responseHandler() {
+)});
+
+/*function responseHandler() {
   //userResponses.push(currentIngredient);
   if (correctIngredientIds.includes(this.id)) {
     alert = 'Correct!'

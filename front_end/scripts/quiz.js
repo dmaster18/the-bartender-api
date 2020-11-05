@@ -2,7 +2,7 @@ function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => renderQuestionNoParams(generateQuizNoParams(json)))
+  .then(json => generateQuizNoParams(json));
 }
 
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
@@ -19,7 +19,7 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
   return questions;
 }
 
-function renderQuestionsNoParams(questions) {
+/*function renderQuestionsNoParams(questions) {
   for(let i = 0; i < questions.length; i++)
   {
     if (questions[i] === 'Incomplete')
@@ -27,7 +27,7 @@ function renderQuestionsNoParams(questions) {
       questions[i]();
     }
   }
-}
+}*/
 
 function generateQuestion(recipe) {
   const main = document.querySelector('main');
@@ -50,6 +50,24 @@ function generateQuestion(recipe) {
   })
   main.appendChild(ingredientCardsContainer);
   return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
+}
+
+function questionResponse(question) {
+  questionStatus = 'Incomplete'
+  allIngredients = question.allIngredients;
+  correctIngredients = question.correctIngredients;
+  while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
+    if (userIncorrectResponses.length === 3) {
+      points += 0;
+      alert = 'Wrong!';
+    }
+    if (userCorrectResponses.length === correctIngredients.length) {
+      points += 1;
+      alert = 'Correct!';
+    }
+  }
+  questionStatus = 'Complete';
+  return questionStatus;
 }
 
 
@@ -79,23 +97,7 @@ function responseHandler(recipe) {
   }
 }
 
-function questionResponse(question) {
-  questionStatus = 'Incomplete'
-  allIngredients = question.allIngredients;
-  correctIngredients = question.correctIngredients;
-  while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
-    if (userIncorrectResponses.length === 3) {
-      points += 0;
-      alert = 'Wrong!';
-    }
-    if (userCorrectResponses.length === correctIngredients.length) {
-      points += 1;
-      alert = 'Correct!';
-    }
-  }
-  questionStatus = 'Complete';
-  return questionStatus;
-}
+
 
 /*function calculateQuizScore(json) {
 

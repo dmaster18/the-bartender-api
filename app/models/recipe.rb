@@ -56,6 +56,7 @@ class Recipe < ApplicationRecord
     correct_garnishes = self.garnishes
     correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
     correct_ingredients.flatten
+    correct_ingredients.each {|correct_ingredient| correct_ingredient.correct? = true }
     liquors << correct_liquors
     liquors.flatten
     liqueurs << correct_liqueurs
@@ -68,6 +69,7 @@ class Recipe < ApplicationRecord
       random_number = rand(1..216)
       random_liquor = Liquor.all.find(random_number)
       unless liquors.include?(random_liquor)
+        random_liquor.correct? = false
         liquors << random_liquor
       end
     end
@@ -75,6 +77,7 @@ class Recipe < ApplicationRecord
       random_number = rand(1..173)
       random_liqueur = Liqueur.all.find(random_number)
       unless liqueurs.include?(random_liqueur)
+        random_liqueur.correct? = false
         liqueurs << random_liqueur
       end
     end
@@ -82,6 +85,7 @@ class Recipe < ApplicationRecord
       random_number = rand(1..308)
       random_mixer = Mixer.all.find(random_number)
       unless mixers.include?(random_mixer)
+        random_mixer.correct? = false
         mixers << random_mixer
       end
     end
@@ -89,6 +93,7 @@ class Recipe < ApplicationRecord
       random_number = rand(1..142)
       random_garnish = Garnish.all.find(random_number)
       unless garnishes.include?(random_garnish)
+        random_garnish.correct? = false
         garnishes << random_garnish
       end
     end

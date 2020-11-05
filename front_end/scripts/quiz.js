@@ -8,7 +8,7 @@ function fetchQuizNoParams() {
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
   const recipes = json["data"]
-  for(let i = 1; i <= 10; i++) {
+  for(let i = 1; i <= 2; i++) {
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if !randomRecipes.includes(randomRecipe) {
@@ -33,6 +33,7 @@ function generateQuestion(recipe) {
   const main = document.querySelector('main');
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');
+  recipeName.innerText = `${recipe.attributes.name}`
   main.appendChild(recipeName);
   const ingredientCardsContainer = document.createElement('div');
   ingredientCardsContainer.classList.add('ingredient-cards-container');
@@ -70,20 +71,12 @@ function questionResponse(question) {
   return questionStatus;
 }
 
-
-/*
-let points = 0;
-let questionStatus;
-let userIncorrectResponses = [];
-let userCorrectResponses = [];
-let userResponses = [];
-
 const ingredientCardContainers = document.getElementsByClassName('ingredient-card-container');
 
 ingredientCardContainers.addEventListener("click", responseHandler(recipe));
 
-function responseHandler(recipe) {
-  const correctIngredients = recipe.attributes.correct_ingredients;
+function responseHandler(json) {
+  const correctIngredients = json.attributes.correct_ingredients;
   correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
   userResponses.push(currentIngredient);
   if correctIngredientIds.includes(this.id) {
@@ -96,6 +89,17 @@ function responseHandler(recipe) {
     this.background.color = 'red';
   }
 }
+
+
+let points = 0;
+let questionStatus;
+let userIncorrectResponses = [];
+let userCorrectResponses = [];
+let userResponses = [];
+
+
+
+
 
 
 

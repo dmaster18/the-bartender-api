@@ -3,6 +3,7 @@ class CreateMixers < ActiveRecord::Migration[6.0]
     create_table :mixers do |t|
       t.string :name
       t.string :mixer_type
+      t.boolean :correct?
 
       t.timestamps
     end

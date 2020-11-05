@@ -6,13 +6,14 @@ function fetchQuizNoParams() {
 }
 
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
-  const randomRecipes = []
+  const randomRecipes = [];
+  const recipes = json["data"]
   for(let i = 0; i < 10; i++) {
-    randomNumber = Math.floor(Math.random()*508);
-    randomRecipe = json['data'][randomNumber];
-    if !randomRecipes.includes(randomRecipe) {
+    const randomNumber = Math.floor(Math.random()*508);
+    const randomRecipe = recipes[randomNumber];
+    //if !randomRecipes.includes(randomRecipe) {
       randomRecipes.push(randomRecipe);
-    }
+    //}
   }
   const questions = randomRecipes.map(recipe => questionResponse(generateQuestion(recipe));
   return questions;

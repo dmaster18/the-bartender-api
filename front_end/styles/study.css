@@ -63,3 +63,8 @@ div.ingredient-cards-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+
+div.ingredient-card-detail {
+  text-align: center;
+  padding: 20px;
+}

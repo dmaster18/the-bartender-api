@@ -93,8 +93,7 @@ class Recipe < ApplicationRecord
       end
     end
     all_ingredients << liquors << liqueurs << mixers << garnishes
-    all_ingredients.flatten
-    all_ingredients
+    all_ingredients.flatten.flatten
   end
 
   #def all_ingredients

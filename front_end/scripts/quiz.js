@@ -2,14 +2,14 @@ function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => renderQuestionNoParams(generateQuizNoParams(recipes)))
+  .then(json => renderQuestionNoParams(generateQuizNoParams(json)))
 }
 
-function generateQuizNoParams(recipes) { //Generates quiz with no user parameters
+function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = []
   for(let i = 0; i < 10; i++) {
     randomNumber = Math.floor(Math.random()*508);
-    randomRecipe = recipes['data'][randomNumber];
+    randomRecipe = json['data'][randomNumber];
     if !randomRecipes.includes(randomRecipe) {
       randomRecipes.push(randomRecipe);
     }
@@ -94,7 +94,7 @@ function questionResponse(question) {
   return questionStatus;
 }
 
-/*function calculateQuizScore(recipes) {
+/*function calculateQuizScore(json) {
 
   questionResponse(recipe);
   [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
@@ -124,21 +124,21 @@ function fetchQuiz(difficulty, length) {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => renderQuiz(recipes, difficulty, length))
+  .then(json => renderQuiz(json, difficulty, length))
 }
 
 
-function renderQuiz(recipes, difficulty, length) {
-  recipes["data"].forEach(recipe => generateQuiz(recipe, difficulty, length))
+function renderQuiz(json, difficulty, length) {
+  json["data"].forEach(recipe => generateQuiz(recipe, difficulty, length))
 }
 
 function generateQuiz(recipe, difficulty, length) {
   questions = [];
   const main = document.querySelector('main');
-  const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Easy");
-  const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Medium");
-  const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Hard");
-  const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === "Very Hard");
+  const easyQuestions = json.filter(recipe => recipe.attributes.complexity === "Easy");
+  const mediumQuestions = json.filter(recipe => recipe.attributes.complexity === "Medium");
+  const hardQuestions = json.filter(recipe => recipe.attributes.complexity === "Hard");
+  const varyHardQuestions = json.filter(recipe => recipe.attributes.complexity === "Very Hard");
   switch(length) {
     case '5':
       length = 5;
@@ -160,7 +160,7 @@ function generateQuiz(recipe, difficulty, length) {
     case 'Random':
       while (questions.length < length) {
         const randomNumber = Math.floor(Math.random() * 508);
-        const recipe = recipes[randomNumber];
+        const recipe = json[randomNumber];
         const question = generateQuestion(recipe);
         if(!questions.includes(recipe)) {
             questions.push(recipe);

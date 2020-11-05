@@ -5,6 +5,9 @@ function fetchQuizNoParams() {
   .then(json => generateQuizNoParams(json));
 }
 
+let allIngredients = [];
+let correctIngredients = [];
+
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
   const recipes = json["data"]
@@ -12,10 +15,16 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if !randomRecipes.includes(randomRecipe) {
+
       randomRecipes.push(randomRecipe);
     //}
   }
-  const questions = randomRecipes.map(recipe => questionResponse(generateQuestion(recipe)));
+  const questions = randomRecipes.map(recipe =>
+    {
+      allIngredients = [];
+      correctIngredients = [];
+      questionResponse(generateQuestion(recipe));
+    });
   return questions;
 }
 
@@ -30,6 +39,8 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
 }*/
 
 function generateQuestion(recipe) {
+  allIngredients = recipe.attributes.all_ingredients;
+  correctIngredients = recipe.attributes.correct_ingredients;
   const main = document.querySelector('main');
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');

@@ -8,7 +8,6 @@ class CreateLiqueurs < ActiveRecord::Migration[6.0]
       t.string :flavor
       t.string :abv
       t.string :color
-      t.boolean :correct?
 
       t.timestamps
     end

@@ -9,7 +9,6 @@ class CreateLiquors < ActiveRecord::Migration[6.0]
       t.string :abv
       t.string :color
       t.string :ingredients
-      t.boolean :correct?
 
       t.timestamps
     end

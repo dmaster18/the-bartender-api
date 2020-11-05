@@ -73,11 +73,11 @@ function responseHandler() {
   if (correctIngredientIds.includes(this.id)) {
     alert = 'Correct!'
     //userCorrectResponses.push(currentIngredient);
-    document.getElementById(this.id).style.color = 'green';
+    document.getElementById(this.id).style.backgroundColor = 'green';
   } else {
     alert = 'Wrong!'
     //userIncorrectResponses.push(currentIngredient);
-    document.getElementById(this.id).style.color = 'red';
+    document.getElementById(this.id).style.backgroundColor = 'red';
   }
 }
 

@@ -86,7 +86,7 @@ class Recipe < ApplicationRecord
       end
     end
     while (garnishes.length <= 4)
-      random_number = rand(1..143)
+      random_number = rand(1..142)
       random_garnish = Garnish.all.find(random_number)
       unless garnishes.include?(random_garnish)
         garnishes << random_garnish

@@ -9,7 +9,7 @@ function generateQuizNoParams(recipes) { //Generates quiz with no user parameter
   const randomRecipes = []
   for(let i = 0; i < 10; i++) {
     randomNumber = Math.floor(Math.random()*508);
-    randomRecipe = recipes[randomNumber];
+    randomRecipe = recipes['data'][randomNumber];
     if !randomRecipes.includes(randomRecipe) {
       randomRecipes.push(randomRecipe);
     }

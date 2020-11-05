@@ -24,7 +24,7 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
     {
       //allIngredients = [];
       //correctIngredients = [];
-      questionResponse(generateQuestion(recipe));
+      generateQuestion(recipe);
     });
   return questions;
 }
@@ -65,26 +65,6 @@ function generateQuestion(recipe) {
   //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-function questionResponse(question) {
-  questionStatus = 'Incomplete'
-  allIngredients = question.allIngredients;
-  correctIngredients = question.correctIngredients;
-  correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
-  while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
-    if (userIncorrectResponses.length === 3) {
-      points += 0;
-      alert = 'Wrong!';
-    }
-    if (userCorrectResponses.length === correctIngredients.length) {
-      points += 1;
-      alert = 'Correct!';
-    }
-  }
-  questionStatus = 'Complete';
-  return questionStatus;
-}
-
-const ingredientCardContainers =
 
 document.querySelectorAll('div.ingredient-card-container').forEach(ingredientCard => {ingredientCard.addEventListener('click', responseHandler())});
 
@@ -111,6 +91,24 @@ let userResponses = [];
 
 
 
+function questionResponse(question) {
+  questionStatus = 'Incomplete'
+  allIngredients = question.allIngredients;
+  correctIngredients = question.correctIngredients;
+  correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
+  while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
+    if (userIncorrectResponses.length === 3) {
+      points += 0;
+      alert = 'Wrong!';
+    }
+    if (userCorrectResponses.length === correctIngredients.length) {
+      points += 1;
+      alert = 'Correct!';
+    }
+  }
+  questionStatus = 'Complete';
+  return questionStatus;
+}
 
 
 

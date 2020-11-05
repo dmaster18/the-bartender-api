@@ -66,7 +66,7 @@ function generateQuestion(recipe) {
 }
 
 
-document.querySelectorAll('div.ingredient-card-container').forEach(ingredientCard => {ingredientCard.addEventListener('click', responseHandler())});
+document.querySelectorAll('div.ingredient-card').forEach(ingredientCard => {ingredientCard.addEventListener('click', responseHandler())});
 
 function responseHandler() {
   //userResponses.push(currentIngredient);

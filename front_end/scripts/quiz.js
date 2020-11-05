@@ -15,7 +15,7 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
       randomRecipes.push(randomRecipe);
     //}
   }
-  const questions = randomRecipes.map(recipe => questionResponse(generateQuestion(recipe));
+  const questions = randomRecipes.map(recipe => questionResponse(generateQuestion(recipe)));
   return questions;
 }
 
@@ -52,6 +52,8 @@ function generateQuestion(recipe) {
   return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
+
+/*
 let points = 0;
 let questionStatus;
 let userIncorrectResponses = [];
@@ -64,7 +66,7 @@ ingredientCardContainers.addEventListener("click", responseHandler(recipe));
 
 function responseHandler(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients;
-  correctIngredientIds = correctIngredients.map(correctIngredient = > {return correctIngredient.id});
+  correctIngredientIds = correctIngredients.map(correctIngredient => {return correctIngredient.id});
   userResponses.push(currentIngredient);
   if correctIngredientIds.includes(this.id) {
     alert = 'Correct!'

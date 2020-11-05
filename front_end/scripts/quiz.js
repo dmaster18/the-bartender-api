@@ -8,7 +8,7 @@ function fetchQuizNoParams() {
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
   const recipes = json["data"]
-  for(let i = 0; i < 10; i++) {
+  for(let i = 1; i <= 10; i++) {
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if !randomRecipes.includes(randomRecipe) {
@@ -36,7 +36,7 @@ function generateQuestion(recipe) {
   main.appendChild(recipeName);
   const ingredientCardsContainer = document.createElement('div');
   ingredientCardsContainer.classList.add('ingredient-cards-container');
-  let i = 0;
+  let i = 1;
   recipe.attributes.all_ingredients.flat().forEach(ingredient => {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');

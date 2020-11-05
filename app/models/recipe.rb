@@ -72,7 +72,7 @@ class Recipe < ApplicationRecord
       end
     end
     while liqueurs.length <= 7
-      random_number = rand(1..174)
+      random_number = rand(1..173)
       random_liqueur = Liqueur.all.find(random_number)
       unless liqueurs.include?(random_liqueur)
         liqueurs << random_liqueur

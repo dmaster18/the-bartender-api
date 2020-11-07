@@ -81,7 +81,7 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
         feedback.innerText = '✓';
         this.appendChild(feedback);
         questionScore += 1;
-        if (score ===  correctIngredientNames.length) {
+        if (questionScore ===  correctIngredientNames.length) {
           questionStatus.innerText = "CORRECT!"
           main.appendChild(questionStatus);
           //user.quizScore += 1;

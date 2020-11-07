@@ -57,6 +57,8 @@ div.ingredient-card {
   border-color: black;
   width: 200px;
   height: 100px;
+  text-align: center;
+  padding: 30px;
 }
 
 div.ingredient-cards-container {

@@ -12,7 +12,7 @@ let correctIngredientNames = [];
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
   const recipes = json["data"]
-  for(let i = 1; i <= 1; i++) {
+  for(let i = 1; i <= 2; i++) {
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if (!randomRecipes.includes(randomRecipe)) {
@@ -46,7 +46,11 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
 
 function generateQuestion(recipe) {
   allIngredients = recipe.attributes.all_ingredients.flat().map(allIngredient => allIngredient.name);
-  return allIngredients;
+  const p_elements = allIngredients.forEach (allIngredient =>
+    {const p  = document.createElement('p')
+     p.innerText = allIngredient})
+  const main = document.querySelector('main');
+  main.appendChild(p_elements);
   /*correctIngredients = recipe.attributes.correct_ingredients;
   correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
   const main = document.querySelector('main');

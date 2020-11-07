@@ -27,9 +27,6 @@ class Recipe < ApplicationRecord
 
   before_save :complexity, :generate_question, :all_ingredients, :correct_ingredients
 
-  #@all_ingredients = []
-  #@correct_ingredients = []
-
   def complexity
     total_ingredients = self.liquors.size + self.liqueurs.size + self.mixers.size + self.garnishes.size
     difficulty = "Easy"
@@ -95,13 +92,5 @@ class Recipe < ApplicationRecord
     all_ingredients << liquors << liqueurs << mixers << garnishes
     all_ingredients.flatten
   end
-
-  #def all_ingredients
-#    @all_ingredients
-#  end
-
-#  def correct_ingredients
-#    @correct_ingredients
-#  end
 
 end

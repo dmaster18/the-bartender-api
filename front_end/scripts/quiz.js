@@ -64,9 +64,9 @@ function generateQuestion(recipe) {
   //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-const cards = [].slice.call(document.getElementsByClassName('ingredient-card'));
+const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-const correctEventListeners = cards.map(card => {
+const correctEventListeners = function() {cards.map(card => {
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         alert = 'Correct!'
@@ -77,7 +77,7 @@ const correctEventListeners = cards.map(card => {
         //userIncorrectResponses.push(currentIngredient);
         document.getElementById(this.id).style.backgroundColor = 'red';
     }}
-)})
+)})}
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);

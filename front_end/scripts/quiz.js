@@ -115,13 +115,13 @@ const quizEvent = function(json) {
     //}
   }
 
-  for(let i = 1; i <= 10; i++) {
+  for(let i = 1; i <= randomRecipes.length; i++) {
     questionScore = 0;
     incorrect = [];
     questionStatus = document.createElement('h1');
-    while (questionStatus.innerText !== "CORRECT!" || questionStatus.innerText !== "WRONG!")
+    while (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!")
     {
-      window.addEventListener('DOMContentLoaded', questionEvent(randomRecipes[i]))
+      window.addEventListener('DOMContentLoaded', function() {questionEvent(randomRecipes[i])})
     }
   }
 }

@@ -12,7 +12,7 @@ let correctIngredientNames = [];
 function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
   const recipes = json["data"]
-  for(let i = 1; i <= 2; i++) {
+  for(let i = 1; i <= 1; i++) {
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if (!randomRecipes.includes(randomRecipe)) {

@@ -99,11 +99,11 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
-const questionEvent = function() {
-  generateQuestion()
+const questionEvent = function(recipe) {
   let questionScore = 0;
   let incorrect = [];
   let questionStatus = document.createElement('h1');
+  generateQuestion(recipe)
   cardEventListener();
 
 

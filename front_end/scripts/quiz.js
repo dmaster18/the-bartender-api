@@ -101,6 +101,7 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
+const questionEventListener = function() {}
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);

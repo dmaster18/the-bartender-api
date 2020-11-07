@@ -58,7 +58,7 @@ div.ingredient-card {
   width: 200px;
   height: 100px;
   text-align: center;
-  padding: 30px;
+  padding: 40px;
 }
 
 div.ingredient-cards-container {
@@ -67,7 +67,7 @@ div.ingredient-cards-container {
     grid-gap: 20px;
   }
 
-div.ingredient-card-detail {
+/*div.ingredient-card-detail {
   text-align: center;
   padding: 30px;
-}
+}*/

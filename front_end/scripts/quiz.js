@@ -40,7 +40,7 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
 
 function generateQuestion(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();
-  const correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
+  correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
   const main = document.querySelector('main');
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');
@@ -53,10 +53,10 @@ function generateQuestion(recipe) {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `item${i}`);
-    const ingredientCardDetail = document.createElement('div');
-    ingredientCardDetail.classList.add('ingredient-card-detail');
-    ingredientCardDetail.innerText = `${ingredient.name}`
-    ingredientCard.appendChild(ingredientCardDetail);
+    //const ingredientCardDetail = document.createElement('div');
+    //ingredientCardDetail.classList.add('ingredient-card-detail');
+    ingredientCard.innerText = `${ingredient.name}`
+    //ingredientCard.appendChild(ingredientCardDetail);
     ingredientCardsContainer.appendChild(ingredientCard);
     i++;
   })
@@ -64,7 +64,7 @@ function generateQuestion(recipe) {
   //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card-detail'));
+const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card'));
 
 ingredientCards.forEach(ingredientCard => {
     ingredientCard.addEventListener('click', function() {  //userResponses.push(currentIngredient);

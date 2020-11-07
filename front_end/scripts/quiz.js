@@ -82,7 +82,7 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
         this.appendChild(feedback);
         questionScore += 1;
         if (score ===  correctIngredientNames.length) {
-          questionStatus = "CORRECT!"
+          questionStatus.innerText = "CORRECT!"
           main.appendChild(questionStatus);
           //user.quizScore += 1;
         }
@@ -94,7 +94,7 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
         this.appendChild(feedback);
         incorrect.push("X");
         if (incorrect.length === 3) {
-          questionStatus = "WRONG!"
+          questionStatus/innerText = "WRONG!"
           main.appendChild(questionStatus);
           //user.quizScore += 0;
         }

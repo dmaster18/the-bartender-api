@@ -50,7 +50,7 @@ function generateQuestion(recipe) {
   ingredientCardsContainer.classList.add('ingredient-cards-container');
   let i = 1;
   recipe.attributes.all_ingredients.flat().flat().forEach(ingredient => {
-    const ingredientCard = document.createElement('h3');
+    const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `item${i}`);
     //const ingredientCardDetail = document.createElement('div');
@@ -66,12 +66,13 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
+let questionScore = 0;
+let incorrect = [];
+let questionStatus = document.createElement('h1');
+
 const cardEventListener = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    const questionStatus = document.createElement('h1');
-    let score = 0;
-    let incorrect = [];
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         //alert = 'Correct!'

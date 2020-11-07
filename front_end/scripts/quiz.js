@@ -39,9 +39,15 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
   }
 }*/
 
+
+
+
+
+
 function generateQuestion(recipe) {
-  allIngredients = recipe.attributes.all_ingredients;
-  correctIngredients = recipe.attributes.correct_ingredients;
+  allIngredients = recipe.attributes.all_ingredients.flat().map(allIngredient => allIngredient.name);
+  return allIngredients;
+  /*correctIngredients = recipe.attributes.correct_ingredients;
   correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
   const main = document.querySelector('main');
   const recipeName = document.createElement('h1');
@@ -63,7 +69,7 @@ function generateQuestion(recipe) {
     i++;
   })
   main.appendChild(ingredientCardsContainer);
-  //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
+  //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}*/
 }
 
 const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card-detail'));

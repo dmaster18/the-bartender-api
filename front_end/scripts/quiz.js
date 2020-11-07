@@ -64,10 +64,10 @@ function generateQuestion(recipe) {
   //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
-const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card'));
+const cards = [].slice.call(document.getElementsByClassName('ingredient-card'));
 
-ingredientCards.forEach(ingredientCard => {
-    ingredientCard.addEventListener('click', function() {  //userResponses.push(currentIngredient);
+const correctEventListeners = cards.map(card => {
+    card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         alert = 'Correct!'
         //userCorrectResponses.push(currentIngredient);

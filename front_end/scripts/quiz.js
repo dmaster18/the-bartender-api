@@ -69,8 +69,7 @@ function generateQuestion(recipe) {
 const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card-detail'));
 
 ingredientCards.forEach(ingredientCard => {
-    ingredientCard.addEventListener('click',
-    function() {  //userResponses.push(currentIngredient);
+    ingredientCard.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         alert = 'Correct!'
         //userCorrectResponses.push(currentIngredient);

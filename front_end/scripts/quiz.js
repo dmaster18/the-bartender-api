@@ -66,9 +66,7 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-let questionScore = 0;
-let incorrect = [];
-let questionStatus = document.createElement('h1');
+
 
 const cardEventListener = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
@@ -101,7 +99,15 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
-const questionEventListener = function() {}
+const questionEvent = function() {
+  generateQuestion()
+  let questionScore = 0;
+  let incorrect = [];
+  let questionStatus = document.createElement('h1');
+  cardEventListener();
+
+
+}
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);

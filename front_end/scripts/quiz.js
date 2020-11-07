@@ -101,9 +101,9 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
 
 
 const quizEvent = function(json) {
-  let questionScore;
-  let incorrect;
-  let questionStatus;
+  let questionScore = 0;
+  let incorrect = [];
+  let questionStatus = document.createElement('h1');
 
   const randomRecipes = [];
   const recipes = json["data"]
@@ -115,13 +115,15 @@ const quizEvent = function(json) {
     //}
   }
 
-  randomRecipes.forEach(recipe => while (questionStatus.innerText !== "CORRECT!" || questionStatus.innerText !== "WRONG!")
-  {
+  for(let i = 1; i <= 10; i++) {
     questionScore = 0;
     incorrect = [];
     questionStatus = document.createElement('h1');
-    window.addEventListener('DOMContentLoaded', questionEvent(recipe))
-  })
+    while (questionStatus.innerText !== "CORRECT!" || questionStatus.innerText !== "WRONG!")
+    {
+      window.addEventListener('DOMContentLoaded', questionEvent(randomRecipes[i]))
+    }
+  }
 }
 
 

@@ -94,7 +94,7 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
         this.appendChild(feedback);
         incorrect.push("X");
         if (incorrect.length === 3) {
-          questionStatus/innerText = "WRONG!"
+          questionStatus.innerText = "WRONG!"
           main.appendChild(questionStatus);
           //user.quizScore += 0;
         }

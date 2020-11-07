@@ -2,7 +2,7 @@ function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => generateQuizNoParams(json));
+  .then(json => generateQuestion(json["data"][0]))//generateQuizNoParams(json));
 }
 
 let allIngredients = [];
@@ -16,7 +16,6 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if (!randomRecipes.includes(randomRecipe)) {
-
       randomRecipes.push(randomRecipe);
     //}
   }
@@ -38,11 +37,6 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
     }
   }
 }*/
-
-
-
-
-
 
 function generateQuestion(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();
@@ -67,7 +61,7 @@ function generateQuestion(recipe) {
     i++;
   })
   main.appendChild(ingredientCardsContainer);
-  return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
+  //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
 const ingredientCards = [].slice.call(document.getElementsByClassName('ingredient-card-detail'));

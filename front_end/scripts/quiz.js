@@ -67,15 +67,20 @@ function generateQuestion(recipe) {
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
 const correctEventListeners = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+    const feedback = document.createElement('div');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
-        alert = 'Correct!'
+        //alert = 'Correct!'
         //userCorrectResponses.push(currentIngredient);
         document.getElementById(this.id).style.backgroundColor = 'green';
+        feedback.innerHTML = '&check';//'✓'
+        this.appendChild(feedback);
     } else {
-        alert = 'Wrong!'
+        //alert = 'Wrong!'
         //userIncorrectResponses.push(currentIngredient);
         document.getElementById(this.id).style.backgroundColor = 'red';
+        feedback.innerText = 'X';
+        this.appendChild(feedback);
     }}
 )})}
 

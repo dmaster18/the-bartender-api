@@ -99,14 +99,20 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
-const questionEvent = function(recipe) {
+const quizEvent = function(recipes) {
   let questionScore = 0;
   let incorrect = [];
   let questionStatus = document.createElement('h1');
+  recipes.forEach(recipe => while (questionStatus === "CORRECT!" || questionStatus === "WRONG!")
+  {
+    window.addEventListener('DOMContentLoaded', questionEvent(recipe))
+  })
+}
+
+
+const questionEvent = function(recipe) {
   generateQuestion(recipe)
   cardEventListener();
-
-
 }
 
 /*function responseHandler() {

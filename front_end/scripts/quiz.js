@@ -2,14 +2,14 @@ function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => quizEvent(json["data"]))//generateQuizNoParams(json));
+  .then(json => quizEvent(json))//generateQuizNoParams(json));
 }
 
 let allIngredients = [];
 let correctIngredients = [];
 let correctIngredientNames = [];
 
-function generateQuizNoParams(json) { //Generates quiz with no user parameters
+/*function generateQuizNoParams(json) { //Generates quiz with no user parameters
   const randomRecipes = [];
   const recipes = json["data"]
   for(let i = 1; i <= 2; i++) {
@@ -100,7 +100,7 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
 )})}
 
 
-const quizEvent = function(recipes) {
+const quizEvent = function(json) {
   let questionScore;
   let incorrect;
   let questionStatus;
@@ -120,7 +120,6 @@ const quizEvent = function(recipes) {
     questionScore = 0;
     incorrect = [];
     questionStatus = document.createElement('h1');
-
     window.addEventListener('DOMContentLoaded', questionEvent(recipe))
   })
 }

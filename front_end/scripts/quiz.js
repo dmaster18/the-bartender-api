@@ -66,7 +66,7 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-const correctEventListeners = function() {cards.map(card => {
+const correctEventListeners = function() {cards().map(card => {
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         alert = 'Correct!'

@@ -2,7 +2,7 @@ function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => generateQuestion(json["data"][0]))//generateQuizNoParams(json));
+  .then(json => quizEvent(json["data"]))//generateQuizNoParams(json));
 }
 
 let allIngredients = [];
@@ -99,12 +99,28 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
+
 const quizEvent = function(recipes) {
-  let questionScore = 0;
-  let incorrect = [];
-  let questionStatus = document.createElement('h1');
-  recipes.forEach(recipe => while (questionStatus === "CORRECT!" || questionStatus === "WRONG!")
+  let questionScore;
+  let incorrect;
+  let questionStatus;
+
+  const randomRecipes = [];
+  const recipes = json["data"]
+  for(let i = 1; i <= 10; i++) {
+    const randomNumber = Math.floor(Math.random()*508);
+    const randomRecipe = recipes[randomNumber];
+    //if (!randomRecipes.includes(randomRecipe)) {
+      randomRecipes.push(randomRecipe);
+    //}
+  }
+
+  randomRecipes.forEach(recipe => while (questionStatus.innerText !== "CORRECT!" || questionStatus.innerText !== "WRONG!")
   {
+    questionScore = 0;
+    incorrect = [];
+    questionStatus = document.createElement('h1');
+
     window.addEventListener('DOMContentLoaded', questionEvent(recipe))
   })
 }

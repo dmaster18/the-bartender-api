@@ -5,6 +5,8 @@ function fetchQuizNoParams() {
   .then(json => quizEvent(json))//generateQuizNoParams(json));
 }
 
+window.addEventListener('DOMContentLoaded', function() {fetchQuizNoParams()});
+
 let allIngredients = [];
 let correctIngredients = [];
 let correctIngredientNames = [];
@@ -121,7 +123,7 @@ const quizEvent = function(json) {
     questionStatus = document.createElement('h1');
     while (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!")
     {
-      window.addEventListener('DOMContentLoaded', function() {questionEvent(randomRecipes[i])})
+      questionEvent(randomRecipes[i]);
     }
   }
 }

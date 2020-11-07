@@ -48,20 +48,19 @@ class Recipe < ApplicationRecord
     liquors << correct_liquors
     liquors.flatten
     liqueurs = []
-    mixers = []
-    garnishes = []
-
     correct_liqueurs = self.liqueurs
-    correct_mixers = self.mixers
-    correct_garnishes = self.garnishes
-    correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
-    correct_ingredients.flatten
     liqueurs << correct_liqueurs
     liqueurs.flatten
+    mixers = []
+    correct_mixers = self.mixers
     mixers << correct_mixers
     mixers.flatten
+    garnishes = []
+    correct_garnishes = self.garnishes
     garnishes << correct_garnishes
     garnishes.flatten
+    correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
+    correct_ingredients.flatten
     while liquors.length <= 7
       random_number = rand(1..216)
       random_liquor = Liquor.all.find(random_number)

@@ -117,18 +117,18 @@ const quizEvent = function(json) {
     //}
   }
   let i = 1;
-  while i <= randomRecipes.length {
+  while (i <= randomRecipes.length) {
     questionScore = 0;
     incorrect = [];
     questionStatus = document.createElement('h1');
-    function runQuiz() {
+    (function runQuiz() {
       if (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!") {
       questionEvent(randomRecipes[i]);
       setTimeout("runQuiz", 10000);
     } else {
       i++;
     }
-  }()
+  })()}
 }
 
 

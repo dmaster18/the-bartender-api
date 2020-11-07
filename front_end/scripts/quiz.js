@@ -46,11 +46,14 @@ function generateQuizNoParams(json) { //Generates quiz with no user parameters
 
 function generateQuestion(recipe) {
   allIngredients = recipe.attributes.all_ingredients.flat().map(allIngredient => allIngredient.name);
-  const p_elements = allIngredients.forEach (allIngredient =>
-    {const p  = document.createElement('p')
-     p.innerText = allIngredient})
+  const div = document.createElement('div');
+  allIngredients.forEach (allIngredient =>
+    {const p  = document.createElement('p');
+     p.innerText = allIngredient;
+     div.appendChild(p);
+   })
   const main = document.querySelector('main');
-  main.appendChild(p_elements);
+  main.appendChild(div);
   /*correctIngredients = recipe.attributes.correct_ingredients;
   correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
   const main = document.querySelector('main');

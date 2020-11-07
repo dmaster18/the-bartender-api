@@ -61,28 +61,28 @@ class Recipe < ApplicationRecord
     garnishes.flatten
     correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
     correct_ingredients.flatten
-    while liquors.length <= 7
+    while liquors.length <= 5
       random_number = rand(1..216)
       random_liquor = Liquor.all.find(random_number)
       unless liquors.include?(random_liquor)
         liquors << random_liquor
       end
     end
-    while liqueurs.length <= 7
+    while liqueurs.length <= 5
       random_number = rand(1..173)
       random_liqueur = Liqueur.all.find(random_number)
       unless liqueurs.include?(random_liqueur)
         liqueurs << random_liqueur
       end
     end
-    while (mixers.length <= 7)
+    while mixers.length <= 5
       random_number = rand(1..308)
       random_mixer = Mixer.all.find(random_number)
       unless mixers.include?(random_mixer)
         mixers << random_mixer
       end
     end
-    while (garnishes.length <= 4)
+    while garnishes.length <= 3
       random_number = rand(1..142)
       random_garnish = Garnish.all.find(random_number)
       unless garnishes.include?(random_garnish)

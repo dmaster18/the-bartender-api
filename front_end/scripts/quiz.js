@@ -100,23 +100,6 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
-const questionEventListener = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).(card => {
-    const feedback = document.createElement('h1');
-    card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
-      if (correctIngredientNames.includes(this.innerText)) {
-        //alert = 'Correct!'
-        //userCorrectResponses.push(currentIngredient);
-        document.getElementById(this.id).style.backgroundColor = 'green';
-        feedback.innerText = '✓';
-        this.appendChild(feedback);
-    } else {
-        //alert = 'Wrong!'
-        //userIncorrectResponses.push(currentIngredient);
-        document.getElementById(this.id).style.backgroundColor = 'red';
-        feedback.innerText = 'X';
-        this.appendChild(feedback);
-    }}
-)})}
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);

@@ -44,17 +44,18 @@ class Recipe < ApplicationRecord
 
   def generate_question
     liquors = []
+    correct_liquors = self.liquors
+    liquors << correct_liquors
+    liquors.flatten
     liqueurs = []
     mixers = []
     garnishes = []
-    correct_liquors = self.liquors
+
     correct_liqueurs = self.liqueurs
     correct_mixers = self.mixers
     correct_garnishes = self.garnishes
     correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
     correct_ingredients.flatten
-    liquors << correct_liquors
-    liquors.flatten
     liqueurs << correct_liqueurs
     liqueurs.flatten
     mixers << correct_mixers

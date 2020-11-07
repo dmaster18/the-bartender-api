@@ -50,7 +50,7 @@ function generateQuestion(recipe) {
   ingredientCardsContainer.classList.add('ingredient-cards-container');
   let i = 1;
   recipe.attributes.all_ingredients.flat().flat().forEach(ingredient => {
-    const ingredientCard = document.createElement('div');
+    const ingredientCard = document.createElement('h3');
     ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `item${i}`);
     //const ingredientCardDetail = document.createElement('div');
@@ -66,7 +66,41 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-const correctEventListeners = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+const cardEventListener = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+    const main = document.querySelector('main')
+    const feedback = document.createElement('h1');
+    const questionStatus = document.createElement('h1');
+    let score = 0;
+    let incorrect = [];
+    card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
+      if (correctIngredientNames.includes(this.innerText)) {
+        //alert = 'Correct!'
+        //userCorrectResponses.push(currentIngredient);
+        document.getElementById(this.id).style.backgroundColor = 'green';
+        feedback.innerText = '✓';
+        this.appendChild(feedback);
+        questionScore += 1;
+        if (score ===  correctIngredientNames.length) {
+          questionStatus = "CORRECT!"
+          main.appendChild(questionStatus);
+          //user.quizScore += 1;
+        }
+    } else {
+        //alert = 'Wrong!'
+        //userIncorrectResponses.push(currentIngredient);
+        document.getElementById(this.id).style.backgroundColor = 'red';
+        feedback.innerText = 'X';
+        this.appendChild(feedback);
+        incorrect.push("X");
+        if (incorrect.length === 3) {
+          questionStatus = "WRONG!"
+          main.appendChild(questionStatus);
+          //user.quizScore += 0;
+        }
+    }}
+)})}
+
+const questionEventListener = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).(card => {
     const feedback = document.createElement('h1');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {

@@ -99,7 +99,7 @@ const runQuiz = function(randomRecipes, i) {
   main.appendChild(questionStatus);
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, incorrect, questionStatus);
-  checkQuestionStatus(i, questionStatus);
+  checkQuestionStatus(i);
 }
 
 const quizEvent = function(json) {

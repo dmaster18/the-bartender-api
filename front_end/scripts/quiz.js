@@ -75,7 +75,6 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     const feedback = document.createElement('h1');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
-        //alert = 'Correct!'
         //userCorrectResponses.push(currentIngredient);
         document.getElementById(this.id).style.backgroundColor = 'green';
         feedback.innerText = '✓';
@@ -87,7 +86,6 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
           //user.quizScore += 1;
         }
     } else {
-        //alert = 'Wrong!'
         //userIncorrectResponses.push(currentIngredient);
         document.getElementById(this.id).style.backgroundColor = 'red';
         feedback.innerText = 'X';

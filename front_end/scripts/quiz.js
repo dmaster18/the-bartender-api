@@ -93,20 +93,26 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
     }}
 )})}
 
-const quizEvent = function(json) {
-  let questionScore = 0;
-  let incorrect = [];
-  let questionStatus = document.createElement('h1');
-
+const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   const randomRecipes = [];
   const recipes = json["data"]
-  for(let i = 1; i <= 10; i++) {
+  for(let i = 1; i <= questionNumber; i++) {
     const randomNumber = Math.floor(Math.random()*508);
     const randomRecipe = recipes[randomNumber];
     //if (!randomRecipes.includes(randomRecipe)) {
       randomRecipes.push(randomRecipe);
     //}
   }
+  return randomRecipes;
+}
+
+
+const quizEvent = function(json) {
+  let questionScore = 0;
+  let incorrect = [];
+  let questionStatus = document.createElement('h1');
+  randomRecipes = randomRecipeGenerator(recipes);
+
   let i = 1;
   while (i <= randomRecipes.length) {
     questionScore = 0;
@@ -121,7 +127,6 @@ const quizEvent = function(json) {
     }
   })()}
 }
-
 
 const questionEvent = function(recipe) {
   generateQuestion(recipe)

@@ -84,7 +84,7 @@ const questionEvent = function(recipe, questionScore, incorrect, questionStatus)
 const checkQuestionStatus = function(i) {
   questionStatus = document.querySelector('h1.question-status');
   if (questionStatus.innerText === "CORRECT!" && questionStatus.innerText === "WRONG!") {
-    i++; }
+    return i++; }
   else {
     setTimeout(checkQuestionStatus, 200000);
   }

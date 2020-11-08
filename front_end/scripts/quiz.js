@@ -95,6 +95,7 @@ const runQuiz = function(randomRecipes, i) {
   let incorrect = [];
   let questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
+  questionStatus.innerText = "IN PROGRESS"
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, incorrect, questionStatus);
   checkQuestionStatus(i);

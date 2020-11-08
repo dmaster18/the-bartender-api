@@ -111,18 +111,14 @@ const questionEvent = function(recipe) {
 }
 
 const runQuiz = function(randomRecipes) {
-  let i = 0;
-  while (i < randomRecipes.length) {
-    questionScore = 0;
-    incorrect = [];
-    questionStatus = document.createElement('h1');
   if (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!") {
     questionEvent(randomRecipes[i]);
     setTimeout(runQuiz, 10000);
 } else {
-  i++;
+    i++;
+  }
 }
-}
+
 
 const quizEvent = function(json) {
   let questionScore = 0;
@@ -130,11 +126,14 @@ const quizEvent = function(json) {
   let questionStatus = document.createElement('h1');
   const recipes = json["data"]
   randomRecipes = randomRecipeGenerator(recipes);
-
-
-    runQuiz();
+  let i = 0;
+  while (i < randomRecipes.length) {
+    questionScore = 0;
+    incorrect = [];
+    questionStatus = document.createElement('h1');
+    runQuiz(randomRecipes);
+  }
 }
-
 
 
 /*function responseHandler() {

@@ -81,8 +81,7 @@ const questionEvent = function(recipe, questionScore, incorrect, questionStatus)
   cardEventListener(questionScore, incorrect, questionStatus);
 }
 
-const checkQuestionStatus = function(i) {
-  questionStatus = document.querySelector('h1.question-status');
+const checkQuestionStatus = function(i, questionStatus) {
   if (questionStatus.innerText === "CORRECT!" && questionStatus.innerText === "WRONG!") {
     return i++; }
   else {
@@ -98,7 +97,7 @@ const runQuiz = function(randomRecipes, i) {
   questionStatus.innerText = "IN PROGRESS"
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, incorrect, questionStatus);
-  checkQuestionStatus(i);
+  checkQuestionStatus(i, questionStatus);
 }
 
 const quizEvent = function(json) {

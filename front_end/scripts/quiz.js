@@ -109,10 +109,16 @@ const questionEvent = function(recipe) {
   generateQuestion(recipe)
   cardEventListener();
 }
-const runQuiz = function() {
+
+const runQuiz = function(randomRecipes) {
+  let i = 0;
+  while (i < randomRecipes.length) {
+    questionScore = 0;
+    incorrect = [];
+    questionStatus = document.createElement('h1');
   if (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!") {
-  questionEvent(randomRecipes[i]);
-  setTimeout("runQuiz", 10000);
+    questionEvent(randomRecipes[i]);
+    setTimeout(runQuiz, 10000);
 } else {
   i++;
 }
@@ -125,12 +131,8 @@ const quizEvent = function(json) {
   const recipes = json["data"]
   randomRecipes = randomRecipeGenerator(recipes);
 
-  let i = 1;
-  while (i <= randomRecipes.length) {
-    questionScore = 0;
-    incorrect = [];
-    questionStatus = document.createElement('h1');
-    (function runQuiz() )()}
+
+    runQuiz();
 }
 
 

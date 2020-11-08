@@ -136,20 +136,6 @@ const quizEvent = function(json) {
   }
 }
 
-
-/*function responseHandler() {
-  //userResponses.push(currentIngredient);
-  if (correctIngredientNames.includes(this.id)) {
-    alert = 'Correct!'
-    //userCorrectResponses.push(currentIngredient);
-    document.getElementById(this.id).style.backgroundColor = 'green';
-  } else {
-    alert = 'Wrong!'
-    //userIncorrectResponses.push(currentIngredient);
-    document.getElementById(this.id).style.backgroundColor = 'red';
-  }
-}
-
 /*
 let points = 0;
 let questionStatus;

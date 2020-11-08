@@ -81,12 +81,17 @@ const questionEvent = function(recipe, questionScore, questionStatus) {
   cardEventListener(questionScore, questionStatus);
 }
 
+const checkQuestionStatus = function() {
+  questionStatus = document.querySelector('h1.question-status');
+}
+
 const runQuiz = function(randomRecipes, i) {
-  if (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!") {
-    questionEvent(randomRecipes[i]);
-    setTimeout(runQuiz, 10000);
-} else {
+  questionEvent(randomRecipes[i]);
+  questionStatus = checkQuestionStatus();
+  if (questionStatus.innerText === "CORRECT!" && questionStatus.innerText === "WRONG!") {
     i++;
+} else {
+    setTimeout(checkQuestionStatus, 10000);
   }
 }
 
@@ -94,6 +99,7 @@ const quizEvent = function(json) {
   let questionScore = 0;
   let incorrect = [];
   let questionStatus = document.createElement('h1');
+  questionStatus.classList.add('question-status');
   const recipes = json["data"]
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;

@@ -90,18 +90,16 @@ const runQuiz = function(randomRecipes, i) {
   let incorrect = [];
   let questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
-  questionEvent(randomRecipes[i]);
+  let recipe = randomRecipes[i];
+  questionEvent(recipe, questionScore, questionStatus);
   if (checkQuestionStatus().innerText === "CORRECT!" && checkQuestionStatus().innerText === "WRONG!") {
     i++;
-    questionScore = 0;
-    incorrect = [];
 } else {
     setTimeout(checkQuestionStatus, 10000);
   }
 }
 
 const quizEvent = function(json) {
-
   const recipes = json["data"]
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;

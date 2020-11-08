@@ -11,35 +11,6 @@ let allIngredients = [];
 let correctIngredients = [];
 let correctIngredientNames = [];
 
-/*function generateQuizNoParams(json) { //Generates quiz with no user parameters
-  const randomRecipes = [];
-  const recipes = json["data"]
-  for(let i = 1; i <= 2; i++) {
-    const randomNumber = Math.floor(Math.random()*508);
-    const randomRecipe = recipes[randomNumber];
-    //if (!randomRecipes.includes(randomRecipe)) {
-      randomRecipes.push(randomRecipe);
-    //}
-  }
-  const questions = randomRecipes.map(recipe =>
-    {
-      //allIngredients = [];
-      //correctIngredients = [];
-      generateQuestion(recipe);
-    });
-  return questions;
-}
-
-/*function renderQuestionsNoParams(questions) {
-  for(let i = 0; i < questions.length; i++)
-  {
-    if (questions[i] === 'Incomplete')
-    {
-      questions[i]();
-    }
-  }
-}*/
-
 function generateQuestion(recipe) {
   const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();
   correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);

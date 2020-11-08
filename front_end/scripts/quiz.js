@@ -105,6 +105,10 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   return randomRecipes;
 }
 
+const questionEvent = function(recipe) {
+  generateQuestion(recipe)
+  cardEventListener();
+}
 const runQuiz = function() {
   if (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!") {
   questionEvent(randomRecipes[i]);
@@ -113,7 +117,6 @@ const runQuiz = function() {
   i++;
 }
 }
-
 
 const quizEvent = function(json) {
   let questionScore = 0;
@@ -130,10 +133,7 @@ const quizEvent = function(json) {
     (function runQuiz() )()}
 }
 
-const questionEvent = function(recipe) {
-  generateQuestion(recipe)
-  cardEventListener();
-}
+
 
 /*function responseHandler() {
   //userResponses.push(currentIngredient);

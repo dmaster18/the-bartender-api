@@ -105,12 +105,7 @@ const quizEvent = function(json) {
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
   while (i < randomRecipes.length) {
-    if (questionStatus.innerText === "CORRECT!" && questionStatus.innerText === "WRONG!") {
-      questionEvent(randomRecipes[i], questionScore, questionStatus);
-      setTimeout(runQuiz, 10000);
-  } else {
-      i++;
-    }
+    runQuiz(randomRecipes, i)
   }
 }
 

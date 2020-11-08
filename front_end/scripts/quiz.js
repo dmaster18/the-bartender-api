@@ -35,7 +35,7 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-const cardEventListener = function(questionScore, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+const cardEventListener = function(questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
@@ -78,7 +78,7 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
 
 const questionEvent = function(recipe, questionScore, questionStatus) {
   generateQuestion(recipe)
-  cardEventListener(questionScore, questionStatus);
+  cardEventListener(questionScore, incorrect, questionStatus);
 }
 
 const checkQuestionStatus = function(i) {
@@ -86,7 +86,7 @@ const checkQuestionStatus = function(i) {
   if (checkQuestionStatus().innerText === "CORRECT!" && checkQuestionStatus().innerText === "WRONG!") {
     i++; }
   else {
-    setTimeout(checkQuestionStatus, 10000);
+    setTimeout(checkQuestionStatus, 50000);
   }
 }
 

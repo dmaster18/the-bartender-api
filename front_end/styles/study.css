@@ -67,6 +67,10 @@ div.ingredient-cards-container {
     grid-gap: 20px;
   }
 
+h1.question-status {
+  text-align: center;
+}
+
 /*div.ingredient-card-detail {
   text-align: center;
   padding: 30px;

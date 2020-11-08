@@ -47,7 +47,7 @@ const cardEventListener = function(questionScore, incorrect, questionStatus) {[]
         questionScore += 1;
         if (questionScore ===  correctIngredientNames.length) {
           questionStatus.innerText = "CORRECT!"
-          main.appendChild(questionStatus);
+          //main.appendChild(questionStatus);
           //user.quizScore += 1;
         }
     } else {
@@ -58,7 +58,7 @@ const cardEventListener = function(questionScore, incorrect, questionStatus) {[]
         incorrect.push("X");
         if (incorrect.length === 3) {
           questionStatus.innerText = "WRONG!"
-          main.appendChild(questionStatus);
+          //main.appendChild(questionStatus);
           //user.quizScore += 0;
         }
     }}
@@ -81,7 +81,8 @@ const questionEvent = function(recipe, questionScore, incorrect, questionStatus)
   cardEventListener(questionScore, incorrect, questionStatus);
 }
 
-const checkQuestionStatus = function(i, questionStatus) {
+const checkQuestionStatus = function(i) {
+  questionStatus = document.querySelector('h1.question-status')
   if (questionStatus.innerText === "CORRECT!" && questionStatus.innerText === "WRONG!") {
     return i++; }
   else {
@@ -92,9 +93,10 @@ const checkQuestionStatus = function(i, questionStatus) {
 const runQuiz = function(randomRecipes, i) {
   let questionScore = 0;
   let incorrect = [];
+  const main = document.querySelector('main');
   let questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
-  questionStatus.innerText = "IN PROGRESS"
+  main.appendChild(questionStatus);
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, incorrect, questionStatus);
   checkQuestionStatus(i, questionStatus);

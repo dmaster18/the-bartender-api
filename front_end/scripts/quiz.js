@@ -5,7 +5,7 @@ function fetchQuizNoParams() {
   .then(json => quizEvent(json))//generateQuizNoParams(json));
 }
 
-window.addEventListener('DOMContentLoaded', function() {fetchQuizNoParams()});
+//window.addEventListener('DOMContentLoaded', function() {fetchQuizNoParams()});
 
 let allIngredients = [];
 let correctIngredients = [];
@@ -55,15 +55,11 @@ function generateQuestion(recipe) {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `item${i}`);
-    //const ingredientCardDetail = document.createElement('div');
-    //ingredientCardDetail.classList.add('ingredient-card-detail');
     ingredientCard.innerText = `${ingredient.name}`
-    //ingredientCard.appendChild(ingredientCardDetail);
     ingredientCardsContainer.appendChild(ingredientCard);
     i++;
   })
   main.appendChild(ingredientCardsContainer);
-  //return ingredients = {allIngredients: recipe.attributes.all_ingredients, correctIngredients: recipe.attributes.correct_ingredients}
 }
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}

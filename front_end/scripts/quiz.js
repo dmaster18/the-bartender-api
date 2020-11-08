@@ -83,6 +83,11 @@ const questionEvent = function(recipe, questionScore, questionStatus) {
 
 const checkQuestionStatus = function() {
   questionStatus = document.querySelector('h1.question-status');
+  if (checkQuestionStatus().innerText === "CORRECT!" && checkQuestionStatus().innerText === "WRONG!") {
+    i++; }
+  else {
+    setTimeout(checkQuestionStatus, 10000);
+  }
 }
 
 const runQuiz = function(randomRecipes, i) {
@@ -92,11 +97,7 @@ const runQuiz = function(randomRecipes, i) {
   questionStatus.classList.add('question-status');
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, questionStatus);
-  if (checkQuestionStatus().innerText === "CORRECT!" && checkQuestionStatus().innerText === "WRONG!") {
-    i++;
-} else {
-    setTimeout(checkQuestionStatus, 10000);
-  }
+
 }
 
 const quizEvent = function(json) {

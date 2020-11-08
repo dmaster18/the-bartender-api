@@ -64,8 +64,6 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-
-
 const cardEventListener = function() {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
@@ -94,7 +92,6 @@ const cardEventListener = function() {[].slice.call(document.getElementsByClassN
         }
     }}
 )})}
-
 
 const quizEvent = function(json) {
   let questionScore = 0;

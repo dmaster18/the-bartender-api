@@ -110,7 +110,7 @@ const questionEvent = function(recipe) {
   cardEventListener();
 }
 
-const runQuiz = function(randomRecipes) {
+const runQuiz = function(randomRecipes, i) {
   if (questionStatus.innerText !== "CORRECT!" && questionStatus.innerText !== "WRONG!") {
     questionEvent(randomRecipes[i]);
     setTimeout(runQuiz, 10000);
@@ -131,7 +131,7 @@ const quizEvent = function(json) {
     questionScore = 0;
     incorrect = [];
     questionStatus = document.createElement('h1');
-    runQuiz(randomRecipes);
+    runQuiz(randomRecipes, i);
   }
 }
 

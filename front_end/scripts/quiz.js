@@ -76,7 +76,7 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   return randomRecipes;
 }
 
-const questionEvent = function(recipe, questionScore, questionStatus) {
+const questionEvent = function(recipe, questionScore, incorrect, questionStatus) {
   generateQuestion(recipe)
   cardEventListener(questionScore, incorrect, questionStatus);
 }

@@ -119,9 +119,6 @@ const runQuiz = function(randomRecipes, i) {
   }
 }
 
-
-
-
 const quizEvent = function(json) {
   let questionScore = 0;
   let incorrect = [];

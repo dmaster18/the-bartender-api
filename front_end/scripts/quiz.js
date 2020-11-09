@@ -85,8 +85,8 @@ const questionEvent = function(recipe, questionScore, incorrect) {
 }
 
 const checkQuestionStatus = function(i) {
-  questionStatus = document.querySelector('h1.question-status');
-  if (questionStatus !== null) {
+  let findQuestionStatus = document.querySelector('h1.question-status');
+  if (findQuestionStatus !== null) {
     return i++; }
   else {
     setTimeout(checkQuestionStatus, 200000);

@@ -101,7 +101,7 @@ const runQuiz = function(randomRecipes, i) {
   questionStatus.classList.add('question-status');
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, incorrect);
-  checkQuestionStatus(i);
+  //checkQuestionStatus(i);
 }
 
 const quizEvent = function(json) {

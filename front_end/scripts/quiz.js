@@ -96,7 +96,7 @@ const questionEvent = function(recipe, questionScore, incorrect) {
   cardEventListener(questionScore, incorrect);
 }
 
-const runQuestion = function(randomRecipes[i]) {
+const runQuestion = function(recipe) {
   let questionScore = 0;
   let incorrect = [];
   const main = document.querySelector('main');

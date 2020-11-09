@@ -102,7 +102,7 @@ const runQuestion = function(recipe) {
   const main = document.querySelector('main');
   let questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
-  questionEvent(randomRecipes[i], questionScore, incorrect);
+  questionEvent(recipe, questionScore, incorrect);
 }
 
 const quizEvent = function(json) {

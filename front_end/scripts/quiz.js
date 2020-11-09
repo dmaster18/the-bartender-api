@@ -47,8 +47,9 @@ const cardEventListener = function(questionScore, incorrect) {[].slice.call(docu
         this.appendChild(feedback);
         questionScore += 1;
         if (questionScore === correctIngredientNames.length) {
-          questionStatus.innerText = "CORRECT!"
-          //main.appendChild(questionStatus);
+          questionStatus.innerText = 'CORRECT!'
+          questionStatus.style.textAlign = 'center'
+          main.appendChild(questionStatus);
           //user.quizScore += 1;
         }
     } else {
@@ -56,10 +57,11 @@ const cardEventListener = function(questionScore, incorrect) {[].slice.call(docu
         document.getElementById(this.id).style.backgroundColor = 'red';
         feedback.innerText = 'X';
         this.appendChild(feedback);
-        incorrect.push("X");
+        incorrect.push('X');
         if (incorrect.length === 3) {
-          questionStatus.innerText = "WRONG!"
-          //main.appendChild(questionStatus);
+          questionStatus.innerText = 'WRONG!'
+          questionStatus.style.textAlign = 'center'
+          main.appendChild(questionStatus);
           //user.quizScore += 0;
         }
     }}

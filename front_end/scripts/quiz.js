@@ -86,7 +86,7 @@ const questionEvent = function(recipe, questionScore, incorrect) {
 
 const checkQuestionStatus = function(i) {
   questionStatus = document.querySelector('h1.question-status');
-  if (questionStatus.innerText === "CORRECT!" && questionStatus.innerText === "WRONG!") {
+  if (questionStatus.innerText === 'CORRECT!' && questionStatus.innerText === 'WRONG!') {
     return i++; }
   else {
     setTimeout(checkQuestionStatus, 200000);
@@ -106,7 +106,7 @@ const runQuiz = function(randomRecipes, i) {
 }
 
 const quizEvent = function(json) {
-  const recipes = json["data"]
+  const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
   while (i < randomRecipes.length) {
@@ -180,16 +180,16 @@ function fetchQuiz(difficulty, length) {
 
 
 function renderQuiz(json, difficulty, length) {
-  json["data"].forEach(recipe => generateQuiz(recipe, difficulty, length))
+  json['data'].forEach(recipe => generateQuiz(recipe, difficulty, length))
 }
 
 function generateQuiz(recipe, difficulty, length) {
   questions = [];
   const main = document.querySelector('main');
-  const easyQuestions = json.filter(recipe => recipe.attributes.complexity === "Easy");
-  const mediumQuestions = json.filter(recipe => recipe.attributes.complexity === "Medium");
-  const hardQuestions = json.filter(recipe => recipe.attributes.complexity === "Hard");
-  const varyHardQuestions = json.filter(recipe => recipe.attributes.complexity === "Very Hard");
+  const easyQuestions = json.filter(recipe => recipe.attributes.complexity === 'Easy');
+  const mediumQuestions = json.filter(recipe => recipe.attributes.complexity === 'Medium');
+  const hardQuestions = json.filter(recipe => recipe.attributes.complexity === 'Hard');
+  const varyHardQuestions = json.filter(recipe => recipe.attributes.complexity === 'Very Hard');
   switch(length) {
     case '5':
       length = 5;

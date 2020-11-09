@@ -38,7 +38,7 @@ const cards = function(){[].slice.call(document.getElementsByClassName('ingredie
 const cardEventListener = function(questionScore, incorrect) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    questionStatus = document.querySelector('h1.question-status');
+    const questionStatus = document.querySelector('h1.question-status');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         //userCorrectResponses.push(currentIngredient);

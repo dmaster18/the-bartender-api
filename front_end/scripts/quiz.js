@@ -87,14 +87,14 @@ const questionEvent = function(recipe, questionScore, incorrect) {
 const checkQuestionStatus = function() {
   let findQuestionStatus = document.querySelector('h1.question-status');
   if (findQuestionStatus !== null) {
-    
+
      }
   else {
     setTimeout(checkQuestionStatus, 200000);
   }
 }
 
-const runQuestion = function(recipe) {
+const runQuestion = function(randomRecipes, i) {
   let questionScore = 0;
   let incorrect = [];
   const main = document.querySelector('main');
@@ -107,9 +107,10 @@ const runQuestion = function(recipe) {
 const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
-  //let i = 0;
-  //while (i < randomRecipes.length) {
-  runQuestions = randomRecipes.forEach(recipe => runQuestion(recipe))
+  let i = 0;
+  while (i < randomRecipes.length) {
+    checkQuestionStatus(i, runQuestion(randomRecipes[i]));
+  }
 
   //}
 }

@@ -79,10 +79,9 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
 }
 
 
-const checkQuestionStatus = function(i) {
+const checkQuestionStatus = function() {
   let findQuestionStatus = document.querySelector('h1.question-status');
   if (findQuestionStatus !== null) {
-    i++;
     return true;
      }
   else {
@@ -93,6 +92,7 @@ const checkQuestionStatus = function(i) {
 const questionEvent = function(recipe, questionScore, incorrect, questionStatus) {
   generateQuestion(recipe)
   cardEventListener(questionScore, incorrect, questionStatus);
+  checkQuestionStatus(i);
 }
 
 const runQuestion = function(recipe) {
@@ -108,12 +108,17 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0
-  while (i < randomRecipes.length) {
-    if (!checkQuestionStatus(i)) {
-      runQuestion(randomRecipes[i]);
-      checkQuestionStatus(i);
+  if (i < randomRecipes.length) {
+    runQuestion(randomRecipes[i]);
+    if (checkQuestionStatus()) {
+      i++;
+      break;
     }
   }
+  if (i===1) {
+    runQuestion(randomRecipes[i]);
+  }
+
 }
 
 

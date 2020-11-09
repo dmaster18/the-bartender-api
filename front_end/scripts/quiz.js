@@ -46,7 +46,7 @@ const cardEventListener = function(questionScore, incorrect) {[].slice.call(docu
         feedback.innerText = '✓';
         this.appendChild(feedback);
         questionScore += 1;
-        if (questionScore ===  correctIngredientNames.length) {
+        if (questionScore === correctIngredientNames.length) {
           questionStatus.innerText = "CORRECT!"
           //main.appendChild(questionStatus);
           //user.quizScore += 1;

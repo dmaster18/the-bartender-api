@@ -79,10 +79,7 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   return randomRecipes;
 }
 
-const questionEvent = function(recipe, questionScore, incorrect) {
-  generateQuestion(recipe)
-  cardEventListener(questionScore, incorrect);
-}
+
 
 const checkQuestionStatus = function(i) {
   let findQuestionStatus = document.querySelector('h1.question-status');
@@ -92,6 +89,11 @@ const checkQuestionStatus = function(i) {
   else {
     setTimeout(checkQuestionStatus, 200000);
   }
+}
+
+const questionEvent = function(recipe, questionScore, incorrect) {
+  generateQuestion(recipe)
+  cardEventListener(questionScore, incorrect);
 }
 
 const runQuestion = function(randomRecipes[i]) {

@@ -85,6 +85,7 @@ const checkQuestionStatus = function(i) {
   let findQuestionStatus = document.querySelector('h1.question-status');
   if (findQuestionStatus !== null) {
     i++;
+    return true;
      }
   else {
     setTimeout(checkQuestionStatus, 200000);
@@ -109,9 +110,8 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
-  while (i < randomRecipes.length) {
+  if (!checkQuestionStatus(i)) {
     runQuestion(randomRecipes[i]);
-    checkQuestionStatus(i);
   }
 }
 

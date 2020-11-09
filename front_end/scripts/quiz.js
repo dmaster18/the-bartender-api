@@ -86,7 +86,7 @@ const questionEvent = function(recipe, questionScore, incorrect) {
 
 const checkQuestionStatus = function(i) {
   questionStatus = document.querySelector('h1.question-status');
-  if (questionStatus.innerText === 'CORRECT!' && questionStatus.innerText === 'WRONG!') {
+  if (questionStatus !== null) {
     return i++; }
   else {
     setTimeout(checkQuestionStatus, 200000);
@@ -99,7 +99,6 @@ const runQuiz = function(randomRecipes, i) {
   const main = document.querySelector('main');
   let questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
-  main.appendChild(questionStatus);
   let recipe = randomRecipes[i];
   questionEvent(recipe, questionScore, incorrect);
   checkQuestionStatus(i);

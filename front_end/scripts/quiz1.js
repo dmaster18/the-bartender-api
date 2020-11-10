@@ -94,7 +94,7 @@ const checkQuestionStatus = function() {
   }
 }
 
-const questionEvent = function(i, randomRecipes, questionScore, incorrect, questionStatus) {
+const questionEvent = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {
   generateQuestion(randomRecipes[i])
   cardEventListener(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
   //checkQuestionStatus();
@@ -113,7 +113,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizScore.innerText = quizScore;
     main.appendChild(myQuizScore);
   }
-  questionEvent(i, randomRecipes, questionScore, incorrect, questionStatus);
+  questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
 }
 
 const quizEvent = function(json) {

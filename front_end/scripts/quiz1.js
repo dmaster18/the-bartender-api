@@ -36,6 +36,7 @@ function generateQuestion(recipe) {
 const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
   const main = document.querySelector('main')
   const feedback = document.createElement('h1');
+  let quizScore = quizScore;
   if (correctIngredientNames.includes(this.innerText)) {
     document.getElementById(this.id).style.backgroundColor = 'green';
     feedback.innerText = '✓';
@@ -106,6 +107,7 @@ const questionEvent = function(i, randomRecipes, quizScore, questionScore, incor
 const runQuestion = function(i, randomRecipes, quizScore) {
   const main = document.querySelector('main');
   main.innerHTML = ''
+  let quizScore = quizScore;
   let questionScore = 0;
   let incorrect = [];
   const questionStatus = document.createElement('h1');

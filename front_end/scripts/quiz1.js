@@ -45,7 +45,6 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         this.appendChild(feedback);
         questionScore += 1;
         if (questionScore === correctIngredientNames.length) {
-          recipe['correct?'] = true;
           questionStatus.innerText = 'CORRECT!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -60,7 +59,6 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         this.appendChild(feedback);
         incorrect.push('X');
         if (incorrect.length === 3) {
-          recipe['correct?'] = false;
           questionStatus.innerText = 'WRONG!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);

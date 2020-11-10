@@ -35,41 +35,44 @@ function generateQuestion(recipe) {
 
 const evaluateResponse() = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {
   if (correctIngredientNames.includes(this.innerText)) {
-  document.getElementById(this.id).style.backgroundColor = 'green';
-  feedback.innerText = '✓';
-  this.appendChild(feedback);
-  questionScore += 1;
-  if (questionScore === correctIngredientNames.length) {
-    questionStatus.innerText = 'CORRECT!'
-    questionStatus.style.textAlign = 'center'
-    main.appendChild(questionStatus);
-    i++;
-    quizScore += 1;
-    setTimeout(runQuestion(i, randomRecipes), 10000);
-    //user.quizScore += 1;
-  }} else {
-  //userIncorrectResponses.push(currentIngredient);
-  document.getElementById(this.id).style.backgroundColor = 'red';
-  feedback.innerText = 'X';
-  this.appendChild(feedback);
-  incorrect.push('X');
-  if (incorrect.length === 3) {
-    questionStatus.innerText = 'WRONG!'
-    questionStatus.style.textAlign = 'center'
-    main.appendChild(questionStatus);
-    i++;
-    runQuestion(i, randomRecipes);
-    setTimeout(runQuestion(i, randomRecipes), 10000);
-    //user.quizScore += 0;
+    document.getElementById(this.id).style.backgroundColor = 'green';
+    feedback.innerText = '✓';
+    this.appendChild(feedback);
+    questionScore += 1;
+    if (questionScore === correctIngredientNames.length) {
+      questionStatus.innerText = 'CORRECT!'
+      questionStatus.style.textAlign = 'center'
+      main.appendChild(questionStatus);
+      i++;
+      quizScore += 1;
+      setTimeout(runQuestion(i, randomRecipes), 10000);
+      //user.quizScore += 1;
+    }
   }
-}}
+  else {
+    document.getElementById(this.id).style.backgroundColor = 'red';
+    feedback.innerText = 'X';
+    this.appendChild(feedback);
+    incorrect.push('X');
+    if (incorrect.length === 3) {
+      questionStatus.innerText = 'WRONG!'
+      questionStatus.style.textAlign = 'center'
+      main.appendChild(questionStatus);
+      i++;
+      runQuestion(i, randomRecipes);
+      setTimeout(runQuestion(i, randomRecipes), 10000);
+      //user.quizScore += 0;
+    }
+  }
+}
 
 const cardEventListener = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
-
-)})}
+    card.addEventListener('click', function() {
+      evaluateResponse(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus)
+    );}
+)}
 
 const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   const randomRecipes = [];

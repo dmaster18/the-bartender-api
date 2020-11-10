@@ -120,7 +120,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     main.appendChild(myQuizScore);
     myQuizPercentage = document.createElement('h1');
     percentage = (quizScore/randomRecipes.length);
-    myQuizPercentage.innerTet = `Your Quiz Score Percentage Is: ${percentage}%!`;
+    myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
     main.appendChild(myQuizPercentage);
   }
 }

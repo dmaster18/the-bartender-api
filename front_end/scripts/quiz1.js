@@ -45,12 +45,7 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         feedback.innerText = '✓';
         this.appendChild(feedback);
         questionScore += 1;
-        if (i === 10) {
-          main.innerHTML = '';
-          myQuizScore = document.createElement('h1');
-          myQuizScore.innerText = quizScore;
-          main.appendChild(myQuizScore);
-        } else if (questionScore === correctIngredientNames.length) {
+        if (questionScore === correctIngredientNames.length) {
           questionStatus.innerText = 'CORRECT!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -65,12 +60,7 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         feedback.innerText = 'X';
         this.appendChild(feedback);
         incorrect.push('X');
-        if (i === 10) {
-          main.innerHTML = '';
-          myQuizScore = document.createElement('h1');
-          myQuizScore.innerText = quizScore;
-          main.appendChild(myQuizScore);
-        } else if (incorrect.length === 3) {
+        if (incorrect.length === 3) {
           questionStatus.innerText = 'WRONG!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -118,6 +108,12 @@ const runQuestion = function(i, randomRecipes) {
   let incorrect = [];
   const questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
+  if (i === randomRecipes.length) {
+    main.innerHTML = '';
+    myQuizScore = document.createElement('h1');
+    myQuizScore.innerText = quizScore;
+    main.appendChild(myQuizScore);
+  }
   questionEvent(i, randomRecipes, questionScore, incorrect, questionStatus);
 }
 

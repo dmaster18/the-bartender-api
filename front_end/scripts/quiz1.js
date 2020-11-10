@@ -33,7 +33,7 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCardsContainer);
 }
 
-const evaluateResponse() = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {
+const evaluateResponse = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {
   if (correctIngredientNames.includes(this.innerText)) {
     document.getElementById(this.id).style.backgroundColor = 'green';
     feedback.innerText = '✓';

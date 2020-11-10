@@ -87,20 +87,9 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
 }
 
 
-const checkQuestionStatus = function() {
-  let findQuestionStatus = document.querySelector('h1.question-status');
-  if (findQuestionStatus !== null) {
-    return true;
-     }
-  else {
-    setTimeout(checkQuestionStatus, 200000);
-  }
-}
-
 const questionEvent = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
   generateQuestion(randomRecipes[i])
   cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-  //checkQuestionStatus();
 }
 
 const runQuestion = function(i, randomRecipes, quizScore) {
@@ -119,7 +108,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizScore.innerText = `Your Quiz Score Is: ${quizScore}!`;
     main.appendChild(myQuizScore);
     myQuizPercentage = document.createElement('h1');
-    percentage = (quizScore/randomRecipes.length);
+    percentage = 100*(quizScore/randomRecipes.length);
     myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
     main.appendChild(myQuizPercentage);
   }

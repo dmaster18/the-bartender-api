@@ -40,8 +40,8 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
     document.getElementById(this.id).style.backgroundColor = 'green';
     feedback.innerText = '✓';
     this.appendChild(feedback);
-    questionScore += 1;
-    if (questionScore === correctIngredientNames.length) {
+    questionScore.push('✓');
+    if (questionScore.length === correctIngredientNames.length) {
       questionStatus.innerText = 'CORRECT!'
       questionStatus.style.textAlign = 'center'
       main.appendChild(questionStatus);
@@ -106,7 +106,7 @@ const questionEvent = function(i, randomRecipes, quizScore, questionScore, incor
 const runQuestion = function(i, randomRecipes, quizScore) {
   const main = document.querySelector('main');
   main.innerHTML = ''
-  let questionScore = 0;
+  let questionScore = [];
   let incorrect = [];
   const questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');

@@ -46,7 +46,7 @@ const cardEventListener = function(recipe, questionScore, incorrect, questionSta
         this.appendChild(feedback);
         questionScore += 1;
         if (questionScore === correctIngredientNames.length) {
-          recipe.correct? = true;
+          recipe['correct?'] = true;
           questionStatus.innerText = 'CORRECT!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -59,7 +59,7 @@ const cardEventListener = function(recipe, questionScore, incorrect, questionSta
         this.appendChild(feedback);
         incorrect.push('X');
         if (incorrect.length === 3) {
-          recipe.correct? = false;
+          recipe['correct?'] = false;
           questionStatus.innerText = 'WRONG!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -110,8 +110,6 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   runQuestion(randomRecipes[0]);
-
-
 }
 
 

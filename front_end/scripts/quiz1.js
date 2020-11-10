@@ -112,7 +112,6 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizScore = document.createElement('h1');
     myQuizScore.innerText = quizScore;
     main.appendChild(myQuizScore);
-    break;
   } else {
   questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
   }

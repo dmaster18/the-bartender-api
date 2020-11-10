@@ -36,7 +36,7 @@ function generateQuestion(recipe) {
 const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
   const main = document.querySelector('main')
   const feedback = document.createElement('h1');
-  if (correctIngredientNames.includes(this.innerText)) {
+  if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
     document.getElementById(this.id).style.backgroundColor = 'green';
     feedback.innerText = '✓';
     this.appendChild(feedback);

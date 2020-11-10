@@ -94,7 +94,7 @@ const checkQuestionStatus = function() {
 const questionEvent = function(recipe, questionScore, incorrect, questionStatus) {
   generateQuestion(recipe)
   cardEventListener(recipe, questionScore, incorrect, questionStatus);
-  checkQuestionStatus(i);
+  checkQuestionStatus();
 }
 
 const runQuestion = function(recipe) {
@@ -109,7 +109,7 @@ const runQuestion = function(recipe) {
 const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
-  let i = 0
+  runQuestion(randomRecipes[0]);
 
 
 }

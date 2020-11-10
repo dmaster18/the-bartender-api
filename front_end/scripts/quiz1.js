@@ -34,10 +34,9 @@ function generateQuestion(recipe) {
 }
 
 
-const cardEventListener = function(i, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+const cardEventListener = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    let quizScore = 0;
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         //userCorrectResponses.push(currentIngredient);
@@ -101,7 +100,7 @@ const questionEvent = function(i, randomRecipes, questionScore, incorrect, quest
   //checkQuestionStatus();
 }
 
-const runQuestion = function(i, randomRecipes) {
+const runQuestion = function(i, randomRecipes, quizScore) {
   const main = document.querySelector('main');
   main.innerHTML = ''
   let questionScore = 0;
@@ -121,7 +120,8 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
-  runQuestion(i, randomRecipes);
+  let quizScore = 0;
+  runQuestion(i, randomRecipes, quizScore);
 }
 
 

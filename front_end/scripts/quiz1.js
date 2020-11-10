@@ -110,7 +110,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
   if (i === randomRecipes.length) {
     main.innerHTML = '';
     myQuizScore = document.createElement('h1');
-    myQuizScore.innerText = `${quizScore}`;
+    myQuizScore.innerText = `${quizScore.toString()}`;
     main.appendChild(myQuizScore);
   } else {
   questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
@@ -121,7 +121,7 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
-  quizScore = 0;
+  let quizScore = 0;
   runQuestion(i, randomRecipes, quizScore);
 }
 

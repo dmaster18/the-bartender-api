@@ -46,7 +46,7 @@ const evaluateResponse = function(i, quizScore, randomRecipes, questionScore, in
       questionStatus.style.textAlign = 'center'
       main.appendChild(questionStatus);
       i++;
-      quizScore += 1;
+      quizScore.push(1);
       setTimeout(runQuestion(i, randomRecipes), 10000);
       //user.quizScore += 1;
     }
@@ -61,6 +61,7 @@ const evaluateResponse = function(i, quizScore, randomRecipes, questionScore, in
       questionStatus.style.textAlign = 'center'
       main.appendChild(questionStatus);
       i++;
+      quizScore.push(0);
       runQuestion(i, randomRecipes);
       setTimeout(runQuestion(i, randomRecipes), 10000);
       //user.quizScore += 0;
@@ -116,7 +117,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizScore.innerText = `${quizScore.toString()}`;
     main.appendChild(myQuizScore);
   } else {
-  questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
+    questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
   }
 }
 
@@ -124,7 +125,7 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
-  runQuestion(i, randomRecipes, quizScore = 0);
+  runQuestion(i, randomRecipes, quizScore = []);
 }
 
 

@@ -35,7 +35,7 @@ function generateQuestion(recipe) {
 
 const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-const cardEventListener = function(questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+const cardEventListener = function(recipe, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
@@ -46,6 +46,7 @@ const cardEventListener = function(questionScore, incorrect, questionStatus) {[]
         this.appendChild(feedback);
         questionScore += 1;
         if (questionScore === correctIngredientNames.length) {
+          recipe.correct? = true;
           questionStatus.innerText = 'CORRECT!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -58,6 +59,7 @@ const cardEventListener = function(questionScore, incorrect, questionStatus) {[]
         this.appendChild(feedback);
         incorrect.push('X');
         if (incorrect.length === 3) {
+          recipe.correct? = false;
           questionStatus.innerText = 'WRONG!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
@@ -91,7 +93,7 @@ const checkQuestionStatus = function() {
 
 const questionEvent = function(recipe, questionScore, incorrect, questionStatus) {
   generateQuestion(recipe)
-  cardEventListener(questionScore, incorrect, questionStatus);
+  cardEventListener(recipe, questionScore, incorrect, questionStatus);
   checkQuestionStatus(i);
 }
 

@@ -109,15 +109,6 @@ const quizEvent = function(json) {
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0
 
-  runQuestion(randomRecipes[i]);
-    if (checkQuestionStatus()) {
-      i++;
-      break;
-    }
-  }
-  if (i===1) {
-    runQuestion(randomRecipes[i]);
-  }
 
 }
 

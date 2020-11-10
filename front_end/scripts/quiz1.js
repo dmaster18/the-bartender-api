@@ -92,25 +92,26 @@ const checkQuestionStatus = function() {
   }
 }
 
-const questionEvent = function(recipe, randomRecipes, questionScore, incorrect, questionStatus) {
+const questionEvent = function(i, recipe, randomRecipes, questionScore, incorrect, questionStatus) {
   generateQuestion(recipe)
   cardEventListener(randomRecipes, questionScore, incorrect, questionStatus);
   checkQuestionStatus();
 }
 
-const runQuestion = function(recipe) {
+const runQuestion = function(i, randomRecipes) {
   let questionScore = 0;
   let incorrect = [];
   const main = document.querySelector('main');
   const questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
-  questionEvent(recipe, randomRecipes, questionScore, incorrect, questionStatus);
+  questionEvent(i, recipe, randomRecipes, questionScore, incorrect, questionStatus);
 }
 
 const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
-  runQuestion(randomRecipes[0]);
+  let i = 0;
+  runQuestion(i, randomRecipes);
 }
 
 

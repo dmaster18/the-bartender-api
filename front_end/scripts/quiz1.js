@@ -51,7 +51,7 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       //user.quizScore += 1;
     }
   }
-  else {
+  else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
     document.getElementById(this.id).style.backgroundColor = 'red';
     feedback.innerText = 'X';
     this.appendChild(feedback);

@@ -37,6 +37,7 @@ function generateQuestion(recipe) {
 const cardEventListener = function(i, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
+    const quizScore = 0;
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         //userCorrectResponses.push(currentIngredient);
@@ -44,12 +45,18 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         feedback.innerText = '✓';
         this.appendChild(feedback);
         questionScore += 1;
-        if (questionScore === correctIngredientNames.length) {
+        if (i === randomRecipes.length) {
+          main.innerHTML = '';
+          myQuizScore = document.createElement('h1');
+          myQuizScore.innerText = quizScore;
+          main.appendChild(myQuizScore);
+        } else if (questionScore === correctIngredientNames.length) {
           questionStatus.innerText = 'CORRECT!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
           i++;
           setTimeout(runQuestion(i, randomRecipes), 10000);
+          quizScore += 1;
           //user.quizScore += 1;
         }
     } else {
@@ -58,7 +65,12 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         feedback.innerText = 'X';
         this.appendChild(feedback);
         incorrect.push('X');
-        if (incorrect.length === 3) {
+        if (i === randomRecipes.length) {
+          main.innerHTML = '';
+          myQuizScore = document.createElement('h1');
+          myQuizScore.innerText = quizScore;
+          main.appendChild(myQuizScore);
+        } else if (incorrect.length === 3) {
           questionStatus.innerText = 'WRONG!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);

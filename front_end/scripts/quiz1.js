@@ -45,7 +45,7 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         feedback.innerText = '✓';
         this.appendChild(feedback);
         questionScore += 1;
-        if (i === randomRecipes.length) {
+        if (i === 10) {
           main.innerHTML = '';
           myQuizScore = document.createElement('h1');
           myQuizScore.innerText = quizScore;
@@ -65,7 +65,7 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
         feedback.innerText = 'X';
         this.appendChild(feedback);
         incorrect.push('X');
-        if (i === randomRecipes.length) {
+        if (i === 10) {
           main.innerHTML = '';
           myQuizScore = document.createElement('h1');
           myQuizScore.innerText = quizScore;

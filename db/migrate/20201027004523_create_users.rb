@@ -11,6 +11,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.integer :uid
       t.string :zip_code
       t.boolean :password_required
+      t.text :quiz_score_history 
 
       t.timestamps
     end

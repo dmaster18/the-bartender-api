@@ -9,6 +9,8 @@ class User < ApplicationRecord
   validates :username, :password, confirmation: { case_sensitive: true }, if: :password_required
   validates :password, length: { in: 8..30 }, if: :password_required
 
+  serialize :quiz_score_history, Array
+
   PASSWORD_REQUIREMENTS = /\A
   (?=.*\d)           # Must contain a digit
   (?=.*[a-z])        # Must contain a lower case character

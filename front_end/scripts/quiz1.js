@@ -49,7 +49,7 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
           i++;
-          runQuestion(i, randomRecipes);
+          setTimeout(runQuestion(i, randomRecipes), 10000);
           //user.quizScore += 1;
         }
     } else {
@@ -64,6 +64,7 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
           main.appendChild(questionStatus);
           i++;
           runQuestion(i, randomRecipes);
+          setTimeout(runQuestion(i, randomRecipes), 10000);
           //user.quizScore += 0;
         }
     }}

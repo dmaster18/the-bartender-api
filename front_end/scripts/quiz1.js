@@ -33,7 +33,7 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCardsContainer);
 }
 
-const evaluateResponse = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {
+const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
   const main = document.querySelector('main')
   const feedback = document.createElement('h1');
   if (correctIngredientNames.includes(this.innerText)) {
@@ -69,9 +69,9 @@ const evaluateResponse = function(i, quizScore, randomRecipes, questionScore, in
   }
 }
 
-const cardEventListener = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+const cardEventListener = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     card.addEventListener('click', function() {
-      evaluateResponse.call(card, i, quizScore, randomRecipes, questionScore, incorrect, questionStatus)
+      evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus)
     })}
 )}
 
@@ -98,9 +98,9 @@ const checkQuestionStatus = function() {
   }
 }
 
-const questionEvent = function(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus) {
+const questionEvent = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
   generateQuestion(randomRecipes[i])
-  cardEventListener(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
+  cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   //checkQuestionStatus();
 }
 
@@ -118,7 +118,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizScore.innerText = `${quizScore}`;
     main.appendChild(myQuizScore);
   } else {
-    questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
+    questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 }
 

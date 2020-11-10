@@ -96,7 +96,7 @@ const checkQuestionStatus = function() {
 
 const questionEvent = function(i, randomRecipes, questionScore, incorrect, questionStatus) {
   generateQuestion(randomRecipes[i])
-  cardEventListener(i, randomRecipes, questionScore, incorrect, questionStatus);
+  cardEventListener(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
   //checkQuestionStatus();
 }
 

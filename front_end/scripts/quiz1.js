@@ -92,8 +92,8 @@ const checkQuestionStatus = function() {
   }
 }
 
-const questionEvent = function(i, recipe, randomRecipes, questionScore, incorrect, questionStatus) {
-  generateQuestion(recipe)
+const questionEvent = function(i, randomRecipes, questionScore, incorrect, questionStatus) {
+  generateQuestion(randomRecipes[i])
   cardEventListener(randomRecipes, questionScore, incorrect, questionStatus);
   checkQuestionStatus();
 }
@@ -104,7 +104,7 @@ const runQuestion = function(i, randomRecipes) {
   const main = document.querySelector('main');
   const questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
-  questionEvent(i, recipe, randomRecipes, questionScore, incorrect, questionStatus);
+  questionEvent(i, randomRecipes, questionScore, incorrect, questionStatus);
 }
 
 const quizEvent = function(json) {

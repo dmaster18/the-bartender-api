@@ -115,7 +115,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     main.innerHTML = '';
     myQuizScore = document.createElement('h1');
     //totalQuizScore = quizScore.reduce(function(accumulator, currentValue) {accumulator + currentValue});
-    myQuizScore.innerText = `${quizScore.toString()}`;
+    myQuizScore.innerText = `${0}`;
     main.appendChild(myQuizScore);
   } else {
     questionEvent(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);

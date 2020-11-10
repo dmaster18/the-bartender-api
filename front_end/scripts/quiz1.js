@@ -49,8 +49,8 @@ const cardEventListener = function(i, quizScore, randomRecipes, questionScore, i
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
           i++;
-          setTimeout(runQuestion(i, randomRecipes), 10000);
           quizScore += 1;
+          setTimeout(runQuestion(i, randomRecipes), 10000);
           //user.quizScore += 1;
         }
     } else {

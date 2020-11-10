@@ -126,7 +126,7 @@ const quizEvent = function(json) {
   const recipes = json['data']
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
-  runQuestion(i, randomRecipes, let quizScore = 0);
+  runQuestion(i, randomRecipes, quizScore = 0);
 }
 
 

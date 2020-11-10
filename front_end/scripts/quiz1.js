@@ -33,9 +33,8 @@ function generateQuestion(recipe) {
   main.appendChild(ingredientCardsContainer);
 }
 
-const cards = function(){[].slice.call(document.getElementsByClassName('ingredient-card'));}
 
-const cardEventListener = function(randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+const cardEventListener = function(i, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
@@ -50,6 +49,8 @@ const cardEventListener = function(randomRecipes, questionScore, incorrect, ques
           questionStatus.innerText = 'CORRECT!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
+          i++;
+          runQuestion(i, randomRecipes);
           //user.quizScore += 1;
 
         }
@@ -64,6 +65,8 @@ const cardEventListener = function(randomRecipes, questionScore, incorrect, ques
           questionStatus.innerText = 'WRONG!'
           questionStatus.style.textAlign = 'center'
           main.appendChild(questionStatus);
+          i++;
+          runQuestion(i, randomRecipes);
           //user.quizScore += 0;
         }
     }}
@@ -94,8 +97,8 @@ const checkQuestionStatus = function() {
 
 const questionEvent = function(i, randomRecipes, questionScore, incorrect, questionStatus) {
   generateQuestion(randomRecipes[i])
-  cardEventListener(randomRecipes, questionScore, incorrect, questionStatus);
-  checkQuestionStatus();
+  cardEventListener(i, randomRecipes, questionScore, incorrect, questionStatus);
+  //checkQuestionStatus();
 }
 
 const runQuestion = function(i, randomRecipes) {

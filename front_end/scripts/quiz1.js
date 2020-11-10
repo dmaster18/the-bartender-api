@@ -37,7 +37,7 @@ function generateQuestion(recipe) {
 const cardEventListener = function(i, randomRecipes, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    const quizScore = 0;
+    let quizScore = 0;
     card.addEventListener('click', function() {  //userResponses.push(currentIngredient);
       if (correctIngredientNames.includes(this.innerText)) {
         //userCorrectResponses.push(currentIngredient);

@@ -101,11 +101,10 @@ const questionEvent = function(i, randomRecipes, questionScore, incorrect, quest
 }
 
 const runQuestion = function(i, randomRecipes) {
-  const body = document.querySelector('body');
-  body.innerHTML = '';
+  const main = document.querySelector('main');
+  main.innerHTML = ''
   let questionScore = 0;
   let incorrect = [];
-  const main = document.querySelector('main');
   const questionStatus = document.createElement('h1');
   questionStatus.classList.add('question-status');
   questionEvent(i, randomRecipes, questionScore, incorrect, questionStatus);

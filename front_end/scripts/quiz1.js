@@ -47,7 +47,7 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       main.appendChild(questionStatus);
       i++;
       quizScore += 1;
-      setTimeout(runQuestion(i, randomRecipes, quizScore), 10000);
+      runQuestion(i, randomRecipes, quizScore);
       //user.quizScore += 1;
     }
   }
@@ -61,9 +61,8 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       questionStatus.style.textAlign = 'center'
       main.appendChild(questionStatus);
       i++;
-      quizScore +=1;
-      runQuestion(i, randomRecipes);
-      setTimeout(runQuestion(i, randomRecipes, quizScore), 10000);
+      quizScore +=0;
+      runQuestion(i, randomRecipes, quizScore);
       //user.quizScore += 0;
     }
   }

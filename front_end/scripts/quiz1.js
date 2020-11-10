@@ -70,7 +70,7 @@ const cardEventListener = function(i, quizScore, randomRecipes, questionScore, i
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
     card.addEventListener('click', function() {
-      evaluateResponse(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus)
+      evaluateResponse(i, quizScore, randomRecipes, questionScore, incorrect, questionStatus);
     );}
 )}
 

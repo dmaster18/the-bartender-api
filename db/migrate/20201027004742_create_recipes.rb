@@ -22,9 +22,9 @@ class CreateRecipes < ActiveRecord::Migration[6.0]
       t.text :liqueurs_array
       t.text :mixers_array
       t.text :garnishes_array
+      t.boolean :correct?
       t.text :all_ingredients
       t.text :correct_ingredients
-
       t.timestamps
     end
   end

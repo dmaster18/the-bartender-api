@@ -125,6 +125,7 @@ const quizEvent = function(json) {
   runQuestion(i, randomRecipes, quizScore);
 }
 
+let quizScore = 0
 
 /*
 let points = 0;

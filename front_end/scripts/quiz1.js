@@ -101,7 +101,7 @@ const questionEvent = function(i, randomRecipes, questionScore, incorrect, quest
 }
 
 const runQuestion = function(i, randomRecipes) {
-  const body = document.querySelect('body');
+  const body = document.querySelector('body');
   body.innerHTML = '';
   let questionScore = 0;
   let incorrect = [];

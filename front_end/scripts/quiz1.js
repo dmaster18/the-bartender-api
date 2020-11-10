@@ -52,7 +52,6 @@ const cardEventListener = function(i, randomRecipes, questionScore, incorrect, q
           i++;
           runQuestion(i, randomRecipes);
           //user.quizScore += 1;
-
         }
     } else {
         //userIncorrectResponses.push(currentIngredient);
@@ -102,6 +101,8 @@ const questionEvent = function(i, randomRecipes, questionScore, incorrect, quest
 }
 
 const runQuestion = function(i, randomRecipes) {
+  const body = document.querySelect('body');
+  body.innerHTML = '';
   let questionScore = 0;
   let incorrect = [];
   const main = document.querySelector('main');

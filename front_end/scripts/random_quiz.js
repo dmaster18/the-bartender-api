@@ -1,3 +1,7 @@
+const backgroundImages = 
+const randomBackgroundImage = function() {
+}
+
 window.addEventListener('DOMContentLoaded', fetchRandomQuiz);
 
 function fetchRandomQuiz() {

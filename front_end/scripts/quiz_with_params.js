@@ -1,11 +1,19 @@
-function fetchQuiz() {
+window.addEventListener('DOMContentLoaded', buttonListener);
+
+const buttonListener = function() {document.querySelector('button').addEventListener("click", function() {
+  const values = [].slice.call(document.querySelectorAll('input'));
+  const selectedValues = values.filter(value => value.checked);
+  selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
+  return selectedValueNames;
+})}
+
+
+function fetchQuizNoParams() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => quizEvent(json))//generateQuizNoParams(json));
 }
-
-//window.addEventListener('DOMContentLoaded', function() {fetchQuizNoParams()});
 
 let allIngredients = [];
 let correctIngredients = [];

@@ -105,8 +105,8 @@ const randomlyGenerateQuestion = function(recipes, quantity, questions, quizLeng
 }
 
 const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
-  const randomRecipes = [];
-  questions = [];
+  let randomRecipes;
+  const questions = [];
   const main = document.querySelector('main');
 
   const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
@@ -116,55 +116,20 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
 
   switch(quizDifficulty) {
     case 'Random':
-      randomlyGenerateQuestion(recipes, 508, questions, quizLength);
+      randomRecipes = randomlyGenerateQuestion(recipes, 508, questions, quizLength);
       break;
     case 'Easy':
-      for (let i = 0; i < quizLength; i++) {
-        randomlyGenerateQuestion(easyQuestions, 86, questions);
-      }
+      randomRecipes = randomlyGenerateQuestion(easyQuestions, 86, questions, quizLength);
       break;
     case 'Medium':
-    for (let i = 0; i < quizLength; i++) {
-      randomlyGenerateQuestion(easyQuestions, 86, questions);
-    }
-      while (questions.length < quizLength ) {
-        const randomNumber = Math.floor(Math.random() * 234);
-        const recipe = mediumQuestions[randomNumber];
-        const question = generateQuestion(recipe);
-        if(!questions.includes(recipe)) {
-            questions.push(recipe);
-          }
-      }
+      randomRecipes = randomlyGenerateQuestion(mediumQuestions, 234, questions, quizLength);
       break;
     case 'Hard':
-      while (questions.length < quizLength) {
-        const randomNumber = Math.floor(Math.random() * 138);
-        const recipe = hardQuestions[randomNumber];
-        const question = generateQuestion(recipe);
-        if(!questions.includes(recipe)) {
-            questions.push(recipe);
-          }
-      }
+      randomRecipes = randomlyGenerateQuestion(hardQuestions, 138, questions, quizLength);
       break;
     case 'Very Hard':
-      while (questions.length < quizLength) {
-        const randomNumber = Math.floor(Math.random() * 53);
-        const recipe = veryHardQuestions[randomNumber];
-        const question = generateQuestion(recipe);
-        if(!questions.includes(recipe)) {
-            questions.push(recipe)
-          }
-      }
+      randomRecipes = randomlyGenerateQuestion(mediumQuestions, 53, questions, quizLength);
       break;
-  }
-}
-
-  for(let i = 1; i <= quizLength; i++) {
-    const randomNumber = Math.floor(Math.random()*508);
-    const randomRecipe = recipes[randomNumber];
-    //if (!randomRecipes.includes(randomRecipe)) {
-      randomRecipes.push(randomRecipe);
-    //}
   }
   return randomRecipes;
 }

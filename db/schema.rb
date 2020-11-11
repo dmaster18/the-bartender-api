@@ -193,6 +193,7 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.integer "uid"
     t.string "zip_code"
     t.boolean "password_required"
+    t.text "quiz_score_history"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

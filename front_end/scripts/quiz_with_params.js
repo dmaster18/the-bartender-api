@@ -98,27 +98,11 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
   questions = [];
   const main = document.querySelector('main');
 
-  const easyQuestions = json.filter(recipe => recipe.attributes.complexity === 'Easy');
-  const mediumQuestions = json.filter(recipe => recipe.attributes.complexity === 'Medium');
-  const hardQuestions = json.filter(recipe => recipe.attributes.complexity === 'Hard');
-  const varyHardQuestions = json.filter(recipe => recipe.attributes.complexity === 'Very Hard');
-  switch(quizLength) {
-    case '5':
-      quizLength = 5;
-      break;
-    case '10':
-      quizLength = 10;
-      break;
-    case '25':
-      quizLength = 25;
-      break;
-    case '50':
-      quizLength = 50;
-      break;
-    case '100':
-      quizLength = 100;
-      break;
-  }
+  const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
+  const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Medium');
+  const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Hard');
+  const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
+
   switch(quizDifficulty) {
     case 'Random':
       while (questions.length < quizLength) {
@@ -172,8 +156,6 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
       break;
   }
 }
-
-
 
   for(let i = 1; i <= quizLength; i++) {
     const randomNumber = Math.floor(Math.random()*508);

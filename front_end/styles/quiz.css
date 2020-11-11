@@ -16,8 +16,9 @@ div.ingredient-card {
 
 div.ingredient-cards-container {
     display: grid;
-    grid-template-columns: 460px 460px 460px 460px;
-    grid-gap: 20px;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 160px;
   }
 
 h1.question-status {

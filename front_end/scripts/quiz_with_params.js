@@ -95,119 +95,6 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
 
 const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   const randomRecipes = [];
-  for(let i = 1; i <= questionNumber; i++) {
-    const randomNumber = Math.floor(Math.random()*508);
-    const randomRecipe = recipes[randomNumber];
-    //if (!randomRecipes.includes(randomRecipe)) {
-      randomRecipes.push(randomRecipe);
-    //}
-  }
-  return randomRecipes;
-}
-
-
-const questionEvent = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
-  generateQuestion(randomRecipes[i]);
-  cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-}
-
-const runQuestion = function(i, randomRecipes, quizScore, quizDifficulty, quizLength) {
-  const main = document.querySelector('main');
-  main.innerHTML = ''
-  let questionScore = [];
-  let incorrect = [];
-  const questionStatus = document.createElement('h1');
-  questionStatus.classList.add('question-status');
-  if (i !== randomRecipes.length) {
-    questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-  } else {
-    main.innerHTML = '';
-    myQuizScore = document.createElement('h1');
-    //totalQuizScore = quizScore.reduce(function(accumulator, currentValue) {accumulator + currentValue});
-    myQuizScore.innerText = `Your Quiz Score Is: ${quizScore}!`;
-    myQuizScore.style.textAlign = 'center';
-    main.appendChild(myQuizScore);
-    myQuizPercentage = document.createElement('h1');
-    percentage = 100*(quizScore/randomRecipes.length);
-    myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
-    myQuizPercentage.style.textAlign = 'center';
-    main.appendChild(myQuizPercentage);
-  }
-}
-
-
-
-
-/*
-let points = 0;
-let questionStatus;
-let userIncorrectResponses = [];
-let userCorrectResponses = [];
-let userResponses = [];
-/*
-
-
-
-function questionResponse(question) {
-  questionStatus = 'Incomplete'
-  allIngredients = question.allIngredients;
-  correctIngredients = question.correctIngredients;
-  correctIngredientNames = correctIngredients.map(correctIngredient => {return correctIngredient.id});
-  while (userCorrectResponses.length < correctIngredients.length && userIncorrectResponses < 3) {
-    if (userIncorrectResponses.length === 3) {
-      points += 0;
-      alert = 'Wrong!';
-    }
-    if (userCorrectResponses.length === correctIngredients.length) {
-      points += 1;
-      alert = 'Correct!';
-    }
-  }
-  questionStatus = 'Complete';
-  return questionStatus;
-}
-
-
-
-/*function calculateQuizScore(json) {
-
-  questionResponse(recipe);
-  [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
-    return accumulator + currentValue
-  })
-
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-let difficulty;
-let length;
-
-const difficulty_input = document.querySelector('difficulty_button').addEventListener('click', function {difficulty = `${this.innerText}`});
-const length_input = document.querySelector('length_button').addEventListener('click'), function {length = `${this.innerText}`});
-function fetchQuiz(difficulty, length) {
-  const recipes_url = 'http://127.0.0.1:3000/recipes'
-  return fetch(recipes_url)
-  .then(resp => resp.json())
-  .then(json => renderQuiz(json, difficulty, length))
-}
-
-
-function renderQuiz(json, difficulty, length) {
-  json['data'].forEach(recipe => generateQuiz(recipe, difficulty, length))
-}
-
-function generateQuiz(recipe, difficulty, length) {
   questions = [];
   const main = document.querySelector('main');
   const easyQuestions = json.filter(recipe => recipe.attributes.complexity === 'Easy');
@@ -285,4 +172,44 @@ function generateQuiz(recipe, difficulty, length) {
   }
 }
 
-*/
+
+
+  for(let i = 1; i <= questionNumber; i++) {
+    const randomNumber = Math.floor(Math.random()*508);
+    const randomRecipe = recipes[randomNumber];
+    //if (!randomRecipes.includes(randomRecipe)) {
+      randomRecipes.push(randomRecipe);
+    //}
+  }
+  return randomRecipes;
+}
+
+
+const questionEvent = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
+  generateQuestion(randomRecipes[i]);
+  cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+}
+
+const runQuestion = function(i, randomRecipes, quizScore, quizDifficulty, quizLength) {
+  const main = document.querySelector('main');
+  main.innerHTML = ''
+  let questionScore = [];
+  let incorrect = [];
+  const questionStatus = document.createElement('h1');
+  questionStatus.classList.add('question-status');
+  if (i !== randomRecipes.length) {
+    questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+  } else {
+    main.innerHTML = '';
+    myQuizScore = document.createElement('h1');
+    //totalQuizScore = quizScore.reduce(function(accumulator, currentValue) {accumulator + currentValue});
+    myQuizScore.innerText = `Your Quiz Score Is: ${quizScore}!`;
+    myQuizScore.style.textAlign = 'center';
+    main.appendChild(myQuizScore);
+    myQuizPercentage = document.createElement('h1');
+    percentage = 100*(quizScore/randomRecipes.length);
+    myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
+    myQuizPercentage.style.textAlign = 'center';
+    main.appendChild(myQuizPercentage);
+  }
+}

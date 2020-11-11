@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM fully loaded and parsed');
+  fetchCards();
+})
+
+function fetchCards() {
+  const recipes_url = "http://127.0.0.1:3000/recipes"
+  return fetch(recipes_url)
+  .then(resp => resp.json())
+  .then(recipes => rendercards(recipes))
+}
+
+function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
+  recipes["data"].forEach(recipe => generatecard(recipe))
+}
+
 function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML
   const main = document.querySelector('main');
   const card = document.createElement('div');
@@ -67,21 +83,9 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
 }
 
 
-function fetchcards() {
-  const recipes_url = "http://127.0.0.1:3000/recipes"
-  return fetch(recipes_url)
-  .then(resp => resp.json())
-  .then(recipes => rendercards(recipes))
-}
 
-function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
-  recipes["data"].forEach(recipe => generatecard(recipe))
-}
 
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed');
-  fetchcards();
-})
+
 /*
 function fetchRandomcard() {
   const recipes_url = "http://127.0.0.1:3000/recipes"

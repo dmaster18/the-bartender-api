@@ -141,7 +141,7 @@ const questionEvent = function(i, randomRecipes, quizScore, questionScore, incor
   cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
 }
 
-const runQuestion = function(i, randomRecipes, quizScore, quizDifficulty, quizLength) {
+const runQuestion = function(i, randomRecipes, quizScore) {
   const main = document.querySelector('main');
   main.innerHTML = ''
   let questionScore = [];

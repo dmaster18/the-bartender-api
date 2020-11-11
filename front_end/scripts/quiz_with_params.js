@@ -20,10 +20,10 @@ const quizEvent = function(json, selectedValueNames) {
   const recipes = json['data']
   const quizDifficulty = selectedValueNames[0];
   const quizLength = selectedValueNames[1];
-  randomRecipes = randomRecipeGenerator(recipes);
+  randomRecipes = randomRecipeGenerator(recipes, quizDifficulty, quizLength);
   let i = 0;
   let quizScore = 0;
-  runQuestion(i, randomRecipes, quizScore, quizDifficulty, quizLength);
+  runQuestion(i, randomRecipes, quizScore);
 }
 
 let allIngredients = [];
@@ -66,7 +66,7 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       main.appendChild(questionStatus);
       i++;
       quizScore += 1;
-      runQuestion(i, randomRecipes, quizScore, quizDifficulty, quizLength);
+      runQuestion(i, randomRecipes, quizScore);
       //user.quizScore += 1;
     }
   }
@@ -81,7 +81,7 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       main.appendChild(questionStatus);
       i++;
       quizScore +=0;
-      runQuestion(i, randomRecipes, quizScore, quizDifficulty, quizLength);
+      runQuestion(i, randomRecipes, quizScore);
       //user.quizScore += 0;
     }
   }
@@ -107,11 +107,11 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
 
 
 const questionEvent = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
-  generateQuestion(randomRecipes[i])
+  generateQuestion(randomRecipes[i]);
   cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
 }
 
-const runQuestion = function(i, randomRecipes, quizScore) {
+const runQuestion = function(i, randomRecipes, quizScore, quizDifficulty, quizLength) {
   const main = document.querySelector('main');
   main.innerHTML = ''
   let questionScore = [];

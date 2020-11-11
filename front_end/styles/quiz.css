@@ -7,6 +7,7 @@ h1.recipe-name {
 div.ingredient-card {
   border-style: solid;
   border-color: black;
+  background-color: white;
   width: 200px;
   height: 100px;
   text-align: center;
@@ -24,7 +25,7 @@ h1.question-status {
 }
 
 body {
-  background-image: url("../images/bar_background_photo.jpg");
+  background-image: url("../images/bar.jpg");
 }
 /*div.ingredient-card-detail {
   text-align: center;

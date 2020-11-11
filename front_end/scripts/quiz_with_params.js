@@ -18,7 +18,8 @@ function fetchQuiz() {
 
 const quizEvent = function(json, selectedValueNames) {
   const recipes = json['data']
-  const 
+  const quizDifficulty = selectedValueNames[0];
+  const quizLength = selectedValueNames[1];
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
   let quizScore = 0;

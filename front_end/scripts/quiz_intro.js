@@ -2,7 +2,7 @@ const buttonListener = function() {document.querySelector('button').addEventList
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
   selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
-  alert(selectedValues);
+  alert(selectedValueNames);
 })}
 
 window.addEventListener('DOMContentLoaded', buttonListener);

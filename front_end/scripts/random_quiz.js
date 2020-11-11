@@ -1,11 +1,11 @@
-function fetchQuizNoParams() {
+//window.addEventListener('DOMContentLoaded', function() {fetchRandomQuiz()});
+
+function fetchRandomQuiz() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => quizEvent(json))//generateQuizNoParams(json));
+  .then(json => quizEvent(json))
 }
-
-//window.addEventListener('DOMContentLoaded', function() {fetchQuizNoParams()});
 
 let allIngredients = [];
 let correctIngredients = [];

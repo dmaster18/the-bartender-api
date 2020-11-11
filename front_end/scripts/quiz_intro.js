@@ -1,11 +1,11 @@
+window.addEventListener('DOMContentLoaded', buttonListener);
+
 const buttonListener = function() {document.querySelector('button').addEventListener("click", function() {
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
   selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
   return selectedValueNames;
 })}
-
-window.addEventListener('DOMContentLoaded', buttonListener);
 
 
 function fetchQuizNoParams() {
@@ -14,8 +14,6 @@ function fetchQuizNoParams() {
   .then(resp => resp.json())
   .then(json => quizEvent(json))//generateQuizNoParams(json));
 }
-
-//window.addEventListener('DOMContentLoaded', function() {fetchQuizNoParams()});
 
 let allIngredients = [];
 let correctIngredients = [];

@@ -1,4 +1,6 @@
-const buttonListener = function() {document.querySelector('button').addEventListener("click", function() {
+const button = function() {return document.querySelector('button');}
+
+const buttonListener = function() {button().addEventListener("click", function() {
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
   selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
@@ -9,14 +11,14 @@ window.addEventListener('DOMContentLoaded', buttonListener);
 
 
 
-function fetchQuiz() {
+const fetchQuiz = function() {
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => quizEvent(json, selectedValueNames));
 }
 
-document.querySelector('button').addEventListener('click', function() {fetchQuiz()} );
+button().addEventListener('click', fetchQuiz);
 
 
 const quizEvent = function(json, selectedValueNames) {

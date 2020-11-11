@@ -1,4 +1,4 @@
-//window.addEventListener('DOMContentLoaded', function() {fetchRandomQuiz()});
+window.addEventListener('DOMContentLoaded', fetchRandomQuiz);
 
 function fetchRandomQuiz() {
   const recipes_url = 'http://127.0.0.1:3000/recipes'

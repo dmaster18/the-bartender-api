@@ -1,6 +1,6 @@
-const button = document.querySelector("button");
+const button = function() {document.querySelector('button')};
 
-button.addEventListener("click", function() {
+button().addEventListener("click", function() {
   const values = document.querySelectorAll('input');
   const selectedValues = values.filter(value => value.checked);
   console.log(selectedValues);

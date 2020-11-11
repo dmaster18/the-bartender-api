@@ -7,12 +7,22 @@ const buttonListener = function() {document.querySelector('button').addEventList
   return selectedValueNames;
 })}
 
+document.querySelector('button').addEventListener('click', fetchQuiz)
 
-function fetchQuizNoParams() {
-  const recipes_url = 'http://127.0.0.1:3000/recipes'
-  return fetch(recipes_url)
-  .then(resp => resp.json())
-  .then(json => quizEvent(json))//generateQuizNoParams(json));
+function fetchQuiz() {
+  const recipes_url = 'http://127.0.0.1:3000/recipes';
+  return fetch(recipes_url);
+  .then(resp => resp.json());
+  .then(json => quizEvent(json, selectedValueNames));
+}
+
+const quizEvent = function(json, selectedValueNames) {
+  const recipes = json['data']
+  const 
+  randomRecipes = randomRecipeGenerator(recipes);
+  let i = 0;
+  let quizScore = 0;
+  runQuestion(i, randomRecipes, quizScore);
 }
 
 let allIngredients = [];
@@ -124,13 +134,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
   }
 }
 
-const quizEvent = function(json) {
-  const recipes = json['data']
-  randomRecipes = randomRecipeGenerator(recipes);
-  let i = 0;
-  let quizScore = 0;
-  runQuestion(i, randomRecipes, quizScore);
-}
+
 
 
 /*

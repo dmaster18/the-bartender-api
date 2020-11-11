@@ -7,6 +7,13 @@ function fetchRandomQuiz() {
   .then(json => quizEvent(json))
 }
 
+window.addEventListener('DOMContentLoaded', generateGIF);
+
+function generateGIF() {
+  document.
+
+}
+
 let allIngredients = [];
 let correctIngredients = [];
 let correctIngredientNames = [];

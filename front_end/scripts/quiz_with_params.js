@@ -94,6 +94,7 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
 )}
 
 const randomlyGenerateQuestion = function(recipes, quantity, questions, quizLength) {
+  const questions = []
   for (let i = 0; i < quizLength; i++) {
     const randomNumber = Math.floor(Math.random() * quantity);
     const recipe = recipes[randomNumber];
@@ -116,19 +117,19 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
 
   switch(quizDifficulty) {
     case 'Random':
-      randomRecipes = randomlyGenerateQuestion(recipes, 508, questions, quizLength);
+      randomRecipes = randomlyGenerateQuestion(recipes, 508, quizLength);
       break;
     case 'Easy':
-      randomRecipes = randomlyGenerateQuestion(easyQuestions, 86, questions, quizLength);
+      randomRecipes = randomlyGenerateQuestion(easyQuestions, 86, quizLength);
       break;
     case 'Medium':
-      randomRecipes = randomlyGenerateQuestion(mediumQuestions, 234, questions, quizLength);
+      randomRecipes = randomlyGenerateQuestion(mediumQuestions, 234, quizLength);
       break;
     case 'Hard':
-      randomRecipes = randomlyGenerateQuestion(hardQuestions, 138, questions, quizLength);
+      randomRecipes = randomlyGenerateQuestion(hardQuestions, 138, quizLength);
       break;
     case 'Very Hard':
-      randomRecipes = randomlyGenerateQuestion(mediumQuestions, 53, questions, quizLength);
+      randomRecipes = randomlyGenerateQuestion(mediumQuestions, 53, quizLength);
       break;
   }
   return randomRecipes;

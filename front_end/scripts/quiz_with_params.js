@@ -23,7 +23,7 @@ const quizEvent = function(json, selectedValueNames) {
   randomRecipes = randomRecipeGenerator(recipes);
   let i = 0;
   let quizScore = 0;
-  runQuestion(i, randomRecipes, quizScore);
+  runQuestion(i, randomRecipes, quizScore, quizDifficulty, quizLength);
 }
 
 let allIngredients = [];
@@ -66,7 +66,7 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       main.appendChild(questionStatus);
       i++;
       quizScore += 1;
-      runQuestion(i, randomRecipes, quizScore);
+      runQuestion(i, randomRecipes, quizScore, quizDifficulty, quizLength);
       //user.quizScore += 1;
     }
   }
@@ -81,7 +81,7 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       main.appendChild(questionStatus);
       i++;
       quizScore +=0;
-      runQuestion(i, randomRecipes, quizScore);
+      runQuestion(i, randomRecipes, quizScore, quizDifficulty, quizLength);
       //user.quizScore += 0;
     }
   }

@@ -60,7 +60,7 @@ class Recipe < ApplicationRecord
     garnishes << correct_garnishes
     garnishes.flatten
     correct_ingredients << correct_liquors << correct_liqueurs << correct_mixers << correct_garnishes
-    correct_ingredients.flatten
+    correct_ingredients.flatten.shuffle!
     while liquors.length <= 5
       random_number = rand(1..216)
       random_liquor = Liquor.all.find(random_number)
@@ -90,7 +90,7 @@ class Recipe < ApplicationRecord
       end
     end
     all_ingredients << liquors << liqueurs << mixers << garnishes
-    all_ingredients.flatten
+    all_ingredients.flatten.shuffle!
   end
 
 end

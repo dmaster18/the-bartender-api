@@ -93,6 +93,17 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
     })}
 )}
 
+const randomlyGenerateQuestion = function(recipes, quantity, questions, quizLength) {
+  for (let i = 0; i < quizLength; i++) {
+    const randomNumber = Math.floor(Math.random() * quantity);
+    const recipe = recipes[randomNumber];
+    const question = generateQuestion(recipe);
+    if(!questions.includes(recipe)) {
+      questions.push(recipe);
+    }
+  }
+}
+
 const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
   const randomRecipes = [];
   questions = [];
@@ -105,26 +116,17 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
 
   switch(quizDifficulty) {
     case 'Random':
-      while (questions.length < quizLength) {
-        const randomNumber = Math.floor(Math.random() * 508);
-        const recipe = json[randomNumber];
-        const question = generateQuestion(recipe);
-        if(!questions.includes(recipe)) {
-            questions.push(recipe);
-          }
-      }
+      randomlyGenerateQuestion(recipes, 508, questions, quizLength);
       break;
     case 'Easy':
-      while (questions.length < quizLength) {
-        const randomNumber = Math.floor(Math.random() * 86);
-        const recipe = easyQuestions[randomNumber];
-        const question = generateQuestion(recipe);
-        if(!questions.includes(recipe)) {
-            questions.push(recipe);
-          }
+      for (let i = 0; i < quizLength; i++) {
+        randomlyGenerateQuestion(easyQuestions, 86, questions);
       }
       break;
     case 'Medium':
+    for (let i = 0; i < quizLength; i++) {
+      randomlyGenerateQuestion(easyQuestions, 86, questions);
+    }
       while (questions.length < quizLength ) {
         const randomNumber = Math.floor(Math.random() * 234);
         const recipe = mediumQuestions[randomNumber];

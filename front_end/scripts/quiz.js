@@ -17,7 +17,7 @@ function generateQuestion(recipe) {
   const main = document.querySelector('main');
   const recipeName = document.createElement('h1');
   recipeName.classList.add('recipe-name');
-  recipeName.innerText = `${recipe.attributes.name}`
+  recipeName.innerHTML = `<b><u>${recipe.attributes.name}</u></b>`
   main.appendChild(recipeName);
   const ingredientCardsContainer = document.createElement('div');
   ingredientCardsContainer.classList.add('ingredient-cards-container');

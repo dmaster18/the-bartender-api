@@ -203,7 +203,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
   document.querySelector('button.submit-results').addEventListener('click', function(){
     const main = document.querySelector('main');
     main.innerHTML = '';
-    main.innerHTML = '<form><</form>'
+    main.innerHTML = '<form> <input type="text" name="name" value="name"></form>'
 
 
   })

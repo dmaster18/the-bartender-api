@@ -177,9 +177,8 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizPercentage.style.textAlign = 'center';
     main.appendChild(myQuizPercentage);
     const appLinks = document.createElement('div');
-    appLinks.classList.add('app-links')
-    appLinks.innerHTML = "<a href='../app/home.html'>Home</a><br><a href='../app/quiz_with_params.html'>Retake Quiz</a><br>"
-    main.appendChild(appLinks)
-
+    appLinks.classList.add('app-links');
+    appLinks.innerHTML = "<a href='../app/home.html'>Home</a><br><a href='../app/quiz_with_params.html'>Retake Quiz</a><br>";
+    main.appendChild(appLinks);
   }
 }

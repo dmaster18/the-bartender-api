@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :name
       t.integer :score
       t.integer :percentage
-
+      t.integer :leaderboard_id
 
       t.timestamps
     end

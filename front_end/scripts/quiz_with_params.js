@@ -200,5 +200,11 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     main.appendChild(appLinks);
   }
 
-  document.querySelector('button.submit-results').addEventListener('click', function(){})
+  document.querySelector('button.submit-results').addEventListener('click', function(){
+    const main = document.querySelector('main');
+    main.innerHTML = '';
+    main.innerHTML = '<form><</form>'
+
+
+  })
 }

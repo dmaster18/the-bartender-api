@@ -1,2 +1,0 @@
-class BarsController < ApplicationController
-end

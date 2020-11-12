@@ -15,10 +15,12 @@ window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonL
 const fetchQuiz = function(event) {
   event.preventDefault();
   const main = document.querySelector('main');
+  main.innerHTML = ''
   const gifElement = document.querySelector('img');
   gifElement.id = 'gif';
   gifElement.src = '../gifs/animated_bartender.gif'
   gifElement.style.textAlign = 'center';
+  main.appendChild(gifElement);
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())

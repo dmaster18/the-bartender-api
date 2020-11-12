@@ -123,7 +123,7 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
       randomRecipes = randomlyGenerateQuestion(recipes, quizLength);
       break;
     case 'Easy':
-      const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
+      ceasyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
       randomRecipes = randomlyGenerateQuestion(easyQuestions, quizLength);
       break;
     case 'Medium':

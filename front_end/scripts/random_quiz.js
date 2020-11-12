@@ -83,6 +83,10 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
     })}
 )}
 
+function shuffle(randomRecipes) {
+  return randomRecipes.sort(() => Math.random() - 0.5);
+}
+
 const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   const randomRecipes = [];
   for(let i = 1; i <= questionNumber; i++) {
@@ -92,7 +96,7 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
       randomRecipes.push(randomRecipe);
     //}
   }
-  return randomRecipes;
+  return shuffle(randomRecipes);
 }
 
 

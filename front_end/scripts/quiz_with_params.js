@@ -176,5 +176,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
     myQuizPercentage.style.textAlign = 'center';
     main.appendChild(myQuizPercentage);
+    <a href="../app/home.html">Home</a>
+    <a href="../app/quiz_with_params.html">Retake Quiz</a>
   }
 }

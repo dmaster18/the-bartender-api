@@ -180,7 +180,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     main.appendChild(myQuizPercentage);
     const appLinks = document.createElement('div');
     appLinks.classList.add('app-links');
-    appLinks.innerHTML = "<a href='../app/home.html'>Home</a><br><a href='../app/quiz_with_params.html'>Retake Quiz</a><br>";
+    appLinks.innerHTML = '<a href="../app/home.html">Home</a><br><a href="../app/quiz_with_params.html">Retake Quiz</a><br>';
     appLinks.style.color = 'white';
     main.appendChild(appLinks);
   }

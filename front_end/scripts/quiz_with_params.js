@@ -29,7 +29,7 @@ const quizEvent = function(json, selectedValueNames) {
   const recipes = json['data']
   const quizDifficulty = selectedValueNames[0];
   const quizLength = parseInt(selectedValueNames[1]);
-  randomRecipes = randomRecipeGenerator(recipes, quizDifficulty, quizLength);
+  const randomRecipes = randomRecipeGenerator(recipes, quizDifficulty, quizLength);
   let i = 0;
   let quizScore = 0;
   runQuestion(i, randomRecipes, quizScore);

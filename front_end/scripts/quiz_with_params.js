@@ -4,13 +4,12 @@ const inputListener = function() {button().addEventListener("click", function(ev
   event.preventDefault()
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
-  const selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
+  selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
   console.log(selectedValueNames)
   return selectedValueNames;
 })}
 
 window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
-
 
 const fetchQuiz = function(event) {
   event.preventDefault();
@@ -18,7 +17,7 @@ const fetchQuiz = function(event) {
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => quizEvent(json, inputListener()));
+  .then(json => quizEvent(json, selectedValueNames);
 }
 
 const generateGIF = function() {
@@ -121,7 +120,7 @@ const randomlyGenerateQuestion = function(recipes, quizLength) {
       questions.push(recipe);
     }
   }
-  return questions;
+  return shuffle(questions);
 }
 
 function shuffle(randomRecipes) {
@@ -135,27 +134,27 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
   switch(quizDifficulty) {
     case 'Random':
       randomRecipes = randomlyGenerateQuestion(recipes, quizLength);
-      return shuffle(randomRecipes);
+      return randomRecipes;
       break;
     case 'Easy':
       const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
       randomRecipes = randomlyGenerateQuestion(easyQuestions, quizLength);
-      return shuffle(randomRecipes);
+      return randomRecipes;
       break;
     case 'Medium':
       const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Medium');
       randomRecipes = randomlyGenerateQuestion(mediumQuestions, quizLength);
-      return shuffle(randomRecipes);
+      return randomRecipes;
       break;
     case 'Hard':
       const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Hard');
       randomRecipes = randomlyGenerateQuestion(hardQuestions, quizLength);
-      return shuffle(randomRecipes);
+      return randomRecipes;
       break;
     case 'Very Hard':
       const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
       randomRecipes = randomlyGenerateQuestion(mediumQuestions, quizLength);
-      return shuffle(randomRecipes);
+      return randomRecipes;
       break;
   }
 }

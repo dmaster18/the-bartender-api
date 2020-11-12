@@ -200,11 +200,12 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     main.appendChild(appLinks);
   }
 
-  document.querySelector('button.submit-results').addEventListener('click', function(){
+ const createLeaderboardForm = function(){
     const main = document.querySelector('main');
     main.innerHTML = '';
-    main.innerHTML = '<form> <input type="text" name="name" value="name"></form>'
-
+    const leaderboardForm = document.createElement('form');
+    leaderboardForm.innerHTML = '<input type="text" name="name" value="name" <button type="submit" value="Submit">Submit</button>'
+    main.appendChild(leaderboardForm);
 
   })
 }

@@ -12,6 +12,11 @@ img {
   margin-right: auto;
 }
 
+div.app-links {
+  background-color: white;
+
+}
+
 div.ingredient-card {
   border-style: solid;
   border-color: black;

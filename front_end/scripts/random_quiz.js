@@ -31,7 +31,8 @@ function generateQuestion(recipe) {
   const ingredientCardsContainer = document.createElement('div');
   ingredientCardsContainer.classList.add('ingredient-cards-container');
   let i = 1;
-  recipe.attributes.all_ingredients.flat().flat().forEach(ingredient => {
+  const randomizedIngredients = shuffle(recipe.attributes.all_ingredients.flat().flat())
+  randomizedIngredients.forEach(ingredient => {
     const ingredientCard = document.createElement('div');
     ingredientCard.classList.add('ingredient-card');
     ingredientCard.setAttribute('id', `item${i}`);
@@ -40,6 +41,10 @@ function generateQuestion(recipe) {
     i++;
   })
   main.appendChild(ingredientCardsContainer);
+}
+
+function shuffle(allIngredients) {
+  return allIngredients.sort(() => Math.random() - 0.5);
 }
 
 const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
@@ -83,10 +88,6 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
     })}
 )}
 
-function shuffle(randomRecipes) {
-  return randomRecipes.sort(() => Math.random() - 0.5);
-}
-
 const randomRecipeGenerator = function(recipes, questionNumber = 10) {
   const randomRecipes = [];
   for(let i = 1; i <= questionNumber; i++) {
@@ -96,7 +97,7 @@ const randomRecipeGenerator = function(recipes, questionNumber = 10) {
       randomRecipes.push(randomRecipe);
     //}
   }
-  return shuffle(randomRecipes);
+  return randomRecipes;
 }
 
 

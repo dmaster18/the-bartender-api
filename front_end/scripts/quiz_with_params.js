@@ -14,16 +14,19 @@ window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonL
 
 const fetchQuiz = function(event) {
   event.preventDefault();
-  const main = document.querySelector('main');
-  main.innerHTML = ''
-  const gifElement = document.createElement('img');
-  gifElement.src = '../../gifs/animated_bartender.gif'
-  gifElement.style.textAlign = 'center';
-  main.appendChild(gifElement);
+
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => quizEvent(json, selectedValueNames));
+}
+
+const generateGIF = function() {
+  const main = document.querySelector('main');
+  main.innerHTML = ''
+  const gifElement = document.createElement('img');
+  gifElement.src = '../../gifs/animated_bartender.gif'
+  main.appendChild(gifElement);
 }
 
 const buttonListener = function() {button().addEventListener('click', fetchQuiz)}

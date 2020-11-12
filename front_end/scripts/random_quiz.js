@@ -1,6 +1,7 @@
-window.addEventListener('DOMContentLoaded', function() {fetchRandomQuiz(); generateGIF();})
+window.addEventListener('DOMContentLoaded', function() {fetchRandomQuiz();})
 
 function fetchRandomQuiz() {
+  generateGIF();
   const recipes_url = 'http://127.0.0.1:3000/recipes'
   return fetch(recipes_url)
   .then(resp => resp.json())
@@ -8,11 +9,11 @@ function fetchRandomQuiz() {
 }
 
 const generateGIF = function() {
-  const body = document.querySelector('body');
+  const main = document.querySelector('main');
+  main.innerHTML = ''
   const gifElement = document.createElement('img');
-  gifElement.id = 'gif';
-  gifElement.src = '../../gifs/dog_bartender.gif';
-  body.appendChild(gifElement);
+  gifElement.src = '../../gifs/dog_bartender.gif'
+  main.appendChild(gifElement);
 }
 
 let allIngredients = [];

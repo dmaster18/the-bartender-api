@@ -102,11 +102,11 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
     })}
 )}
 
-const randomlyGenerateQuestion = function(questionsByType, quizLength) {
+const randomlyGenerateQuestion = function(recipes, quizLength) {
   const questions = []
   for (let i = 0; i < quizLength; i++) {
-    randomNumber = Math.floor(Math.random() * questionsByType.length);
-    recipe = questionsByType[randomNumber];
+    randomNumber = Math.floor(Math.random() * recipes.length);
+    recipe = recipes[randomNumber];
     const question = generateQuestion(recipe);
     if(!questions.includes(recipe)) {
       questions.push(recipe);
@@ -114,8 +114,8 @@ const randomlyGenerateQuestion = function(questionsByType, quizLength) {
   }
 }
 
+
 const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
-  recipes = recipes;
   let randomRecipes;
   const questions = [];
   const main = document.querySelector('main');
@@ -124,7 +124,7 @@ const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
       randomRecipes = randomlyGenerateQuestion(recipes, quizLength);
       break;
     case 'Easy':
-      easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
+      const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
       randomRecipes = randomlyGenerateQuestion(easyQuestions, quizLength);
       break;
     case 'Medium':

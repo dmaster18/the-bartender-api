@@ -112,6 +112,7 @@ const randomlyGenerateQuestion = function(recipes, quizLength) {
       questions.push(recipe);
     }
   }
+  return questions;
 }
 
 

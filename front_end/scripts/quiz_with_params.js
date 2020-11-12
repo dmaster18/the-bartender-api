@@ -4,9 +4,9 @@ const inputListener = function() {button().addEventListener("click", function(ev
   event.preventDefault()
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
-  selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
+  const selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
   console.log(selectedValueNames)
-  //return selectedValueNames;
+  return selectedValueNames;
 })}
 
 window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
@@ -18,7 +18,7 @@ const fetchQuiz = function(event) {
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => quizEvent(json, selectedValueNames));
+  .then(json => quizEvent(json, inputListener()));
 }
 
 const generateGIF = function() {

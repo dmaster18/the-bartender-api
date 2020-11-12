@@ -14,6 +14,11 @@ window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonL
 
 const fetchQuiz = function(event) {
   event.preventDefault();
+  const main = document.querySelector('main');
+  const gifElement = document.querySelector('img');
+  gifElement.id = 'gif';
+  gifElement.src = '../gifs/animated_bartender.gif'
+  gifElement.style.textAlign = 'center';
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())
@@ -182,6 +187,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     appLinks.classList.add('app-links');
     appLinks.innerHTML = '<a href="../app/home.html">Home</a><br><a href="../app/quiz_with_params.html">Retake Quiz</a><br>';
     appLinks.style.color = 'white';
+    appLinks.style.textAlign = 'center';
     main.appendChild(appLinks);
   }
 }

@@ -1,9 +1,14 @@
 class UsersController < ApplicationController
   def index
-    @user = User.create(name: name, score: score, percentage: percentage)
+    @user = User.create(user_params)
     @users = User.all
-    @users
+    redirect_to
   end
 
+  private
+
+  def user_params
+    params.require(:user).permit(:name, :score, :percentage)
+  end
 
 end

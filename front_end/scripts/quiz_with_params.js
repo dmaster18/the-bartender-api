@@ -102,11 +102,11 @@ const cardEventListener = function(i, randomRecipes, quizScore, questionScore, i
     })}
 )}
 
-const randomlyGenerateQuestion = function(recipes, quizLength) {
+const randomlyGenerateQuestion = function(questionsByType, quizLength) {
   const questions = []
   for (let i = 0; i < quizLength; i++) {
-    const randomNumber = Math.floor(Math.random() * recipes.length);
-    const recipe = recipes[randomNumber];
+    randomNumber = Math.floor(Math.random() * questionsByType.length);
+    recipe = questionsByType[randomNumber];
     const question = generateQuestion(recipe);
     if(!questions.includes(recipe)) {
       questions.push(recipe);

@@ -199,10 +199,11 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     submitScore.classList.add('submit-results');
     submitScore.innerText = 'Submit Score';
     main.appendChild(submitScore);
-    submitScore.addEventListener('click', function() {createLeaderboardForm()})
+    submitScore.addEventListener('click', function() {createLeaderboardForm()});
     const submitName = document.querySelector('button');
-    submitName.addEventListener('click', )
+    //submitName.addEventListener('click', )
   }
+}
 
  const createLeaderboardForm = function(){
     const main = document.querySelector('main');

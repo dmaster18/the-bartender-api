@@ -116,31 +116,36 @@ const randomlyGenerateQuestion = function(recipes, quizLength) {
 
 
 const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
-  randomRecipes;
+  let randomRecipes;
   const questions = [];
   const main = document.querySelector('main');
   switch(quizDifficulty) {
     case 'Random':
       randomRecipes = randomlyGenerateQuestion(recipes, quizLength);
+      return randomRecipes;
       break;
     case 'Easy':
       const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
       randomRecipes = randomlyGenerateQuestion(easyQuestions, quizLength);
+      return randomRecipes;
       break;
     case 'Medium':
       const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Medium');
       randomRecipes = randomlyGenerateQuestion(mediumQuestions, quizLength);
+      return randomRecipes;
       break;
     case 'Hard':
       const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Hard');
       randomRecipes = randomlyGenerateQuestion(hardQuestions, quizLength);
+      return randomRecipes;
       break;
     case 'Very Hard':
       const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
       randomRecipes = randomlyGenerateQuestion(mediumQuestions, quizLength);
+      return randomRecipes;
       break;
   }
-  return randomRecipes;
+  //return randomRecipes;
 }
 
 

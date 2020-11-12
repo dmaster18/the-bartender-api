@@ -116,12 +116,20 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     //totalQuizScore = quizScore.reduce(function(accumulator, currentValue) {accumulator + currentValue});
     myQuizScore.innerText = `Your Quiz Score Is: ${quizScore}!`;
     myQuizScore.style.textAlign = 'center';
+    myQuizScore.style.color = 'white';
     main.appendChild(myQuizScore);
     myQuizPercentage = document.createElement('h1');
     percentage = 100*(quizScore/randomRecipes.length);
     myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
     myQuizPercentage.style.textAlign = 'center';
+    myQuizPercentage.style.color = 'white';
     main.appendChild(myQuizPercentage);
+    const appLinks = document.createElement('div');
+    appLinks.classList.add('app-links');
+    appLinks.innerHTML = '<a href="../app/home.html">Home</a><br><a href="../app/quiz_with_params.html">Retake Quiz</a><br>';
+    appLinks.style.color = 'white';
+    appLinks.style.textAlign = 'center';
+    main.appendChild(appLinks);
   }
 }
 

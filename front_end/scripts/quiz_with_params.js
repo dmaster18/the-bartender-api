@@ -1,28 +1,30 @@
 const button = function() {return document.querySelector('button');}
 
-const inputListener = function() {button().addEventListener("click", function() {
+const inputListener = function() {button().addEventListener("click", function(event) {
+  event.preventDefault()
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
   selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
-  alert(selectedValueNames);
+  console.log(selectedValueNames)
   //return selectedValueNames;
 })}
 
-window.addEventListener('DOMContentLoaded', inputListener);
+window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
 
-/*
-const fetchQuiz = function() {
+
+const fetchQuiz = function(event) {
+  event.preventDefault();
   const recipes_url = 'http://127.0.0.1:3000/recipes';
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(json => quizEvent(json, selectedValueNames));
 }
 
-const buttonListener = function() {button().addEventListener('submit', fetchQuiz)}
+const buttonListener = function() {button().addEventListener('click', fetchQuiz)}
 
-window.addEventListener('DOMContentLoaded', buttonListener);
+//window.addEventListener('DOMContentLoaded', buttonListener);
 
-*/
+
 const quizEvent = function(json, selectedValueNames) {
   const recipes = json['data']
   const quizDifficulty = selectedValueNames[0];

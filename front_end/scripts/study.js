@@ -1,10 +1,19 @@
-window.addEventListener('DOMContentLoaded', fetchCards);
+window.addEventListener('DOMContentLoaded', function() {fetchCards()});
 
 function fetchCards() {
+  generateGIF();
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
   .then(recipes => rendercards(recipes))
+}
+
+const generateGIF = function() {
+  const main = document.querySelector('main');
+  main.innerHTML = ''
+  const gifElement = document.createElement('img');
+  gifElement.src = '../../gifs/shaker.gif'
+  main.appendChild(gifElement);
 }
 
 function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards

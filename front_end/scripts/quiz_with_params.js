@@ -189,6 +189,9 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizPercentage.style.textAlign = 'center';
     myQuizPercentage.style.color = 'white';
     main.appendChild(myQuizPercentage);
+    const submitResults = document.createElement('button');
+    submitResults.classList.add('submit-results');
+    submitResults.innerText = 'Submit Results'
     const appLinks = document.createElement('div');
     appLinks.classList.add('app-links');
     appLinks.innerHTML = '<a href="../app/home.html">Home</a><br><a href="../app/quiz_with_params.html">Retake Quiz</a><br>';

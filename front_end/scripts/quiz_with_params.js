@@ -116,7 +116,7 @@ const randomlyGenerateQuestion = function(recipes, quizLength) {
 
 
 const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
-  let randomRecipes;
+  randomRecipes;
   const questions = [];
   const main = document.querySelector('main');
   switch(quizDifficulty) {

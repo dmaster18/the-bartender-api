@@ -189,10 +189,10 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     myQuizPercentage.style.textAlign = 'center';
     myQuizPercentage.style.color = 'white';
     main.appendChild(myQuizPercentage);
-    const submitResults = document.createElement('button');
-    submitResults.classList.add('submit-results');
-    submitResults.innerText = 'Submit Results';
-    submitResults.addEventListener('click', function() {createLeaderboardForm()})
+    const submitScore = document.createElement('button');
+    submitScore.classList.add('submit-results');
+    submitScore.innerText = 'Submit Results';
+    submitScore.addEventListener('click', function() {createLeaderboardForm()})
     const appLinks = document.createElement('div');
     appLinks.classList.add('app-links');
     appLinks.innerHTML = '<a href="../app/home.html">Home</a><br><a href="../app/quiz_with_params.html">Retake Quiz</a><br>';
@@ -207,6 +207,4 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     const leaderboardForm = document.createElement('form');
     leaderboardForm.innerHTML = '<input type="text" name="name" value="name" <button type="submit" value="Submit">Submit</button>'
     main.appendChild(leaderboardForm);
-
-  })
-}
+  }

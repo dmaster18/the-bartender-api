@@ -2,6 +2,7 @@
 h1.recipe-name {
   text-align: center;
   padding: 100px;
+  color: white;
 }
 
 div.ingredient-card {

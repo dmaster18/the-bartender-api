@@ -1,15 +1,11 @@
 const button = function() {return document.querySelector('button');}
 
-const buttonListener = function() {button().addEventListener("click", function() {
+const inputListener = function() {button().addEventListener("click", function() {
   const values = [].slice.call(document.querySelectorAll('input'));
   const selectedValues = values.filter(value => value.checked);
   selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
   return selectedValueNames;
 })}
-
-window.addEventListener('DOMContentLoaded', buttonListener);
-
-
 
 const fetchQuiz = function() {
   const recipes_url = 'http://127.0.0.1:3000/recipes';
@@ -18,7 +14,9 @@ const fetchQuiz = function() {
   .then(json => quizEvent(json, selectedValueNames));
 }
 
-button().addEventListener('click', fetchQuiz);
+const buttonListener = function() {button().addEventListener('click', fetchQuiz)}
+window.addEventListener('DOMContentLoaded', inputListener);
+window.addEventListener('DOMContentLoaded', buttonListener);
 
 
 const quizEvent = function(json, selectedValueNames) {

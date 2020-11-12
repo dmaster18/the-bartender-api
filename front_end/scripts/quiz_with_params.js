@@ -198,6 +198,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     const submitScore = document.createElement('button');
     submitScore.classList.add('submit-results');
     submitScore.innerText = 'Submit Score';
+    submitScore.style.textAlign = 'center';
     main.appendChild(submitScore);
     submitScore.addEventListener('click', function() {createLeaderboardForm()});
     const submitName = document.querySelector('button');

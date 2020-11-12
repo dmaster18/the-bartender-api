@@ -10,12 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_28_025529) do
-
-  create_table "bars", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2020_11_12_230755) do
 
   create_table "garnishes", force: :cascade do |t|
     t.string "name"
@@ -31,6 +26,11 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "leaderboards", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "liqueurs", force: :cascade do |t|
     t.string "name"
     t.string "liqueur_type"
@@ -39,11 +39,6 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.string "flavor"
     t.string "abv"
     t.string "color"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "liquor_stores", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -64,27 +59,6 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
   create_table "mixers", force: :cascade do |t|
     t.string "name"
     t.string "mixer_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "questions", force: :cascade do |t|
-    t.integer "quiz_id"
-    t.string "name"
-    t.string "content"
-    t.string "answer"
-    t.boolean "correct?"
-    t.string "difficulty"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "quizzes", force: :cascade do |t|
-    t.integer "score"
-    t.string "category"
-    t.string "length"
-    t.string "difficulty"
-    t.boolean "shared?"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -163,37 +137,16 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "stores", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    t.string "type"
-    t.string "street"
-    t.string "city"
-    t.string "state"
-    t.string "zip_code"
-    t.integer "review_score"
-    t.string "comment"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "user_recipes", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "username_confirmation"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "password"
-    t.string "password_confirmation"
-    t.integer "uid"
-    t.string "zip_code"
-    t.boolean "password_required"
-    t.text "quiz_score_history"
+    t.string "name"
+    t.integer "score"
+    t.integer "percentage"
+    t.integer "leaderboard_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,10 +1,11 @@
+window.addEventListener('DOMContentLoaded', function() {fetchUsers()});
 
 const fetchUsers = function() {
   generateGIF();
   const users_url = 'http://127.0.0.1:3000/users';
   return fetch(users_url)
   .then(resp => resp.json())
-  .then(json => console.log(json)); //generateLeaderboard
+  .then(json => console.log(json)); //generateLeaderboard(json)
 }
 
 const generateGIF = function() {
@@ -15,31 +16,14 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
-const generateLeaderboard(json) = function() {
+const generateLeaderboard = function(json) {
   const userData = json['data'];
+  const main = document.querySelector('main');
   const leaderboard = document.createElement('table');
+  leaderboard.classList.add('leaderboard')
   const leaderboardHeader = '<tr><th>Name</th><th>Score</th><th>Percentage</th></tr><tr>'
-  const leaderboardData = use
   const arrayOfUserData = userData.map(user => `<tr><td>${user.name}</td> <td>${user.score}</td> <td>${user.percentage}</td></tr>`);
-
-
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>80</td>
-    </tr>
-  </table>
-
+  const leaderboardData = arrayOfUserData.join(' ');
+  leaderboard.innerHTML = `${leaderboardHeader} ${leaderboardData}`
+  main.appendChild(leaderboard);
 }
-
-
-window.addEventListener('DOMContentLoaded', function() {fetchUsers()});

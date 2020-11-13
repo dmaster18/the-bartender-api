@@ -200,17 +200,18 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     submitScore.innerText = 'Submit Score';
     submitScore.style.textAlign = 'center';
     main.appendChild(submitScore);
-    submitScore.addEventListener('click', function() {createLeaderboardForm()});
+    submitScore.addEventListener('click', function() {submitUserData(quizScore, percentage)});
     const submitName = document.querySelector('button');
     //submitName.addEventListener('click', )
   }
 }
 
- const createLeaderboardForm = function(){
+
+ const submitUserData = function(quizScore, percentage){
     const main = document.querySelector('main');
     main.innerHTML = '';
     const leaderboardForm = document.createElement('div');
-    leaderboardForm.innerHTML = '<form action="http://localhost:3000/createUser" method="POST"><input type="text" name="user[name]" value="name"> <button type="submit" value="Submit">Submit</button></form?'
+    leaderboardForm.innerHTML = '<form action="http://localhost:3000/createUser" method="POST"><label for="user[name]">Enter your name:</label><input type="text" name="user[name]" id="user[name]"><input type="text" name="user[name]" id="user[name]"><input type="hidden" id="user[score]" name="user[score]" value=`${quizScore}`><input type="hidden" id="user[percentage]" name="user[percentage]" value=`${percentage}`>< <button type="submit" value="Submit">Submit</button></form>'
     main.appendChild(leaderboardForm);
   }
   //"http://localhost:3000/users/create"

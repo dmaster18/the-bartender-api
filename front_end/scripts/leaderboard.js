@@ -19,8 +19,8 @@ const generateLeaderboard(json) = function() {
   const userData = json['data'];
   const users = userData.map(user => user.name = )
   const leaderboard = document.createElement('table');
-  leaderboardHeader = '<tr><th>Name</th><th>Score</th><th>Percentage</th></tr><tr>'
-  leaderboardData = 
+  const leaderboardHeader = '<tr><th>Name</th><th>Score</th><th>Percentage</th></tr><tr>'
+  const leaderboardData =
   leaderboard.innerHTML = (
       <td>Jill</td>
       <td>Smith</td>

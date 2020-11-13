@@ -1,6 +1,5 @@
 
-const fetchQuiz = function(event) {
-  event.preventDefault();
+const fetchUsers = function() {
   generateGIF();
   const users_url = 'http://127.0.0.1:3000/users';
   return fetch(users_url)
@@ -12,8 +11,8 @@ const generateGIF = function() {
   const main = document.querySelector('main');
   main.innerHTML = ''
   const gifElement = document.createElement('img');
-  gifElement.src = '../../gifs/animated_bartender.gif'
+  gifElement.src = '../gifs/old_bartender.gif'
   main.appendChild(gifElement);
 }
 
-window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
+window.addEventListener('DOMContentLoaded', function() {fetchUsers()});

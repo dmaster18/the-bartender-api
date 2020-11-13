@@ -2,3 +2,8 @@ div.links {
   text-align: center;
   background-color: white;
 }
+
+body {
+  background-image: url("../images/cartoon_cocktails.jpg");
+
+}

@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   def index
     @user = User.create(user_params)
     @users = User.all
-    redirect_to
   end
 
   private

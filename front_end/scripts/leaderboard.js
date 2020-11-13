@@ -17,7 +17,7 @@ const generateGIF = function() {
 
 const generateLeaderboard(json) = function() {
   const userData = json['data'];
-  userData.map(user => user.name = )
+  const users = userData.map(user => user.name = )
 
 
 

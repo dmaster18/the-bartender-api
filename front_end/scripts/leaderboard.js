@@ -15,4 +15,13 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
+const generateLeaderboard(json) = function() {
+  const userData = json['data'];
+  userData.map(user => user.name = )
+
+
+
+}
+
+
 window.addEventListener('DOMContentLoaded', function() {fetchUsers()});

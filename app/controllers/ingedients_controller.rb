@@ -1,2 +1,0 @@
-class IngedientsController < ApplicationController
-end

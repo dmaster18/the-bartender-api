@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    redirect_to 'http://localhost:3000/htmls/app/leaderboard.html'
+    redirect_to 'http://localhost:3000/front_end/htmls/leaderboard.html'
   end
 
   def index

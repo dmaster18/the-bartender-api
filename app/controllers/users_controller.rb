@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.create(user_params)
+    user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
     redirect_to :index
   end
 
@@ -20,8 +20,8 @@ class UsersController < ApplicationController
 
   private
 
-  def user_params
-    params.require(:user).permit(:name, :score, :percentage)
-  end
+  ##def user_params
+  ##  params.require(:user).permit(:name, :score, :percentage)
+  ##end
 
 end

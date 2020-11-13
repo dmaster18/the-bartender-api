@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    redirect_to :index
+    redirect_to 'users_path'
   end
 
   def index

@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   resources :recipes
   resources :users
 
-  match '/createUser', to: 'user#create'
+  post '/createUser', to: 'users#create'
 
 
 

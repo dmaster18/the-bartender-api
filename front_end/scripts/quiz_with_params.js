@@ -210,6 +210,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = '';
     const leaderboardForm = document.createElement('div');
-    leaderboardForm.innerHTML = '<form action="http://localhost:3000/users/create" method="POST"><input type="text" name="user[name]" value="name"> <button type="submit" value="Submit">Submit</button></form?'
+    leaderboardForm.innerHTML = '<form action=users_path method="POST"><input type="text" name="user[name]" value="name"> <button type="submit" value="Submit">Submit</button></form?'
     main.appendChild(leaderboardForm);
   }
+  //"http://localhost:3000/users/create"

@@ -17,11 +17,12 @@ const generateGIF = function() {
 
 const generateLeaderboard(json) = function() {
   const userData = json['data'];
-  const users = userData.map(user => user.name = )
   const leaderboard = document.createElement('table');
   const leaderboardHeader = '<tr><th>Name</th><th>Score</th><th>Percentage</th></tr><tr>'
-  const leaderboardData =
-  leaderboard.innerHTML = (
+  const leaderboardData = use
+  const arrayOfUserData = userData.map(user => `<tr><td>${user.name}</td> <td>${user.score}</td> <td>${user.percentage}</td></tr>`);
+
+
       <td>Jill</td>
       <td>Smith</td>
       <td>50</td>

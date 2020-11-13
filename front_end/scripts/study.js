@@ -12,7 +12,7 @@ const generateGIF = function() {
   const main = document.querySelector('main');
   main.innerHTML = ''
   const gifElement = document.createElement('img');
-  gifElement.src = '../../gifs/shaker.gif'
+  gifElement.src = '../gifs/shaker.gif'
   main.appendChild(gifElement);
 }
 

@@ -201,11 +201,8 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     submitScore.style.textAlign = 'center';
     main.appendChild(submitScore);
     submitScore.addEventListener('click', function() {submitUserData(quizScore, percentage)});
-    const submitName = document.querySelector('button');
-    //submitName.addEventListener('click', )
   }
 }
-
 
  const submitUserData = function(quizScore, percentage){
     const main = document.querySelector('main');

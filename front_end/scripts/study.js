@@ -86,7 +86,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   const cardBack = document.createElement('div');
   cardBack.classList.add('card-back');
   cardFront.innerHTML = `<div.card-front><h2><b>${recipe.attributes.name}</b></h2></div>`
-  const revealAnswer = document.createElement ('div');
+  const revealAnswer = document.createElement('div');
   revealAnswer.classList.add('reveal-answer');
   const revealIngredientsButton = document.createElement('button');
   revealIngredientsButton.classList.add('reveal-ingredients');
@@ -94,9 +94,9 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   const revealFullRecipeButton = document.createElement('button');
   revealFullRecipeButton.classList.add('reveal-full-recipe');
   revealFullRecipeButton.innerText = 'Reveal Ingredients + Measurements';
-
-
-  revealAnswerButton.innerText = 'Reveal Ingredients'
+  revealAnswer.appendChild(revealIngredientsButton);
+  revealAnswer.appendChild(revealFullRecipeButton);
+  cardFront.appendChild(revealAnswer);
 
 
   if (recipe.attributes.liquors.length > 0) {

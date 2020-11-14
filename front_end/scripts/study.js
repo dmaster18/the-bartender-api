@@ -212,10 +212,17 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     })
     cardBackFullRecipe.appendChild(garnishesElement);
   }
-
-
-
-
+  const cardBackFullRecipeButtons = document.createElement('div');
+  cardBackFullRecipeButtons.classList.add('back-full-recipe-buttons');
+  const secondShowRecipeNameButton = document.createElement('button');
+  secondShowRecipeNameButton.classList.add('show-recipe-name');
+  secondShowRecipeNameButton.innerText = 'Show Cocktail Name';
+  const backRevealIngredientsButton = document.createElement('button');
+  backRevealIngredientsButton.classList.add('reveal-ingredients');
+  backRevealIngredientsButton.innerText = 'Reveal Ingredients Only';
+  cardBackFullRecipeButtons.appendChild(secondShowRecipeNameButton);
+  cardBackFullRecipeButtons.appendChild(backRevealIngredientsButton);
+  cardBackFullRecipe.appendChild(cardBackFullRecipeButtons);
 
   card.appendChild(cardFront);
   revealIngredientsButton.addEventListener('click', function() {revealIngredients(card, cardBackIngredients)})

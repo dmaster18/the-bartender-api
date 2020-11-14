@@ -5,7 +5,7 @@ function fetchCards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(recipes => rendercards(recipes))
+  .then(json => rendercards(json))
 }
 
 const generateGIF = function() {
@@ -16,8 +16,9 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
-function rendercards(recipes) { //Renders all Cocktail Recipe Ingredient Index Cards
-  recipes["data"].forEach(recipe => generatecard(recipe))
+function rendercards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
+  const recipes = json["data"]
+  .forEach(recipe => generatecard(recipe))
 }
 
 function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML

@@ -22,11 +22,11 @@ let i;
 function createButtons(json, i, main) {
   const nextCardButton = document.createElement('button');
   nextCardButton.classList.add('next-card');
-  nextCardButton.name = 'Next';
+  nextCardButton.value = 'Next';
   main.appendChild(nextCardButton);
   const previousCardButton = document.createElement('button');
   previousCardButton.classList.add('previous-card');
-  previousCardButton.name = 'Previous';
+  previousCardButton.value = 'Previous';
   main.appendChild(previousCardButton);
   nextCardButton.addEventListener('click', function(){nextRecipeCard(json, i)});
   previousCardButton.addEventListener('click', function(){previousRecipeCard(json, i)});

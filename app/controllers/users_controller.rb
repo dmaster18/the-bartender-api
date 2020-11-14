@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def index
     #user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    users = User.all
+    users = User.order_by_percentage
     render json: UserSerializer.new(users)
   end
 

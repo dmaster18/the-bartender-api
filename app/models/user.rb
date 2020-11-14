@@ -1,4 +1,11 @@
 class User < ApplicationRecord
+  validates :name, presence: true
+  validates :name, uniqueness: true
+
+  serialize :order_by_percentage, Array
+  serialize :order_by_score, Array
+  serialize :order_by_name, Array
+
   before_save :order_by_percentage, :order_by_score, :order_by_name
 
   def order_by_percentage

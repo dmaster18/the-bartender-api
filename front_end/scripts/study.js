@@ -26,8 +26,8 @@ function createButtons(main) {
   const previousCardButton = document.createElement('button');
   previousCardButton.classList.add('previous-card');
   main.appendChild(previousCardButton);
-  nextCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
-  previousCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
+  nextCardButton.addEventListener('click', function(){nextRecipeCard(json, i)});
+  previousCardButton.addEventListener('click', function(){previousRecipeCard(json, i)});
 }
 
 function randomRecipeCard(json, i) {

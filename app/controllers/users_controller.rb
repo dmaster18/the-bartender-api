@@ -5,7 +5,8 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    render 'C:\Users\user\Google Drive\Flatiron School Boot Camp\Portfolio Projects\Portfolio Project #4\the-bartender-api\front_end\htmls\leaderboard.html'
+    redirect_to 'C:\Users\user\Google Drive\Flatiron School Boot Camp\Portfolio Projects\Portfolio Project #4\the-bartender-api\front_end\htmls\leaderboard.html'
+  end
 
   def index
     #user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])

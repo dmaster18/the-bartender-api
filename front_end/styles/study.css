@@ -9,33 +9,31 @@ img {
   margin-right: auto;
 }
 
+h1.recipe-name {
+  text-align: center;
+  padding: 100px;
+}
 
 div.card {
   border-style: solid;
   border-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   width: 400px;
   height: 400px;
+  color: white;
+  text-align: center;
 }
 
 div.card-front {
   background-color: blue;
-  color: white;
-  text-align: center;
-  padding: 80px;
-  width: 400px;
-  height: 400px;
 }
 
 div.card-back-ingredients {
   background-color: orange;
-  color: white;
-  text-align: center;
-  padding: 80px;
-  width: 400px;
-  height: 400px;
 }
 
-h1.recipe-name {
-  text-align: center;
-  padding: 100px;
+div.card-back-full-recipe {
+  background-color: green;
 }

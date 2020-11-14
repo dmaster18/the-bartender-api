@@ -90,14 +90,13 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   revealAnswer.classList.add('reveal-answer');
   const revealIngredientsButton = document.createElement('button');
   revealIngredientsButton.classList.add('reveal-ingredients');
-  revealAnswerButton.innerText = 'Reveal Ingredients Only'
+  revealIngredientsButton.innerText = 'Reveal Ingredients Only'
   const revealFullRecipeButton = document.createElement('button');
   revealFullRecipeButton.classList.add('reveal-full-recipe');
   revealFullRecipeButton.innerText = 'Reveal Ingredients + Measurements';
   revealAnswer.appendChild(revealIngredientsButton);
   revealAnswer.appendChild(revealFullRecipeButton);
   cardFront.appendChild(revealAnswer);
-
 
   if (recipe.attributes.liquors.length > 0) {
     const liquorsTitle = document.createElement('h4');

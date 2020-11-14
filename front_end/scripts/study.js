@@ -1,4 +1,11 @@
 window.addEventListener('DOMContentLoaded', function() {fetchCards()});
+const nextCardButton = document.createElement('button');
+nextCardButton.classList.add('next-card');
+const previousCardButton = document.createElement('button');
+previousCardButton.classList.add('previous-card');
+
+const nextCard =
+const previousCard =
 
 function fetchCards() {
   generateGIF();
@@ -20,6 +27,7 @@ function renderRandomRecipeCard(json) {
   let i = 0;
   return randomRecipeCard(json, i);
 }
+
 
 function randomRecipeCard(json, i) {
   const main = document.querySelector('main');

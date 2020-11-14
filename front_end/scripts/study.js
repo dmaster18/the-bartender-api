@@ -18,7 +18,7 @@ const generateGIF = function() {
 
 function renderRandomRecipeCard(json) {
   let i = 0;
-  randomRecipeCard(json, i);
+  return randomRecipeCard(json, i);
 }
 
 function randomRecipeCard(json, i) {
@@ -26,7 +26,8 @@ function randomRecipeCard(json, i) {
   const randomNumbers = randomNumberGenerator();
   const randomNumber = randomNumbers[i];
   const recipeCard = recipeCards[randomNumber];
-  return recipeCard;
+  main.appendChild(recipeCard);
+  i++;
 }
 
 const randomNumberGenerator = function() {
@@ -114,5 +115,6 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   cardInner.appendChild(cardFront);
   cardInner.appendChild(cardBack);
   card.appendChild(cardInner)
-  main.appendChild(card);
+  return card;
+  //main.appendChild(card);
 }

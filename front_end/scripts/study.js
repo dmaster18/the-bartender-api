@@ -4,8 +4,8 @@ nextCardButton.classList.add('next-card');
 const previousCardButton = document.createElement('button');
 previousCardButton.classList.add('previous-card');
 
-nextCardButton.addEventListener('click', function());
-previousCardButton.addEventListener('click', function());
+nextCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
+previousCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
 
 function fetchCards() {
   generateGIF();

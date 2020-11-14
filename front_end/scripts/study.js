@@ -24,8 +24,9 @@ function renderRandomRecipeCard(json) {
 function randomRecipeCard(json, i) {
   const recipeCards = generateCards(json);
   const randomNumbers = randomNumberGenerator();
-
-  const recipeCard = recipeCards
+  const randomNumber = randomNumbers[i];
+  const recipeCard = recipeCards[randomNumber];
+  return recipeCard;
 }
 
 const randomNumberGenerator = function() {

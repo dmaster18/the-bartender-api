@@ -7,7 +7,7 @@ function fetchCards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => randomRecipeCard(json, i, randomNumbers))
+  .then(json => console.log(json)) //randomRecipeCard(json, i, randomNumbers)
 }
 
 const generateGIF = function() {
@@ -171,7 +171,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     const liquors = recipe.attributes.liquors_array.forEach( liquor =>
       {const liquor_line = document.createElement('li');
       liquor_line.classList.add('liquor');
-      liquor_line.innerHTML = `<li>${liquor.name}</li>`
+      liquor_line.innerHTML = `<li>${liquor}</li>`
       liquorsElement.appendChild(liquor_line)
     })
     cardBackFullRecipe.appendChild(liquorsElement);
@@ -183,7 +183,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     const liqueursElement = document.createElement('ul.liqueurs')
     const liqueurs = recipe.attributes.liqueurs_array.forEach( liqueur =>
       {const liqueur_line = document.createElement('li.liqueur')
-      liqueur_line.innerHTML = `<li>${liqueur.name}</li>`
+      liqueur_line.innerHTML = `<li>${liqueur}</li>`
       liqueursElement.appendChild(liqueur_line)
     })
     cardBackFullRecipe.appendChild(liqueursElement);
@@ -195,7 +195,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     const mixersElement = document.createElement('ul.mixers')
     const mixers = recipe.attributes.mixers_array.forEach( mixer =>
       {const mixer_line = document.createElement('li.mixer')
-      mixer_line.innerHTML = `<li>${mixer.name}</li>`
+      mixer_line.innerHTML = `<li>${mixer}</li>`
       mixersElement.appendChild(mixer_line)
     })
     cardBackFullRecipe.appendChild(mixersElement);
@@ -207,7 +207,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     const garnishesElement = document.createElement('ul.garnishes')
     const garnishes = recipe.attributes.garnishes_array.forEach( garnish =>
       {const garnish_line = document.createElement('li.garnish')
-      garnish_line.innerHTML = `<li>${garnish.name}</li>`
+      garnish_line.innerHTML = `<li>${garnish}</li>`
       garnishesElement.appendChild(garnish_line)
     })
     cardBackFullRecipe.appendChild(garnishesElement);

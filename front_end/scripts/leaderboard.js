@@ -5,7 +5,7 @@ const fetchUsers = function() {
   const users_url = 'http://127.0.0.1:3000/users';
   return fetch(users_url)
   .then(resp => resp.json())
-  .then(json => console.log(json)); //generateLeaderboard(json)
+  .then(json => generateLeaderboard(json)); //generateLeaderboard(json)
 }
 
 const generateGIF = function() {
@@ -22,7 +22,7 @@ const generateLeaderboard = function(json) {
   const leaderboard = document.createElement('table');
   leaderboard.classList.add('leaderboard')
   const leaderboardHeader = '<tr><th>Name</th><th>Score</th><th>Percentage</th></tr><tr>'
-  const arrayOfUserData = userData.map(user => `<tr><td>${user.name}</td> <td>${user.score}</td> <td>${user.percentage}</td></tr>`);
+  const arrayOfUserData = userData.map(user => `<tr><td>${user.attributes.name}</td> <td>${user.attributes.score}</td> <td>${user.attributes.percentage}</td></tr>`);
   const leaderboardData = arrayOfUserData.join(' ');
   leaderboard.innerHTML = `${leaderboardHeader} ${leaderboardData}`
   main.appendChild(leaderboard);

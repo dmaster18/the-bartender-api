@@ -1,13 +1,12 @@
 window.addEventListener('DOMContentLoaded', function() {fetchCards()});
 
-
-
 function fetchCards() {
+  let i = 0;
   generateGIF();
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => generateCards(json))
+  .then(json => randomRecipeCard(json, i))
 }
 
 const generateGIF = function() {
@@ -18,7 +17,7 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
-let i = 0;
+let i;
 
 function createButtons(main) {
   const nextCardButton = document.createElement('button');

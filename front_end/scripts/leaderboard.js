@@ -5,15 +5,18 @@ const fetchUsers = function() {
   const users_url = 'http://127.0.0.1:3000/users';
   return fetch(users_url)
   .then(resp => resp.json())
-  .then(json => generateLeaderboard(json)); 
+  .then(json => generateLeaderboard(json));
 }
 
 const generateGIF = function() {
   const main = document.querySelector('main');
   main.innerHTML = ''
+  const gifContainer = document.createElement('div');
+  gifContainer.classList.add('gif-container');
   const gifElement = document.createElement('img');
   gifElement.src = '../gifs/old_bartender.gif'
-  main.appendChild(gifElement);
+  gifContainer.appendChild(gifElement);
+  main.appendChild(gifContainer);
 }
 
 const generateLeaderboard = function(json) {

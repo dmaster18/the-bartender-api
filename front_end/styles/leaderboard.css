@@ -16,3 +16,7 @@ tr{
 body {
   background-image: url("../images/cartoon_pub.jpg");
 }
+
+div.gif-container {
+  text-align: center;
+}

@@ -5,7 +5,7 @@ const fetchUsers = function() {
   const users_url = 'http://127.0.0.1:3000/users';
   return fetch(users_url)
   .then(resp => resp.json())
-  .then(json => console.log(json)); //generateLeaderboard(json)
+  .then(json => generateLeaderboard(json)); //generateLeaderboard(json)
 }
 
 const generateGIF = function() {

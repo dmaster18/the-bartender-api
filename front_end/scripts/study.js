@@ -226,8 +226,8 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
 
   card.appendChild(cardFront);
   revealIngredientsButton.addEventListener('click', function() {revealIngredients(card, cardBackIngredients)})
+  backRevealIngredientsButton.addEventListener('click', function() {revealIngredients(card, cardBackIngredients)})
 
-  
   showRecipeNameButton.addEventListener('click', function() {showRecipeName(card, cardFront)})
   secondShowRecipeNameButton.addEventListener('click', function() {showRecipeName(card, cardFront)})
 

@@ -76,11 +76,8 @@ function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Ca
 }
 
 function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML
-  //const main = document.querySelector('main');
   const card = document.createElement('div');
   card.classList.add('card')
-  const cardInner = document.createElement('div');
-  cardInner.classList.add('card-inner')
   const cardFront = document.createElement('div');
   cardFront.classList.add('card-front');
   const cardBack = document.createElement('div');
@@ -149,9 +146,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     })
     cardBack.appendChild(garnishesElement);
   }
-  cardInner.appendChild(cardFront);
-  cardInner.appendChild(cardBack);
-  card.appendChild(cardInner)
+
   return card;
   //main.appendChild(card);
 }

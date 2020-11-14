@@ -23,13 +23,13 @@ function createButtons(json, i, main) {
   const nextCardButton = document.createElement('button');
   nextCardButton.classList.add('next-card');
   nextCardButton.value = 'Next';
-  main.appendChild(nextCardButton);
   const previousCardButton = document.createElement('button');
   previousCardButton.classList.add('previous-card');
   previousCardButton.value = 'Previous';
   main.appendChild(previousCardButton);
-  nextCardButton.addEventListener('click', function(){nextRecipeCard(json, i)});
-  previousCardButton.addEventListener('click', function(){previousRecipeCard(json, i)});
+  main.appendChild(nextCardButton);
+  nextCardButton.addEventListener('click', function(){console.log(i);nextRecipeCard(json, i)});
+  previousCardButton.addEventListener('click', function(){console.log(i);previousRecipeCard(json, i)});
 }
 
 function randomRecipeCard(json, i) {

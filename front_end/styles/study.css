@@ -33,3 +33,7 @@ div.card-back-ingredients {
 div.card-back-full-recipe {
   background-color: green;
 }
+
+body {
+  background-image: url("../images/cartoon_pub.jpg");
+}

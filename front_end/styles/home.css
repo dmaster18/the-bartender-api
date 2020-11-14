@@ -1,8 +1,12 @@
 div.links {
   text-align: center;
-  padding: 250px;
+  padding: 50px;
 }
 
 body {
-  background-image: url("../images/cartoon_cocktails.jpg");
+  background-image: url("../images/drinks_2.jpg");
+}
+
+h1 {
+  text-align: center;
 }

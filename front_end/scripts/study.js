@@ -148,14 +148,13 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   }
 
   card.appendChild(cardFront);
-  revealIngredientsButton.addEventListener('click', function() {revealIngredients()})
+  revealIngredientsButton.addEventListener('click', function() {revealIngredients(card)})
 
   return card;
   //main.appendChild(card);
 }
 
-function revealIngredients() {
-  card = document.querySelector('card');
+function revealIngredients(card) {
   card.innerHTML = '';
   card.appendChild(cardBackIngredients);
 }

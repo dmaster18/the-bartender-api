@@ -14,7 +14,7 @@ const generateGIF = function() {
   const main = document.querySelector('main');
   main.innerHTML = ''
   const gifElement = document.createElement('img');
-  gifElement.src = '../gifs/shaker.gif'
+  gifElement.src = '../gifs/art.gif'
   main.appendChild(gifElement);
 }
 
@@ -94,6 +94,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   cardFront.appendChild(revealAnswer);
 
   const cardBackIngredients = document.createElement('div');
+  cardBackIngredients.innerHTML = `<div.card-back-title><h2><b>${recipe.attributes.name}</b></h2></div>`
   cardBackIngredients.classList.add('card-back-ingredients');
   if (recipe.attributes.liquors.length > 0) {
     const liquorsTitle = document.createElement('h4');
@@ -160,6 +161,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   cardBackIngredients.appendChild(cardBackIngredientsButtons);
 
   const cardBackFullRecipe = document.createElement('div');
+  cardBackFullRecipe.innerHTML = `<div.card-back-title><h2><b>${recipe.attributes.name}</b></h2></div>`
   cardBackFullRecipe.classList.add('card-back-full-recipe');
   if (recipe.attributes.liquors_array.length > 0) {
     const liquorsTitle = document.createElement('h4');

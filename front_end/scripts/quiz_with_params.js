@@ -195,11 +195,14 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     appLinks.style.color = 'white';
     appLinks.style.textAlign = 'center';
     main.appendChild(appLinks);
+    const submitScoreButtonContainer = document.createElement('div');
+    submitScoreButtonContainer.style.textAlign = 'center';
     const submitScore = document.createElement('button');
     submitScore.classList.add('submit-results');
     submitScore.innerText = 'Submit Score';
     submitScore.style.textAlign = 'center';
-    main.appendChild(submitScore);
+    submitScoreButtonContainer.appendChild(submitScore);
+    main.appendChild(submitScoreButtonContainer);
     submitScore.addEventListener('click', function() {submitUserData(quizScore, percentage)});
   }
 }

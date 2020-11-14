@@ -18,8 +18,24 @@ const generateGIF = function() {
 
 function renderRecipeCard(json) {
   const recipeCards = generateCards(json);
-  const recipeCard = 
+  const recipeCard = recipeCards
 
+}
+
+function shuffle(allIngredients) {
+  return allIngredients.sort(() => Math.random() - 0.5);
+}
+
+const randomRecipeGenerator = function(recipes, questionNumber = 10) {
+  const randomRecipes = [];
+  for(let i = 1; i <= questionNumber; i++) {
+    const randomNumber = Math.floor(Math.random()*508);
+    const randomRecipe = recipes[randomNumber];
+    //if (!randomRecipes.includes(randomRecipe)) {
+      randomRecipes.push(randomRecipe);
+    //}
+  }
+  return randomRecipes;
 }
 
 function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards

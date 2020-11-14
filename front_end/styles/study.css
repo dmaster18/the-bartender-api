@@ -13,77 +13,29 @@ img {
 div.card {
   border-style: solid;
   border-color: black;
-  background-color: transparent;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
 
-  /* This container is needed to position the front and back side */
-div.card-inner {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-div.card:active div.card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-div.card-front, div.card-back {
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
 div.card-front {
   background-color: blue;
   color: white;
   text-align: center;
   padding: 80px;
+  width: 400px;
+  height: 400px;
 }
 
-/* Style the back side */
 div.card-back {
-  background-color: orange;
+  background-color orange;
   color: white;
-  transform: rotateY(180deg);
+  text-align: center;
+  padding: 80px;
+  width: 400px;
+  height: 400px;
 }
 
 h1.recipe-name {
   text-align: center;
   padding: 100px;
 }
-
-div.ingredient-card {
-  border-style: solid;
-  border-color: black;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  padding: 70px;
-}
-
-div.ingredient-cards-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 20px;
-  }
-
-h1.question-status {
-    text-align: center;
-}
-
-/*div.ingredient-card-detail {
-  text-align: center;
-  padding: 30px;
-}*/

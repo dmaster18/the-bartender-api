@@ -162,7 +162,7 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   cardBackFullRecipe.classList.add('card-back-full-recipe');
   if (recipe.attributes.liquors_array.length > 0) {
     const liquorsTitle = document.createElement('h4.liquorsTitle')
-    liquorsTitle.innerHTML = '<b><u>liquors</u></b>'
+    liquorsTitle.innerHTML = '<b><u>Liquors</u></b>'
     cardBackFullRecipe.appendChild(liquorsTitle)
     const liquorsElement = document.createElement('ul.liquors')
     const liquors = recipe.attributes.liquors_array.forEach( liquor =>

@@ -5,8 +5,6 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :score
       t.string :percentage
 
-
-
       t.timestamps
     end
   end

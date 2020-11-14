@@ -80,8 +80,6 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   card.classList.add('card')
   const cardFront = document.createElement('div');
   cardFront.classList.add('card-front');
-  const cardBack = document.createElement('div');
-  cardBack.classList.add('card-back');
   cardFront.innerHTML = `<div.card-front><h2><b>${recipe.attributes.name}</b></h2></div>`
   const revealAnswer = document.createElement('div');
   revealAnswer.classList.add('reveal-answer');
@@ -95,11 +93,15 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   revealAnswer.appendChild(revealFullRecipeButton);
   cardFront.appendChild(revealAnswer);
 
+  const cardBackIngredients = document.createElement('div');
+  cardBackIngredients.classList.add('card-back-ingredients');
+
+
   if (recipe.attributes.liquors.length > 0) {
     const liquorsTitle = document.createElement('h4');
     liquorsTitle.classList.add('liquors-title');
     liquorsTitle.innerHTML = '<b><u>Liquors</u></b>';
-    cardBack.appendChild(liquorsTitle)
+    cardBackIngredients.appendChild(liquorsTitle)
     const liquorsElement = document.createElement('ul')
     liquorsElement.classList.add('liquors');
     const liquors = recipe.attributes.liquors.forEach( liquor =>
@@ -108,43 +110,43 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
       liquor_line.innerHTML = `<li>${liquor.name}</li>`
       liquorsElement.appendChild(liquor_line)
     })
-    cardBack.appendChild(liquorsElement);
+    cardBackIngredients.appendChild(liquorsElement);
   }
   if (recipe.attributes.liqueurs.length > 0) {
     const liqueursTitle = document.createElement('h4.liqueursTitle')
     liqueursTitle.innerHTML = '<b><u>Liqueurs</u></b>'
-    cardBack.appendChild(liqueursTitle)
+    cardBackIngredients.appendChild(liqueursTitle)
     const liqueursElement = document.createElement('ul.liqueurs')
     const liqueurs = recipe.attributes.liqueurs.forEach( liqueur =>
       {const liqueur_line = document.createElement('li.liqueur')
       liqueur_line.innerHTML = `<li>${liqueur.name}</li>`
       liqueursElement.appendChild(liqueur_line)
     })
-    cardBack.appendChild(liqueursElement);
+    cardBackIngredients.appendChild(liqueursElement);
   }
   if (recipe.attributes.mixers.length > 0) {
     const mixersTitle = document.createElement('h4.mixersTitle')
     mixersTitle.innerHTML = '<b><u>Mixers</u></b>'
-    cardBack.appendChild(mixersTitle)
+    cardBackIngredients.appendChild(mixersTitle)
     const mixersElement = document.createElement('ul.mixers')
     const mixers = recipe.attributes.mixers.forEach( mixer =>
       {const mixer_line = document.createElement('li.mixer')
       mixer_line.innerHTML = `<li>${mixer.name}</li>`
       mixersElement.appendChild(mixer_line)
     })
-    cardBack.appendChild(mixersElement);
+    cardBackIngredients.appendChild(mixersElement);
   }
   if (recipe.attributes.garnishes.length > 0) {
     const garnishesTitle = document.createElement('h4.garnishesTitle')
     garnishesTitle.innerHTML = '<b><u>Garnishes</u></b>'
-    cardBack.appendChild(garnishesTitle)
+    cardBackIngredients.appendChild(garnishesTitle)
     const garnishesElement = document.createElement('ul.garnishes')
     const garnishes = recipe.attributes.garnishes.forEach( garnish =>
       {const garnish_line = document.createElement('li.garnish')
       garnish_line.innerHTML = `<li>${garnish.name}</li>`
       garnishesElement.appendChild(garnish_line)
     })
-    cardBack.appendChild(garnishesElement);
+    cardBackIngredients.appendChild(garnishesElement);
   }
 
   return card;

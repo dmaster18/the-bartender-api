@@ -22,6 +22,8 @@ function renderRandomRecipeCard(json) {
 }
 
 function randomRecipeCard(json, i) {
+  const main = document.querySelector('main');
+  main.innerHTML = '';
   const recipeCards = generateCards(json);
   const randomNumbers = randomNumberGenerator();
   const randomNumber = randomNumbers[i];
@@ -42,8 +44,6 @@ function shuffle(randomNumbers) {
   return randomNumbers.sort(() => Math.random() - 0.5);
 }
 
-
-
 function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
   const recipeData = json["data"]
   const recipeCards = recipeData.map(recipe => generatecard(recipe))
@@ -51,7 +51,7 @@ function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Ca
 }
 
 function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML
-  const main = document.querySelector('main');
+  //const main = document.querySelector('main');
   const card = document.createElement('div');
   card.classList.add('card')
   const cardInner = document.createElement('div');

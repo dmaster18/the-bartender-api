@@ -92,7 +92,9 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   revealIngredientsButton.classList.add('reveal-ingredients');
   revealAnswerButton.innerText = 'Reveal Ingredients Only'
   const revealFullRecipeButton = document.createElement('button');
+  revealFullRecipeButton.classList.add('reveal-full-recipe');
   revealFullRecipeButton.innerText = 'Reveal Ingredients + Measurements';
+
 
   revealAnswerButton.innerText = 'Reveal Ingredients'
 

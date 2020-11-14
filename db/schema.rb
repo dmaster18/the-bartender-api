@@ -136,6 +136,9 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
     t.string "name"
     t.string "score"
     t.string "percentage"
+    t.text "order_by_percentage"
+    t.text "order_by_score"
+    t.text "order_by_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

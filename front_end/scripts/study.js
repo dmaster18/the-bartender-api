@@ -23,10 +23,10 @@ let i;
 function createButtons(json, i, main, randomNumbers) {
   const nextCardButton = document.createElement('button');
   nextCardButton.classList.add('next-card');
-  nextCardButton.value = 'Next';
+  nextCardButton.innerText = 'Next';
   const previousCardButton = document.createElement('button');
   previousCardButton.classList.add('previous-card');
-  previousCardButton.value = 'Previous';
+  previousCardButton.innerText = 'Previous';
   main.appendChild(previousCardButton);
   main.appendChild(nextCardButton);
   nextCardButton.addEventListener('click', function(){console.log(i);nextRecipeCard(json, i, randomNumbers)});

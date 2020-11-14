@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    render json: UserSerializer.new(user)
+    #render json: UserSerializer.new(user)
     #redirect_to 'http://127.0.0.1:3000/the-bartender-api/front_end/htmls/quiz_with_params.html'
   end
 

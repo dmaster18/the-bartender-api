@@ -16,6 +16,12 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
+function renderRecipeCard(json) {
+  const recipeCards = generateCards(json);
+  const recipeCard = 
+
+}
+
 function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
   const recipeData = json["data"]
   const recipeCards = recipeData.map(recipe => generatecard(recipe))

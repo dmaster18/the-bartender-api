@@ -27,7 +27,7 @@ div.card-front {
 }
 
 div.card-back-ingredients {
-  background-color orange;
+  background-color: orange;
   color: white;
   text-align: center;
   padding: 80px;

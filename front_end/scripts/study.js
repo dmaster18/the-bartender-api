@@ -16,12 +16,19 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
-function renderRecipeCard(json) {
+function renderRandomRecipeCard(json) {
+  let i = 0;
+  randomRecipeCard(json, i);
+}
+
+function randomRecipeCard(json, i) {
   const recipeCards = generateCards(json);
+  const randomNumbers = randomNumberGenerator();
+
   const recipeCard = recipeCards
 }
 
-const randomRecipeGenerator = function() {
+const randomNumberGenerator = function() {
   const randomNumbers = []
   for(let i = 1; i <= 508; i++) {
     randomNumbers.push(i);

@@ -86,6 +86,17 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   const cardBack = document.createElement('div');
   cardBack.classList.add('card-back');
   cardFront.innerHTML = `<div.card-front><h2><b>${recipe.attributes.name}</b></h2></div>`
+  const revealAnswer = document.createElement ('div');
+  revealAnswer.classList.add('reveal-answer');
+  const revealIngredientsButton = document.createElement('button');
+  revealIngredientsButton.classList.add('reveal-ingredients');
+  revealAnswerButton.innerText = 'Reveal Ingredients Only'
+  const revealFullRecipeButton = document.createElement('button');
+  revealFullRecipeButton.innerText = 'Reveal Ingredients + Measurements';
+
+  revealAnswerButton.innerText = 'Reveal Ingredients'
+
+
   if (recipe.attributes.liquors.length > 0) {
     const liquorsTitle = document.createElement('h4');
     liquorsTitle.classList.add('liquors-title');

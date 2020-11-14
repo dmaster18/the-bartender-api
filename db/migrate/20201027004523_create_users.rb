@@ -4,9 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :score
       t.string :percentage
-      t.text :order_by_percentage
-      t.text :order_by_score
-      t.text :order_by_name
+
 
 
       t.timestamps

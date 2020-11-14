@@ -1,11 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {fetchCards()});
-const nextCardButton = document.createElement('button');
-nextCardButton.classList.add('next-card');
-const previousCardButton = document.createElement('button');
-previousCardButton.classList.add('previous-card');
 
-nextCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
-previousCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
+
 
 function fetchCards() {
   generateGIF();
@@ -25,9 +20,21 @@ const generateGIF = function() {
 
 let i = 0;
 
+function createButtons(main) {
+  const nextCardButton = document.createElement('button');
+  nextCardButton.classList.add('next-card');
+  main.appendChild(nextCardButton);
+  const previousCardButton = document.createElement('button');
+  previousCardButton.classList.add('previous-card');
+  main.appendChild(previousCardButton);
+  nextCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
+  previousCardButton.addEventListener('click', function(nextRecipeCard(json, i)));
+}
+
 function randomRecipeCard(json, i) {
   const main = document.querySelector('main');
   main.innerHTML = '';
+  createButtons(main);
   const recipeCards = generateCards(json);
   const randomNumbers = randomNumberGenerator();
   const randomNumber = randomNumbers[i];
@@ -36,12 +43,12 @@ function randomRecipeCard(json, i) {
 }
 
 function nextRecipeCard(json, i) {
-  i++;
+  if (i < 508) {i++;}
   randomRecipeCard(json, i);
 }
 
 function previousRecipeCard(json, i) {
-  i--;
+  if (i > 0) {i--;}
   randomRecipeCard(json, i);
 }
 

@@ -226,7 +226,13 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
 
   card.appendChild(cardFront);
   revealIngredientsButton.addEventListener('click', function() {revealIngredients(card, cardBackIngredients)})
+
+  
   showRecipeNameButton.addEventListener('click', function() {showRecipeName(card, cardFront)})
+  secondShowRecipeNameButton.addEventListener('click', function() {showRecipeName(card, cardFront)})
+
+  revealFullRecipeButton.addEventListener('click', function() {revealFullRecipe(card, cardBackFullRecipe)})
+  backRevealFullRecipeButton.addEventListener('click', function() {revealFullRecipe(card, cardBackFullRecipe)})
   return card;
   //main.appendChild(card);
 }
@@ -234,6 +240,11 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
 function revealIngredients(card, cardBackIngredients) {
   card.innerHTML = '';
   card.appendChild(cardBackIngredients);
+}
+
+function revealFullRecipe(card, cardBackFullRecipe) {
+  card.innerHTML = '';
+  card.appendChild(cardBackFullRecipe);
 }
 
 function showRecipeName(card, cardFront) {

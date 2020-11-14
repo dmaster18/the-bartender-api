@@ -6,7 +6,7 @@ class User < ApplicationRecord
   serialize :order_by_score, Array
   serialize :order_by_name, Array
 
-  before_save :order_by_percentage, :order_by_score, :order_by_name
+  after_save :order_by_percentage, :order_by_score, :order_by_name
 
   def order_by_percentage
     User.order(percentage: :desc)

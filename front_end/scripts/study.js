@@ -19,24 +19,21 @@ const generateGIF = function() {
 function renderRecipeCard(json) {
   const recipeCards = generateCards(json);
   const recipeCard = recipeCards
-
 }
 
-function shuffle(allIngredients) {
-  return allIngredients.sort(() => Math.random() - 0.5);
-}
-
-const randomRecipeGenerator = function(recipes, questionNumber = 10) {
-  const randomRecipes = [];
-  for(let i = 1; i <= questionNumber; i++) {
-    const randomNumber = Math.floor(Math.random()*508);
-    const randomRecipe = recipes[randomNumber];
-    //if (!randomRecipes.includes(randomRecipe)) {
-      randomRecipes.push(randomRecipe);
-    //}
+const randomRecipeGenerator = function() {
+  const randomNumbers = []
+  for(let i = 1; i <= 508; i++) {
+    randomNumbers.push(i);
   }
-  return randomRecipes;
+  return shuffle(randomNumbers);
 }
+
+function shuffle(randomNumbers) {
+  return randomNumbers.sort(() => Math.random() - 0.5);
+}
+
+
 
 function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
   const recipeData = json["data"]

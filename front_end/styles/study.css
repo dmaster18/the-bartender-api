@@ -26,7 +26,7 @@ div.card-front {
   height: 400px;
 }
 
-div.card-back {
+div.card-back-ingredients {
   background-color orange;
   color: white;
   text-align: center;

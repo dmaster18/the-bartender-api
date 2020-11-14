@@ -5,9 +5,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    #render json: UserSerializer.new(user)
-    #redirect_to 'http://127.0.0.1:3000/the-bartender-api/front_end/htmls/quiz_with_params.html'
-  end
+    render 'C:\Users\user\Google Drive\Flatiron School Boot Camp\Portfolio Projects\Portfolio Project #4\the-bartender-api\front_end\htmls\leaderboard.html'
 
   def index
     #user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])

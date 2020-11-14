@@ -2,11 +2,12 @@ window.addEventListener('DOMContentLoaded', function() {fetchCards()});
 
 function fetchCards() {
   let i = 0;
+  const randomNumbers = randomNumberGenerator();
   generateGIF();
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => randomRecipeCard(json, i))
+  .then(json => randomRecipeCard(json, i, randomNumbers))
 }
 
 const generateGIF = function() {
@@ -32,12 +33,11 @@ function createButtons(json, i, main) {
   previousCardButton.addEventListener('click', function(){console.log(i);previousRecipeCard(json, i)});
 }
 
-function randomRecipeCard(json, i) {
+function randomRecipeCard(json, i, randomNumbers) {
   const main = document.querySelector('main');
   main.innerHTML = '';
   createButtons(json, i, main);
   const recipeCards = generateCards(json);
-  const randomNumbers = randomNumberGenerator();
   const randomNumber = randomNumbers[i];
   const recipeCard = recipeCards[randomNumber];
   main.appendChild(recipeCard);

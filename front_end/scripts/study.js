@@ -21,14 +21,17 @@ const generateGIF = function() {
 let i;
 
 function createButtons(json, i, main, randomNumbers) {
+  const buttons = document.createElement('div');
+  buttons.classList.add('buttons');
   const nextCardButton = document.createElement('button');
   nextCardButton.classList.add('next-card');
   nextCardButton.innerText = 'Next';
   const previousCardButton = document.createElement('button');
   previousCardButton.classList.add('previous-card');
   previousCardButton.innerText = 'Previous';
-  main.appendChild(previousCardButton);
-  main.appendChild(nextCardButton);
+  buttons.appendChild(previousCardButton);
+  buttons.appendChild(nextCardButton);
+  main.appendChild(buttons);
   nextCardButton.addEventListener('click', function(){console.log(i);nextRecipeCard(json, i, randomNumbers)});
   previousCardButton.addEventListener('click', function(){console.log(i);previousRecipeCard(json, i, randomNumbers)});
 }
@@ -36,11 +39,11 @@ function createButtons(json, i, main, randomNumbers) {
 function randomRecipeCard(json, i, randomNumbers) {
   const main = document.querySelector('main');
   main.innerHTML = '';
-  createButtons(json, i, main, randomNumbers);
   const recipeCards = generateCards(json);
   const randomNumber = randomNumbers[i];
   const recipeCard = recipeCards[randomNumber];
   main.appendChild(recipeCard);
+  createButtons(json, i, main, randomNumbers);
 }
 
 function nextRecipeCard(json, i, randomNumbers) {

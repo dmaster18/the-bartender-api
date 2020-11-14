@@ -1,9 +1,17 @@
 table {
   background-color: white;
   border-collapse:collapse;
-  border:1px solid #FF0000;
+  display: block;
+  padding: 275px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-table td{
+td{
   border:1px solid #FF0000;
+  text-align: center;
+}
+
+tr{
+  text-align: center;
 }

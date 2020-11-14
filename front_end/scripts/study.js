@@ -17,8 +17,9 @@ const generateGIF = function() {
 }
 
 function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
-  const recipes = json["data"]
-  recipes.forEach(recipe => generatecard(recipe))
+  const recipeData = json["data"]
+  const recipeCards = recipeData.map(recipe => generatecard(recipe))
+  return recipeCards;
 }
 
 function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML

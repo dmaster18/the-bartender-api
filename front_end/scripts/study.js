@@ -147,9 +147,18 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
     cardBackIngredients.appendChild(garnishesElement);
   }
 
+  const cardBackIngredientsButtons = document.createElement('div');
+  cardBackIngredientsButtons.classList.add('back-ingredients-buttons');
+  const showRecipeNameButton = document.createElement('button');
+  showRecipeNameButton.classList.add('show-recipe-name');
+  showRecipeNameButton.innerText = 'Show Cocktail Name';
+  cardBackIngredientsButtons.appendChild(showRecipeNameButton);
+  cardBackIngredientsButtons.appendChild(revealFullRecipeButton);
+  cardBackIngredients.appendChild(cardBackIngredientsButtons);
+
   card.appendChild(cardFront);
   revealIngredientsButton.addEventListener('click', function() {revealIngredients(card, cardBackIngredients)})
-
+  showRecipeNameButton.addEventListener('click', function() {showRecipeName(card, cardFront)})
   return card;
   //main.appendChild(card);
 }
@@ -157,4 +166,9 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
 function revealIngredients(card, cardBackIngredients) {
   card.innerHTML = '';
   card.appendChild(cardBackIngredients);
+}
+
+function showRecipeName(card, cardFront) {
+  card.innerHTML = '';
+  card.appendChild(cardFront);
 }

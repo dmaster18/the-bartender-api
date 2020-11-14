@@ -19,7 +19,7 @@ const generateGIF = function() {
 
 let i;
 
-function createButtons(main) {
+function createButtons(json, i, main) {
   const nextCardButton = document.createElement('button');
   nextCardButton.classList.add('next-card');
   main.appendChild(nextCardButton);
@@ -33,7 +33,7 @@ function createButtons(main) {
 function randomRecipeCard(json, i) {
   const main = document.querySelector('main');
   main.innerHTML = '';
-  createButtons(main);
+  createButtons(json, i, main);
   const recipeCards = generateCards(json);
   const randomNumbers = randomNumberGenerator();
   const randomNumber = randomNumbers[i];

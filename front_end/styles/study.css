@@ -15,8 +15,6 @@ h1.recipe-name {
 }
 
 div.card {
-  border-style: solid;
-  border-color: black;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -27,13 +25,22 @@ div.card {
 }
 
 div.card-front {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   background-color: blue;
 }
 
 div.card-back-ingredients {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   background-color: orange;
 }
 
 div.card-back-full-recipe {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   background-color: green;
 }

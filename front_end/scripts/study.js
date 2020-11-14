@@ -152,8 +152,9 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   const showRecipeNameButton = document.createElement('button');
   showRecipeNameButton.classList.add('show-recipe-name');
   showRecipeNameButton.innerText = 'Show Cocktail Name';
+  const backRevealFullRecipeButton = revealFullRecipeButton;
   cardBackIngredientsButtons.appendChild(showRecipeNameButton);
-  cardBackIngredientsButtons.appendChild(revealFullRecipeButton);
+  cardBackIngredientsButtons.appendChild(backRevealFullRecipeButton);
   cardBackIngredients.appendChild(cardBackIngredientsButtons);
 
   card.appendChild(cardFront);

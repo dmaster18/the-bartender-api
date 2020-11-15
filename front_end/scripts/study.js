@@ -14,7 +14,7 @@ const generateGIF = function() {
   const main = document.querySelector('main');
   main.innerHTML = ''
   const gifElement = document.createElement('img');
-  gifElement.src = '../gifs/art.gif'
+  gifElement.src = '../gifs/dog_bartender.gif'
   main.appendChild(gifElement);
 }
 

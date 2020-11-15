@@ -89,7 +89,6 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       i++;
       quizScore += 1;
       runQuestion(i, randomRecipes, quizScore);
-      //user.quizScore += 1;
     }
   }
   else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -104,7 +103,6 @@ const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, in
       i++;
       quizScore +=0;
       runQuestion(i, randomRecipes, quizScore);
-      //user.quizScore += 0;
     }
   }
 }
@@ -178,8 +176,7 @@ const runQuestion = function(i, randomRecipes, quizScore) {
   } else {
     main.innerHTML = '';
     myQuizScore = document.createElement('h1');
-    //totalQuizScore = quizScore.reduce(function(accumulator, currentValue) {accumulator + currentValue});
-    myQuizScore.innerText = `Your Quiz Score Is: ${quizScore}!`;
+    myQuizScore.innerText = `Your Quiz Score Is: ${quizScore} Points!`;
     myQuizScore.style.textAlign = 'center';
     myQuizScore.style.color = 'white';
     main.appendChild(myQuizScore);
@@ -205,8 +202,17 @@ const runQuestion = function(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = '';
     const leaderboardForm = document.createElement('div');
-    leaderboardForm.innerHTML = '<form action="http://localhost:3000/createUser" method="POST"><label for="user[name]">Enter your name:</label><input type="text" name="user[name]" id="user[name]"><input type="hidden" id="user[score]" name="user[score]"><input type="hidden" id="user[percentage]" name="user[percentage]"><button type="submit" value="Submit">Submit</button></form>'
+    leaderboardForm.innerHTML = '<form><label for="user[name]">Enter your name:</label><input type="text" name="user[name]" id="user[name]"><input type="hidden" id="user[score]" name="user[score]"><input type="hidden" id="user[percentage]" name="user[percentage]"><button type="submit" value="Submit" id="form-submit-button">Submit</button></form>'
     main.appendChild(leaderboardForm);
-    document.getElementById("user[score]").value = quizScore;
-    document.getElementById("user[percentage]").value = percentage;
+
+    const formSubmitButton = document.getElementById('form-submit-button');
+    formSubmitButton.addEventListener('click', function(event)
+    {
+      event.preventDefault();
+      const name = document.getElementById("user[name]").value;
+      const data = {user: {name, score: quizScore, percentage}}
+      const users_url = 'http://127.0.0.1:3000/users'
+      return fetch(users_url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)})
+      .then(() => {window.location.href = 'leaderboard.html'})
+    });
   }

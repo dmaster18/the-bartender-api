@@ -46,7 +46,7 @@ function randomRecipeCard(json, i, randomNumbers) {
 }
 
 function nextRecipeCard(json, i, randomNumbers) {
-  if (i < 508) {i++;}
+  if (i < 498) {i++;}
   randomRecipeCard(json, i, randomNumbers);
 }
 
@@ -56,9 +56,9 @@ function previousRecipeCard(json, i, randomNumbers) {
 }
 
 
-const randomNumberGenerator = function() {
+const randomNumberGenerator = function() { //Create limit paramter to return fewer recipes (to decrease load times)
   const randomNumbers = []
-  for(let i = 1; i <= 508; i++) {
+  for(let i = 1; i <= 498; i++) {
     randomNumbers.push(i);
   }
   return shuffle(randomNumbers);

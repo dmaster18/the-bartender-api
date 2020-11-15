@@ -4,8 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage])
-    redirect_to 'leaderboard.html'
+    user = User.create(name: params[:user][:name], score: params[:user][:score], percentage: params[:user][:percentage]) #difficulty: params[:user][:difficulty])
   end
 
   def index

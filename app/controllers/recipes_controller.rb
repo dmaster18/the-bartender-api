@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def index
-    recipes = Recipe.all
+    recipes = Recipe.all #Add shuffle method to the backend as well as record total number of recipes
     options = {
       include: [:mixers, :garnishes, :liquors, :liqueurs]
     }

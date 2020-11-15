@@ -134,8 +134,9 @@ ActiveRecord::Schema.define(version: 2020_10_28_025529) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "score"
-    t.string "percentage"
+    t.float "score"
+    t.float "percentage"
+    t.string "difficulty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,6 +1,5 @@
 class Recipe < ApplicationRecord
-  #has_many :recipe_ingredients
-  #has_many :ingredients, through: :recipe_ingredients
+
 
   has_many :recipe_liquors
   has_many :liquors, through: :recipe_liquors
@@ -14,7 +13,6 @@ class Recipe < ApplicationRecord
   has_many :users, through: :user_recipes
 
   validates :name, presence: true
-  validates :name, uniqueness: true
 
   serialize :liquors_array, Array
   serialize :liqueurs_array, Array

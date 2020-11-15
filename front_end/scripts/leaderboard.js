@@ -30,4 +30,19 @@ const generateLeaderboard = function(json) {
   const leaderboardData = arrayOfUserData.join(' ');
   leaderboard.innerHTML = `${leaderboardHeader} ${leaderboardData}`
   main.appendChild(leaderboard);
+  linkButtons();
+}
+
+const linkButtons = function() {
+  const main = document.querySelector('main');
+  const homeButton = document.createElement('button');
+  homeButton.classList.add('home-button');
+  homeButton.innerText = 'Go Home';
+  homeButton.addEventListener('click', function() {'<a href='home.html'>/a>'});
+  const quizButton = document.createElement('button');
+  quizButton.classList.add('quiz-button');
+  quizButton.innerText = 'Take a Bartending Quiz';
+  quizButton.addEventListener('click', function() {'<a href='quiz.html'>/a>'});
+  main.appendChild(homeButton);
+  main.appendChild(quizButton);
 }

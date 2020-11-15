@@ -18,8 +18,6 @@ const generateGIF = function() {
   main.appendChild(gifElement);
 }
 
-let i;
-
 function createButtons(json, i, main, randomNumbers) {
   const buttons = document.createElement('div');
   buttons.classList.add('buttons');

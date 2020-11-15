@@ -29,6 +29,7 @@ function createButtons(json, i, main, randomNumbers) {
   const previousCardButton = document.createElement('button');
   previousCardButton.classList.add('previous-card');
   previousCardButton.innerText = 'Previous';
+  buttons.innerHTML = '<br><br>';
   buttons.appendChild(previousCardButton);
   buttons.appendChild(nextCardButton);
   main.appendChild(buttons);

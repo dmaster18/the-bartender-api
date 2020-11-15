@@ -14,7 +14,6 @@ img {
 
 div.app-links {
   background-color: white;
-
 }
 
 div.ingredient-card {
@@ -49,5 +48,9 @@ body {
 form {
   color: white;
   padding: 100px;
+  text-align: center;
+}
+
+div.linkButtons {
   text-align: center;
 }

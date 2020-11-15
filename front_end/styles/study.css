@@ -37,3 +37,7 @@ div.card-back-full-recipe {
 body {
   background-image: url("../images/cartoon_pub.jpg");
 }
+
+div.linkButtons {
+  text-align: center;
+}

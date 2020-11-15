@@ -7,7 +7,7 @@ function fetchCards() {
   const recipes_url = "http://127.0.0.1:3000/recipes"
   return fetch(recipes_url)
   .then(resp => resp.json())
-  .then(json => randomRecipeCard(json, i, randomNumbers)) 
+  .then(json => randomRecipeCard(json, i, randomNumbers))
 }
 
 const generateGIF = function() {
@@ -231,7 +231,6 @@ function generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index 
   revealFullRecipeButton.addEventListener('click', function() {revealFullRecipe(card, cardBackFullRecipe)})
   backRevealFullRecipeButton.addEventListener('click', function() {revealFullRecipe(card, cardBackFullRecipe)})
   return card;
-  //main.appendChild(card);
 }
 
 function revealIngredients(card, cardBackIngredients) {

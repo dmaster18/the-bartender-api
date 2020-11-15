@@ -863,7 +863,6 @@ apple_toddy = Recipe.new(name: 'Apple Toddy')
 applejack = Recipe.new(name: 'Applejack Rabbit')
 apricot_ginger = Recipe.new(name: 'Apricot Ginger Whiskey Sour')
 aquavit_buck = Recipe.new(name: 'Aquavit Buck')
-astro = Recipe.new(name: 'Astro pop')
 autumn = Recipe.new(name: 'Autumn Wassail')
 aviation = Recipe.new(name: 'Aviation')
 b = Recipe.new(name: 'B and B')
@@ -899,13 +898,11 @@ bloody_caesar = Recipe.new(name: 'Bloody Caesar')
 bloody_casear = Recipe.new(name: 'Bloody Casear')
 bloody_maria = Recipe.new(name: 'Bloody Maria')
 bloody_mary = Recipe.new(name: 'Bloody Mary')
-bloody_roman = Recipe.new(name: 'Bloody Roman')
 blow = Recipe.new(name: 'Blow Job')
 blue_blazer = Recipe.new(name: 'Blue Blazer')
 blue_hawaii = Recipe.new(name: 'Blue Hawaii')
 blue_lagoon = Recipe.new(name: 'Blue Lagoon')
 blueberry = Recipe.new(name: 'Blueberry Mojito')
-boat = Recipe.new(name: 'Boat House Punch')
 bobby = Recipe.new(name: 'Bobby Burns')
 boilermaker = Recipe.new(name: 'Boilermaker')
 bootstitch = Recipe.new(name: 'Bootstitch')
@@ -1075,7 +1072,6 @@ horn = Recipe.new(name: 'Horn of the Bulls')
 horses_neck = Recipe.new(name: "Horse's Neck")
 hot_blooded = Recipe.new(name: 'Hot Blooded')
 hot_buttered_rum = Recipe.new(name: 'Hot Buttered Rum')
-hot_caramel = Recipe.new(name: 'Hot Caramel Buttered Rum')
 hot_shot = Recipe.new(name: 'Hot Shot')
 hot_toddy = Recipe.new(name: 'Hot Toddy')
 hummer = Recipe.new(name: 'Hummer')
@@ -1117,7 +1113,6 @@ le = Recipe.new(name: 'Le Grand Louis')
 leeward = Recipe.new(name: 'Leeward Negroni')
 lemon_drop = Recipe.new(name: 'Lemon Drop')
 lemon_drop_martini = Recipe.new(name: 'Lemon drop martini')
-lights = Recipe.new(name: 'Lights Out Punch')
 lime_rickey = Recipe.new(name: 'Lime Rickey')
 lions = Recipe.new(name: "Lion's Tail")
 little = Recipe.new(name: 'Little Kiss')
@@ -1137,7 +1132,6 @@ man_o_war = Recipe.new(name: "Man o' War")
 mango = Recipe.new(name: 'Mango Basil Lemonade')
 manhattan = Recipe.new(name: 'Manhattan')
 mantra = Recipe.new(name: 'Mantra')
-maple = Recipe.new(name: 'Maple Beet Shrub')
 margarita = Recipe.new(name: 'Margarita')
 margaritas = Recipe.new(name: 'Margaritas by the Pitcher')
 martinez = Recipe.new(name: 'Martinez')
@@ -1147,7 +1141,6 @@ mexican = Recipe.new(name: 'Mexican Punch')
 mezcal_mule = Recipe.new(name: 'Mezcal Mule')
 mezcal_negroni = Recipe.new(name: 'Mezcal Negroni')
 miami = Recipe.new(name: 'Miami Vice')
-michelada = Recipe.new(name: 'Michelada')
 milk_honey = Recipe.new(name: 'Milk & Honey')
 millionaire = Recipe.new(name: 'Millionaire')
 mimosa = Recipe.new(name: 'Mimosa')
@@ -1206,7 +1199,6 @@ planters_punch = Recipe.new(name: "Planter's Punch")
 pomelomosa = Recipe.new(name: 'Pomelomosa')
 pomosa = Recipe.new(name: 'Pomosa')
 ponche = Recipe.new(name: 'Ponche Navideño')
-porchcrawler = Recipe.new(name: 'Porchcrawler')
 porchlight = Recipe.new(name: 'Porchlight 7&7')
 porn = Recipe.new(name: 'Porn Star Martini')
 port_royal_punch = Recipe.new(name: 'Port Royal Punch')
@@ -1227,7 +1219,6 @@ rebirth = Recipe.new(name: 'Re:Birth')
 red = Recipe.new(name: 'Red Hook')
 reggae = Recipe.new(name: 'Reggae Rum Punch')
 remember = Recipe.new(name: 'Remember the Maine')
-rickey = Recipe.new(name: 'Rickey')
 ring = Recipe.new(name: 'Ring the Alarm')
 rob = Recipe.new(name: 'Rob Roy')
 rockeys_rum = Recipe.new(name: "Rockey's & Rum Swizzle")
@@ -6586,7 +6577,6 @@ apple_toddy.save
 applejack.save
 apricot_ginger.save
 aquavit_buck.save
-astro.save
 autumn.save
 aviation.save
 b.save
@@ -6622,13 +6612,11 @@ bloody_caesar.save
 bloody_casear.save
 bloody_maria.save
 bloody_mary.save
-bloody_roman.save
 blow.save
 blue_blazer.save
 blue_hawaii.save
 blue_lagoon.save
 blueberry.save
-boat.save
 bobby.save
 boilermaker.save
 bootstitch.save
@@ -6798,7 +6786,6 @@ horn.save
 horses_neck.save
 hot_blooded.save
 hot_buttered_rum.save
-hot_caramel.save
 hot_shot.save
 hot_toddy.save
 hummer.save
@@ -6840,7 +6827,6 @@ le.save
 leeward.save
 lemon_drop.save
 lemon_drop_martini.save
-lights.save
 lime_rickey.save
 lions.save
 little.save
@@ -6860,7 +6846,6 @@ man_o_war.save
 mango.save
 manhattan.save
 mantra.save
-maple.save
 margarita.save
 margaritas.save
 martinez.save
@@ -6870,7 +6855,6 @@ mexican.save
 mezcal_mule.save
 mezcal_negroni.save
 miami.save
-michelada.save
 milk_honey.save
 millionaire.save
 mimosa.save
@@ -6929,7 +6913,6 @@ planters_punch.save
 pomelomosa.save
 pomosa.save
 ponche.save
-porchcrawler.save
 porchlight.save
 porn.save
 port_royal_punch.save
@@ -6950,7 +6933,6 @@ rebirth.save
 red.save
 reggae.save
 remember.save
-rickey.save
 ring.save
 rob.save
 rockeys_rum.save

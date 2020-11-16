@@ -176,9 +176,9 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-    if (questionStatus.innerText === "CORRECT!" || questionStatus.innerText === "WRONG!") {
+    /*if (questionStatus.innerText === "CORRECT!" || questionStatus.innerText === "WRONG!") {
       this.runQuestion(i, randomRecipes, quizScore);;
-    }
+    }*/
   }
 
   runQuestion(i, randomRecipes, quizScore) {

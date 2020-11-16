@@ -20,7 +20,7 @@ class Quiz {
     this.buttonListener();
   }
 
-  setQuizParameters(event) {
+  setQuizParameters() {
     event.preventDefault();
     window.addEventListener('DOMContentLoaded', () => {this.eventListeners()};
   }
@@ -53,8 +53,6 @@ class Quiz {
     let quizScore = 0;
     this.runQuestion(i, randomRecipes, quizScore);
   }
-
-
 
   let allIngredients = [];
   let correctIngredients = [];
@@ -231,4 +229,4 @@ class Quiz {
 
 const quiz = new Quiz();
 
-window.addEventListener('DOMContentLoaded', () => {quiz.render()});
+window.addEventListener('DOMContentLoaded', () => {quiz.setQuizParameters()});

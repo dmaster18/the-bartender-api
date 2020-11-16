@@ -62,8 +62,8 @@ class Study {
     buttons.appendChild(previousCardButton);
     buttons.appendChild(nextCardButton);
     main.appendChild(buttons);
-    this.nextCardButton.addEventListener('click', function(){console.log(i);nextRecipeCard(json, i, randomNumbers)});
-    this.previousCardButton.addEventListener('click', function(){console.log(i);previousRecipeCard(json, i, randomNumbers)});
+    nextCardButton.addEventListener('click', function(){this.nextRecipeCard(json, i, randomNumbers)});
+    previousCardButton.addEventListener('click', function(){this.previousRecipeCard(json, i, randomNumbers)});
   }
 
   nextRecipeCard(json, i, randomNumbers) {

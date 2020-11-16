@@ -222,14 +222,14 @@ class Study {
     cardBackFullRecipe.appendChild(cardBackFullRecipeButtons);
 
     card.appendChild(cardFront);
-    revealIngredientsButton.addEventListener('click', function() {this.revealIngredients(card, cardBackIngredients)})
-    backRevealIngredientsButton.addEventListener('click', function() {this.revealIngredients(card, cardBackIngredients)})
+    revealIngredientsButton.addEventListener('click', () => {this.revealIngredients(card, cardBackIngredients)})
+    backRevealIngredientsButton.addEventListener('click', () => {this.revealIngredients(card, cardBackIngredients)})
 
-    showRecipeNameButton.addEventListener('click', function() {this.showRecipeName(card, cardFront)})
-    secondShowRecipeNameButton.addEventListener('click', function() {this.showRecipeName(card, cardFront)})
+    showRecipeNameButton.addEventListener('click', () => {this.showRecipeName(card, cardFront)})
+    secondShowRecipeNameButton.addEventListener('click', () => {this.showRecipeName(card, cardFront)})
 
-    revealFullRecipeButton.addEventListener('click', function() {this.revealFullRecipe(card, cardBackFullRecipe)})
-    backRevealFullRecipeButton.addEventListener('click', function() {this.revealFullRecipe(card, cardBackFullRecipe)})
+    revealFullRecipeButton.addEventListener('click', () => {this.revealFullRecipe(card, cardBackFullRecipe)})
+    backRevealFullRecipeButton.addEventListener('click', () => {this.revealFullRecipe(card, cardBackFullRecipe)})
     return card;
   }
 
@@ -251,4 +251,4 @@ class Study {
 
 const studySession = new Study();
 
-window.addEventListener('DOMContentLoaded', function() {studySession.render()});
+window.addEventListener('DOMContentLoaded', () => {studySession.render()});

@@ -1,3 +1,8 @@
+const studySession = new Study();
+
+window.addEventListener('DOMContentLoaded', function() {studySession.renderStudy()});
+
+
 window.addEventListener('DOMContentLoaded', function() {fetchCards()});
 
 class Study {
@@ -250,6 +255,4 @@ class Study {
     card.innerHTML = '';
     card.appendChild(cardFront);
   }
-
-
 }

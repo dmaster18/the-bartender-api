@@ -7,7 +7,7 @@ class Study {
       .then(resp => resp.json());
   }
 
-  renderStudy() {
+  render() {
     const main = document.querySelector('main');
     this.renderLoadingState(main);
     let i = 0;
@@ -44,8 +44,8 @@ class Study {
   }
 
   generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
-    const recipeData = json["data"]
-    const recipeCards = recipeData.map(recipe => generatecard(recipe))
+    const recipeData = json['data']
+    const recipeCards = recipeData.map(recipe => this.generatecard(recipe))
     return recipeCards;
   }
 
@@ -251,4 +251,4 @@ class Study {
 
 const studySession = new Study();
 
-window.addEventListener('DOMContentLoaded', function() {studySession.renderStudy()});
+window.addEventListener('DOMContentLoaded', function() {studySession.render()});

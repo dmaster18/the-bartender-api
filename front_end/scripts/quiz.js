@@ -1,7 +1,7 @@
 class Quiz {
   constructor() {}
 
-  inputListener() {button().addEventListener("click", (event) => {
+  inputListener() {button().addEventListener('click', (event) => {
     event.preventDefault()
     const values = [].slice.call(document.querySelectorAll('input'));
     const selectedValues = values.filter(value => value.checked);
@@ -206,7 +206,7 @@ class Quiz {
       formSubmitButton.addEventListener('click', (event) =>
       {
         event.preventDefault();
-        const name = document.getElementById("user[name]").value;
+        const name = document.getElementById('user[name]').value;
         const data = {user: {name, score: quizScore, percentage}}
         const users_url = 'http://127.0.0.1:3000/users'
         return fetch(users_url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)})

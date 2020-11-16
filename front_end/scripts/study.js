@@ -2,7 +2,7 @@ class Study {
   constructor() {}
 
   fetchCards() {
-      const recipes_url = "http://127.0.0.1:3000/recipes/?_limit=10";
+      const recipes_url = 'http://127.0.0.1:3000/recipes/';
       return fetch(recipes_url)
       .then(resp => resp.json());
   }

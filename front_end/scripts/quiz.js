@@ -1,7 +1,8 @@
 class Quiz {
   constructor() {}
 
-  inputListener() {button().addEventListener('click', (event) => {
+  inputListener() {
+    button().addEventListener('click', (event) => {
     event.preventDefault()
     const values = [].slice.call(document.querySelectorAll('input'));
     const selectedValues = values.filter(value => value.checked);
@@ -23,6 +24,9 @@ class Quiz {
     this.fetchQuiz().then(json => this.quizEvent(json, selectedValueNames));
   }
 
+  window.addEventListener('DOMContentLoaded', () => {inputListener(); buttonListener();});
+  const button = function() {return document.querySelector('button');}
+
   quizEvent(json, selectedValueNames) {
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
@@ -40,7 +44,7 @@ class Quiz {
     main.appendChild(gifElement);
   }
 
-  buttonListener() {button().addEventListener('click', fetchQuiz)}
+  buttonListener() {button().addEventListener('click', this.fetchQuiz())}
 
   let allIngredients = [];
   let correctIngredients = [];
@@ -220,9 +224,3 @@ class Quiz {
 const quiz = new Quiz();
 
 window.addEventListener('DOMContentLoaded', () => {quiz.render()});
-
-
-
-window.addEventListener('DOMContentLoaded', () => {inputListener(); buttonListener();});
-
-const button = function() {return document.querySelector('button');}

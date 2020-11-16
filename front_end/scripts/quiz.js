@@ -4,7 +4,6 @@ let correctIngredientNames = [];
 
 class Quiz {
   constructor() {
-
   }
 
   button() {
@@ -32,7 +31,7 @@ class Quiz {
   }
 
   setQuizParameters() {
-    window.addEventListener('DOMContentLoaded', this.eventListeners());
+    this.eventListeners();
   }
 
   fetchQuiz() {

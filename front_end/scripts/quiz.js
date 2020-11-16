@@ -1,7 +1,7 @@
 class Quiz {
   constructor() {}
 
-  inputListener() {button().addEventListener("click", function(event) {
+  inputListener() {button().addEventListener("click", (event) => {
     event.preventDefault()
     const values = [].slice.call(document.querySelectorAll('input'));
     const selectedValues = values.filter(value => value.checked);
@@ -203,7 +203,7 @@ class Quiz {
       leaderboardForm.innerHTML = '<form><label for="user[name]">Enter your name:</label><input type="text" name="user[name]" id="user[name]"><input type="hidden" id="user[score]" name="user[score]"><input type="hidden" id="user[percentage]" name="user[percentage]"><button type="submit" value="Submit" id="form-submit-button">Submit</button></form>'
       main.appendChild(leaderboardForm);
       const formSubmitButton = document.getElementById('form-submit-button');
-      formSubmitButton.addEventListener('click', function(event)
+      formSubmitButton.addEventListener('click', (event) =>
       {
         event.preventDefault();
         const name = document.getElementById("user[name]").value;
@@ -223,6 +223,6 @@ window.addEventListener('DOMContentLoaded', () => {quiz.render()});
 
 
 
-window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
+window.addEventListener('DOMContentLoaded', () => {inputListener(); buttonListener();});
 
 const button = function() {return document.querySelector('button');}

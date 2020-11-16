@@ -13,7 +13,17 @@ class Quiz {
     return selectedValueNames;
   })}
 
-  buttonListener() {button().addEventListener('click', this.fetchQuiz())}
+  buttonListener() {button().addEventListener('click', this.renderQuiz())}
+
+  eventListeners() {
+    this.inputListener();
+    this.buttonListener();
+  }
+
+  setQuizParameters(event) {
+    event.preventDefault();
+    window.addEventListener('DOMContentLoaded', () => {this.eventListeners()};
+  }
 
   fetchQuiz() {
     const recipes_url = 'http://127.0.0.1:3000/recipes';
@@ -21,15 +31,18 @@ class Quiz {
     .then(resp => resp.json())
   }
 
-  render(event) {
+  renderQuiz() {
     const main = document.querySelector('main');
-    event.preventDefault();
-    window.addEventListener('DOMContentLoaded', () => {this.inputListener(); this.buttonListener()});
     this.renderLoadingState(main);
     this.fetchQuiz().then(json => this.quizEvent(json, selectedValueNames));
   }
 
-
+  renderLoadingState(main) {
+    main.innerHTML = ''
+    const gifElement = document.createElement('img');
+    gifElement.src = '../gifs/animated_bartender.gif'
+    main.appendChild(gifElement);
+  }
 
   quizEvent(json, selectedValueNames) {
     const recipes = json['data']
@@ -41,12 +54,7 @@ class Quiz {
     this.runQuestion(i, randomRecipes, quizScore);
   }
 
-  renderLoadingState(main) {
-    main.innerHTML = ''
-    const gifElement = document.createElement('img');
-    gifElement.src = '../gifs/animated_bartender.gif'
-    main.appendChild(gifElement);
-  }
+
 
   let allIngredients = [];
   let correctIngredients = [];
@@ -220,10 +228,6 @@ class Quiz {
       });
     }
 }
-
-const studySession = new Study();
-
-window.addEventListener('DOMContentLoaded', () => {studySession.render()});
 
 const quiz = new Quiz();
 

@@ -59,7 +59,7 @@ div.linkButtons {
   text-align: center;
 }
 
-h1{
+h1.recipe-name, {
   text-align: 'center';
   color: white;
 }

@@ -76,7 +76,7 @@ class Quiz {
     const ingredientCardsContainer = document.createElement('div');
     ingredientCardsContainer.classList.add('ingredient-cards-container');
     let i = 1;
-    const randomizedIngredients = shuffle(recipe.attributes.all_ingredients.flat().flat())
+    const randomizedIngredients = this.shuffle(recipe.attributes.all_ingredients.flat().flat())
     randomizedIngredients.forEach(ingredient => {
       const ingredientCard = document.createElement('div');
       ingredientCard.classList.add('ingredient-card');
@@ -135,7 +135,7 @@ class Quiz {
     const questions = []
     for (let i = 0; i < quizLength; i++) {
       const randomNumber = Math.floor(Math.random() * recipes.length);
-      recipe = recipes[randomNumber];
+      const recipe = recipes[randomNumber];
       const question = this.generateQuestion(recipe);
       if(!questions.includes(recipe)) {
         questions.push(recipe);

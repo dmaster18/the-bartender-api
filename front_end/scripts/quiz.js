@@ -25,13 +25,9 @@ class Quiz {
     this.button().addEventListener('click', () => {this.renderQuiz()});
   }
 
-  eventListeners() {
+  initiateQuiz() {
     this.inputListener();
     this.buttonListener();
-  }
-
-  setQuizParameters() {
-    this.eventListeners();
   }
 
   fetchQuiz() {
@@ -230,4 +226,4 @@ class Quiz {
 
 const quiz = new Quiz();
 
-window.addEventListener('DOMContentLoaded', () => {quiz.setQuizParameters()});
+window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz()});

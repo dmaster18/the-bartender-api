@@ -92,7 +92,7 @@ class Quiz {
   }
 
   evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
-    const main = document.querySelector('main')
+    const main = document.querySelector('main');
     const feedback = document.createElement('h1');
     if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
       document.getElementById(this.id).style.backgroundColor = 'green';
@@ -102,10 +102,9 @@ class Quiz {
       if (questionScore.length === correctIngredientNames.length) {
         questionStatus.innerText = 'CORRECT!';
         questionStatus.style.color = 'green';
-        //main.appendChild(questionStatus);
+        main.appendChild(questionStatus);
         i++;
         quizScore += 1;
-        runQuestion(i, randomRecipes, quizScore);
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -116,10 +115,9 @@ class Quiz {
       if (incorrect.length === 3) {
         questionStatus.innerText = 'WRONG!';
         questionStatus.style.color = 'red';
-        //main.appendChild(questionStatus);
+        main.appendChild(questionStatus);
         i++;
         quizScore +=0;
-        runQuestion(i, randomRecipes, quizScore);
       }
     }
   }
@@ -178,6 +176,9 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+    if (questionStatus.innerText === "CORRECT!" || questionStatus.innerText === "WRONG!") {
+      this.runQuestion(i, randomRecipes, quizScore);;
+    }
   }
 
   runQuestion(i, randomRecipes, quizScore) {
@@ -188,7 +189,6 @@ class Quiz {
     const questionStatus = document.createElement('h1');
     questionStatus.classList.add('question-status');
     questionStatus.style.textAlign = 'center'
-    main.appendChild = questionStatus;
     if (i !== randomRecipes.length) {
       this.questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
     } else {

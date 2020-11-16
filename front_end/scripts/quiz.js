@@ -188,21 +188,16 @@ class Quiz {
     let incorrect = [];
     const questionStatus = document.createElement('h1');
     questionStatus.classList.add('question-status');
-    questionStatus.style.textAlign = 'center'
     if (i !== randomRecipes.length) {
       this.questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
     } else {
       main.innerHTML = '';
       myQuizScore = document.createElement('h1');
       myQuizScore.innerText = `Your Quiz Score Is: ${quizScore} Points!`;
-      myQuizScore.style.textAlign = 'center';
-      myQuizScore.style.color = 'white';
       main.appendChild(myQuizScore);
       myQuizPercentage = document.createElement('h1');
       percentage = 100*(quizScore/randomRecipes.length);
       myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
-      myQuizPercentage.style.textAlign = 'center';
-      myQuizPercentage.style.color = 'white';
       main.appendChild(myQuizPercentage);
       const submitScoreButtonContainer = document.createElement('div');
       submitScoreButtonContainer.style.textAlign = 'center';

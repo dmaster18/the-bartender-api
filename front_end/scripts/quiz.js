@@ -5,19 +5,24 @@ class Quiz {
     this.correctIngredientNames = [];
   }
 
-  button() {return document.querySelector('button');}
+  button() {
+    return document.querySelector('button');
+  }
 
   inputListener() {
     this.button().addEventListener('click', (event) => {
-    event.preventDefault()
-    const values = [].slice.call(document.querySelectorAll('input'));
-    const selectedValues = values.filter(value => value.checked);
-    selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
-    console.log(selectedValueNames)
-    return selectedValueNames;
-  })}
+      event.preventDefault()
+      const values = [].slice.call(document.querySelectorAll('input'));
+      const selectedValues = values.filter(value => value.checked);
+      selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
+      console.log(selectedValueNames)
+      return selectedValueNames;
+    }
+  )}
 
-  buttonListener() {this.button().addEventListener('click', () => {this.renderQuiz()})}
+  buttonListener() {
+    this.button().addEventListener('click', () => {this.renderQuiz()});
+  }
 
   eventListeners() {
     this.inputListener();
@@ -25,7 +30,6 @@ class Quiz {
   }
 
   setQuizParameters() {
-    event.preventDefault();
     window.addEventListener('DOMContentLoaded', () => {this.eventListeners()});
   }
 

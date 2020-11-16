@@ -1,5 +1,9 @@
 class Quiz {
-  constructor() {}
+  constructor() {
+    this.allIngredients = [];
+    this.correctIngredients = [];
+    this.correctIngredientNames = [];
+  }
 
   //const button = function() {return document.querySelector('button');}
 
@@ -22,7 +26,7 @@ class Quiz {
 
   setQuizParameters() {
     event.preventDefault();
-    window.addEventListener('DOMContentLoaded', () => {this.eventListeners()};
+    window.addEventListener('DOMContentLoaded', () => {this.eventListeners()});
   }
 
   fetchQuiz() {
@@ -53,10 +57,6 @@ class Quiz {
     let quizScore = 0;
     this.runQuestion(i, randomRecipes, quizScore);
   }
-
-  let allIngredients = [];
-  let correctIngredients = [];
-  let correctIngredientNames = [];
 
   generateQuestion(recipe) {
     const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();

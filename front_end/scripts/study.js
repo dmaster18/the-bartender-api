@@ -1,10 +1,3 @@
-const studySession = new Study();
-
-window.addEventListener('DOMContentLoaded', function() {studySession.renderStudy()});
-
-
-window.addEventListener('DOMContentLoaded', function() {fetchCards()});
-
 class Study {
   constructor() {}
 
@@ -16,14 +9,14 @@ class Study {
 
   renderStudy() {
     const main = document.querySelector('main');
-    this.renderLoadingState();
+    this.renderLoadingState(main);
     main.innerHTML = '';
     let i = 0;
     const randomNumbers = this.randomNumberGenerator();
     this.fetchCards().then(json => this.randomRecipeCard(json, i, randomNumbers))
   }
 
-  renderLoadingState() {
+  renderLoadingState(main) {
     const gifElement = document.createElement('img');
     gifElement.src = '../gifs/dog_bartender.gif'
     main.appendChild(gifElement);
@@ -256,3 +249,7 @@ class Study {
     card.appendChild(cardFront);
   }
 }
+
+const studySession = new Study();
+
+window.addEventListener('DOMContentLoaded', function() {studySession.renderStudy()});

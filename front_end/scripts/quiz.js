@@ -1,6 +1,7 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
 
+
 class Quiz {
   constructor() {
 
@@ -99,12 +100,12 @@ class Quiz {
       this.appendChild(feedback);
       questionScore.push('✓');
       if (questionScore.length === correctIngredientNames.length) {
-        questionStatus.innerText = 'CORRECT!'
-        questionStatus.style.textAlign = 'center'
-        main.appendChild(questionStatus);
+        questionStatus.innerText = 'CORRECT!';
+        questionStatus.style.color = 'green';
+        //main.appendChild(questionStatus);
         i++;
         quizScore += 1;
-        this.runQuestion(i, randomRecipes, quizScore);
+        runQuestion(i, randomRecipes, quizScore)};
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -113,12 +114,12 @@ class Quiz {
       this.appendChild(feedback);
       incorrect.push('X');
       if (incorrect.length === 3) {
-        questionStatus.innerText = 'WRONG!'
-        questionStatus.style.textAlign = 'center'
-        main.appendChild(questionStatus);
+        questionStatus.innerText = 'WRONG!';
+        questionStatus.style.color = 'red';
+        //main.appendChild(questionStatus);
         i++;
         quizScore +=0;
-        this.runQuestion(i, randomRecipes, quizScore);
+        () => {this.runQuestion(i, randomRecipes, quizScore)};
       }
     }
   }
@@ -186,6 +187,8 @@ class Quiz {
     let incorrect = [];
     const questionStatus = document.createElement('h1');
     questionStatus.classList.add('question-status');
+    questionStatus.style.textAlign = 'center'
+    main.appendChild = questionStatus;
     if (i !== randomRecipes.length) {
       this.questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
     } else {

@@ -1,5 +1,3 @@
-window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
-
 class Quiz {
   constructor() {}
 
@@ -106,7 +104,7 @@ class Quiz {
   }
 
   cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
-      card.addEventListener('click', function() {
+      card.addEventListener('click', () => {
         evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus)
       })}
   )}
@@ -192,7 +190,7 @@ class Quiz {
       submitScore.style.textAlign = 'center';
       submitScoreButtonContainer.appendChild(submitScore);
       main.appendChild(submitScoreButtonContainer);
-      submitScore.addEventListener('click', function() {submitUserData(quizScore, percentage)});
+      submitScore.addEventListener('click', () => {submitUserData(quizScore, percentage)});
     }
   }
 
@@ -218,5 +216,6 @@ class Quiz {
 
 }
 
+window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
 
 const button = function() {return document.querySelector('button');}

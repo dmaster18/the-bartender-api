@@ -1,8 +1,9 @@
 class Quiz {
   constructor() {
-    this.allIngredients = [];
-    this.correctIngredients = [];
+    //this.allIngredients = [];
+    //this.correctIngredients = [];
     this.correctIngredientNames = [];
+    this.selectedValueNames = [];
   }
 
   button() {
@@ -14,9 +15,9 @@ class Quiz {
       event.preventDefault()
       const values = [].slice.call(document.querySelectorAll('input'));
       const selectedValues = values.filter(value => value.checked);
-      selectedValueNames = selectedValues.map(selectedValue => selectedValue.value);
-      console.log(selectedValueNames)
-      return selectedValueNames;
+      this.selectedValueNames.push(selectedValues.map(selectedValue => selectedValue.value));
+      console.log(this.selectedValueNames)
+      return this.selectedValueNames;
     }
   )}
 
@@ -30,7 +31,7 @@ class Quiz {
   }
 
   setQuizParameters() {
-    window.addEventListener('DOMContentLoaded', () => {this.eventListeners()});
+    window.addEventListener('DOMContentLoaded', this.eventListeners());
   }
 
   fetchQuiz() {
@@ -42,7 +43,7 @@ class Quiz {
   renderQuiz() {
     const main = document.querySelector('main');
     this.renderLoadingState(main);
-    this.fetchQuiz().then(json => this.quizEvent(json, selectedValueNames));
+    this.fetchQuiz().then(json => this.quizEvent(json));
   }
 
   renderLoadingState(main) {
@@ -52,10 +53,10 @@ class Quiz {
     main.appendChild(gifElement);
   }
 
-  quizEvent(json, selectedValueNames) {
+  quizEvent(json) {
     const recipes = json['data']
-    const quizDifficulty = selectedValueNames[0];
-    const quizLength = parseInt(selectedValueNames[1]);
+    const quizDifficulty = this.selectedValueNames[0];
+    const quizLength = parseInt(this.selectedValueNames[1]);
     const randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
     let i = 0;
     let quizScore = 0;
@@ -64,7 +65,7 @@ class Quiz {
 
   generateQuestion(recipe) {
     const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();
-    correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
+    this.correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
     const main = document.querySelector('main');
     const recipeName = document.createElement('h1');
     recipeName.classList.add('recipe-name');
@@ -92,12 +93,12 @@ class Quiz {
   evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
+    if (this.correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
       document.getElementById(this.id).style.backgroundColor = 'green';
       feedback.innerText = '✓';
       this.appendChild(feedback);
       questionScore.push('✓');
-      if (questionScore.length === correctIngredientNames.length) {
+      if (questionScore.length === this.correctIngredientNames.length) {
         questionStatus.innerText = 'CORRECT!'
         questionStatus.style.textAlign = 'center'
         main.appendChild(questionStatus);

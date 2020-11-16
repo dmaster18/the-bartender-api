@@ -134,7 +134,7 @@ class Quiz {
   randomlyGenerateQuestion(recipes, quizLength) {
     const questions = []
     for (let i = 0; i < quizLength; i++) {
-      randomNumber = Math.floor(Math.random() * recipes.length);
+      const randomNumber = Math.floor(Math.random() * recipes.length);
       recipe = recipes[randomNumber];
       const question = this.generateQuestion(recipe);
       if(!questions.includes(recipe)) {

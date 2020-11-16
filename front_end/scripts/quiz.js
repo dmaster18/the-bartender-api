@@ -10,13 +10,30 @@ class Quiz {
     return selectedValueNames;
   })}
 
-  fetchQuiz(event) {
-    event.preventDefault();
-    generateGIF();
+  fetchQuiz() {
     const recipes_url = 'http://127.0.0.1:3000/recipes';
     return fetch(recipes_url)
     .then(resp => resp.json())
-    .then(json => quizEvent(json, selectedValueNames));
+  }
+
+  render(event) {
+    const main = document.querySelector('main');
+    event.preventDefault();
+    generateGIF();
+    this.renderLoadingState(main);
+    let i = 0;
+    const randomNumbers = this.randomNumberGenerator();
+    this.fetchQuiz().then(json => quizEvent(json, selectedValueNames));
+  }
+
+  quizEvent(json, selectedValueNames) {
+    const recipes = json['data']
+    const quizDifficulty = selectedValueNames[0];
+    const quizLength = parseInt(selectedValueNames[1]);
+    const randomRecipes = randomRecipeGenerator(recipes, quizDifficulty, quizLength);
+    let i = 0;
+    let quizScore = 0;
+    runQuestion(i, randomRecipes, quizScore);
   }
 
   generateGIF() {
@@ -29,15 +46,7 @@ class Quiz {
 
   buttonListener() {button().addEventListener('click', fetchQuiz)}
 
-  quizEvent(json, selectedValueNames) {
-    const recipes = json['data']
-    const quizDifficulty = selectedValueNames[0];
-    const quizLength = parseInt(selectedValueNames[1]);
-    const randomRecipes = randomRecipeGenerator(recipes, quizDifficulty, quizLength);
-    let i = 0;
-    let quizScore = 0;
-    runQuestion(i, randomRecipes, quizScore);
-  }
+
 
   let allIngredients = [];
   let correctIngredients = [];
@@ -215,6 +224,12 @@ class Quiz {
 
 
 }
+
+const quiz = new Quiz();
+
+window.addEventListener('DOMContentLoaded', () => {quiz.render()});
+
+
 
 window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
 

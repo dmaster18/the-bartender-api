@@ -24,62 +24,67 @@ class Study {
     main.appendChild(gifElement);
   }
 
-}
-
-
-}
-
-
-
-function createButtons(json, i, main, randomNumbers) {
-  const buttons = document.createElement('div');
-  buttons.classList.add('buttons');
-  const nextCardButton = document.createElement('button');
-  nextCardButton.classList.add('next-card');
-  nextCardButton.innerText = 'Next';
-  const previousCardButton = document.createElement('button');
-  previousCardButton.classList.add('previous-card');
-  previousCardButton.innerText = 'Previous';
-  buttons.innerHTML = '<br><br>';
-  buttons.appendChild(previousCardButton);
-  buttons.appendChild(nextCardButton);
-  main.appendChild(buttons);
-  nextCardButton.addEventListener('click', function(){console.log(i);nextRecipeCard(json, i, randomNumbers)});
-  previousCardButton.addEventListener('click', function(){console.log(i);previousRecipeCard(json, i, randomNumbers)});
-}
-
-function randomRecipeCard(json, i, randomNumbers) {
-  const main = document.querySelector('main');
-  main.innerHTML = '';
-  const recipeCards = generateCards(json);
-  const randomNumber = randomNumbers[i];
-  const recipeCard = recipeCards[randomNumber];
-  main.appendChild(recipeCard);
-  createButtons(json, i, main, randomNumbers);
-}
-
-function nextRecipeCard(json, i, randomNumbers) {
-  if (i < 498) {i++;}
-  randomRecipeCard(json, i, randomNumbers);
-}
-
-function previousRecipeCard(json, i, randomNumbers) {
-  if (i > 0) {i--;}
-  randomRecipeCard(json, i, randomNumbers);
-}
-
-
-const randomNumberGenerator = function() { //Create limit paramter to return fewer recipes (to decrease load times)
-  const randomNumbers = []
-  for(let i = 1; i <= 498; i++) {
-    randomNumbers.push(i);
+  randomNumberGenerator() { //Create limit parameter to return fewer recipes (to decrease load times)
+    const randomNumbers = []
+    for(let i = 1; i <= 498; i++) {
+      randomNumbers.push(i);
+    }
+    return this.shuffle(randomNumbers);
   }
-  return shuffle(randomNumbers);
+
+  shuffle(randomNumbers) {
+    return randomNumbers.sort(() => Math.random() - 0.5);
+  }
+
+  randomRecipeCard(json, i, randomNumbers) {
+    const main = document.querySelector('main');
+    main.innerHTML = '';
+    const recipeCards = this.generateCards(json);
+    const randomNumber = randomNumbers[i];
+    const recipeCard = recipeCards[randomNumber];
+    main.appendChild(recipeCard);
+    this.createButtons(json, i, main, randomNumbers);
+  }
+
+  createButtons(json, i, main, randomNumbers) {
+    const buttons = document.createElement('div');
+    buttons.classList.add('buttons');
+    const nextCardButton = document.createElement('button');
+    nextCardButton.classList.add('next-card');
+    nextCardButton.innerText = 'Next';
+    const previousCardButton = document.createElement('button');
+    previousCardButton.classList.add('previous-card');
+    previousCardButton.innerText = 'Previous';
+    buttons.innerHTML = '<br><br>';
+    buttons.appendChild(previousCardButton);
+    buttons.appendChild(nextCardButton);
+    main.appendChild(buttons);
+    nextCardButton.addEventListener('click', function(){console.log(i);nextRecipeCard(json, i, randomNumbers)});
+    previousCardButton.addEventListener('click', function(){console.log(i);previousRecipeCard(json, i, randomNumbers)});
+  }
+
+  nextRecipeCard(json, i, randomNumbers) {
+    if (i < 498) {i++;}
+    this.randomRecipeCard(json, i, randomNumbers);
+  }
+
+  previousRecipeCard(json, i, randomNumbers) {
+    if (i > 0) {i--;}
+    this.randomRecipeCard(json, i, randomNumbers);
+  }
+
 }
 
-function shuffle(randomNumbers) {
-  return randomNumbers.sort(() => Math.random() - 0.5);
-}
+
+
+
+
+
+
+
+
+
+
 
 function generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
   const recipeData = json["data"]

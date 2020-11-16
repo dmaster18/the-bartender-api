@@ -5,10 +5,10 @@ class Quiz {
     this.correctIngredientNames = [];
   }
 
-  //const button = function() {return document.querySelector('button');}
+  button() {return document.querySelector('button');}
 
   inputListener() {
-    document.querySelector('button').addEventListener('click', (event) => {
+    this.button().addEventListener('click', (event) => {
     event.preventDefault()
     const values = [].slice.call(document.querySelectorAll('input'));
     const selectedValues = values.filter(value => value.checked);
@@ -17,7 +17,7 @@ class Quiz {
     return selectedValueNames;
   })}
 
-  buttonListener() {button().addEventListener('click', this.renderQuiz())}
+  buttonListener() {this.button().addEventListener('click', () => {this.renderQuiz()})}
 
   eventListeners() {
     this.inputListener();

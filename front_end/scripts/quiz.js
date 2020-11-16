@@ -17,7 +17,7 @@ class Quiz {
       event.preventDefault()
       const values = [].slice.call(document.querySelectorAll('input'));
       const selectedValues = values.filter(value => value.checked);
-      selectedValueNames.push(selectedValues.map(selectedValue => selectedValue.value));
+      selectedValueNames = (selectedValues.map(selectedValue => selectedValue.value));
       console.log(selectedValueNames)
       return selectedValueNames;
     }

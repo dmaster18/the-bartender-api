@@ -1,11 +1,9 @@
 let selectedValueNames = [];
+let correctIngredientNames = [];
 
 class Quiz {
   constructor() {
-    //this.allIngredients = [];
-    //this.correctIngredients = [];
-    this.correctIngredientNames = [];
-    //this.selectedValueNames = [];
+
   }
 
   button() {
@@ -67,7 +65,7 @@ class Quiz {
 
   generateQuestion(recipe) {
     const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();
-    this.correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
+    correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
     const main = document.querySelector('main');
     const recipeName = document.createElement('h1');
     recipeName.classList.add('recipe-name');
@@ -95,12 +93,12 @@ class Quiz {
   evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
-    if (this.correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
+    if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
       document.getElementById(this.id).style.backgroundColor = 'green';
       feedback.innerText = '✓';
       this.appendChild(feedback);
       questionScore.push('✓');
-      if (questionScore.length === this.correctIngredientNames.length) {
+      if (questionScore.length === correctIngredientNames.length) {
         questionStatus.innerText = 'CORRECT!'
         questionStatus.style.textAlign = 'center'
         main.appendChild(questionStatus);

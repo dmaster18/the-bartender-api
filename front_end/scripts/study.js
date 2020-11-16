@@ -2,7 +2,7 @@ class Study {
   constructor() {}
 
   fetchCards() {
-      const recipes_url = "http://127.0.0.1:3000/recipes";
+      const recipes_url = "http://127.0.0.1:3000/recipes/?_limit=10";
       return fetch(recipes_url)
       .then(resp => resp.json());
   }
@@ -10,7 +10,6 @@ class Study {
   renderStudy() {
     const main = document.querySelector('main');
     this.renderLoadingState(main);
-    main.innerHTML = '';
     let i = 0;
     const randomNumbers = this.randomNumberGenerator();
     this.fetchCards().then(json => this.randomRecipeCard(json, i, randomNumbers))

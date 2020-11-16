@@ -9,23 +9,27 @@ class Study {
       .then(resp => resp.json());
   }
 
-  
+  renderStudy() {
+    const main = document.querySelector('main');
+    this.renderLoadingState();
+    main.innerHTML = '';
+    let i = 0;
+    const randomNumbers = this.randomNumberGenerator();
+    this.fetchCards().then(json => this.randomRecipeCard(json, i, randomNumbers))
+  }
+
+  renderLoadingState() {
+    const gifElement = document.createElement('img');
+    gifElement.src = '../gifs/dog_bartender.gif'
+    main.appendChild(gifElement);
+  }
+
 }
 
 
-  let i = 0;
-  const randomNumbers = randomNumberGenerator();
-  generateGIF();
-  .then(json => randomRecipeCard(json, i, randomNumbers))
 }
 
-const generateGIF = function() {
-  const main = document.querySelector('main');
-  main.innerHTML = ''
-  const gifElement = document.createElement('img');
-  gifElement.src = '../gifs/dog_bartender.gif'
-  main.appendChild(gifElement);
-}
+
 
 function createButtons(json, i, main, randomNumbers) {
   const buttons = document.createElement('div');

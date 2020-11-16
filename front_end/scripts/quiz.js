@@ -19,10 +19,7 @@ class Quiz {
   render(event) {
     const main = document.querySelector('main');
     event.preventDefault();
-    generateGIF();
     this.renderLoadingState(main);
-    let i = 0;
-    const randomNumbers = this.randomNumberGenerator();
     this.fetchQuiz().then(json => quizEvent(json, selectedValueNames));
   }
 
@@ -36,8 +33,7 @@ class Quiz {
     runQuestion(i, randomRecipes, quizScore);
   }
 
-  generateGIF() {
-    const main = document.querySelector('main');
+  renderLoadingState(main) {
     main.innerHTML = ''
     const gifElement = document.createElement('img');
     gifElement.src = '../gifs/animated_bartender.gif'

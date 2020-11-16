@@ -1,6 +1,9 @@
+window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
+
 class Quiz {
   constructor() {}
-  const inputListener = function() {button().addEventListener("click", function(event) {
+
+  inputListener() {button().addEventListener("click", function(event) {
     event.preventDefault()
     const values = [].slice.call(document.querySelectorAll('input'));
     const selectedValues = values.filter(value => value.checked);
@@ -9,9 +12,7 @@ class Quiz {
     return selectedValueNames;
   })}
 
-  window.addEventListener('DOMContentLoaded', function() {inputListener(); buttonListener();});
-
-  const fetchQuiz = function(event) {
+  fetchQuiz(event) {
     event.preventDefault();
     generateGIF();
     const recipes_url = 'http://127.0.0.1:3000/recipes';
@@ -20,7 +21,7 @@ class Quiz {
     .then(json => quizEvent(json, selectedValueNames));
   }
 
-  const generateGIF = function() {
+  generateGIF() {
     const main = document.querySelector('main');
     main.innerHTML = ''
     const gifElement = document.createElement('img');
@@ -28,12 +29,9 @@ class Quiz {
     main.appendChild(gifElement);
   }
 
-  const buttonListener = function() {button().addEventListener('click', fetchQuiz)}
+  buttonListener() {button().addEventListener('click', fetchQuiz)}
 
-  //window.addEventListener('DOMContentLoaded', buttonListener);
-
-
-  const quizEvent = function(json, selectedValueNames) {
+  quizEvent(json, selectedValueNames) {
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
@@ -47,7 +45,7 @@ class Quiz {
   let correctIngredients = [];
   let correctIngredientNames = [];
 
-  function generateQuestion(recipe) {
+  generateQuestion(recipe) {
     const correctIngredients = recipe.attributes.correct_ingredients.flat().flat();
     correctIngredientNames = correctIngredients.flat().map(correctIngredient => correctIngredient.name);
     const main = document.querySelector('main');
@@ -70,11 +68,11 @@ class Quiz {
     main.appendChild(ingredientCardsContainer);
   }
 
-  function shuffle(allIngredients) {
+  shuffle(allIngredients) {
     return allIngredients.sort(() => Math.random() - 0.5);
   }
 
-  const evaluateResponse = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
+  evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main')
     const feedback = document.createElement('h1');
     if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
@@ -107,13 +105,13 @@ class Quiz {
     }
   }
 
-  const cardEventListener = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+  cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', function() {
         evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus)
       })}
   )}
 
-  const randomlyGenerateQuestion = function(recipes, quizLength) {
+  randomlyGenerateQuestion(recipes, quizLength) {
     const questions = []
     for (let i = 0; i < quizLength; i++) {
       randomNumber = Math.floor(Math.random() * recipes.length);
@@ -126,7 +124,7 @@ class Quiz {
     return questions;
   }
 
-  const randomRecipeGenerator = function(recipes, quizDifficulty, quizLength) {
+  randomRecipeGenerator(recipes, quizDifficulty, quizLength) {
     let randomRecipes;
     const questions = [];
     const main = document.querySelector('main');
@@ -159,12 +157,12 @@ class Quiz {
   }
 
 
-  const questionEvent = function(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
+  questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     generateQuestion(randomRecipes[i]);
     cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 
-  const runQuestion = function(i, randomRecipes, quizScore) {
+  runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = ''
     let questionScore = [];
@@ -198,7 +196,7 @@ class Quiz {
     }
   }
 
-   const submitUserData = function(quizScore, percentage){
+   submitUserData(quizScore, percentage){
       const main = document.querySelector('main');
       main.innerHTML = '';
       const leaderboardForm = document.createElement('div');

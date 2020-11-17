@@ -53,7 +53,7 @@ class Quiz {
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
-    randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
+    const randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
     let i = 0;
     let quizScore = 0;
     this.runQuestion(i, randomRecipes, quizScore);
@@ -173,6 +173,7 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+    this.nextQuestionButtonListener(i, randomRecipes, quizScore);
   }
 
   /*nextQuestionButton() {

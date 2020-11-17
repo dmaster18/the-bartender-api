@@ -1,4 +1,3 @@
-this.quizScorelet selectedValueNames = [];
 let correctIngredientNames = [];
 /*let randomRecipes = [];
 let i = 0;
@@ -9,6 +8,7 @@ class Quiz {
     this.i = i;
     this.quizScore = quizScore;
     this.randomRecipes = randomRecipes;
+    this.selectedValueNames = [];
   }
 
   button() {
@@ -20,9 +20,9 @@ class Quiz {
       event.preventDefault()
       const values = [].slice.call(document.querySelectorAll('input'));
       const selectedValues = values.filter(value => value.checked);
-      selectedValueNames = (selectedValues.map(selectedValue => selectedValue.value));
-      console.log(selectedValueNames)
-      return selectedValueNames;
+      this.selectedValueNames = (selectedValues.map(selectedValue => selectedValue.value));
+      console.log(this.selectedValueNames)
+      return this.selectedValueNames;
     }
   )}
 
@@ -56,8 +56,8 @@ class Quiz {
 
   quizEvent(json) {
     const recipes = json['data']
-    const quizDifficulty = selectedValueNames[0];
-    const quizLength = parseInt(selectedValueNames[1]);
+    const quizDifficulty = this.selectedValueNames[0];
+    const quizLength = parseInt(this.selectedValueNames[1]);
     this.randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
     this.runQuestion();
   }

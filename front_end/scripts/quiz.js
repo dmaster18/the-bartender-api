@@ -101,6 +101,13 @@ class Quiz {
         main.innerHTML = '';
         main.appendChild(questionStatus);
         quizScore += 1;
+        const nextQuestionButtonContainer = document.createElement('div');
+        nextQuestionButtonContainer.id = 'next-question-container';
+        const nextQuestionButton = document.createElement('button');
+        nextQuestionButton.id = 'next-question';
+        nextQuestionButton.innerHTML = 'Next Question';
+        nextQuestionButtonContainer.appendChild(nextQuestionButton);
+        main.appendChild(nextQuestionButtonContainer);
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -114,6 +121,13 @@ class Quiz {
         main.innerHTML = '';
         main.appendChild(questionStatus);
         quizScore +=0;
+        const nextQuestionButtonContainer = document.createElement('div');
+        nextQuestionButtonContainer.id = 'next-question-container';
+        const nextQuestionButton = document.createElement('button');
+        nextQuestionButton.id = 'next-question';
+        nextQuestionButton.innerHTML = 'Next Question';
+        nextQuestionButtonContainer.appendChild(nextQuestionButton);
+        main.appendChild(nextQuestionButtonContainer);
       }
     }
   }

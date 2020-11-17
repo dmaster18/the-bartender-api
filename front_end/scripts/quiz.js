@@ -175,12 +175,12 @@ class Quiz {
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 
-  nextQuestionButton() {
+  /*nextQuestionButton() {
     return document.getElementById('next-question');
-  }
+  }*/
 
   nextQuestionButtonListener(i, randomRecipes, quizScore) {
-    this.nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
+    document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
       i++;
       this.runQuestion(i, randomRecipes, quizScore);
     })

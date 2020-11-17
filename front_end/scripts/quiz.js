@@ -227,7 +227,7 @@ class Quiz {
       myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
       main.appendChild(myQuizPercentage);
       const submitScoreButtonContainer = document.createElement('div');
-      submitScoreButtonContainer.class.add('submit-button-container')
+      submitScoreButtonContainer.classList.add('submit-button-container')
       const submitScore = document.createElement('button');
       submitScore.classList.add('submit-results');
       submitScore.innerText = 'Submit Score';

@@ -5,9 +5,10 @@ let quizScore;*/
 
 class Quiz {
   constructor(i, quizScore, randomRecipes) {
-    this.i = i;
-    this.quizScore = quizScore;
-    this.randomRecipes = randomRecipes;
+    this.i = 0;
+    this.quizScore = 0;
+    this.randomRecipes = [];
+    //this.correctIngredientNames = [];
     this.selectedValueNames = [];
   }
 
@@ -185,7 +186,7 @@ class Quiz {
   }
 
   questionEvent(questionScore, incorrect, questionStatus) {
-    this.generateQuestion(this.randomRecipes[i]);
+    this.generateQuestion(this.randomRecipes[this.i]);
     this.cardEventListener(questionScore, incorrect, questionStatus);
   }
 
@@ -205,7 +206,7 @@ class Quiz {
 
   nextQuestionButtonListener() {
     this.nextQuestionButtonFinder().addEventListener('click', () => {
-      i++;
+      this.i++;
       this.runQuestion();
     })
   }
@@ -218,7 +219,7 @@ class Quiz {
     let incorrect = [];
     const questionStatus = document.createElement('h1');
     questionStatus.classList.add('question-status');
-    if (i !== this.randomRecipes.length) {
+    if (this.i !== this.randomRecipes.length) {
       this.questionEvent(questionScore, incorrect, questionStatus);
     } else {
       main.innerHTML = '';

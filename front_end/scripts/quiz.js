@@ -1,7 +1,6 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
 
-
 class Quiz {
   constructor() {
   }
@@ -101,10 +100,7 @@ class Quiz {
         main.appendChild(questionStatus);
         //i++;
         quizScore += 1;
-        document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
-          i++;
-          runQuestion(i, randomRecipes, quizScore);
-        })
+
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -119,10 +115,6 @@ class Quiz {
         main.appendChild(questionStatus);
         //i++;
         quizScore +=0;
-        document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
-          i++;
-          runQuestion(i, randomRecipes, quizScore);
-        })
       }
     }
   }
@@ -183,9 +175,6 @@ class Quiz {
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 
-  /*nextQuestionButton() {
-    return document.getElementById('next-question');
-  }*/
 
   nextQuestionButtonListener(i, randomRecipes, quizScore) {
     document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {

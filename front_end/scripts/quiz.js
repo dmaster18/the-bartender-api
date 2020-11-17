@@ -53,7 +53,7 @@ class Quiz {
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
-    const randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
+    randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
     let i = 0;
     let quizScore = 0;
     this.runQuestion(i, randomRecipes, quizScore);
@@ -189,8 +189,6 @@ class Quiz {
   runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = '';
-
-
     this.nextQuestionButtonListener(i, randomRecipes, quizScore);
     let questionScore = [];
     let incorrect = [];

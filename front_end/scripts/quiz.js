@@ -60,7 +60,7 @@ class Quiz {
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
     randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
-    this.runQuestion(i, randomRecipes, quizScore);
+    this.runQuestion();
   }
 
   generateQuestion(recipe) {
@@ -207,12 +207,12 @@ class Quiz {
   nextQuestionButtonListener() {
     this.nextQuestionButtonFinder().addEventListener('click', () => {
       i++;
-      this.runQuestion(i, randomRecipes, quizScore);
+      this.runQuestion();
     })
   }
 
 
-  runQuestion(i, randomRecipes, quizScore) {
+  runQuestion() {
     const main = document.querySelector('main');
     main.innerHTML = '';
     let questionScore = [];
@@ -260,6 +260,6 @@ class Quiz {
     }
 }
 
-const quiz = new Quiz();
+const quiz = new Quiz(0, 0, []);
 
 window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz()});

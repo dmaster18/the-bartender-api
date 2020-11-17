@@ -184,6 +184,7 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+    this.nextQuestionButtonListener();
   }
 
   nextQuestionButton() {
@@ -196,8 +197,13 @@ class Quiz {
     main.appendChild(nextQuestionButtonContainer);
   }
 
-  nextQuestionButtonListener(i, randomRecipes, quizScore) {
-    document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
+  nextQuestionButtonFinder() {
+    return document.getElementById('next-question');
+  }
+
+
+  nextQuestionButtonListener() {
+    this.nextQuestionButtonFinder().addEventListener('click', () => {
       i++;
       this.runQuestion(i, randomRecipes, quizScore);
     })

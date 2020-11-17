@@ -1,6 +1,47 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
 
+function evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
+  const main = document.querySelector('main');
+  const feedback = document.createElement('h1');
+  if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
+    document.getElementById(this.id).style.backgroundColor = 'green';
+    feedback.innerText = '✓';
+    this.appendChild(feedback);
+    questionScore.push('✓');
+    if (questionScore.length === correctIngredientNames.length) {
+      questionStatus.innerText = 'CORRECT!';
+      questionStatus.style.color = 'green';
+      main.innerHTML = '';
+      main.appendChild(questionStatus);
+      //i++;
+      quizScore += 1;
+
+    }
+  }
+  else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
+    document.getElementById(this.id).style.backgroundColor = 'red';
+    feedback.innerText = 'X';
+    this.appendChild(feedback);
+    incorrect.push('X');
+    if (incorrect.length === 3) {
+      questionStatus.innerText = 'WRONG!';
+      questionStatus.style.color = 'red';
+      main.innerHTML = '';
+      main.appendChild(questionStatus);
+      //i++;
+      quizScore +=0;
+    }
+  }
+}
+
+function cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+    card.addEventListener('click', () => {
+      this.evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus)
+    })}
+)}
+
+
 class Quiz {
   constructor() {
   }
@@ -85,6 +126,7 @@ class Quiz {
     return allIngredients.sort(() => Math.random() - 0.5);
   }
 
+  /*
   evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main');
     const feedback = document.createElement('h1');
@@ -123,7 +165,7 @@ class Quiz {
       card.addEventListener('click', () => {
         this.evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus)
       })}
-  )}
+  )}*/
 
   randomlyGenerateQuestion(recipes, quizLength) {
     const questions = []
@@ -172,9 +214,8 @@ class Quiz {
 
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
-    this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+    cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
-
 
   nextQuestionButtonListener(i, randomRecipes, quizScore) {
     document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {

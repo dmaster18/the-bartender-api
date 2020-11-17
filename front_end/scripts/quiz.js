@@ -2,7 +2,7 @@ let selectedValueNames = [];
 let correctIngredientNames = [];
 let randomRecipes = [];
 let i = 0;
-let quizScore = 0;
+let quizScore;
 
 class Quiz {
   constructor(/*i, quizScore, randomRecipes*/) {
@@ -55,6 +55,7 @@ class Quiz {
   }
 
   quizEvent(json) {
+    quizScore = 0;
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);

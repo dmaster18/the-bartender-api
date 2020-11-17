@@ -1,5 +1,8 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
+let randomRecipes = [];
+let i = 0;
+let quizScore = 0;
 
 class Quiz {
   constructor() {
@@ -52,9 +55,7 @@ class Quiz {
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
-    const randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
-    let i = 0;
-    let quizScore = 0;
+    randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
     this.runQuestion(i, randomRecipes, quizScore);
   }
 
@@ -137,7 +138,6 @@ class Quiz {
   }
 
   randomRecipeGenerator(recipes, quizDifficulty, quizLength) {
-    let randomRecipes;
     const questions = [];
     const main = document.querySelector('main');
     switch(quizDifficulty) {

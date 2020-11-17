@@ -119,18 +119,6 @@ class Quiz {
     }
   }
 
-  nextQuestionButton() {
-    return document.getElementById('next-question');
-  }
-
-  nextQuestionButtonListener(i, randomRecipes, quizScore) {
-    this.nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
-      i++;
-      this.runQuestion(i, randomRecipes, quizScore)
-    })
-  }
-
-
   cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', () => {
         this.evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus)
@@ -185,12 +173,24 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+  }
 
+  nextQuestionButton() {
+    return document.getElementById('next-question');
+  }
+
+  nextQuestionButtonListener(i, randomRecipes, quizScore) {
+    this.nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
+      i++;
+      this.runQuestion(i, randomRecipes, quizScore);
+    })
   }
 
   runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
-    main.innerHTML = ''
+    main.innerHTML = '';
+
+
     this.nextQuestionButtonListener(i, randomRecipes, quizScore);
     let questionScore = [];
     let incorrect = [];

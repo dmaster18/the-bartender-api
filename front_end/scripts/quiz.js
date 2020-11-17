@@ -100,7 +100,6 @@ class Quiz {
         questionStatus.style.color = 'green';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        //i++;
         quizScore += 1;
       }
     }
@@ -114,7 +113,6 @@ class Quiz {
         questionStatus.style.color = 'red';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        //i++;
         quizScore +=0;
       }
     }

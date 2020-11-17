@@ -1,14 +1,14 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
-//let this.randomRecipes = [];
-/*let this.i = 0;
-let this.quizScore = 0;*/
+let randomRecipes = [];
+let i = 0;
+let quizScore = 0;
 
 class Quiz {
-  constructor() {
-    this.i = 0;
-    this.quizScore = 0;
-    this.randomRecipes = [];
+  constructor(/*i, quizScore, randomRecipes*/) {
+    /*this.i = i;
+    this.quizScore = quizScore;
+    this.randomRecipes = randomRecipes;*/
   }
 
   button() {
@@ -58,8 +58,8 @@ class Quiz {
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
-    this.randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
-    this.runQuestion(this.i, this.randomRecipes, this.quizScore);
+    randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
+    this.runQuestion(i, randomRecipes, quizScore);
   }
 
   generateQuestion(recipe) {
@@ -89,7 +89,7 @@ class Quiz {
     return allIngredients.sort(() => Math.random() - 0.5);
   }
 
-  evaluateResponse(this.i, this.randomRecipes, this.quizScore, questionScore, incorrect, questionStatus) {
+  evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main');
     const feedback = document.createElement('h1');
     if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
@@ -102,7 +102,7 @@ class Quiz {
         questionStatus.style.color = 'green';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        this.quizScore += 1;
+        quizScore += 1;
         const nextQuestionButtonContainer = document.createElement('div');
         nextQuestionButtonContainer.id = 'next-question-container';
         const nextQuestionButton = document.createElement('button');
@@ -122,7 +122,7 @@ class Quiz {
         questionStatus.style.color = 'red';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        this.quizScore +=0;
+        quizScore +=0;
         const nextQuestionButtonContainer = document.createElement('div');
         nextQuestionButtonContainer.id = 'next-question-container';
         const nextQuestionButton = document.createElement('button');
@@ -134,9 +134,9 @@ class Quiz {
     }
   }
 
-  cardEventListener(this.i, this.randomRecipes, this.quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+  cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', () => {
-        this.evaluateResponse.call(card, this.i, this.randomRecipes, this.quizScore, questionScore, incorrect, questionStatus);
+        this.evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
       })}
   )}
 
@@ -158,35 +158,35 @@ class Quiz {
     const main = document.querySelector('main');
     switch(quizDifficulty) {
       case 'Random':
-        this.randomRecipes = this.randomlyGenerateQuestion(recipes, quizLength);
-        return this.randomRecipes;
+        randomRecipes = this.randomlyGenerateQuestion(recipes, quizLength);
+        return randomRecipes;
         break;
       case 'Easy':
         const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
-        this.randomRecipes = this.randomlyGenerateQuestion(easyQuestions, quizLength);
-        return this.randomRecipes;
+        randomRecipes = this.randomlyGenerateQuestion(easyQuestions, quizLength);
+        return randomRecipes;
         break;
       case 'Medium':
         const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Medium');
-        this.randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
-        return this.randomRecipes;
+        randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
+        return randomRecipes;
         break;
       case 'Hard':
         const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Hard');
-        this.randomRecipes = this.randomlyGenerateQuestion(hardQuestions, quizLength);
-        return this.randomRecipes;
+        randomRecipes = this.randomlyGenerateQuestion(hardQuestions, quizLength);
+        return randomRecipes;
         break;
       case 'Very Hard':
         const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
-        this.randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
-        return this.randomRecipes;
+        randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
+        return randomRecipes;
         break;
     }
   }
 
-  questionEvent(this.i, this.randomRecipes, this.quizScore, questionScore, incorrect, questionStatus) {
-    this.generateQuestion(this.randomRecipes[this.i]);
-    this.cardEventListener(this.i, this.randomRecipes, this.quizScore, questionScore, incorrect, questionStatus);
+  questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
+    this.generateQuestion(randomRecipes[i]);
+    this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 
   nextQuestionButton() {
@@ -205,28 +205,28 @@ class Quiz {
 
   nextQuestionButtonListener() {
     this.nextQuestionButtonFinder().addEventListener('click', () => {
-      this.i++;
-      this.runQuestion(this.i, this.randomRecipes, this.quizScore);
+      i++;
+      this.runQuestion(i, randomRecipes, quizScore);
     })
   }
 
 
-  runQuestion(this.i, this.randomRecipes, this.quizScore) {
+  runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = '';
     let questionScore = [];
     let incorrect = [];
     const questionStatus = document.createElement('h1');
     questionStatus.classList.add('question-status');
-    if (this.i !== this.randomRecipes.length) {
-      this.questionEvent(this.i, this.randomRecipes, this.quizScore, questionScore, incorrect, questionStatus);
+    if (i !== randomRecipes.length) {
+      this.questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
     } else {
       main.innerHTML = '';
       const myQuizScore = document.createElement('h1');
-      myQuizScore.innerText = `Your Quiz Score Is: ${this.quizScore} Points!`;
+      myQuizScore.innerText = `Your Quiz Score Is: ${quizScore} Points!`;
       main.appendChild(myQuizScore);
       const myQuizPercentage = document.createElement('h1');
-      const percentage = 100*(this.quizScore/this.randomRecipes.length);
+      const percentage = 100*(quizScore/randomRecipes.length);
       myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
       main.appendChild(myQuizPercentage);
       const submitScoreButtonContainer = document.createElement('div');
@@ -236,11 +236,11 @@ class Quiz {
       submitScore.innerText = 'Submit Score';
       submitScoreButtonContainer.appendChild(submitScore);
       main.appendChild(submitScoreButtonContainer);
-      submitScore.addEventListener('click', () => {this.submitUserData(this.quizScore, percentage)});
+      submitScore.addEventListener('click', () => {this.submitUserData(quizScore, percentage)});
     }
   }
 
-   submitUserData(this.quizScore, percentage){
+   submitUserData(quizScore, percentage){
       const main = document.querySelector('main');
       main.innerHTML = '';
       const leaderboardForm = document.createElement('div');
@@ -251,7 +251,7 @@ class Quiz {
       {
         event.preventDefault();
         const name = document.getElementById('user[name]').value;
-        const data = {user: {name, score: this.quizScore, percentage}}
+        const data = {user: {name, score: quizScore, percentage}}
         const users_url = 'http://127.0.0.1:3000/users'
         return fetch(users_url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)})
         .then(() => {window.location.href = 'leaderboard.html'})
@@ -263,4 +263,4 @@ class Quiz {
 
 const quiz = new Quiz();
 
-window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz(0, 0)});
+window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz(0, 0, 0)});

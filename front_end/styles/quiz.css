@@ -55,9 +55,15 @@ form {
   text-align: center;
 }
 
-div.linkButtons {
+div#link-buttons {
   text-align: center;
 }
+
+div#next-question-container {
+  text-align: center;
+}
+
+<div id='next-question-container'>
 
 h1.recipe-name {
   text-align: 'center';
@@ -67,3 +73,5 @@ h1.recipe-name {
 div.submit-button-container {
   text-align: center;
 }
+
+button id='next-question'

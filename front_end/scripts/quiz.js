@@ -99,7 +99,7 @@ class Quiz {
         questionStatus.style.color = 'green';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        i++;
+        //i++;
         quizScore += 1;
       }
     }
@@ -113,11 +113,23 @@ class Quiz {
         questionStatus.style.color = 'red';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        i++;
+        //i++;
         quizScore +=0;
       }
     }
   }
+
+  nextQuestionButton() {
+    return document.getElementById('next-question');
+  }
+
+  nextQuestionButtonListener() {
+    nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
+      i++;
+      this.runQuestion(i, randomRecipes, quizScore)
+    })
+  }
+
 
   cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', () => {
@@ -173,14 +185,13 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-    /*if (questionStatus.innerText === "CORRECT!" || questionStatus.innerText === "WRONG!") {
-      this.runQuestion(i, randomRecipes, quizScore);;
-    }*/
+
   }
 
   runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = ''
+    this.nextQuestionButtonListener();
     let questionScore = [];
     let incorrect = [];
     const questionStatus = document.createElement('h1');

@@ -1,7 +1,6 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
 
-
 class Quiz {
   constructor() {
   }

@@ -233,9 +233,15 @@ class Quiz {
 }
 
 const nextQuestionButtonContainer = document.createElement('div');
+nextQuestionButtonContainer.id = 'next-question-container';
+const nextQuestionButton = document.createElement('button');
+nextQuestionButton.id = 'next-question';
+nextQuestionButton.innerHTML = 'Next Question';
+nextQuestionButtonContainer.appendChild(nextQuestionButton);
+main.appendChild(nextQuestionButtonContainer);
 
 const nextQuestionButton =
-<br><div id='next-question-container'><button id='next-question'>Next Question</button></div>
+<br><div id=><button id='next-question'>Next Question</button></div>
 
 const quiz = new Quiz();
 

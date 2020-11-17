@@ -123,7 +123,7 @@ class Quiz {
     return document.getElementById('next-question');
   }
 
-  nextQuestionButtonListener() {
+  nextQuestionButtonListener(i, randomRecipes, quizScore) {
     this.nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
       i++;
       this.runQuestion(i, randomRecipes, quizScore)
@@ -191,7 +191,7 @@ class Quiz {
   runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = ''
-    this.nextQuestionButtonListener();
+    this.nextQuestionButtonListener(i, randomRecipes, quizScore);
     let questionScore = [];
     let incorrect = [];
     const questionStatus = document.createElement('h1');

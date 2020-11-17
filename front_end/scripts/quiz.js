@@ -69,7 +69,7 @@ class Quiz {
     main.appendChild(recipeName);
     const ingredientCardsContainer = document.createElement('div');
     ingredientCardsContainer.classList.add('ingredient-cards-container');
-    let i = 1;
+    let j = 1;
     const randomizedIngredients = this.shuffle(recipe.attributes.all_ingredients.flat().flat())
     randomizedIngredients.forEach(ingredient => {
       const ingredientCard = document.createElement('div');
@@ -77,7 +77,7 @@ class Quiz {
       ingredientCard.setAttribute('id', `item${i}`);
       ingredientCard.innerText = `${ingredient.name}`
       ingredientCardsContainer.appendChild(ingredientCard);
-      i++;
+      j++;
     })
     main.appendChild(ingredientCardsContainer);
   }
@@ -85,7 +85,6 @@ class Quiz {
   shuffle(allIngredients) {
     return allIngredients.sort(() => Math.random() - 0.5);
   }
-
 
   evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main');
@@ -140,7 +139,7 @@ class Quiz {
 
   randomlyGenerateQuestion(recipes, quizLength) {
     const questions = []
-    for (let i = 0; i < quizLength; i++) {
+    for (let k = 0; k < quizLength; k++) {
       const randomNumber = Math.floor(Math.random() * recipes.length);
       const recipe = recipes[randomNumber];
       const question = this.generateQuestion(recipe);
@@ -204,6 +203,7 @@ class Quiz {
     })
   }
 
+
   runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = '';
@@ -251,6 +251,8 @@ class Quiz {
       });
     }
 }
+
+
 
 const quiz = new Quiz();
 

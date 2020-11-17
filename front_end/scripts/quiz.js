@@ -1,4 +1,4 @@
-let selectedValueNames = [];
+this.quizScorelet selectedValueNames = [];
 let correctIngredientNames = [];
 /*let randomRecipes = [];
 let i = 0;
@@ -55,11 +55,10 @@ class Quiz {
   }
 
   quizEvent(json) {
-    quizScore = 0;
     const recipes = json['data']
     const quizDifficulty = selectedValueNames[0];
     const quizLength = parseInt(selectedValueNames[1]);
-    randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
+    this.randomRecipes = this.randomRecipeGenerator(recipes, quizDifficulty, quizLength);
     this.runQuestion();
   }
 
@@ -90,7 +89,7 @@ class Quiz {
     return allIngredients.sort(() => Math.random() - 0.5);
   }
 
-  evaluateResponse(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
+  evaluateResponse(questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main');
     const feedback = document.createElement('h1');
     if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
@@ -103,7 +102,7 @@ class Quiz {
         questionStatus.style.color = 'green';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        quizScore += 1;
+        this.quizScore += 1;
         const nextQuestionButtonContainer = document.createElement('div');
         nextQuestionButtonContainer.id = 'next-question-container';
         const nextQuestionButton = document.createElement('button');
@@ -123,7 +122,7 @@ class Quiz {
         questionStatus.style.color = 'red';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        quizScore +=0;
+        this.quizScore +=0;
         const nextQuestionButtonContainer = document.createElement('div');
         nextQuestionButtonContainer.id = 'next-question-container';
         const nextQuestionButton = document.createElement('button');
@@ -135,9 +134,9 @@ class Quiz {
     }
   }
 
-  cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
+  cardEventListener(questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', () => {
-        this.evaluateResponse.call(card, i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+        this.evaluateResponse.call(card, questionScore, incorrect, questionStatus);
       })}
   )}
 
@@ -159,35 +158,35 @@ class Quiz {
     const main = document.querySelector('main');
     switch(quizDifficulty) {
       case 'Random':
-        randomRecipes = this.randomlyGenerateQuestion(recipes, quizLength);
-        return randomRecipes;
+        this.randomRecipes = this.randomlyGenerateQuestion(recipes, quizLength);
+        return this.randomRecipes;
         break;
       case 'Easy':
         const easyQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Easy');
-        randomRecipes = this.randomlyGenerateQuestion(easyQuestions, quizLength);
-        return randomRecipes;
+        this.randomRecipes = this.randomlyGenerateQuestion(easyQuestions, quizLength);
+        return this.randomRecipes;
         break;
       case 'Medium':
         const mediumQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Medium');
-        randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
-        return randomRecipes;
+        this.randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
+        return this.randomRecipes;
         break;
       case 'Hard':
         const hardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Hard');
-        randomRecipes = this.randomlyGenerateQuestion(hardQuestions, quizLength);
-        return randomRecipes;
+        this.randomRecipes = this.randomlyGenerateQuestion(hardQuestions, quizLength);
+        return this.randomRecipes;
         break;
       case 'Very Hard':
         const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
-        randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
-        return randomRecipes;
+        this.randomRecipes = this.randomlyGenerateQuestion(mediumQuestions, quizLength);
+        return this.randomRecipes;
         break;
     }
   }
 
-  questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
-    this.generateQuestion(randomRecipes[i]);
-    this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+  questionEvent(questionScore, incorrect, questionStatus) {
+    this.generateQuestion(this.randomRecipes[i]);
+    this.cardEventListener(questionScore, incorrect, questionStatus);
   }
 
   nextQuestionButton() {
@@ -219,15 +218,15 @@ class Quiz {
     let incorrect = [];
     const questionStatus = document.createElement('h1');
     questionStatus.classList.add('question-status');
-    if (i !== randomRecipes.length) {
-      this.questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+    if (i !== this.randomRecipes.length) {
+      this.questionEvent(questionScore, incorrect, questionStatus);
     } else {
       main.innerHTML = '';
       const myQuizScore = document.createElement('h1');
-      myQuizScore.innerText = `Your Quiz Score Is: ${quizScore} Points!`;
+      myQuizScore.innerText = `Your Quiz Score Is: ${this.quizScore} Points!`;
       main.appendChild(myQuizScore);
       const myQuizPercentage = document.createElement('h1');
-      const percentage = 100*(quizScore/randomRecipes.length);
+      const percentage = 100*(this.quizScore/this.randomRecipes.length);
       myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
       main.appendChild(myQuizPercentage);
       const submitScoreButtonContainer = document.createElement('div');
@@ -237,11 +236,11 @@ class Quiz {
       submitScore.innerText = 'Submit Score';
       submitScoreButtonContainer.appendChild(submitScore);
       main.appendChild(submitScoreButtonContainer);
-      submitScore.addEventListener('click', () => {this.submitUserData(quizScore, percentage)});
+      submitScore.addEventListener('click', () => {this.submitUserData(percentage)});
     }
   }
 
-   submitUserData(quizScore, percentage){
+   submitUserData(percentage){
       const main = document.querySelector('main');
       main.innerHTML = '';
       const leaderboardForm = document.createElement('div');
@@ -252,7 +251,7 @@ class Quiz {
       {
         event.preventDefault();
         const name = document.getElementById('user[name]').value;
-        const data = {user: {name, score: quizScore, percentage}}
+        const data = {user: {name, score: this.quizScore, percentage}}
         const users_url = 'http://127.0.0.1:3000/users'
         return fetch(users_url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)})
         .then(() => {window.location.href = 'leaderboard.html'})

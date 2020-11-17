@@ -97,10 +97,10 @@ class Quiz {
       if (questionScore.length === correctIngredientNames.length) {
         questionStatus.innerText = 'CORRECT!';
         questionStatus.style.color = 'green';
+        main.innerHTML = '';
         main.appendChild(questionStatus);
         i++;
         quizScore += 1;
-        this.runQuestion.(i, randomRecipes, quizScore);
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -111,10 +111,10 @@ class Quiz {
       if (incorrect.length === 3) {
         questionStatus.innerText = 'WRONG!';
         questionStatus.style.color = 'red';
+        main.innerHTML = '';
         main.appendChild(questionStatus);
         i++;
         quizScore +=0;
-        this.runQuestion.(i, randomRecipes, quizScore);
       }
     }
   }

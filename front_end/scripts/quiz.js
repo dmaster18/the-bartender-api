@@ -101,6 +101,10 @@ class Quiz {
         main.appendChild(questionStatus);
         //i++;
         quizScore += 1;
+        document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
+          i++;
+          runQuestion(i, randomRecipes, quizScore);
+        })
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -115,6 +119,10 @@ class Quiz {
         main.appendChild(questionStatus);
         //i++;
         quizScore +=0;
+        document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
+          i++;
+          runQuestion(i, randomRecipes, quizScore);
+        })
       }
     }
   }
@@ -173,7 +181,6 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-    this.nextQuestionButtonListener(i, randomRecipes, quizScore);
   }
 
   /*nextQuestionButton() {
@@ -190,7 +197,6 @@ class Quiz {
   runQuestion(i, randomRecipes, quizScore) {
     const main = document.querySelector('main');
     main.innerHTML = '';
-    this.nextQuestionButtonListener(i, randomRecipes, quizScore);
     let questionScore = [];
     let incorrect = [];
     const questionStatus = document.createElement('h1');

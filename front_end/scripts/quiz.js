@@ -232,6 +232,11 @@ class Quiz {
     }
 }
 
+const nextQuestionButtonContainer = document.createElement('div');
+
+const nextQuestionButton =
+<br><div id='next-question-container'><button id='next-question'>Next Question</button></div>
+
 const quiz = new Quiz();
 
 window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz()});

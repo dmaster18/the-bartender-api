@@ -111,7 +111,7 @@ class Quiz {
         nextQuestionButton.innerHTML = 'Next Question';
         nextQuestionButtonContainer.appendChild(nextQuestionButton);
         main.appendChild(nextQuestionButtonContainer);
-        return 1;
+        return questionScore;
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -132,7 +132,7 @@ class Quiz {
         nextQuestionButton.innerHTML = 'Next Question';
         nextQuestionButtonContainer.appendChild(nextQuestionButton);
         main.appendChild(nextQuestionButtonContainer);
-        return 0;
+        return incorrect;
       }
     }
   }
@@ -140,17 +140,12 @@ class Quiz {
   cardEventListener(questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', () => {
         this.evaluateResponse.call(card, questionScore, incorrect, questionStatus);
-        if (this.evaluateResponse.call(card, questionScore, incorrect, questionStatus) == 1) {
-          this.quizScore +=1;
-          this.nextQuestionButtonListener();
-
-        }
-        else if (this.evaluateResponse.call(card, questionScore, incorrect, questionStatus) == 0) {
-          this.quizScore +=0;
-          this.nextQuestionButtonListener();
-        }
       })}
-  )}
+  )
+      if (questionScore.length === 3 || incorrect.length === 3){
+        this.nextQuestionButtonListener();
+      }
+  }
 
   randomlyGenerateQuestion(recipes, quizLength) {
     const questions = []
@@ -221,7 +216,6 @@ class Quiz {
       this.runQuestion();
     })
   }
-
 
   runQuestion() {
     const main = document.querySelector('main');

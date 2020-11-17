@@ -174,7 +174,7 @@ class Quiz {
 
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
-    cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
+    this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 
   nextQuestionButtonListener(i, randomRecipes, quizScore) {

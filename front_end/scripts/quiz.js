@@ -184,7 +184,6 @@ class Quiz {
   questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus) {
     this.generateQuestion(randomRecipes[i]);
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
-    this.nextQuestionButtonListener();
   }
 
   nextQuestionButton() {
@@ -200,7 +199,6 @@ class Quiz {
   nextQuestionButtonFinder() {
     return document.getElementById('next-question');
   }
-
 
   nextQuestionButtonListener() {
     this.nextQuestionButtonFinder().addEventListener('click', () => {

@@ -124,7 +124,7 @@ class Quiz {
   }
 
   nextQuestionButtonListener() {
-    nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
+    this.nextQuestionButton().addEventListener('click', (i, randomRecipes, quizScore) => {
       i++;
       this.runQuestion(i, randomRecipes, quizScore)
     })

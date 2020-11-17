@@ -193,7 +193,7 @@ class Quiz {
 
   questionEvent(questionScore, incorrect, questionStatus) {
     this.generateQuestion(this.randomRecipes[this.i]);
-    this.cardEventListener.call(thisQuiz, questionScore, incorrect, questionStatus);
+    this.cardEventListener.call(questionScore, incorrect, questionStatus);
   }
 
   nextQuestionButton() {

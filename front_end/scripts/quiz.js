@@ -102,7 +102,6 @@ class Quiz {
         main.appendChild(questionStatus);
         //i++;
         quizScore += 1;
-        this.nextQuestionButton();
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -117,7 +116,6 @@ class Quiz {
         main.appendChild(questionStatus);
         //i++;
         quizScore +=0;
-        this.nextQuestionButton();
       }
     }
   }

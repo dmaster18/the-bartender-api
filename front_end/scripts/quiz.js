@@ -100,7 +100,7 @@ class Quiz {
         main.appendChild(questionStatus);
         i++;
         quizScore += 1;
-        runQuestion.call(this, i, randomRecipes, quizScore);
+        this.runQuestion.(i, randomRecipes, quizScore);
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -114,7 +114,7 @@ class Quiz {
         main.appendChild(questionStatus);
         i++;
         quizScore +=0;
-        runQuestion.call(this, i, randomRecipes, quizScore);
+        this.runQuestion.(i, randomRecipes, quizScore);
       }
     }
   }

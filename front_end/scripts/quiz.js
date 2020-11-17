@@ -260,8 +260,6 @@ class Quiz {
     }
 }
 
-
-
 const quiz = new Quiz();
 
-window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz(0, 0, 0)});
+window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz()});

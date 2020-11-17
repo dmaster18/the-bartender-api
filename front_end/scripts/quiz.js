@@ -1,14 +1,14 @@
 let selectedValueNames = [];
 let correctIngredientNames = [];
-let randomRecipes = [];
+/*let randomRecipes = [];
 let i = 0;
-let quizScore;
+let quizScore;*/
 
 class Quiz {
-  constructor(/*i, quizScore, randomRecipes*/) {
-    /*this.i = i;
+  constructor(i, quizScore, randomRecipes) {
+    this.i = i;
     this.quizScore = quizScore;
-    this.randomRecipes = randomRecipes;*/
+    this.randomRecipes = randomRecipes;
   }
 
   button() {

@@ -177,6 +177,16 @@ class Quiz {
     this.cardEventListener(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
   }
 
+  nextQuestionButton() {
+    const nextQuestionButtonContainer = document.createElement('div');
+    nextQuestionButtonContainer.id = 'next-question-container';
+    const nextQuestionButton = document.createElement('button');
+    nextQuestionButton.id = 'next-question';
+    nextQuestionButton.innerHTML = 'Next Question';
+    nextQuestionButtonContainer.appendChild(nextQuestionButton);
+    main.appendChild(nextQuestionButtonContainer);
+  }
+
   nextQuestionButtonListener(i, randomRecipes, quizScore) {
     document.getElementById('next-question').addEventListener('click', (i, randomRecipes, quizScore) => {
       i++;
@@ -231,17 +241,6 @@ class Quiz {
       });
     }
 }
-
-const nextQuestionButtonContainer = document.createElement('div');
-nextQuestionButtonContainer.id = 'next-question-container';
-const nextQuestionButton = document.createElement('button');
-nextQuestionButton.id = 'next-question';
-nextQuestionButton.innerHTML = 'Next Question';
-nextQuestionButtonContainer.appendChild(nextQuestionButton);
-main.appendChild(nextQuestionButtonContainer);
-
-const nextQuestionButton =
-<br><div id=><button id='next-question'>Next Question</button></div>
 
 const quiz = new Quiz();
 

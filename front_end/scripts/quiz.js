@@ -74,7 +74,7 @@ class Quiz {
     randomizedIngredients.forEach(ingredient => {
       const ingredientCard = document.createElement('div');
       ingredientCard.classList.add('ingredient-card');
-      ingredientCard.setAttribute('id', `item${i}`);
+      ingredientCard.setAttribute('id', `item${j}`);
       ingredientCard.innerText = `${ingredient.name}`
       ingredientCardsContainer.appendChild(ingredientCard);
       j++;
@@ -219,11 +219,11 @@ class Quiz {
       this.questionEvent(i, randomRecipes, quizScore, questionScore, incorrect, questionStatus);
     } else {
       main.innerHTML = '';
-      myQuizScore = document.createElement('h1');
+      const myQuizScore = document.createElement('h1');
       myQuizScore.innerText = `Your Quiz Score Is: ${quizScore} Points!`;
       main.appendChild(myQuizScore);
-      myQuizPercentage = document.createElement('h1');
-      percentage = 100*(quizScore/randomRecipes.length);
+      const myQuizPercentage = document.createElement('h1');
+      const percentage = 100*(quizScore/randomRecipes.length);
       myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
       main.appendChild(myQuizPercentage);
       const submitScoreButtonContainer = document.createElement('div');

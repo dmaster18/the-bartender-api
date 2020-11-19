@@ -110,7 +110,7 @@ class Quiz {
         nextQuestionButton.innerHTML = 'Next Question';
         nextQuestionButtonContainer.appendChild(nextQuestionButton);
         main.appendChild(nextQuestionButtonContainer);
-        return questionScore;
+        this.nextQuestionButtonListener();
       }
     }
     else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
@@ -132,6 +132,7 @@ class Quiz {
         nextQuestionButtonContainer.appendChild(nextQuestionButton);
         main.appendChild(nextQuestionButtonContainer);
         return incorrect;
+        this.nextQuestionButtonListener();
       }
     }
   }
@@ -209,7 +210,7 @@ class Quiz {
     return document.getElementById('next-question');
   }
 
-  nextQuestionButtonListener() {
+  static nextQuestionButtonListener() {
     this.nextQuestionButtonFinder().addEventListener('click', () => {
       this.i++;
       this.runQuestion();

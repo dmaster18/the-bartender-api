@@ -8,7 +8,6 @@ class Quiz {
     this.i = 0;
     this.quizScore = 0;
     this.randomRecipes = [];
-    //this.correctIngredientNames = [];
     this.selectedValueNames = [];
   }
 

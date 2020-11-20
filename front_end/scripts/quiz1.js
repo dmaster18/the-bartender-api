@@ -1,6 +1,4 @@
 let correctIngredientNames = [];
-/*let randomRecipes = [];
-let i = 0;
 let quizScore;*/
 
 class Quiz {

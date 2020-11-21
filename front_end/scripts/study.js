@@ -21,7 +21,7 @@ class Study {
     main.appendChild(gifElement);
   }
 
-  randomNumberGenerator() { //Create limit parameter to return fewer recipes (to decrease load times)
+  randomNumberGenerator() {
     const randomNumbers = []
     for(let i = 1; i <= 498; i++) {
       randomNumbers.push(i);
@@ -76,7 +76,7 @@ class Study {
     this.randomRecipeCard(json, i, randomNumbers);
   }
 
-  generatecard(recipe) { //To generated Cocktail Recipe Ingredient Index Card in HTML
+  generatecard(recipe) { //To generate Cocktail Recipe Ingredient Index Card in HTML
     const card = document.createElement('div');
     card.classList.add('card')
     const cardFront = document.createElement('div');

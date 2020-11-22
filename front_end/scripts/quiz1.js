@@ -1,5 +1,5 @@
 let correctIngredientNames = [];
-let quizScore;*/
+let quizScore;
 
 class Quiz {
   constructor(i, quizScore, randomRecipes) {

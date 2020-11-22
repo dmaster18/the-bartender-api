@@ -34,7 +34,7 @@ class Quiz {
   }
 
   fetchQuiz() {
-    const recipes_url = 'http://127.0.0.1:3000/recipes';
+    const recipes_url = `http://127.0.0.1:3000/recipes/?limit=${this.selectedValueNames[1]}&complexity=${this.selectedValueNames[0]}`;
     return fetch(recipes_url)
     .then(resp => resp.json())
   }
@@ -87,13 +87,13 @@ class Quiz {
     return allIngredients.sort(() => Math.random() - 0.5);
   }
 
-  evaluateResponse(questionScore, incorrect, questionStatus) {
+  evaluateResponse(card, questionScore, incorrect, questionStatus) {
     const main = document.querySelector('main');
     const feedback = document.createElement('h1');
-    if (correctIngredientNames.includes(this.innerText) && document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red') {
-      document.getElementById(this.id).style.backgroundColor = 'green';
+    if (correctIngredientNames.includes(card.innerText) && card.style.backgroundColor !== 'green' && card.style.backgroundColor !== 'red') {
+      card.style.backgroundColor = 'green';
       feedback.innerText = '✓';
-      this.appendChild(feedback);
+      card.appendChild(feedback);
       questionScore.push('✓');
       if (questionScore.length === correctIngredientNames.length) {
         questionStatus.innerText = 'CORRECT!';
@@ -101,48 +101,32 @@ class Quiz {
         main.innerHTML = '';
         main.appendChild(questionStatus);
         this.quizScore += 1;
-        const nextQuestionButtonContainer = document.createElement('div');
-        nextQuestionButtonContainer.id = 'next-question-container';
-        const nextQuestionButton = document.createElement('button');
-        nextQuestionButton.id = 'next-question';
-        nextQuestionButton.innerHTML = 'Next Question';
-        nextQuestionButtonContainer.appendChild(nextQuestionButton);
-        main.appendChild(nextQuestionButtonContainer);
-        this.nextQuestionButtonListener();
+        this.nextQuestionButton();
+        this.addNextQuestionButtonListener();
       }
     }
-    else if (document.getElementById(this.id).style.backgroundColor !== 'green' && document.getElementById(this.id).style.backgroundColor !== 'red'){
-      document.getElementById(this.id).style.backgroundColor = 'red';
+    else if (card.style.backgroundColor !== 'green' && card.style.backgroundColor !== 'red'){
+      card.style.backgroundColor = 'red';
       feedback.innerText = 'X';
-      this.appendChild(feedback);
+      card.appendChild(feedback);
       incorrect.push('X');
       if (incorrect.length === 3) {
         questionStatus.innerText = 'WRONG!';
         questionStatus.style.color = 'red';
         main.innerHTML = '';
         main.appendChild(questionStatus);
-        this.quizScore +=0;
-        const nextQuestionButtonContainer = document.createElement('div');
-        nextQuestionButtonContainer.id = 'next-question-container';
-        const nextQuestionButton = document.createElement('button');
-        nextQuestionButton.id = 'next-question';
-        nextQuestionButton.innerHTML = 'Next Question';
-        nextQuestionButtonContainer.appendChild(nextQuestionButton);
-        main.appendChild(nextQuestionButtonContainer);
-        return incorrect;
-        this.nextQuestionButtonListener();
+        this.nextQuestionButton();
+        this.addNextQuestionButtonListener();
       }
     }
   }
 
   cardEventListener(questionScore, incorrect, questionStatus) {[].slice.call(document.getElementsByClassName('ingredient-card')).map(card => {
       card.addEventListener('click', () => {
-        this.evaluateResponse.call(card, questionScore, incorrect, questionStatus);
+        this.evaluateResponse(card, questionScore, incorrect, questionStatus);
       })}
   )
-      if (questionScore.length === 3 || incorrect.length === 3){
-        this.nextQuestionButtonListener();
-      }
+
   }
 
   randomlyGenerateQuestion(recipes, quizLength) {
@@ -161,6 +145,7 @@ class Quiz {
   randomRecipeGenerator(recipes, quizDifficulty, quizLength) {
     const questions = [];
     const main = document.querySelector('main');
+    debugger;
     switch(quizDifficulty) {
       case 'Random':
         this.randomRecipes = this.randomlyGenerateQuestion(recipes, quizLength);
@@ -195,6 +180,7 @@ class Quiz {
   }
 
   nextQuestionButton() {
+    const main = document.querySelector('main');
     const nextQuestionButtonContainer = document.createElement('div');
     nextQuestionButtonContainer.id = 'next-question-container';
     const nextQuestionButton = document.createElement('button');
@@ -204,12 +190,8 @@ class Quiz {
     main.appendChild(nextQuestionButtonContainer);
   }
 
-  nextQuestionButtonFinder() {
-    return document.getElementById('next-question');
-  }
-
-  static nextQuestionButtonListener() {
-    this.nextQuestionButtonFinder().addEventListener('click', () => {
+  addNextQuestionButtonListener() {
+    document.getElementById('next-question').addEventListener('click', () => {
       this.i++;
       this.runQuestion();
     })

@@ -1,6 +1,10 @@
 class RecipesController < ApplicationController
   def index
-    recipes = Recipe.all #Add shuffle method to the backend as well as record total number of recipes
+    if params[:complexity] == nil || params[:complexity] == "Random"
+      recipes = Recipe.limit(params[:limit] || 20).offset(params[:offset] || 0)
+    else
+      recipes = Recipe.where(complexity: params[:complexity]).limit(params[:limit] || 20).offset(params[:offset] || 0)
+    end
     options = {
       include: [:mixers, :garnishes, :liquors, :liqueurs]
     }

@@ -1,8 +1,12 @@
 class Study {
-  constructor() {}
+  constructor() {
+    this.randomNumbers = [];
+    this.recipes = json.data;
+    this.numberOfCardsReviewed = 0;
+  }
 
   fetchCards() {
-      const recipes_url = 'http://127.0.0.1:3000/recipes/';
+      const recipes_url = `http://127.0.0.1:3000/recipes/?limit=${this.numberOfCardsReviewed}`;
       return fetch(recipes_url)
       .then(resp => resp.json());
   }
@@ -11,8 +15,10 @@ class Study {
     const main = document.querySelector('main');
     this.renderLoadingState(main);
     let i = 0;
-    const randomNumbers = this.randomNumberGenerator();
-    this.fetchCards().then(json => this.randomRecipeCard(json, i, randomNumbers))
+    this.fetchCards().then(json => {
+      this.randomNumbers = this.randomNumberGenerator(json.data.length);
+      this.randomRecipeCard(json, i)
+    })
   }
 
   renderLoadingState(main) {
@@ -21,35 +27,35 @@ class Study {
     main.appendChild(gifElement);
   }
 
-  randomNumberGenerator() {
-    const randomNumbers = []
-    for(let i = 1; i <= 498; i++) {
-      randomNumbers.push(i);
+  randomNumberGenerator(recipeCardCount) {
+    for(let i = 0; i < recipeCardCount; i++) {
+      this.randomNumbers.push(i);
     }
-    return this.shuffle(randomNumbers);
+    return this.shuffle();
   }
 
-  shuffle(randomNumbers) {
-    return randomNumbers.sort(() => Math.random() - 0.5);
+  shuffle() {
+    return this.randomNumbers.sort(() => Math.random() - 0.5);
   }
 
-  randomRecipeCard(json, i, randomNumbers) {
+  randomRecipeCard(json, i) {
     const main = document.querySelector('main');
     main.innerHTML = '';
     const recipeCards = this.generateCards(json);
-    const randomNumber = randomNumbers[i];
+    const recipeCardLength = recipeCards.length;
+    const randomNumber = this.randomNumbers[i];
     const recipeCard = recipeCards[randomNumber];
     main.appendChild(recipeCard);
-    this.createButtons(json, i, main, randomNumbers);
+    this.createButtons(json, i, main);
   }
 
   generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
-    const recipeData = json['data']
+    const recipeData = json['data'];
     const recipeCards = recipeData.map(recipe => this.generatecard(recipe))
     return recipeCards;
   }
 
-  createButtons(json, i, main, randomNumbers) {
+  createButtons(json, i, main) {
     const buttons = document.createElement('div');
     buttons.classList.add('buttons');
     const nextCardButton = document.createElement('button');
@@ -62,18 +68,18 @@ class Study {
     buttons.appendChild(previousCardButton);
     buttons.appendChild(nextCardButton);
     main.appendChild(buttons);
-    nextCardButton.addEventListener('click', () => {this.nextRecipeCard(json, i, randomNumbers)});
-    previousCardButton.addEventListener('click', () => {this.previousRecipeCard(json, i, randomNumbers)});
+    nextCardButton.addEventListener('click', () => {this.nextRecipeCard(json, i, this.randomNumbers)});
+    previousCardButton.addEventListener('click', () => {this.previousRecipeCard(json, i, this.randomNumbers)});
   }
 
-  nextRecipeCard(json, i, randomNumbers) {
-    if (i < 498) {i++;}
-    this.randomRecipeCard(json, i, randomNumbers);
+  nextRecipeCard(json, i) {
+    if (i < this.randomNumbers.length) {i++;}
+    this.randomRecipeCard(json, i);
   }
 
-  previousRecipeCard(json, i, randomNumbers) {
+  previousRecipeCard(json, i) {
     if (i > 0) {i--;}
-    this.randomRecipeCard(json, i, randomNumbers);
+    this.randomRecipeCard(json, i);
   }
 
   generatecard(recipe) { //To generate Cocktail Recipe Ingredient Index Card in HTML

@@ -1,6 +1,5 @@
 class Recipe < ApplicationRecord
 
-
   has_many :recipe_liquors
   has_many :liquors, through: :recipe_liquors
   has_many :recipe_liqueurs
@@ -25,6 +24,8 @@ class Recipe < ApplicationRecord
 
   before_save :complexity, :generate_question, :all_ingredients, :correct_ingredients
 
+
+
   def complexity
     total_ingredients = self.liquors.size + self.liqueurs.size + self.mixers.size + self.garnishes.size
     difficulty = "Easy"
@@ -37,7 +38,7 @@ class Recipe < ApplicationRecord
     else
       difficulty = "Very Hard"
     end
-    difficulty
+    self.complexity = difficulty
   end
 
   def generate_question

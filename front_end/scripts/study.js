@@ -2,7 +2,7 @@ class Study {
   constructor() {
     this.randomNumbers = [];
     this.recipes = json.data;
-    this.numberOfCardsReviewed = 0;
+    this.numberOfCardsReviewed = 25;
   }
 
   fetchCards() {

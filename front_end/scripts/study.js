@@ -72,14 +72,15 @@ class Study {
   }
 
   nextRecipeCard(json, i) {
-    if (i < this.randomNumbers.length) {i++; this.randomRecipeCard(json, i);}
-    else {
+    if (i === this.randomNumbers.length) {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session');
       nextStudySession.innerText = 'Study More?';
       nextStudySession.addEventListener('click', () => {this.render()});
       main.appendChild(nextStudySession);
+    } else {
+      i++; this.randomRecipeCard(json, i);
     }
   }
 

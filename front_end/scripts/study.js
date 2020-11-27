@@ -77,8 +77,8 @@ class Study {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session');
-      nextStudySession.innerText = 'Study More?'
-      nextStudySession.addEventListener('click', () => {this.renderer()})
+      nextStudySession.innerText = 'Study More?';
+      nextStudySession.addEventListener('click', () => {this.render()});
       main.appendChild(nextStudySession);
     }
   }

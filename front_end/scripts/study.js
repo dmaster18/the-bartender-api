@@ -72,9 +72,10 @@ class Study {
   }
 
   nextRecipeCard(json, i) {
-    if (i === (this.randomNumbers.length - 1)) {
+    if (i === (this.randomNumbers.length - 1) && document.querySelector('next-study-session')) {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
+      nextStudySession.classList.add('next-study-session')
       nextStudySession.innerHTML = 'Study More?';
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);

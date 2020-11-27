@@ -67,12 +67,15 @@ class Study {
     buttons.appendChild(previousCardButton);
     buttons.appendChild(nextCardButton);
     main.appendChild(buttons);
-    nextCardButton.addEventListener('click', () => {this.nextRecipeCard(json, i, this.randomNumbers)});
-    previousCardButton.addEventListener('click', () => {this.previousRecipeCard(json, i, this.randomNumbers)});
+    nextCardButton.addEventListener('click', () => {this.nextRecipeCard(json, i)});
+    previousCardButton.addEventListener('click', () => {this.previousRecipeCard(json, i)});
   }
 
   nextRecipeCard(json, i) {
     if (i < this.randomNumbers.length) {i++;}
+    else {
+
+    }
     this.randomRecipeCard(json, i);
   }
 

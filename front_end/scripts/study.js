@@ -1,13 +1,14 @@
 class Study {
   constructor() {
     this.randomNumbers = [];
-    this.numberOfCardsReviewed = 25;
+    this.limit = 25;
+    this.offset = 0;
   }
 
   fetchCards() {
-      const recipes_url = `http://127.0.0.1:3000/recipes/?limit=${this.numberOfCardsReviewed}`;
+      const recipes_url = `http://127.0.0.1:3000/recipes/?limit=${this.numberOfCardsReviewed}&offset=${this.offset}`;
       return fetch(recipes_url).then(resp => resp.json());
-  } 
+  }
 
   render() {
     const main = document.querySelector('main');
@@ -76,6 +77,7 @@ class Study {
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session')
       nextStudySession.innerHTML = 'Study More?';
+      this.offset +=25;
       nextStudySession.addEventListener('click', () => {this.render()})
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);

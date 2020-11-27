@@ -79,7 +79,7 @@ class Study {
       nextStudySession.innerHTML = 'Study More?';
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);
-    } else {
+    } else if (i < this.randomNumbers.length -1) {
       i++; this.randomRecipeCard(json, i);
     }
   }

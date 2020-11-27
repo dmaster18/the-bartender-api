@@ -78,7 +78,7 @@ class Study {
       nextStudySession.classList.add('next-study-session')
       nextStudySession.innerHTML = 'Study More?';
       this.offset +=25;
-      nextStudySession.addEventListener('click', () => {this.render()})
+      nextStudySession.addEventListener('click', () => {main.innerHTML = ''; this.render()})
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);
     } else if (i < (this.randomNumbers.length -1)) {

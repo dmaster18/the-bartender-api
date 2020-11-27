@@ -72,7 +72,7 @@ class Study {
   }
 
   nextRecipeCard(json, i) {
-    if (i === this.randomNumbers.length) {
+    if (i === this.randomNumbers.length - 1) {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session');

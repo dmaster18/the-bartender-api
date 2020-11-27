@@ -72,14 +72,14 @@ class Study {
   }
 
   nextRecipeCard(json, i) {
-    if (i === (this.randomNumbers.length - 1) && document.querySelector('next-study-session')) {
+    if (i === (this.randomNumbers.length - 1) && document.querySelector('.next-study-session') === null) {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session')
       nextStudySession.innerHTML = 'Study More?';
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);
-    } else if (i < this.randomNumbers.length -1) {
+    } else if (i < (this.randomNumbers.length -1)) {
       i++; this.randomRecipeCard(json, i);
     }
   }

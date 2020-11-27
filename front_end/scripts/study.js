@@ -7,9 +7,7 @@ class Study {
 
   fetchCards() {
       const recipes_url = `http://127.0.0.1:3000/recipes/?limit=${this.numberOfCardsReviewed}`;
-      this.recipes = fetch(recipes_url)
-      .then(resp => resp.json());
-      return this.recipes;
+      return fetch(recipes_url).then(resp => resp.json());
   }
 
   render() {

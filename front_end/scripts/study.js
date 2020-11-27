@@ -77,7 +77,7 @@ class Study {
       const nextStudySession = document.createElement('button');
       nextStudySession.innerText = 'Study More?';
       const divButtons = document.querySelector('div.buttons');
-      divButtons.appendChild(nextStudySession);
+      divButtons.appendChild(`<br>${nextStudySession}`);
     } else {
       i++; this.randomRecipeCard(json, i);
     }

@@ -87,7 +87,7 @@ class Study {
   }
 
   previousRecipeCard(json) {
-    if (this.i > 0) {this.i--;}
+    if (this.i > this.offset) {this.i--;}
     this.randomRecipeCard(json);
   }
 

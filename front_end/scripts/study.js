@@ -1,6 +1,7 @@
 class Study {
   constructor() {
     this.randomNumbers = [];
+    this.i = 0;
     this.limit = 25;
     this.offset = 0;
   }
@@ -13,10 +14,9 @@ class Study {
   render() {
     const main = document.querySelector('main');
     this.renderLoadingState(main);
-    let i = 0;
     this.fetchCards().then(json => {
       this.randomNumbers = this.randomNumberGenerator(json.data.length);
-      this.randomRecipeCard(json, i)
+      this.randomRecipeCard(json)
     })
   }
 
@@ -42,10 +42,10 @@ class Study {
     main.innerHTML = '';
     const recipeCards = this.generateCards(json);
     const recipeCardLength = recipeCards.length;
-    const randomNumber = this.randomNumbers[i];
+    const randomNumber = this.randomNumbers[this.i];
     const recipeCard = recipeCards[randomNumber];
     main.appendChild(recipeCard);
-    this.createButtons(json, i, main);
+    this.createButtons(json, main);
   }
 
   generateCards(json) { //Renders all Cocktail Recipe Ingredient Index Cards
@@ -54,7 +54,7 @@ class Study {
     return recipeCards;
   }
 
-  createButtons(json, i, main) {
+  createButtons(json, main) {
     const buttons = document.createElement('div');
     buttons.classList.add('buttons');
     const nextCardButton = document.createElement('button');
@@ -67,12 +67,12 @@ class Study {
     buttons.appendChild(previousCardButton);
     buttons.appendChild(nextCardButton);
     main.appendChild(buttons);
-    nextCardButton.addEventListener('click', () => {this.nextRecipeCard(json, i)});
-    previousCardButton.addEventListener('click', () => {this.previousRecipeCard(json, i)});
+    nextCardButton.addEventListener('click', () => {this.nextRecipeCard(json)});
+    previousCardButton.addEventListener('click', () => {this.previousRecipeCard(json)});
   }
 
-  nextRecipeCard(json, i) {
-    if (i === (this.randomNumbers.length - 1) && document.querySelector('.next-study-session') === null) {
+  nextRecipeCard(json) {
+    if (this.i === (this.randomNumbers.length - 1) && document.querySelector('.next-study-session') === null) {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session')
@@ -81,14 +81,14 @@ class Study {
       nextStudySession.addEventListener('click', () => {main.innerHTML = ''; this.offset +=25;this.render()})
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);
-    } else if (i < (this.randomNumbers.length -1)) {
-      i++; this.randomRecipeCard(json, i);
+    } else if (this.i < (this.randomNumbers.length -1)) {
+      this.i++; this.randomRecipeCard(json);
     }
   }
 
-  previousRecipeCard(json, i) {
-    if (i > 0) {i--;}
-    this.randomRecipeCard(json, i);
+  previousRecipeCard(json) {
+    if (this.i > 0) {this.i--;}
+    this.randomRecipeCard(json);
   }
 
   generatecard(recipe) { //To generate Cocktail Recipe Ingredient Index Card in HTML

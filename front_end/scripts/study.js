@@ -75,10 +75,9 @@ class Study {
     if (i === this.randomNumbers.length - 1) {
       const main = document.querySelector('main');
       const nextStudySession = document.createElement('button');
-      nextStudySession.classList.add('next-study-session');
       nextStudySession.innerText = 'Study More?';
-      nextStudySession.addEventListener('click', () => {this.render()});
-      main.appendChild(nextStudySession);
+      const divButtons = document.querySelector('div.buttons');
+      divButtons.appendChild(nextStudySession);
     } else {
       i++; this.randomRecipeCard(json, i);
     }

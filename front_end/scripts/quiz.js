@@ -146,7 +146,6 @@ class Quiz {
   randomRecipeGenerator(recipes, quizDifficulty, quizLength) {
     const questions = [];
     const main = document.querySelector('main');
-    debugger;
     switch(quizDifficulty) {
       case 'Random':
         this.randomRecipes = this.randomlyGenerateQuestion(recipes, quizLength);

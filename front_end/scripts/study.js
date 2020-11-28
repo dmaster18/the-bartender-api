@@ -2,7 +2,7 @@ class Study {
   constructor() {
     this.randomNumbers = [];
     this.i = 0;
-    this.limit = 25;
+    this.limit = 50;
     this.offset = 0;
   }
 
@@ -77,8 +77,7 @@ class Study {
       const nextStudySession = document.createElement('button');
       nextStudySession.classList.add('next-study-session')
       nextStudySession.innerHTML = 'Study More?';
-      //this.limit += 25;
-      nextStudySession.addEventListener('click', () => {main.innerHTML = ''; this.offset +=25;this.render()})
+      nextStudySession.addEventListener('click', () => {main.innerHTML = ''; this.offset +=50;this.render()})
       const divButtons = document.querySelector('div.buttons');
       divButtons.appendChild(nextStudySession);
     } else if (this.i < (this.randomNumbers.length -1)) {

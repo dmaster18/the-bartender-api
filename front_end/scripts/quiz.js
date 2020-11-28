@@ -169,7 +169,7 @@ class Quiz {
         return this.randomRecipes;
         break;
       case 'Very Hard':
-        const varyHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
+        const veryHardQuestions = recipes.filter(recipe => recipe.attributes.complexity === 'Very Hard');
         this.randomRecipes = this.randomlyGenerateQuestion(veryHardQuestions, quizLength);
         return this.randomRecipes;
         break;

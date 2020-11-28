@@ -1,7 +1,5 @@
 class User < ApplicationRecord
   validates :name, presence: true
-  validates :name, uniqueness: true
-
 
   def self.order_by_percentage
     User.order(percentage: :desc)

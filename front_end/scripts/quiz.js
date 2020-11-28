@@ -4,6 +4,7 @@ class Quiz {
   constructor(i, quizScore, randomRecipes) {
     this.i = 0;
     this.quizScore = 0;
+    this.percentage = 0;
     this.randomRecipes = [];
     this.selectedValueNames = [];
   }
@@ -214,8 +215,8 @@ class Quiz {
       myQuizScore.innerText = `Your Got: ${this.quizScore.toFixed()} Points`;
       results.appendChild(myQuizScore);
       const myQuizPercentage = document.createElement('h1');
-      const percentage = 100*(this.quizScore/this.randomRecipes.length);
-      myQuizPercentage.innerText = `Your Quiz Score Percentage is ${percentage}%!`;
+      this.percentage = 100*(this.quizScore/this.randomRecipes.length);
+      myQuizPercentage.innerText = `Your Quiz Score Percentage is ${this.percentage}%!`;
       results.appendChild(myQuizPercentage);
       main.appendChild(results);
       const submitScoreButtonContainer = document.createElement('div');
@@ -225,11 +226,11 @@ class Quiz {
       submitScore.innerText = 'Submit Score';
       submitScoreButtonContainer.appendChild(submitScore);
       main.appendChild(submitScoreButtonContainer);
-      submitScore.addEventListener('click', () => {this.submitUserData(percentage)});
+      submitScore.addEventListener('click', () => {this.submitUserData()});
     }
   }
 
-   submitUserData(percentage){
+   submitUserData(){
       const main = document.querySelector('main');
       main.innerHTML = '';
       const leaderboardForm = document.createElement('div');
@@ -240,7 +241,7 @@ class Quiz {
       {
         event.preventDefault();
         const name = document.getElementById('user[name]').value;
-        const data = {user: {name, score: this.quizScore, percentage}}
+        const data = {user: {name, score: this.quizScore, percentage: this.percentage}}
         const users_url = 'http://127.0.0.1:3000/users'
         return fetch(users_url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)})
         .then(() => {window.location.href = 'leaderboard.html'})

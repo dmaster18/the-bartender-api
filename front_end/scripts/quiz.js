@@ -1,7 +1,7 @@
 let correctIngredientNames = [];
 
 class Quiz {
-  constructor(i, quizScore, randomRecipes) {
+  constructor() {
     this.i = 0;
     this.quizScore = 0;
     this.percentage = 0;
@@ -249,6 +249,6 @@ class Quiz {
     }
 }
 
-const quiz = new Quiz(0, 0, []);
+const quiz = new Quiz();
 
 window.addEventListener('DOMContentLoaded', () => {quiz.initiateQuiz()});

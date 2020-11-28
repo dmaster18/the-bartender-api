@@ -210,13 +210,16 @@ class Quiz {
       this.questionEvent(questionScore, incorrect, questionStatus);
     } else {
       main.innerHTML = '';
+      const results = document.createElement('div');
+      results.classList.add('results');
       const myQuizScore = document.createElement('h1');
-      myQuizScore.innerText = `Your Quiz Score Is: ${this.quizScore} Points!`;
-      main.appendChild(myQuizScore);
+      myQuizScore.innerText = `Your Quiz Score Is: ${this.quizScore.toFixed()} Points!`;
+      results.appendChild(myQuizScore);
       const myQuizPercentage = document.createElement('h1');
       const percentage = 100*(this.quizScore/this.randomRecipes.length);
       myQuizPercentage.innerText = `Your Quiz Score Percentage Is: ${percentage}%!`;
-      main.appendChild(myQuizPercentage);
+      results.appendChild(myQuizPercentage);
+      main.appendChild(results);
       const submitScoreButtonContainer = document.createElement('div');
       submitScoreButtonContainer.classList.add('submit-button-container')
       const submitScore = document.createElement('button');

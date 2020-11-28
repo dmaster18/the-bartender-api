@@ -3,7 +3,7 @@ class RecipesController < ApplicationController
     if params[:complexity] == nil || params[:complexity] == "Random"
       recipes = Recipe.limit(params[:limit] || 20).offset(params[:offset] || 0)
     else
-      recipes = Recipe.where(complexity: params[:complexity]).limit(params[:limit] || 75)#.offset(params[:offset] || 0)
+      recipes = Recipe.where(complexity: params[:complexity]).limit(params[:limit] || 75)
     end
     options = {
       include: [:mixers, :garnishes, :liquors, :liqueurs]

@@ -212,7 +212,7 @@ class Quiz {
       const results = document.createElement('div');
       results.classList.add('results');
       const myQuizScore = document.createElement('h1');
-      myQuizScore.innerText = `Your Got: ${this.quizScore.toFixed()} Points`;
+      myQuizScore.innerText = `Your Got ${this.quizScore.toFixed()} Points`;
       results.appendChild(myQuizScore);
       const myQuizPercentage = document.createElement('h1');
       this.percentage = 100*(this.quizScore/this.randomRecipes.length);

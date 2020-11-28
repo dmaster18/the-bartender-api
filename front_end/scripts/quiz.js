@@ -36,7 +36,7 @@ class Quiz {
   fetchQuiz() {
     const complexity = this.selectedValueNames[0];
     const limit = this.selectedValueNames[1];
-    const recipes_url = `http://127.0.0.1:3000/recipes/?limit=${limit}&complexity=${complexity}`;
+    const recipes_url = `http://127.0.0.1:3000/recipes/?complexity=${complexity}`;
     return fetch(recipes_url)
     .then(resp => resp.json())
   }

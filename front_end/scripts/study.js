@@ -41,7 +41,6 @@ class Study {
     const main = document.querySelector('main');
     main.innerHTML = '';
     const recipeCards = this.generateCards(json);
-    const recipeCardLength = recipeCards.length;
     const randomNumber = this.randomNumbers[this.i];
     const recipeCard = recipeCards[randomNumber];
     main.appendChild(recipeCard);

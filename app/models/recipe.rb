@@ -20,10 +20,7 @@ class Recipe < ApplicationRecord
   serialize :all_ingredients, Array
   serialize :correct_ingredients, Array
 
-  #accepts_nested_attributes_for :liquors, :liqueurs, :mixers, :garnishes
-
   before_save :complexity, :generate_question, :all_ingredients, :correct_ingredients
-
 
 
   def complexity

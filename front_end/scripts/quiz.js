@@ -212,7 +212,7 @@ class Quiz {
       results.appendChild(myQuizScore);
       const myQuizPercentage = document.createElement('h1');
       this.percentage = 100 * (this.quizScore / this.randomRecipes.length);
-      myQuizPercentage.innerText = `Your Quiz Score Percentage is ${this.percentage}%!`;
+      myQuizPercentage.innerText = `Your Quiz Score Percentage is ${Math.round(this.percentage)}%!`;
       results.appendChild(myQuizPercentage);
       main.appendChild(results);
       const submitScoreButtonContainer = document.createElement('div');
